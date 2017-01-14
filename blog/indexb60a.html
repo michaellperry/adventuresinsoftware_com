@@ -1,0 +1,591 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+
+
+<!-- Mirrored from adventuresinsoftware.com/blog/?cat=27 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 Jan 2017 12:54:33 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>Adventures in Software   &raquo; Historic Modeling</title>
+
+<meta name="generator" content="WordPress 2.3.3" /> <!-- leave this for stats -->
+
+<link rel="stylesheet" href="wp-content/themes/ais2/style.css" type="text/css" media="screen" />
+<link rel="alternate" type="application/rss+xml" title="Adventures in Software RSS Feed" href="indexd784.html?feed=rss2" />
+<link rel="pingback" href="xmlrpc.html" />
+    <script type="text/javascript">
+        function onSilverlightError(sender, args) {
+            var appSource = "";
+            if (sender != null && sender != 0) {
+              appSource = sender.getHost().Source;
+            }
+            
+            var errorType = args.ErrorType;
+            var iErrorCode = args.ErrorCode;
+
+            if (errorType == "ImageError" || errorType == "MediaError") {
+              return;
+            }
+
+            var errMsg = "Unhandled Error in Silverlight Application " +  appSource + "\n" ;
+
+            errMsg += "Code: "+ iErrorCode + "    \n";
+            errMsg += "Category: " + errorType + "       \n";
+            errMsg += "Message: " + args.ErrorMessage + "     \n";
+
+            if (errorType == "ParserError") {
+                errMsg += "File: " + args.xamlFile + "     \n";
+                errMsg += "Line: " + args.lineNumber + "     \n";
+                errMsg += "Position: " + args.charPosition + "     \n";
+            }
+            else if (errorType == "RuntimeError") {           
+                if (args.lineNumber != 0) {
+                    errMsg += "Line: " + args.lineNumber + "     \n";
+                    errMsg += "Position: " +  args.charPosition + "     \n";
+                }
+                errMsg += "MethodName: " + args.methodName + "     \n";
+            }
+
+            throw new Error(errMsg);
+        }
+    </script>
+
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc0db0.php?rsd" />
+ <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="wp-includes/wlwmanifest.xml" /> <style type='text/css'>
+<!--#header { background: url('wp-content/themes/ais2/images/header-imgae03.html?upper=A7A73F&amp;lower=77773F') no-repeat bottom center; }
+--></style>
+</head>
+<body>
+<div id="page">
+
+<div class="aisTopBar">
+	<form method="get" id="searchform" action="http://adventuresinsoftware.com/blog/">
+<div>
+<a href="indexd784.html?feed=rss2"><img src="../images/feed-icon-28x28.png" border="0"></a>
+<input type="text" value="" name="s" id="s" />
+<input type="submit" id="searchsubmit" value="Search" />
+</div>
+</form>
+</div>
+
+<div class="aisHeaderImageRight">
+	<div class="aisHeaderImage">
+	<div class="aisHeaderCornerRight">
+	<div class="aisHeaderCornerLeft">
+	<div class="aisImageBar">
+	<div class="aisSubSites">
+		<a href="index.html" class="aisSubSiteLink"><span class="aisSiteTabRight"><span class="aisSiteTabLeft"><span class="aisSiteTab">
+			home</span></span></span></a>
+		<a class="aisSubSiteLink" href="indexb60a.html?cat=27"><span class="aisSiteTabRight"><span class="aisSiteTabLeft"><span class="aisSiteTab">
+			historic modeling</span></span></span></a>
+		<a class="aisSubSiteLink" href="indexa88f.html?cat=36"><span class="aisSiteTabRight"><span class="aisSiteTabLeft"><span class="aisSiteTab">
+			update controls</span></span></span></a>
+		<a href="index2d79.html?cat=26" class="aisSubSiteLink"><span class="aisSiteTabRight"><span class="aisSiteTabLeft"><span class="aisSiteTab">
+			degrees of freedom</span></span></span></a>
+		<a class="aisSubSiteLink" href="indexba53.html?page_id=2"><span class="aisSiteTabRight"><span class="aisSiteTabLeft"><span class="aisSiteTab">
+			about us</span></span></span></a>
+
+	</div>
+	</div>
+	</div>
+	</div>
+	</div>
+</div>
+
+<table style="width: 100%" cellspacing="0" cellpadding="0">
+	<tr valign="top">
+		<td width="210px">
+<div id="sidebar">
+<div class="aisLeftColumnFill">
+<div class="aisLeftColumnBottom">
+<div class="aisLeftColumnTop">
+<div id="twitter_div" class="aisLeftNav">
+<h2 class="sidebar-title">Twitter Updates</h2>
+<ul id="twitter_update_list"></ul>
+<a href="http://twitter.com/michaellperry" id="follow">Follow me</a>
+</div>
+<div id="twitter_reply_div" class="aisLeftNav">
+<h2 class="sidebar-title">Twitter Replies</h2>
+<ul id="twitter_reply_list"></ul>
+</div>
+
+<div class="aisLeftNav">
+<a href='http://ineta.org/Speakers/SearchCommunitySpeakers.aspx?SpeakerId=c5110e21-9243-461b-a464-a6548524e885'><img alt='INETA Community Speakers Program' border='0' src='../../www.ineta.org/images/OfficialLogos/InetaCommunitySpeakersRequestMe.html' /></a>
+</div>
+
+<div class="aisLeftNav">
+	<li class="pagenav"><h2>Pages</h2><ul><li class="page_item page-item-2"><a href="indexba53.html?page_id=2" title="About Us">About Us</a></li>
+<li class="page_item page-item-210"><a href="index6ae3.html?page_id=210" title="Templates">Templates</a></li>
+</ul></li></div>
+
+<div class="aisLeftNav">
+<h2>Archives</h2>
+<ul>
+	<li><a href='indexb4d5.html?m=201110' title='October 2011'>October 2011</a></li>
+	<li><a href='indexc61a.html?m=201106' title='June 2011'>June 2011</a></li>
+	<li><a href='indexa80d.html?m=201105' title='May 2011'>May 2011</a></li>
+	<li><a href='index512b.html?m=201104' title='April 2011'>April 2011</a></li>
+	<li><a href='index08fb.html?m=201103' title='March 2011'>March 2011</a></li>
+	<li><a href='index52f4.html?m=201102' title='February 2011'>February 2011</a></li>
+	<li><a href='index74f1.html?m=201101' title='January 2011'>January 2011</a></li>
+	<li><a href='index8956.html?m=201012' title='December 2010'>December 2010</a></li>
+	<li><a href='indexa1aa.html?m=201011' title='November 2010'>November 2010</a></li>
+	<li><a href='indexe3d5.html?m=201010' title='October 2010'>October 2010</a></li>
+	<li><a href='index9ab9.html?m=201009' title='September 2010'>September 2010</a></li>
+	<li><a href='index1ff0.html?m=201008' title='August 2010'>August 2010</a></li>
+	<li><a href='index9f11.html?m=201007' title='July 2010'>July 2010</a></li>
+	<li><a href='index31f0.html?m=201006' title='June 2010'>June 2010</a></li>
+	<li><a href='indexd189.html?m=201005' title='May 2010'>May 2010</a></li>
+	<li><a href='indexb5c0.html?m=201004' title='April 2010'>April 2010</a></li>
+	<li><a href='indexf258.html?m=201003' title='March 2010'>March 2010</a></li>
+	<li><a href='index6e30.html?m=201002' title='February 2010'>February 2010</a></li>
+	<li><a href='index6b19.html?m=201001' title='January 2010'>January 2010</a></li>
+	<li><a href='index5c0a.html?m=200912' title='December 2009'>December 2009</a></li>
+	<li><a href='index8f62.html?m=200911' title='November 2009'>November 2009</a></li>
+	<li><a href='index451d.html?m=200910' title='October 2009'>October 2009</a></li>
+	<li><a href='index3e04.html?m=200909' title='September 2009'>September 2009</a></li>
+	<li><a href='index425a.html?m=200908' title='August 2009'>August 2009</a></li>
+	<li><a href='index9907.html?m=200907' title='July 2009'>July 2009</a></li>
+	<li><a href='index3104.html?m=200906' title='June 2009'>June 2009</a></li>
+	<li><a href='indexc36d.html?m=200905' title='May 2009'>May 2009</a></li>
+	<li><a href='index17e8.html?m=200904' title='April 2009'>April 2009</a></li>
+	<li><a href='index10a5.html?m=200903' title='March 2009'>March 2009</a></li>
+	<li><a href='index8988.html?m=200902' title='February 2009'>February 2009</a></li>
+	<li><a href='index1419.html?m=200901' title='January 2009'>January 2009</a></li>
+	<li><a href='index7866.html?m=200812' title='December 2008'>December 2008</a></li>
+	<li><a href='index55f6.html?m=200811' title='November 2008'>November 2008</a></li>
+	<li><a href='indexa7bc.html?m=200810' title='October 2008'>October 2008</a></li>
+	<li><a href='indexe77c.html?m=200809' title='September 2008'>September 2008</a></li>
+	<li><a href='indexcffc.html?m=200808' title='August 2008'>August 2008</a></li>
+	<li><a href='index0e62.html?m=200807' title='July 2008'>July 2008</a></li>
+	<li><a href='indexfda7.html?m=200806' title='June 2008'>June 2008</a></li>
+	<li><a href='index7d64.html?m=200805' title='May 2008'>May 2008</a></li>
+	<li><a href='index94dd.html?m=200804' title='April 2008'>April 2008</a></li>
+	<li><a href='index9631.html?m=200803' title='March 2008'>March 2008</a></li>
+	<li><a href='indexdd52.html?m=200802' title='February 2008'>February 2008</a></li>
+	<li><a href='index21ee.html?m=200801' title='January 2008'>January 2008</a></li>
+	<li><a href='index363c.html?m=200712' title='December 2007'>December 2007</a></li>
+	<li><a href='index7493.html?m=200711' title='November 2007'>November 2007</a></li>
+	<li><a href='index93a7.html?m=200710' title='October 2007'>October 2007</a></li>
+	<li><a href='index4ca8.html?m=200709' title='September 2007'>September 2007</a></li>
+	<li><a href='index6124.html?m=200708' title='August 2007'>August 2007</a></li>
+	<li><a href='index6013.html?m=200707' title='July 2007'>July 2007</a></li>
+	<li><a href='index2ab6.html?m=200706' title='June 2007'>June 2007</a></li>
+	<li><a href='index44f0.html?m=200705' title='May 2007'>May 2007</a></li>
+	<li><a href='indexf0b4.html?m=200704' title='April 2007'>April 2007</a></li>
+	<li><a href='index481d.html?m=200703' title='March 2007'>March 2007</a></li>
+	<li><a href='indexcbea.html?m=200702' title='February 2007'>February 2007</a></li>
+	<li><a href='index9cdc.html?m=200701' title='January 2007'>January 2007</a></li>
+	<li><a href='index3ea4.html?m=200612' title='December 2006'>December 2006</a></li>
+	<li><a href='index67ca.html?m=200611' title='November 2006'>November 2006</a></li>
+	<li><a href='indexff49.html?m=200610' title='October 2006'>October 2006</a></li>
+	<li><a href='index611c.html?m=200609' title='September 2006'>September 2006</a></li>
+	<li><a href='index9a21.html?m=200608' title='August 2006'>August 2006</a></li>
+	<li><a href='index3ee9.html?m=200607' title='July 2006'>July 2006</a></li>
+	<li><a href='indexe13a.html?m=200606' title='June 2006'>June 2006</a></li>
+</ul>
+</div>
+
+<div class="aisLeftNav">
+	</div>
+
+<div class="aisLeftNav">
+<h2>Books</h2>
+<iframe src="http://rcm.amazon.com/e/cm?t=adventures0d2-20&amp;o=1&amp;p=8&amp;l=as1&amp;asins=0764526413&amp;fc1=000000&amp;IS2=1&amp;lt1=_blank&amp;lc1=0000ff&amp;bc1=000000&amp;bg1=ffffff&amp;f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" name="I5" id="I5"></iframe>
+<br/>
+<iframe src="http://rcm.amazon.com/e/cm?t=adventures0d2-20&amp;o=1&amp;p=8&amp;l=as1&amp;asins=0201633612&amp;fc1=000000&amp;IS2=1&amp;lt1=_blank&amp;lc1=0000ff&amp;bc1=000000&amp;bg1=ffffff&amp;f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" name="I6" id="I6"></iframe>
+<br/>
+<iframe src="http://rcm.amazon.com/e/cm?t=adventures0d2-20&amp;o=1&amp;p=8&amp;l=as1&amp;asins=0136291554&amp;fc1=000000&amp;IS2=1&amp;lt1=_blank&amp;lc1=0000ff&amp;bc1=000000&amp;bg1=ffffff&amp;f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" name="I7" id="I7"></iframe>
+<br/>
+<iframe src="http://rcm.amazon.com/e/cm?t=adventures0d2-20&amp;o=1&amp;p=8&amp;l=as1&amp;asins=1888009195&amp;fc1=000000&amp;IS2=1&amp;lt1=_blank&amp;lc1=0000ff&amp;bc1=000000&amp;bg1=ffffff&amp;f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" name="I8" id="I8"></iframe>
+</div>
+<div class="aisLeftNav">
+<h2>Meta</h2>
+<ul>
+		<li><a href="wp-login.html">Login</a></li>
+	<li><a href="http://validator.w3.org/check/referer" title="This page validates as XHTML 1.0 Transitional">Valid <abbr title="eXtensible HyperText Markup Language">XHTML</abbr></a></li>
+	<li><a href="http://gmpg.org/xfn/"><abbr title="XHTML Friends Network">XFN</abbr></a></li>
+	<li><a href="http://wordpress.org/" title="Powered by WordPress, state-of-the-art semantic personal publishing platform.">WordPress</a></li>
+	</ul>
+</div>
+<div class="aisLeftContent">
+<h2>Community</h2>
+<ul>
+	<script type="text/javascript" src="../../localhost/embed/92q2bbma.js"></script>
+</ul>
+</div>
+
+</div></div></div>
+</div>		</td>
+		<td>
+
+	<div id="content" class="narrowcolumn">
+
+		
+		 		<h2 class="pagetitle">Archive for the &#8216;Historic Modeling&#8217; Category</h2>
+
+ 	  
+
+		<div class="navigation">
+			<div class="alignleft"><a href="index95b0.html?cat=27&amp;paged=2">&laquo; Previous Entries</a></div>
+			<div class="alignright"></div>
+		</div>
+
+				<div class="post">
+				<h3 id="post-634"><a href="index5cd0.html?p=634" rel="bookmark" title="Permanent Link to Mutable fields in Correspondence">Mutable fields in Correspondence</a></h3>
+				<small>Tuesday, March 29th, 2011</small>
+
+				<div class="entry">
+					<p><a href="wp-content/uploads/2011/03/image1.png"><img style="border-right-width: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; margin-left: 0px; border-left-width: 0px; margin-right: 0px" title="image" border="0" alt="image" align="right" src="wp-content/uploads/2011/03/image-thumb1.png" width="427" height="351" /></a> <a href="http://correspondence.codeplex.com/">Correspondence</a> is a client-side NoSQL database that synchronizes with other clients through a shared server. If you’ve experimented with the bits, there is a breaking change in the latest changeset. A new build is coming soon, as well as a closed beta of the synchronization server.</p>
+<p>Correspondence is built on the concept of <a href="http://historicalmodeling.com/book">historical modeling</a>. This is a set of theory describing historical facts with partial order. The facts have predecessor/successor relationships that define both the order in which they can consistently be applied, and the mechanism for graph traversal.</p>
+<p>One of the core tenets of historical modeling is that facts are immutable. This makes them easy to synchronize. Fields also determine the fact’s identity. Two facts having equal fields are actually the same fact.</p>
+<p>In many applications, it is desirable to have mutable fields. In historical modeling, you have to use the <a href="http://historicalmodeling.com/book/patterns/entity_property">Entity Property</a> pattern to simulate mutability. This pattern builds on the strengths of historical modeling, allowing participants to unambiguously synchronize state changes. It also has the added benefit of detecting conflicts, and allowing users and applications to resolve them. Unfortunately, this pattern can be cumbersome to apply.</p>
+<h3>The mutable keyword</h3>
+<p>A Correspondence model is defined using a language called “Factual”. The upcoming release adds three keywords to the Factual modeling language. These three keywords break a fact into sections:</p>
+<ul>
+<li><strong>key</strong> - Required. Contains all key fields. </li>
+<li><strong>mutable</strong> - Optional. Contains all mutable fields. </li>
+<li><strong>query</strong> - Optional. Contains all queries and predicates. </li>
+</ul>
+<p>The key and query sections contain members that have always been in the language. The mutable section adds new functionality.</p>
+<p>Fields in the mutable section are mutable. The compiler generates the Entity Property pattern on your behalf. These fields are not part of the key, since they are not actually stored within the fact itself. They are stored in successor facts that track changes.</p>
+<p>You write this:</p>
+<pre>fact Person {
+key:
+    unique;
+
+mutable:
+    string name;
+}</pre>
+<p>The Factual compiler generates this:</p>
+<pre>fact Person {
+key:
+    unique;
+
+query:
+    PersonName* nameCandidates {
+        PersonName n : n.person = this
+            where n.isCurrent
+    }
+}
+
+fact PersonName {
+key:
+    Person person;
+    string value;
+    PersonName* prior;
+
+query:
+    bool isCurrent {
+        not exists PersonName next : next.prior = this
+    }
+}</pre>
+<h3>Disputable properties</h3>
+<p>The Entity Property pattern detects conflicts and allows the application to resolve them. To aide the application in this task, Correspondence defines Disputable&lt;T&gt;. This template can be converted to and from the raw type T, but it also exposes two additional properties.</p>
+<ul>
+<li><strong>InConflict</strong> – A boolean that is true if a conflict has been detected. </li>
+<li><strong>Candidates</strong> – A collection of possible values. </li>
+</ul>
+<p>Using Disputable&lt;T&gt;, the view model can apply an alternate style when a conflict has been detected, and allow the user to choose from among the candidates to resolve it.</p>
+<pre class="code"><span style="color: blue">public class </span><span style="color: #2b91af">PersonViewModel
+</span>{
+    <span style="color: blue">private </span><span style="color: #2b91af">Person </span>_person;
+
+    <span style="color: blue">public </span>PersonViewModel(<span style="color: #2b91af">Person </span>person)
+    {
+        _person = person;
+    }
+
+    <span style="color: blue">public string </span>Name
+    {
+        <span style="color: blue">get </span>{ <span style="color: blue">return </span>_person.Name; }
+        <span style="color: blue">set </span>{ _person.Name = <span style="color: blue">value</span>; }
+    }
+
+    <span style="color: blue">public bool </span>ShowConflictStyle
+    {
+        <span style="color: blue">get </span>{ <span style="color: blue">return </span>_person.Name.InConflict; }
+    }
+
+    <span style="color: blue">public </span><span style="color: #2b91af">IEnumerable</span>&lt;<span style="color: blue">string</span>&gt; CandidateNamesItemsSource
+    {
+        <span style="color: blue">get </span>{ <span style="color: blue">return </span>_person.Name.Candidates; }
+    }
+
+    <span style="color: blue">public string </span>CandidateNamesSelectedItem
+    {
+        <span style="color: blue">get </span>{ <span style="color: blue">return </span>_person.Name; }
+        <span style="color: blue">set </span>{ _person.Name = <span style="color: blue">value</span>; }
+    }
+}</pre>
+<p>The <a href="http://historicalmodeling.com/book/factual">Factual modeling language specification</a> has been updated to reflect the new mutable keyword. If you’ve created Correspondence models in the past, you will be required to add key and query section headers once you upgrade. Then you will be able to take advantage of mutability.</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="index38d0.html?cat=46" title="View all posts in Correspondence" rel="category">Correspondence</a>,  <a href="indexb60a.html?cat=27" title="View all posts in Historic Modeling" rel="category">Historic Modeling</a> |   <a href="index5cd0.html?p=634#respond" title="Comment on Mutable fields in Correspondence">No Comments &#187;</a></p>
+
+			</div>
+
+				<div class="post">
+				<h3 id="post-565"><a href="indexcfab.html?p=565" rel="bookmark" title="Permanent Link to :s/historic/historical/g">:s/historic/historical/g</a></h3>
+				<small>Saturday, October 2nd, 2010</small>
+
+				<div class="entry">
+					<p>I have moved http://historicmodeling.com to <a href="http://historicalmodeling.com/">http://historicalmodeling.com</a>. The difference is subtle, but important. A historical fact is one that has occurred in the past. A historic fact is one that has altered the course of history. All past events are historical, but not all are historic.</p>
+<p>By calling the set of patterns “Historic Modeling”, I was misusing the word. “Historical Modeling” is more precise.</p>
+<p>In a few weeks, historicmodeling.com will go the way of javatuple.com. You will see the old site replaced with a smirking college co-ed linking to dealers of history books.</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="indexb60a.html?cat=27" title="View all posts in Historic Modeling" rel="category">Historic Modeling</a> |   <a href="indexcfab.html?p=565#respond" title="Comment on :s/historic/historical/g">No Comments &#187;</a></p>
+
+			</div>
+
+				<div class="post">
+				<h3 id="post-563"><a href="index03c9.html?p=563" rel="bookmark" title="Permanent Link to Historical Trees">Historical Trees</a></h3>
+				<small>Friday, October 1st, 2010</small>
+
+				<div class="entry">
+					<p>In developing Correspondence for the Windows Phone 7, I’ve uncovered a need for a new data structure. I’m calling this data structure a Historical Tree, since it is designed specifically for historical modeling.</p>
+<p>Correspondence allows for interchangeable storage strategies. The storage strategies currently implemented are:</p>
+<ul>
+<li>SSCE (.NET)</li>
+<li>SQL Server (.NET)</li>
+<li>SQL Azure (.NET)</li>
+<li>Postgres (Java)</li>
+<li>Memory (both)</li>
+</ul>
+<p>Most of these are built on a relational database, with the obvious exception of the memory storage strategy. Memory storage was originally intended for unit testing, but can sometimes be useful for small clients. It is not optimized for large data sets.</p>
+<p>Windows Phone 7 does not have an out-of-the-box relational database. The storage strategy that you see in the videos is a modified memory strategy. It loads all of the facts from isolated storage into memory on startup. This is incredibly inefficient, and not the way that I’m going to ship. Instead, I’m going to rewrite the isolated storage storage strategy to use a historical tree.</p>
+<h3>Operations</h3>
+<p>The operations that a Correspondence storage strategy must support are:</p>
+<ul>
+<li>Insert a fact having data and references to predecessors.</li>
+<li>Given a fact reference, load its data and predecessor references.</li>
+<li>Given a hash code, load a fact reference.</li>
+<li>Given a predecessor reference, find all successor references.</li>
+</ul>
+<p>Update and delete are not valid operations on a Correspondence store. When a fact is created, all of its predecessors are known. Successors are all of the facts that reference a predecessor.</p>
+<h3>Append only</h3>
+<p><a href="wp-content/uploads/2010/10/image.png"><img src="wp-content/uploads/2010/10/image-thumb.png" style="border-width: 0px; display: inline; margin-left: 0px; margin-right: 0px" title="image" alt="image" align="left" border="0" width="101" height="190" /></a><a href="wp-content/uploads/2010/10/historicaltreeexample.png"><img src="wp-content/uploads/2010/10/image-thumb1.png" style="border-width: 0px; display: inline; margin-left: 0px; margin-right: 0px" title="image" alt="image" align="right" border="0" width="244" height="176" /></a> This set of operations suggests an append-only data structure.</p>
+<p>You can add new facts to the end of the structure, but you cannot insert or remove them from the middle. Furthermore, all predecessor references are fixed and known at the time of insert. These will necessarily be references to facts earlier in the structure.</p>
+<p>The only part of the data structure that changes is the list of successors. When a new fact is appended, it has to insert itself into the lists of each of its predecessors. To support this, a fact will participate in one linked list per predecessor.</p>
+<p>Each fact has a pointer to the head of its linked list of successors. This is the fact most recently appended that references this fact as a predecessor.</p>
+<p>Then, for each predecessor, the fact identifies the role that the predecessor plays, the reference to the predecessor, and the reference to the next successor of that predecessor. To traverse the list of successors, first follow the head. Then find the matching predecessor reference and follow its next pointer. This will visit successors from most recent to least recent.</p>
+<p>Finally, the fact has a payload of data. This includes the type, the version, and values of all fields. The data appears last because it is not used while traversing the tree.</p>
+<p>The only field of a record that can change is the head pointer (highlighted in red). All other fields are immutable. To protect against corruption, the head is redundant. Each record holds two pointers and an A/B switch. The switch determines which of the two pointers is active. During modification, the new pointer is written to the inactive area, and then the switch is flipped.</p>
+<h3>Insertion</h3>
+<p>To insert into this structure, a new record is appended to the file. Initially, the head pointer is null. The next pointers are copies of the head pointers of each predecessor.</p>
+<p>Then for each predecessor, the new record’s position is stored as their head. This operation is done using the A/B switch so that the new pointer does not overwrite the active one.</p>
+<p>If a fact references the same predecessor twice (possibly in two different roles), then both of the next pointers contain a copy of the previous head. Traversal will follow only the first of them, so the successor will appear only once in the linked list.</p>
+<h3>Traversal</h3>
+<p>References to all predecessors are immediately available from any record. References to successors, on the other hand, follow the linked list from the head.</p>
+<p>When following the linked list, the predecessor sub-records are scanned for the one matching the desired fact. The next pointer of the first match is followed. If that pointer is null, then traversal is complete.</p>
+<h3></h3>
+<h3>Hash code</h3>
+<p>The historical tree supports all but one required operation: hash code to fact reference. This operation is instead supported by a parallel index data structure. A red-black tree seems the best fit for this operation.</p>
+<p>When a fact is inserted, its hash code is calculated. That hash code is inserted into a red-black tree, with a reference back to the fact’s position in the historical tree.</p>
+<p>Facts are written to the historical tree before being added to the red-black index tree. If the index becomes corrupted, then in the worst case it can be rebuilt from the historical tree. In the best case, the corruption can be repaired by re-adding facts from the end of the historical tree.</p>
+<h3>Complexity</h3>
+<p>The complexity of an insert or traversal is not affected by the total size of the data set. Insertion complexity is proportional to the number of predecessors, which is fixed and based on the design of the model. Traversal of predecessors is similarly proportional to the number of predecessors. A well-designed model will limit the number of predecessors.</p>
+<p>Traversal of successors is proportional to the number of successors times the average number of predecessors that each predecessor has. It requires walking a linked list, which is O(n). But at each node, the list of predecessors is scanned to find the next pointer. Because of this, we multiply the average number of predecessors. Based on the design of the model, this number is assumed to be limited.</p>
+<p>Insertion and traversal of the index is O(log(n)), where n is the number of facts in the store. Indexing becomes slower over time, but not rapidly so. Still, it is recommended that the store be turned over periodically, both to keep the index performant and to release resources on the device.</p>
+<h3>Turning over the store</h3>
+<p>Correspondence supports the idea of turning over a fact store. Two stores are kept at any time. One is read-only and the other is read-write. The read-write store collects new facts, and takes a copy of all relevant facts. The read-only store is frozen. It is consulted during queries, and its results merged with the results from the read-write store.</p>
+<p>Over time, all of the relevant facts are copied to the read-write store, and the read-only store provides no additional value. After this point, the read-only store is archived and the read-write store becomes read-only. A new empty read-write store is created.</p>
+<p>On a mobile device, the old store is destroyed rather than archived. All of its facts have been pushed to a server. It is assumed that any facts that the user still cares about were already copied to the next store.</p>
+<p>I am currently working on push notifications to the phone. But when that is finished, I will implement historical trees in isolated storage. This data structure is specifically designed for Correspondence, so I expect it to perform extremely well. In fact, I’m considering porting it back to the desktop as an alternative to SSCE.</p>
+<p style="padding: 0px; margin: 0px; display: inline; float: none" id="scid:8eb9d37f-1541-4f29-b6f4-1eea890d4876:cc2abc73-aff1-44e3-b864-8d985e5fee7b" class="wlWriterEditableSmartContent"><a href="wp-content/uploads/2010/10/historicaltreeexample.png" target="_self">Historical tree example.png</a></p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="indexc728.html?cat=7" title="View all posts in Databases" rel="category">Databases</a>,  <a href="indexb60a.html?cat=27" title="View all posts in Historic Modeling" rel="category">Historic Modeling</a> |   <a href="index03c9.html?p=563#respond" title="Comment on Historical Trees">No Comments &#187;</a></p>
+
+			</div>
+
+				<div class="post">
+				<h3 id="post-486"><a href="index2807.html?p=486" rel="bookmark" title="Permanent Link to A better Ignite Dallas video">A better Ignite Dallas video</a></h3>
+				<small>Thursday, March 11th, 2010</small>
+
+				<div class="entry">
+					<p>Here’s a high quality video of last weekend with slides included.</p>
+<div style="padding-bottom: 0px; margin: 0px; padding-left: 0px; padding-right: 0px; display: inline; float: none; padding-top: 0px" id="scid:5737277B-5D6D-4f48-ABFC-DD9C333F4C5D:61ed124f-ab8a-4d04-adcd-25c55546a009" class="wlWriterEditableSmartContent">
+<div><object width="425" height="355">
+<param name="movie" value="http://www.youtube.com/v/uwgTKuQZ8ts&amp;hl=en"></param><embed src="http://www.youtube.com/v/uwgTKuQZ8ts&amp;hl=en" type="application/x-shockwave-flash" width="425" height="355"></embed></object></div>
+</div>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="indexb60a.html?cat=27" title="View all posts in Historic Modeling" rel="category">Historic Modeling</a>,  <a href="index489b.html?cat=34" title="View all posts in Synchronization" rel="category">Synchronization</a> |   <a href="index2807.html?p=486#comments" title="Comment on A better Ignite Dallas video">2 Comments &#187;</a></p>
+
+			</div>
+
+				<div class="post">
+				<h3 id="post-484"><a href="index4c50.html?p=484" rel="bookmark" title="Permanent Link to Ignite video online">Ignite video online</a></h3>
+				<small>Sunday, March 7th, 2010</small>
+
+				<div class="entry">
+					<p>How do we collaborate through software?</p>
+<ul>
+<li>The CAP Theorem – Eric Brewer</li>
+<li>Eventual Consistency – Werner Vogels</li>
+<li>Event Sourcing – Greg Young and Udi Dahan</li>
+<li>Partial Order</li>
+</ul>
+<p style="margin: 0px; padding: 0px; display: inline; float: none" id="scid:5737277B-5D6D-4f48-ABFC-DD9C333F4C5D:b3bdc654-2825-4f89-8127-5d974ad20878" class="wlWriterEditableSmartContent"><object height="355" width="425"></p>
+<param name="movie" value="http://www.youtube.com/v/qysC6zmgYT0&amp;hl=en"></param><embed src="http://www.youtube.com/v/qysC6zmgYT0&amp;hl=en" type="application/x-shockwave-flash" height="355" width="425"></embed></object></p>
+<p style="margin: 0px; padding: 0px; display: inline; float: none" id="scid:fb3a1972-4489-4e52-abe7-25a00bb07fdf:56630752-a8c8-432d-be2f-7c5d1620ea18" class="wlWriterEditableSmartContent"> <a href="../pictures/Ignitevideoonline_11874/PerryCollaborateThroughSoftware.ppt">Download the slides</a></p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="indexb60a.html?cat=27" title="View all posts in Historic Modeling" rel="category">Historic Modeling</a>,  <a href="index489b.html?cat=34" title="View all posts in Synchronization" rel="category">Synchronization</a> |   <a href="index4c50.html?p=484#respond" title="Comment on Ignite video online">No Comments &#187;</a></p>
+
+			</div>
+
+				<div class="post">
+				<h3 id="post-483"><a href="index3758.html?p=483" rel="bookmark" title="Permanent Link to How do we collaborate through software: Take 2">How do we collaborate through software: Take 2</a></h3>
+				<small>Thursday, February 25th, 2010</small>
+
+				<div class="entry">
+					<p>It is official. I have been invited to speak at <a href="http://ignitedallas.org/">Ignite Dallas</a>.</p>
+<p>In my prior recording of the talk, I neglected to mention the names of some folks who have been influential in collaborative application design. This new recording remedies that oversight.</p>
+<p>I also modified the second half of the talk to tell the partial ordering story a little better. It still needs the slides in order to really get it, but fortunately those are coming along.</p>
+<p>Give it a <a href="../bin/CollaborateThroughSoftware2.mp3">listen</a>. Hope to see you next Wednesday!</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="indexb60a.html?cat=27" title="View all posts in Historic Modeling" rel="category">Historic Modeling</a>,  <a href="index489b.html?cat=34" title="View all posts in Synchronization" rel="category">Synchronization</a> |   <a href="index3758.html?p=483#respond" title="Comment on How do we collaborate through software: Take 2">No Comments &#187;</a></p>
+
+			</div>
+
+				<div class="post">
+				<h3 id="post-482"><a href="index54a8.html?p=482" rel="bookmark" title="Permanent Link to How do we collaborate through software?">How do we collaborate through software?</a></h3>
+				<small>Saturday, February 20th, 2010</small>
+
+				<div class="entry">
+					<p>I am preparing for the upcoming <a href="http://ignitedallas.org/">Ignite Dallas</a> event. 5 minutes, 20 slides that auto advance every 15 seconds. The final speaker list has not yet been determined, but I’m hopeful that I’ll have a chance to present.</p>
+<p>I will be talking about the current thinking in collaborative applications.</p>
+<ul>
+<li>The CAP Theorem</li>
+<li>Eventual Consistency</li>
+<li>Event Sourcing</li>
+<li>Partial Ordering</li>
+</ul>
+<p>The challenge is to condense all of this learning into 5 minutes, make it accessible, and make it entertaining. You can help.</p>
+<p>Please take five minutes (actually 4:45) to listen to my <a href="../bin/CollaborateThroughSoftware.mp3">rough draft</a>. Leave comments on what I can improve, what I didn’t make clear, and anything I could leave out.</p>
+<p>Then order your tickets to the event and see some really great performances. Or submit one of your own.</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="indexb60a.html?cat=27" title="View all posts in Historic Modeling" rel="category">Historic Modeling</a>,  <a href="index489b.html?cat=34" title="View all posts in Synchronization" rel="category">Synchronization</a> |   <a href="index54a8.html?p=482#comments" title="Comment on How do we collaborate through software?">1 Comment &#187;</a></p>
+
+			</div>
+
+				<div class="post">
+				<h3 id="post-452"><a href="index20a4.html?p=452" rel="bookmark" title="Permanent Link to Topic specific sites">Topic specific sites</a></h3>
+				<small>Saturday, October 10th, 2009</small>
+
+				<div class="entry">
+					<p>I now have three sites for topic-specific content.</p>
+<ul>
+<li><a href="http://historicmodeling.com/">Historic Modeling</a>
+<li><a href="http://updatecontrols.net/doc">Update Controls</a>
+<li><a href="http://qedcode.com/">Q.E.D. Code</a></li>
+</ul>
+<p>I have seeded these sites with articles from Adventures in Software. But from now on, articles specific to those topics will go on those sites. Please subscribe to those RSS feeds as well as this one.</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="indexb60a.html?cat=27" title="View all posts in Historic Modeling" rel="category">Historic Modeling</a>,  <a href="indexa88f.html?cat=36" title="View all posts in Update Controls" rel="category">Update Controls</a>,  <a href="index51fa.html?cat=40" title="View all posts in qed" rel="category">qed</a> |   <a href="index20a4.html?p=452#respond" title="Comment on Topic specific sites">No Comments &#187;</a></p>
+
+			</div>
+
+				<div class="post">
+				<h3 id="post-450"><a href="index9e0f.html?p=450" rel="bookmark" title="Permanent Link to A new example of historic modeling">A new example of historic modeling</a></h3>
+				<small>Wednesday, October 7th, 2009</small>
+
+				<div class="entry">
+					<p>I wrote up an example historic model that illustrates very succinctly some of the major points of the theory. It is a simple <a href="http://historicmodeling.com/book/examples/workitemtracker">work item tracker</a>.</p>
+<p>So far, the example model can assign developers to projects. The next step is to allow developers to move work items between folders to track progress.</p>
+<p>Currently, the model is only in text form. Soon, I will render it in source code using <a href="http://correspondence.codeplex.com/">Correspondence</a>. Eventually, it will integrate with TFS and HP Quality Center to act as a front end and perhaps a conduit between those systems.</p>
+<p>If you would like to see a simple and reliable way of writing distributed smart clients, please follow along.</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="indexb60a.html?cat=27" title="View all posts in Historic Modeling" rel="category">Historic Modeling</a> |   <a href="index9e0f.html?p=450#respond" title="Comment on A new example of historic modeling">No Comments &#187;</a></p>
+
+			</div>
+
+				<div class="post">
+				<h3 id="post-428"><a href="indexc7ce.html?p=428" rel="bookmark" title="Permanent Link to Append only databases, domain events, and historic models">Append only databases, domain events, and historic models</a></h3>
+				<small>Tuesday, September 8th, 2009</small>
+
+				<div class="entry">
+					<p>People are starting to talk about the concept of append-only models or domain events:</p>
+<ul>
+<li><a title="http://ayende.com/Blog/archive/2009/09/06/soft-deletes-arenrsquot-append-only-model.aspx" href="http://ayende.com/Blog/archive/2009/09/06/soft-deletes-arenrsquot-append-only-model.aspx">Ayende on append-only models</a>
+<li><a title="http://www.udidahan.com/2009/06/14/domain-events-salvation/" href="http://www.udidahan.com/2009/06/14/domain-events-salvation/">Udi Dahan on domain events</a>
+<li><a title="http://www.infoq.com/presentations/greg-young-unshackle-qcon08" href="http://www.infoq.com/presentations/greg-young-unshackle-qcon08">Greg Young on domain events</a></li>
+</ul>
+<p>It's not a new idea, but it has seen increased awareness recently. The idea is that changes (a.k.a. events, or what I call "facts") become a part of the domain model. Instead of performing CRUD operations on records, a system keeps a history of these changes. The changes themselves are modeled as first-class entities, not as side-effects.</p>
+<p>The advantages of this approach are many.</p>
+<ul>
+<li>Auditability - The transaction history is the primary source of record.
+<li>Synchronization - Merge conflicts are easily detected.
+<li>Isolation - Publishers and subscribers know nothing about each other.</li>
+</ul>
+<p>But there are some details that I haven't heard others mention, yet. These details are going to determine whether people adopt the tools and practices that will emerge from this idea.</p>
+<p><strong>Partial order</strong><br />Many of the implementations of this idea impose a full order on the changes. Each transaction knows the time at which it is committed. The transactions then line up temporally to flow through the system. Before you can process one transaction, you must first have processed the transactions that came before.</p>
+<p>This is a pattern I call the "Transaction Pipeline". It is highly restrictive. The only way to know the true result of a transaction is to know all transactions that have come before. This restriction takes what could be a decentralized model and gives it a central authority. The consequence is a loss of local authority.</p>
+<p>In Greg Young's video, he draws a system in which changes flow from a client through a server and back again. The client captures the user's intent, then queues up those changes to be sent to the server in serial. The server examines each change, resolves merge conflicts, and updates a central database. The client runs all of its queries against that central database. The local client has no authority. Even though it knows that the user has requested a change, it cannot promise that change until it sees the results in the central database.</p>
+<p>If the transactions were not so strictly ordered, the local client could make better decisions about the results of a change. Rather than ordering changes strictly by time, it could impose a partial order on facts. Facts that are related to one another must occur in the proper order. But unrelated facts are allowed to occur in any order. This allows a local client to make decisions based on a subset of the facts. It knows that it has enough information to make the decision, even if it doesn't yet have all of the information.</p>
+<p><strong>Parallel storage</strong><br />Another common implementation detail is that objects are stored in parallel with changes. As the changes come in, they are stored in a queue. As they are processed, their effects are performed on relational data. The relational model can then be queried for current state.</p>
+<p>A perfect example is the architecture of <a href="http://www.nservicebus.com/ArchitecturalPrinciples.aspx">NServiceBus</a>. The message bus is added as a mechanism for disparate components to indirectly communicate with one another. Once the component gets the message, it processes the command in a database. This is a natural extension of the way we build systems today.</p>
+<p>Unfortunately, this kind of architecture makes it difficult to query the transaction stream itself. Before we can see the effect of a command, it must be executed against relational storage. A local client cannot easily combine the relational snapshot on the server with the outgoing queue of changes that it wishes to impose.</p>
+<p>An alternative is to forego relational storage for a mechanism that can query the changes themselves. To find the current state of an entity, it is only necessary to locate all known changes to that entity. If those changes are organized in the right way, that query is as simple and performant as going to the relational database. But the advantage is that we can query <em>through</em> the message queue, not <em>around</em> it.</p>
+<p><strong>Disconnected operation</strong><br />A smart client is often defined as one that can detect whether it is connected or disconnected, and change modes appropriately. These kinds of systems keep a local database as an off-line insurance policy against the eventuality of being disconnected. When the connection is reestablished, the client sends to the server all of the changes that have occurred since the last synchronization.</p>
+<p>The problem with this model is that the client needs to switch modes. In "connected" mode, it acts like a dumb terminal. In "disconnected" mode, it acts like a rich client. This yields twice the code to write, test, and maintain. The developer has to decide which features will be available in disconnected mode, and degrade the experience graciously. On top of that is the complexity of switching modes, and the errors that might arise from inconsistencies between the two implementations.</p>
+<p>It would be better for a smart client to operate in only one mode. The changes that the user requests are simultaneously committed to a local database and placed in a queue (preferably as one data structure instead of two). The only difference between connected and disconnected operation is whether that queue is currently being serviced. Either way, the application is blissfully unaware. The users changes are captured nonetheless. The developer only has to write the code once, so there is never a decision whether a feature will be supported while off-line. All features are available at all times.</p>
+<p><strong>The devil is in the details</strong><br />Append-only or domain-event models are a powerful idea. But the fact that you only insert and never update or delete is only the beginning. It's great that events are modeled as part of the domain, but if they are just <em>in addition to</em> the domain then it hasn't been taken far enough. For this idea to gain the wide adoption that it deserves, the patterns and tools must impose partial order, forego parallel storage, and support disconnected operation.</p>
+<p>For more information on a pattern and a tool that supports these concepts, please see <a href="http://historicmodeling.com/">Historic Modeling</a> and <a href="http://correspondence.codeplex.com/">Correspondence</a>.</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="indexb60a.html?cat=27" title="View all posts in Historic Modeling" rel="category">Historic Modeling</a> |   <a href="indexc7ce.html?p=428#respond" title="Comment on Append only databases, domain events, and historic models">No Comments &#187;</a></p>
+
+			</div>
+
+		
+		<div class="navigation">
+			<div class="alignleft"><a href="index95b0.html?cat=27&amp;paged=2">&laquo; Previous Entries</a></div>
+			<div class="alignright"></div>
+		</div>
+
+	
+	</div>
+		</td>
+	</tr>
+</table>
+
+<hr />
+<div id="footer">
+<!-- If you'd like to support WordPress, having the "powered by" link someone on your blog is the best way, it's our only promotion or advertising. -->
+	<p>
+		Adventures in Software is proudly powered by 
+		<a href="http://wordpress.org/">WordPress</a>
+		<br /><a href="indexd784.html?feed=rss2">Entries (RSS)</a>
+		and <a href="indexa6da.html?feed=comments-rss2">Comments (RSS)</a>.
+		<!-- 17 queries. 0.379 seconds. -->
+	</p>
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-389401-3");
+pageTracker._trackPageview();
+} catch(err) {}</script></div>
+
+<!-- Gorgeous design by Michael Heilemann - http://binarybonsai.com/kubrick/ -->
+
+		<div id="sk2-footer" style="color:#FFF; background-color:#444; padding: 3px 2px 3px 2px; border-top: #888 solid 1px;">This blog is protected by <a href="http://unknowngenius.com/blog/" title="Dave">dr Dave</a>'s <strong><a href="http://unknowngenius.com/blog/wordpress/spam-karma/" title="SK2">Spam Karma 2</a></strong>: <strong>274531</strong>  Spams eaten and counting...</div><script type="text/javascript" src="replies.js"></script>
+<script type="text/javascript" src="blogger.js"></script>
+<script type="text/javascript" src="http://twitter.com/statuses/user_timeline/michaellperry.json?callback=twitterCallback2&amp;count=5"></script>
+<script type="text/javascript" src="http://search.twitter.com/search.json?q=@michaellperry&amp;callback=twitterCallbackReplies&amp;rpp=5"></script>
+</body>
+
+<!-- Mirrored from adventuresinsoftware.com/blog/?cat=27 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 Jan 2017 12:54:33 GMT -->
+</html>

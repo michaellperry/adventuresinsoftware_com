@@ -1,0 +1,527 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+
+
+<!-- Mirrored from adventuresinsoftware.com/blog/?cat=6&paged=4 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 Jan 2017 13:09:56 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>Adventures in Software   &raquo; Patterns</title>
+
+<meta name="generator" content="WordPress 2.3.3" /> <!-- leave this for stats -->
+
+<link rel="stylesheet" href="wp-content/themes/ais2/style.css" type="text/css" media="screen" />
+<link rel="alternate" type="application/rss+xml" title="Adventures in Software RSS Feed" href="indexd784.html?feed=rss2" />
+<link rel="pingback" href="xmlrpc.html" />
+    <script type="text/javascript">
+        function onSilverlightError(sender, args) {
+            var appSource = "";
+            if (sender != null && sender != 0) {
+              appSource = sender.getHost().Source;
+            }
+            
+            var errorType = args.ErrorType;
+            var iErrorCode = args.ErrorCode;
+
+            if (errorType == "ImageError" || errorType == "MediaError") {
+              return;
+            }
+
+            var errMsg = "Unhandled Error in Silverlight Application " +  appSource + "\n" ;
+
+            errMsg += "Code: "+ iErrorCode + "    \n";
+            errMsg += "Category: " + errorType + "       \n";
+            errMsg += "Message: " + args.ErrorMessage + "     \n";
+
+            if (errorType == "ParserError") {
+                errMsg += "File: " + args.xamlFile + "     \n";
+                errMsg += "Line: " + args.lineNumber + "     \n";
+                errMsg += "Position: " + args.charPosition + "     \n";
+            }
+            else if (errorType == "RuntimeError") {           
+                if (args.lineNumber != 0) {
+                    errMsg += "Line: " + args.lineNumber + "     \n";
+                    errMsg += "Position: " +  args.charPosition + "     \n";
+                }
+                errMsg += "MethodName: " + args.methodName + "     \n";
+            }
+
+            throw new Error(errMsg);
+        }
+    </script>
+
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc0db0.php?rsd" />
+ <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="wp-includes/wlwmanifest.xml" /> <style type='text/css'>
+<!--#header { background: url('wp-content/themes/ais2/images/header-imgae03.html?upper=A7A73F&amp;lower=77773F') no-repeat bottom center; }
+--></style>
+</head>
+<body>
+<div id="page">
+
+<div class="aisTopBar">
+	<form method="get" id="searchform" action="http://adventuresinsoftware.com/blog/">
+<div>
+<a href="indexd784.html?feed=rss2"><img src="../images/feed-icon-28x28.png" border="0"></a>
+<input type="text" value="" name="s" id="s" />
+<input type="submit" id="searchsubmit" value="Search" />
+</div>
+</form>
+</div>
+
+<div class="aisHeaderImageRight">
+	<div class="aisHeaderImage">
+	<div class="aisHeaderCornerRight">
+	<div class="aisHeaderCornerLeft">
+	<div class="aisImageBar">
+	<div class="aisSubSites">
+		<a href="index.html" class="aisSubSiteLink"><span class="aisSiteTabRight"><span class="aisSiteTabLeft"><span class="aisSiteTab">
+			home</span></span></span></a>
+		<a class="aisSubSiteLink" href="indexb60a.html?cat=27"><span class="aisSiteTabRight"><span class="aisSiteTabLeft"><span class="aisSiteTab">
+			historic modeling</span></span></span></a>
+		<a class="aisSubSiteLink" href="indexa88f.html?cat=36"><span class="aisSiteTabRight"><span class="aisSiteTabLeft"><span class="aisSiteTab">
+			update controls</span></span></span></a>
+		<a href="index2d79.html?cat=26" class="aisSubSiteLink"><span class="aisSiteTabRight"><span class="aisSiteTabLeft"><span class="aisSiteTab">
+			degrees of freedom</span></span></span></a>
+		<a class="aisSubSiteLink" href="indexba53.html?page_id=2"><span class="aisSiteTabRight"><span class="aisSiteTabLeft"><span class="aisSiteTab">
+			about us</span></span></span></a>
+
+	</div>
+	</div>
+	</div>
+	</div>
+	</div>
+</div>
+
+<table style="width: 100%" cellspacing="0" cellpadding="0">
+	<tr valign="top">
+		<td width="210px">
+<div id="sidebar">
+<div class="aisLeftColumnFill">
+<div class="aisLeftColumnBottom">
+<div class="aisLeftColumnTop">
+<div id="twitter_div" class="aisLeftNav">
+<h2 class="sidebar-title">Twitter Updates</h2>
+<ul id="twitter_update_list"></ul>
+<a href="http://twitter.com/michaellperry" id="follow">Follow me</a>
+</div>
+<div id="twitter_reply_div" class="aisLeftNav">
+<h2 class="sidebar-title">Twitter Replies</h2>
+<ul id="twitter_reply_list"></ul>
+</div>
+
+<div class="aisLeftNav">
+<a href='http://ineta.org/Speakers/SearchCommunitySpeakers.aspx?SpeakerId=c5110e21-9243-461b-a464-a6548524e885'><img alt='INETA Community Speakers Program' border='0' src='../../www.ineta.org/images/OfficialLogos/InetaCommunitySpeakersRequestMe.html' /></a>
+</div>
+
+<div class="aisLeftNav">
+	<li class="pagenav"><h2>Pages</h2><ul><li class="page_item page-item-2"><a href="indexba53.html?page_id=2" title="About Us">About Us</a></li>
+<li class="page_item page-item-210"><a href="index6ae3.html?page_id=210" title="Templates">Templates</a></li>
+</ul></li></div>
+
+<div class="aisLeftNav">
+<h2>Archives</h2>
+<ul>
+	<li><a href='indexb4d5.html?m=201110' title='October 2011'>October 2011</a></li>
+	<li><a href='indexc61a.html?m=201106' title='June 2011'>June 2011</a></li>
+	<li><a href='indexa80d.html?m=201105' title='May 2011'>May 2011</a></li>
+	<li><a href='index512b.html?m=201104' title='April 2011'>April 2011</a></li>
+	<li><a href='index08fb.html?m=201103' title='March 2011'>March 2011</a></li>
+	<li><a href='index52f4.html?m=201102' title='February 2011'>February 2011</a></li>
+	<li><a href='index74f1.html?m=201101' title='January 2011'>January 2011</a></li>
+	<li><a href='index8956.html?m=201012' title='December 2010'>December 2010</a></li>
+	<li><a href='indexa1aa.html?m=201011' title='November 2010'>November 2010</a></li>
+	<li><a href='indexe3d5.html?m=201010' title='October 2010'>October 2010</a></li>
+	<li><a href='index9ab9.html?m=201009' title='September 2010'>September 2010</a></li>
+	<li><a href='index1ff0.html?m=201008' title='August 2010'>August 2010</a></li>
+	<li><a href='index9f11.html?m=201007' title='July 2010'>July 2010</a></li>
+	<li><a href='index31f0.html?m=201006' title='June 2010'>June 2010</a></li>
+	<li><a href='indexd189.html?m=201005' title='May 2010'>May 2010</a></li>
+	<li><a href='indexb5c0.html?m=201004' title='April 2010'>April 2010</a></li>
+	<li><a href='indexf258.html?m=201003' title='March 2010'>March 2010</a></li>
+	<li><a href='index6e30.html?m=201002' title='February 2010'>February 2010</a></li>
+	<li><a href='index6b19.html?m=201001' title='January 2010'>January 2010</a></li>
+	<li><a href='index5c0a.html?m=200912' title='December 2009'>December 2009</a></li>
+	<li><a href='index8f62.html?m=200911' title='November 2009'>November 2009</a></li>
+	<li><a href='index451d.html?m=200910' title='October 2009'>October 2009</a></li>
+	<li><a href='index3e04.html?m=200909' title='September 2009'>September 2009</a></li>
+	<li><a href='index425a.html?m=200908' title='August 2009'>August 2009</a></li>
+	<li><a href='index9907.html?m=200907' title='July 2009'>July 2009</a></li>
+	<li><a href='index3104.html?m=200906' title='June 2009'>June 2009</a></li>
+	<li><a href='indexc36d.html?m=200905' title='May 2009'>May 2009</a></li>
+	<li><a href='index17e8.html?m=200904' title='April 2009'>April 2009</a></li>
+	<li><a href='index10a5.html?m=200903' title='March 2009'>March 2009</a></li>
+	<li><a href='index8988.html?m=200902' title='February 2009'>February 2009</a></li>
+	<li><a href='index1419.html?m=200901' title='January 2009'>January 2009</a></li>
+	<li><a href='index7866.html?m=200812' title='December 2008'>December 2008</a></li>
+	<li><a href='index55f6.html?m=200811' title='November 2008'>November 2008</a></li>
+	<li><a href='indexa7bc.html?m=200810' title='October 2008'>October 2008</a></li>
+	<li><a href='indexe77c.html?m=200809' title='September 2008'>September 2008</a></li>
+	<li><a href='indexcffc.html?m=200808' title='August 2008'>August 2008</a></li>
+	<li><a href='index0e62.html?m=200807' title='July 2008'>July 2008</a></li>
+	<li><a href='indexfda7.html?m=200806' title='June 2008'>June 2008</a></li>
+	<li><a href='index7d64.html?m=200805' title='May 2008'>May 2008</a></li>
+	<li><a href='index94dd.html?m=200804' title='April 2008'>April 2008</a></li>
+	<li><a href='index9631.html?m=200803' title='March 2008'>March 2008</a></li>
+	<li><a href='indexdd52.html?m=200802' title='February 2008'>February 2008</a></li>
+	<li><a href='index21ee.html?m=200801' title='January 2008'>January 2008</a></li>
+	<li><a href='index363c.html?m=200712' title='December 2007'>December 2007</a></li>
+	<li><a href='index7493.html?m=200711' title='November 2007'>November 2007</a></li>
+	<li><a href='index93a7.html?m=200710' title='October 2007'>October 2007</a></li>
+	<li><a href='index4ca8.html?m=200709' title='September 2007'>September 2007</a></li>
+	<li><a href='index6124.html?m=200708' title='August 2007'>August 2007</a></li>
+	<li><a href='index6013.html?m=200707' title='July 2007'>July 2007</a></li>
+	<li><a href='index2ab6.html?m=200706' title='June 2007'>June 2007</a></li>
+	<li><a href='index44f0.html?m=200705' title='May 2007'>May 2007</a></li>
+	<li><a href='indexf0b4.html?m=200704' title='April 2007'>April 2007</a></li>
+	<li><a href='index481d.html?m=200703' title='March 2007'>March 2007</a></li>
+	<li><a href='indexcbea.html?m=200702' title='February 2007'>February 2007</a></li>
+	<li><a href='index9cdc.html?m=200701' title='January 2007'>January 2007</a></li>
+	<li><a href='index3ea4.html?m=200612' title='December 2006'>December 2006</a></li>
+	<li><a href='index67ca.html?m=200611' title='November 2006'>November 2006</a></li>
+	<li><a href='indexff49.html?m=200610' title='October 2006'>October 2006</a></li>
+	<li><a href='index611c.html?m=200609' title='September 2006'>September 2006</a></li>
+	<li><a href='index9a21.html?m=200608' title='August 2006'>August 2006</a></li>
+	<li><a href='index3ee9.html?m=200607' title='July 2006'>July 2006</a></li>
+	<li><a href='indexe13a.html?m=200606' title='June 2006'>June 2006</a></li>
+</ul>
+</div>
+
+<div class="aisLeftNav">
+	</div>
+
+<div class="aisLeftNav">
+<h2>Books</h2>
+<iframe src="http://rcm.amazon.com/e/cm?t=adventures0d2-20&amp;o=1&amp;p=8&amp;l=as1&amp;asins=0764526413&amp;fc1=000000&amp;IS2=1&amp;lt1=_blank&amp;lc1=0000ff&amp;bc1=000000&amp;bg1=ffffff&amp;f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" name="I5" id="I5"></iframe>
+<br/>
+<iframe src="http://rcm.amazon.com/e/cm?t=adventures0d2-20&amp;o=1&amp;p=8&amp;l=as1&amp;asins=0201633612&amp;fc1=000000&amp;IS2=1&amp;lt1=_blank&amp;lc1=0000ff&amp;bc1=000000&amp;bg1=ffffff&amp;f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" name="I6" id="I6"></iframe>
+<br/>
+<iframe src="http://rcm.amazon.com/e/cm?t=adventures0d2-20&amp;o=1&amp;p=8&amp;l=as1&amp;asins=0136291554&amp;fc1=000000&amp;IS2=1&amp;lt1=_blank&amp;lc1=0000ff&amp;bc1=000000&amp;bg1=ffffff&amp;f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" name="I7" id="I7"></iframe>
+<br/>
+<iframe src="http://rcm.amazon.com/e/cm?t=adventures0d2-20&amp;o=1&amp;p=8&amp;l=as1&amp;asins=1888009195&amp;fc1=000000&amp;IS2=1&amp;lt1=_blank&amp;lc1=0000ff&amp;bc1=000000&amp;bg1=ffffff&amp;f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" name="I8" id="I8"></iframe>
+</div>
+<div class="aisLeftNav">
+<h2>Meta</h2>
+<ul>
+		<li><a href="wp-login.html">Login</a></li>
+	<li><a href="http://validator.w3.org/check/referer" title="This page validates as XHTML 1.0 Transitional">Valid <abbr title="eXtensible HyperText Markup Language">XHTML</abbr></a></li>
+	<li><a href="http://gmpg.org/xfn/"><abbr title="XHTML Friends Network">XFN</abbr></a></li>
+	<li><a href="http://wordpress.org/" title="Powered by WordPress, state-of-the-art semantic personal publishing platform.">WordPress</a></li>
+	</ul>
+</div>
+<div class="aisLeftContent">
+<h2>Community</h2>
+<ul>
+	<script type="text/javascript" src="../../localhost/embed/92q2bbma.js"></script>
+</ul>
+</div>
+
+</div></div></div>
+</div>		</td>
+		<td>
+
+	<div id="content" class="narrowcolumn">
+
+		
+		 		<h2 class="pagetitle">Archive for the &#8216;Patterns&#8217; Category</h2>
+
+ 	  
+
+		<div class="navigation">
+			<div class="alignleft"><a href="index731a.html?cat=6&amp;paged=5">&laquo; Previous Entries</a></div>
+			<div class="alignright"><a href="indexb4fb.html?cat=6&amp;paged=3">Next Entries &raquo;</a></div>
+		</div>
+
+				<div class="post">
+				<h3 id="post-132"><a href="index31a3.html?p=132" rel="bookmark" title="Permanent Link to Subclipse: Problem Occurred. Cannot Checkout.">Subclipse: Problem Occurred. Cannot Checkout.</a></h3>
+				<small>Wednesday, June 20th, 2007</small>
+
+				<div class="entry">
+					<p>Here's one for the record books.</p>
+<p><a atomicselection="true" href="../../www.adventuresinsoftware.com/blog/wp-content/uploads/2007/06/subclipse-problem-occurred.png"><img border="0" width="532" src="../../www.adventuresinsoftware.com/blog/wp-content/uploads/2007/06/subclipse-problem-occurred-thumb.png" alt="Problem Occurred: cannot checkout" height="188" style="border: 0px" /></a></p>
+<p>I have just tried to import a Team Project Set into Eclipse from an SVN repository using the Subclipse plugin. Checking the Console window in Eclipse, I see that the problem was an obstructed update. I already had a project directory by that name. I need to delete it first.</p>
+<p>So the plugin already knew what the problem was. After all, it put the error message in a different window. It could have at least displayed it in the popup.</p>
+<p>In this situation, there are two correct actions for the software:</p>
+<ol>
+<li>Fix the problem itself (after prompting, since this would be a destructive fix), or</li>
+<li>Tell me how to fix the problem.</li>
+</ol>
+<p>Those are the only correct options, but at least displaying the error message would be a start.</p>
+<p>Eclipse's plugin architecture may be to blame for this one. It is difficult to get different components to work together, especially if they were written by entirely different teams and integrated only on the user's desktop. Perhaps there was no easy way for the plugin to give its host enough information. Composite applications often turn into Frankenstein's Monsters. But Eclipse is usually better integrated than this.</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="index81ea.html?cat=3" title="View all posts in Error messages" rel="category">Error messages</a>,  <a href="indexb0b7.html?cat=6" title="View all posts in Patterns" rel="category">Patterns</a>,  <a href="indexd65e.html?cat=8" title="View all posts in User Interface" rel="category">User Interface</a> |   <a href="index31a3.html?p=132#respond" title="Comment on Subclipse: Problem Occurred. Cannot Checkout.">No Comments &#187;</a></p>
+
+			</div>
+
+				<div class="post">
+				<h3 id="post-128"><a href="index913e.html?p=128" rel="bookmark" title="Permanent Link to Three degrees of freedom in ant">Three degrees of freedom in ant</a></h3>
+				<small>Friday, June 15th, 2007</small>
+
+				<div class="entry">
+					<p>I've just finished updating the build process at Handmark (again). This time, the goal was auditability and repeatability. We wanted to have a permanent record of exactly which revision was built when, and the ability to quickly get back to that exact build.</p>
+<p>The prior build process had two degrees of freedom. On one axis, we have the set of projects. On the other, we have the set of build steps. We represented these two degrees of freedom with two separate ant scripts. <em>build.xml</em> lists the many different jar and war files and the relationships among them. It calls <em>actions.xml</em> via the <em>&lt;ant&gt;</em> task, which lists the build steps like clean, get, compile, unit test, jar, and war. For details, please see <a href="index5c90.html?p=35">Separation of Concerns in Ant</a>.</p>
+<p>The command line to run the build took the branch and revision, like this:</p>
+<pre>ant -Dbranch=trunk -Drevision=24516 clean,war</pre>
+<p>It would pull the source code and build the war files. When it was finished, the branch and revision number were embedded within the manifest of the war files, but there was no permanent record that this build occurred. In addition, if we wanted to go back to a previous build, we would have to find the branch and revision number and reissue the command. And to be absolutely safe, we would have to pull the previous versions of the build scripts and properties files to ensure that we got exactly the same results.</p>
+<p><strong>Here's my solution</strong><br />
+I wrapped this build process within another layer. We now have a build script that loads a file called <em>tag.properties</em>. This file contains two lines:</p>
+<pre>branch=trunkrevision=24516</pre>
+<p>It then creates a temporary working directory, pulls the build scripts by that branch and revision into that directory, and launches them.</p>
+<pre>&lt;!-- Load the tag file. --&gt;&lt;property prefix="tag" file="${basedir}/tag.properties" /&gt;</pre>
+<pre>&lt;!-- Get the project files. --&gt;&lt;svn username="${username}" password="${password}"&gt;    &lt;export srcUrl="${svnbase}/${tag.branch}/Projects/MyProject/" revision="${tag.revision}" destPath="${work}" /&gt;&lt;/svn&gt;
+
+&lt;!-- Build the war files. --&gt;&lt;ant dir="${work}" target="war" inheritall="false"&gt;    &lt;property name="branch" value="${tag.branch}" /&gt;    &lt;property name="revision" value="${tag.revision}" /&gt;    &lt;property name="username" value="${username}" /&gt;    &lt;property name="password" value="${password}" /&gt;    &lt;property name="thirdparty" location="${thirdparty}" /&gt;&lt;/ant&gt;</pre>
+<p>Now we can change <em>tag.properties</em> and check it in. We can go back to any prior build by checking out the <em>tag.properties</em> file that was current at the time. We can be sure that the build process is repeatable because even the build scripts themselves are pulled by revision. And best of all is the new command line:</p>
+<pre>ant</pre>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="indexfa64.html?cat=24" title="View all posts in Ant" rel="category">Ant</a>,  <a href="indexb0b7.html?cat=6" title="View all posts in Patterns" rel="category">Patterns</a> |   <a href="index913e.html?p=128#respond" title="Comment on Three degrees of freedom in ant">No Comments &#187;</a></p>
+
+			</div>
+
+				<div class="post">
+				<h3 id="post-120"><a href="index2c90.html?p=120" rel="bookmark" title="Permanent Link to Record Transactions, not Balances">Record Transactions, not Balances</a></h3>
+				<small>Friday, May 18th, 2007</small>
+
+				<div class="entry">
+					<p>The typical example of an atomic transaction is a financial transfer. You want to make sure that you reduce the balance of one account by $100 and increase the balance of another account by $100 atomically. It is incorrect for one to occur without the other. And so, the example shows us, you wrap these two actions within one atomic transaction.</p>
+<p>The problem is, this example is completely bogus. Banks don't work this way. They record individual transactions, not account balances.</p>
+<p>I learned this lesson the hard way when I worked on the eCard product at Radiant Systems -- a refillable gift-card service. Storing account balances is a Bad Idea. Here's what can go wrong.</p>
+<p><strong>Select/Update</strong><br />
+In order to adjust an account balance stored directly in the database, you have to issue two SQL statements: SELECT the current balance, perform the calculation, then UPDATE to the new balance. (Sure, you could do this with the one statement "UPDATE SET balance=balance-100", but then you couldn't check for overdrafts.) Even within a database transaction, there is the possibility that the record is changed between the SELECT and the UPDATE. This could happen any time the transaction isolation level is set to something lower than the most paranoid "serializable". To fix this, raise the level, or apply a query hint to the SELECT statement, such as "for update".</p>
+<p>Whichever solution you choose, you have just increased the locking in your database, and decreased concurrency and scalability. And we have seen that occasionally, even these tight restrictions don't work as advertised. There are still some incorrect balances that we can't explain to this day.</p>
+<p><strong>Reconciliation</strong><br />
+When you have a distributed system, such as Radiant's eCard in caching mode, you always have to bring the transactions together at some point and verify correct balances. This is the same process that you go through each month when you balance your check book, only at a larger scale and with greater automation. Reconciling balances is simply impossible. You need to identify and compare individual transactions (think check numbers), and add missing transactions to each list.</p>
+<p><strong>Diagnostics</strong><br />
+When things go wrong, you often need to go back through the transaction history to see where it diverges. If you don't have this history, then you obviously have a problem. But even if you just keep a log in parallel with a balance (as we did at Radiant), you will have a hard time determining exactly which of those transactions was applied incorrectly.</p>
+<p>The best practice is to keep a running list of transactions by account. Occasionally, you can snapshot and archive those transactions, like an accountant closing the books each quarter. Then to find the current balance of an account, apply all recent transactions to the snapshot. This solution is scalable, distributable, and auditable.</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="indexc728.html?cat=7" title="View all posts in Databases" rel="category">Databases</a>,  <a href="indexb60a.html?cat=27" title="View all posts in Historic Modeling" rel="category">Historic Modeling</a>,  <a href="indexb0b7.html?cat=6" title="View all posts in Patterns" rel="category">Patterns</a> |   <a href="index2c90.html?p=120#respond" title="Comment on Record Transactions, not Balances">No Comments &#187;</a></p>
+
+			</div>
+
+				<div class="post">
+				<h3 id="post-112"><a href="index8820.html?p=112" rel="bookmark" title="Permanent Link to Constrained dot-chaining">Constrained dot-chaining</a></h3>
+				<small>Thursday, April 26th, 2007</small>
+
+				<div class="entry">
+					<p>For my recent XML parsing library -- <a href="index3f5a.html?p=100">DeclarativeXMLParser</a> -- I used a coding technique that I call constrained dot-chaining. This technique is useful for creating structures in code that more concisely express their intent.</p>
+<p>Simple dot-chaining is accomplished by declaring methods that end in "return this". For example, StringBuffer in Java and StringBuilder in C# both facilitate dot-chaining by returning "this" from the "append" (or "Append" in C#) method. Thus you can chain a series of method calls as in:</p>
+<pre>String greeting = new StringBuffer()
+  .append("Hello, ")
+  .append(name)
+  .append("!")
+  .toString();</pre>
+<p>Notice the use of the dot at the beginning of the line. As compared to the more typical dot at the end of the line, this lends more symmetry to dot-chained code and works better with intellisense.</p>
+<p>Dot-chaining is especially powerful when you pass the resulting object as a parameter. The object can be created and initialized in-line with no semicolon. No variable needs to be declared.</p>
+<pre>throw new MyException(new StringBuffer()
+  .append("Failed to open  file ")
+  .append(fileName)
+  .append(": ")
+  .append(e.getMessage())
+  .toString(), e);</pre>
+<p>Constrained dot-chaining is useful when the order of operations should be restricted. For example, in the DeclarativeXMLParser, each element will be initialized before the attributes are matched. The attributes will be matched before the Begin delegate is called. Begin will precede the sub elements, and End will follow all. So you want the code to look like this:</p>
+<pre>new Element()
+  .Init(delegate() {...})
+  .RequiredAttribute("id", idAttribute)
+  .IgnoreOtherAttributes()
+  .Begin(delegate() {...})
+  .One("subElement", new Element()
+    .RequiredAttribute("name", nameAttribute)
+  )
+  .End(delegate() {...});</pre>
+<p>Unconstrained dot-chaining would allow these operations to be declared in any order. While that wouldn't confuse the parser engine, this would most certainly confuse anyone reading the code. Constraints are required to force this code to be more readable.</p>
+<p><strong>Here's my solution</strong><br />
+The Element class is only the leaf of a long line of inherited classes. It directly supplies the Init method, which returns Element. It's base class is ElementWithAttributes, which supplies all of the attribute related methods. ElementWithAttributes in turn inherits ElementWithFilter, which supplies the Filter method, and so on up the hierarchy until you reach ElementWithEnd.</p>
+<p>The idea is simple. Once you go up the inheritance hierarchy, you can't go back down. This forces you to call the methods in the prescribed order. Inheritance allows you to skip levels if you want to, but you can't backtrack.</p>
+<p>Each level of the hierarchy returns its own type for methods that can be called more than once, and its base class type for methods that can be called only once. So, for example, once you call Begin, you are now at the ElementWithContent level. You cannot call Begin again because you are too high up in the tree.</p>
+<p>Download the code for more details. I hope you find this technique as useful as I have.</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="index8e7f.html?cat=19" title="View all posts in C#" rel="category">C#</a>,  <a href="index5b0d.html?cat=12" title="View all posts in Java" rel="category">Java</a>,  <a href="indexb0b7.html?cat=6" title="View all posts in Patterns" rel="category">Patterns</a> |   <a href="index8820.html?p=112#respond" title="Comment on Constrained dot-chaining">No Comments &#187;</a></p>
+
+			</div>
+
+				<div class="post">
+				<h3 id="post-89"><a href="index3fbb.html?p=89" rel="bookmark" title="Permanent Link to Update Controls .NET Released">Update Controls .NET Released</a></h3>
+				<small>Sunday, February 25th, 2007</small>
+
+				<div class="entry">
+					<p>I am pleased to announce the release of a new product line and web site. <a href="http://updatecontrols.net/">Update Controls .NET</a> is a suite of Windows Forms controls that automatically update themselves. A short demonstration loop is up on the main page right now, and more detailed videos will be posted within the next few weeks.</p>
+<p>In traditional Windows Forms programming, you have to set properties on the controls in order to populate them with data. When the data changes, you have to set those properties again. Usually, you will end up writing one method that sets all of the control properties whether they need it or not, and call that method anytime something happens.</p>
+<p>With Update Controls, you don't set properties. Instead, you handle events that get and set the data. For example, the UpdateTextBox control fires GetText whenever its text is out-of-date. You handle that event and return the text that it should display. When the underlying data changes, the control fired the event again.</p>
+<p>It may seem like magic, but it's really quite simple. You put Dynamic sentries in your data objects that keep track of each time your properties are accessed. Whenever a property is accessed during the course of a GetText event, that control's text is linked to that property. When the property changes, the control is out-of-date.</p>
+<p>Go download the library and try it for yourself. Most people who have tried it can't bring themselves to write Windows Forms without it.</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="indexb0b7.html?cat=6" title="View all posts in Patterns" rel="category">Patterns</a>,  <a href="indexd65e.html?cat=8" title="View all posts in User Interface" rel="category">User Interface</a> |   <a href="index3fbb.html?p=89#respond" title="Comment on Update Controls .NET Released">No Comments &#187;</a></p>
+
+			</div>
+
+				<div class="post">
+				<h3 id="post-83"><a href="index55e4.html?p=83" rel="bookmark" title="Permanent Link to Delayed Identity in iTunes">Delayed Identity in iTunes</a></h3>
+				<small>Thursday, February 1st, 2007</small>
+
+				<div class="entry">
+					<p>I use iTunes to subscribe to and sync my podcasts. I organize my podcasts in a playlist so that I can listen to them on my daily commute. This works very well in the car, as I don't have to take my attention from the road to find the next episode to play. However, the experience at the computer is not as good as it could be.</p>
+<p>The Podcast section of iTunes contains a list of all my subscriptions. I start iTunes every morning, flip to the Podcast section, and hit the "Refresh" button. (Why iTunes doesn't install as a service and download my shows while I'm sleeping is a question for another post.) First it checks all of my subscriptions for new episodes. As it finds them, it displays the episode name and queues up the download. Before the download completes, the episode name is grayed out.</p>
+<p>My goal is to choose the shows I want to listen to that day and drop them into the playlist in my chosen order. However, I can't do that until the download completes. So instead I have to leave the computer, eat breakfast, and return only after all the queued shows have (hopefully) downloaded. It would be much better to get it all done at once.</p>
+<p><strong>Here's my solution</strong><br />
+An iTunes playlist is not a collection of content. It is a collection of references -- identities. iTunes already knows the identity of the podcast episode before it downloads. It can display the name, it can request the content from the remote server, and it can track the download status. All of these things require that it has a concept of identity for the show. It should be possible to drag an episode to the playlist before it finishes downloading.</p>
+<p>iTunes has recently added a page that displays the download queue. This is a fantastic feature. But again, you cannot drag a podcast from this view into a playlist, even though this view is little more than a list of identities.</p>
+<p>Fellow programmers, how can we learn from this oversight? When designing our applications we should be aware of the difference between an object and its identity. If we are loading a list from the database to display to the user, it is necessary to load all of the content, or is the identity sufficient? If we are attaching a document to a message, do we really need to copy the entire file or can we just include a universal path? Identity awareness is one of those little things that leads to a better user experience.</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="indexb0b7.html?cat=6" title="View all posts in Patterns" rel="category">Patterns</a>,  <a href="indexd65e.html?cat=8" title="View all posts in User Interface" rel="category">User Interface</a> |   <a href="index55e4.html?p=83#respond" title="Comment on Delayed Identity in iTunes">No Comments &#187;</a></p>
+
+			</div>
+
+				<div class="post">
+				<h3 id="post-66"><a href="index4f61.html?p=66" rel="bookmark" title="Permanent Link to Episode 4: Identity-Based Patterns">Episode 4: Identity-Based Patterns</a></h3>
+				<small>Tuesday, December 12th, 2006</small>
+
+				<div class="entry">
+					<p><a href="http://media.libsyn.com/media/ais/AiS4.mp3">Listen Now</a></p>
+<p>Java Enums:<br />
+<a href="http://www.javaworld.com/javaworld/jw-07-1997/jw-07-enumerated.html">http://www.javaworld.com/javaworld/jw-07-1997/jw-07-enumerated.html</a><br />
+<a href="http://www.javaworld.com/javaworld/javatips/jw-javatip122.html">http://www.javaworld.com/javaworld/javatips/jw-javatip122.html</a><br />
+<a href="http://java.sun.com/j2se/1.5.0/docs/guide/language/enums.html">http://java.sun.com/j2se/1.5.0/docs/guide/language/enums.html</a></p>
+<p>Command:<br />
+<a href="http://en.wikipedia.org/wiki/Command_pattern">http://en.wikipedia.org/wiki/Command_pattern</a></p>
+<p>Easy Mock (Java only)<br />
+<a href="http://www.easymock.org/">http://www.easymock.org/</a></p>
+<p>NMock<br />
+<a href="http://nmock.org/">http://nmock.org/</a></p>
+<p>.Net port of Easy Mock<br />
+<a href="http://www.easymock.net/">http://www.easymock.net/</a></p>
+<p>Action command object:<br />
+<a href="http://java.sun.com/j2se/1.5.0/docs/api/javax/swing/Action.html">http://java.sun.com/j2se/1.5.0/docs/api/javax/swing/Action.html</a></p>
+<p>Strategy:<br />
+<a href="http://en.wikipedia.org/wiki/Strategy_pattern">http://en.wikipedia.org/wiki/Strategy_pattern</a></p>
+<p>State:<br />
+<a href="http://en.wikipedia.org/wiki/State_pattern">http://en.wikipedia.org/wiki/State_pattern</a></p>
+<p>Lex<br />
+<a href="http://en.wikipedia.org/wiki/Lex_programming_tool">http://en.wikipedia.org/wiki/Lex_programming_tool</a></p>
+<p>Microsoft Windows Workflow Foundation<br />
+<a href="http://msdn.microsoft.com/workflow">http://msdn.microsoft.com/workflow</a></p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="indexb0b7.html?cat=6" title="View all posts in Patterns" rel="category">Patterns</a>,  <a href="indexb5e7.html?cat=15" title="View all posts in Shows" rel="category">Shows</a> |   <a href="index4f61.html?p=66#respond" title="Comment on Episode 4: Identity-Based Patterns">No Comments &#187;</a></p>
+
+			</div>
+
+				<div class="post">
+				<h3 id="post-63"><a href="index2cce.html?p=63" rel="bookmark" title="Permanent Link to Episode 3: Identity">Episode 3: Identity</a></h3>
+				<small>Tuesday, December 5th, 2006</small>
+
+				<div class="entry">
+					<p><a href="http://media.libsyn.com/media/ais/AiS3.mp3">Listen Now</a></p>
+<p>Michael, Raymond, and Charles discuss the fundamental law of object -oriented programming: identity.</p>
+<p><a href="http://en.wikipedia.org/wiki/James_Rumbaugh">James Rumbaugh</a>, <a title="Michael Blaha" class="new" href="http://en.wikipedia.org/w/index.php?title=Michael_Blaha&amp;action=edit">Michael Blaha</a>, <a title="William Premerlani" class="new" href="http://en.wikipedia.org/w/index.php?title=William_Premerlani&amp;action=edit">William Premerlani</a>, <a title="Frederick Eddy" class="new" href="http://en.wikipedia.org/w/index.php?title=Frederick_Eddy&amp;action=edit">Frederick Eddy</a>, <a title="William Lorensen" class="new" href="http://en.wikipedia.org/w/index.php?title=William_Lorensen&amp;action=edit">William Lorensen</a>: <em>Object-Oriented Modeling and Design</em>, Prentice Hall, <a class="internal" href="http://en.wikipedia.org/w/index.php?title=Special:Booksources&amp;isbn=0136298419">ISBN 0-13-629841-9</a></p>
+<p><a href="http://en.wikipedia.org/wiki/Identity_(object-oriented_programming)">http://en.wikipedia.org/wiki/Identity_%28object-oriented_programming%29</a></p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="indexb0b7.html?cat=6" title="View all posts in Patterns" rel="category">Patterns</a>,  <a href="indexb5e7.html?cat=15" title="View all posts in Shows" rel="category">Shows</a> |   <a href="index2cce.html?p=63#respond" title="Comment on Episode 3: Identity">No Comments &#187;</a></p>
+
+			</div>
+
+				<div class="post">
+				<h3 id="post-61"><a href="index094d.html?p=61" rel="bookmark" title="Permanent Link to The Work Queue Pattern">The Work Queue Pattern</a></h3>
+				<small>Thursday, November 30th, 2006</small>
+
+				<div class="entry">
+					<p>In each of the Enterprise systems I've worked on, we've had background processes to massage data. They could be report aggregators, media renderers, or message processors. The features that they have in common are:</p>
+<ul>
+<li>Work items may not be lost.</li>
+<li>Work must not be interrupted.</li>
+<li>Work items are independent of one-another.</li>
+<li>Work items may not be repeated.</li>
+</ul>
+<p>The pattern that best implements these features is a work queue. A work queue has a publish-subscribe queue of work items serviced by redundant processors. The durability of the queue ensures that work items are not lost. Processors are allowed to work in parallel since work items are independent. That redundancy ensures that work continues even if a processor goes down. And proper use of the queue ensures that no two processors get the same work item.</p>
+<p>This problem could be solved with JMS or MSMQ, but in my experience these solutions imposed undesirable requirements. JMS marries your code to J2EE, while MSMQ requires a Microsoft server environment. I prefer to keep my options open. Fortunately, it is not difficult to implement a work queue directly in the database of your choice.</p>
+<p><span style="font-weight: bold">Here's my solution</span><br />
+First you have to define a work queue table. In addition to columns that describe the work to be done, this table must also have a column that identifies the processor that is performing the work. A foreign key to a processor table works well. The processor table has a primary key (the processor ID) and the name of the machine running the process.</p>
+<p>When a processor is ready to perform some work, it must query the work queue table twice. First it looks for any available work item, and then it ensures that no other processor has claimed that work item. This two-step query is the most effective way I've found to detect and resolve collisions let me explain in more detail.</p>
+<p>The first query is performed with the transaction isolation level set to "read uncommitted". This allows the query to see any work queue items that are currently being claimed. The result of this query is the work item ID that the processor will try to claim for itself.</p>
+<pre>SET TRANSACTION ISOLATION LEVEL READ UNCOMMITTED;
+SET @id = (SELECT WorkItemID FROM WorkQueue WHERE ProcessorID=NULL);</pre>
+<p>The second query is performed with the standard transaction isolation level of "read committed". It both locks the record and verifies that the work has not yet been claimed.</p>
+<pre>SET TRANSACTION ISOLATION LEVEL READ COMMITTED;
+SELECT ProcessorID FROM WorkQueue (UPDATE) WHERE WorkItemID=@id;</pre>
+<p>If the row is found and the processor ID comes back NULL, then you know that the work has not yet been claimed. You may now update the ProcessorID and commit the transaction.</p>
+<p>However, if the row is not found, then the work has already been completed and deleted from the queue. If the processor ID is not NULL, then a collision has occurred. Another processor is already busy working on that item. So you just commit your transaction and try again.</p>
+<p>It took several days of trial-and-error to get the pattern right the first time. But now that I have it, it is easy to create a work queue without the overhead of JMS or MSMQ.</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="indexc728.html?cat=7" title="View all posts in Databases" rel="category">Databases</a>,  <a href="indexb0b7.html?cat=6" title="View all posts in Patterns" rel="category">Patterns</a>,  <a href="indexb31a.html?cat=1" title="View all posts in Uncategorized" rel="category">Uncategorized</a> |   <a href="index094d.html?p=61#respond" title="Comment on The Work Queue Pattern">No Comments &#187;</a></p>
+
+			</div>
+
+				<div class="post">
+				<h3 id="post-60"><a href="index0721.html?p=60" rel="bookmark" title="Permanent Link to Episode 2: Design Patterns">Episode 2: Design Patterns</a></h3>
+				<small>Tuesday, November 28th, 2006</small>
+
+				<div class="entry">
+					<p><a href="http://media.libsyn.com/media/ais/AiS2.mp3">Listen to the show</a></p>
+<p>Charles Martin returns (<a href="http://webcudgel.com/">http://webcudgel.com</a>) and Raymond Jensen joins in (<a href="http://jensensoftware.com/">http://jensensoftware.com</a>).</p>
+<ol>
+<li>Erich Gamma, et al. Design Patterns. a.k.a. Gang of Four: <a href="http://en.wikipedia.org/wiki/Design_Patterns">http://en.wikipedia.org/wiki/Design_Patterns</a></li>
+<li>Martin Fowler. Patterns of Enterprise Application Architecture: <a href="http://en.wikipedia.org/wiki/Martin_Fowler">http://en.wikipedia.org/wiki/Martin_Fowler</a></li>
+<li>Stelting and Maassen. Applied Java Patterns.</li>
+<li>Steven John Metsker. Design Patterns in C#.</li>
+<li>Ron Jacobs. ARCast. Patterns and Anti-Patterns for SOA. <a href="http://arcast.net/">http://arcast.net</a></li>
+<li><a href="http://www.codeproject.com/">http://www.codeproject.com/</a></li>
+<li>Microsoft Patterns and Practices. <a href="http://msdn.microsoft.com/practices/">http://msdn.microsoft.com/practices/</a></li>
+<li><a href="http://www.patternshare.org/">http://www.patternshare.org/</a></li>
+</ol>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="indexb0b7.html?cat=6" title="View all posts in Patterns" rel="category">Patterns</a>,  <a href="indexb5e7.html?cat=15" title="View all posts in Shows" rel="category">Shows</a> |   <a href="index0721.html?p=60#respond" title="Comment on Episode 2: Design Patterns">No Comments &#187;</a></p>
+
+			</div>
+
+		
+		<div class="navigation">
+			<div class="alignleft"><a href="index731a.html?cat=6&amp;paged=5">&laquo; Previous Entries</a></div>
+			<div class="alignright"><a href="indexb4fb.html?cat=6&amp;paged=3">Next Entries &raquo;</a></div>
+		</div>
+
+	
+	</div>
+		</td>
+	</tr>
+</table>
+
+<hr />
+<div id="footer">
+<!-- If you'd like to support WordPress, having the "powered by" link someone on your blog is the best way, it's our only promotion or advertising. -->
+	<p>
+		Adventures in Software is proudly powered by 
+		<a href="http://wordpress.org/">WordPress</a>
+		<br /><a href="indexd784.html?feed=rss2">Entries (RSS)</a>
+		and <a href="indexa6da.html?feed=comments-rss2">Comments (RSS)</a>.
+		<!-- 17 queries. 0.337 seconds. -->
+	</p>
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-389401-3");
+pageTracker._trackPageview();
+} catch(err) {}</script></div>
+
+<!-- Gorgeous design by Michael Heilemann - http://binarybonsai.com/kubrick/ -->
+
+		<div id="sk2-footer" style="color:#FFF; background-color:#444; padding: 3px 2px 3px 2px; border-top: #888 solid 1px;">This blog is protected by <a href="http://unknowngenius.com/blog/" title="Dave">dr Dave</a>'s <strong><a href="http://unknowngenius.com/blog/wordpress/spam-karma/" title="SK2">Spam Karma 2</a></strong>: <strong>274531</strong>  Spams eaten and counting...</div><script type="text/javascript" src="replies.js"></script>
+<script type="text/javascript" src="blogger.js"></script>
+<script type="text/javascript" src="http://twitter.com/statuses/user_timeline/michaellperry.json?callback=twitterCallback2&amp;count=5"></script>
+<script type="text/javascript" src="http://search.twitter.com/search.json?q=@michaellperry&amp;callback=twitterCallbackReplies&amp;rpp=5"></script>
+</body>
+
+<!-- Mirrored from adventuresinsoftware.com/blog/?cat=6&paged=4 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 Jan 2017 13:09:56 GMT -->
+</html>

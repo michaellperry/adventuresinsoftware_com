@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?><!-- generator="wordpress/2.3.3" -->
+<rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	>
+<channel>
+	<title>Comments on: MySQL row_count() is Broken</title>
+	<link>http://adventuresinsoftware.com/blog/?p=64</link>
+	<description>Lessons learned on the road to quality computing</description>
+	<pubDate>Fri, 13 Jan 2017 13:02:12 +0000</pubDate>
+	<generator>http://wordpress.org/?v=2.3.3</generator>
+		<item>
+		<title>By: lexray</title>
+		<link>http://adventuresinsoftware.com/blog/?p=64#comment-13422</link>
+		<dc:creator>lexray</dc:creator>
+		<pubDate>Wed, 19 Mar 2008 13:37:52 +0000</pubDate>
+		<guid>http://adventuresinsoftware.com/blog/?p=64#comment-13422</guid>
+		<description>Hi,
+
+well, I just assume that in most cases a record exists already, hence the most performant approach would be:
+1. update
+2. if update fails, insert
+
+and not
+
+1. insert
+2. if insert fails, update
+
+It's a pitty, there's nothing in mysql like "UPDATE .... ON NOT FOUND INSERT" instead of "INSERT … ON DUPLICATE KEY UPDATE" - or just a "SELECT ROW_MATCHED()"..
+
+The decribed workaround above (using row_count after updating a timestamp manually) is suboptimal, because it forces the db-engine to perform an "IO-write-operation", where it would be not needed at all (if nothing but the timestamp is changed).
+However, this workaround seems to be the most effective for now. Thanks for that.
+
+I'm lucky to develop in java, being able to use the Connector/J driver (5.1.6): java.sql.PreparedStatement.executeUpdate() returns "rows matched" and not "rows affected/changed" -  java.sql.PreparedStatement.getUpdateCount() does the same after execution of an DML statement.
+Surprisingly executing "select row_count();" through Connector/J returns "rows matched" in it's resultset as well, and not as expected "rows affected/changed", like the Query Browser does. Well, it's all about (in)consistency... :-(
+I do not know about other driver behavior, but it seems to be worth to check it...</description>
+		<content:encoded><![CDATA[<p>Hi,</p>
+<p>well, I just assume that in most cases a record exists already, hence the most performant approach would be:<br />
+1. update<br />
+2. if update fails, insert</p>
+<p>and not</p>
+<p>1. insert<br />
+2. if insert fails, update</p>
+<p>It's a pitty, there's nothing in mysql like "UPDATE .... ON NOT FOUND INSERT" instead of "INSERT … ON DUPLICATE KEY UPDATE" - or just a "SELECT ROW_MATCHED()"..</p>
+<p>The decribed workaround above (using row_count after updating a timestamp manually) is suboptimal, because it forces the db-engine to perform an "IO-write-operation", where it would be not needed at all (if nothing but the timestamp is changed).<br />
+However, this workaround seems to be the most effective for now. Thanks for that.</p>
+<p>I'm lucky to develop in java, being able to use the Connector/J driver (5.1.6): java.sql.PreparedStatement.executeUpdate() returns "rows matched" and not "rows affected/changed" -  java.sql.PreparedStatement.getUpdateCount() does the same after execution of an DML statement.<br />
+Surprisingly executing "select row_count();" through Connector/J returns "rows matched" in it's resultset as well, and not as expected "rows affected/changed", like the Query Browser does. Well, it's all about (in)consistency... <img src='http://adventuresinsoftware.com/blog/wp-includes/images/smilies/icon_sad.gif' alt=':-(' class='wp-smiley' /><br />
+I do not know about other driver behavior, but it seems to be worth to check it...</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Marnen Laibow-Koser</title>
+		<link>http://adventuresinsoftware.com/blog/?p=64#comment-8262</link>
+		<dc:creator>Marnen Laibow-Koser</dc:creator>
+		<pubDate>Mon, 22 Oct 2007 22:44:04 +0000</pubDate>
+		<guid>http://adventuresinsoftware.com/blog/?p=64#comment-8262</guid>
+		<description>Just because it doesn't work the way you think it should doesn't mean it's broken. It may be, but I'm not convinced from what you've written here.
+
+And for the use case you specify, there's really no need to use row_count at all. Just use INSERT ... ON DUPLICATE KEY UPDATE. In other cases, COUNT() and UPDATE will work fine. If you wrap them in a transaction, concurrent processes will not cause problems, no matter what the isolation level AFAIK.</description>
+		<content:encoded><![CDATA[<p>Just because it doesn't work the way you think it should doesn't mean it's broken. It may be, but I'm not convinced from what you've written here.</p>
+<p>And for the use case you specify, there's really no need to use row_count at all. Just use INSERT ... ON DUPLICATE KEY UPDATE. In other cases, COUNT() and UPDATE will work fine. If you wrap them in a transaction, concurrent processes will not cause problems, no matter what the isolation level AFAIK.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Michael L Perry</title>
+		<link>http://adventuresinsoftware.com/blog/?p=64#comment-509</link>
+		<dc:creator>Michael L Perry</dc:creator>
+		<pubDate>Fri, 08 Dec 2006 02:10:16 +0000</pubDate>
+		<guid>http://adventuresinsoftware.com/blog/?p=64#comment-509</guid>
+		<description>You could achieve the desired result by adding a where clause to your update:
+
+UPDATE audit SET completed=1 WHERE day=today AND completed=0;
+
+Then the statement would only match those rows that have changed from 0 to 1, and the more useful implementation of row_count() would yield the desired result.
+
+Yes, it is possible to use COUNT() to determine the number of rows matching a WHERE clause prior to the UPDATE. But to use COUNT() in one statement and UPDATE in another allows a small period of time for concurrent processes to cause problems. To avoid this, you have to set the transaction isolation level to at least repeatable read, which often leads to poor scalability and deadlocking.
+
+So, sure, MySQL's row_count() function is more accurate, but less useful.</description>
+		<content:encoded><![CDATA[<p>You could achieve the desired result by adding a where clause to your update:</p>
+<p>UPDATE audit SET completed=1 WHERE day=today AND completed=0;</p>
+<p>Then the statement would only match those rows that have changed from 0 to 1, and the more useful implementation of row_count() would yield the desired result.</p>
+<p>Yes, it is possible to use COUNT() to determine the number of rows matching a WHERE clause prior to the UPDATE. But to use COUNT() in one statement and UPDATE in another allows a small period of time for concurrent processes to cause problems. To avoid this, you have to set the transaction isolation level to at least repeatable read, which often leads to poor scalability and deadlocking.</p>
+<p>So, sure, MySQL's row_count() function is more accurate, but less useful.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Charles Martin</title>
+		<link>http://adventuresinsoftware.com/blog/?p=64#comment-454</link>
+		<dc:creator>Charles Martin</dc:creator>
+		<pubDate>Thu, 07 Dec 2006 12:33:44 +0000</pubDate>
+		<guid>http://adventuresinsoftware.com/blog/?p=64#comment-454</guid>
+		<description>I, however, do see a valid use for the function.  Suppose you have an audit team that *should* complete all of its assigned audits within a day.  The table containing the audits has a flag that is updated marking it as completed.  However, suppose at the end of a specific period of time (in this case, the end of the day), you have to mark the rest as "done" and move on (because of some stupid antiquated external process that reads this table and doesn't need to pull in older audits).  Retrieving the row_count() of the ones marked at the end of the day would provide a basis for a tracking table identifying how many were incomplete each day and you'd only have one step doing so instead of performing this in two steps (read the number before the update and then update).
+
+The function itself is actually more accurate than the equivalent Microsoft SQL function because it is returning a row_count() of what was UPDATED, not how many records matched the criteria of the WHERE clause.  All things considered, knowing how many match the WHERE clause is what a COUNT() function does.</description>
+		<content:encoded><![CDATA[<p>I, however, do see a valid use for the function.  Suppose you have an audit team that *should* complete all of its assigned audits within a day.  The table containing the audits has a flag that is updated marking it as completed.  However, suppose at the end of a specific period of time (in this case, the end of the day), you have to mark the rest as "done" and move on (because of some stupid antiquated external process that reads this table and doesn't need to pull in older audits).  Retrieving the row_count() of the ones marked at the end of the day would provide a basis for a tracking table identifying how many were incomplete each day and you'd only have one step doing so instead of performing this in two steps (read the number before the update and then update).</p>
+<p>The function itself is actually more accurate than the equivalent Microsoft SQL function because it is returning a row_count() of what was UPDATED, not how many records matched the criteria of the WHERE clause.  All things considered, knowing how many match the WHERE clause is what a COUNT() function does.</p>
+]]></content:encoded>
+	</item>
+</channel>
+</rss>

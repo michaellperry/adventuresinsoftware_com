@@ -1,0 +1,482 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+
+
+<!-- Mirrored from adventuresinsoftware.com/blog/?p=337 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 Jan 2017 12:57:08 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>Adventures in Software  &raquo; Blog Archive   &raquo; AutoMapper misses the point</title>
+
+<meta name="generator" content="WordPress 2.3.3" /> <!-- leave this for stats -->
+
+<link rel="stylesheet" href="wp-content/themes/ais2/style.css" type="text/css" media="screen" />
+<link rel="alternate" type="application/rss+xml" title="Adventures in Software RSS Feed" href="indexd784.html?feed=rss2" />
+<link rel="pingback" href="xmlrpc.html" />
+    <script type="text/javascript">
+        function onSilverlightError(sender, args) {
+            var appSource = "";
+            if (sender != null && sender != 0) {
+              appSource = sender.getHost().Source;
+            }
+            
+            var errorType = args.ErrorType;
+            var iErrorCode = args.ErrorCode;
+
+            if (errorType == "ImageError" || errorType == "MediaError") {
+              return;
+            }
+
+            var errMsg = "Unhandled Error in Silverlight Application " +  appSource + "\n" ;
+
+            errMsg += "Code: "+ iErrorCode + "    \n";
+            errMsg += "Category: " + errorType + "       \n";
+            errMsg += "Message: " + args.ErrorMessage + "     \n";
+
+            if (errorType == "ParserError") {
+                errMsg += "File: " + args.xamlFile + "     \n";
+                errMsg += "Line: " + args.lineNumber + "     \n";
+                errMsg += "Position: " + args.charPosition + "     \n";
+            }
+            else if (errorType == "RuntimeError") {           
+                if (args.lineNumber != 0) {
+                    errMsg += "Line: " + args.lineNumber + "     \n";
+                    errMsg += "Position: " +  args.charPosition + "     \n";
+                }
+                errMsg += "MethodName: " + args.methodName + "     \n";
+            }
+
+            throw new Error(errMsg);
+        }
+    </script>
+
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc0db0.php?rsd" />
+ <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="wp-includes/wlwmanifest.xml" /> <style type='text/css'>
+<!--#header { background: url('wp-content/themes/ais2/images/header-imgae03.html?upper=A7A73F&amp;lower=77773F') no-repeat bottom center; }
+--></style>
+</head>
+<body>
+<div id="page">
+
+<div class="aisTopBar">
+	<form method="get" id="searchform" action="http://adventuresinsoftware.com/blog/">
+<div>
+<a href="indexd784.html?feed=rss2"><img src="../images/feed-icon-28x28.png" border="0"></a>
+<input type="text" value="" name="s" id="s" />
+<input type="submit" id="searchsubmit" value="Search" />
+</div>
+</form>
+</div>
+
+<div class="aisHeaderImageRight">
+	<div class="aisHeaderImage">
+	<div class="aisHeaderCornerRight">
+	<div class="aisHeaderCornerLeft">
+	<div class="aisImageBar">
+	<div class="aisSubSites">
+		<a href="index.html" class="aisSubSiteLink"><span class="aisSiteTabRight"><span class="aisSiteTabLeft"><span class="aisSiteTab">
+			home</span></span></span></a>
+		<a class="aisSubSiteLink" href="indexb60a.html?cat=27"><span class="aisSiteTabRight"><span class="aisSiteTabLeft"><span class="aisSiteTab">
+			historic modeling</span></span></span></a>
+		<a class="aisSubSiteLink" href="indexa88f.html?cat=36"><span class="aisSiteTabRight"><span class="aisSiteTabLeft"><span class="aisSiteTab">
+			update controls</span></span></span></a>
+		<a href="index2d79.html?cat=26" class="aisSubSiteLink"><span class="aisSiteTabRight"><span class="aisSiteTabLeft"><span class="aisSiteTab">
+			degrees of freedom</span></span></span></a>
+		<a class="aisSubSiteLink" href="indexba53.html?page_id=2"><span class="aisSiteTabRight"><span class="aisSiteTabLeft"><span class="aisSiteTab">
+			about us</span></span></span></a>
+
+	</div>
+	</div>
+	</div>
+	</div>
+	</div>
+</div>
+
+<table style="width: 100%" cellspacing="0" cellpadding="0">
+	<tr valign="top">
+		<td width="210px">
+<div id="sidebar">
+<div class="aisLeftColumnFill">
+<div class="aisLeftColumnBottom">
+<div class="aisLeftColumnTop">
+<div id="twitter_div" class="aisLeftNav">
+<h2 class="sidebar-title">Twitter Updates</h2>
+<ul id="twitter_update_list"></ul>
+<a href="http://twitter.com/michaellperry" id="follow">Follow me</a>
+</div>
+<div id="twitter_reply_div" class="aisLeftNav">
+<h2 class="sidebar-title">Twitter Replies</h2>
+<ul id="twitter_reply_list"></ul>
+</div>
+
+<div class="aisLeftNav">
+<a href='http://ineta.org/Speakers/SearchCommunitySpeakers.aspx?SpeakerId=c5110e21-9243-461b-a464-a6548524e885'><img alt='INETA Community Speakers Program' border='0' src='../../www.ineta.org/images/OfficialLogos/InetaCommunitySpeakersRequestMe.html' /></a>
+</div>
+
+<div class="aisLeftNav">
+	<li class="pagenav"><h2>Pages</h2><ul><li class="page_item page-item-2"><a href="indexba53.html?page_id=2" title="About Us">About Us</a></li>
+<li class="page_item page-item-210"><a href="index6ae3.html?page_id=210" title="Templates">Templates</a></li>
+</ul></li></div>
+
+<div class="aisLeftNav">
+<h2>Archives</h2>
+<ul>
+	<li><a href='indexb4d5.html?m=201110' title='October 2011'>October 2011</a></li>
+	<li><a href='indexc61a.html?m=201106' title='June 2011'>June 2011</a></li>
+	<li><a href='indexa80d.html?m=201105' title='May 2011'>May 2011</a></li>
+	<li><a href='index512b.html?m=201104' title='April 2011'>April 2011</a></li>
+	<li><a href='index08fb.html?m=201103' title='March 2011'>March 2011</a></li>
+	<li><a href='index52f4.html?m=201102' title='February 2011'>February 2011</a></li>
+	<li><a href='index74f1.html?m=201101' title='January 2011'>January 2011</a></li>
+	<li><a href='index8956.html?m=201012' title='December 2010'>December 2010</a></li>
+	<li><a href='indexa1aa.html?m=201011' title='November 2010'>November 2010</a></li>
+	<li><a href='indexe3d5.html?m=201010' title='October 2010'>October 2010</a></li>
+	<li><a href='index9ab9.html?m=201009' title='September 2010'>September 2010</a></li>
+	<li><a href='index1ff0.html?m=201008' title='August 2010'>August 2010</a></li>
+	<li><a href='index9f11.html?m=201007' title='July 2010'>July 2010</a></li>
+	<li><a href='index31f0.html?m=201006' title='June 2010'>June 2010</a></li>
+	<li><a href='indexd189.html?m=201005' title='May 2010'>May 2010</a></li>
+	<li><a href='indexb5c0.html?m=201004' title='April 2010'>April 2010</a></li>
+	<li><a href='indexf258.html?m=201003' title='March 2010'>March 2010</a></li>
+	<li><a href='index6e30.html?m=201002' title='February 2010'>February 2010</a></li>
+	<li><a href='index6b19.html?m=201001' title='January 2010'>January 2010</a></li>
+	<li><a href='index5c0a.html?m=200912' title='December 2009'>December 2009</a></li>
+	<li><a href='index8f62.html?m=200911' title='November 2009'>November 2009</a></li>
+	<li><a href='index451d.html?m=200910' title='October 2009'>October 2009</a></li>
+	<li><a href='index3e04.html?m=200909' title='September 2009'>September 2009</a></li>
+	<li><a href='index425a.html?m=200908' title='August 2009'>August 2009</a></li>
+	<li><a href='index9907.html?m=200907' title='July 2009'>July 2009</a></li>
+	<li><a href='index3104.html?m=200906' title='June 2009'>June 2009</a></li>
+	<li><a href='indexc36d.html?m=200905' title='May 2009'>May 2009</a></li>
+	<li><a href='index17e8.html?m=200904' title='April 2009'>April 2009</a></li>
+	<li><a href='index10a5.html?m=200903' title='March 2009'>March 2009</a></li>
+	<li><a href='index8988.html?m=200902' title='February 2009'>February 2009</a></li>
+	<li><a href='index1419.html?m=200901' title='January 2009'>January 2009</a></li>
+	<li><a href='index7866.html?m=200812' title='December 2008'>December 2008</a></li>
+	<li><a href='index55f6.html?m=200811' title='November 2008'>November 2008</a></li>
+	<li><a href='indexa7bc.html?m=200810' title='October 2008'>October 2008</a></li>
+	<li><a href='indexe77c.html?m=200809' title='September 2008'>September 2008</a></li>
+	<li><a href='indexcffc.html?m=200808' title='August 2008'>August 2008</a></li>
+	<li><a href='index0e62.html?m=200807' title='July 2008'>July 2008</a></li>
+	<li><a href='indexfda7.html?m=200806' title='June 2008'>June 2008</a></li>
+	<li><a href='index7d64.html?m=200805' title='May 2008'>May 2008</a></li>
+	<li><a href='index94dd.html?m=200804' title='April 2008'>April 2008</a></li>
+	<li><a href='index9631.html?m=200803' title='March 2008'>March 2008</a></li>
+	<li><a href='indexdd52.html?m=200802' title='February 2008'>February 2008</a></li>
+	<li><a href='index21ee.html?m=200801' title='January 2008'>January 2008</a></li>
+	<li><a href='index363c.html?m=200712' title='December 2007'>December 2007</a></li>
+	<li><a href='index7493.html?m=200711' title='November 2007'>November 2007</a></li>
+	<li><a href='index93a7.html?m=200710' title='October 2007'>October 2007</a></li>
+	<li><a href='index4ca8.html?m=200709' title='September 2007'>September 2007</a></li>
+	<li><a href='index6124.html?m=200708' title='August 2007'>August 2007</a></li>
+	<li><a href='index6013.html?m=200707' title='July 2007'>July 2007</a></li>
+	<li><a href='index2ab6.html?m=200706' title='June 2007'>June 2007</a></li>
+	<li><a href='index44f0.html?m=200705' title='May 2007'>May 2007</a></li>
+	<li><a href='indexf0b4.html?m=200704' title='April 2007'>April 2007</a></li>
+	<li><a href='index481d.html?m=200703' title='March 2007'>March 2007</a></li>
+	<li><a href='indexcbea.html?m=200702' title='February 2007'>February 2007</a></li>
+	<li><a href='index9cdc.html?m=200701' title='January 2007'>January 2007</a></li>
+	<li><a href='index3ea4.html?m=200612' title='December 2006'>December 2006</a></li>
+	<li><a href='index67ca.html?m=200611' title='November 2006'>November 2006</a></li>
+	<li><a href='indexff49.html?m=200610' title='October 2006'>October 2006</a></li>
+	<li><a href='index611c.html?m=200609' title='September 2006'>September 2006</a></li>
+	<li><a href='index9a21.html?m=200608' title='August 2006'>August 2006</a></li>
+	<li><a href='index3ee9.html?m=200607' title='July 2006'>July 2006</a></li>
+	<li><a href='indexe13a.html?m=200606' title='June 2006'>June 2006</a></li>
+</ul>
+</div>
+
+<div class="aisLeftNav">
+	</div>
+
+<div class="aisLeftNav">
+<h2>Books</h2>
+<iframe src="http://rcm.amazon.com/e/cm?t=adventures0d2-20&amp;o=1&amp;p=8&amp;l=as1&amp;asins=0764526413&amp;fc1=000000&amp;IS2=1&amp;lt1=_blank&amp;lc1=0000ff&amp;bc1=000000&amp;bg1=ffffff&amp;f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" name="I5" id="I5"></iframe>
+<br/>
+<iframe src="http://rcm.amazon.com/e/cm?t=adventures0d2-20&amp;o=1&amp;p=8&amp;l=as1&amp;asins=0201633612&amp;fc1=000000&amp;IS2=1&amp;lt1=_blank&amp;lc1=0000ff&amp;bc1=000000&amp;bg1=ffffff&amp;f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" name="I6" id="I6"></iframe>
+<br/>
+<iframe src="http://rcm.amazon.com/e/cm?t=adventures0d2-20&amp;o=1&amp;p=8&amp;l=as1&amp;asins=0136291554&amp;fc1=000000&amp;IS2=1&amp;lt1=_blank&amp;lc1=0000ff&amp;bc1=000000&amp;bg1=ffffff&amp;f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" name="I7" id="I7"></iframe>
+<br/>
+<iframe src="http://rcm.amazon.com/e/cm?t=adventures0d2-20&amp;o=1&amp;p=8&amp;l=as1&amp;asins=1888009195&amp;fc1=000000&amp;IS2=1&amp;lt1=_blank&amp;lc1=0000ff&amp;bc1=000000&amp;bg1=ffffff&amp;f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" name="I8" id="I8"></iframe>
+</div>
+<div class="aisLeftNav">
+<h2>Meta</h2>
+<ul>
+		<li><a href="wp-login.html">Login</a></li>
+	<li><a href="http://validator.w3.org/check/referer" title="This page validates as XHTML 1.0 Transitional">Valid <abbr title="eXtensible HyperText Markup Language">XHTML</abbr></a></li>
+	<li><a href="http://gmpg.org/xfn/"><abbr title="XHTML Friends Network">XFN</abbr></a></li>
+	<li><a href="http://wordpress.org/" title="Powered by WordPress, state-of-the-art semantic personal publishing platform.">WordPress</a></li>
+	</ul>
+</div>
+<div class="aisLeftContent">
+<h2>Community</h2>
+<ul>
+	<script type="text/javascript" src="../../localhost/embed/92q2bbma.js"></script>
+</ul>
+</div>
+
+</div></div></div>
+</div>		</td>
+		<td>
+
+	<div id="content" class="widecolumn">
+
+	
+		<div class="navigation">
+			<div class="alignleft">&laquo; <a href="index71fc.html?p=336">Update Controls in Silverlight 3 proof-of-concept</a></div>
+			<div class="alignright"><a href="indexbcd6.html?p=338">.NET to .NET web services without WSDL</a> &raquo;</div>
+		</div>
+		<br/>
+
+		<div class="post" id="post-337">
+			<h1>AutoMapper misses the point</h1>
+
+			<div class="entry">
+				<p>Jimmy Bogard created <a href="http://www.lostechies.com/blogs/jimmy_bogard/archive/2009/01/22/automapper-the-object-object-mapper.aspx">AutoMapper</a> to generate left-hand-right-hand code. This is the mapping code that often appears when you are translating one object model to another parallel object model. He gives the example of mapping a data model to a view model:</p>
+<pre><span style="color: blue">public</span> <span style="color: blue">class</span> <font color="#0080c0">OrderToOrderViewModelMapper</font>
+{
+    <span style="color: blue">public</span> <font color="#0080c0">OrderViewModel</font> Map(<font color="#0080c0">Order</font> order)
+    {
+        <span style="color: blue">return</span> <span style="color: blue">new</span> <font color="#0080c0">OrderViewModel</font>
+            {
+                CustomerFullName = order.Customer.GetFullName(),
+                Total = order.GetTotal(),
+                LineItems = order.GetLineItems()
+                    .Select(x =&gt; <span style="color: blue">new</span> <font color="#0080c0">OrderLineItemViewModel</font>
+                        {
+                            Price = x.Price,
+                            Quantity = x.Quantity,
+                            Total = x.GetTotal(),
+                            ProductName = x.Product.Name
+                        })
+                    .ToArray()
+            };
+    }
+}</pre>
+<p>This misses the point. The problem is not in the tedious mapping code. The problem is that you are doubling the amount of independent data.</p>
+<p>Let me start at the beginning. This is a field:</p>
+<pre><span style="color: blue">public</span> <span style="color: blue">class</span> <font color="#0080c0">Customer</font>
+{
+    <strong><span style="color: blue">private</span> <font color="#0000ff">string</font> _fullName;</strong>
+}
+</pre>
+<p>This field is independent data. It can change independent of anything else in the system.</p>
+<p>This is a property:</p>
+<pre><span style="color: blue">public</span> <span style="color: blue">class</span> <font color="#0080c0">Customer</font>
+{
+    <span style="color: blue">private</span> <font color="#0000ff">string</font> _fullName;
+
+<strong>    <span style="color: blue">public</span> <font color="#0000ff">string</font> FullName
+    {
+        <font color="#0000ff">get</font> { <span style="color: blue">return</span> _fullName; }
+        <font color="#0000ff">set</font> { _fullName = <font color="#0000ff">value</font>; }
+    }
+</strong>}
+</pre>
+<p>This property is dependent data. Its behavior depends entirely on the field.</p>
+<p>This is an immutable field:</p>
+<pre><span style="color: blue">public</span> <span style="color: blue">class</span> <font color="#0080c0">OrderViewModel</font>
+{
+    <strong><span style="color: blue">private</span> <font color="#0080c0">Order</font> _order;</strong>
+
+    <span style="color: blue">public</span> OrderViewModel(<strong><font color="#0080c0">Order</font> order</strong>)
+    {
+        <strong>_order = order;</strong>
+    }
+}
+</pre>
+<p>This immutable field is not independent. It cannot be changed. It is immutable.</p>
+<p>This is another property:</p>
+<pre><span style="color: blue">public</span> <span style="color: blue">class</span> <font color="#0080c0">OrderViewModel</font>
+{
+    <span style="color: blue">private</span> <font color="#0080c0">Order</font> _order;
+
+    <span style="color: blue">public</span> OrderViewModel(<font color="#0080c0">Order</font> order)
+    {
+        _order = order;
+    }
+
+<strong>    <span style="color: blue">public</span> <font color="#0000ff">string</font> CustomerFullName
+    {
+        <font color="#0000ff">get</font> { <span style="color: blue">return</span> _order.Customer.FullName; }
+    }
+</strong>}
+</pre>
+<p>Adding independent data to a system increases its degrees of freedom. Adding dependent data does not. Adding an immutable field does not.</p>
+<p>You want no more degrees of freedom in the system than the problem calls for. Degrees of freedom are moving parts. Moving parts break. Moving parts need to be tested. You should therefore avoid adding independent data when dependent data is sufficient.</p>
+<p>The problem with Jimmy Bogard's example wasn't the code to copy data from one object to another. It was that data had to be copied at all. The view model should not have fields (independent data). It should have properties (dependent data).</p>
+
+				
+				<p class="postmetadata alt">
+					<small>
+						This entry was posted
+												on Sunday, April 19th, 2009 at 10:57 pm						and is filed under <a href="indexb0b7.html?cat=6" title="View all posts in Patterns" rel="category">Patterns</a>,  <a href="index2d79.html?cat=26" title="View all posts in dof" rel="category">dof</a>.
+						You can follow any responses to this entry through the <a href='index64a9.html?feed=rss2&amp;p=337'>RSS 2.0</a> feed.
+
+													You can skip to the end and leave a response. Pinging is currently not allowed.
+
+						
+					</small>
+				</p>
+
+			</div>
+		</div>
+
+	
+<!-- You can start editing here. -->
+
+	<h3 id="comments">4 Responses to &#8220;AutoMapper misses the point&#8221;</h3>
+
+	<ol class="commentlist">
+
+	
+		<li class="alt" id="comment-27650">
+			<cite><a href='http://jimmybogard.lostechies.com/' rel='external nofollow'>Jimmy Bogard</a></cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-27650" title="">April 21st, 2009 at 9:35 pm</a> </small>
+
+			<p>This is something we went back and forth on our team quite a bit (for the domain -&gt; view model mapping anyway).  We went with the approach you mention for quite a long time, creating immutable component-like objects that contained everything they needed to work.  The tipping point was us the overhead of testing, where we had arguments against view models in favor of leaking the UI down to the domain.  It's a bit of a compromise, I admit, but I enjoy the freedom the ease of testing + a completely separated view/edit model gives us.</p>
+<p>Immutability is something I'm definitely looking at, as we're also using mapping to do things like edit model (posted form) -&gt; domain message.</p>
+<p>Interestingly enough, with proxies, it would be possible to make these DTOs automatically "attached" to their source.  But that's just crazy talk.</p>
+
+		</li>
+
+	
+	
+		<li class="" id="comment-27886">
+			<cite>Michael L Perry</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-27886" title="">April 23rd, 2009 at 7:38 pm</a> </small>
+
+			<p>Thanks for the response.</p>
+<p>I understand the desire to keep layers separate. It promotes testing, as you say, as well as other good things like dependency injection.</p>
+<p>Still, I think that it's even more important to limit the number of degrees of freedom in a system. If the view model has a copy of the domain model, rather than a reference to it, then it can change independently. Extra code needs to be written to map those changes back to the domain model. That extra code needs to be tested.</p>
+<p>Far from leaking UI behavior down to the model, I find that this pattern pulls domain behavior up to the view. The view is supposed to be a window into the domain: it should respond in the way that the domain responds. For example, when the view sets the spouse field of Bob to Alice, it should also update the spouse of Alice to Bob. Unless you want to code all of your view components to fire events at each other, the only way to do this is for both components to talk to the same domain model.</p>
+<p>Since the view model depends upon the domain model for this behavior, it cannot be tested in isolation. Fair enough. But it still can be tested. Create a view model around Bob and another around Alice, then see that interacting with one updates the other.</p>
+<p>The goal of testability is a worthy one. But I believe that the limiting the things that need to be tested is even more important.</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-69983">
+			<cite><a href='http://www.habanerolabs.com/' rel='external nofollow'>Brett Powell</a></cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-69983" title="">May 7th, 2010 at 9:39 am</a> </small>
+
+			<p>@Jimmy</p>
+<p>I must admit I am also trying to figure out why I need AutoMapper. Looks like lovely code but I have tended to land up with the equivalent of  Michaels ViewModel i.e. </p>
+<p>public class OrderViewModel<br />
+{<br />
+    private Order _order;</p>
+<p>    public OrderViewModel(Order order)<br />
+    {<br />
+        _order = order;<br />
+    }</p>
+<p>    public string CustomerFullName<br />
+    {<br />
+        get { return _order.Customer.FullName; }<br />
+    }<br />
+}</p>
+<p>For testing I use a Mock Order. Using Habanero the Domain Objects are Mockable so this is OK. using other frameworks might need IOrder and then mock this.<br />
+either way this seems to work swimmingly.</p>
+<p>What I would often do for testability (and to avoid falling into the pit of the Law of Demeter) is to add a method onto my domain object</p>
+<p>public class Order<br />
+{<br />
+    public string CustomerFullName<br />
+    {<br />
+        get { return _this.Customer.FullName; }<br />
+    }<br />
+}</p>
+<p>My view model will then change to be<br />
+public class OrderViewModel<br />
+{<br />
+    private Order _order;</p>
+<p>    public OrderViewModel(Order order)<br />
+    {<br />
+        _order = order;<br />
+    }</p>
+<p>    public string CustomerFullName<br />
+    {<br />
+        get { return _order.CustomerFullName; }<br />
+    }<br />
+}<br />
+If anyone has any comments on this I would love to here them.</p>
+<p>Brett</p>
+
+		</li>
+
+	
+	
+		<li class="" id="comment-134676">
+			<cite><a href='http://fluentengine.com/' rel='external nofollow'>Drew "Serenarules" Jones</a></cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-134676" title="">March 23rd, 2011 at 9:53 pm</a> </small>
+
+			<p>Here's a quick little class that can be used to instantly make Automapper able to map against private fields. Remember, it's extensible using the ValueResolver base class? Ok, here the code and a sample on how to use it.</p>
+<p><a href="http://fluentengine.com/files/PrivateFieldResolver.cs.txt" rel="nofollow">http://fluentengine.com/files/PrivateFieldResolver.cs.txt</a></p>
+<p>Mapper.CreateMap()<br />
+                .ForMember(x =&gt; x.Id, opt =&gt; opt.ResolveUsing(new PrivateFieldResolver("_id")))<br />
+                .ForMember(x =&gt; x.Name, opt =&gt; opt.ResolveUsing(new PrivateFieldResolver("_name")))<br />
+                .ForMember(x =&gt; x.Orders, opt =&gt; opt.ResolveUsing(new PrivateFieldResolver("_orders")));</p>
+<p>Mapper.CreateMap()<br />
+                .ForMember(x =&gt; x.Id, opt =&gt; opt.ResolveUsing(new PrivateFieldResolver("_id")))<br />
+                .ForMember(x =&gt; x.Total, opt =&gt; opt.ResolveUsing(new PrivateFieldResolver("_total")));</p>
+<p>Just an example, but in this scenario all fields are private fields in the entities. It works. =)</p>
+
+		</li>
+
+	
+	
+	</ol>
+
+ 
+
+
+<h3 id="respond">Leave a Reply</h3>
+
+<p>You must be <a href="wp-login49ed.html?redirect_to=http://adventuresinsoftware.com/blog/?p=337">logged in</a> to post a comment.</p>
+
+
+	
+	</div>
+		</td>
+	</tr>
+</table>
+
+<hr />
+<div id="footer">
+<!-- If you'd like to support WordPress, having the "powered by" link someone on your blog is the best way, it's our only promotion or advertising. -->
+	<p>
+		Adventures in Software is proudly powered by 
+		<a href="http://wordpress.org/">WordPress</a>
+		<br /><a href="indexd784.html?feed=rss2">Entries (RSS)</a>
+		and <a href="indexa6da.html?feed=comments-rss2">Comments (RSS)</a>.
+		<!-- 21 queries. 0.268 seconds. -->
+	</p>
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-389401-3");
+pageTracker._trackPageview();
+} catch(err) {}</script></div>
+
+<!-- Gorgeous design by Michael Heilemann - http://binarybonsai.com/kubrick/ -->
+
+		<div id="sk2-footer" style="color:#FFF; background-color:#444; padding: 3px 2px 3px 2px; border-top: #888 solid 1px;">This blog is protected by <a href="http://unknowngenius.com/blog/" title="Dave">dr Dave</a>'s <strong><a href="http://unknowngenius.com/blog/wordpress/spam-karma/" title="SK2">Spam Karma 2</a></strong>: <strong>274531</strong>  Spams eaten and counting...</div><script type="text/javascript" src="replies.js"></script>
+<script type="text/javascript" src="blogger.js"></script>
+<script type="text/javascript" src="http://twitter.com/statuses/user_timeline/michaellperry.json?callback=twitterCallback2&amp;count=5"></script>
+<script type="text/javascript" src="http://search.twitter.com/search.json?q=@michaellperry&amp;callback=twitterCallbackReplies&amp;rpp=5"></script>
+</body>
+
+<!-- Mirrored from adventuresinsoftware.com/blog/?p=337 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 Jan 2017 12:57:08 GMT -->
+</html>

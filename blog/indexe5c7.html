@@ -1,0 +1,349 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+
+
+<!-- Mirrored from adventuresinsoftware.com/blog/?cat=44 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 Jan 2017 12:54:57 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>Adventures in Software   &raquo; Silverlight</title>
+
+<meta name="generator" content="WordPress 2.3.3" /> <!-- leave this for stats -->
+
+<link rel="stylesheet" href="wp-content/themes/ais2/style.css" type="text/css" media="screen" />
+<link rel="alternate" type="application/rss+xml" title="Adventures in Software RSS Feed" href="indexd784.html?feed=rss2" />
+<link rel="pingback" href="xmlrpc.html" />
+    <script type="text/javascript">
+        function onSilverlightError(sender, args) {
+            var appSource = "";
+            if (sender != null && sender != 0) {
+              appSource = sender.getHost().Source;
+            }
+            
+            var errorType = args.ErrorType;
+            var iErrorCode = args.ErrorCode;
+
+            if (errorType == "ImageError" || errorType == "MediaError") {
+              return;
+            }
+
+            var errMsg = "Unhandled Error in Silverlight Application " +  appSource + "\n" ;
+
+            errMsg += "Code: "+ iErrorCode + "    \n";
+            errMsg += "Category: " + errorType + "       \n";
+            errMsg += "Message: " + args.ErrorMessage + "     \n";
+
+            if (errorType == "ParserError") {
+                errMsg += "File: " + args.xamlFile + "     \n";
+                errMsg += "Line: " + args.lineNumber + "     \n";
+                errMsg += "Position: " + args.charPosition + "     \n";
+            }
+            else if (errorType == "RuntimeError") {           
+                if (args.lineNumber != 0) {
+                    errMsg += "Line: " + args.lineNumber + "     \n";
+                    errMsg += "Position: " +  args.charPosition + "     \n";
+                }
+                errMsg += "MethodName: " + args.methodName + "     \n";
+            }
+
+            throw new Error(errMsg);
+        }
+    </script>
+
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc0db0.php?rsd" />
+ <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="wp-includes/wlwmanifest.xml" /> <style type='text/css'>
+<!--#header { background: url('wp-content/themes/ais2/images/header-imgae03.html?upper=A7A73F&amp;lower=77773F') no-repeat bottom center; }
+--></style>
+</head>
+<body>
+<div id="page">
+
+<div class="aisTopBar">
+	<form method="get" id="searchform" action="http://adventuresinsoftware.com/blog/">
+<div>
+<a href="indexd784.html?feed=rss2"><img src="../images/feed-icon-28x28.png" border="0"></a>
+<input type="text" value="" name="s" id="s" />
+<input type="submit" id="searchsubmit" value="Search" />
+</div>
+</form>
+</div>
+
+<div class="aisHeaderImageRight">
+	<div class="aisHeaderImage">
+	<div class="aisHeaderCornerRight">
+	<div class="aisHeaderCornerLeft">
+	<div class="aisImageBar">
+	<div class="aisSubSites">
+		<a href="index.html" class="aisSubSiteLink"><span class="aisSiteTabRight"><span class="aisSiteTabLeft"><span class="aisSiteTab">
+			home</span></span></span></a>
+		<a class="aisSubSiteLink" href="indexb60a.html?cat=27"><span class="aisSiteTabRight"><span class="aisSiteTabLeft"><span class="aisSiteTab">
+			historic modeling</span></span></span></a>
+		<a class="aisSubSiteLink" href="indexa88f.html?cat=36"><span class="aisSiteTabRight"><span class="aisSiteTabLeft"><span class="aisSiteTab">
+			update controls</span></span></span></a>
+		<a href="index2d79.html?cat=26" class="aisSubSiteLink"><span class="aisSiteTabRight"><span class="aisSiteTabLeft"><span class="aisSiteTab">
+			degrees of freedom</span></span></span></a>
+		<a class="aisSubSiteLink" href="indexba53.html?page_id=2"><span class="aisSiteTabRight"><span class="aisSiteTabLeft"><span class="aisSiteTab">
+			about us</span></span></span></a>
+
+	</div>
+	</div>
+	</div>
+	</div>
+	</div>
+</div>
+
+<table style="width: 100%" cellspacing="0" cellpadding="0">
+	<tr valign="top">
+		<td width="210px">
+<div id="sidebar">
+<div class="aisLeftColumnFill">
+<div class="aisLeftColumnBottom">
+<div class="aisLeftColumnTop">
+<div id="twitter_div" class="aisLeftNav">
+<h2 class="sidebar-title">Twitter Updates</h2>
+<ul id="twitter_update_list"></ul>
+<a href="http://twitter.com/michaellperry" id="follow">Follow me</a>
+</div>
+<div id="twitter_reply_div" class="aisLeftNav">
+<h2 class="sidebar-title">Twitter Replies</h2>
+<ul id="twitter_reply_list"></ul>
+</div>
+
+<div class="aisLeftNav">
+<a href='http://ineta.org/Speakers/SearchCommunitySpeakers.aspx?SpeakerId=c5110e21-9243-461b-a464-a6548524e885'><img alt='INETA Community Speakers Program' border='0' src='../../www.ineta.org/images/OfficialLogos/InetaCommunitySpeakersRequestMe.html' /></a>
+</div>
+
+<div class="aisLeftNav">
+	<li class="pagenav"><h2>Pages</h2><ul><li class="page_item page-item-2"><a href="indexba53.html?page_id=2" title="About Us">About Us</a></li>
+<li class="page_item page-item-210"><a href="index6ae3.html?page_id=210" title="Templates">Templates</a></li>
+</ul></li></div>
+
+<div class="aisLeftNav">
+<h2>Archives</h2>
+<ul>
+	<li><a href='indexb4d5.html?m=201110' title='October 2011'>October 2011</a></li>
+	<li><a href='indexc61a.html?m=201106' title='June 2011'>June 2011</a></li>
+	<li><a href='indexa80d.html?m=201105' title='May 2011'>May 2011</a></li>
+	<li><a href='index512b.html?m=201104' title='April 2011'>April 2011</a></li>
+	<li><a href='index08fb.html?m=201103' title='March 2011'>March 2011</a></li>
+	<li><a href='index52f4.html?m=201102' title='February 2011'>February 2011</a></li>
+	<li><a href='index74f1.html?m=201101' title='January 2011'>January 2011</a></li>
+	<li><a href='index8956.html?m=201012' title='December 2010'>December 2010</a></li>
+	<li><a href='indexa1aa.html?m=201011' title='November 2010'>November 2010</a></li>
+	<li><a href='indexe3d5.html?m=201010' title='October 2010'>October 2010</a></li>
+	<li><a href='index9ab9.html?m=201009' title='September 2010'>September 2010</a></li>
+	<li><a href='index1ff0.html?m=201008' title='August 2010'>August 2010</a></li>
+	<li><a href='index9f11.html?m=201007' title='July 2010'>July 2010</a></li>
+	<li><a href='index31f0.html?m=201006' title='June 2010'>June 2010</a></li>
+	<li><a href='indexd189.html?m=201005' title='May 2010'>May 2010</a></li>
+	<li><a href='indexb5c0.html?m=201004' title='April 2010'>April 2010</a></li>
+	<li><a href='indexf258.html?m=201003' title='March 2010'>March 2010</a></li>
+	<li><a href='index6e30.html?m=201002' title='February 2010'>February 2010</a></li>
+	<li><a href='index6b19.html?m=201001' title='January 2010'>January 2010</a></li>
+	<li><a href='index5c0a.html?m=200912' title='December 2009'>December 2009</a></li>
+	<li><a href='index8f62.html?m=200911' title='November 2009'>November 2009</a></li>
+	<li><a href='index451d.html?m=200910' title='October 2009'>October 2009</a></li>
+	<li><a href='index3e04.html?m=200909' title='September 2009'>September 2009</a></li>
+	<li><a href='index425a.html?m=200908' title='August 2009'>August 2009</a></li>
+	<li><a href='index9907.html?m=200907' title='July 2009'>July 2009</a></li>
+	<li><a href='index3104.html?m=200906' title='June 2009'>June 2009</a></li>
+	<li><a href='indexc36d.html?m=200905' title='May 2009'>May 2009</a></li>
+	<li><a href='index17e8.html?m=200904' title='April 2009'>April 2009</a></li>
+	<li><a href='index10a5.html?m=200903' title='March 2009'>March 2009</a></li>
+	<li><a href='index8988.html?m=200902' title='February 2009'>February 2009</a></li>
+	<li><a href='index1419.html?m=200901' title='January 2009'>January 2009</a></li>
+	<li><a href='index7866.html?m=200812' title='December 2008'>December 2008</a></li>
+	<li><a href='index55f6.html?m=200811' title='November 2008'>November 2008</a></li>
+	<li><a href='indexa7bc.html?m=200810' title='October 2008'>October 2008</a></li>
+	<li><a href='indexe77c.html?m=200809' title='September 2008'>September 2008</a></li>
+	<li><a href='indexcffc.html?m=200808' title='August 2008'>August 2008</a></li>
+	<li><a href='index0e62.html?m=200807' title='July 2008'>July 2008</a></li>
+	<li><a href='indexfda7.html?m=200806' title='June 2008'>June 2008</a></li>
+	<li><a href='index7d64.html?m=200805' title='May 2008'>May 2008</a></li>
+	<li><a href='index94dd.html?m=200804' title='April 2008'>April 2008</a></li>
+	<li><a href='index9631.html?m=200803' title='March 2008'>March 2008</a></li>
+	<li><a href='indexdd52.html?m=200802' title='February 2008'>February 2008</a></li>
+	<li><a href='index21ee.html?m=200801' title='January 2008'>January 2008</a></li>
+	<li><a href='index363c.html?m=200712' title='December 2007'>December 2007</a></li>
+	<li><a href='index7493.html?m=200711' title='November 2007'>November 2007</a></li>
+	<li><a href='index93a7.html?m=200710' title='October 2007'>October 2007</a></li>
+	<li><a href='index4ca8.html?m=200709' title='September 2007'>September 2007</a></li>
+	<li><a href='index6124.html?m=200708' title='August 2007'>August 2007</a></li>
+	<li><a href='index6013.html?m=200707' title='July 2007'>July 2007</a></li>
+	<li><a href='index2ab6.html?m=200706' title='June 2007'>June 2007</a></li>
+	<li><a href='index44f0.html?m=200705' title='May 2007'>May 2007</a></li>
+	<li><a href='indexf0b4.html?m=200704' title='April 2007'>April 2007</a></li>
+	<li><a href='index481d.html?m=200703' title='March 2007'>March 2007</a></li>
+	<li><a href='indexcbea.html?m=200702' title='February 2007'>February 2007</a></li>
+	<li><a href='index9cdc.html?m=200701' title='January 2007'>January 2007</a></li>
+	<li><a href='index3ea4.html?m=200612' title='December 2006'>December 2006</a></li>
+	<li><a href='index67ca.html?m=200611' title='November 2006'>November 2006</a></li>
+	<li><a href='indexff49.html?m=200610' title='October 2006'>October 2006</a></li>
+	<li><a href='index611c.html?m=200609' title='September 2006'>September 2006</a></li>
+	<li><a href='index9a21.html?m=200608' title='August 2006'>August 2006</a></li>
+	<li><a href='index3ee9.html?m=200607' title='July 2006'>July 2006</a></li>
+	<li><a href='indexe13a.html?m=200606' title='June 2006'>June 2006</a></li>
+</ul>
+</div>
+
+<div class="aisLeftNav">
+	</div>
+
+<div class="aisLeftNav">
+<h2>Books</h2>
+<iframe src="http://rcm.amazon.com/e/cm?t=adventures0d2-20&amp;o=1&amp;p=8&amp;l=as1&amp;asins=0764526413&amp;fc1=000000&amp;IS2=1&amp;lt1=_blank&amp;lc1=0000ff&amp;bc1=000000&amp;bg1=ffffff&amp;f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" name="I5" id="I5"></iframe>
+<br/>
+<iframe src="http://rcm.amazon.com/e/cm?t=adventures0d2-20&amp;o=1&amp;p=8&amp;l=as1&amp;asins=0201633612&amp;fc1=000000&amp;IS2=1&amp;lt1=_blank&amp;lc1=0000ff&amp;bc1=000000&amp;bg1=ffffff&amp;f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" name="I6" id="I6"></iframe>
+<br/>
+<iframe src="http://rcm.amazon.com/e/cm?t=adventures0d2-20&amp;o=1&amp;p=8&amp;l=as1&amp;asins=0136291554&amp;fc1=000000&amp;IS2=1&amp;lt1=_blank&amp;lc1=0000ff&amp;bc1=000000&amp;bg1=ffffff&amp;f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" name="I7" id="I7"></iframe>
+<br/>
+<iframe src="http://rcm.amazon.com/e/cm?t=adventures0d2-20&amp;o=1&amp;p=8&amp;l=as1&amp;asins=1888009195&amp;fc1=000000&amp;IS2=1&amp;lt1=_blank&amp;lc1=0000ff&amp;bc1=000000&amp;bg1=ffffff&amp;f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" name="I8" id="I8"></iframe>
+</div>
+<div class="aisLeftNav">
+<h2>Meta</h2>
+<ul>
+		<li><a href="wp-login.html">Login</a></li>
+	<li><a href="http://validator.w3.org/check/referer" title="This page validates as XHTML 1.0 Transitional">Valid <abbr title="eXtensible HyperText Markup Language">XHTML</abbr></a></li>
+	<li><a href="http://gmpg.org/xfn/"><abbr title="XHTML Friends Network">XFN</abbr></a></li>
+	<li><a href="http://wordpress.org/" title="Powered by WordPress, state-of-the-art semantic personal publishing platform.">WordPress</a></li>
+	</ul>
+</div>
+<div class="aisLeftContent">
+<h2>Community</h2>
+<ul>
+	<script type="text/javascript" src="../../localhost/embed/92q2bbma.js"></script>
+</ul>
+</div>
+
+</div></div></div>
+</div>		</td>
+		<td>
+
+	<div id="content" class="narrowcolumn">
+
+		
+		 		<h2 class="pagetitle">Archive for the &#8216;Silverlight&#8217; Category</h2>
+
+ 	  
+
+		<div class="navigation">
+			<div class="alignleft"></div>
+			<div class="alignright"></div>
+		</div>
+
+				<div class="post">
+				<h3 id="post-598"><a href="index424e.html?p=598" rel="bookmark" title="Permanent Link to Databinding in Silverlight 5">Databinding in Silverlight 5</a></h3>
+				<small>Thursday, December 2nd, 2010</small>
+
+				<div class="entry">
+					<p>Microsoft hosted a Silverlight Firestarter event. It was important for Microsoft to reset the Silverlight message after the Mary Jo Foley incident at PDC10. The most important piece in this strategy was Silverlight 5.</p>
+<p>I was very excited today to see some of the new features coming in Silverlight 5 to support databinding. As <a href="http://weblogs.asp.net/scottgu/archive/2010/12/02/announcing-silverlight-5.aspx">Scott Guthrie says</a>, this will bring Silverlight into even better parity with WPF. There are two features that I think are most important: implicit DataTemplates and markup extensions.</p>
+<h3>Implicit DataTemplates</h3>
+<p>I am a big believer in creating a DataTemplate based on the type, rather than explicitly setting a DataTemplate in XAML. This supports polymorphism to the view. If you have a heterogeneous list, this technique lets you express the view of each element declaratively. If you add a new type of item to the list, you just add a new DataTemplate to your resources.</p>
+<p>Most importantly, this lets the View Model be in control. I’ve often said that the view model locator pattern is backwards. When the view locates the view model, navigation goes to the view first. This leads to some awkward code. But when we navigating to a view model, all of the navigation code is naturally in the right place. We can allow the resources to determine the correct DataTemplate. This technique is covered in <a href="index6c15.html?p=503">Convention-based view model registration</a>.</p>
+<h3>Markup extensions</h3>
+<p>The original Update Controls XAML interface was a binding extension. That is why it took so long to port Update Controls to Silverlight. The Update markup extension provided WPF data binding without INotifyPropertyChanged. It bound directly to your view model.</p>
+<p>To support Blendability, and to enable the Silverlight port, I added ForView.Wrap() to the library. This method wraps your view model so that the built-in Binding markup extension can use it. The wrapper has many disadvantages:</p>
+<ul>
+<li>It hides data annotations like Required and Display.</li>
+<li>It adds a performance tax because it uses reflection and (in the Silverlight versions) DependencyProperties.</li>
+<li>It requires you to call ForView.Unwrap() whenever accessing objects in code behind.</li>
+<li>It interferes with implicit DataTemplates.</li>
+</ul>
+<p>The benefits of Blendability and Silverlight support outweighed these disadvantages, so it was with great sadness that I changed my recommended approach from the Update markup extension to ForView.Wrap(). Silverlight 5, however, is going to give me the choice back. If I can find a way to change how Blend does databinding, I’ll have the best of both worlds.</p>
+<h3>What does this mean for Update Controls</h3>
+<p>There will be a new version of Update Controls as soon as I get my hands on the Silverlight 5 bits. It will reintroduce the Update markup extension to Silverlight. I expect this version to be closer to the WPF code base, which should make code maintenance easier.</p>
+<p>This also means that more Update Controls demos are coming. The joy of knowing that improvements are coming was sullied every time a demo implemented INotifyPropertyChanged. That interface is a stick in the eye every time I see it. It especially hurts when I see John Papa list INPC as one of the benefits of RIA services. I want everyone who watched the Silverlight Firestarter to be able to compare those demos with ones that don’t have the code clutter and pain of this extraneous interface. Let it be known that <a href="http://code-magazine.com/">INotifyPropertyChanged is Obsolete</a>, now more than ever.</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="indexe5c7.html?cat=44" title="View all posts in Silverlight" rel="category">Silverlight</a>,  <a href="indexa88f.html?cat=36" title="View all posts in Update Controls" rel="category">Update Controls</a> |   <a href="index424e.html?p=598#respond" title="Comment on Databinding in Silverlight 5">No Comments &#187;</a></p>
+
+			</div>
+
+				<div class="post">
+				<h3 id="post-507"><a href="indexcfe8.html?p=507" rel="bookmark" title="Permanent Link to Silverlight ComboBox sets SelectedItem when DataContext changes">Silverlight ComboBox sets SelectedItem when DataContext changes</a></h3>
+				<small>Friday, June 18th, 2010</small>
+
+				<div class="entry">
+					<p>I think we can officially call this a bug in Silverlight. Create a master list and a detail view. Bind the SelectedItem of a combo box in the detail view to a reference typed property. Silverlight will set the property to null when you select a new item in the master list.</p>
+<p>Try it out below. The list on the left displays the person’s name and preferred phone number. Select “Michael”, and the detail pane shows his phone number and favorite color. Then select “Jenny”. Notice that Michael’s phone number disappeared. Click back on him and see that the phone number is indeed gone.</p>
+<div id="silverlightControlHost">
+        <object data="data:application/x-silverlight-2," type="application/x-silverlight-2" width="400px" height="100px"></p>
+<param name="source" value="/blog/wp-content/uploads/2010/06/slcbtest.xap">
+<param name="onError" value="onSilverlightError">
+<param name="background" value="white">
+<param name="minRuntimeVersion" value="4.0.50401.0">
+<param name="autoUpgrade" value="true">
+		  <a href="http://go.microsoft.com/fwlink/?LinkID=149156&amp;v=4.0.50401.0" style="text-decoration: none;"></p>
+<p> 			  <img src="http://go.microsoft.com/fwlink/?LinkId=161376" alt="Get Microsoft Silverlight" style="border-style: none;"><br />
+		  </a><br />
+	    </object><iframe id="_sl_historyFrame" style="visibility: hidden; height: 0px; width: 0px; border: 0px none;"></iframe></div>
+<p>Favorite color is an enumeration – a value type. Phone number is a class – a reference type. Even though the phone number has a valid Equals and GetHashCode implementation, Silverlight treats it differently. For some reason, it decides it needs to set it to null whenever the DataContext changes.</p>
+<p>This behavior is clearly incorrect. The list of items does not contain the value “null”. Even if it did, the user did not select “null”. And as further evidence, WPF does not behave this way. Download the <a href="wp-content/uploads/2010/06/slcbtest.zip">source code</a>, which has been compiled for both Silverlight and WPF. The WPF version of exactly the same source code behaves correctly.</p>
+<p><strong>Here’s my solution</strong><br />
+Any property bound to SelectedItem should protect itself from a null assignment. In this case:</p>
+<pre><span style="color: blue">public</span> <span style="color: #2b91af">PhoneNumber</span> <span style="color: #2b91af">PreferredPhone</span>
+{
+    <span style="color: blue">get</span> { <span style="color: blue">return</span> _preferredPhone; }
+    <span style="color: blue">set</span>
+    {
+        <span style="color: blue">if</span> (value == <span style="color: blue">null</span>)
+            <span style="color: blue">return</span>; 
+
+        _preferredPhone = value;
+        <span style="color: #2b91af">RaisePropertyChanged</span>(<span style="color: maroon">"PreferredPhone"</span>);
+        <span style="color: #2b91af">RaisePropertyChanged</span>(<span style="color: maroon">"Display"</span>);
+    }
+}</pre>
+<p>What if null is a valid value for the property? Then represent null with a stand-in. Perhaps two classes could implement a common IPhoneNumber interface: PhoneNumber and NullPhoneNumber.</p>
+<p>It’s a pretty simple workaround, but still an embarrassing bug in Silverlight.</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="indexe5c7.html?cat=44" title="View all posts in Silverlight" rel="category">Silverlight</a> |   <a href="indexcfe8.html?p=507#respond" title="Comment on Silverlight ComboBox sets SelectedItem when DataContext changes">No Comments &#187;</a></p>
+
+			</div>
+
+		
+		<div class="navigation">
+			<div class="alignleft"></div>
+			<div class="alignright"></div>
+		</div>
+
+	
+	</div>
+		</td>
+	</tr>
+</table>
+
+<hr />
+<div id="footer">
+<!-- If you'd like to support WordPress, having the "powered by" link someone on your blog is the best way, it's our only promotion or advertising. -->
+	<p>
+		Adventures in Software is proudly powered by 
+		<a href="http://wordpress.org/">WordPress</a>
+		<br /><a href="indexd784.html?feed=rss2">Entries (RSS)</a>
+		and <a href="indexa6da.html?feed=comments-rss2">Comments (RSS)</a>.
+		<!-- 17 queries. 0.290 seconds. -->
+	</p>
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-389401-3");
+pageTracker._trackPageview();
+} catch(err) {}</script></div>
+
+<!-- Gorgeous design by Michael Heilemann - http://binarybonsai.com/kubrick/ -->
+
+		<div id="sk2-footer" style="color:#FFF; background-color:#444; padding: 3px 2px 3px 2px; border-top: #888 solid 1px;">This blog is protected by <a href="http://unknowngenius.com/blog/" title="Dave">dr Dave</a>'s <strong><a href="http://unknowngenius.com/blog/wordpress/spam-karma/" title="SK2">Spam Karma 2</a></strong>: <strong>274531</strong>  Spams eaten and counting...</div><script type="text/javascript" src="replies.js"></script>
+<script type="text/javascript" src="blogger.js"></script>
+<script type="text/javascript" src="http://twitter.com/statuses/user_timeline/michaellperry.json?callback=twitterCallback2&amp;count=5"></script>
+<script type="text/javascript" src="http://search.twitter.com/search.json?q=@michaellperry&amp;callback=twitterCallbackReplies&amp;rpp=5"></script>
+</body>
+
+<!-- Mirrored from adventuresinsoftware.com/blog/?cat=44 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 Jan 2017 12:54:57 GMT -->
+</html>

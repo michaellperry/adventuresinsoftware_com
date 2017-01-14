@@ -1,0 +1,688 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+
+
+<!-- Mirrored from adventuresinsoftware.com/blog/?p=550 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 Jan 2017 12:55:24 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>Adventures in Software  &raquo; Blog Archive   &raquo; Entity Framework and the Repository Pattern</title>
+
+<meta name="generator" content="WordPress 2.3.3" /> <!-- leave this for stats -->
+
+<link rel="stylesheet" href="wp-content/themes/ais2/style.css" type="text/css" media="screen" />
+<link rel="alternate" type="application/rss+xml" title="Adventures in Software RSS Feed" href="indexd784.html?feed=rss2" />
+<link rel="pingback" href="xmlrpc.html" />
+    <script type="text/javascript">
+        function onSilverlightError(sender, args) {
+            var appSource = "";
+            if (sender != null && sender != 0) {
+              appSource = sender.getHost().Source;
+            }
+            
+            var errorType = args.ErrorType;
+            var iErrorCode = args.ErrorCode;
+
+            if (errorType == "ImageError" || errorType == "MediaError") {
+              return;
+            }
+
+            var errMsg = "Unhandled Error in Silverlight Application " +  appSource + "\n" ;
+
+            errMsg += "Code: "+ iErrorCode + "    \n";
+            errMsg += "Category: " + errorType + "       \n";
+            errMsg += "Message: " + args.ErrorMessage + "     \n";
+
+            if (errorType == "ParserError") {
+                errMsg += "File: " + args.xamlFile + "     \n";
+                errMsg += "Line: " + args.lineNumber + "     \n";
+                errMsg += "Position: " + args.charPosition + "     \n";
+            }
+            else if (errorType == "RuntimeError") {           
+                if (args.lineNumber != 0) {
+                    errMsg += "Line: " + args.lineNumber + "     \n";
+                    errMsg += "Position: " +  args.charPosition + "     \n";
+                }
+                errMsg += "MethodName: " + args.methodName + "     \n";
+            }
+
+            throw new Error(errMsg);
+        }
+    </script>
+
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc0db0.php?rsd" />
+ <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="wp-includes/wlwmanifest.xml" /> <style type='text/css'>
+<!--#header { background: url('wp-content/themes/ais2/images/header-imgae03.html?upper=A7A73F&amp;lower=77773F') no-repeat bottom center; }
+--></style>
+</head>
+<body>
+<div id="page">
+
+<div class="aisTopBar">
+	<form method="get" id="searchform" action="http://adventuresinsoftware.com/blog/">
+<div>
+<a href="indexd784.html?feed=rss2"><img src="../images/feed-icon-28x28.png" border="0"></a>
+<input type="text" value="" name="s" id="s" />
+<input type="submit" id="searchsubmit" value="Search" />
+</div>
+</form>
+</div>
+
+<div class="aisHeaderImageRight">
+	<div class="aisHeaderImage">
+	<div class="aisHeaderCornerRight">
+	<div class="aisHeaderCornerLeft">
+	<div class="aisImageBar">
+	<div class="aisSubSites">
+		<a href="index.html" class="aisSubSiteLink"><span class="aisSiteTabRight"><span class="aisSiteTabLeft"><span class="aisSiteTab">
+			home</span></span></span></a>
+		<a class="aisSubSiteLink" href="indexb60a.html?cat=27"><span class="aisSiteTabRight"><span class="aisSiteTabLeft"><span class="aisSiteTab">
+			historic modeling</span></span></span></a>
+		<a class="aisSubSiteLink" href="indexa88f.html?cat=36"><span class="aisSiteTabRight"><span class="aisSiteTabLeft"><span class="aisSiteTab">
+			update controls</span></span></span></a>
+		<a href="index2d79.html?cat=26" class="aisSubSiteLink"><span class="aisSiteTabRight"><span class="aisSiteTabLeft"><span class="aisSiteTab">
+			degrees of freedom</span></span></span></a>
+		<a class="aisSubSiteLink" href="indexba53.html?page_id=2"><span class="aisSiteTabRight"><span class="aisSiteTabLeft"><span class="aisSiteTab">
+			about us</span></span></span></a>
+
+	</div>
+	</div>
+	</div>
+	</div>
+	</div>
+</div>
+
+<table style="width: 100%" cellspacing="0" cellpadding="0">
+	<tr valign="top">
+		<td width="210px">
+<div id="sidebar">
+<div class="aisLeftColumnFill">
+<div class="aisLeftColumnBottom">
+<div class="aisLeftColumnTop">
+<div id="twitter_div" class="aisLeftNav">
+<h2 class="sidebar-title">Twitter Updates</h2>
+<ul id="twitter_update_list"></ul>
+<a href="http://twitter.com/michaellperry" id="follow">Follow me</a>
+</div>
+<div id="twitter_reply_div" class="aisLeftNav">
+<h2 class="sidebar-title">Twitter Replies</h2>
+<ul id="twitter_reply_list"></ul>
+</div>
+
+<div class="aisLeftNav">
+<a href='http://ineta.org/Speakers/SearchCommunitySpeakers.aspx?SpeakerId=c5110e21-9243-461b-a464-a6548524e885'><img alt='INETA Community Speakers Program' border='0' src='../../www.ineta.org/images/OfficialLogos/InetaCommunitySpeakersRequestMe.html' /></a>
+</div>
+
+<div class="aisLeftNav">
+	<li class="pagenav"><h2>Pages</h2><ul><li class="page_item page-item-2"><a href="indexba53.html?page_id=2" title="About Us">About Us</a></li>
+<li class="page_item page-item-210"><a href="index6ae3.html?page_id=210" title="Templates">Templates</a></li>
+</ul></li></div>
+
+<div class="aisLeftNav">
+<h2>Archives</h2>
+<ul>
+	<li><a href='indexb4d5.html?m=201110' title='October 2011'>October 2011</a></li>
+	<li><a href='indexc61a.html?m=201106' title='June 2011'>June 2011</a></li>
+	<li><a href='indexa80d.html?m=201105' title='May 2011'>May 2011</a></li>
+	<li><a href='index512b.html?m=201104' title='April 2011'>April 2011</a></li>
+	<li><a href='index08fb.html?m=201103' title='March 2011'>March 2011</a></li>
+	<li><a href='index52f4.html?m=201102' title='February 2011'>February 2011</a></li>
+	<li><a href='index74f1.html?m=201101' title='January 2011'>January 2011</a></li>
+	<li><a href='index8956.html?m=201012' title='December 2010'>December 2010</a></li>
+	<li><a href='indexa1aa.html?m=201011' title='November 2010'>November 2010</a></li>
+	<li><a href='indexe3d5.html?m=201010' title='October 2010'>October 2010</a></li>
+	<li><a href='index9ab9.html?m=201009' title='September 2010'>September 2010</a></li>
+	<li><a href='index1ff0.html?m=201008' title='August 2010'>August 2010</a></li>
+	<li><a href='index9f11.html?m=201007' title='July 2010'>July 2010</a></li>
+	<li><a href='index31f0.html?m=201006' title='June 2010'>June 2010</a></li>
+	<li><a href='indexd189.html?m=201005' title='May 2010'>May 2010</a></li>
+	<li><a href='indexb5c0.html?m=201004' title='April 2010'>April 2010</a></li>
+	<li><a href='indexf258.html?m=201003' title='March 2010'>March 2010</a></li>
+	<li><a href='index6e30.html?m=201002' title='February 2010'>February 2010</a></li>
+	<li><a href='index6b19.html?m=201001' title='January 2010'>January 2010</a></li>
+	<li><a href='index5c0a.html?m=200912' title='December 2009'>December 2009</a></li>
+	<li><a href='index8f62.html?m=200911' title='November 2009'>November 2009</a></li>
+	<li><a href='index451d.html?m=200910' title='October 2009'>October 2009</a></li>
+	<li><a href='index3e04.html?m=200909' title='September 2009'>September 2009</a></li>
+	<li><a href='index425a.html?m=200908' title='August 2009'>August 2009</a></li>
+	<li><a href='index9907.html?m=200907' title='July 2009'>July 2009</a></li>
+	<li><a href='index3104.html?m=200906' title='June 2009'>June 2009</a></li>
+	<li><a href='indexc36d.html?m=200905' title='May 2009'>May 2009</a></li>
+	<li><a href='index17e8.html?m=200904' title='April 2009'>April 2009</a></li>
+	<li><a href='index10a5.html?m=200903' title='March 2009'>March 2009</a></li>
+	<li><a href='index8988.html?m=200902' title='February 2009'>February 2009</a></li>
+	<li><a href='index1419.html?m=200901' title='January 2009'>January 2009</a></li>
+	<li><a href='index7866.html?m=200812' title='December 2008'>December 2008</a></li>
+	<li><a href='index55f6.html?m=200811' title='November 2008'>November 2008</a></li>
+	<li><a href='indexa7bc.html?m=200810' title='October 2008'>October 2008</a></li>
+	<li><a href='indexe77c.html?m=200809' title='September 2008'>September 2008</a></li>
+	<li><a href='indexcffc.html?m=200808' title='August 2008'>August 2008</a></li>
+	<li><a href='index0e62.html?m=200807' title='July 2008'>July 2008</a></li>
+	<li><a href='indexfda7.html?m=200806' title='June 2008'>June 2008</a></li>
+	<li><a href='index7d64.html?m=200805' title='May 2008'>May 2008</a></li>
+	<li><a href='index94dd.html?m=200804' title='April 2008'>April 2008</a></li>
+	<li><a href='index9631.html?m=200803' title='March 2008'>March 2008</a></li>
+	<li><a href='indexdd52.html?m=200802' title='February 2008'>February 2008</a></li>
+	<li><a href='index21ee.html?m=200801' title='January 2008'>January 2008</a></li>
+	<li><a href='index363c.html?m=200712' title='December 2007'>December 2007</a></li>
+	<li><a href='index7493.html?m=200711' title='November 2007'>November 2007</a></li>
+	<li><a href='index93a7.html?m=200710' title='October 2007'>October 2007</a></li>
+	<li><a href='index4ca8.html?m=200709' title='September 2007'>September 2007</a></li>
+	<li><a href='index6124.html?m=200708' title='August 2007'>August 2007</a></li>
+	<li><a href='index6013.html?m=200707' title='July 2007'>July 2007</a></li>
+	<li><a href='index2ab6.html?m=200706' title='June 2007'>June 2007</a></li>
+	<li><a href='index44f0.html?m=200705' title='May 2007'>May 2007</a></li>
+	<li><a href='indexf0b4.html?m=200704' title='April 2007'>April 2007</a></li>
+	<li><a href='index481d.html?m=200703' title='March 2007'>March 2007</a></li>
+	<li><a href='indexcbea.html?m=200702' title='February 2007'>February 2007</a></li>
+	<li><a href='index9cdc.html?m=200701' title='January 2007'>January 2007</a></li>
+	<li><a href='index3ea4.html?m=200612' title='December 2006'>December 2006</a></li>
+	<li><a href='index67ca.html?m=200611' title='November 2006'>November 2006</a></li>
+	<li><a href='indexff49.html?m=200610' title='October 2006'>October 2006</a></li>
+	<li><a href='index611c.html?m=200609' title='September 2006'>September 2006</a></li>
+	<li><a href='index9a21.html?m=200608' title='August 2006'>August 2006</a></li>
+	<li><a href='index3ee9.html?m=200607' title='July 2006'>July 2006</a></li>
+	<li><a href='indexe13a.html?m=200606' title='June 2006'>June 2006</a></li>
+</ul>
+</div>
+
+<div class="aisLeftNav">
+	</div>
+
+<div class="aisLeftNav">
+<h2>Books</h2>
+<iframe src="http://rcm.amazon.com/e/cm?t=adventures0d2-20&amp;o=1&amp;p=8&amp;l=as1&amp;asins=0764526413&amp;fc1=000000&amp;IS2=1&amp;lt1=_blank&amp;lc1=0000ff&amp;bc1=000000&amp;bg1=ffffff&amp;f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" name="I5" id="I5"></iframe>
+<br/>
+<iframe src="http://rcm.amazon.com/e/cm?t=adventures0d2-20&amp;o=1&amp;p=8&amp;l=as1&amp;asins=0201633612&amp;fc1=000000&amp;IS2=1&amp;lt1=_blank&amp;lc1=0000ff&amp;bc1=000000&amp;bg1=ffffff&amp;f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" name="I6" id="I6"></iframe>
+<br/>
+<iframe src="http://rcm.amazon.com/e/cm?t=adventures0d2-20&amp;o=1&amp;p=8&amp;l=as1&amp;asins=0136291554&amp;fc1=000000&amp;IS2=1&amp;lt1=_blank&amp;lc1=0000ff&amp;bc1=000000&amp;bg1=ffffff&amp;f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" name="I7" id="I7"></iframe>
+<br/>
+<iframe src="http://rcm.amazon.com/e/cm?t=adventures0d2-20&amp;o=1&amp;p=8&amp;l=as1&amp;asins=1888009195&amp;fc1=000000&amp;IS2=1&amp;lt1=_blank&amp;lc1=0000ff&amp;bc1=000000&amp;bg1=ffffff&amp;f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" name="I8" id="I8"></iframe>
+</div>
+<div class="aisLeftNav">
+<h2>Meta</h2>
+<ul>
+		<li><a href="wp-login.html">Login</a></li>
+	<li><a href="http://validator.w3.org/check/referer" title="This page validates as XHTML 1.0 Transitional">Valid <abbr title="eXtensible HyperText Markup Language">XHTML</abbr></a></li>
+	<li><a href="http://gmpg.org/xfn/"><abbr title="XHTML Friends Network">XFN</abbr></a></li>
+	<li><a href="http://wordpress.org/" title="Powered by WordPress, state-of-the-art semantic personal publishing platform.">WordPress</a></li>
+	</ul>
+</div>
+<div class="aisLeftContent">
+<h2>Community</h2>
+<ul>
+	<script type="text/javascript" src="../../localhost/embed/92q2bbma.js"></script>
+</ul>
+</div>
+
+</div></div></div>
+</div>		</td>
+		<td>
+
+	<div id="content" class="widecolumn">
+
+	
+		<div class="navigation">
+			<div class="alignleft">&laquo; <a href="indexbcc1.html?p=549">Pass context parameters to SSRS reports in a web application</a></div>
+			<div class="alignright"><a href="index46de.html?p=551">A fluent interface gone wrong, so wrong</a> &raquo;</div>
+		</div>
+		<br/>
+
+		<div class="post" id="post-550">
+			<h1>Entity Framework and the Repository Pattern</h1>
+
+			<div class="entry">
+				<p>When I’ve asked <a href="http://stackoverflow.com/questions/575190/is-there-an-in-memory-provider-for-entity-framework">how to unit test Entity Framework</a>, the best answer was “use the Repository pattern to encapsulate your EF code” (thanks <a href="http://andrewpeters.net/">Andrew Peters</a>). I recently asked the same thing about RIA Services. <a href="http://azurecoding.net/blogs/brownie/">Mike Brown</a> responded with the same advice, even going so far as to spend a couple of hours with me on Live Meeting.</p>
+<p>Since <strong>all you gotta do is</strong> implement the Repository Pattern, it should be easy, right? Let’s take a look at a minimalist implementation.</p>
+<h3>Inject the implementation</h3>
+<p>To support unit testing, we need to be able to swap out our implementation. At the top level, the consumer of a repository begins a unit of work. So we’ll inject a unit of work factory.</p>
+<pre class="code"><span style="color: blue">public interface </span><span style="color: #2b91af">IUnitOfWorkFactory
+</span>{
+    <span style="color: #2b91af">IUnitOfWork </span>Begin();
+}</pre>
+<pre class="code"><span style="color: blue">public class </span><span style="color: #2b91af">NoteworthyService
+</span>{
+    <span style="color: blue">private </span><span style="color: #2b91af">IUnitOfWorkFactory </span>_unitOfWorkFactory;
+
+    <span style="color: blue">public </span>NoteworthyService(<span style="color: #2b91af">IUnitOfWorkFactory </span>unitOfWorkFactory)
+    {
+        _unitOfWorkFactory = unitOfWorkFactory;
+    }
+}</pre>
+<h3>Identify the repository</h3>
+<p>In DDD we create one repository per aggregate root, which is the entity from which you begin the query. In EF, entities exist in a container. So we’ll take two steps to get the repository via the container.</p>
+<pre class="code"><span style="color: blue">public interface </span><span style="color: #2b91af">IUnitOfWork </span>: <span style="color: #2b91af">IDisposable
+</span>{
+    <span style="color: #2b91af">IContainer</span>&lt;TContainer&gt; UsingContainer&lt;TContainer&gt;()
+        <span style="color: blue">where </span>TContainer : <span style="color: #2b91af">ObjectContext</span>, <span style="color: blue">new</span>();
+}
+
+<span style="color: blue">public interface </span><span style="color: #2b91af">IContainer</span>&lt;TContainer&gt; : <span style="color: #2b91af">IDisposable
+</span>{
+    <span style="color: #2b91af">IRepository</span>&lt;TEntity&gt; GetRepository&lt;TEntity&gt;(<span style="color: #2b91af">Func</span>&lt;TContainer, <span style="color: #2b91af">ObjectQuery</span>&lt;TEntity&gt;&gt; repositorySelector)
+        <span style="color: blue">where </span>TEntity : <span style="color: #2b91af">EntityObject</span>;
+}</pre>
+<h3>Provide a specification</h3>
+<p>The second half of the Repository Pattern is the Specification. A specification identifies which entities to pull from the repository. In Linq, we use lambdas for that. So a repository should be able to give you back some entities when given a lambda.</p>
+<pre class="code"><span style="color: blue">public interface </span><span style="color: #2b91af">IRepository</span>&lt;TEntity&gt;
+{
+    <span style="color: #2b91af">IQueryable</span>&lt;TEntity&gt; GetSatisfying(<span style="color: #2b91af">Expression</span>&lt;<span style="color: #2b91af">Func</span>&lt;TEntity, <span style="color: blue">bool</span>&gt;&gt; specification);
+    <span style="color: blue">void </span>Add(TEntity entity);
+}</pre>
+<h3>Query the repository</h3>
+<p>With those interfaces in place, here’s what a query looks like.</p>
+<pre class="code"><span style="color: blue">public </span><span style="color: #2b91af">List</span>&lt;<span style="color: #2b91af">Article</span>&gt; GetArticlesByTopic(<span style="color: blue">string </span>topicName)
+{
+    <span style="color: blue">using </span>(<span style="color: blue">var </span>unitOfWork = _unitOfWorkFactory.Begin())
+    {
+        <span style="color: blue">return </span>unitOfWork.UsingContainer&lt;<span style="color: #2b91af">NoteworthyEntities</span>&gt;().GetRepository(container =&gt; container.Articles)
+            .GetSatisfying(article =&gt; article.Topics.Any(topic =&gt; topic.TopicName == topicName))
+            .ToList();
+    }
+}</pre>
+<h3>Implement in memory</h3>
+<p>For unit testing, we implement the repository interfaces using in-memory lists.</p>
+<pre class="code"><span style="color: blue">public class </span><span style="color: #2b91af">MemoryUnitOfWorkFactory </span>: <span style="color: #2b91af">IUnitOfWorkFactory
+</span>{
+    <span style="color: blue">private </span><span style="color: #2b91af">MemoryUnitOfWork </span>_unitOfWork = <span style="color: blue">new </span><span style="color: #2b91af">MemoryUnitOfWork</span>();
+
+    <span style="color: blue">public </span><span style="color: #2b91af">IUnitOfWork </span>Begin()
+    {
+        <span style="color: blue">return </span>_unitOfWork;
+    }
+}
+
+<span style="color: blue">public class </span><span style="color: #2b91af">MemoryUnitOfWork </span>: <span style="color: #2b91af">IUnitOfWork
+</span>{
+    <span style="color: blue">private </span><span style="color: #2b91af">Dictionary</span>&lt;<span style="color: #2b91af">Type</span>, <span style="color: blue">object</span>&gt; _containerByType = <span style="color: blue">new </span><span style="color: #2b91af">Dictionary</span>&lt;<span style="color: #2b91af">Type</span>, <span style="color: blue">object</span>&gt;();
+
+    <span style="color: blue">public </span><span style="color: #2b91af">IContainer</span>&lt;TContainer&gt; UsingContainer&lt;TContainer&gt;()
+        <span style="color: blue">where </span>TContainer : <span style="color: #2b91af">ObjectContext</span>, <span style="color: blue">new</span>()
+    {
+        <span style="color: blue">object </span>container;
+        <span style="color: blue">if </span>(!_containerByType.TryGetValue(<span style="color: blue">typeof</span>(TContainer), <span style="color: blue">out </span>container))
+        {
+            container = <span style="color: blue">new </span><span style="color: #2b91af">MemoryContainer</span>&lt;TContainer&gt;();
+            _containerByType.Add(<span style="color: blue">typeof</span>(TContainer), container);
+        }
+        <span style="color: blue">return </span>(<span style="color: #2b91af">IContainer</span>&lt;TContainer&gt;)container;
+    }
+
+    <span style="color: blue">public void </span>Dispose()
+    {
+    }
+}
+
+<span style="color: blue">public class </span><span style="color: #2b91af">MemoryContainer</span>&lt;TContainer&gt; : <span style="color: #2b91af">IContainer</span>&lt;TContainer&gt;
+    <span style="color: blue">where </span>TContainer : <span style="color: #2b91af">ObjectContext</span>, <span style="color: blue">new</span>()
+{
+    <span style="color: blue">private </span><span style="color: #2b91af">Dictionary</span>&lt;<span style="color: #2b91af">Type</span>, <span style="color: blue">object</span>&gt; _containerByType = <span style="color: blue">new </span><span style="color: #2b91af">Dictionary</span>&lt;<span style="color: #2b91af">Type</span>, <span style="color: blue">object</span>&gt;();
+
+    <span style="color: blue">public </span><span style="color: #2b91af">IRepository</span>&lt;TEntity&gt; GetRepository&lt;TEntity&gt;(<span style="color: #2b91af">Func</span>&lt;TContainer, <span style="color: #2b91af">ObjectQuery</span>&lt;TEntity&gt;&gt; repositorySelector)
+        <span style="color: blue">where </span>TEntity : <span style="color: #2b91af">EntityObject
+    </span>{
+        <span style="color: blue">object </span>container;
+        <span style="color: blue">if </span>(!_containerByType.TryGetValue(<span style="color: blue">typeof</span>(TEntity), <span style="color: blue">out </span>container))
+        {
+            container = <span style="color: blue">new </span><span style="color: #2b91af">MemoryRepository</span>&lt;TEntity&gt;();
+            _containerByType.Add(<span style="color: blue">typeof</span>(TEntity), container);
+        }
+        <span style="color: blue">return </span>(<span style="color: #2b91af">IRepository</span>&lt;TEntity&gt;)container;
+    }
+
+    <span style="color: blue">public void </span>Dispose()
+    {
+    }
+}
+
+<span style="color: blue">public class </span><span style="color: #2b91af">MemoryRepository</span>&lt;TEntity&gt; : <span style="color: #2b91af">IRepository</span>&lt;TEntity&gt;
+    <span style="color: blue">where </span>TEntity : <span style="color: #2b91af">EntityObject
+</span>{
+    <span style="color: blue">private </span><span style="color: #2b91af">List</span>&lt;TEntity&gt; _entities = <span style="color: blue">new </span><span style="color: #2b91af">List</span>&lt;TEntity&gt;();
+
+    <span style="color: blue">public </span><span style="color: #2b91af">IQueryable</span>&lt;TEntity&gt; GetSatisfying(<span style="color: #2b91af">Expression</span>&lt;<span style="color: #2b91af">Func</span>&lt;TEntity, <span style="color: blue">bool</span>&gt;&gt; specification)
+    {
+        <span style="color: blue">return </span>_entities.Where(specification.Compile()).AsQueryable();
+    }
+
+    <span style="color: blue">public void </span>Add(TEntity entity)
+    {
+        _entities.Add(entity);
+    }
+}</pre>
+<p>And here’s what a unit test looks like.</p>
+<pre class="code">[<span style="color: #2b91af">TestClass</span>]
+<span style="color: blue">public class </span><span style="color: #2b91af">NoteworthyServiceTest
+</span>{
+    <span style="color: blue">private </span><span style="color: #2b91af">NoteworthyService </span>_noteworthyService;
+
+    [<span style="color: #2b91af">TestInitialize</span>]
+    <span style="color: blue">public void </span>Initialize()
+    {
+        <span style="color: #2b91af">IUnitOfWorkFactory </span>memory = <span style="color: blue">new </span><span style="color: #2b91af">MemoryUnitOfWorkFactory</span>();
+
+        <span style="color: #2b91af">IRepository</span>&lt;<span style="color: #2b91af">Article</span>&gt; articlesRepository = memory.Begin()
+            .UsingContainer&lt;<span style="color: #2b91af">NoteworthyEntities</span>&gt;()
+            .GetRepository(container =&gt; container.Articles);
+        <span style="color: #2b91af">Topic </span>ddd = <span style="color: blue">new </span><span style="color: #2b91af">Topic</span>()
+        {
+            TopicName = <span style="color: #a31515">&quot;ddd&quot;
+        </span>};
+        <span style="color: #2b91af">Topic </span>corresopndence = <span style="color: blue">new </span><span style="color: #2b91af">Topic</span>()
+        {
+            TopicName = <span style="color: #a31515">&quot;correspondence&quot;
+        </span>};
+        <span style="color: #2b91af">Article </span>efRepository = <span style="color: blue">new </span><span style="color: #2b91af">Article</span>()
+        {
+            Title = <span style="color: #a31515">&quot;Entity Framework and the Repository Pattern&quot;
+        </span>};
+        efRepository.Topics.Add(ddd);
+        <span style="color: #2b91af">Article </span>correspondenceLaunch = <span style="color: blue">new </span><span style="color: #2b91af">Article</span>()
+        {
+            Title = <span style="color: #a31515">&quot;Correspondence Launch&quot;
+        </span>};
+        correspondenceLaunch.Topics.Add(corresopndence);
+        <span style="color: #2b91af">Article </span>correspondenceDDD = <span style="color: blue">new </span><span style="color: #2b91af">Article</span>()
+        {
+            Title = <span style="color: #a31515">&quot;Correspondence and DDD&quot;
+        </span>};
+        correspondenceDDD.Topics.Add(ddd);
+        correspondenceDDD.Topics.Add(corresopndence);
+
+        articlesRepository.Add(efRepository);
+        articlesRepository.Add(correspondenceLaunch);
+        articlesRepository.Add(correspondenceDDD);
+
+        _noteworthyService = <span style="color: blue">new </span><span style="color: #2b91af">NoteworthyService</span>(memory);
+    }
+
+    [<span style="color: #2b91af">TestMethod</span>]
+    <span style="color: blue">public void </span>QueryReturnsArticles()
+    {
+        <span style="color: blue">var </span>articles = _noteworthyService.GetArticlesByTopic(<span style="color: #a31515">&quot;ddd&quot;</span>).ToArray();
+
+        <span style="color: #2b91af">Assert</span>.AreEqual(<span style="color: #a31515">&quot;Entity Framework and the Repository Pattern&quot;</span>, articles[0].Title);
+        <span style="color: #2b91af">Assert</span>.AreEqual(<span style="color: #a31515">&quot;Correspondence and DDD&quot;</span>, articles[1].Title);
+    }
+}</pre>
+<h3>Implement with Entity Framework</h3>
+<p>Finally, we implement the real thing using Entity Framework.</p>
+<pre class="code"><span style="color: blue">public class </span><span style="color: #2b91af">EntityFrameworkUnitOfWorkFactory </span>: <span style="color: #2b91af">IUnitOfWorkFactory
+</span>{
+    <span style="color: blue">public </span><span style="color: #2b91af">IUnitOfWork </span>Begin()
+    {
+        <span style="color: blue">return new </span><span style="color: #2b91af">EntityFrameworkUnitOfWork</span>();
+    }
+}
+
+<span style="color: blue">public class </span><span style="color: #2b91af">EntityFrameworkUnitOfWork </span>: <span style="color: #2b91af">IUnitOfWork
+</span>{
+    <span style="color: blue">private </span><span style="color: #2b91af">Dictionary</span>&lt;<span style="color: #2b91af">Type</span>, <span style="color: #2b91af">IDisposable</span>&gt; _containerByType = <span style="color: blue">new </span><span style="color: #2b91af">Dictionary</span>&lt;<span style="color: #2b91af">Type</span>, <span style="color: #2b91af">IDisposable</span>&gt;();
+
+    <span style="color: blue">public </span><span style="color: #2b91af">IContainer</span>&lt;TContainer&gt; UsingContainer&lt;TContainer&gt;()
+        <span style="color: blue">where </span>TContainer : <span style="color: #2b91af">ObjectContext</span>, <span style="color: blue">new</span>()
+    {
+        <span style="color: #2b91af">IDisposable </span>container;
+        <span style="color: blue">if </span>(!_containerByType.TryGetValue(<span style="color: blue">typeof</span>(TContainer), <span style="color: blue">out </span>container))
+        {
+            container = <span style="color: blue">new </span><span style="color: #2b91af">EntityFrameworkContainer</span>&lt;TContainer&gt;();
+            _containerByType.Add(<span style="color: blue">typeof</span>(TContainer), container);
+        }
+        <span style="color: blue">return </span>(<span style="color: #2b91af">IContainer</span>&lt;TContainer&gt;)container;
+    }
+
+    <span style="color: blue">public void </span>Dispose()
+    {
+        <span style="color: blue">foreach </span>(<span style="color: blue">var </span>container <span style="color: blue">in </span>_containerByType.Values)
+            container.Dispose();
+    }
+}
+
+<span style="color: blue">public class </span><span style="color: #2b91af">EntityFrameworkContainer</span>&lt;TContainer&gt; : <span style="color: #2b91af">IContainer</span>&lt;TContainer&gt;
+    <span style="color: blue">where </span>TContainer : <span style="color: #2b91af">ObjectContext</span>, <span style="color: blue">new</span>()
+{
+    <span style="color: blue">private </span>TContainer _container;
+
+    <span style="color: blue">public </span>EntityFrameworkContainer()
+    {
+        _container = <span style="color: blue">new </span>TContainer();
+    }
+
+    <span style="color: blue">public </span><span style="color: #2b91af">IRepository</span>&lt;TEntity&gt; GetRepository&lt;TEntity&gt;(<span style="color: #2b91af">Func</span>&lt;TContainer, <span style="color: #2b91af">ObjectQuery</span>&lt;TEntity&gt;&gt; repositorySelector)
+        <span style="color: blue">where </span>TEntity : <span style="color: #2b91af">EntityObject
+    </span>{
+        <span style="color: blue">return new </span><span style="color: #2b91af">EntityFrameworkRepository</span>&lt;TContainer, TEntity&gt;(_container, repositorySelector(_container));
+    }
+
+    <span style="color: blue">public void </span>Dispose()
+    {
+        _container.Dispose();
+    }
+}
+
+<span style="color: blue">public class </span><span style="color: #2b91af">EntityFrameworkRepository</span>&lt;TContainer, TEntity&gt; : <span style="color: #2b91af">IRepository</span>&lt;TEntity&gt;
+    <span style="color: blue">where </span>TContainer : <span style="color: #2b91af">ObjectContext</span>, <span style="color: blue">new</span>()
+    <span style="color: blue">where </span>TEntity : <span style="color: #2b91af">EntityObject
+</span>{
+    <span style="color: blue">private </span>TContainer _container;
+    <span style="color: blue">private </span><span style="color: #2b91af">ObjectQuery</span>&lt;TEntity&gt; _objectQuery;
+
+    <span style="color: blue">public </span>EntityFrameworkRepository(TContainer container, <span style="color: #2b91af">ObjectQuery</span>&lt;TEntity&gt; objectQuery)
+    {
+        _container = container;
+        _objectQuery = objectQuery;
+    }
+
+    <span style="color: blue">public </span><span style="color: #2b91af">IQueryable</span>&lt;TEntity&gt; GetSatisfying(<span style="color: #2b91af">Expression</span>&lt;<span style="color: #2b91af">Func</span>&lt;TEntity, <span style="color: blue">bool</span>&gt;&gt; specification)
+    {
+        <span style="color: blue">return </span>_objectQuery.Where(specification);
+    }
+
+    <span style="color: blue">public void </span>Add(TEntity entity)
+    {
+        _container.AddObject(_objectQuery.Name, entity);
+    }
+}</pre>
+<h3>Analysis</h3>
+<p>This is the smallest implementation of the Repository pattern that I could come up with. It is obviously not feature complete. For example, it does not implement Delete, nor does it allow you to specify eager loading with Include. There are <a href="http://www.codeproject.com/KB/database/ImplRepositoryPatternEF.aspx">other implementations that are bigger</a>, but I doubt that there could be one smaller. Even at this size, this doesn’t qualify as “all you need to do is”.</p>
+<p>One benefit of the Repository pattern is supposed to be that it abstracts the persistence mechanism. But this implementation returns EntityObjects, which are a distinctly Entity Framework-ish data type. I could try for a POCO compliant implementation to solve that problem.</p>
+<p>Because this implementation requires EntityObjects, it could never work with RIA Services. I would have to write a different Repository implementation to unit test my client code.</p>
+<p>And finally, Entity Framework does some things that the in-memory repository does not. My unit tests can’t verify that I’m using EF correctly. For example, Entity Framework does eager loading if I explicitly request it. The in-memory implementation always has all navigation properties populated. Because of this difference, I can’t verify with a unit test that I have included all of the required navigations.</p>
+<h3>Conclusion</h3>
+<p>All of this leads me to conclude that the Repository pattern is not the best way to add testability to an untestable framework. The framework needs to be testable from the beginning. If Entity Framework had provided an in-memory implementation for testing, then I could test <em>my use of</em> EF, including eager loading.</p>
+<p>By the way, <a href="http://correspondence.codeplex.com/">Correspondence</a> does in fact provide an in-memory implementation for unit testing. Please go through the lessons to see what I think a testable framework should look like.</p>
+
+				
+				<p class="postmetadata alt">
+					<small>
+						This entry was posted
+												on Thursday, September 9th, 2010 at 12:55 pm						and is filed under <a href="index9591.html?cat=37" title="View all posts in DDD" rel="category">DDD</a>,  <a href="indexe8fb.html?cat=39" title="View all posts in Entity Framework" rel="category">Entity Framework</a>,  <a href="index3f7b.html?cat=2" title="View all posts in Unit testing" rel="category">Unit testing</a>.
+						You can follow any responses to this entry through the <a href='index9c7c.html?feed=rss2&amp;p=550'>RSS 2.0</a> feed.
+
+													You can skip to the end and leave a response. Pinging is currently not allowed.
+
+						
+					</small>
+				</p>
+
+			</div>
+		</div>
+
+	
+<!-- You can start editing here. -->
+
+	<h3 id="comments">6 Responses to &#8220;Entity Framework and the Repository Pattern&#8221;</h3>
+
+	<ol class="commentlist">
+
+	
+		<li class="alt" id="comment-86156">
+			<cite>Mickey</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-86156" title="">September 21st, 2010 at 3:57 am</a> </small>
+
+			<p>Hello!</p>
+<p>Thank you for your wonderful post!</p>
+<p>I tried it and I loved it!</p>
+<p>My question is: how to migrate this code to Linq-To-SQL correctly?</p>
+<p>I got things working, but I was wondering if I was doing it right.</p>
+<p>1. ObjectContext - was replaced with DataContext<br />
+2. EntityObject - was replaced with class (maybe here I have to validate that DataContext has Table for that class?)<br />
+3. ObjectQuery - was removed (Is there an equivalent for this in Linq-To-SQL?), so IContainer.GetRepository() is now parameterless method.<br />
+4. Repository implementation takes only TContainer as a constructor parameter, and private ObjectQuery _objectQuery; is now private Table _table; that is set in constructor body like this: _table = _container.GetTable();<br />
+5. L2SRepository.GetSatisfying(Expression&lt;Func&gt; specification) - returns _table.Where(specification.Compile()).AsQueryable();<br />
+6. L2SRepository.Add(TEntity entity) - now does: _table.InsertOnSubmit(entity);</p>
+<p>(I hope i didn't miss any changes)</p>
+<p>The code works for me, but I wanted to be shure.</p>
+<p>Thank you!</p>
+
+		</li>
+
+	
+	
+		<li class="" id="comment-86214">
+			<cite>Michael L Perry</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-86214" title="">September 21st, 2010 at 12:07 pm</a> </small>
+
+			<p>I'm confused about the removal of the parameter from GetRepository(). How do you identify which table to use?</p>
+<p>Other than that, I get it. It looks like a good port. If you think your changes will help other people test their L2S code, please post it. Send me a link and I'll share it.</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-86429">
+			<cite>Mickey</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-86429" title="">September 22nd, 2010 at 7:12 pm</a> </small>
+
+			<p>Hi, Michael.</p>
+<p>It seems that all the &lt;...&gt; got cleared from my message, so all the generics declaration got lost... I'll try to reconstruct:</p>
+<p>1. ObjectContext - was replaced with DataContext<br />
+2. EntityObject - was replaced with class (maybe here I have to validate that DataContext has Table for that class?)<br />
+3. ObjectQuery - was removed (Is there an equivalent for this in Linq-To-SQL?), so IContainer.GetRepository&lt;TEntity&gt;() is now parameterless method.<br />
+4. Repository implementation takes only TContainer as a constructor parameter, and private ObjectQuery&lt;TEntity&gt; _objectQuery; is now private Table&lt;TEntity&gt; _table; that is set in constructor body like this: _table = _container.GetTable&lt;TEntity&gt;();<br />
+5. L2SRepository.GetSatisfying(Expression&lt;Func&lt;TEntity, bool&gt;&gt; specification) - returns _table.Where(specification.Compile()).AsQueryable();<br />
+6. L2SRepository.Add(TEntity entity) - now does: _table.InsertOnSubmit(entity);</p>
+<p>In L2S the repository is Table&lt;T&gt;, so in GetRepository&lt;TEntity&gt;() there is _context.GetTable&lt;T&gt; - and this is the table (instead of IContainer.GetRepository() I originally wrote IContainer.GetRepository&lt;TEntity&gt;() )</p>
+<p>I revised my code and I changed it a little, so it is now resembles yours for EF very much.</p>
+<p>I can post it (where can I post it so you can download it?)</p>
+<p>I have another question: in implementation of MemoryContainer class you are caching MemoryRepositories, but in EF implementation there are no such caching, why is that?</p>
+
+		</li>
+
+	
+	
+		<li class="" id="comment-86537">
+			<cite>Michael L Perry</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-86537" title="">September 23rd, 2010 at 8:07 pm</a> </small>
+
+			<p>Ok, that makes more sense. I suggest you check your code into GitHub to share it. Either that or put a zip file on DropBox.</p>
+<p>I look forward to seeing the complete solution.</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-86908">
+			<cite>Mickey</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-86908" title="">September 25th, 2010 at 6:49 pm</a> </small>
+
+			<p>Hi, Michael</p>
+<p>I have uploaded my solution to GitHub (hopefully correctly as it's my first experience with GetHub), here is the link: <a href="http://github.com/mickeyvip/RepositoryPattern" rel="nofollow">http://github.com/mickeyvip/RepositoryPattern</a></p>
+<p>The solution contains:</p>
+<p>Data.dll:<br />
+SQL Server Express file with some sample data<br />
+Entity Framework model<br />
+LINQ to SQL model</p>
+<p>IEFRepository.dll: one file with interfaces - your code for Entity Framework<br />
+MemoryEFRepository.dll: one file with implementation - your code for Entity Framework<br />
+EFRepository.dll: one file with implementation - your code for Entity Framework</p>
+<p>L2SFRepository.dll: one file with interfaces - for LINQ-to-SQL (almost your code)<br />
+MemoryL2SRepository.dll: one file with implementation - for LINQ-to-SQL (almost your code)<br />
+L2SRepository.dll: one file with implementation - for LINQ-to-SQL (almost your code)</p>
+<p>DataServices.dll:<br />
+EFNoteworthyService.cs - your code for Entity Framework<br />
+L2SNoteworthyService.cs - LINQ-to-SQL (almost your code)</p>
+<p>Repository.Tests.dll:<br />
+EFMemoryTest.cs - tests for Entity Framework, Memory Repository<br />
+EFRepository.cs - tests for Entity Framework, EF Repository<br />
+L2SMemoryTest.cs - tests for LINQ-to-SQL, Memory Repository<br />
+L2SRepository.cs - tests for LINQ-to-SQL, L2S Repository</p>
+<p>Tell me what you think.</p>
+
+		</li>
+
+	
+	
+		<li class="" id="comment-87162">
+			<cite>Michael L Perry</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-87162" title="">September 27th, 2010 at 12:19 pm</a> </small>
+
+			<p>Excellent work. Thanks for filling in the holes that I left in the original post. I've posted a follow up:<br />
+<a href="index193e.html?p=558" rel="nofollow">http://adventuresinsoftware.com/blog/?p=558</a></p>
+<p>I just realized that I neglected to answer your question about caching the repositories. The reason that I cache the memory repository is that it maintains state; it holds the list of entities that were added. The EF version maintains state in the ObjectContext, so I don't need to cache its repository.</p>
+<p>Thanks again for the L2S implementation.</p>
+
+		</li>
+
+	
+	
+	</ol>
+
+ 
+
+
+<h3 id="respond">Leave a Reply</h3>
+
+<p>You must be <a href="wp-login1046.html?redirect_to=http://adventuresinsoftware.com/blog/?p=550">logged in</a> to post a comment.</p>
+
+
+	
+	</div>
+		</td>
+	</tr>
+</table>
+
+<hr />
+<div id="footer">
+<!-- If you'd like to support WordPress, having the "powered by" link someone on your blog is the best way, it's our only promotion or advertising. -->
+	<p>
+		Adventures in Software is proudly powered by 
+		<a href="http://wordpress.org/">WordPress</a>
+		<br /><a href="indexd784.html?feed=rss2">Entries (RSS)</a>
+		and <a href="indexa6da.html?feed=comments-rss2">Comments (RSS)</a>.
+		<!-- 21 queries. 0.359 seconds. -->
+	</p>
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-389401-3");
+pageTracker._trackPageview();
+} catch(err) {}</script></div>
+
+<!-- Gorgeous design by Michael Heilemann - http://binarybonsai.com/kubrick/ -->
+
+		<div id="sk2-footer" style="color:#FFF; background-color:#444; padding: 3px 2px 3px 2px; border-top: #888 solid 1px;">This blog is protected by <a href="http://unknowngenius.com/blog/" title="Dave">dr Dave</a>'s <strong><a href="http://unknowngenius.com/blog/wordpress/spam-karma/" title="SK2">Spam Karma 2</a></strong>: <strong>274531</strong>  Spams eaten and counting...</div><script type="text/javascript" src="replies.js"></script>
+<script type="text/javascript" src="blogger.js"></script>
+<script type="text/javascript" src="http://twitter.com/statuses/user_timeline/michaellperry.json?callback=twitterCallback2&amp;count=5"></script>
+<script type="text/javascript" src="http://search.twitter.com/search.json?q=@michaellperry&amp;callback=twitterCallbackReplies&amp;rpp=5"></script>
+</body>
+
+<!-- Mirrored from adventuresinsoftware.com/blog/?p=550 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 Jan 2017 12:55:24 GMT -->
+</html>

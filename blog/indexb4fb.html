@@ -1,0 +1,568 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+
+
+<!-- Mirrored from adventuresinsoftware.com/blog/?cat=6&paged=3 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 Jan 2017 13:09:48 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>Adventures in Software   &raquo; Patterns</title>
+
+<meta name="generator" content="WordPress 2.3.3" /> <!-- leave this for stats -->
+
+<link rel="stylesheet" href="wp-content/themes/ais2/style.css" type="text/css" media="screen" />
+<link rel="alternate" type="application/rss+xml" title="Adventures in Software RSS Feed" href="indexd784.html?feed=rss2" />
+<link rel="pingback" href="xmlrpc.html" />
+    <script type="text/javascript">
+        function onSilverlightError(sender, args) {
+            var appSource = "";
+            if (sender != null && sender != 0) {
+              appSource = sender.getHost().Source;
+            }
+            
+            var errorType = args.ErrorType;
+            var iErrorCode = args.ErrorCode;
+
+            if (errorType == "ImageError" || errorType == "MediaError") {
+              return;
+            }
+
+            var errMsg = "Unhandled Error in Silverlight Application " +  appSource + "\n" ;
+
+            errMsg += "Code: "+ iErrorCode + "    \n";
+            errMsg += "Category: " + errorType + "       \n";
+            errMsg += "Message: " + args.ErrorMessage + "     \n";
+
+            if (errorType == "ParserError") {
+                errMsg += "File: " + args.xamlFile + "     \n";
+                errMsg += "Line: " + args.lineNumber + "     \n";
+                errMsg += "Position: " + args.charPosition + "     \n";
+            }
+            else if (errorType == "RuntimeError") {           
+                if (args.lineNumber != 0) {
+                    errMsg += "Line: " + args.lineNumber + "     \n";
+                    errMsg += "Position: " +  args.charPosition + "     \n";
+                }
+                errMsg += "MethodName: " + args.methodName + "     \n";
+            }
+
+            throw new Error(errMsg);
+        }
+    </script>
+
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc0db0.php?rsd" />
+ <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="wp-includes/wlwmanifest.xml" /> <style type='text/css'>
+<!--#header { background: url('wp-content/themes/ais2/images/header-imgae03.html?upper=A7A73F&amp;lower=77773F') no-repeat bottom center; }
+--></style>
+</head>
+<body>
+<div id="page">
+
+<div class="aisTopBar">
+	<form method="get" id="searchform" action="http://adventuresinsoftware.com/blog/">
+<div>
+<a href="indexd784.html?feed=rss2"><img src="../images/feed-icon-28x28.png" border="0"></a>
+<input type="text" value="" name="s" id="s" />
+<input type="submit" id="searchsubmit" value="Search" />
+</div>
+</form>
+</div>
+
+<div class="aisHeaderImageRight">
+	<div class="aisHeaderImage">
+	<div class="aisHeaderCornerRight">
+	<div class="aisHeaderCornerLeft">
+	<div class="aisImageBar">
+	<div class="aisSubSites">
+		<a href="index.html" class="aisSubSiteLink"><span class="aisSiteTabRight"><span class="aisSiteTabLeft"><span class="aisSiteTab">
+			home</span></span></span></a>
+		<a class="aisSubSiteLink" href="indexb60a.html?cat=27"><span class="aisSiteTabRight"><span class="aisSiteTabLeft"><span class="aisSiteTab">
+			historic modeling</span></span></span></a>
+		<a class="aisSubSiteLink" href="indexa88f.html?cat=36"><span class="aisSiteTabRight"><span class="aisSiteTabLeft"><span class="aisSiteTab">
+			update controls</span></span></span></a>
+		<a href="index2d79.html?cat=26" class="aisSubSiteLink"><span class="aisSiteTabRight"><span class="aisSiteTabLeft"><span class="aisSiteTab">
+			degrees of freedom</span></span></span></a>
+		<a class="aisSubSiteLink" href="indexba53.html?page_id=2"><span class="aisSiteTabRight"><span class="aisSiteTabLeft"><span class="aisSiteTab">
+			about us</span></span></span></a>
+
+	</div>
+	</div>
+	</div>
+	</div>
+	</div>
+</div>
+
+<table style="width: 100%" cellspacing="0" cellpadding="0">
+	<tr valign="top">
+		<td width="210px">
+<div id="sidebar">
+<div class="aisLeftColumnFill">
+<div class="aisLeftColumnBottom">
+<div class="aisLeftColumnTop">
+<div id="twitter_div" class="aisLeftNav">
+<h2 class="sidebar-title">Twitter Updates</h2>
+<ul id="twitter_update_list"></ul>
+<a href="http://twitter.com/michaellperry" id="follow">Follow me</a>
+</div>
+<div id="twitter_reply_div" class="aisLeftNav">
+<h2 class="sidebar-title">Twitter Replies</h2>
+<ul id="twitter_reply_list"></ul>
+</div>
+
+<div class="aisLeftNav">
+<a href='http://ineta.org/Speakers/SearchCommunitySpeakers.aspx?SpeakerId=c5110e21-9243-461b-a464-a6548524e885'><img alt='INETA Community Speakers Program' border='0' src='../../www.ineta.org/images/OfficialLogos/InetaCommunitySpeakersRequestMe.html' /></a>
+</div>
+
+<div class="aisLeftNav">
+	<li class="pagenav"><h2>Pages</h2><ul><li class="page_item page-item-2"><a href="indexba53.html?page_id=2" title="About Us">About Us</a></li>
+<li class="page_item page-item-210"><a href="index6ae3.html?page_id=210" title="Templates">Templates</a></li>
+</ul></li></div>
+
+<div class="aisLeftNav">
+<h2>Archives</h2>
+<ul>
+	<li><a href='indexb4d5.html?m=201110' title='October 2011'>October 2011</a></li>
+	<li><a href='indexc61a.html?m=201106' title='June 2011'>June 2011</a></li>
+	<li><a href='indexa80d.html?m=201105' title='May 2011'>May 2011</a></li>
+	<li><a href='index512b.html?m=201104' title='April 2011'>April 2011</a></li>
+	<li><a href='index08fb.html?m=201103' title='March 2011'>March 2011</a></li>
+	<li><a href='index52f4.html?m=201102' title='February 2011'>February 2011</a></li>
+	<li><a href='index74f1.html?m=201101' title='January 2011'>January 2011</a></li>
+	<li><a href='index8956.html?m=201012' title='December 2010'>December 2010</a></li>
+	<li><a href='indexa1aa.html?m=201011' title='November 2010'>November 2010</a></li>
+	<li><a href='indexe3d5.html?m=201010' title='October 2010'>October 2010</a></li>
+	<li><a href='index9ab9.html?m=201009' title='September 2010'>September 2010</a></li>
+	<li><a href='index1ff0.html?m=201008' title='August 2010'>August 2010</a></li>
+	<li><a href='index9f11.html?m=201007' title='July 2010'>July 2010</a></li>
+	<li><a href='index31f0.html?m=201006' title='June 2010'>June 2010</a></li>
+	<li><a href='indexd189.html?m=201005' title='May 2010'>May 2010</a></li>
+	<li><a href='indexb5c0.html?m=201004' title='April 2010'>April 2010</a></li>
+	<li><a href='indexf258.html?m=201003' title='March 2010'>March 2010</a></li>
+	<li><a href='index6e30.html?m=201002' title='February 2010'>February 2010</a></li>
+	<li><a href='index6b19.html?m=201001' title='January 2010'>January 2010</a></li>
+	<li><a href='index5c0a.html?m=200912' title='December 2009'>December 2009</a></li>
+	<li><a href='index8f62.html?m=200911' title='November 2009'>November 2009</a></li>
+	<li><a href='index451d.html?m=200910' title='October 2009'>October 2009</a></li>
+	<li><a href='index3e04.html?m=200909' title='September 2009'>September 2009</a></li>
+	<li><a href='index425a.html?m=200908' title='August 2009'>August 2009</a></li>
+	<li><a href='index9907.html?m=200907' title='July 2009'>July 2009</a></li>
+	<li><a href='index3104.html?m=200906' title='June 2009'>June 2009</a></li>
+	<li><a href='indexc36d.html?m=200905' title='May 2009'>May 2009</a></li>
+	<li><a href='index17e8.html?m=200904' title='April 2009'>April 2009</a></li>
+	<li><a href='index10a5.html?m=200903' title='March 2009'>March 2009</a></li>
+	<li><a href='index8988.html?m=200902' title='February 2009'>February 2009</a></li>
+	<li><a href='index1419.html?m=200901' title='January 2009'>January 2009</a></li>
+	<li><a href='index7866.html?m=200812' title='December 2008'>December 2008</a></li>
+	<li><a href='index55f6.html?m=200811' title='November 2008'>November 2008</a></li>
+	<li><a href='indexa7bc.html?m=200810' title='October 2008'>October 2008</a></li>
+	<li><a href='indexe77c.html?m=200809' title='September 2008'>September 2008</a></li>
+	<li><a href='indexcffc.html?m=200808' title='August 2008'>August 2008</a></li>
+	<li><a href='index0e62.html?m=200807' title='July 2008'>July 2008</a></li>
+	<li><a href='indexfda7.html?m=200806' title='June 2008'>June 2008</a></li>
+	<li><a href='index7d64.html?m=200805' title='May 2008'>May 2008</a></li>
+	<li><a href='index94dd.html?m=200804' title='April 2008'>April 2008</a></li>
+	<li><a href='index9631.html?m=200803' title='March 2008'>March 2008</a></li>
+	<li><a href='indexdd52.html?m=200802' title='February 2008'>February 2008</a></li>
+	<li><a href='index21ee.html?m=200801' title='January 2008'>January 2008</a></li>
+	<li><a href='index363c.html?m=200712' title='December 2007'>December 2007</a></li>
+	<li><a href='index7493.html?m=200711' title='November 2007'>November 2007</a></li>
+	<li><a href='index93a7.html?m=200710' title='October 2007'>October 2007</a></li>
+	<li><a href='index4ca8.html?m=200709' title='September 2007'>September 2007</a></li>
+	<li><a href='index6124.html?m=200708' title='August 2007'>August 2007</a></li>
+	<li><a href='index6013.html?m=200707' title='July 2007'>July 2007</a></li>
+	<li><a href='index2ab6.html?m=200706' title='June 2007'>June 2007</a></li>
+	<li><a href='index44f0.html?m=200705' title='May 2007'>May 2007</a></li>
+	<li><a href='indexf0b4.html?m=200704' title='April 2007'>April 2007</a></li>
+	<li><a href='index481d.html?m=200703' title='March 2007'>March 2007</a></li>
+	<li><a href='indexcbea.html?m=200702' title='February 2007'>February 2007</a></li>
+	<li><a href='index9cdc.html?m=200701' title='January 2007'>January 2007</a></li>
+	<li><a href='index3ea4.html?m=200612' title='December 2006'>December 2006</a></li>
+	<li><a href='index67ca.html?m=200611' title='November 2006'>November 2006</a></li>
+	<li><a href='indexff49.html?m=200610' title='October 2006'>October 2006</a></li>
+	<li><a href='index611c.html?m=200609' title='September 2006'>September 2006</a></li>
+	<li><a href='index9a21.html?m=200608' title='August 2006'>August 2006</a></li>
+	<li><a href='index3ee9.html?m=200607' title='July 2006'>July 2006</a></li>
+	<li><a href='indexe13a.html?m=200606' title='June 2006'>June 2006</a></li>
+</ul>
+</div>
+
+<div class="aisLeftNav">
+	</div>
+
+<div class="aisLeftNav">
+<h2>Books</h2>
+<iframe src="http://rcm.amazon.com/e/cm?t=adventures0d2-20&amp;o=1&amp;p=8&amp;l=as1&amp;asins=0764526413&amp;fc1=000000&amp;IS2=1&amp;lt1=_blank&amp;lc1=0000ff&amp;bc1=000000&amp;bg1=ffffff&amp;f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" name="I5" id="I5"></iframe>
+<br/>
+<iframe src="http://rcm.amazon.com/e/cm?t=adventures0d2-20&amp;o=1&amp;p=8&amp;l=as1&amp;asins=0201633612&amp;fc1=000000&amp;IS2=1&amp;lt1=_blank&amp;lc1=0000ff&amp;bc1=000000&amp;bg1=ffffff&amp;f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" name="I6" id="I6"></iframe>
+<br/>
+<iframe src="http://rcm.amazon.com/e/cm?t=adventures0d2-20&amp;o=1&amp;p=8&amp;l=as1&amp;asins=0136291554&amp;fc1=000000&amp;IS2=1&amp;lt1=_blank&amp;lc1=0000ff&amp;bc1=000000&amp;bg1=ffffff&amp;f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" name="I7" id="I7"></iframe>
+<br/>
+<iframe src="http://rcm.amazon.com/e/cm?t=adventures0d2-20&amp;o=1&amp;p=8&amp;l=as1&amp;asins=1888009195&amp;fc1=000000&amp;IS2=1&amp;lt1=_blank&amp;lc1=0000ff&amp;bc1=000000&amp;bg1=ffffff&amp;f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" name="I8" id="I8"></iframe>
+</div>
+<div class="aisLeftNav">
+<h2>Meta</h2>
+<ul>
+		<li><a href="wp-login.html">Login</a></li>
+	<li><a href="http://validator.w3.org/check/referer" title="This page validates as XHTML 1.0 Transitional">Valid <abbr title="eXtensible HyperText Markup Language">XHTML</abbr></a></li>
+	<li><a href="http://gmpg.org/xfn/"><abbr title="XHTML Friends Network">XFN</abbr></a></li>
+	<li><a href="http://wordpress.org/" title="Powered by WordPress, state-of-the-art semantic personal publishing platform.">WordPress</a></li>
+	</ul>
+</div>
+<div class="aisLeftContent">
+<h2>Community</h2>
+<ul>
+	<script type="text/javascript" src="../../localhost/embed/92q2bbma.js"></script>
+</ul>
+</div>
+
+</div></div></div>
+</div>		</td>
+		<td>
+
+	<div id="content" class="narrowcolumn">
+
+		
+		 		<h2 class="pagetitle">Archive for the &#8216;Patterns&#8217; Category</h2>
+
+ 	  
+
+		<div class="navigation">
+			<div class="alignleft"><a href="index890d.html?cat=6&amp;paged=4">&laquo; Previous Entries</a></div>
+			<div class="alignright"><a href="indexd72b.html?cat=6&amp;paged=2">Next Entries &raquo;</a></div>
+		</div>
+
+				<div class="post">
+				<h3 id="post-220"><a href="index156c.html?p=220" rel="bookmark" title="Permanent Link to Inventing something old">Inventing something old</a></h3>
+				<small>Friday, March 14th, 2008</small>
+
+				<div class="entry">
+					<p>I'm back from the joint application design sessions, and happy with the progress we made. But one discussion stands out as having taken longer than it should have.</p>
+<p>We got to the point of deciding how our systems would physically talk to each other. They have some data to send to us, and we have some data for them. The usual requirements apply: the data has to be validated, the channel has to be secure, the transport has to be reliable, and the process has to be auditable. Still it took an hour to work through the details.</p>
+<p>What we agreed upon was delivering XML files over SFTP. Standard features apply: one folder for incoming and one for outgoing, acknowledgement files, XML schema for validation, and exception reports emailed to a distribution list. In particular, we spent several minutes talking about what to do on days on which no data is exchanged. Do we send an empty file or no file at all?</p>
+<p><strong>This seems familiar</strong><br />
+This problem has been solved before. In fact, this exact solution has been done before. There is nothing new here. Even so, this lengthy conversation among seasoned professionals had the air of invention. There were several problems raised, multiple solutions proposed, and many points argued. But in the end, what we "invented" together is a well-known pattern.</p>
+<p>I don't mind that the solution we agreed upon uses older technology. Sure, web services or REST would have been more in vogue. But even with these newer standards, you have to agree upon a pattern of use. What was so frustrating is that this <em>is</em> a pattern, and yet the group spent an hour rediscovering it.</p>
+<p>If you install any ESB solution, it will include components out-of-the-box that implement this pattern. You just configure them with a polling frequency, a transport protocol, a schema, and an email address. No code required.</p>
+<p>The value of patterns is that you can work at a higher level of abstraction. All the details have been solved for you in advance. This saves time and improves communication.</p>
+<p>And, BTW, the correct answer is to send an empty file. We finally agreed upon that, and congratulated ourselves for our brilliance.</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="indexb0b7.html?cat=6" title="View all posts in Patterns" rel="category">Patterns</a> |   <a href="index156c.html?p=220#respond" title="Comment on Inventing something old">No Comments &#187;</a></p>
+
+			</div>
+
+				<div class="post">
+				<h3 id="post-177"><a href="indexb7c7.html?p=177" rel="bookmark" title="Permanent Link to Historic Modeling">Historic Modeling</a></h3>
+				<small>Wednesday, December 5th, 2007</small>
+
+				<div class="entry">
+					<p>There is one pattern for using definitive behavior that I failed to mention in the <a href="indexa09e.html?p=175">previous post</a>. This is perhaps the most important of them all, so it deserves special treatment.</p>
+<p>Historic modeling is quite simply storing a history of actions, not the current state of a system. The current state is mutable, whereas history is fixed. Once something has been done, it cannot be undone, and it cannot be changed. A history is an ever growing log of permanent records.</p>
+<p>One example of historic modeling from the real world is a chess game. The position of the board changes regularly during the course of a game. The position is dynamic. Yet the record of moves does not change. Once a move is made, it cannot be taken back or changed.</p>
+<p>Another example is a checkbook register. The current balance can change over time, but the history of checks, once written, never changes.</p>
+<p><strong>Advantages of historic modeling</strong>    <br />History is sufficient. Given a history of a system, it is trivial to go back to any point in time to construct it's state. If you have a record of chess moves, you just make each move in turn to produce the board position at every point in the game. If you have a ledger of checks, you can just add up the amounts including the opening balance up to a certain point in time. The current state doesn't contain enough information to reconstruct the history, but the history is sufficient to reconstruct the current state.</p>
+<p>History is atomic. Each action in the history has happened. Actions not yet in the history have not. There is no middle ground. This is why <a href="index2c90.html?p=120">banks keep ledgers of account transfers</a>, rather than trying to decrement one account balance and increment another. Balance, being state, is not atomic.</p>
+<p>History is consistent. Two people comparing notes can easily disagree on the current state of a system. To come to an agreement, they must compare histories. That's why the bank sends you a list of transactions at the end of each month, rather than just your account balance. That's the only way to reconcile your version of the truth with your bank's. Eventually, all parties will come to agree on the same version of history.</p>
+<p>History is transparent. Logging and auditing systems exist to help us trace anomalies to their source. Without them, all we could do is look at the current state and wonder if it is correct. It is relatively easy to hide money in a series of accounts; but if you must produce an accurate history of transactions, each one can be called into question.</p>
+<p><strong>History as definitive behavior</strong>    <br />So what does historic modeling have to do with definitive behavior? After all, history is always growing, while definitive behavior is something that doesn't change during the life of an object.</p>
+<p>While the history of a given system changes, each event in history is constant. Once it is added to history, it cannot be changed. The behavior of the event is definitive, even if the history of events is dynamic.</p>
+<p>The effect of an event might change over time. For example, you might think you have enough in your account to write that check, only to learn later that your spouse made a withdrawal beforehand. In your original history, that check left a positive balance in the account. But after learning about other events, you discover that the check left you overdrawn. Still, that doesn't change the fact that the check was written for a certain amount.</p>
+<p><strong>History in practice</strong>    <br />By the above discussion, a historic model is a database that allows inserts, but no updates or deletes. Every time you need to make a change, you insert the appropriate type of record. To determine the current state of the system, you need to query the aggregate of history.</p>
+<p>This is obviously impractical. Such a database would grow without bounds. The aggregate queries would get slower over time and eventually make the system unusable. We need one more observation to make it all work.</p>
+<p>A system is historic if it appears to be so, whether it actually works as advertised. This observation allows for optimizations like caching, archiving, and pruning. As long as there is some level of abstraction at which you cannot see that the optimization is taking place (without using a stopwatch), then you can still claim to have a historic model. Future posts will discuss these optimizations in detail.</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="indexb60a.html?cat=27" title="View all posts in Historic Modeling" rel="category">Historic Modeling</a>,  <a href="indexb0b7.html?cat=6" title="View all posts in Patterns" rel="category">Patterns</a>,  <a href="index2d79.html?cat=26" title="View all posts in dof" rel="category">dof</a> |   <a href="indexb7c7.html?p=177#comments" title="Comment on Historic Modeling">1 Comment &#187;</a></p>
+
+			</div>
+
+				<div class="post">
+				<h3 id="post-176"><a href="index3440.html?p=176" rel="bookmark" title="Permanent Link to The Right Time to Update">The Right Time to Update</a></h3>
+				<small>Monday, November 26th, 2007</small>
+
+				<div class="entry">
+					<p>I use subversion for all of my personal and professional source code control. As I've stated before, I highly recommend that you <a href="index5eda.html?p=95">set up an SVN repository</a> for managing and sharing your own projects. My client of choice is <a href="http://syncrosvnclient.com/">Syncro SVN</a>. But like all the other SVN clients that I've tried, it picks the wrong time to update.</p>
+<p>When drilling down through the folders of a repository, all SVN clients pause each time a folder is opened to fetch data from the server. Syncro SVN keeps the tree populated while the program is running, so you can collapse and expand folders without penalty. However, once you close the program, it has to fetch folder contents all over again the next time you run it.</p>
+<p>This pause for every folder puts a small tax on user navigation. It puts a speed bump on the road that the user takes to get something done. I hold in my head the place that I need to go and the thing that I need to do once I get there. A series of speed bumps, like the so-called &quot;Chinese&quot; water torture, can distract me from that goal and derail my progress.</p>
+<p>An even more common example of the wrong time to update can be found in just about any program that downloads new versions of itself. Every once in a while, I start Firefox, Quicken, or iTunes to be asked if I want to install an update. The reason that I started this program was not to install an update. It was to get something accomplished. This question completely puts me off my goal and makes me worry. Is there some serious bug or security problem that I should let them fix? How long will this update take? What's the chance that it will fail and prevent me from accomplishing my goal altogether?</p>
+<p>All of these programs let me say no, which I do by default. But then in most cases I'm just asked the question again the next time I try to get something done, so I eventually relent. Firefox is the best of a bad bunch, because it will hold off the update until the end of my session. Of course, it still has to ask, and then it has to tell me that it will update itself. I'd rather it just do that by default.</p>
+<p><strong>Here's my solution</strong>    <br />I recently implemented automatic self update in a Windows program. I fashioned it after the Firefox model, but just made it work without any pop-ups.</p>
+<p>First I created a launcher for the program. This launcher just runs the program, after doing some bookkeeping that I'll describe soon.</p>
+<p>Then, when the program starts, it starts a background thread to go to the web site and check for newer versions. If it finds one, it downloads it in the background. If the user closes the program before the download completes, it is canceled. It will try again the next time the program starts.</p>
+<p>If the download succeeds, then the new version is put in a sub folder for the launcher to find. This is the bookkeeping I was talking about. The next time the user runs the program, the launcher quickly (and silently) installs the new version before running it.</p>
+<p><strong>Update data in the background</strong>    <br />The right time to update is when the user isn't looking. This works equally well for data updates as it does for software updates. Syncro SVN could start a background thread to pull down folder contents. This would get that processing off the main thread, and keep the user from experiencing a series of speed bumps.</p>
+<p>But background processing isn't enough. If the background process is fired on demand, then the user is still waiting before going to the next step. You also need persistence. Once the folder contents are on the client, they should be accessible no matter what happens. If the user restarts the program, they should still be able to get instant access to folders that they've visited before. That means that those contents should be cached in someplace other than memory.</p>
+<p>But wait! The user isn't seeing an up-to-date picture of the data! That's OK. It's fresh enough for the user to move forward toward his goal. Just refresh the data (in the background) when it gets too old. And give the user a manual refresh button if they don't see what they are looking for. Your user is smart. Just keep the speed bumps out of his way.</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="indexb0b7.html?cat=6" title="View all posts in Patterns" rel="category">Patterns</a>,  <a href="indexd65e.html?cat=8" title="View all posts in User Interface" rel="category">User Interface</a> |   <a href="index3440.html?p=176#respond" title="Comment on The Right Time to Update">No Comments &#187;</a></p>
+
+			</div>
+
+				<div class="post">
+				<h3 id="post-175"><a href="indexa09e.html?p=175" rel="bookmark" title="Permanent Link to Definitive behavior patterns">Definitive behavior patterns</a></h3>
+				<small>Monday, November 19th, 2007</small>
+
+				<div class="entry">
+					<p>In a <a href="indexa828.html?p=171">previous post</a>, I described definitive behavior as something that doesn't change during the life of the object. This describes what definitive behavior is, but not how you would use it. Some of the ways to use definitive behavior are:</p>
+<ul>
+<li>Immutable data types</li>
+<li>Extenders</li>
+<li>Views</li>
+</ul>
+<p><strong>Immutable data types</strong>    <br />Objects in any OO language have properties that can change (dynamic behavior). When you can create an object and pass it into a method, that method can modify the state of the object. The caller might experience different behavior from the object after the method call than before. This is usually desirable, but sometimes it is not.</p>
+<p>When it comes to fundamental data types, you don't want dynamic behavior. You don't want the method that you call to change your string or integer variables. In Java, C#, and VB (among others), these data types are immutable.</p>
+<p>When you define your own data type, consider whether it will be used as a fundamental value. A complex number, for example, falls into this category. When you add two complex numbers, you want to return a new instance which holds the sum of their real and imaginary parts, respectively. You don't want to modify one of the addends, you want to return the sum.</p>
+<p>The alternative to a value is an object with identity. Any number 3 is just the same as any other number 3. They are indistinguishable. But objects that have identity are unique, regardless of any defining characteristic.</p>
+<p>Consider a person. You might define a PersonName class that has a first, middle, and last name. You might then define a Person class that has a PersonName property. A Person has identity irrespective of name. Two entirely different people can have the same name. And a person can change his or her name, but that does not change their identity. So while the PersonName class should be immutable, the Person class can change its name by creating a whole new instance of PersonName.</p>
+<p><strong>Extenders</strong>    <br />How do you add properties to an existing object? One way is to declare a derived class, but then you have to create the object as an instance of that derived class. What if someone else has created the object, and they know nothing of your class?</p>
+<p>A great way to do this is to define an extender class. This adds properties to an existing class through aggregation, not inheritance. The extender references the existing object and defines additional properties.</p>
+<p><a href="http://www.javaworld.com/javaworld/jw-08-2001/jw-0817-automatic.html">One example</a> that I created long ago is a location model that extends network objects with their locations on a diagram. Routers, servers, and hubs have identity all their own. They know their IP addresses, their routing tables, and their connections to one another. But they know nothing about their representation on a two-dimensional network diagram. To add a point to a Server object, create a new LocatedServer object, having the reference of the Server and a point.</p>
+<p>The properties that an extender adds to an object are dynamic. The user can drag the server around the network diagram. But the reference that the extender has to the object it extends is definitive. If you want to add a point to another server, you have to create a new extender for it.</p>
+<p><strong>Views</strong>    <br />At some point, we want to present our objects to the user. It's best to separate the user interface from the business objects that it represents. Business objects should not know how to paint themselves. This gives you some flexibility in how you present your objects. The same objects can be presented in different ways within different contexts.</p>
+<p>But the user interface is itself made up of objects, too. We have forms with text boxes, radio buttons, lists, etc. These are not business objects, so it's OK that they know how to paint themselves.</p>
+<p>For the user interface objects to behave correctly, they need to know about the business objects that they represent. The user interface is simply a view into the business objects. The reference that a user interface has to a business object should be definitive. A form is created to edit just one object, and cannot be switched to another.</p>
+<p>Some forms have navigators. You can hit a button to advance to the next record. In this case, the form is really tied to the collection of objects, not just the one. The reference to that collection is definitive; the current position within the collection is dynamic.</p>
+<p>These are just three of the most common uses for definitive behavior. Other patterns exist, but most of your definitive behavior can be categorized as one of these. Be on the look-out for ways in which these appear in your code.</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="indexb0b7.html?cat=6" title="View all posts in Patterns" rel="category">Patterns</a>,  <a href="index2d79.html?cat=26" title="View all posts in dof" rel="category">dof</a> |   <a href="indexa09e.html?p=175#comments" title="Comment on Definitive behavior patterns">1 Comment &#187;</a></p>
+
+			</div>
+
+				<div class="post">
+				<h3 id="post-174"><a href="index0325.html?p=174" rel="bookmark" title="Permanent Link to AiS 37: .NET Generics">AiS 37: .NET Generics</a></h3>
+				<small>Sunday, November 11th, 2007</small>
+
+				<div class="entry">
+					<p><a href="http://media.libsyn.com/media/ais/AiS37.mp3">Listen Now</a></p>
+<p>I recently had the opportunity to speak at the <a href="http://ddnug.net/">Dallas .NET Users Group</a>. My talk was entitled .NET Generics: more than just containers. You can find slides and code at the <a href="../generics/index.html">topic site</a>.</p>
+<p>We had a lot of people in attendance, and many great comments afterward. I was particularly impressed with the diversity of experience represented by the people who wanted to talk after the presentation. I spoke with people completely unfamiliar with generics, as well as some who have already been using the techniques presented.</p>
+<p>What most impressed me, though, is that all of these people, regardless of experience level, found something to take away from the discussion. The beginners will be opening angle brackets for the first time for something other than HTML. And the experts will be experimenting with composite algorithms.</p>
+<p>It just goes to show that no matter how much we know, there's always more to learn. Enjoy the adventure.</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="indexb0b7.html?cat=6" title="View all posts in Patterns" rel="category">Patterns</a>,  <a href="indexb5e7.html?cat=15" title="View all posts in Shows" rel="category">Shows</a> |   <a href="index0325.html?p=174#comments" title="Comment on AiS 37: .NET Generics">1 Comment &#187;</a></p>
+
+			</div>
+
+				<div class="post">
+				<h3 id="post-171"><a href="indexa828.html?p=171" rel="bookmark" title="Permanent Link to Dynamic, Dependent, and Definitive Behavior">Dynamic, Dependent, and Definitive Behavior</a></h3>
+				<small>Tuesday, October 30th, 2007</small>
+
+				<div class="entry">
+					<p>Fewer moving parts, simpler machine.</p>
+<p>That's the idea behind knowing your <a href="indexff23.html?p=169">degrees of freedom</a>. Store only the things that the user can change, and calculate the rest. The things under the user's direct control are moving parts, while everything else is fixed.</p>
+<p>I like to define behavior along this axis. So I classify behaviors of an object as dynamic, dependent, and definitive.</p>
+<p><strong>Dynamic</strong><br />
+Dynamic behavior is something that the user can change.</p>
+<p>Dynamic behavior is represented by a field or member variable. It sometimes has getter/setter methods or is exposed via a property. But even if the field is completely hidden behind an opaque interface, there are still methods that can change it. The user, through his actions against the UI, can invoke these methods. That's what makes this behavior dynamic.</p>
+<p><strong>Dependent</strong><br />
+Dependent behavior is something calculated. The user cannot change it directly, only the dynamic behavior upon which it depends.</p>
+<p>Dependent behavior is represented by a method that does not change any fields. In C++, this would be a "const" member function. C#, VB, and Java lack constructs to enforce dependent behavior. It's only through discipline that you can write methods that have no side-effects.</p>
+<p><strong>Definitive</strong><br />
+Definitive behavior is something that does not change during the life of the object.</p>
+<p>Definitive behavior is represented by the constructor. A constructor can only be called once, so the parameters used to call it cannot be changed throughout the life of the object. These parameters might be used to initialize dynamic state within the object, but the parameters themselves are definitive.</p>
+<p>Dynamic behavior is the only moving part in a software system. So to simplify your software, limit the number of dynamic behaviors. Everything else should be dependent or definitive.</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="indexb0b7.html?cat=6" title="View all posts in Patterns" rel="category">Patterns</a>,  <a href="index2d79.html?cat=26" title="View all posts in dof" rel="category">dof</a> |   <a href="indexa828.html?p=171#comments" title="Comment on Dynamic, Dependent, and Definitive Behavior">1 Comment &#187;</a></p>
+
+			</div>
+
+				<div class="post">
+				<h3 id="post-169"><a href="indexff23.html?p=169" rel="bookmark" title="Permanent Link to Degrees of Freedom">Degrees of Freedom</a></h3>
+				<small>Friday, October 19th, 2007</small>
+
+				<div class="entry">
+					<p>A mathematical model of a problem is written with equations and unknowns. You can think of the number of unknowns as representing the number of dimensions in the problem. If there are two, it can be represented on a plane. Three and it appears floating in space. Usually there are more, making it more a difficult to visualize, multi-dimensional volume.</p>
+<p>The equations slice through the volume. One equation with three unknowns makes a two-dimensional sheet that flaps in the volume. Two equations with three unknowns form a thread that curves through the system. The thread is not necessarily a straight line; it can swoop through in any of the three directions like a roller coaster. But if you were on the thread you could only walk forward or backward, so the thread is really one-dimensional.</p>
+<p>The number of unknowns minus the number of equations gives us the degrees of freedom. So that three-dimensional roller coaster with two equations has only one degree of freedom. If you were to start at the beginning and roll along the track, you could number each point as a distance from the start. That distance will have little to do with the straight-line proximity to the starting point, but since you can't leave the track it doesn't really matter.</p>
+<p>The equations that keep us on the track are constraints. If we have more equations than unknowns, the problem is over constrained. If we have fewer, the problem is under constrained and we have some degrees of freedom. If they are equal, then we have a Goldilocks problem: it's just right. We can usually find the one right answer to a Goldilocks problem. But software is not about finding one answer, it's about getting work done. And to get work done we need a little wiggle room. We need degrees of freedom.</p>
+<p><strong>Find the degrees of freedom</strong><br />
+To identify the degrees of freedom in software, start by defining the unknowns. These are usually pretty simple to spot. These are the things that can change. In a checkbook program, for example, each transaction amount is an unknown, as are the the account balance and the color used to display it (black or red).</p>
+<p>Next, define the equations. These are the relationships between the unknowns that the software has to enforce. In the checkbook, the balance is the sum of all transaction amounts. And the color is red if the balance is negative or black otherwise.</p>
+<p>Subtract to find your degrees of freedom. One amount per transaction (n), one balance, and one color gives n+2 unknowns. The balance sum and the color rule give us two equations. n+2-2 = n degrees of freedom, one per transaction.</p>
+<p><strong>Store the degrees of freedom</strong><br />
+Each degree of freedom represents something that the user can do. A user can enter transactions, but a user cannot directly edit the balance or the color. We need to store the user's direct inputs -- the degrees of freedom -- but not the related values. Those can be calculated when needed.</p>
+<p><strong>Calculate the rest</strong><br />
+When the program needs a value that the user does not directly control, it should calculate it on the fly. The alternative is to store that value and adjust it whenever the user makes a relevant change. Sprinkle enough of these triggers through the system and it becomes a Rube Goldberg machine of cascading events. This is how software rots.</p>
+<p>Sometimes you want to store a calculated value for optimization. You might store an account balance if it needed to be read often, or if the number of transactions gets extremely large. But every time you make this kind of decision, you run the risk of inconsistency. Caches need to be invalidated, and changes accumulated. You might even choose to provide a "Refresh" button to spank the software and force it to reconcile. <strong>Be aware of every line of this extra code, as it is often the source of bugs.</strong></p>
+<p>Understanding the degrees of freedom in the software helps to create a maintainable design. You know what is under the user's direct control, and what is affected indirectly. You know which values must be stored, and which must be calculated. And when you add new features in the future, you can add new degrees of freedom without affecting the previous ones.</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="indexb0b7.html?cat=6" title="View all posts in Patterns" rel="category">Patterns</a>,  <a href="index2d79.html?cat=26" title="View all posts in dof" rel="category">dof</a> |   <a href="indexff23.html?p=169#comments" title="Comment on Degrees of Freedom">2 Comments &#187;</a></p>
+
+			</div>
+
+				<div class="post">
+				<h3 id="post-165"><a href="index17d5.html?p=165" rel="bookmark" title="Permanent Link to Graph Traversal in SQL">Graph Traversal in SQL</a></h3>
+				<small>Wednesday, October 3rd, 2007</small>
+
+				<div class="entry">
+					<p>Its a common problem in computer science to traverse a graph. Usually graph traversal problems are solved with recursive algorithms. But if you are using a database to store the graph, you can use set logic to traverse it.</p>
+<p>Let's say you have a directed graph, and you represent its edges in a table.</p>
+<p><code>CREATE TABLE [Edge](<br />
+&nbsp; [FromNodeId] [int] NOT NULL,<br />
+&nbsp; [ToNodeId] [int] NOT NULL<br />
+)</code></p>
+<p>Maybe you want to determine all possible routes from one node to any other. So given a start node and an end node, you want to find all of the neighbors that will get you one step closer. Let's store this in another table.</p>
+<p><code>CREATE TABLE [Path](<br />
+&nbsp; [StartNodeId] [int] NOT NULL,<br />
+&nbsp; [EndNodeId] [int] NOT NULL,<br />
+&nbsp; [NextNodeId] [int] NOT NULL<br />
+)</code></p>
+<p>You can do all the work in SQL by applying set logic. The edges of the graph are one set (from, to), and the steps along each path are another set (start, end, next). Given the edge set, you want to find the path set.</p>
+<p>Start with the trivial case. If there is an edge between two nodes (a, b), then there is a path (a, b, b). In other words, if you can get from a to b directly, then b will get you one step closer on the path from a to b.</p>
+<p>Now we apply transitive set logic. Now that we've gotten from a to b via x, what if there's an edge that takes us to c? Now we know we can get from a to c via x. Formally, if there is a path (a, b, x) an edge (b, c), then we also have a path (a, c, x).</p>
+<p><strong>Here's my solution</strong><br />
+We can keep track of these sets in SQL tables. And we can keep track of the changes to these sets in table variables. Just apply the set logic repeatedly until there are no more changes.</p>
+<p><code>CREATE PROCEDURE CalculatePath<br />
+AS<br />
+&nbsp; SET NOCOUNT ON<br />
+&nbsp;<br />
+&nbsp; -- Keep the fringe nodes in a table variable.<br />
+&nbsp; DECLARE @Fringe TABLE<br />
+&nbsp; (<br />
+&nbsp; &nbsp; StartNodeId int,<br />
+&nbsp; &nbsp; EndNodeId int,<br />
+&nbsp; &nbsp; NextNodeId int<br />
+&nbsp; )<br />
+&nbsp; DECLARE @NextFringe TABLE<br />
+&nbsp; (<br />
+&nbsp; &nbsp; StartNodeId int,<br />
+&nbsp; &nbsp; EndNodeId int,<br />
+&nbsp; &nbsp; NextNodeId int<br />
+&nbsp; )<br />
+&nbsp;<br />
+&nbsp; -- Start with an empty path table.<br />
+&nbsp; DELETE FROM Path<br />
+&nbsp; -- Seed the fringe table with the immediate neighbors.<br />
+&nbsp; INSERT INTO @Fringe (StartNodeId, EndNodeId, NextNodeId)<br />
+&nbsp; &nbsp; SELECT FromNodeId, ToNodeId, ToNodeId<br />
+&nbsp; &nbsp; FROM Edge<br />
+&nbsp;<br />
+&nbsp; -- Continue until all nodes have been visited.<br />
+&nbsp; WHILE (SELECT COUNT(*) FROM @Fringe) &gt; 0<br />
+&nbsp; BEGIN<br />
+&nbsp; &nbsp; -- Insert fringe nodes into the path table.<br />
+&nbsp; &nbsp; INSERT INTO Path (StartNodeId, EndNodeId, NextNodeId)<br />
+&nbsp; &nbsp; &nbsp; SELECT StartNodeId, EndNodeId, NextNodeId<br />
+&nbsp; &nbsp; &nbsp; FROM @Fringe<br />
+&nbsp;<br />
+&nbsp; &nbsp; -- Visit all neighbors of the fringe nodes that have not yet been visited.<br />
+&nbsp; &nbsp; INSERT INTO @NextFringe (StartNodeId, EndNodeId, NextNodeId)<br />
+&nbsp; &nbsp; &nbsp; SELECT DISTINCT f.StartNodeId, e.ToNodeId, f.NextNodeId<br />
+&nbsp; &nbsp; &nbsp; FROM @Fringe f<br />
+&nbsp; &nbsp; &nbsp; JOIN Edge e ON f.EndNodeId = e.FromNodeId<br />
+&nbsp; &nbsp; &nbsp; LEFT JOIN Path p ON f.StartNodeId = p.StartNodeId AND e.ToNodeId = p.EndNodeId AND f.NextNodeId = p.NextNodeId<br />
+&nbsp; &nbsp; &nbsp; WHERE p.StartNodeId IS NULL<br />
+&nbsp; &nbsp; &nbsp; &nbsp; AND f.StartNodeId != e.ToNodeId<br />
+&nbsp; &nbsp; -- Make those the new edge nodes.<br />
+&nbsp; &nbsp; DELETE FROM @Fringe<br />
+&nbsp; &nbsp; INSERT INTO @Fringe (StartNodeId, EndNodeId, NextNodeId)<br />
+&nbsp; &nbsp; &nbsp; SELECT StartNodeId, EndNodeId, NextNodeId<br />
+&nbsp; &nbsp; &nbsp; FROM @NextFringe<br />
+&nbsp; &nbsp; DELETE FROM @NextFringe<br />
+&nbsp; END</code></p>
+<p>Since this algorithm calculates all possible paths, it can be used as-is for problems where redundancy is desired. If instead you want to find the optimal path, then the algorithm should be modified to accumulate cost. But the same idea applies. Determine your rules and then iteratively apply them to sets until the solution emerges.</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="indexc728.html?cat=7" title="View all posts in Databases" rel="category">Databases</a>,  <a href="indexb0b7.html?cat=6" title="View all posts in Patterns" rel="category">Patterns</a> |   <a href="index17d5.html?p=165#comments" title="Comment on Graph Traversal in SQL">2 Comments &#187;</a></p>
+
+			</div>
+
+				<div class="post">
+				<h3 id="post-138"><a href="index1a26.html?p=138" rel="bookmark" title="Permanent Link to AiS 34: The Interaction Layer">AiS 34: The Interaction Layer</a></h3>
+				<small>Thursday, July 26th, 2007</small>
+
+				<div class="entry">
+					<p><a href="http://media.libsyn.com/media/ais/AiS34.mp3">Listen Now</a></p>
+<p>The three-tiered application is a ubiquitous pattern for a solid design. The three tiers are:</p>
+<ul>
+<li>User interface</li>
+<li>Business logic</li>
+<li>Data access</li>
+</ul>
+<p>The dependency is straight down. The user interface depends upon the business logic. It feeds events from the user back into the business logic. It does not directly access the data. The business logic layer invokes the data access layer in order to read and write raw data from the database and other sources, like web services.</p>
+<p>While this pattern successfully sheids the user interface from the raw data, it does not effectively sheild the user from the implementation.</p>
+<p>Alan Cooper's book About Face 2.0: Essentials of User Interaction Design describes the difference between the implementation model and the conceptual model. The conceptual model is how the user thinks about the problem, and the implementation model is how the program solves it. The differences between the two cause confusion on the user's part, and bugs on the program's. The user interface's direct dependency upon the business logic means that the implementation of the business logic becomes visible to the user.</p>
+<p><strong>Here's my solution</strong><br />
+On several occasions, I have had the need to insert a fourth layer into an application. Between the user interface and the business logic, I have added an interaction layer. In this case, the dependency is not straight down: the interaction layer does not completely hide the business logic from the user interface. Instead, the interaction layer is the entry point into the business layer. It fills in the gaps when the conceptual model differs from the implementation model, but it steps out of the way when the two coincide.</p>
+<ul>
+<li>User interface</li>
+<li>Interaction</li>
+<li>Business logic</li>
+<li>Data access</li>
+</ul>
+<p>It is difficult to inject this layer after the fact, so I have resolved to put it in place on every application, whether it seems to need it or not. The application might really be what-you-see-is-what-you-get. But just in case you need to see something slightly different, the hook is in place.</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="indexb0b7.html?cat=6" title="View all posts in Patterns" rel="category">Patterns</a>,  <a href="indexb5e7.html?cat=15" title="View all posts in Shows" rel="category">Shows</a> |   <a href="index1a26.html?p=138#comments" title="Comment on AiS 34: The Interaction Layer">1 Comment &#187;</a></p>
+
+			</div>
+
+				<div class="post">
+				<h3 id="post-137"><a href="index60d6.html?p=137" rel="bookmark" title="Permanent Link to AiS 33: Service Factory">AiS 33: Service Factory</a></h3>
+				<small>Friday, July 13th, 2007</small>
+
+				<div class="entry">
+					<p><a href="http://media.libsyn.com/media/ais/AiS33.mp3">Listen Now</a></p>
+<p>Yesterday I attended a presentation at the <a href="http://ddnug.net/">Dallas .NET User's Group</a>. Norm Headlam presented the Microsoft Patterns and Practices Web Service Software Factory (or Service Factory for short). You can download this tool from <a href="http://msdn2.microsoft.com/practices">http://msdn2.microsoft.com/practices</a>. Follow the "Web Service Software Factory" link.</p>
+<p>Norm demonstrated how the Service Factory generates a solution with a set of well-organized projects. It generates a service layer, a data contract, a business layer, and a data access layer. Each of these assemblies has one and only one role. The service layer defines the web service. The data contract defines the data types that are exchanged between the client and the server. The business layer contains all of your business rules. And the data access layer interfaces with the database.</p>
+<p>No longer will you return a dataset from a web service. These layers are separated according to best practices.</p>
+<p>Norm showed how the Service Factory offers ongoing guideance. It doesn't just generate this skeleton and leave you to fill it in. Instead, you right-click on your projects to add data objects, data containers, and service endpoints. As you work, the Service Layer keeps a log of your changes. And it gives you links to your most likely next step.</p>
+<p>Web services are no longer generated from your code. Instead, your code is generated from your contracts. You can import a database schema as a data object in the data access layer. Or you can import an XML schema to generate an object in the data contract. This is not like NHibernate, where the data layer is generated at runtime from business objects. This actually does it the right way, where the stored procedures that your DBA authors are honored, and all code is generated at design time.</p>
+<p>The only problem I have with Microsoft's Web Service Software Factory is the name. This is not a Software Factory.</p>
+<p>According to the book (Software Factories: Assembling Applications with Patterns, Models, Frameworks, and Tools), a software factory is a set of tools that generate several products within a software product line. All products in a product line serve the same vertical domain. They are described using domain specific languages.</p>
+<p>"Web services" is not a product line. It is a horizontal slice of software technology, not a vertical problem domain. And these tools, useful as they are, are not a domain specific language. I look forward to using Service Factory on a real project in the near future, but I will also continue to create software factories in the real sense of the term.</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="index1cd2.html?cat=10" title="View all posts in Contracts" rel="category">Contracts</a>,  <a href="indexb0b7.html?cat=6" title="View all posts in Patterns" rel="category">Patterns</a>,  <a href="indexb5e7.html?cat=15" title="View all posts in Shows" rel="category">Shows</a> |   <a href="index60d6.html?p=137#respond" title="Comment on AiS 33: Service Factory">No Comments &#187;</a></p>
+
+			</div>
+
+		
+		<div class="navigation">
+			<div class="alignleft"><a href="index890d.html?cat=6&amp;paged=4">&laquo; Previous Entries</a></div>
+			<div class="alignright"><a href="indexd72b.html?cat=6&amp;paged=2">Next Entries &raquo;</a></div>
+		</div>
+
+	
+	</div>
+		</td>
+	</tr>
+</table>
+
+<hr />
+<div id="footer">
+<!-- If you'd like to support WordPress, having the "powered by" link someone on your blog is the best way, it's our only promotion or advertising. -->
+	<p>
+		Adventures in Software is proudly powered by 
+		<a href="http://wordpress.org/">WordPress</a>
+		<br /><a href="indexd784.html?feed=rss2">Entries (RSS)</a>
+		and <a href="indexa6da.html?feed=comments-rss2">Comments (RSS)</a>.
+		<!-- 17 queries. 0.373 seconds. -->
+	</p>
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-389401-3");
+pageTracker._trackPageview();
+} catch(err) {}</script></div>
+
+<!-- Gorgeous design by Michael Heilemann - http://binarybonsai.com/kubrick/ -->
+
+		<div id="sk2-footer" style="color:#FFF; background-color:#444; padding: 3px 2px 3px 2px; border-top: #888 solid 1px;">This blog is protected by <a href="http://unknowngenius.com/blog/" title="Dave">dr Dave</a>'s <strong><a href="http://unknowngenius.com/blog/wordpress/spam-karma/" title="SK2">Spam Karma 2</a></strong>: <strong>274531</strong>  Spams eaten and counting...</div><script type="text/javascript" src="replies.js"></script>
+<script type="text/javascript" src="blogger.js"></script>
+<script type="text/javascript" src="http://twitter.com/statuses/user_timeline/michaellperry.json?callback=twitterCallback2&amp;count=5"></script>
+<script type="text/javascript" src="http://search.twitter.com/search.json?q=@michaellperry&amp;callback=twitterCallbackReplies&amp;rpp=5"></script>
+</body>
+
+<!-- Mirrored from adventuresinsoftware.com/blog/?cat=6&paged=3 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 Jan 2017 13:09:48 GMT -->
+</html>

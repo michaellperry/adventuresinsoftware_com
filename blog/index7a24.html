@@ -1,0 +1,1415 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+
+
+<!-- Mirrored from adventuresinsoftware.com/blog/?cat=36&paged=2 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 Jan 2017 13:03:09 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>Adventures in Software   &raquo; Update Controls</title>
+
+<meta name="generator" content="WordPress 2.3.3" /> <!-- leave this for stats -->
+
+<link rel="stylesheet" href="wp-content/themes/ais2/style.css" type="text/css" media="screen" />
+<link rel="alternate" type="application/rss+xml" title="Adventures in Software RSS Feed" href="indexd784.html?feed=rss2" />
+<link rel="pingback" href="xmlrpc.html" />
+    <script type="text/javascript">
+        function onSilverlightError(sender, args) {
+            var appSource = "";
+            if (sender != null && sender != 0) {
+              appSource = sender.getHost().Source;
+            }
+            
+            var errorType = args.ErrorType;
+            var iErrorCode = args.ErrorCode;
+
+            if (errorType == "ImageError" || errorType == "MediaError") {
+              return;
+            }
+
+            var errMsg = "Unhandled Error in Silverlight Application " +  appSource + "\n" ;
+
+            errMsg += "Code: "+ iErrorCode + "    \n";
+            errMsg += "Category: " + errorType + "       \n";
+            errMsg += "Message: " + args.ErrorMessage + "     \n";
+
+            if (errorType == "ParserError") {
+                errMsg += "File: " + args.xamlFile + "     \n";
+                errMsg += "Line: " + args.lineNumber + "     \n";
+                errMsg += "Position: " + args.charPosition + "     \n";
+            }
+            else if (errorType == "RuntimeError") {           
+                if (args.lineNumber != 0) {
+                    errMsg += "Line: " + args.lineNumber + "     \n";
+                    errMsg += "Position: " +  args.charPosition + "     \n";
+                }
+                errMsg += "MethodName: " + args.methodName + "     \n";
+            }
+
+            throw new Error(errMsg);
+        }
+    </script>
+
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc0db0.php?rsd" />
+ <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="wp-includes/wlwmanifest.xml" /> <style type='text/css'>
+<!--#header { background: url('wp-content/themes/ais2/images/header-imgae03.html?upper=A7A73F&amp;lower=77773F') no-repeat bottom center; }
+--></style>
+</head>
+<body>
+<div id="page">
+
+<div class="aisTopBar">
+	<form method="get" id="searchform" action="http://adventuresinsoftware.com/blog/">
+<div>
+<a href="indexd784.html?feed=rss2"><img src="../images/feed-icon-28x28.png" border="0"></a>
+<input type="text" value="" name="s" id="s" />
+<input type="submit" id="searchsubmit" value="Search" />
+</div>
+</form>
+</div>
+
+<div class="aisHeaderImageRight">
+	<div class="aisHeaderImage">
+	<div class="aisHeaderCornerRight">
+	<div class="aisHeaderCornerLeft">
+	<div class="aisImageBar">
+	<div class="aisSubSites">
+		<a href="index.html" class="aisSubSiteLink"><span class="aisSiteTabRight"><span class="aisSiteTabLeft"><span class="aisSiteTab">
+			home</span></span></span></a>
+		<a class="aisSubSiteLink" href="indexb60a.html?cat=27"><span class="aisSiteTabRight"><span class="aisSiteTabLeft"><span class="aisSiteTab">
+			historic modeling</span></span></span></a>
+		<a class="aisSubSiteLink" href="indexa88f.html?cat=36"><span class="aisSiteTabRight"><span class="aisSiteTabLeft"><span class="aisSiteTab">
+			update controls</span></span></span></a>
+		<a href="index2d79.html?cat=26" class="aisSubSiteLink"><span class="aisSiteTabRight"><span class="aisSiteTabLeft"><span class="aisSiteTab">
+			degrees of freedom</span></span></span></a>
+		<a class="aisSubSiteLink" href="indexba53.html?page_id=2"><span class="aisSiteTabRight"><span class="aisSiteTabLeft"><span class="aisSiteTab">
+			about us</span></span></span></a>
+
+	</div>
+	</div>
+	</div>
+	</div>
+	</div>
+</div>
+
+<table style="width: 100%" cellspacing="0" cellpadding="0">
+	<tr valign="top">
+		<td width="210px">
+<div id="sidebar">
+<div class="aisLeftColumnFill">
+<div class="aisLeftColumnBottom">
+<div class="aisLeftColumnTop">
+<div id="twitter_div" class="aisLeftNav">
+<h2 class="sidebar-title">Twitter Updates</h2>
+<ul id="twitter_update_list"></ul>
+<a href="http://twitter.com/michaellperry" id="follow">Follow me</a>
+</div>
+<div id="twitter_reply_div" class="aisLeftNav">
+<h2 class="sidebar-title">Twitter Replies</h2>
+<ul id="twitter_reply_list"></ul>
+</div>
+
+<div class="aisLeftNav">
+<a href='http://ineta.org/Speakers/SearchCommunitySpeakers.aspx?SpeakerId=c5110e21-9243-461b-a464-a6548524e885'><img alt='INETA Community Speakers Program' border='0' src='../../www.ineta.org/images/OfficialLogos/InetaCommunitySpeakersRequestMe.html' /></a>
+</div>
+
+<div class="aisLeftNav">
+	<li class="pagenav"><h2>Pages</h2><ul><li class="page_item page-item-2"><a href="indexba53.html?page_id=2" title="About Us">About Us</a></li>
+<li class="page_item page-item-210"><a href="index6ae3.html?page_id=210" title="Templates">Templates</a></li>
+</ul></li></div>
+
+<div class="aisLeftNav">
+<h2>Archives</h2>
+<ul>
+	<li><a href='indexb4d5.html?m=201110' title='October 2011'>October 2011</a></li>
+	<li><a href='indexc61a.html?m=201106' title='June 2011'>June 2011</a></li>
+	<li><a href='indexa80d.html?m=201105' title='May 2011'>May 2011</a></li>
+	<li><a href='index512b.html?m=201104' title='April 2011'>April 2011</a></li>
+	<li><a href='index08fb.html?m=201103' title='March 2011'>March 2011</a></li>
+	<li><a href='index52f4.html?m=201102' title='February 2011'>February 2011</a></li>
+	<li><a href='index74f1.html?m=201101' title='January 2011'>January 2011</a></li>
+	<li><a href='index8956.html?m=201012' title='December 2010'>December 2010</a></li>
+	<li><a href='indexa1aa.html?m=201011' title='November 2010'>November 2010</a></li>
+	<li><a href='indexe3d5.html?m=201010' title='October 2010'>October 2010</a></li>
+	<li><a href='index9ab9.html?m=201009' title='September 2010'>September 2010</a></li>
+	<li><a href='index1ff0.html?m=201008' title='August 2010'>August 2010</a></li>
+	<li><a href='index9f11.html?m=201007' title='July 2010'>July 2010</a></li>
+	<li><a href='index31f0.html?m=201006' title='June 2010'>June 2010</a></li>
+	<li><a href='indexd189.html?m=201005' title='May 2010'>May 2010</a></li>
+	<li><a href='indexb5c0.html?m=201004' title='April 2010'>April 2010</a></li>
+	<li><a href='indexf258.html?m=201003' title='March 2010'>March 2010</a></li>
+	<li><a href='index6e30.html?m=201002' title='February 2010'>February 2010</a></li>
+	<li><a href='index6b19.html?m=201001' title='January 2010'>January 2010</a></li>
+	<li><a href='index5c0a.html?m=200912' title='December 2009'>December 2009</a></li>
+	<li><a href='index8f62.html?m=200911' title='November 2009'>November 2009</a></li>
+	<li><a href='index451d.html?m=200910' title='October 2009'>October 2009</a></li>
+	<li><a href='index3e04.html?m=200909' title='September 2009'>September 2009</a></li>
+	<li><a href='index425a.html?m=200908' title='August 2009'>August 2009</a></li>
+	<li><a href='index9907.html?m=200907' title='July 2009'>July 2009</a></li>
+	<li><a href='index3104.html?m=200906' title='June 2009'>June 2009</a></li>
+	<li><a href='indexc36d.html?m=200905' title='May 2009'>May 2009</a></li>
+	<li><a href='index17e8.html?m=200904' title='April 2009'>April 2009</a></li>
+	<li><a href='index10a5.html?m=200903' title='March 2009'>March 2009</a></li>
+	<li><a href='index8988.html?m=200902' title='February 2009'>February 2009</a></li>
+	<li><a href='index1419.html?m=200901' title='January 2009'>January 2009</a></li>
+	<li><a href='index7866.html?m=200812' title='December 2008'>December 2008</a></li>
+	<li><a href='index55f6.html?m=200811' title='November 2008'>November 2008</a></li>
+	<li><a href='indexa7bc.html?m=200810' title='October 2008'>October 2008</a></li>
+	<li><a href='indexe77c.html?m=200809' title='September 2008'>September 2008</a></li>
+	<li><a href='indexcffc.html?m=200808' title='August 2008'>August 2008</a></li>
+	<li><a href='index0e62.html?m=200807' title='July 2008'>July 2008</a></li>
+	<li><a href='indexfda7.html?m=200806' title='June 2008'>June 2008</a></li>
+	<li><a href='index7d64.html?m=200805' title='May 2008'>May 2008</a></li>
+	<li><a href='index94dd.html?m=200804' title='April 2008'>April 2008</a></li>
+	<li><a href='index9631.html?m=200803' title='March 2008'>March 2008</a></li>
+	<li><a href='indexdd52.html?m=200802' title='February 2008'>February 2008</a></li>
+	<li><a href='index21ee.html?m=200801' title='January 2008'>January 2008</a></li>
+	<li><a href='index363c.html?m=200712' title='December 2007'>December 2007</a></li>
+	<li><a href='index7493.html?m=200711' title='November 2007'>November 2007</a></li>
+	<li><a href='index93a7.html?m=200710' title='October 2007'>October 2007</a></li>
+	<li><a href='index4ca8.html?m=200709' title='September 2007'>September 2007</a></li>
+	<li><a href='index6124.html?m=200708' title='August 2007'>August 2007</a></li>
+	<li><a href='index6013.html?m=200707' title='July 2007'>July 2007</a></li>
+	<li><a href='index2ab6.html?m=200706' title='June 2007'>June 2007</a></li>
+	<li><a href='index44f0.html?m=200705' title='May 2007'>May 2007</a></li>
+	<li><a href='indexf0b4.html?m=200704' title='April 2007'>April 2007</a></li>
+	<li><a href='index481d.html?m=200703' title='March 2007'>March 2007</a></li>
+	<li><a href='indexcbea.html?m=200702' title='February 2007'>February 2007</a></li>
+	<li><a href='index9cdc.html?m=200701' title='January 2007'>January 2007</a></li>
+	<li><a href='index3ea4.html?m=200612' title='December 2006'>December 2006</a></li>
+	<li><a href='index67ca.html?m=200611' title='November 2006'>November 2006</a></li>
+	<li><a href='indexff49.html?m=200610' title='October 2006'>October 2006</a></li>
+	<li><a href='index611c.html?m=200609' title='September 2006'>September 2006</a></li>
+	<li><a href='index9a21.html?m=200608' title='August 2006'>August 2006</a></li>
+	<li><a href='index3ee9.html?m=200607' title='July 2006'>July 2006</a></li>
+	<li><a href='indexe13a.html?m=200606' title='June 2006'>June 2006</a></li>
+</ul>
+</div>
+
+<div class="aisLeftNav">
+	</div>
+
+<div class="aisLeftNav">
+<h2>Books</h2>
+<iframe src="http://rcm.amazon.com/e/cm?t=adventures0d2-20&amp;o=1&amp;p=8&amp;l=as1&amp;asins=0764526413&amp;fc1=000000&amp;IS2=1&amp;lt1=_blank&amp;lc1=0000ff&amp;bc1=000000&amp;bg1=ffffff&amp;f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" name="I5" id="I5"></iframe>
+<br/>
+<iframe src="http://rcm.amazon.com/e/cm?t=adventures0d2-20&amp;o=1&amp;p=8&amp;l=as1&amp;asins=0201633612&amp;fc1=000000&amp;IS2=1&amp;lt1=_blank&amp;lc1=0000ff&amp;bc1=000000&amp;bg1=ffffff&amp;f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" name="I6" id="I6"></iframe>
+<br/>
+<iframe src="http://rcm.amazon.com/e/cm?t=adventures0d2-20&amp;o=1&amp;p=8&amp;l=as1&amp;asins=0136291554&amp;fc1=000000&amp;IS2=1&amp;lt1=_blank&amp;lc1=0000ff&amp;bc1=000000&amp;bg1=ffffff&amp;f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" name="I7" id="I7"></iframe>
+<br/>
+<iframe src="http://rcm.amazon.com/e/cm?t=adventures0d2-20&amp;o=1&amp;p=8&amp;l=as1&amp;asins=1888009195&amp;fc1=000000&amp;IS2=1&amp;lt1=_blank&amp;lc1=0000ff&amp;bc1=000000&amp;bg1=ffffff&amp;f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" name="I8" id="I8"></iframe>
+</div>
+<div class="aisLeftNav">
+<h2>Meta</h2>
+<ul>
+		<li><a href="wp-login.html">Login</a></li>
+	<li><a href="http://validator.w3.org/check/referer" title="This page validates as XHTML 1.0 Transitional">Valid <abbr title="eXtensible HyperText Markup Language">XHTML</abbr></a></li>
+	<li><a href="http://gmpg.org/xfn/"><abbr title="XHTML Friends Network">XFN</abbr></a></li>
+	<li><a href="http://wordpress.org/" title="Powered by WordPress, state-of-the-art semantic personal publishing platform.">WordPress</a></li>
+	</ul>
+</div>
+<div class="aisLeftContent">
+<h2>Community</h2>
+<ul>
+	<script type="text/javascript" src="../../localhost/embed/92q2bbma.js"></script>
+</ul>
+</div>
+
+</div></div></div>
+</div>		</td>
+		<td>
+
+	<div id="content" class="narrowcolumn">
+
+		
+		 		<h2 class="pagetitle">Archive for the &#8216;Update Controls&#8217; Category</h2>
+
+ 	  
+
+		<div class="navigation">
+			<div class="alignleft"><a href="index137a.html?cat=36&amp;paged=3">&laquo; Previous Entries</a></div>
+			<div class="alignright"><a href="indexa88f.html?cat=36">Next Entries &raquo;</a></div>
+		</div>
+
+				<div class="post">
+				<h3 id="post-409"><a href="indexe145.html?p=409" rel="bookmark" title="Permanent Link to How to not implement INotifyPropertyChanged">How to not implement INotifyPropertyChanged</a></h3>
+				<small>Tuesday, August 4th, 2009</small>
+
+				<div class="entry">
+					<p>A quick search reveals that many people have tackled the problem of implementing INotifyPropertyChanged. Here are just a few:</p>
+<ul>
+<li><a href="http://karlshifflett.wordpress.com/2009/08/02/inotifypropertychanged-how-to-remove-the-property-name-string-code-smell/" title="http://karlshifflett.wordpress.com/2009/08/02/inotifypropertychanged-how-to-remove-the-property-name-string-code-smell/">Karl on WPF using stack frames</a></li>
+<li><a href="http://mbrownchicago.spaces.live.com/blog/cns!2221DC39E0C749A4!1285.entry" title="http://mbrownchicago.spaces.live.com/blog/cns!2221DC39E0C749A4!1285.entry">Brownie Points using lambdas</a></li>
+<li><a href="http://www.nablasoft.com/alkampfer/index.php/2008/08/14/how-to-implement-inotifypropertychanged-with-codedom/" title="http://www.nablasoft.com/alkampfer/index.php/2008/08/14/how-to-implement-inotifypropertychanged-with-codedom/">Alkampfer using CodeDom</a></li>
+<li><a href="http://msdn.microsoft.com/en-us/library/ms743695.aspx" title="http://msdn.microsoft.com/en-us/library/ms743695.aspx">Microsoft's advice in MSDN</a></li>
+<li><a href="http://www.codeproject.com/KB/cs/BindBetterINotifyProperty.aspx" title="http://www.codeproject.com/KB/cs/BindBetterINotifyProperty.aspx">PConverse with a basic example on Code Project</a></li>
+<li><a href="http://compositeextensions.codeplex.com/Thread/View.aspx?ThreadId=53731" title="http://compositeextensions.codeplex.com/Thread/View.aspx?ThreadId=53731">Composite Extensions comparing techniques on Codeplex</a></li>
+<li><a href="http://thetreeknowseverything.net/2009/01/21/auto-implement-inotifypropertychanged-with-aspects/" title="http://thetreeknowseverything.net/2009/01/21/auto-implement-inotifypropertychanged-with-aspects/">Mike Saunders using aspects</a></li>
+<li><a href="http://danielvaughan.orpius.com/post/Property-Change-Notification-using-a-Weak-Referencing-Strategy.aspx" title="http://danielvaughan.orpius.com/post/Property-Change-Notification-using-a-Weak-Referencing-Strategy.aspx">Daniel Vaughan using a flow-through class for weak references</a></li>
+<li><a href="http://ayende.com/Blog/archive/2009/08/07/nhibernate-amp-inotifypropertychanged.aspx">Ayende using dynamic proxy</a></li>
+</ul>
+<p>Here's my solution: DON'T!</p>
+<p>You do not need to implement INotifyPropertyChanged in order to do data binding. <a href="http://updatecontrols.net/">Update Controls</a> will do it for you. It works in Winforms, in WPF, and in <a href="http://updatecontrolslight.codeplex.com/">Silverlight</a>.</p>
+<p><strong>What's the problem, anyway?</strong><br />
+The problem that most people see with this interface is the "magic string". You have to pass the name of the property in the event args. Many of these solutions use reflection to figure out the property name for you. That solves the magic string problem.</p>
+<p><strong>But that's not the real problem!</strong></p>
+<p>The real problem is that these techniques only work with independent properties. If one property depends upon another, then these techniques fail.</p>
+<p>Take a closer look at <a href="http://www.codeproject.com/KB/cs/BindBetterINotifyProperty.aspx">PConverse's solution published in Code Project</a>. In his RegularPerson class, DisplayName depends upon both FirstName and LastName. It has no backing field. It has no setter. It is a dependent property.</p>
+<p>Look at the extra work he has to do in NotifiablePerson to fire PropertyChanged for DisplayName. He has to explicitly write code in the setters of both FirstName and LastName. Both of these properties have to "know" that DisplayName depends upon them.</p>
+<p>That's a backwards dependency. FirstName and LastName should not know about DisplayName; DisplayName knows about FirstName and LastName.</p>
+<p>Compare that to the same code using Update Controls.</p>
+<pre><span style="color: blue">public</span> <span style="color: blue">class</span> Person
+{
+    <span style="color: blue">private</span> <span style="color: blue">string</span> _firstName;
+    <span style="color: blue">private</span> <span style="color: blue">string</span> _lastName;
+
+    <span style="color: blue">private</span> Independent _indFirstName = <span style="color: blue">new</span> Independent();
+    <span style="color: blue">private</span> Independent _indLastName = <span style="color: blue">new</span> Independent();
+
+    <span style="color: blue">public</span> <span style="color: blue">string</span> FirstName
+    {
+        <span style="color: blue">get</span> { _indFirstName.OnGet(); <span style="color: blue">return</span> _firstName; }
+        <span style="color: blue">set</span> { _indFirstName.OnSet(); _firstName = value; }
+    }
+
+    <span style="color: blue">public</span> <span style="color: blue">string</span> LastName
+    {
+        <span style="color: blue">get</span> { _indLastName.OnGet(); <span style="color: blue">return</span> _lastName; }
+        <span style="color: blue">set</span> { _indLastName.OnSet(); _lastName = value; }
+    }
+
+    <span style="color: blue">public</span> <span style="color: blue">string</span> DisplayName
+    {
+        <span style="color: blue">get</span> { <span style="color: blue">return</span> FirstName + <span style="color: maroon">" "</span> + LastName; }
+    }
+}</pre>
+<p>Niether FirstName nor LastName know about DisplayName. The dependencies are one-way and in the correct direction.</p>
+<p><strong>Maintainability is the problem</strong><br />
+The above example is small and manageable. But imagine what happens when this application grows. Backwards dependencies get out of hand. They cross class boundaries and cause tight coupling between objects. Pretty soon the application is nothing but dependency management.</p>
+<p>So please, stop inventing better ways to implement INotifyPropertyChanged. It's like inventing a better way to turn the the crank on the front of a Model T. There is no good way. Just don't do it.</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="indexa88f.html?cat=36" title="View all posts in Update Controls" rel="category">Update Controls</a> |   <a href="indexe145.html?p=409#respond" title="Comment on How to not implement INotifyPropertyChanged">No Comments &#187;</a></p>
+
+			</div>
+
+				<div class="post">
+				<h3 id="post-401"><a href="indexfef8.html?p=401" rel="bookmark" title="Permanent Link to Update Controls for Silverlight 3">Update Controls for Silverlight 3</a></h3>
+				<small>Sunday, July 26th, 2009</small>
+
+				<div class="entry">
+					<p>Now that Silverlight 3 has been released, I have taken the Beta designation off of <a href="http://updatecontrols.codeplex.com/">Update Controls Light</a>.</p>
+<p>Update Controls is data binding without INotifyPropertyChanged. You never have to implement it. And you never have to consume it. And now it works with Silverlight 3.</p>
+<p>Just like with the Winforms and WPF versions, Update Controls Light requires you to identify independent properties. An independent property is one that can be changed. It's value does not depend upon anything else. For example, a Customer's name is independent, as well as their list of invoices. You indicate that these properties are independent by creating an Independent sentry and calling OnGet() and OnSet() whenever they are accessed or changed.</p>
+<pre><span style="color: blue">public</span> <span style="color: blue">class</span> Customer
+{
+    <span style="color: blue">private</span> <span style="color: blue">string</span> _name;
+    <span style="color: blue">private</span> List&lt;Invoice&gt; _invoices = <span style="color: blue">new</span> List&lt;Invoice&gt;();
+
+    <span style="color: blue">private</span> Independent _indName = <span style="color: blue">new</span> Independent();
+    <span style="color: blue">private</span> Independent _indInvoices = <span style="color: blue">new</span> Independent();
+
+    <span style="color: blue">public</span> <span style="color: blue">string</span> Name
+    {
+        <span style="color: blue">get</span> { _indName.OnGet(); <span style="color: blue">return</span> _name; }
+        <span style="color: blue">set</span> { _indName.OnSet(); _name = value; }
+    }
+
+    <span style="color: blue">public</span> IEnumerable&lt;Invoice&gt; Invoices
+    {
+        <span style="color: blue">get</span> { _indInvoices.OnGet(); <span style="color: blue">return</span> _invoices; }
+    }
+
+    <span style="color: blue">public</span> Invoice NewInvoice(<span style="color: blue">string</span> number)
+    {
+        _indInvoices.OnSet();
+        Invoice invoice = <span style="color: blue">new</span> Invoice(number);
+        _invoices.Add(invoice);
+        <span style="color: blue">return</span> invoice;
+    }
+}</pre>
+<p>Properties that use those independent properties are dependent upon them. Update Controls recognizes those dependencies and fires PropertyChanged events for you.</p>
+<p>Think about that. It isn't just firing PropertyChanged for the properties that you indicate as Independent. It's firing PropertyChanged for all the properties that <em>use</em> those properties.</p>
+<p><strong>Two lists</strong><br />
+Here's an example. This control has two lists: paid invoices and unpaid invoices.</p>
+<div id="silverlightControlHost" style="height: 120px"><object data="data:application/x-silverlight-2," type="application/x-silverlight-2" width="100%" height="100%"></p>
+<param name="source" value="/bin/UpdateControls.Light.Demo.xap"></param>
+<param name="onError" value="onSilverlightError"></param>
+<param name="background" value="white"></param>
+<param name="minRuntimeVersion" value="3.0.40624.0"></param>
+<param name="autoUpgrade" value="true"></param><a href="http://go.microsoft.com/fwlink/?LinkID=149156&amp;v=3.0.40624.0" style="text-decoration: none"><img src="http://go.microsoft.com/fwlink/?LinkId=108181" alt="Get Microsoft Silverlight" style="border-style: none" /></a><a href="http://go.microsoft.com/fwlink/?LinkID=149156&amp;v=3.0.40624.0" style="text-decoration: none"></a><iframe id="_sl_historyFrame" style="border: 0px none ; visibility: hidden; height: 0px; width: 0px"></iframe></object></div>
+<p>In a typical program, you would handle the "Paid" and "Unpaid" buttons by removing selected invoices from one list and adding them to the other. But with Update Controls Light, you just change the data model. The two lists are dependent.</p>
+<pre><span style="color: blue">public</span> IEnumerable&lt;Invoice&gt; PaidInvoices
+{
+    <span style="color: blue">get</span> { <span style="color: blue">return</span> _payment.PaidInvoices; }
+}
+
+<span style="color: blue">public</span> IEnumerable&lt;Invoice&gt; UnpaidInvoices
+{
+    <span style="color: blue">get</span> { <span style="color: blue">return</span> _payment.Customer.Invoices.Except(_payment.PaidInvoices); }
+}</pre>
+<p>The body of the UnpaidInvoices property tells the whole story. When you add an invoice to the payment, it no longer appears in UnpaidInvoices. Update Controls Light can see this and fire the right notification events.</p>
+<p>Dependent properties never have backing storage. They just reference independent properties in their getters and -- if two-way binding is required -- setters.</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="indexa88f.html?cat=36" title="View all posts in Update Controls" rel="category">Update Controls</a> |   <a href="indexfef8.html?p=401#respond" title="Comment on Update Controls for Silverlight 3">No Comments &#187;</a></p>
+
+			</div>
+
+				<div class="post">
+				<h3 id="post-400"><a href="index2d8c.html?p=400" rel="bookmark" title="Permanent Link to Update Controls and INotifyPropertyChanged: never the two shall meet (but if they have to, here&#8217;s how)">Update Controls and INotifyPropertyChanged: never the two shall meet (but if they have to, here&#8217;s how)</a></h3>
+				<small>Thursday, July 9th, 2009</small>
+
+				<div class="entry">
+					<p>I recently corresponded with a new Update Controls user. He brought up some excellent points about INotifyPropertyChanged and Update Controls. The short answer is: don't mix them. Unfortunately, reality is not so cut and dried.</p>
+<p>We started with some easy questions:</p>
+<blockquote><p>Should my view model implement INotifyPropertyChanged [when I'm using Update Controls]?</p>
+</blockquote>
+<p>No, your view model should not implement INotifyPropertyChanged. When you call ForView.Wrap(), Update Controls implements it for you.</p>
+<blockquote><p>So ForView.Wrap() completely replaces the "{u:Update}" syntax?</p>
+</blockquote>
+<p>Absolutely, it does. It is more Blend friendly.</p>
+<blockquote><p>But do I still need to define my Independent's using Ctrl+D, G?</p>
+</blockquote>
+<p>Yes, the underlying dependency tracking is still exactly the same. It still requires Independent sentries, which Ctrl+D, G generates for you.</p>
+<p>And then the hard questions began:</p>
+<blockquote><p>If I exposed properties of an object that implements INotifyPropertyChanged (for example, CslaDataProvider.IsBusy) via my ViewModel, do I need to do anything special? Or would it be so simple as:</p>
+<pre><span style="color: blue">public</span> <span style="color: blue">bool</span> IsBusy
+{
+    <span style="color: blue">get</span> { <span style="color: blue">return</span> _dp.IsBusy; }
+}</pre>
+</blockquote>
+<p>Unfortunately, ForView.Wrap() hides the INotifyPropertyChanged implementation of the root object or any of its properties. So simply passing through the property access would not be sufficient. Neither does the dependency tracking mechanism recognize INotifyPropertyChanged. So when the event is fired, Update Controls does not know to forward that along to the view.</p>
+<p>If your class already implements INotifyPropertyChanged and you want to add Independent sentries too, that's fine.</p>
+<pre><span style="color: blue">public</span> <span style="color: blue">class</span> Customer : INotifyPropertyChanged
+{
+    <span style="color: blue">public</span> <span style="color: blue">event</span> PropertyChangedEventHandler PropertyChanged;
+
+    <span style="color: blue">private</span> <span style="color: blue">string</span> _name;
+    <span style="color: blue">private</span> Independent _indName = <span style="color: blue">new</span> Independent();
+
+    <span style="color: blue">public</span> <span style="color: blue">string</span> Name
+    {
+        <span style="color: blue">get</span> { _indName.OnGet(); <span style="color: blue">return</span> _name; }
+        <span style="color: blue">set</span> { _indName.OnSet(); _name = value; FirePropertyChanged(<span style="color: maroon">"Name"</span>); }
+    }
+
+    <span style="color: blue">private</span> <span style="color: blue">void</span> FirePropertyChanged(<span style="color: blue">string</span> name)
+    {
+        <span style="color: blue">if</span> (PropertyChanged != <span style="color: blue">null</span>)
+            PropertyChanged.Invoke(<span style="color: blue">this</span>, <span style="color: blue">new</span> PropertyChangedEventArgs(name));
+    }
+}</pre>
+<p>The INotifyPropertyChanged implementation will be completely ignored by Update Controls, and the Independent will be completely ignored by legacy code.</p>
+<p>Or, if you have a legacy object and you completely control the access to its properties, you can wrap it.</p>
+<pre><span style="color: blue">public</span> <span style="color: blue">class</span> CustomerWrapper
+{
+    <span style="color: blue">private</span> Customer _customer;
+    <span style="color: blue">private</span> Independent _indCustomerName = <span style="color: blue">new</span> Independent();
+
+    <span style="color: blue">public</span> CustomerWrapper(Customer customer)
+    {
+        _customer = customer;
+    }
+
+    <span style="color: blue">public</span> <span style="color: blue">string</span> Name
+    {
+        <span style="color: blue">get</span> { _indCustomerName.OnGet(); <span style="color: blue">return</span> _customer.Name; }
+        <span style="color: blue">set</span> { _indCustomerName.OnSet(); _customer.Name = value; }
+    }
+}</pre>
+<p>But if someone else could change the controlled property without going through your code, you have to handle INotifyPropertyChanged yourself.</p>
+<pre><span style="color: blue">public</span> <span style="color: blue">class</span> CustomerWrapper
+{
+    <span style="color: blue">private</span> Customer _customer;
+    <span style="color: blue">private</span> Independent _indCustomerName = <span style="color: blue">new</span> Independent();
+
+    <span style="color: blue">public</span> CustomerWrapper(Customer customer)
+    {
+        _customer = customer;
+<strong>        _customer.PropertyChanged += (sender, e) =&gt;
+        {
+            <span style="color: blue">if</span> (e.PropertyName == <span style="color: maroon">"Name"</span>)
+                _indCustomerName.OnSet();
+        };
+</strong>    }
+
+    <span style="color: blue">public</span> <span style="color: blue">string</span> Name
+    {
+        <span style="color: blue">get</span> { _indCustomerName.OnGet(); <span style="color: blue">return</span> _customer.Name; }
+        <span style="color: blue">set</span> { <span style="color: green"><strong>/*_indCustomerName.OnSet(); Not needed anymore. */</strong></span> _customer.Name = value; }
+    }
+}</pre>
+<p>When the event fires, you record that the property has been set. I'd love to generate a wrapper for you (something like ForViewModel.Wrap()), but I can't think of a way of doing that without hiding the underlying object properties. Maybe with some <a href="http://ayende.com/">Ayende</a> mojo I could pull it off, but I'm hoping that I never have to.</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="indexa88f.html?cat=36" title="View all posts in Update Controls" rel="category">Update Controls</a> |   <a href="index2d8c.html?p=400#respond" title="Comment on Update Controls and INotifyPropertyChanged: never the two shall meet (but if they have to, here&#8217;s how)">No Comments &#187;</a></p>
+
+			</div>
+
+				<div class="post">
+				<h3 id="post-398"><a href="index9d24.html?p=398" rel="bookmark" title="Permanent Link to Data bound menus">Data bound menus</a></h3>
+				<small>Friday, July 3rd, 2009</small>
+
+				<div class="entry">
+					<p>I had a twitter conversation recently with <a href="http://twitter.com/edward_tanguay">Edward Tanguay</a> about his StackOverflow question on <a href="http://stackoverflow.com/questions/1067903/how-can-i-bind-an-observablecollection-of-viewmodels-to-a-menuitem">binding menus to an Observable Collection</a>. Naturally, I locked on to the ObservableCollection part and didn't get the true gist of his question. I took a step back, reread his question and the provided answers, and finally caught on to the problem. I wish I could upvote Kent Boogaart's answer more than once, because it set me on a trail of discovery.</p>
+<p>This example uses <a href="http://updatecontrols.net/">Update Controls</a>. Download the example source code: <a href="wp-content/uploads/2009/07/databoundmenus.zip" title="databoundmenus.zip">databoundmenus.zip</a>.</p>
+<p>There is not just one way to make a WPF menu work. There are several techniques that you have to combine. Much of an application's menu is static. Some of it is context sensitive, and only appears in certain conditions. And in a few places, the menu items are dynamic, like recently opened files or currently open windows. Update Controls can help with all of these things.</p>
+<p><strong>Declarative menu structure</strong><br />
+For the static menus, you want to declare the structure entirely in XAML. This gives you the greatest design/code separation, and the best tool support. Use <a href="index07ee.html?p=297">Command Binding</a> for all menu items.</p>
+<pre><span style="color: blue">&lt;</span><span style="color: maroon">Menu</span> <span style="color: red">DockPanel.Dock</span>="<span style="color: blue">Top</span>"<span style="color: blue">&gt;</span>
+    <span style="color: blue">&lt;</span><span style="color: maroon">MenuItem</span> <span style="color: red">Header</span>="<span style="color: blue">_File</span>"<span style="color: blue">&gt;</span>
+        <span style="color: blue">&lt;</span><span style="color: maroon">MenuItem</span> <span style="color: red">Header</span>="<span style="color: blue">_New</span>" <span style="color: red">Command</span>="<span style="color: blue">{Binding FileNewCommand}</span>"/<span style="color: blue">&gt;</span>
+        <span style="color: blue">&lt;</span><span style="color: maroon">MenuItem</span> <span style="color: red">Header</span>="<span style="color: blue">_Open</span>" <span style="color: red">Command</span>="<span style="color: blue">{Binding FileOpenCommand}</span>"/<span style="color: blue">&gt;</span>
+        <span style="color: blue">&lt;</span><span style="color: maroon">MenuItem</span> <span style="color: red">Header</span>="<span style="color: blue">_Save</span>" <span style="color: red">Command</span>="<span style="color: blue">{Binding FileSaveCommand}</span>"/<span style="color: blue">&gt;</span>
+        <span style="color: blue">&lt;</span><span style="color: maroon">MenuItem</span> <span style="color: red">Header</span>="<span style="color: blue">_Close</span>" <span style="color: red">Command</span>="<span style="color: blue">{Binding FileCloseCommand}</span>"/<span style="color: blue">&gt;</span>
+    <span style="color: blue">&lt;</span>/<span style="color: maroon">MenuItem</span><span style="color: blue">&gt;</span>
+<span style="color: blue">&lt;</span>/<span style="color: maroon">Menu</span><span style="color: blue">&gt;</span></pre>
+<p>Use Update Controls MakeCommand to create all of the bindable ICommand properties. The When clause will enable and disable the menu item.</p>
+<pre><span style="color: blue">public</span> ICommand FileSaveCommand
+{
+    <span style="color: blue">get</span>
+    {
+        <span style="color: green">// We can only save a file when one is open.</span>
+        <span style="color: blue">return</span> MakeCommand
+            .<strong>When</strong>(() =&gt; _dataModel.OpenFileName != <span style="color: blue">null</span>)
+            .Do(() =&gt; _dataModel.LastAction = <span style="color: maroon">"Save"</span>);
+    }
+}</pre>
+<p>Some of the menu items are not application actions, but window actions. These can be handled in code-behind.</p>
+<pre><span style="color: blue">&lt;</span><span style="color: maroon">Separator/</span><span style="color: blue">&gt;</span>
+<span style="color: blue">&lt;</span><span style="color: maroon">MenuItem</span> <span style="color: red">Header</span>="<span style="color: blue">E_xit</span>" <span style="color: red">Click</span>="<span style="color: blue">Exit_Click</span>"/<span style="color: blue">&gt;</span></pre>
+<pre><span style="color: blue">private</span> <span style="color: blue">void</span> Exit_Click(<span style="color: blue">object</span> sender, RoutedEventArgs e)
+{
+    Close();
+}</pre>
+<p><strong>Context sensitive menus</strong><br />
+You want context sensitive menus to appear under certain conditions. WPF has a mechanism for that: the <a href="http://msdn.microsoft.com/en-us/library/system.windows.datatrigger.aspx">DataTrigger</a>. A DataTrigger sets a control property when a data property is equal to a specific value. In this case, we want to set a MenuItem's Visibility property to Hidden when the data property IsFileOpen is False.</p>
+<pre><span style="color: blue">&lt;</span><span style="color: maroon">Window.Resources</span><span style="color: blue">&gt;</span>
+    <span style="color: blue">&lt;</span><span style="color: maroon">Style</span> <span style="color: red">x:Key</span>="<span style="color: blue">VisibleWhenFileIsOpen</span>" <span style="color: red">TargetType</span>="<span style="color: blue">MenuItem</span>"<span style="color: blue">&gt;</span>
+        <span style="color: blue">&lt;</span><span style="color: maroon">Style.Triggers</span><span style="color: blue">&gt;</span>
+            <span style="color: blue">&lt;</span><span style="color: maroon">DataTrigger</span> <span style="color: red">Binding</span>="<span style="color: blue">{Binding IsFileOpen}</span>" <span style="color: red">Value</span>="<span style="color: blue">False</span>"<span style="color: blue">&gt;</span>
+                <span style="color: blue">&lt;</span><span style="color: maroon">Setter</span> <span style="color: red">Property</span>="<span style="color: blue">Visibility</span>" <span style="color: red">Value</span>="<span style="color: blue">Hidden</span>"/<span style="color: blue">&gt;</span>
+            <span style="color: blue">&lt;</span>/<span style="color: maroon">DataTrigger</span><span style="color: blue">&gt;</span>
+        <span style="color: blue">&lt;</span>/<span style="color: maroon">Style.Triggers</span><span style="color: blue">&gt;</span>
+    <span style="color: blue">&lt;</span>/<span style="color: maroon">Style</span><span style="color: blue">&gt;</span>
+<span style="color: blue">&lt;</span>/<span style="color: maroon">Window.Resources</span><span style="color: blue">&gt;</span></pre>
+<p>We apply this style to any menu that is sensitive to this context.</p>
+<pre><span style="color: blue">&lt;</span><span style="color: maroon">MenuItem</span> <span style="color: red">Header</span>="<span style="color: blue">_Edit</span>" <span style="color: red">Style</span>="<span style="color: blue">{StaticResource VisibleWhenFileIsOpen}</span>"<span style="color: blue">&gt;</span>
+    <span style="color: blue">&lt;</span><span style="color: maroon">MenuItem</span> <span style="color: red">Header</span>="<span style="color: blue">Cu_t</span>"/<span style="color: blue">&gt;</span>
+    <span style="color: blue">&lt;</span><span style="color: maroon">MenuItem</span> <span style="color: red">Header</span>="<span style="color: blue">_Copy</span>"/<span style="color: blue">&gt;</span>
+    <span style="color: blue">&lt;</span><span style="color: maroon">MenuItem</span> <span style="color: red">Header</span>="<span style="color: blue">_Paste</span>"/<span style="color: blue">&gt;</span>
+<span style="color: blue">&lt;</span>/<span style="color: maroon">MenuItem</span><span style="color: blue">&gt;</span></pre>
+<p>DataTriggers automatically reset. When the IsFileOpen data property is no longer False, the Visibility control property will go back to the default Visible. There is no need to create another trigger for that rule.</p>
+<p><strong>Dynamic menus</strong><br />
+For recently opened files or currently open windows, you want each menu item to represent a data object. You want to bind the menu to a list.</p>
+<p>If you bind to the raw data objects, you will have a hard time getting exactly the behavior that you want in the view. XAML is declarative, and is easiest to use when the data is already in the right format. That's where the View Model comes in.</p>
+<pre><span style="color: blue">public</span> <span style="color: blue">class</span> RecentFileViewModel
+{
+    <span style="color: blue">private</span> <span style="color: blue">int</span> _index;
+    <span style="color: blue">private</span> <span style="color: blue">string</span> _fileName;
+    <span style="color: blue">private</span> IFileHandler _fileHandler;
+
+    <span style="color: blue">public</span> RecentFileViewModel(<span style="color: blue">int</span> index, <span style="color: blue">string</span> fileName, IFileHandler fileHandler)
+    {
+        _index = index;
+        _fileName = fileName;
+        _fileHandler = fileHandler;
+    }
+
+    <span style="color: blue">public</span> <span style="color: blue">string</span> FileName
+    {
+        <span style="color: blue">get</span> { <span style="color: blue">return</span> <span style="color: blue">string</span>.Format(<span style="color: maroon">"_{0} - {1}"</span>, _index + <span style="color: maroon">1</span>, _fileName); }
+    }
+
+    <span style="color: blue">public</span> ICommand Open
+    {
+        <span style="color: blue">get</span>
+        {
+            <span style="color: blue">return</span> MakeCommand
+                .Do(() =&gt; _fileHandler.Open(_fileName));
+        }
+    }
+}</pre>
+<p>The recent file view model presents the file name in a format suitable for the menu item. It even adds the underscore to turn the 1-based index into a hot key.</p>
+<p>The view model also provides the command to open the file. It doesn't actually perform the operation; it delegates to a file handler and provides the context.</p>
+<p>We provide a list of these view models based on the list of recently opened files.</p>
+<pre><span style="color: blue">public</span> IEnumerable&lt;RecentFileViewModel&gt; RecentFiles
+{
+    <span style="color: blue">get</span>
+    {
+        <span style="color: green">// Create a RecentFileViewModel for each recent file.</span>
+        <span style="color: green">// The view model serves the menu item.</span>
+        <span style="color: blue">return</span> _dataModel.RecentFiles
+            .Select((fileName, index) =&gt;
+                <span style="color: blue">new</span> RecentFileViewModel(index, fileName, <span style="color: blue">this</span>));
+    }
+}</pre>
+<p>Please note that this pattern does not work with ObservableCollection. Once you call .Select() on an ObservableCollection, it is no longer observable. This pattern only works with Update Controls.</p>
+<p>Now we need to bind MenuItems to this collection. My first instinct was to set the ItemTemplate of the parent MenuItem to a DataTemplate containing a child MenuItem. The problem with that is that a DataTemplate controls the <em>content</em> of the child item, not the child item itself. So instead of setting ItemTemplate, you need to set the ItemContainerStyle.</p>
+<pre><span style="color: blue">&lt;</span><span style="color: maroon">MenuItem</span> <span style="color: red">Header</span>="<span style="color: blue">_Recent Files</span>" <span style="color: red">ItemsSource</span>="<span style="color: blue">{Binding RecentFiles}</span>"<span style="color: blue">&gt;</span>
+    <span style="color: blue">&lt;</span><span style="color: maroon">MenuItem.ItemContainerStyle</span><span style="color: blue">&gt;</span>
+        <span style="color: blue">&lt;</span><span style="color: maroon">Style</span><span style="color: blue">&gt;</span>
+            <span style="color: blue">&lt;</span><span style="color: maroon">Setter</span> <span style="color: red">Property</span>="<span style="color: blue">MenuItem.Header</span>" <span style="color: red">Value</span>="<span style="color: blue">{Binding FileName}</span>"/<span style="color: blue">&gt;</span>
+            <span style="color: blue">&lt;</span><span style="color: maroon">Setter</span> <span style="color: red">Property</span>="<span style="color: blue">MenuItem.Command</span>" <span style="color: red">Value</span>="<span style="color: blue">{Binding Open}</span>"/<span style="color: blue">&gt;</span>
+        <span style="color: blue">&lt;</span>/<span style="color: maroon">Style</span><span style="color: blue">&gt;</span>
+    <span style="color: blue">&lt;</span>/<span style="color: maroon">MenuItem.ItemContainerStyle</span><span style="color: blue">&gt;</span>
+<span style="color: blue">&lt;</span>/<span style="color: maroon">MenuItem</span><span style="color: blue">&gt;</span></pre>
+<p>A WPF menu should not be defined using just one technique. If you choose something to simple, you won't be able to handle the more interactive requirements. If you choose something too complex, you loose tool support and put too much of your design in code. With this combination of techniques, you can create interactive menus with ease.</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="indexb0b7.html?cat=6" title="View all posts in Patterns" rel="category">Patterns</a>,  <a href="indexa88f.html?cat=36" title="View all posts in Update Controls" rel="category">Update Controls</a> |   <a href="index9d24.html?p=398#comments" title="Comment on Data bound menus">1 Comment &#187;</a></p>
+
+			</div>
+
+				<div class="post">
+				<h3 id="post-396"><a href="index2e25.html?p=396" rel="bookmark" title="Permanent Link to INotifyPropertyChanged is Obsolete addendum">INotifyPropertyChanged is Obsolete addendum</a></h3>
+				<small>Wednesday, June 24th, 2009</small>
+
+				<div class="entry">
+					<p>Please check you mailbox for the latest issue of <a href="http://code-magazine.com/">CoDe Magazine</a>. In it, you will find my article "<a href="http://www.code-magazine.com/Article.aspx?quickid=0907101">INotifyPropertyChanged is Obsolete</a>." A few things have changed since I penned those words, and now INotifyPropertyChanged is more obsolete than ever.</p>
+<p>The article describes how to use <a href="http://updatecontrols.net/">Update Controls</a> to replace WPF data binding. Rather than using the built-in "{Binding}" XAML extension, it tells you to use my "{u:Update}" custom extension. While this custom markup extension is still supported, it is no longer the preferred way to use Update Controls.</p>
+<p><strong>Blend-friendly updating</strong><br />
+Thanks to some feedback from <a href="http://www.paulstovell.com/">Paul Stovell</a>, Microsoft MVP for Client Application Development, Update Controls now works <em>with</em> the "{Binding}" XAML extension. This makes it more Blend friendly. But before you give your object to the DataContext, you need to wrap it:</p>
+<pre><span style="color: blue">public</span> <span style="color: blue">partial</span> <span style="color: blue">class</span> Window1 : Window
+{
+    <span style="color: blue">public</span> Window1()
+    {
+        InitializeComponent();
+        DataContext = <strong>ForView.Wrap</strong>(<span style="color: blue">new</span> PersonViewModel(<span style="color: blue">new</span> Person()));
+    }
+}</pre>
+<p>The wrapper implements INotifyPropertyChanged for you. It infers dependencies from your code and figures out when to fire PropertyChanged events. To help it with that inference, you need to mark your independent properties.</p>
+<pre><span style="color: blue">public</span> <span style="color: blue">class</span> Person
+{
+    <span style="color: blue">private</span> <span style="color: blue">string</span> _firstName;
+    <span style="color: blue">private</span> <span style="color: blue">string</span> _lastName;
+
+    <span style="color: blue">#region</span> Independent properties
+    <span style="color: green">// Generated by Update Controls --------------------------------</span>
+    <span style="color: blue">private</span> Independent _indFirstName = <span style="color: blue">new</span> Independent();
+    <span style="color: blue">private</span> Independent _indLastName = <span style="color: blue">new</span> Independent();
+
+    <span style="color: blue">public</span> <span style="color: blue">string</span> FirstName
+    {
+        <span style="color: blue">get</span> { _<strong>indFirstName.OnGet();</strong> <span style="color: blue">return</span> _firstName; }
+        <span style="color: blue">set</span> { <strong>_indFirstName.OnSet();</strong> _firstName = value; }
+    }
+
+    <span style="color: blue">public</span> <span style="color: blue">string</span> LastName
+    {
+        <span style="color: blue">get</span> { <strong>_indLastName.OnGet();</strong> <span style="color: blue">return</span> _lastName; }
+        <span style="color: blue">set</span> { <strong>_indLastName.OnSet();</strong> _lastName = value; }
+    }
+    <span style="color: green">// End generated code --------------------------------</span>
+    <span style="color: blue">#endregion</span>
+
+    <span style="color: blue">public</span> <span style="color: blue">string</span> FullName
+    {
+        <span style="color: blue">get</span>
+        {
+            <span style="color: blue">return</span> FirstName + <span style="color: maroon">" "</span> + LastName;
+        }
+    }
+}</pre>
+<p>The Ctrl+D, G shortcut still works. Select the fields and hit the shortcut to generate the independent properties.</p>
+<p>Update Controls can see right through the intermediate view model. There is no bookkeeping code required. Even the dependency of Title upon FirstName and LastName is inferred.</p>
+<pre><span style="color: blue">public</span> <span style="color: blue">class</span> PersonViewModel
+{
+    <span style="color: blue">private</span> Person _person;
+
+    <span style="color: blue">public</span> PersonViewModel(Person person)
+    {
+        _person = person;
+    }
+
+    <span style="color: blue">public</span> <span style="color: blue">string</span> FirstName
+    {
+        <span style="color: blue">get</span> { <span style="color: blue">return</span> _person.FirstName; }
+        <span style="color: blue">set</span> { _person.FirstName = value; }
+    }
+
+    <span style="color: blue">public</span> <span style="color: blue">string</span> LastName
+    {
+        <span style="color: blue">get</span> { <span style="color: blue">return</span> _person.LastName; }
+        <span style="color: blue">set</span> { _person.LastName = value; }
+    }
+
+    <span style="color: blue">public</span> <span style="color: blue">string</span> FullName
+    {
+        <span style="color: blue">get</span> { <span style="color: blue">return</span> _person.FullName; }
+    }
+
+<strong>    <span style="color: blue">public</span> <span style="color: blue">string</span> Title
+    {
+        <span style="color: blue">get</span> { <span style="color: blue">return</span> <span style="color: maroon">"Person - "</span> + FullName; }
+    }
+</strong>}</pre>
+<p><strong>Silverlight 3</strong><br />
+I have also ported <a href="http://updatecontrolslight.codeplex.com/">Update Controls to Silverlight</a>. It only works with Silverlight 3, so it is in Beta until the official release. However, it is fully operational and works just as well as the WPF version. The "{u:Update}" custom extension is not supported in Silverlight, however. You have to use the new ForView.Wrap() mechanism.</p>
+<p>I hope you find Update Controls to be as useful as I have. You can <a href="http://www.code-magazine.com/Article.aspx?quickid=0907101">download the source code</a> provided in the article from CoDe Magazine, or try some demos that I've created since then:</p>
+<ul>
+<li><a href="wp-content/uploads/2009/06/commuter.zip">Commuter</a> - Multi-threaded iTunes synchronization sample.</li>
+<li><a href="wp-content/uploads/2009/03/quickwriter.zip">QuickWriter</a> - Data binding through linq queries. Uses the {u:Update} extension rather than the new ForView.Wrap().</li>
+<li><a href="http://updatecontrols.codeplex.com/SourceControl/ListDownloadableCommits.aspx">UpdateControls.XAML.Test</a> - The test app bundled with the source code.</li>
+<li><a href="wp-content/uploads/2009/06/addendumdemo.zip">Addendum Demo</a> - The code included above.</li>
+</ul>
+<p>Also be sure to watch the <a href="http://updatecontrols.net/vb/videos.shtml">videos</a> to see it in action.</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="indexa88f.html?cat=36" title="View all posts in Update Controls" rel="category">Update Controls</a> |   <a href="index2e25.html?p=396#respond" title="Comment on INotifyPropertyChanged is Obsolete addendum">No Comments &#187;</a></p>
+
+			</div>
+
+				<div class="post">
+				<h3 id="post-393"><a href="indexa9ab.html?p=393" rel="bookmark" title="Permanent Link to Multi-threaded view model using Update Controls">Multi-threaded view model using Update Controls</a></h3>
+				<small>Wednesday, June 10th, 2009</small>
+
+				<div class="entry">
+					<p>Multithreaded programming doesn't have to be hard. You just need to learn a few patterns.</p>
+<p>Here's a common problem. How do you notify the UI thread that something has changed on a background thread? The INotifyPropertyChanged contract requires that the PropertyChanged event be fired on the UI thread. There are <a href="http://leecampbell.blogspot.com/2009/02/responsive-wpf-user-interfaces-part-3.html">ways</a> of marshalling that event from the background to the foreground, but wouldn't it be nice if you didn't have to?</p>
+<p><a href="http://updatecontrols.net/">Update Controls</a> takes care of this problem for you. You make sure your code is thread-safe, and Update Controls will make sure that dependents are updated, no matter what thread they are on.</p>
+<p><strong>A thread-safe model</strong><br />
+For Update Controls to work properly -- and indeed for your entire application to work properly -- you need your data model to be thread safe. That means that anything that can change is protected with a lock. If it can change (and you are using Update Controls), then it should have an <a href="http://updatecontrols.net/documentation/classDocumentation/cs/UpdateControls.Independent.do">Independent</a> sentry. Just be sure to call OnGet and OnSet inside the lock.</p>
+<pre><span style="color: blue">public</span> <span style="color: blue">class</span> Playlist
+{
+    <span style="color: blue">private</span> <span style="color: blue">int</span> _id;
+    <span style="color: blue">private</span> <span style="color: blue">string</span> _name;
+
+    <span style="color: blue">public</span> Playlist(<span style="color: blue">int</span> id)
+    {
+        _id = id;
+    }
+
+    <span style="color: blue">public</span> <span style="color: blue">int</span> ID
+    {
+        <span style="color: blue">get</span> { <span style="color: blue">return</span> _id; }
+    }
+
+    <span style="color: blue">#region</span> Independent properties
+    <span style="color: green">// Generated by Update Controls --------------------------------</span>
+    <span style="color: blue">private</span> Independent _indName = <span style="color: blue">new</span> Independent();
+
+    <span style="color: blue">public</span> <span style="color: blue">string</span> Name
+    {
+        <span style="color: blue">get</span>
+        {
+            <span style="color: blue">lock</span> (<span style="color: blue">this</span>)
+            {
+                _indName.OnGet();
+                <span style="color: blue">return</span> _name;
+            }
+        }
+        <span style="color: blue">set</span>
+        {
+            <span style="color: blue">lock</span> (<span style="color: blue">this</span>)
+            {
+                _indName.OnSet();
+                _name = value;
+            }
+        }
+    }
+    <span style="color: green">// End generated code --------------------------------</span>
+    <span style="color: blue">#endregion</span>
+}</pre>
+<p>When dealing with collections, we need to be a little careful. If you return an IEnumerable that traverses a collection, that IEnumerable will leave the lock. This will cause problems, as another thread can come in and modify the collection while you are traversing it. To be safe, we need to create a copy of the collection within the lock.</p>
+<pre><span style="color: blue">public</span> <span style="color: blue">class</span> MusicLibrary
+{
+    <span style="color: blue">private</span> List&lt;Playlist&gt; _playlists = <span style="color: blue">new</span> List&lt;Playlist&gt;();
+
+    <span style="color: blue">#region</span> Independent properties
+    <span style="color: green">// Generated by Update Controls --------------------------------</span>
+    <span style="color: blue">private</span> Independent _indPlaylists = <span style="color: blue">new</span> Independent();
+
+    <span style="color: blue">public</span> Playlist GetPlaylist(<span style="color: blue">int</span> playlistID)
+    {
+        <span style="color: blue">lock</span> (<span style="color: blue">this</span>)
+        {
+            <span style="color: green">// This method changes the list.</span>
+            _indPlaylists.OnSet();
+
+            <span style="color: green">// See if we already have this one.</span>
+            Playlist playlist = _playlists.Where(p =&gt; p.ID == playlistID).FirstOrDefault();
+            <span style="color: blue">if</span> (playlist != <span style="color: blue">null</span>)
+                <span style="color: blue">return</span> playlist;
+
+            <span style="color: green">// If not, create it.</span>
+            playlist = <span style="color: blue">new</span> Playlist(playlistID);
+            _playlists.Add(playlist);
+            <span style="color: blue">return</span> playlist;
+        }
+    }
+
+    <span style="color: blue">public</span> <span style="color: blue">void</span> DeletePlaylist(Playlist playlist)
+    {
+        <span style="color: blue">lock</span> (<span style="color: blue">this</span>)
+        {
+            _indPlaylists.OnSet();
+            _playlists.Remove(playlist);
+        }
+    }
+
+    <span style="color: blue">public</span> IEnumerable&lt;Playlist&gt; Playlists
+    {
+        <span style="color: blue">get</span>
+        {
+            <span style="color: blue">lock</span> (<span style="color: blue">this</span>)
+            {
+                _indPlaylists.OnGet();
+                <span style="color: green">// Return a copy of the list so that it can be accessed in a</span>
+                <span style="color: green">// thread-safe manner.</span>
+                <span style="color: blue">return</span> <span style="color: blue">new</span> List&lt;Playlist&gt;(_playlists);
+            }
+        }
+    }
+    <span style="color: green">// End generated code --------------------------------</span>
+    <span style="color: blue">#endregion</span>
+}</pre>
+<p>With this, your model is safe to access from multiple threads. So let's create one.</p>
+<p><strong>Create a thread to communicate with external systems</strong><br />
+The UI thread is for the user. If you use it to communicate with external systems, it might hang. Then the user will have to decide whether to "Continue Waiting" or "Switch To...". Switch to what, a Mac? But seriously, it's better if you spawn a new thread to do all of your communication with external systems.</p>
+<p>Commuter communicates with iTunes. So I created a separate thread to synchronize between iTunes and my data model. It wakes up every 10 seconds and refreshes the playlists.</p>
+<pre><span style="color: blue">public</span> <span style="color: blue">class</span> ITunesSynchronizationService
+{
+    <span style="color: blue">private</span> MusicLibrary _musicLibrary;
+    <span style="color: blue">private</span> Thread _thread;
+    <span style="color: blue">private</span> ManualResetEvent _stop;
+    <span style="color: blue">private</span> <span style="color: blue">bool</span> _first = <span style="color: maroon">true</span>;
+
+    <span style="color: blue">private</span> <span style="color: blue">string</span> _lastError = <span style="color: blue">string</span>.Empty;
+    <span style="color: blue">private</span> Independent _indLastError = <span style="color: blue">new</span> Independent();
+
+    <span style="color: blue">public</span> ITunesSynchronizationService(MusicLibrary musicLibrary)
+    {
+        _musicLibrary = musicLibrary;
+        _thread = <span style="color: blue">new</span> Thread(ThreadProc);
+        _thread.Name = <span style="color: maroon">"iTunes synchronization service"</span>;
+        _stop = <span style="color: blue">new</span> ManualResetEvent(<span style="color: maroon">false</span>);
+    }
+
+    <span style="color: blue">public</span> <span style="color: blue">void</span> Start()
+    {
+        _thread.Start();
+    }
+
+    <span style="color: blue">public</span> <span style="color: blue">void</span> Stop()
+    {
+        _stop.Set();
+
+        <span style="color: green">// Give it 30 seconds to shut down.</span>
+        _thread.Join(<span style="color: maroon">30000</span>);
+    }
+
+    <span style="color: blue">public</span> <span style="color: blue">string</span> LastError
+    {
+        <span style="color: blue">get</span>
+        {
+            <span style="color: blue">lock</span> (<span style="color: blue">this</span>)
+            {
+                _indLastError.OnGet();
+                <span style="color: blue">return</span> _lastError;
+            }
+        }
+
+        <span style="color: blue">private</span> <span style="color: blue">set</span>
+        {
+            <span style="color: blue">lock</span> (<span style="color: blue">this</span>)
+            {
+                _indLastError.OnSet();
+                _lastError = value;
+            }
+        }
+    }
+
+    <span style="color: blue">private</span> <span style="color: blue">void</span> ThreadProc()
+    {
+        <span style="color: blue">while</span> (ShouldContinue())
+        {
+            <span style="color: blue">try</span>
+            {
+                <span style="color: green">// Connect to iTunes.</span>
+                iTunesApp itApp = <span style="color: blue">new</span> iTunesAppClass();
+
+                <span style="color: green">// List all of the playlists.</span>
+                List&lt;Playlist&gt; oldPlaylists = _musicLibrary.Playlists.ToList();
+                <span style="color: blue">foreach</span> (IITUserPlaylist itPlaylist <span style="color: blue">in</span> itApp.LibrarySource.Playlists.OfType&lt;IITUserPlaylist&gt;())
+                {
+                    <span style="color: blue">string</span> name = itPlaylist.Name;
+                    Playlist playlist = _musicLibrary.GetPlaylist(itPlaylist.playlistID);
+                    <span style="color: blue">if</span> (name != <span style="color: blue">null</span> &amp;&amp; playlist.Name != name)
+                        playlist.Name = name;
+                    oldPlaylists.Remove(playlist);
+                }
+
+                <span style="color: green">// Delete all that are no longer in iTunes.</span>
+                <span style="color: blue">foreach</span> (Playlist playlist <span style="color: blue">in</span> oldPlaylists)
+                    _musicLibrary.DeletePlaylist(playlist);
+
+                LastError = <span style="color: blue">string</span>.Empty;
+            }
+            <span style="color: blue">catch</span> (Exception ex)
+            {
+                LastError = ex.Message;
+            }
+        }
+    }
+    <span style="color: blue">private</span> <span style="color: blue">bool</span> ShouldContinue()
+    {
+        <span style="color: green">// Don't wait the first time.</span>
+        <span style="color: blue">if</span> (_first)
+        {
+            _first = <span style="color: maroon">false</span>;
+            <span style="color: blue">return</span> <span style="color: maroon">true</span>;
+        }
+
+        <span style="color: green">// Wake up every 10 seconds, or when the thread should stop.</span>
+        <span style="color: blue">return</span> !_stop.WaitOne(<span style="color: maroon">10000</span>);
+    }
+}</pre>
+<p>Notice the LastError property. This is a thread-safe way for the service to communicate its status with the user. This property is bound to a TextBlock on the UI.</p>
+<p>The iTunes synchronization service makes changes directly to the data model. Because the data model is thread-safe, the UI thread and the background thread can share this resource. Update Controls will notify the UI thread whenever the background thread changes the data model.</p>
+<p><strong>Try it out</strong><br />
+<a href="wp-content/uploads/2009/06/commuter.zip" title="commuter.zip">Download the code</a>. When you run Commuter, it will launch iTunes. Even as iTunes launches, the Commuter user interface is responsive. If you are fast enough, you can open the Playlist drop-down before it is populated. But even if COM is faster than the mouse, you can try a few experiments.</p>
+<p>Select a playlist in Commuter. Then switch to iTunes and rename that playlist. Within 10 seconds you'll see the selected playlist's name change.</p>
+<p>Bring iTunes to the front, but leave Commuter visible underneath it. Place your mouse on the drop-down. Press Ctrl+N to create a new playlist, then click the mouse to bring Commuter to the front and open the drop-down. Within 10 seconds, "untitled playlist" will appear in the list.</p>
+<p>Multi-threaded programming still requires some care, but Update Controls can at least take care of updating the UI when the background thread changes the data model.</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="indexc733.html?cat=38" title="View all posts in Commuter" rel="category">Commuter</a>,  <a href="indexa88f.html?cat=36" title="View all posts in Update Controls" rel="category">Update Controls</a> |   <a href="indexa9ab.html?p=393#respond" title="Comment on Multi-threaded view model using Update Controls">No Comments &#187;</a></p>
+
+			</div>
+
+				<div class="post">
+				<h3 id="post-365"><a href="index18ee.html?p=365" rel="bookmark" title="Permanent Link to A View Model based approach to star ratings">A View Model based approach to star ratings</a></h3>
+				<small>Thursday, May 28th, 2009</small>
+
+				<div class="entry">
+					<p>While researching for Commuter, I found several implementations of star-rating controls on the web. Here are a few:</p>
+<ul>
+<li><a href="http://codingbandit.com/Blog/blog/wpf-data-templates-part-2-value-converters/">Coding Bandit's Rating Converter</a></li>
+<li><a href="http://social.msdn.microsoft.com/Forums/en-US/wpf/thread/38e7296a-9892-4719-a69d-a89dea1549c0">Zhou Young's Rating Buttons</a></li>
+<li><a href="http://www.codeproject.com/KB/WPF/WPF_Media_Player.aspx">Sachra Barber's Media Player</a></li>
+</ul>
+<p>There's some good work here, so give them a read. However, a common theme was to control the stars with code. I wanted to do a purely View Model driven design to limit the amount of code necessary.</p>
+<p><strong>The View Model is dependent behavior</strong><br /><a href="wp-content/uploads/2009/05/commuter-view.png"><img style="border-right: 0px; border-top: 0px; border-left: 0px; border-bottom: 0px" height="304" alt="Commuter View" src="wp-content/uploads/2009/05/commuter-view-thumb.png" width="396" align="right" border="0"></a> The first thing to realize is that a star rating control is a combination of independent and dependent behavior. While the rating itself is independent, the state of each star is dependent. The independent data lives in the model, and the dependent data lives in the View Model. So I changed the podcast View Model contract to this:</p>
+<pre><span style="color: blue">public</span> <span style="color: blue">interface</span> IPodcast
+{
+    <span style="color: blue">string</span> Name { <span style="color: blue">get</span>; }
+    <span style="color: blue">bool</span> Selected { <span style="color: blue">get</span>; <span style="color: blue">set</span>; }
+    <span style="color: blue">bool</span> Rank1 { <span style="color: blue">get</span>; <span style="color: blue">set</span>; }
+    <span style="color: blue">bool</span> Rank2 { <span style="color: blue">get</span>; <span style="color: blue">set</span>; }
+    <span style="color: blue">bool</span> Rank3 { <span style="color: blue">get</span>; <span style="color: blue">set</span>; }
+    <span style="color: blue">bool</span> Rank4 { <span style="color: blue">get</span>; <span style="color: blue">set</span>; }
+    <span style="color: blue">bool</span> Rank5 { <span style="color: blue">get</span>; <span style="color: blue">set</span>; }
+}
+</pre>
+<p>This lets me just drop five ordinary check boxes and bind them to the five properties. Well, not <em>ordinary</em> check boxes. Mine look like cars. Here's a <a href="http://expression.microsoft.com/en-us/dd279539.aspx">step-by-step guide for styling a control</a>. Use the same technique to create star checkboxes, if you are so inclined.</p>
+<p><strong>Implement the View Model contract</strong><br />A star -- er a <em>car</em> -- is on if the rating is greater than or equal to its value. When a car is clicked, it sets the rank to its value. This logic is encoded in the View Model like this:</p>
+<pre><span style="color: blue">public</span> <span style="color: blue">class</span> PodcastViewModel : IPodcast
+{
+    <span style="color: blue">private</span> Podcast _model;
+
+    <span style="color: blue">public</span> PodcastViewModel(Podcast model)
+    {
+        _model = model;
+    }
+
+    <span style="color: blue">public</span> <span style="color: blue">string</span> Name
+    {
+        <span style="color: blue">get</span> { <span style="color: blue">return</span> _model.Name; }
+        <span style="color: blue">set</span> { _model.Name = value; }
+    }
+
+    <span style="color: blue">public</span> <span style="color: blue">bool</span> Selected
+    {
+        <span style="color: blue">get</span> { <span style="color: blue">return</span> _model.Selected; }
+        <span style="color: blue">set</span> { _model.Selected = value; }
+    }
+
+    <span style="color: blue">public</span> <span style="color: blue">bool</span> Rank1
+    {
+        <span style="color: blue">get</span> { <span style="color: blue">return</span> _model.Rank &gt;= <span style="color: maroon">1</span>; }
+        <span style="color: blue">set</span> { _model.Rank = <span style="color: maroon">1</span>; }
+    }
+    <span style="color: blue">public</span> <span style="color: blue">bool</span> Rank2
+    {
+        <span style="color: blue">get</span> { <span style="color: blue">return</span> _model.Rank &gt;= <span style="color: maroon">2</span>; }
+        <span style="color: blue">set</span> { _model.Rank = <span style="color: maroon">2</span>; }
+    }
+    <span style="color: blue">public</span> <span style="color: blue">bool</span> Rank3
+    {
+        <span style="color: blue">get</span> { <span style="color: blue">return</span> _model.Rank &gt;= <span style="color: maroon">3</span>; }
+        <span style="color: blue">set</span> { _model.Rank = <span style="color: maroon">3</span>; }
+    }
+    <span style="color: blue">public</span> <span style="color: blue">bool</span> Rank4
+    {
+        <span style="color: blue">get</span> { <span style="color: blue">return</span> _model.Rank &gt;= <span style="color: maroon">4</span>; }
+        <span style="color: blue">set</span> { _model.Rank = <span style="color: maroon">4</span>; }
+    }
+    <span style="color: blue">public</span> <span style="color: blue">bool</span> Rank5
+    {
+        <span style="color: blue">get</span> { <span style="color: blue">return</span> _model.Rank &gt;= <span style="color: maroon">5</span>; }
+        <span style="color: blue">set</span> { _model.Rank = <span style="color: maroon">5</span>; }
+    }
+}
+</pre>
+<p>The View Model does not maintain any state of its own. It delegates everything to the model. It is just a translator that converts model values into view behaviors.</p>
+<p><strong>Implement INotifyPropertyChanged</strong><br />Oh, wait! You don't need to do that. Just use Independent sentries in your data model:</p>
+<pre><span style="color: blue">public</span> <span style="color: blue">class</span> Podcast
+{
+    <span style="color: blue">private</span> <span style="color: blue">string</span> _name = <span style="color: blue">string</span>.Empty;
+    <span style="color: blue">private</span> <span style="color: blue">bool</span> _selected = <span style="color: maroon">false</span>;
+    <span style="color: blue">private</span> <span style="color: blue">int</span> _rank = <span style="color: maroon">1</span>;
+
+    <span style="color: blue">#region</span> Independent properties
+    <span style="color: green">// Generated by Update Controls --------------------------------</span>
+    <span style="color: blue">private</span> Independent _indName = <span style="color: blue">new</span> Independent();
+    <span style="color: blue">private</span> Independent _indSelected = <span style="color: blue">new</span> Independent();
+    <span style="color: blue">private</span> Independent _indRank = <span style="color: blue">new</span> Independent();
+
+    <span style="color: blue">public</span> <span style="color: blue">string</span> Name
+    {
+        <span style="color: blue">get</span> { _indName.OnGet(); <span style="color: blue">return</span> _name; }
+        <span style="color: blue">set</span> { _indName.OnSet(); _name = value; }
+    }
+
+    <span style="color: blue">public</span> <span style="color: blue">bool</span> Selected
+    {
+        <span style="color: blue">get</span> { _indSelected.OnGet(); <span style="color: blue">return</span> _selected; }
+        <span style="color: blue">set</span> { _indSelected.OnSet(); _selected = value; }
+    }
+
+    <span style="color: blue">public</span> <span style="color: blue">int</span> Rank
+    {
+        <span style="color: blue">get</span> { _indRank.OnGet(); <span style="color: blue">return</span> _rank; }
+        <span style="color: blue">set</span> { _indRank.OnSet(); _rank = value; }
+    }
+    <span style="color: green">// End generated code --------------------------------</span>
+    <span style="color: blue">#endregion</span>
+}
+</pre>
+<p>And then wrap the view model for the view (requires <a href="http://updatecontrols.net/">Update Controls</a> release 2.0.4.0 or better):</p>
+<pre><span style="color: blue">public</span> <span style="color: blue">partial</span> <span style="color: blue">class</span> Window1 : Window
+{
+    <span style="color: blue">public</span> Window1()
+    {
+        InitializeComponent();
+        DataContext = <strong>ForView.Wrap</strong>(<span style="color: blue">new</span> CommuterViewModel(<span style="color: blue">new</span> CommuterModel()));
+    }
+}</pre>
+<p>Now when you click on any of the cars, it will set the Rank property in the data model. Since all of the check boxes depend upon that one Rank, they are all updated accordingly.</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="indexc733.html?cat=38" title="View all posts in Commuter" rel="category">Commuter</a>,  <a href="indexa88f.html?cat=36" title="View all posts in Update Controls" rel="category">Update Controls</a> |   <a href="index18ee.html?p=365#respond" title="Comment on A View Model based approach to star ratings">No Comments &#187;</a></p>
+
+			</div>
+
+				<div class="post">
+				<h3 id="post-346"><a href="index17f1.html?p=346" rel="bookmark" title="Permanent Link to Data Binding in Silverlight 3 Without INotifyPropertyChanged">Data Binding in Silverlight 3 Without INotifyPropertyChanged</a></h3>
+				<small>Wednesday, May 20th, 2009</small>
+
+				<div class="entry">
+					<p><a href="http://updatecontrolslight.codeplex.com/">Update Controls for Silverlight 3</a> is in beta. Update Controls automatically discovers dependencies upon your data model, and updates the UI when that data changes. It does not require that you register for or fire PropertyChanged events.</p>
+<p><strong>Step 1: Write your data model</strong><br />
+Your data model is a set of plain-old CLR objects (POCOs). These objects have fields that store data, and properties that expose that data to consumers. They may also have validation logic, business logic, and other methods. The data model will be persisted, probably via a web service.</p>
+<pre><span style="color: blue">public</span> <span style="color: blue">class</span> Customer
+{
+	<span style="color: blue">private</span> <span style="color: blue">string</span> _name;
+	<span style="color: blue">private</span> List&lt;Invoice&gt; _invoices = <span style="color: blue">new</span> List&lt;Invoice&gt;();
+
+	<span style="color: blue">public</span> <span style="color: blue">string</span> Name
+	{
+		<span style="color: blue">get</span> { <span style="color: blue">return</span> _name; }
+		<span style="color: blue">set</span> { _name = value; }
+	}
+
+	<span style="color: blue">public</span> IEnumerable&lt;Invoice&gt; Invoices
+	{
+		<span style="color: blue">get</span> { <span style="color: blue">return</span> _invoices; }
+	}
+
+	<span style="color: blue">public</span> Invoice NewInvoice(<span style="color: blue">string</span> number)
+	{
+		Invoice invoice = <span style="color: blue">new</span> Invoice(number);
+		_invoices.Add(invoice);
+		<span style="color: blue">return</span> invoice;
+	}
+}
+
+<span style="color: blue">public</span> <span style="color: blue">class</span> Payment
+{
+	<span style="color: blue">private</span> Customer _customer;
+	<span style="color: blue">private</span> List&lt;Invoice&gt; _paidInvoices = <span style="color: blue">new</span> List&lt;Invoice&gt;();
+
+	<span style="color: blue">public</span> Payment(Customer customer)
+	{
+		_customer = customer;
+	}
+
+	<span style="color: blue">public</span> Customer Customer
+	{
+		<span style="color: blue">get</span> { <span style="color: blue">return</span> _customer; }
+	}
+
+	<span style="color: blue">public</span> IEnumerable&lt;Invoice&gt; PaidInvoices
+	{
+		<span style="color: blue">get</span> { <span style="color: blue">return</span> _paidInvoices; }
+	}
+
+	<span style="color: blue">public</span> <span style="color: blue">void</span> AddPaidInvoice(Invoice invoice)
+	{
+		_paidInvoices.Add(invoice);
+	}
+
+	<span style="color: blue">public</span> <span style="color: blue">void</span> RemovePaidInvoice(Invoice invoice)
+	{
+		_paidInvoices.Remove(invoice);
+	}
+}</pre>
+<p><strong>Step 2: Add Independent sentries</strong><br />
+Add a reference to UpdateControls.Light.dll. Then create an Independent sentry for each field in your data model that can change. Call OnGet whenever you read the field, and OnSet whenever you change it.</p>
+<pre><span style="color: blue">public</span> <span style="color: blue">class</span> Customer
+{
+	<span style="color: blue">private</span> <span style="color: blue">string</span> _name;
+	<span style="color: blue">private</span> List&lt;Invoice&gt; _invoices = <span style="color: blue">new</span> List&lt;Invoice&gt;();
+
+<strong>	<span style="color: blue">private</span> Independent _indName = <span style="color: blue">new</span> Independent();
+	<span style="color: blue">private</span> Independent _indInvoices = <span style="color: blue">new</span> Independent();
+</strong>
+	<span style="color: blue">public</span> <span style="color: blue">string</span> Name
+	{
+		<span style="color: blue">get</span> { <strong>_indName.OnGet();</strong> <span style="color: blue">return</span> _name; }
+		<span style="color: blue">set</span> { <strong>_indName.OnSet();</strong> _name = value; }
+	}
+
+	<span style="color: blue">public</span> IEnumerable&lt;Invoice&gt; Invoices
+	{
+		<span style="color: blue">get</span> { <strong>_indInvoices.OnGet();</strong> <span style="color: blue">return</span> _invoices; }
+	}
+
+	<span style="color: blue">public</span> Invoice NewInvoice(<span style="color: blue">string</span> number)
+	{
+		<strong>_indInvoices.OnSet();</strong>
+		Invoice invoice = <span style="color: blue">new</span> Invoice(number);
+		_invoices.Add(invoice);
+		<span style="color: blue">return</span> invoice;
+	}
+}
+
+<span style="color: blue">public</span> <span style="color: blue">class</span> Payment
+{
+	<span style="color: blue">private</span> Customer _customer;
+	<span style="color: blue">private</span> List&lt;Invoice&gt; _paidInvoices = <span style="color: blue">new</span> List&lt;Invoice&gt;();
+
+<strong>	<span style="color: blue">private</span> Independent _indPaidInvoices = <span style="color: blue">new</span> Independent();
+</strong>
+	<span style="color: blue">public</span> Payment(Customer customer)
+	{
+		_customer = customer;
+	}
+
+	<span style="color: blue">public</span> Customer Customer
+	{
+		<span style="color: blue">get</span> { <span style="color: blue">return</span> _customer; }
+	}
+
+	<span style="color: blue">public</span> IEnumerable&lt;Invoice&gt; PaidInvoices
+	{
+		<span style="color: blue">get</span> { <strong>_indPaidInvoices.OnGet();</strong> <span style="color: blue">return</span> _paidInvoices; }
+	}
+
+	<span style="color: blue">public</span> <span style="color: blue">void</span> AddPaidInvoice(Invoice invoice)
+	{
+		<strong>_indPaidInvoices.OnSet();
+</strong>		_paidInvoices.Add(invoice);
+	}
+
+	<span style="color: blue">public</span> <span style="color: blue">void</span> RemovePaidInvoice(Invoice invoice)
+	{
+		<strong>_indPaidInvoices.OnSet();
+</strong>		_paidInvoices.Remove(invoice);
+	}
+}</pre>
+<p><strong>Step 3: Write your navigation model</strong><br />
+The navigation model keeps track of all of the user's selection. It helps the user navigate through the data model. Use Independent sentries, just like you did for the data model. But unlike the data model, the navigation model is not persistent.</p>
+<pre><span style="color: blue">public</span> <span style="color: blue">class</span> PaymentNavigationModel
+{
+	<span style="color: blue">private</span> Invoice _selectedUnpaidInvoice;
+	<span style="color: blue">private</span> Invoice _selectedPaidInvoice;
+
+	<span style="color: blue">private</span> Independent _indSelectedUnpaidInvoice = <span style="color: blue">new</span> Independent();
+	<span style="color: blue">private</span> Independent _indSelectedPaidInvoice = <span style="color: blue">new</span> Independent();
+
+	<span style="color: blue">public</span> Invoice SelectedUnpaidInvoice
+	{
+		<span style="color: blue">get</span> { _indSelectedUnpaidInvoice.OnGet(); <span style="color: blue">return</span> _selectedUnpaidInvoice; }
+		<span style="color: blue">set</span> { _indSelectedUnpaidInvoice.OnSet(); _selectedUnpaidInvoice = value; }
+	}
+
+	<span style="color: blue">public</span> Invoice SelectedPaidInvoice
+	{
+		<span style="color: blue">get</span> { _indSelectedPaidInvoice.OnGet(); <span style="color: blue">return</span> _selectedPaidInvoice; }
+		<span style="color: blue">set</span> { _indSelectedPaidInvoice.OnSet(); _selectedPaidInvoice = value; }
+	}
+}</pre>
+<p><strong>Step 4: Write your view model</strong><br />
+The view model interprets the data model for the view. It has no data of its own. It just references the data model and the navigation model. It has a property for every bindable control in the view. It also has an ICommand property for every action the user can perform.</p>
+<pre><span style="color: blue">public</span> <span style="color: blue">class</span> PaymentViewModel
+{
+	<span style="color: blue">private</span> Payment _payment;
+	<span style="color: blue">private</span> PaymentNavigationModel _navigation;
+
+	<span style="color: blue">public</span> PaymentViewModel(Payment payment, PaymentNavigationModel navigation)
+	{
+		_payment = payment;
+		_navigation = navigation;
+	}
+
+	<span style="color: blue">public</span> <span style="color: blue">string</span> CustomerName
+	{
+		<span style="color: blue">get</span> { <span style="color: blue">return</span> _payment.Customer.Name; }
+		<span style="color: blue">set</span> { _payment.Customer.Name = value; }
+	}
+
+	<span style="color: blue">public</span> IEnumerable&lt;Invoice&gt; PaidInvoices
+	{
+		<span style="color: blue">get</span> { <span style="color: blue">return</span> _payment.PaidInvoices; }
+	}
+
+	<span style="color: blue">public</span> IEnumerable&lt;Invoice&gt; UnpaidInvoices
+	{
+		<span style="color: blue">get</span> { <span style="color: blue">return</span> _payment.Customer.Invoices.Except(_payment.PaidInvoices); }
+	}
+
+	<span style="color: blue">public</span> Invoice SelectedPaidInvoice
+	{
+		<span style="color: blue">get</span> { <span style="color: blue">return</span> _navigation.SelectedPaidInvoice; }
+		<span style="color: blue">set</span> { <span style="color: blue"></span>_navigation.SelectedPaidInvoice = <span style="color: blue">value</span>; }
+	}
+
+	<span style="color: blue">public</span> Invoice SelectedUnpaidInvoice
+	{
+		<span style="color: blue">get</span> { <span style="color: blue">return</span> _navigation.SelectedUnpaidInvoice; }
+		<span style="color: blue">set</span> { <span style="color: blue"></span>_navigation.SelectedUnpaidInvoice = <span style="color: blue">value</span>; }
+	}
+
+	<span style="color: blue">public</span> ICommand AddPaidInvoices
+	{
+		<span style="color: blue">get</span>
+		{
+			<span style="color: blue">return</span> MakeCommand
+				.When(() =&gt; _navigation.SelectedUnpaidInvoice != <span style="color: blue">null</span>)
+				.Do(() =&gt;
+				{
+					_payment.AddPaidInvoice(_navigation.SelectedUnpaidInvoice);
+					_navigation.SelectedPaidInvoice = _navigation.SelectedUnpaidInvoice;
+					_navigation.SelectedUnpaidInvoice = <span style="color: blue">null</span>;
+				});
+		}
+	}
+
+	<span style="color: blue">public</span> ICommand RemovePaidInvoices
+	{
+		<span style="color: blue">get</span>
+		{
+			<span style="color: blue">return</span> MakeCommand
+				.When(() =&gt; _navigation.SelectedPaidInvoice != <span style="color: blue">null</span>)
+				.Do(() =&gt;
+				{
+					_payment.RemovePaidInvoice(_navigation.SelectedPaidInvoice);
+					_navigation.SelectedUnpaidInvoice = _navigation.SelectedPaidInvoice;
+					_navigation.SelectedPaidInvoice = <span style="color: blue">null</span>;
+				});
+		}
+	}
+}</pre>
+<p><strong>Step 5: Set the data context</strong><br />
+Now comes the magic. At no point did you fire or register for PropertyChanged events. You just wrote code that was concerned with the rules of your business (data model) and your user interface (view model and navigation model). Update Controls will fire those PropertyChanged events for you, if you wrap your view model before giving it to the view:</p>
+<pre>Customer customer = <span style="color: blue">new</span> Customer();
+<span style="color: green">// Load the customer from the web service.</span>
+
+Payment payment = <span style="color: blue">new</span> Payment(customer);
+<span style="color: green">// Load the payment from the web service.</span>
+
+DataContext = ForView.Wrap(
+	<span style="color: blue">new</span> PaymentViewModel(
+		payment,
+		<span style="color: blue">new</span> PaymentNavigationModel()));</pre>
+<p>Update Controls makes it much easier to create line-of-business applications in Silverlight 3, because you don't have to deal with INotifyPropertyChanged.</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="indexa88f.html?cat=36" title="View all posts in Update Controls" rel="category">Update Controls</a> |   <a href="index17f1.html?p=346#respond" title="Comment on Data Binding in Silverlight 3 Without INotifyPropertyChanged">No Comments &#187;</a></p>
+
+			</div>
+
+				<div class="post">
+				<h3 id="post-336"><a href="index71fc.html?p=336" rel="bookmark" title="Permanent Link to Update Controls in Silverlight 3 proof-of-concept">Update Controls in Silverlight 3 proof-of-concept</a></h3>
+				<small>Sunday, April 19th, 2009</small>
+
+				<div class="entry">
+					<p>I have confirmed that Update Controls will work in Silverlight 3. I have wrapped a data object with one that uses DependencyProperties and successfully bound to the wrapper in Silverlight 3. This POC did not work in Silverlight 2 because it did not support DependencyProperty binding. Here's the code:</p>
+<pre><font color="#0000ff">using</font> System;
+<font color="#0000ff">using</font> System.Windows;
+<font color="#0000ff">using</font> UpdateControls;
+
+<font color="#0000ff">namespace</font> SL3Test
+{
+    <span style="color: blue">public</span> <span style="color: blue">class</span> <font color="#0080ff">PersonWrapper</font> : <font color="#0080ff">DependencyObject</font>
+    {
+        <span style="color: green">/////////////////////////////////////////////////////////////////////////////</span>
+        <span style="color: green">// Static section.</span>
+        <span style="color: green">//</span>
+        <span style="color: green">// Set up the dependency properties for all instances.</span>
+
+        <span style="color: green">// Register dependency properties. XAML can bind to these by name, even though</span>
+        <span style="color: green">// there is no CLR property to be found.</span>
+        <span style="color: blue">private</span> <span style="color: blue">static</span> <font color="#0080ff">DependencyProperty</font> _firstNameProperty = <font color="#0080ff">DependencyProperty</font>.Register(
+            <span style="color: maroon">"FirstName"</span>,
+            <font color="#0000ff">typeof</font>(<font color="#0000ff">string</font>),
+            <font color="#0000ff">typeof</font>(<font color="#0080ff">PersonWrapper</font>),
+            <span style="color: blue">new</span> <font color="#0080ff">PropertyMetadata</font>(OnFirstNameChanged));
+        <span style="color: blue">private</span> <span style="color: blue">static</span> <font color="#0080ff">DependencyProperty</font> _fullNameProperty = <font color="#0080ff">DependencyProperty</font>.Register(
+            <span style="color: maroon">"FullName"</span>,
+            <font color="#0000ff">typeof</font>(<font color="#0000ff">string</font>),
+            <font color="#0000ff">typeof</font>(<font color="#0080ff">PersonWrapper</font>),
+            <span style="color: blue">new</span> <font color="#0080ff">PropertyMetadata</font>(<span style="color: maroon">""</span>));
+
+        <span style="color: green">// Called when the user edits the first name. Delegates to the object instance.</span>
+        <span style="color: blue">private</span> <span style="color: blue">static</span> <span style="color: blue">void</span> OnFirstNameChanged(<font color="#0080ff">DependencyObject</font> obj, <font color="#0080ff">DependencyPropertyChangedEventArgs</font> e)
+        {
+            ((<font color="#0080ff">PersonWrapper</font>)obj).OnFirstNameChanged();
+        }
+
+        <span style="color: green">/////////////////////////////////////////////////////////////////////////////</span>
+        <span style="color: green">// Instance section.</span>
+        <span style="color: green">//</span>
+        <span style="color: green">// Coordinate between the dependency properties and the wrapped instance.</span>
+
+        <span style="color: green">// The data object being wrapped</span>
+        <span style="color: blue">private</span> <font color="#0080ff">Person</font> _person = <span style="color: blue">new</span> <font color="#0080ff">Person</font>();
+
+        <span style="color: green">// Dependent sentries.</span>
+        <span style="color: blue">private</span> <font color="#0080ff">Dependent</font> _depFirstName;
+        <span style="color: blue">private</span> <font color="#0080ff">Dependent</font> _depFullName;
+
+        <span style="color: blue">public</span> <font color="#0080ff">PersonWrapper</font>()
+        {
+            <span style="color: green">// When the dependent property is out of date, update it from the wrapped object.</span>
+            _depFirstName = <span style="color: blue">new</span> <font color="#0080ff">Dependent</font>(<font color="#0000ff">delegate</font>() { SetValue(_firstNameProperty, _person.FirstName); });
+            _depFullName = <span style="color: blue">new</span> <font color="#0080ff">Dependent</font>(<font color="#0000ff">delegate</font>() { SetValue(_fullNameProperty, _person.FullName); });
+
+            <span style="color: green">// When the dependent property becomes out of date, trigger an update.</span>
+            _depFirstName.Invalidated += <span style="color: blue">new</span> <font color="#0080ff">Action</font>(TriggerFirstNameUpdate);
+            _depFullName.Invalidated += <span style="color: blue">new</span> <font color="#0080ff">Action</font>(TriggerFullNameUpdate);
+
+            <span style="color: green">// The properties are out of date right now, so trigger the first update.</span>
+            TriggerFirstNameUpdate();
+            TriggerFullNameUpdate();
+        }
+
+        <span style="color: green">// Called by the dependency property when the user changes the first name.</span>
+        <span style="color: blue">private</span> <span style="color: blue">void</span> OnFirstNameChanged()
+        {
+            <span style="color: green">// Set the first name in the wrapped object.</span>
+            _person.FirstName = (<font color="#0000ff">string</font>)GetValue(_firstNameProperty);
+        }
+
+        <span style="color: green">// Called by Update Controls whenever the dependent property becomes out of date.</span>
+        <span style="color: blue">private</span> <span style="color: blue">void</span> TriggerFirstNameUpdate()
+        {
+            <span style="color: green">// Queue an update for first name. Don't do it right now.</span>
+            Dispatcher.BeginInvoke(<span style="color: blue">new</span> <font color="#0080ff">Action</font>(<font color="#0000ff">delegate</font>() { _depFirstName.OnGet(); }));
+        }
+        <span style="color: blue">private</span> <span style="color: blue">void</span> TriggerFullNameUpdate()
+        {
+            <span style="color: green">// Queue an update for full name. Don't do it right now.</span>
+            Dispatcher.BeginInvoke(<span style="color: blue">new</span> <font color="#0080ff">Action</font>(<font color="#0000ff">delegate</font>() { _depFullName.OnGet(); }));
+        }
+    }
+}
+</pre>
+<p>This is the kind of code that Update Controls hides from you, so let me walk you through it.</p>
+<p><strong>Set up dependency properties</strong><br />Silverlight 3 can bind to dependency properties. Verifying that was the whole point of this exercise. A dependency property is a property of a dependency object managed by a pair of classes. The first is the DependencyObject base class, which PersonWrapper inherits. The second is the DependencyProperty class, which PersonWrapper uses. There is one DependencyObject per instance, and one DependencyProperty per property. Values are managed at the intersection of these two: one property of one instance.</p>
+<p>Since there is one DependencyProperty per property, rather than per property instance, we create static DepenencyProperties. We want the _firstNameProperty to support two-way binding, so we give it a property changed callback. This event is fired when the user changes the dependency property through the two-way binding. We use this to set the FirstName of the wrapped data object.</p>
+<p><strong>Set up dependent sentries</strong><br />Going back the other way, we use the Dependent sentry.</p>
+<p>In your typical usage of Update Controls, you see only the Independent class. Independent wraps a single property that can change independent of any other property. It has methods called OnGet and OnSet that you call whenever that property is accessed or modified, respectively.</p>
+<p>The other half of the equation is the Dependent class. Dependent wraps a single property that changes only by observing other properties. As such, it has no OnSet; the user cannot set it. Instead, it has an update delegate.</p>
+<p>The update delegate is passed into the Dependent's constructor. That delegate is called to calculate the value of the dependent property. You can see in the POC code that it calculates the dependent property by calling the wrapped data object.</p>
+<p>The trick is that Dependent will sit idle until someone observes the dependent property. It will happily remain out-of-date if no one needs it to be updated. You tell it that you are interested by calling OnGet.</p>
+<p>OnGet will call the update delegate only if it is out-of-date. When it does, it will record everything that the update delegate does so that it knows when to become out-of-date again. If Independent.OnGet is called by the update delegate, then the Dependent knows that it depends upon that Independent.</p>
+<p><strong>Update asynchronously</strong><br />When Independent.OnSet is called, it makes all of the Dependents that have accessed it out-of-date. When this happens, the Invalidated event is fired. The POC code handles this event by calling Dispatcher.BeginInvoke. This queues up an action to be performed later. The action is performed on the UI thread after all current UI operations are complete. So what action do we queue up? A call to Dependent.OnGet.</p>
+<p>The properties begin their lives as out-of-date. The Invalidated event won't fire this first time. So we have to manually queue the first calls to Dependent.OnGet. That's the reason for the two calls directly to the Trigger... methods.</p>
+<p><strong>The round trip</strong><br /><a href="wp-content/uploads/2009/04/dependencywrapper.png"><img style="border-right: 0px; border-top: 0px; border-left: 0px; border-bottom: 0px" height="259" alt="DependencyWrapper" src="wp-content/uploads/2009/04/dependencywrapper-thumb.png" width="463" align="right" border="0"></a> So think about the ebb and flow. The user enters data into the first name text box. Through two-way binding, that sets a dependency property. The wrapper responds to that change by setting the FirstName property on a wrapped data object. That calls Independent.OnSet, which causes the Dependent sentries (_depFirstName and _depFullName) to become out-of-date. The Invalidated event is fired, causing two Dependent.OnGet calls to be queued.</p>
+<p>Silverlight finishes with handing the text box, then invokes the two queued actions. Dependent.OnGet is called on both _depFirstName and _depFullName (the order doesn't matter), and they update themselves by getting their respective values from the wrapped data object. In the process, they cause Independent.OnGet to be called, reestablishing the fact that they both depend upon the FirstName property. They then set their respective DependencyProperties, and Silverlight updates the UI.</p>
+<p>This proves that Update Controls will work in Silverlight 3. The next step is to make it easy.</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="indexa88f.html?cat=36" title="View all posts in Update Controls" rel="category">Update Controls</a> |   <a href="index71fc.html?p=336#respond" title="Comment on Update Controls in Silverlight 3 proof-of-concept">No Comments &#187;</a></p>
+
+			</div>
+
+				<div class="post">
+				<h3 id="post-332"><a href="index221f.html?p=332" rel="bookmark" title="Permanent Link to Coming soon: Update Controls in Silverlight">Coming soon: Update Controls in Silverlight</a></h3>
+				<small>Monday, April 13th, 2009</small>
+
+				<div class="entry">
+					</p>
+<p>When I was porting Update Controls to WPF, I tried to hit Silverlight 2 simultaneously. Unfortunately, a couple of things got in my way. One of those problems may be fixed in Silverlight 3. And I've just learned about a new technique that might work in Silverlight 2.</p>
+<p><strong>Custom markup extensions</strong><br />The first problem is that Silverlight 2 does not support custom markup extensions. A markup extension is a class that inherits MarkupExtension. It is available to XAML properties using the bracket syntax. "{Binding}" is a markup extension. Update Controls for WPF defines a custom markup extension called "{Update}".</p>
+<p>Silverlight 2 does not allow us to create our own markup extensions. It supports only the "{Binding}", "{StaticResource}", and "{TemplateBinding}" built-in markup extensions. The library doesn't even include the MarkupExtension base class. The three supported classes are well-known to the Silverlight 2 runtime. From the CTP of Silverlight 3, it doesn't look like it does any better in this area.</p>
+<p><strong>Dependency properties</strong><br />The second problem I ran in to is that Silverlight 2 does not bind to <a href="http://msdn.microsoft.com/en-us/library/ms753358.aspx">dependency properties</a>. A dependency property is managed by the framework. You inherit DependencyObject, then create a static instance of DependencyProperty for each property. The DependencyObject base class manages all of the properties for that instance; DependencyProperty is the key that identifies one property within a dependency object.</p>
+<p>You typically define a CLR property to call GetValue and SetValue for each dependency property. But this is not strictly necessary. WPF binds to every DependencyProperties registered with your type when it sees the DependencyObject base class. It doesn't even see your CLR property. It's only there for the convenience of other code.</p>
+<p>One thing I tried doing was to reflect over a .NET object and create a DependencyProperty for each of its CLR properties. Sort of turn the pattern inside-out. I got this working, and WPF was able to data-bind to my wrapper object. Unfortunately, Silverlight 2 again stood in my way. Silverlight 2 does not bind to dependency properties.</p>
+<p><strong>Silverlight 3 fix coming soon</strong><br />Silverlight 3 now offers support for binding from one XAML property to another. While I generally consider this a <a href="index5b31.html?p=290">bad idea</a>, it does offer a glimmer of hope. Properties of other controls tend to be dependency properties. This means that maybe Silverlight 3 will bind to a dependency property of any DependencyObject, just the way that WPF does.</p>
+<p>I was unable to locate my old dependency property wrapper code. Apparently I was too frustrated to even check it into source control. So I'll recreate it and see if it works with Silverlight 3. If so, there will be one annoying step that you'll have to take to wrap your Presentation Model (a.k.a. View Model), your Navigation Model, and your Data Model before Silverlight can bind to them. But I think the advantages outweigh the inconvenience.</p>
+<p><strong>And possibly Silverlight 2?</strong><br />In <a href="http://www.codeproject.com/KB/WPF/BeginWPF5.aspx">WPF: A Beginner's Guide</a>, Sacha Barber tells me that markup extensions and the "{}" syntax are just a shorthand. There is a way to set a property to an object with more verbose syntax. I don't know if this verbose syntax will give me the hooks that ProvideValue offers, but it's worth a try. This would be more convenient than the wrapper described above, so I'll favor this approach if it works.</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="indexa88f.html?cat=36" title="View all posts in Update Controls" rel="category">Update Controls</a> |   <a href="index221f.html?p=332#respond" title="Comment on Coming soon: Update Controls in Silverlight">No Comments &#187;</a></p>
+
+			</div>
+
+		
+		<div class="navigation">
+			<div class="alignleft"><a href="index137a.html?cat=36&amp;paged=3">&laquo; Previous Entries</a></div>
+			<div class="alignright"><a href="indexa88f.html?cat=36">Next Entries &raquo;</a></div>
+		</div>
+
+	
+	</div>
+		</td>
+	</tr>
+</table>
+
+<hr />
+<div id="footer">
+<!-- If you'd like to support WordPress, having the "powered by" link someone on your blog is the best way, it's our only promotion or advertising. -->
+	<p>
+		Adventures in Software is proudly powered by 
+		<a href="http://wordpress.org/">WordPress</a>
+		<br /><a href="indexd784.html?feed=rss2">Entries (RSS)</a>
+		and <a href="indexa6da.html?feed=comments-rss2">Comments (RSS)</a>.
+		<!-- 17 queries. 0.866 seconds. -->
+	</p>
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-389401-3");
+pageTracker._trackPageview();
+} catch(err) {}</script></div>
+
+<!-- Gorgeous design by Michael Heilemann - http://binarybonsai.com/kubrick/ -->
+
+		<div id="sk2-footer" style="color:#FFF; background-color:#444; padding: 3px 2px 3px 2px; border-top: #888 solid 1px;">This blog is protected by <a href="http://unknowngenius.com/blog/" title="Dave">dr Dave</a>'s <strong><a href="http://unknowngenius.com/blog/wordpress/spam-karma/" title="SK2">Spam Karma 2</a></strong>: <strong>274531</strong>  Spams eaten and counting...</div><script type="text/javascript" src="replies.js"></script>
+<script type="text/javascript" src="blogger.js"></script>
+<script type="text/javascript" src="http://twitter.com/statuses/user_timeline/michaellperry.json?callback=twitterCallback2&amp;count=5"></script>
+<script type="text/javascript" src="http://search.twitter.com/search.json?q=@michaellperry&amp;callback=twitterCallbackReplies&amp;rpp=5"></script>
+</body>
+
+<!-- Mirrored from adventuresinsoftware.com/blog/?cat=36&paged=2 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 Jan 2017 13:03:09 GMT -->
+</html>

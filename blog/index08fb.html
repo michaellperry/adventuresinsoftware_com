@@ -1,0 +1,612 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+
+
+<!-- Mirrored from adventuresinsoftware.com/blog/?m=201103 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 Jan 2017 12:32:40 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>Adventures in Software   &raquo; 2011&raquo; March</title>
+
+<meta name="generator" content="WordPress 2.3.3" /> <!-- leave this for stats -->
+
+<link rel="stylesheet" href="wp-content/themes/ais2/style.css" type="text/css" media="screen" />
+<link rel="alternate" type="application/rss+xml" title="Adventures in Software RSS Feed" href="indexd784.html?feed=rss2" />
+<link rel="pingback" href="xmlrpc.html" />
+    <script type="text/javascript">
+        function onSilverlightError(sender, args) {
+            var appSource = "";
+            if (sender != null && sender != 0) {
+              appSource = sender.getHost().Source;
+            }
+            
+            var errorType = args.ErrorType;
+            var iErrorCode = args.ErrorCode;
+
+            if (errorType == "ImageError" || errorType == "MediaError") {
+              return;
+            }
+
+            var errMsg = "Unhandled Error in Silverlight Application " +  appSource + "\n" ;
+
+            errMsg += "Code: "+ iErrorCode + "    \n";
+            errMsg += "Category: " + errorType + "       \n";
+            errMsg += "Message: " + args.ErrorMessage + "     \n";
+
+            if (errorType == "ParserError") {
+                errMsg += "File: " + args.xamlFile + "     \n";
+                errMsg += "Line: " + args.lineNumber + "     \n";
+                errMsg += "Position: " + args.charPosition + "     \n";
+            }
+            else if (errorType == "RuntimeError") {           
+                if (args.lineNumber != 0) {
+                    errMsg += "Line: " + args.lineNumber + "     \n";
+                    errMsg += "Position: " +  args.charPosition + "     \n";
+                }
+                errMsg += "MethodName: " + args.methodName + "     \n";
+            }
+
+            throw new Error(errMsg);
+        }
+    </script>
+
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc0db0.php?rsd" />
+ <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="wp-includes/wlwmanifest.xml" /> <style type='text/css'>
+<!--#header { background: url('wp-content/themes/ais2/images/header-imgae03.html?upper=A7A73F&amp;lower=77773F') no-repeat bottom center; }
+--></style>
+</head>
+<body>
+<div id="page">
+
+<div class="aisTopBar">
+	<form method="get" id="searchform" action="http://adventuresinsoftware.com/blog/">
+<div>
+<a href="indexd784.html?feed=rss2"><img src="../images/feed-icon-28x28.png" border="0"></a>
+<input type="text" value="" name="s" id="s" />
+<input type="submit" id="searchsubmit" value="Search" />
+</div>
+</form>
+</div>
+
+<div class="aisHeaderImageRight">
+	<div class="aisHeaderImage">
+	<div class="aisHeaderCornerRight">
+	<div class="aisHeaderCornerLeft">
+	<div class="aisImageBar">
+	<div class="aisSubSites">
+		<a href="index.html" class="aisSubSiteLink"><span class="aisSiteTabRight"><span class="aisSiteTabLeft"><span class="aisSiteTab">
+			home</span></span></span></a>
+		<a class="aisSubSiteLink" href="http://www.adventuresinsoftware.com/blog/?cat=27"><span class="aisSiteTabRight"><span class="aisSiteTabLeft"><span class="aisSiteTab">
+			historic modeling</span></span></span></a>
+		<a class="aisSubSiteLink" href="http://www.adventuresinsoftware.com/blog/?cat=36"><span class="aisSiteTabRight"><span class="aisSiteTabLeft"><span class="aisSiteTab">
+			update controls</span></span></span></a>
+		<a href="http://www.adventuresinsoftware.com/blog/?cat=26" class="aisSubSiteLink"><span class="aisSiteTabRight"><span class="aisSiteTabLeft"><span class="aisSiteTab">
+			degrees of freedom</span></span></span></a>
+		<a class="aisSubSiteLink" href="indexba53.html?page_id=2"><span class="aisSiteTabRight"><span class="aisSiteTabLeft"><span class="aisSiteTab">
+			about us</span></span></span></a>
+
+	</div>
+	</div>
+	</div>
+	</div>
+	</div>
+</div>
+
+<table style="width: 100%" cellspacing="0" cellpadding="0">
+	<tr valign="top">
+		<td width="210px">
+<div id="sidebar">
+<div class="aisLeftColumnFill">
+<div class="aisLeftColumnBottom">
+<div class="aisLeftColumnTop">
+<div id="twitter_div" class="aisLeftNav">
+<h2 class="sidebar-title">Twitter Updates</h2>
+<ul id="twitter_update_list"></ul>
+<a href="http://twitter.com/michaellperry" id="follow">Follow me</a>
+</div>
+<div id="twitter_reply_div" class="aisLeftNav">
+<h2 class="sidebar-title">Twitter Replies</h2>
+<ul id="twitter_reply_list"></ul>
+</div>
+
+<div class="aisLeftNav">
+<a href='http://ineta.org/Speakers/SearchCommunitySpeakers.aspx?SpeakerId=c5110e21-9243-461b-a464-a6548524e885'><img alt='INETA Community Speakers Program' border='0' src='../../www.ineta.org/images/OfficialLogos/InetaCommunitySpeakersRequestMe.html' /></a>
+</div>
+
+<div class="aisLeftNav">
+	<li class="pagenav"><h2>Pages</h2><ul><li class="page_item page-item-2"><a href="indexba53.html?page_id=2" title="About Us">About Us</a></li>
+<li class="page_item page-item-210"><a href="index6ae3.html?page_id=210" title="Templates">Templates</a></li>
+</ul></li></div>
+
+<div class="aisLeftNav">
+<h2>Archives</h2>
+<ul>
+	<li><a href='indexb4d5.html?m=201110' title='October 2011'>October 2011</a></li>
+	<li><a href='indexc61a.html?m=201106' title='June 2011'>June 2011</a></li>
+	<li><a href='indexa80d.html?m=201105' title='May 2011'>May 2011</a></li>
+	<li><a href='index512b.html?m=201104' title='April 2011'>April 2011</a></li>
+	<li><a href='index08fb.html?m=201103' title='March 2011'>March 2011</a></li>
+	<li><a href='index52f4.html?m=201102' title='February 2011'>February 2011</a></li>
+	<li><a href='index74f1.html?m=201101' title='January 2011'>January 2011</a></li>
+	<li><a href='index8956.html?m=201012' title='December 2010'>December 2010</a></li>
+	<li><a href='indexa1aa.html?m=201011' title='November 2010'>November 2010</a></li>
+	<li><a href='indexe3d5.html?m=201010' title='October 2010'>October 2010</a></li>
+	<li><a href='index9ab9.html?m=201009' title='September 2010'>September 2010</a></li>
+	<li><a href='index1ff0.html?m=201008' title='August 2010'>August 2010</a></li>
+	<li><a href='index9f11.html?m=201007' title='July 2010'>July 2010</a></li>
+	<li><a href='index31f0.html?m=201006' title='June 2010'>June 2010</a></li>
+	<li><a href='indexd189.html?m=201005' title='May 2010'>May 2010</a></li>
+	<li><a href='indexb5c0.html?m=201004' title='April 2010'>April 2010</a></li>
+	<li><a href='indexf258.html?m=201003' title='March 2010'>March 2010</a></li>
+	<li><a href='index6e30.html?m=201002' title='February 2010'>February 2010</a></li>
+	<li><a href='index6b19.html?m=201001' title='January 2010'>January 2010</a></li>
+	<li><a href='index5c0a.html?m=200912' title='December 2009'>December 2009</a></li>
+	<li><a href='index8f62.html?m=200911' title='November 2009'>November 2009</a></li>
+	<li><a href='index451d.html?m=200910' title='October 2009'>October 2009</a></li>
+	<li><a href='index3e04.html?m=200909' title='September 2009'>September 2009</a></li>
+	<li><a href='index425a.html?m=200908' title='August 2009'>August 2009</a></li>
+	<li><a href='index9907.html?m=200907' title='July 2009'>July 2009</a></li>
+	<li><a href='index3104.html?m=200906' title='June 2009'>June 2009</a></li>
+	<li><a href='indexc36d.html?m=200905' title='May 2009'>May 2009</a></li>
+	<li><a href='index17e8.html?m=200904' title='April 2009'>April 2009</a></li>
+	<li><a href='index10a5.html?m=200903' title='March 2009'>March 2009</a></li>
+	<li><a href='index8988.html?m=200902' title='February 2009'>February 2009</a></li>
+	<li><a href='index1419.html?m=200901' title='January 2009'>January 2009</a></li>
+	<li><a href='index7866.html?m=200812' title='December 2008'>December 2008</a></li>
+	<li><a href='index55f6.html?m=200811' title='November 2008'>November 2008</a></li>
+	<li><a href='indexa7bc.html?m=200810' title='October 2008'>October 2008</a></li>
+	<li><a href='indexe77c.html?m=200809' title='September 2008'>September 2008</a></li>
+	<li><a href='indexcffc.html?m=200808' title='August 2008'>August 2008</a></li>
+	<li><a href='index0e62.html?m=200807' title='July 2008'>July 2008</a></li>
+	<li><a href='indexfda7.html?m=200806' title='June 2008'>June 2008</a></li>
+	<li><a href='index7d64.html?m=200805' title='May 2008'>May 2008</a></li>
+	<li><a href='index94dd.html?m=200804' title='April 2008'>April 2008</a></li>
+	<li><a href='index9631.html?m=200803' title='March 2008'>March 2008</a></li>
+	<li><a href='indexdd52.html?m=200802' title='February 2008'>February 2008</a></li>
+	<li><a href='index21ee.html?m=200801' title='January 2008'>January 2008</a></li>
+	<li><a href='index363c.html?m=200712' title='December 2007'>December 2007</a></li>
+	<li><a href='index7493.html?m=200711' title='November 2007'>November 2007</a></li>
+	<li><a href='index93a7.html?m=200710' title='October 2007'>October 2007</a></li>
+	<li><a href='index4ca8.html?m=200709' title='September 2007'>September 2007</a></li>
+	<li><a href='index6124.html?m=200708' title='August 2007'>August 2007</a></li>
+	<li><a href='index6013.html?m=200707' title='July 2007'>July 2007</a></li>
+	<li><a href='index2ab6.html?m=200706' title='June 2007'>June 2007</a></li>
+	<li><a href='index44f0.html?m=200705' title='May 2007'>May 2007</a></li>
+	<li><a href='indexf0b4.html?m=200704' title='April 2007'>April 2007</a></li>
+	<li><a href='index481d.html?m=200703' title='March 2007'>March 2007</a></li>
+	<li><a href='indexcbea.html?m=200702' title='February 2007'>February 2007</a></li>
+	<li><a href='index9cdc.html?m=200701' title='January 2007'>January 2007</a></li>
+	<li><a href='index3ea4.html?m=200612' title='December 2006'>December 2006</a></li>
+	<li><a href='index67ca.html?m=200611' title='November 2006'>November 2006</a></li>
+	<li><a href='indexff49.html?m=200610' title='October 2006'>October 2006</a></li>
+	<li><a href='index611c.html?m=200609' title='September 2006'>September 2006</a></li>
+	<li><a href='index9a21.html?m=200608' title='August 2006'>August 2006</a></li>
+	<li><a href='index3ee9.html?m=200607' title='July 2006'>July 2006</a></li>
+	<li><a href='indexe13a.html?m=200606' title='June 2006'>June 2006</a></li>
+</ul>
+</div>
+
+<div class="aisLeftNav">
+	</div>
+
+<div class="aisLeftNav">
+<h2>Books</h2>
+<iframe src="http://rcm.amazon.com/e/cm?t=adventures0d2-20&amp;o=1&amp;p=8&amp;l=as1&amp;asins=0764526413&amp;fc1=000000&amp;IS2=1&amp;lt1=_blank&amp;lc1=0000ff&amp;bc1=000000&amp;bg1=ffffff&amp;f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" name="I5" id="I5"></iframe>
+<br/>
+<iframe src="http://rcm.amazon.com/e/cm?t=adventures0d2-20&amp;o=1&amp;p=8&amp;l=as1&amp;asins=0201633612&amp;fc1=000000&amp;IS2=1&amp;lt1=_blank&amp;lc1=0000ff&amp;bc1=000000&amp;bg1=ffffff&amp;f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" name="I6" id="I6"></iframe>
+<br/>
+<iframe src="http://rcm.amazon.com/e/cm?t=adventures0d2-20&amp;o=1&amp;p=8&amp;l=as1&amp;asins=0136291554&amp;fc1=000000&amp;IS2=1&amp;lt1=_blank&amp;lc1=0000ff&amp;bc1=000000&amp;bg1=ffffff&amp;f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" name="I7" id="I7"></iframe>
+<br/>
+<iframe src="http://rcm.amazon.com/e/cm?t=adventures0d2-20&amp;o=1&amp;p=8&amp;l=as1&amp;asins=1888009195&amp;fc1=000000&amp;IS2=1&amp;lt1=_blank&amp;lc1=0000ff&amp;bc1=000000&amp;bg1=ffffff&amp;f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" name="I8" id="I8"></iframe>
+</div>
+<div class="aisLeftNav">
+<h2>Meta</h2>
+<ul>
+		<li><a href="wp-login.html">Login</a></li>
+	<li><a href="http://validator.w3.org/check/referer" title="This page validates as XHTML 1.0 Transitional">Valid <abbr title="eXtensible HyperText Markup Language">XHTML</abbr></a></li>
+	<li><a href="http://gmpg.org/xfn/"><abbr title="XHTML Friends Network">XFN</abbr></a></li>
+	<li><a href="http://wordpress.org/" title="Powered by WordPress, state-of-the-art semantic personal publishing platform.">WordPress</a></li>
+	</ul>
+</div>
+<div class="aisLeftContent">
+<h2>Community</h2>
+<ul>
+	<script type="text/javascript" src="../../localhost/embed/92q2bbma.js"></script>
+</ul>
+</div>
+
+</div></div></div>
+</div>		</td>
+		<td>
+
+	<div id="content" class="narrowcolumn">
+
+		
+		 		<h2 class="pagetitle">Archive for March, 2011</h2>
+
+		
+
+		<div class="navigation">
+			<div class="alignleft"></div>
+			<div class="alignright"></div>
+		</div>
+
+				<div class="post">
+				<h3 id="post-634"><a href="index5cd0.html?p=634" rel="bookmark" title="Permanent Link to Mutable fields in Correspondence">Mutable fields in Correspondence</a></h3>
+				<small>Tuesday, March 29th, 2011</small>
+
+				<div class="entry">
+					<p><a href="wp-content/uploads/2011/03/image1.png"><img style="border-right-width: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; margin-left: 0px; border-left-width: 0px; margin-right: 0px" title="image" border="0" alt="image" align="right" src="wp-content/uploads/2011/03/image-thumb1.png" width="427" height="351" /></a> <a href="http://correspondence.codeplex.com/">Correspondence</a> is a client-side NoSQL database that synchronizes with other clients through a shared server. If you’ve experimented with the bits, there is a breaking change in the latest changeset. A new build is coming soon, as well as a closed beta of the synchronization server.</p>
+<p>Correspondence is built on the concept of <a href="http://historicalmodeling.com/book">historical modeling</a>. This is a set of theory describing historical facts with partial order. The facts have predecessor/successor relationships that define both the order in which they can consistently be applied, and the mechanism for graph traversal.</p>
+<p>One of the core tenets of historical modeling is that facts are immutable. This makes them easy to synchronize. Fields also determine the fact’s identity. Two facts having equal fields are actually the same fact.</p>
+<p>In many applications, it is desirable to have mutable fields. In historical modeling, you have to use the <a href="http://historicalmodeling.com/book/patterns/entity_property">Entity Property</a> pattern to simulate mutability. This pattern builds on the strengths of historical modeling, allowing participants to unambiguously synchronize state changes. It also has the added benefit of detecting conflicts, and allowing users and applications to resolve them. Unfortunately, this pattern can be cumbersome to apply.</p>
+<h3>The mutable keyword</h3>
+<p>A Correspondence model is defined using a language called “Factual”. The upcoming release adds three keywords to the Factual modeling language. These three keywords break a fact into sections:</p>
+<ul>
+<li><strong>key</strong> - Required. Contains all key fields. </li>
+<li><strong>mutable</strong> - Optional. Contains all mutable fields. </li>
+<li><strong>query</strong> - Optional. Contains all queries and predicates. </li>
+</ul>
+<p>The key and query sections contain members that have always been in the language. The mutable section adds new functionality.</p>
+<p>Fields in the mutable section are mutable. The compiler generates the Entity Property pattern on your behalf. These fields are not part of the key, since they are not actually stored within the fact itself. They are stored in successor facts that track changes.</p>
+<p>You write this:</p>
+<pre>fact Person {
+key:
+    unique;
+
+mutable:
+    string name;
+}</pre>
+<p>The Factual compiler generates this:</p>
+<pre>fact Person {
+key:
+    unique;
+
+query:
+    PersonName* nameCandidates {
+        PersonName n : n.person = this
+            where n.isCurrent
+    }
+}
+
+fact PersonName {
+key:
+    Person person;
+    string value;
+    PersonName* prior;
+
+query:
+    bool isCurrent {
+        not exists PersonName next : next.prior = this
+    }
+}</pre>
+<h3>Disputable properties</h3>
+<p>The Entity Property pattern detects conflicts and allows the application to resolve them. To aide the application in this task, Correspondence defines Disputable&lt;T&gt;. This template can be converted to and from the raw type T, but it also exposes two additional properties.</p>
+<ul>
+<li><strong>InConflict</strong> – A boolean that is true if a conflict has been detected. </li>
+<li><strong>Candidates</strong> – A collection of possible values. </li>
+</ul>
+<p>Using Disputable&lt;T&gt;, the view model can apply an alternate style when a conflict has been detected, and allow the user to choose from among the candidates to resolve it.</p>
+<pre class="code"><span style="color: blue">public class </span><span style="color: #2b91af">PersonViewModel
+</span>{
+    <span style="color: blue">private </span><span style="color: #2b91af">Person </span>_person;
+
+    <span style="color: blue">public </span>PersonViewModel(<span style="color: #2b91af">Person </span>person)
+    {
+        _person = person;
+    }
+
+    <span style="color: blue">public string </span>Name
+    {
+        <span style="color: blue">get </span>{ <span style="color: blue">return </span>_person.Name; }
+        <span style="color: blue">set </span>{ _person.Name = <span style="color: blue">value</span>; }
+    }
+
+    <span style="color: blue">public bool </span>ShowConflictStyle
+    {
+        <span style="color: blue">get </span>{ <span style="color: blue">return </span>_person.Name.InConflict; }
+    }
+
+    <span style="color: blue">public </span><span style="color: #2b91af">IEnumerable</span>&lt;<span style="color: blue">string</span>&gt; CandidateNamesItemsSource
+    {
+        <span style="color: blue">get </span>{ <span style="color: blue">return </span>_person.Name.Candidates; }
+    }
+
+    <span style="color: blue">public string </span>CandidateNamesSelectedItem
+    {
+        <span style="color: blue">get </span>{ <span style="color: blue">return </span>_person.Name; }
+        <span style="color: blue">set </span>{ _person.Name = <span style="color: blue">value</span>; }
+    }
+}</pre>
+<p>The <a href="http://historicalmodeling.com/book/factual">Factual modeling language specification</a> has been updated to reflect the new mutable keyword. If you’ve created Correspondence models in the past, you will be required to add key and query section headers once you upgrade. Then you will be able to take advantage of mutability.</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="index38d0.html?cat=46" title="View all posts in Correspondence" rel="category">Correspondence</a>,  <a href="indexb60a.html?cat=27" title="View all posts in Historic Modeling" rel="category">Historic Modeling</a> |   <a href="index5cd0.html?p=634#respond" title="Comment on Mutable fields in Correspondence">No Comments &#187;</a></p>
+
+			</div>
+
+				<div class="post">
+				<h3 id="post-631"><a href="indexa123.html?p=631" rel="bookmark" title="Permanent Link to User identity on Windows Phone 7">User identity on Windows Phone 7</a></h3>
+				<small>Friday, March 11th, 2011</small>
+
+				<div class="entry">
+					<p>When you can challenge another person to a Faceted Reversi game, you provide their name. So Reversi needs a way of authenticating the user so it can send them the correct games. I didn’t want the user to have to enter a password to play my game, so I relied upon the <a href="index475a.html?p=569">anonymous Live ID</a> already available on the phone. I just have to associate your anonymous ID with your chosen screen name.</p>
+<h3>Windows Live provides identity</h3>
+<p>Once I’ve gotten the anonymous Live ID using the technique I previously blogged about, I create an Identity fact. An Identity is defined in the factual model as:</p>
+<pre class="code">fact Identity {
+    string anonymousId;
+
+    Claim* claims {
+        Claim c : c.identity = this
+    }
+}</pre>
+<p>The anonymoudId string is the only field in an Identity. That means that it comprises the entire key of that fact. No matter how many times I construct an Identity with that anonymoudId, it will be the same instance. The Identity instance is created and added to the Community.</p>
+<pre class="code">_community = <span style="color: blue">new </span>Community(storageStrategy)
+    .AddAsynchronousCommunicationStrategy(<span style="color: blue">new </span>POXAsynchronousCommunicationStrategy(configurationProvider))
+    .Register&lt;CorrespondenceModule&gt;()
+    .Subscribe(() =&gt; _identity.Claims);
+
+<span style="color: blue">string </span>anid = UserExtendedProperties.GetValue(<span style="color: #a31515">&quot;ANID&quot;</span>) <span style="color: blue">as string</span>;
+<span style="color: blue">string </span>anonymousUserId = <span style="color: #2b91af">String</span>.IsNullOrEmpty(anid)
+    ? <span style="color: #a31515">&quot;test:user12&quot;
+    </span>: <span style="color: #a31515">&quot;liveid:&quot; </span>+ ParseAnonymousId(anid);
+_identity = _community.AddFact(<span style="color: blue">new </span>Identity(anonymousUserId));</pre>
+<p>The first time you run the app, it creates this Identity instance. Every subsequent run is simply loading it from isolated storage.</p>
+<p>Notice that I’m subscribing to _identity.Claims before the _identity is even instantiated. The subscription is a lambda expression, so it will be executed later. So what are Claims?</p>
+<h3>A user claims a name</h3>
+<p>A Claim is the desire for a person to have a specific user name. It is defined in factual as:</p>
+<pre class="code">fact Claim {
+    publish Identity identity;
+    User user;
+    publish IdentityService identityService;
+
+    ClaimResponse* responses {
+        ClaimResponse r : r.claim = this
+    }
+
+    bool isPending {
+        not exists ClaimResponse r : r.claim = this
+    }
+}</pre>
+<p>The Claim refers to the Identity from the phone, and the User that is being claimed. A User is:</p>
+<pre class="code">fact User {
+    string userName;
+
+    Claim* claims {
+        Claim c : c.user = this
+    }
+}</pre>
+<p>Just like Identity, User has only one field. This field is its key, so any User object that I create with userName = “michael” will be the same instance. This is what makes it possible to challenge another user: the User instance I create on my phone will be the same as the one that he creates on his phone.</p>
+<h3>A service approves and denies claims</h3>
+<p>So when the user selects a name, a Claim is created. This Claim is published to an IdentityService, which is defined as:</p>
+<pre class="code">fact IdentityService {
+    Claim* pendingClaims {
+        Claim c : c.identityService = this
+            where c.isPending
+    }
+}</pre>
+<p>Notice that IdentityService has no fields. Since fields define identity in Correspondence, there is nothing to distinguish one IdentityService from another. Every time I create a new IdentityService, I get back the same instance. It is a singleton.</p>
+<p>There is a subscriber on my server looking for Claims published to the IdentityService. When it finds a Claim, it verifies that the user name is not taken by another Identity. It will then generate a ClaimResponse:</p>
+<pre class="code">fact ClaimResponse {
+    publish Claim claim;
+    int approved;
+}</pre>
+<p><a href="http://11011.net/software/vspaste"></a></p>
+<p>This response is published to the Claim. Remember the lambda expression in the Community Subscribe method? The phone has subscribed to all Claims attached to the Identity. That means that the ClaimResponse will be pushed to the phone, and the user will know whether it was accepted or rejected.</p>
+<p>This is an example of the <a href="http://historicalmodeling.com/book/patterns/service">Service</a> pattern in Historical Modeling. With this pattern, I can allow people to choose their own name, but still rely upon Windows Live to authenticate them for me.</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="indexb31a.html?cat=1" title="View all posts in Uncategorized" rel="category">Uncategorized</a> |   <a href="indexa123.html?p=631#respond" title="Comment on User identity on Windows Phone 7">No Comments &#187;</a></p>
+
+			</div>
+
+				<div class="post">
+				<h3 id="post-630"><a href="indexa1c1.html?p=630" rel="bookmark" title="Permanent Link to Flip pieces on the way out">Flip pieces on the way out</a></h3>
+				<small>Wednesday, March 9th, 2011</small>
+
+				<div class="entry">
+					<p>I recently released Faceted Reversi, the first Windows Phone 7 application based on the Correspondence framework. Let me take a few posts to tell you how it works, and how you can build your own Correspondence application.</p>
+<p>Faceted Reversi is, of course, a Reversi game. Reversi pieces have two sides: black and white. Each color represents one player. When a player moves, he places a piece with his color up. He then flips all of the enemy pieces that were flanked by that move.</p>
+<p>When we describe the rules, we say that the player flips the pieces as he makes a move. This is in fact <strong>not</strong> how the code is written. On a players turn, all the program does is record the move. Pieces are flipped on the way out.</p>
+<h3>GameBoard and GameState</h3>
+<p>The game logic is controlled by two classes: GameBoard and GameState. A GameBoard is an immutable object that records a fixed board position. A GameBoard can tell you:</p>
+<ul>
+<li>which color is on each square </li>
+<li>who’s move it is </li>
+<li>how many pieces of each color are on the board </li>
+<li>what moves are legal </li>
+<li>what the board would look like after a legal move </li>
+</ul>
+<p>Or saying the same thing in code:</p>
+<pre class="code"><span style="color: blue">public class </span><span style="color: #2b91af">GameBoard
+</span>{
+    <span style="color: blue">public static </span><font color="#2b91af">GameBoard</font> OpeningPosition { <span style="color: blue">get</span>; }
+    <span style="color: blue">public int </span>MoveIndex { <span style="color: blue">get</span>; }
+    <span style="color: blue">public </span><font color="#2b91af">PieceColor</font> PieceAt(Square square);
+    <span style="color: blue">public </span><font color="#2b91af">PieceColor</font> ToMove { <span style="color: blue">get</span>; }
+    <span style="color: blue">public int </span>BlackCount { <span style="color: blue">get</span>; }
+    <span style="color: blue">public int </span>WhiteCount { <span style="color: blue">get</span>; }
+    <span style="color: blue">public </span><span style="color: #2b91af">IEnumerable</span>&lt;Square&gt; LegalMoves { <span style="color: blue">get</span>; }
+    <span style="color: blue">public </span><font color="#2b91af">GameBoard</font> AfterMove(Square square);
+}</pre>
+<p>GameState, on the other hand, is mutable. It records the current GameBoard and lets the user make a move.</p>
+<p>The separation of immutable state from mutable state is significant. It makes it clear that the board position is dependent upon the sequence of moves. We represent that dependency using Update Controls. The current position is governed by a Dependent sentry that runs UpdateGameBoard when it becomes out-of-date.</p>
+<pre class="code"><span style="color: blue">public class </span><span style="color: #2b91af">GameState
+</span>{
+    <span style="color: blue">private </span><font color="#2b91af">Game</font> _game;
+
+    <span style="color: blue">private </span><font color="#2b91af">GameBoard</font> _gameBoard;
+    <span style="color: blue">private </span><font color="#2b91af">Dependent</font> _depGameBoard;
+
+    <span style="color: blue">public </span>GameState(<font color="#2b91af">Game</font> game)
+    {
+        _game = game;
+
+        _depGameBoard = <span style="color: blue">new </span><font color="#2b91af">Dependent</font>(UpdateGameBoard);
+    }
+
+    <span style="color: blue">public </span><font color="#2b91af">PieceColor</font> PieceAt(<font color="#2b91af">Square</font> square)
+    {
+        <font color="#2b91af">GameBoard</font> gameBoard = GetGameBoard();
+        <span style="color: blue">return </span>gameBoard.PieceAt(square);
+    }
+
+    <span style="color: blue">private </span><font color="#2b91af">GameBoard</font> GetGameBoard()
+    {
+        _depGameBoard.OnGet();
+        <span style="color: blue">return </span>_gameBoard;
+    }
+
+    <span style="color: blue">private void </span>UpdateGameBoard()
+    {
+        _gameBoard = <font color="#2b91af">GameBoard</font>.OpeningPosition;
+        <span style="color: blue">if </span>(_game != <span style="color: blue">null</span>)
+        {
+            <span style="color: #2b91af">List</span>&lt;<font color="#2b91af">Move</font>&gt; moves = _game.Moves.ToList();
+            moves.Sort(<span style="color: blue">new </span><font color="#2b91af">LocalMoveComparer</font>());
+            <span style="color: blue">int </span>expectedIndex = 0;
+            <span style="color: blue">foreach </span>(<font color="#2b91af">Move</font> move <span style="color: blue">in </span>moves)
+            {
+                <span style="color: blue">if </span>(move.Index != expectedIndex)
+                    <span style="color: blue">return</span>;
+                <span style="color: blue">if </span>(move.Player.Index == 0 &amp;&amp; _gameBoard.ToMove != <font color="#2b91af">PieceColor</font>.Black)
+                    <span style="color: blue">return</span>;
+                <span style="color: blue">if </span>(move.Player.Index == 1 &amp;&amp; _gameBoard.ToMove != <font color="#2b91af">PieceColor</font>.White)
+                    <span style="color: blue">return</span>;
+
+                <font color="#2b91af">Square</font> square = <font color="#2b91af">Square</font>.FromIndex(move.Square);
+                <span style="color: blue">if </span>(!_gameBoard.LegalMoves.Contains(square))
+                    <span style="color: blue">return</span>;
+
+                _gameBoard = _gameBoard.AfterMove(square);
+                ++expectedIndex;
+            }
+        }
+    }
+}</pre>
+<p>UpdateGameBoard runs through the list of moves in the game, sorted by move index. It validates each move against the current position. If an invalid or out-of-place move is found, it just gives up. The assumption is that moves were validated before they were added to the game, but we don’t want to crash the app or enter an invalid state if something goes wrong.</p>
+<h3>Record a move</h3>
+<p>So what happens when the player makes a move? Simple:</p>
+<pre class="code"><span style="color: blue">public partial class </span><span style="color: #2b91af">Player
+</span>{
+    <span style="color: blue">public void </span>MakeMove(<span style="color: blue">int </span>index, <span style="color: blue">int </span>square)
+    {
+        Community.AddFact(<span style="color: blue">new </span>Move(<span style="color: blue">this</span>, index, square));
+    }
+}</pre>
+<p>All we do is record that move. This adds it to the Moves collection in the game, stores it in the local database, sends it to the other player, and makes GameBoard out-of-date. Let’s break that down.</p>
+<h3>Publish a move to other subscribers</h3>
+<p>The Move fact is declared in a language called “factual”, specifically designed for Correspondence.</p>
+<pre class="code">fact Move {
+    Player player;
+    int index;
+    int square;
+}</pre>
+<p>Adding a fact to the Correspondence community stores it in the local database. It also sends the fact to the server, which forwards it to all interested subscribers. We can tell that the other player is interested because he subscribed to the Game.</p>
+<pre class="code">_community = <span style="color: blue">new </span><font color="#2b91af">Community</font>(storageStrategy)
+    .AddAsynchronousCommunicationStrategy(<span style="color: blue">new </span><font color="#2b91af">POXAsynchronousCommunicationStrategy</font>(configurationProvider))
+    .Register&lt;<font color="#2b91af">CorrespondenceModule</font>&gt;()
+    .Subscribe(() =&gt; _identity.ApprovedUsers
+        .SelectMany(user =&gt; user.ActivePlayers)
+        .Select(player =&gt; player.Game)
+    );</pre>
+<p>The linq query in the Subscribe call returns all of the Game facts that the player is currently involved in. When a player subscribes to a game, the server will send him all of the published facts. A Player fact is published to a game, as indicated by the “publish” keyword in the factual model.</p>
+<pre class="code">fact Player {
+    publish User user;
+    publish Game game;
+    int index;
+}</pre>
+<p>A Move fact belongs to a Player, so it is pushed as well. This is how Correspondence knows to send the move to the other player.</p>
+<h3>Update the UI when a move arrives</h3>
+<p>So when the move reaches the other player, how does the game know to refresh the board? The Game fact queries for related moves, again in the factual model.</p>
+<pre class="code">fact Game {
+    unique;
+
+    Move* moves {
+        Move m : m.player.game = this
+    }
+}</pre>
+<p>This makes _game.Moves a live collection. Whenever a fact is added, whether on this phone or from another one, this collection changes. Update Controls recognizes that GameBoard depends upon this collection. So when it changes, GameBoard becomes out-of-date, and Update Controls notifies the view to redraw itself through data binding.</p>
+<p>All Correspondence applications work this way. State changes cannot be side-effects of a user action. Instead, the program simply has to store the user action into the model. State changes occur on the way out, back toward the user interface. They are dependent upon the history of user actions.</p>
+<p>It doesn’t matter if the move comes from the user interface, from the local database, or from another user. Flipping the pieces is not a side-effect of making a move. It is dependent upon the sequence of moves, regardless where they come from.</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="indexb31a.html?cat=1" title="View all posts in Uncategorized" rel="category">Uncategorized</a> |   <a href="indexa1c1.html?p=630#respond" title="Comment on Flip pieces on the way out">No Comments &#187;</a></p>
+
+			</div>
+
+				<div class="post">
+				<h3 id="post-629"><a href="indexe703.html?p=629" rel="bookmark" title="Permanent Link to How not to sell a two-player game on Windows Phone 7">How not to sell a two-player game on Windows Phone 7</a></h3>
+				<small>Thursday, March 3rd, 2011</small>
+
+				<div class="entry">
+					<p>Last week I launched Faceted Reversi, a two-player strategy game for Windows Phone 7. In this game, you play Reversi against other people who have also downloaded the application. It uses <a href="http://correspondence.codeplex.com/">Correspondence</a> to coordinate moves between the two phones. So far the adoption has been … slow.</p>
+<p><a href="wp-content/uploads/2011/03/image.png"><img style="border-bottom: 0px; border-left: 0px; display: inline; border-top: 0px; border-right: 0px" title="image" border="0" alt="image" src="wp-content/uploads/2011/03/image-thumb.png" width="644" height="368" /></a> </p>
+<p>Faceted Reversi has two ways to play:</p>
+<ul>
+<li>pass the phone</li>
+<li>remote</li>
+</ul>
+<p>In pass-the-phone, you play against another person, but the two of you sit together and share a device. It just acts like a game board. In remote mode, you play against somebody else with their own device. Think “Words with Friends”. To begin a remote game, you either pick someone that you know or let the server choose a random player.</p>
+<p>Faceted Reversi is priced at $1.99, and has a trial mode. In trial mode, you can play as many pass-the-phone games as you like. But you can only play one remote game. To unlock the ability to play more games, you have to pay.</p>
+<p>There are a couple of problems with this revenue model. First, trial apps don’t appear in the Free section of the Marketplace. And second, the network is a catch-22.</p>
+<h3>Free vs Trial</h3>
+<p>Neither iOS nor Android has trial mode built into their applications. You have to buy it before you can try it. As a result, many developers published two versions of their apps: the free one and the paid one. Windows Phone implemented the trial feature to solve this problem. A developer can publish one application, yet still give the end user both experiences.</p>
+<p>But Windows Phone also has a Free section in the Marketplace. This section includes applications that have a $0.00 price tag. It does not include applications with a trial mode. Many developers have found that people download apps from the Free section much more frequently than they do from the paid sections. As a result, developers have been abandoning the trial model and publishing two versions of the app.</p>
+<h3>Catch-22</h3>
+<p>The only reason to pay for Faceted Reversi is to play games against the network of people who have also paid for Faceted Reversi. The value of the application is proportional to the size of this network. When nobody has bought the app, nobody is in the network. And when nobody is in the network, nobody will buy the app. The only way to get people to buy the app is to seed the network.</p>
+<h3>Faceted Reversi Free</h3>
+<p>To solve these two problems, I am working on Faceted Reversi Free. This will be a completely separate app. It will be priced at $0.00, so it will appear in the Free section of the Marketplace. This should drive higher download numbers. I don’t think that a full order of magnitude increase (i.e. 40) is unreasonable to expect.</p>
+<p>This version of the game will have only one feature: random player. You will be able to play against another player, but you won’t be able to say who. This will have the effect of seeding the network with a sea of random players … at least 40 of them!</p>
+<p>This version will also serve ads. Before each game, it will display an ad while it waits for the server to select a random player. This should provided some revenue to keep the Correspondence server running, and incentivize people to buy the paid version.</p>
+<p>In upcoming posts, I’ll describe how to build a two-player game with Correspondence. I’ll also keep you posted regarding the uptake of Faceted Reversi Free and whether my clever scheme succeeds.</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="indexb31a.html?cat=1" title="View all posts in Uncategorized" rel="category">Uncategorized</a> |   <a href="indexe703.html?p=629#comments" title="Comment on How not to sell a two-player game on Windows Phone 7">2 Comments &#187;</a></p>
+
+			</div>
+
+		
+		<div class="navigation">
+			<div class="alignleft"></div>
+			<div class="alignright"></div>
+		</div>
+
+	
+	</div>
+		</td>
+	</tr>
+</table>
+
+<hr />
+<div id="footer">
+<!-- If you'd like to support WordPress, having the "powered by" link someone on your blog is the best way, it's our only promotion or advertising. -->
+	<p>
+		Adventures in Software is proudly powered by 
+		<a href="http://wordpress.org/">WordPress</a>
+		<br /><a href="indexd784.html?feed=rss2">Entries (RSS)</a>
+		and <a href="indexa6da.html?feed=comments-rss2">Comments (RSS)</a>.
+		<!-- 17 queries. 0.333 seconds. -->
+	</p>
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-389401-3");
+pageTracker._trackPageview();
+} catch(err) {}</script></div>
+
+<!-- Gorgeous design by Michael Heilemann - http://binarybonsai.com/kubrick/ -->
+
+		<div id="sk2-footer" style="color:#FFF; background-color:#444; padding: 3px 2px 3px 2px; border-top: #888 solid 1px;">This blog is protected by <a href="http://unknowngenius.com/blog/" title="Dave">dr Dave</a>'s <strong><a href="http://unknowngenius.com/blog/wordpress/spam-karma/" title="SK2">Spam Karma 2</a></strong>: <strong>274531</strong>  Spams eaten and counting...</div><script type="text/javascript" src="replies.js"></script>
+<script type="text/javascript" src="blogger.js"></script>
+<script type="text/javascript" src="http://twitter.com/statuses/user_timeline/michaellperry.json?callback=twitterCallback2&amp;count=5"></script>
+<script type="text/javascript" src="http://search.twitter.com/search.json?q=@michaellperry&amp;callback=twitterCallbackReplies&amp;rpp=5"></script>
+</body>
+
+<!-- Mirrored from adventuresinsoftware.com/blog/?m=201103 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 Jan 2017 12:32:58 GMT -->
+</html>

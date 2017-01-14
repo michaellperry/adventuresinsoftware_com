@@ -1,0 +1,1172 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+
+
+<!-- Mirrored from adventuresinsoftware.com/blog/?p=43 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 Jan 2017 12:55:35 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>Adventures in Software  &raquo; Blog Archive   &raquo; Java Tuple</title>
+
+<meta name="generator" content="WordPress 2.3.3" /> <!-- leave this for stats -->
+
+<link rel="stylesheet" href="wp-content/themes/ais2/style.css" type="text/css" media="screen" />
+<link rel="alternate" type="application/rss+xml" title="Adventures in Software RSS Feed" href="indexd784.html?feed=rss2" />
+<link rel="pingback" href="xmlrpc.html" />
+    <script type="text/javascript">
+        function onSilverlightError(sender, args) {
+            var appSource = "";
+            if (sender != null && sender != 0) {
+              appSource = sender.getHost().Source;
+            }
+            
+            var errorType = args.ErrorType;
+            var iErrorCode = args.ErrorCode;
+
+            if (errorType == "ImageError" || errorType == "MediaError") {
+              return;
+            }
+
+            var errMsg = "Unhandled Error in Silverlight Application " +  appSource + "\n" ;
+
+            errMsg += "Code: "+ iErrorCode + "    \n";
+            errMsg += "Category: " + errorType + "       \n";
+            errMsg += "Message: " + args.ErrorMessage + "     \n";
+
+            if (errorType == "ParserError") {
+                errMsg += "File: " + args.xamlFile + "     \n";
+                errMsg += "Line: " + args.lineNumber + "     \n";
+                errMsg += "Position: " + args.charPosition + "     \n";
+            }
+            else if (errorType == "RuntimeError") {           
+                if (args.lineNumber != 0) {
+                    errMsg += "Line: " + args.lineNumber + "     \n";
+                    errMsg += "Position: " +  args.charPosition + "     \n";
+                }
+                errMsg += "MethodName: " + args.methodName + "     \n";
+            }
+
+            throw new Error(errMsg);
+        }
+    </script>
+
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc0db0.php?rsd" />
+ <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="wp-includes/wlwmanifest.xml" /> <style type='text/css'>
+<!--#header { background: url('wp-content/themes/ais2/images/header-imgae03.html?upper=A7A73F&amp;lower=77773F') no-repeat bottom center; }
+--></style>
+</head>
+<body>
+<div id="page">
+
+<div class="aisTopBar">
+	<form method="get" id="searchform" action="http://adventuresinsoftware.com/blog/">
+<div>
+<a href="indexd784.html?feed=rss2"><img src="../images/feed-icon-28x28.png" border="0"></a>
+<input type="text" value="" name="s" id="s" />
+<input type="submit" id="searchsubmit" value="Search" />
+</div>
+</form>
+</div>
+
+<div class="aisHeaderImageRight">
+	<div class="aisHeaderImage">
+	<div class="aisHeaderCornerRight">
+	<div class="aisHeaderCornerLeft">
+	<div class="aisImageBar">
+	<div class="aisSubSites">
+		<a href="index.html" class="aisSubSiteLink"><span class="aisSiteTabRight"><span class="aisSiteTabLeft"><span class="aisSiteTab">
+			home</span></span></span></a>
+		<a class="aisSubSiteLink" href="indexb60a.html?cat=27"><span class="aisSiteTabRight"><span class="aisSiteTabLeft"><span class="aisSiteTab">
+			historic modeling</span></span></span></a>
+		<a class="aisSubSiteLink" href="indexa88f.html?cat=36"><span class="aisSiteTabRight"><span class="aisSiteTabLeft"><span class="aisSiteTab">
+			update controls</span></span></span></a>
+		<a href="index2d79.html?cat=26" class="aisSubSiteLink"><span class="aisSiteTabRight"><span class="aisSiteTabLeft"><span class="aisSiteTab">
+			degrees of freedom</span></span></span></a>
+		<a class="aisSubSiteLink" href="indexba53.html?page_id=2"><span class="aisSiteTabRight"><span class="aisSiteTabLeft"><span class="aisSiteTab">
+			about us</span></span></span></a>
+
+	</div>
+	</div>
+	</div>
+	</div>
+	</div>
+</div>
+
+<table style="width: 100%" cellspacing="0" cellpadding="0">
+	<tr valign="top">
+		<td width="210px">
+<div id="sidebar">
+<div class="aisLeftColumnFill">
+<div class="aisLeftColumnBottom">
+<div class="aisLeftColumnTop">
+<div id="twitter_div" class="aisLeftNav">
+<h2 class="sidebar-title">Twitter Updates</h2>
+<ul id="twitter_update_list"></ul>
+<a href="http://twitter.com/michaellperry" id="follow">Follow me</a>
+</div>
+<div id="twitter_reply_div" class="aisLeftNav">
+<h2 class="sidebar-title">Twitter Replies</h2>
+<ul id="twitter_reply_list"></ul>
+</div>
+
+<div class="aisLeftNav">
+<a href='http://ineta.org/Speakers/SearchCommunitySpeakers.aspx?SpeakerId=c5110e21-9243-461b-a464-a6548524e885'><img alt='INETA Community Speakers Program' border='0' src='../../www.ineta.org/images/OfficialLogos/InetaCommunitySpeakersRequestMe.html' /></a>
+</div>
+
+<div class="aisLeftNav">
+	<li class="pagenav"><h2>Pages</h2><ul><li class="page_item page-item-2"><a href="indexba53.html?page_id=2" title="About Us">About Us</a></li>
+<li class="page_item page-item-210"><a href="index6ae3.html?page_id=210" title="Templates">Templates</a></li>
+</ul></li></div>
+
+<div class="aisLeftNav">
+<h2>Archives</h2>
+<ul>
+	<li><a href='indexb4d5.html?m=201110' title='October 2011'>October 2011</a></li>
+	<li><a href='indexc61a.html?m=201106' title='June 2011'>June 2011</a></li>
+	<li><a href='indexa80d.html?m=201105' title='May 2011'>May 2011</a></li>
+	<li><a href='index512b.html?m=201104' title='April 2011'>April 2011</a></li>
+	<li><a href='index08fb.html?m=201103' title='March 2011'>March 2011</a></li>
+	<li><a href='index52f4.html?m=201102' title='February 2011'>February 2011</a></li>
+	<li><a href='index74f1.html?m=201101' title='January 2011'>January 2011</a></li>
+	<li><a href='index8956.html?m=201012' title='December 2010'>December 2010</a></li>
+	<li><a href='indexa1aa.html?m=201011' title='November 2010'>November 2010</a></li>
+	<li><a href='indexe3d5.html?m=201010' title='October 2010'>October 2010</a></li>
+	<li><a href='index9ab9.html?m=201009' title='September 2010'>September 2010</a></li>
+	<li><a href='index1ff0.html?m=201008' title='August 2010'>August 2010</a></li>
+	<li><a href='index9f11.html?m=201007' title='July 2010'>July 2010</a></li>
+	<li><a href='index31f0.html?m=201006' title='June 2010'>June 2010</a></li>
+	<li><a href='indexd189.html?m=201005' title='May 2010'>May 2010</a></li>
+	<li><a href='indexb5c0.html?m=201004' title='April 2010'>April 2010</a></li>
+	<li><a href='indexf258.html?m=201003' title='March 2010'>March 2010</a></li>
+	<li><a href='index6e30.html?m=201002' title='February 2010'>February 2010</a></li>
+	<li><a href='index6b19.html?m=201001' title='January 2010'>January 2010</a></li>
+	<li><a href='index5c0a.html?m=200912' title='December 2009'>December 2009</a></li>
+	<li><a href='index8f62.html?m=200911' title='November 2009'>November 2009</a></li>
+	<li><a href='index451d.html?m=200910' title='October 2009'>October 2009</a></li>
+	<li><a href='index3e04.html?m=200909' title='September 2009'>September 2009</a></li>
+	<li><a href='index425a.html?m=200908' title='August 2009'>August 2009</a></li>
+	<li><a href='index9907.html?m=200907' title='July 2009'>July 2009</a></li>
+	<li><a href='index3104.html?m=200906' title='June 2009'>June 2009</a></li>
+	<li><a href='indexc36d.html?m=200905' title='May 2009'>May 2009</a></li>
+	<li><a href='index17e8.html?m=200904' title='April 2009'>April 2009</a></li>
+	<li><a href='index10a5.html?m=200903' title='March 2009'>March 2009</a></li>
+	<li><a href='index8988.html?m=200902' title='February 2009'>February 2009</a></li>
+	<li><a href='index1419.html?m=200901' title='January 2009'>January 2009</a></li>
+	<li><a href='index7866.html?m=200812' title='December 2008'>December 2008</a></li>
+	<li><a href='index55f6.html?m=200811' title='November 2008'>November 2008</a></li>
+	<li><a href='indexa7bc.html?m=200810' title='October 2008'>October 2008</a></li>
+	<li><a href='indexe77c.html?m=200809' title='September 2008'>September 2008</a></li>
+	<li><a href='indexcffc.html?m=200808' title='August 2008'>August 2008</a></li>
+	<li><a href='index0e62.html?m=200807' title='July 2008'>July 2008</a></li>
+	<li><a href='indexfda7.html?m=200806' title='June 2008'>June 2008</a></li>
+	<li><a href='index7d64.html?m=200805' title='May 2008'>May 2008</a></li>
+	<li><a href='index94dd.html?m=200804' title='April 2008'>April 2008</a></li>
+	<li><a href='index9631.html?m=200803' title='March 2008'>March 2008</a></li>
+	<li><a href='indexdd52.html?m=200802' title='February 2008'>February 2008</a></li>
+	<li><a href='index21ee.html?m=200801' title='January 2008'>January 2008</a></li>
+	<li><a href='index363c.html?m=200712' title='December 2007'>December 2007</a></li>
+	<li><a href='index7493.html?m=200711' title='November 2007'>November 2007</a></li>
+	<li><a href='index93a7.html?m=200710' title='October 2007'>October 2007</a></li>
+	<li><a href='index4ca8.html?m=200709' title='September 2007'>September 2007</a></li>
+	<li><a href='index6124.html?m=200708' title='August 2007'>August 2007</a></li>
+	<li><a href='index6013.html?m=200707' title='July 2007'>July 2007</a></li>
+	<li><a href='index2ab6.html?m=200706' title='June 2007'>June 2007</a></li>
+	<li><a href='index44f0.html?m=200705' title='May 2007'>May 2007</a></li>
+	<li><a href='indexf0b4.html?m=200704' title='April 2007'>April 2007</a></li>
+	<li><a href='index481d.html?m=200703' title='March 2007'>March 2007</a></li>
+	<li><a href='indexcbea.html?m=200702' title='February 2007'>February 2007</a></li>
+	<li><a href='index9cdc.html?m=200701' title='January 2007'>January 2007</a></li>
+	<li><a href='index3ea4.html?m=200612' title='December 2006'>December 2006</a></li>
+	<li><a href='index67ca.html?m=200611' title='November 2006'>November 2006</a></li>
+	<li><a href='indexff49.html?m=200610' title='October 2006'>October 2006</a></li>
+	<li><a href='index611c.html?m=200609' title='September 2006'>September 2006</a></li>
+	<li><a href='index9a21.html?m=200608' title='August 2006'>August 2006</a></li>
+	<li><a href='index3ee9.html?m=200607' title='July 2006'>July 2006</a></li>
+	<li><a href='indexe13a.html?m=200606' title='June 2006'>June 2006</a></li>
+</ul>
+</div>
+
+<div class="aisLeftNav">
+	</div>
+
+<div class="aisLeftNav">
+<h2>Books</h2>
+<iframe src="http://rcm.amazon.com/e/cm?t=adventures0d2-20&amp;o=1&amp;p=8&amp;l=as1&amp;asins=0764526413&amp;fc1=000000&amp;IS2=1&amp;lt1=_blank&amp;lc1=0000ff&amp;bc1=000000&amp;bg1=ffffff&amp;f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" name="I5" id="I5"></iframe>
+<br/>
+<iframe src="http://rcm.amazon.com/e/cm?t=adventures0d2-20&amp;o=1&amp;p=8&amp;l=as1&amp;asins=0201633612&amp;fc1=000000&amp;IS2=1&amp;lt1=_blank&amp;lc1=0000ff&amp;bc1=000000&amp;bg1=ffffff&amp;f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" name="I6" id="I6"></iframe>
+<br/>
+<iframe src="http://rcm.amazon.com/e/cm?t=adventures0d2-20&amp;o=1&amp;p=8&amp;l=as1&amp;asins=0136291554&amp;fc1=000000&amp;IS2=1&amp;lt1=_blank&amp;lc1=0000ff&amp;bc1=000000&amp;bg1=ffffff&amp;f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" name="I7" id="I7"></iframe>
+<br/>
+<iframe src="http://rcm.amazon.com/e/cm?t=adventures0d2-20&amp;o=1&amp;p=8&amp;l=as1&amp;asins=1888009195&amp;fc1=000000&amp;IS2=1&amp;lt1=_blank&amp;lc1=0000ff&amp;bc1=000000&amp;bg1=ffffff&amp;f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" name="I8" id="I8"></iframe>
+</div>
+<div class="aisLeftNav">
+<h2>Meta</h2>
+<ul>
+		<li><a href="wp-login.html">Login</a></li>
+	<li><a href="http://validator.w3.org/check/referer" title="This page validates as XHTML 1.0 Transitional">Valid <abbr title="eXtensible HyperText Markup Language">XHTML</abbr></a></li>
+	<li><a href="http://gmpg.org/xfn/"><abbr title="XHTML Friends Network">XFN</abbr></a></li>
+	<li><a href="http://wordpress.org/" title="Powered by WordPress, state-of-the-art semantic personal publishing platform.">WordPress</a></li>
+	</ul>
+</div>
+<div class="aisLeftContent">
+<h2>Community</h2>
+<ul>
+	<script type="text/javascript" src="../../localhost/embed/92q2bbma.js"></script>
+</ul>
+</div>
+
+</div></div></div>
+</div>		</td>
+		<td>
+
+	<div id="content" class="widecolumn">
+
+	
+		<div class="navigation">
+			<div class="alignleft">&laquo; <a href="indexfbd5.html?p=42">Four Rules for APIs</a></div>
+			<div class="alignright"><a href="index7ea6.html?p=46">Alpahbetic Options</a> &raquo;</div>
+		</div>
+		<br/>
+
+		<div class="post" id="post-43">
+			<h1>Java Tuple</h1>
+
+			<div class="entry">
+				<blockquote><p><strong>Final Update</strong>The latest code is at <a href="index4cfb.html?p=546">http://adventuresinsoftware.com/blog/?p=546</a>. The javatuple.com site is going off-line.</p></blockquote>
+<blockquote><p><strong>Update</strong> I've created a new version of this Java Tuple library. It can be found at <s>http://javatuple.com</s>. The new version uses generics for type safety. It also has extractor methods. If you use Java 1.4 or earlier, or you just prefer the previous version, please read on. Otherwise, visit javatuple.com.</p></blockquote>
+<blockquote><p>Thanks.</p></blockquote>
+<p>I don't know how many times I've needed a hash map with a compound key, but it seems to come up often. Every time, I am faced with the same question: do I really want to define a class for this key?It's seems like such a simple thing at first. Just a class with a few members. But then you have to initialize those members in the constructor. And then you need to write equals(). And don't forget hashCode(). Sometimes I'm tempted to create a concatenated string to get around the extra baggage. But that would be a hack.To solve this problem, I finally decided to create a Tuple class. A tuple is a an ordered collection of heterogeneous elements. Compare this to a vector, which is homogeneous. The type of a tuple is defined by the number and type of its elements.Examples of tuples that naturally occur in software are parameter lists and database rows. Both of these things have a fixed, finite number of elements that must occur in a certain order. All rows in a table have the same number and types of columns, but one column can have a different type from another. Some languages treat tuples as native data types, but not Java.My Tuple class comes in two pieces. The base class implements all of the comparison behavior. The concrete class lets you build a generic tuple.
+<pre>package com.adventuresinsoftware.tuple;import java.util.ArrayList;import java.util.Iterator;public abstract class BaseTuple implements Comparable {    // Ordered collection of elements.    ArrayList elements = new ArrayList();    // Strings used to display the tuple.    String open;    String separator;    String close;    // Initialize the strings for this tuple type.    protected BaseTuple(String open, String separator, String close) {        this.open = open;        this.separator = separator;        this.close = close;    }    // Add elements to the tuple. Supports dot-chaining.    protected BaseTuple addElement(Object o) {        elements.add(o);        return this;    }    protected BaseTuple addElement(int i) {        return addElement(new Integer(i));    }    // Compare two tuples. All elements must be equal.    public boolean equals(Object obj) {        if (obj == null)            return false;        if (!(obj instanceof BaseTuple))            return false;        BaseTuple that = (BaseTuple) obj;        if (that.elements.size() != this.elements.size())            return false;        for (int i = 0; i &lt; elements.size(); ++i) {            if (!that.elements.get(i).equals(this.elements.get(i)))                return false;        }        return true;    }    // Calculate a hash code based on the hash of each element.    public int hashCode() {        int result = 0;        Iterator it = elements.iterator();        while (it.hasNext()) {            result = result * 37 + it.next().hashCode();        }        return result;    }    // Display the tuple using the open, separator, and close    // specified in the constructor.    public String toString() {        StringBuffer result = new StringBuffer(open);        Iterator it = elements.iterator();        while (it.hasNext()) {            result.append(it.next());            if (it.hasNext())                result.append(separator);        }        return result.append(close).toString();    }    // Order by the most significant element first.    // The tuples must agree in size and type.    public int compareTo(Object o) {        BaseTuple that = (BaseTuple) o;        for (int i = 0; i &lt; elements.size(); ++i) {            int compare = ((Comparable) this.elements.get(i))                .compareTo((Comparable) that.elements.get(i));            if (compare != 0)                return compare;        }        return 0;    }}</pre>
+<pre>package com.adventuresinsoftware.tuple;public class Tuple extends BaseTuple {    // Display a coma-separated list of elements.    public Tuple() {        super("(", ", ", ")");    }    // Add generic elements to the tuple.    // Supports dot-chaining.    public Tuple add(Object o) {        super.addElement(o);        return this;    }    public Tuple add(int i) {        super.addElement(i);        return this;    }}</pre>
+<p>To use a Tuple as a compound HashMap key, just construct one in place using dot-chaining.
+<pre>    public void testTupleHashMap() {        Map population = new HashMap();        population.put(            new Tuple().add("TX").add("Dallas"),            new Integer(1213825));        population.put(            new Tuple().add("TX").add("Fort Worth"),            new Integer(624067));        population.put(            new Tuple().add("IL").add("Springfield"),            new Integer(203564));        population.put(            new Tuple().add("NM").add("Albuquerque"),            new Integer(494236));        assertEquals(new Integer(624067), population.get(            new Tuple().add("TX").add("Fort Worth")));        assertNull(population.get(            new Tuple().add("NM").add("Roswell")));        assertNull(population.get(            new Tuple().add("NJ").add("Springfield")));    }</pre>
+<p>The Tuple class has a useful toString method.
+<pre>    public void testTupleToString() {        Tuple tuple = new Tuple().add("MLB").add(1);        assertEquals( "(MLB, 1)", tuple.toString() );    }</pre>
+<p>And if you want to create your own strictly typed tuples, you can declare your own derived class.
+<pre>package com.adventuresinsoftware.tuple;public class Version extends BaseTuple {    // A version is a tuple of 4 integers separated by periods.    public Version(int major, int minor, int release, int qfe) {        super("", ".", "");        addElement(major).addElement(minor).addElement(release).addElement(qfe);    }}</pre>
+<pre>    public void testVersion() {        Version v1 = new Version(2,0,2,3425);        Version v2 = new Version(2,1,0,241);        assertEquals("2.0.2.3425", v1.toString());        assertEquals("2.1.0.241", v2.toString());        assertTrue("Version 2.1.0.241 &gt; 2.0.2.3425", v2.compareTo(v1) &gt; 0);    }</pre>
+<p>Enjoy!</p>
+
+				
+				<p class="postmetadata alt">
+					<small>
+						This entry was posted
+												on Friday, October 20th, 2006 at 9:04 pm						and is filed under <a href="index5b0d.html?cat=12" title="View all posts in Java" rel="category">Java</a>.
+						You can follow any responses to this entry through the <a href='index0829.html?feed=rss2&amp;p=43'>RSS 2.0</a> feed.
+
+													You can <a href="#respond">leave a response</a>, or <a href="wp-trackback4170.html?p=43" rel="trackback">trackback</a> from your own site.
+
+						
+					</small>
+				</p>
+
+			</div>
+		</div>
+
+	
+<!-- You can start editing here. -->
+
+	<h3 id="comments">43 Responses to &#8220;Java Tuple&#8221;</h3>
+
+	<ol class="commentlist">
+
+	
+		<li class="alt" id="comment-387">
+			<cite><a href='http://atheorist.livejournal.com/' rel='external nofollow'>Johnicholas Hines</a></cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-387" title="">December 2nd, 2006 at 8:17 pm</a> </small>
+
+			<p>This is really cool!</p>
+<p>Two questions:<br />
+1. Is the magic number 37 important? Is it possible to replace the "iterate and hash" procedure with something like elements.HashCode()?<br />
+2. How do you get, say, the third field from a tuple? tuple.elements.get(3)?</p>
+<p>Anyway, I will be using your code; thank you very much!</p>
+
+		</li>
+
+	
+	
+		<li class="" id="comment-388">
+			<cite>Michael L Perry</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-388" title="">December 3rd, 2006 at 12:16 am</a> </small>
+
+			<p>The magic number is best when prime. 37 is just a nice easy prime to remember.</p>
+<p>This particular tuple implementation is not designed for random access. The goal here was just to create a multi-valued key. But if you find you need that functionality, it is easy to add. The drawback is that you will have to cast from Object to the expected type. I'm not sure if generics will improve matters any, but you can try.</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-18631">
+			<cite>Irfan Jamadar</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-18631" title="">July 21st, 2008 at 8:03 am</a> </small>
+
+			<p>Thought of a wee enhancement to the single maker.<br />
+Basically I wanted to call Tuple with a varargs/array of objects and have it smartly construct the appropriate 'N Tuple' instance.<br />
+So I changed the Tuple method to be:</p>
+<p>    @SuppressWarnings("unchecked")<br />
+    public static &lt;T extends Tuple, T1&gt; T from(T1 m1) {<br />
+        if (m1 != null &amp;&amp; m1.getClass().isArray())<br />
+        {<br />
+            Object[] arr = (Object[]) m1;<br />
+            for (Method meth : Tuple.class.getMethods())<br />
+                if (meth.getName().equals("from") &amp;&amp; meth.getParameterTypes().length == arr.length)<br />
+                    try<br />
+                    {<br />
+                        return (T) meth.invoke(Tuple.class, arr);<br />
+                    }<br />
+                    catch (Throwable t)<br />
+                    {<br />
+                        t.printStackTrace();<br />
+                    }</p>
+<p>        }<br />
+        return (T) new Single(m1);<br />
+    }</p>
+<p>Thus I can invoke it with:</p>
+<p>        Triple&lt;Integer, String, Tuple&gt; tuple = FlyweightTuple.get(Triple.class, null, "Atom", Tuple.from(new String[]{"a", "b"}));<br />
+        System.out.println(tuple);</p>
+<p>And find that the third item is indeed a Tuple Pair (and not a single Object[]).</p>
+<p>I can course still use it per normal i.e. Single singleTuple = Tuple.from("Hey");</p>
+<p>Hope this helps :o)</p>
+
+		</li>
+
+	
+	
+		<li class="" id="comment-18662">
+			<cite>Irfan Jamadar</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-18662" title="">July 22nd, 2008 at 6:51 am</a> </small>
+
+			<p>Slightly better version of above (allowing proper component type coming back) :</p>
+<p>    public static  Single from(T1 m1) {<br />
+        return new Single(m1);<br />
+    }</p>
+<p>    @SuppressWarnings("unchecked")<br />
+    public static &lt;T extends Tuple, T1&gt; T from(T1[] m1) {<br />
+        if (m1 != null)<br />
+        {<br />
+            Object[] arr = (Object[]) m1;<br />
+            for (Method meth : Tuple.class.getMethods())<br />
+                if (meth.getName().equals("from") &amp;&amp; meth.getParameterTypes().length == arr.length)<br />
+                    try<br />
+                    {<br />
+                        return (T) meth.invoke(Tuple.class, arr);<br />
+                    }<br />
+                    catch (Throwable t)<br />
+                    {<br />
+                        throw new IllegalStateException("Unable to invoke Tuple maker.", t);<br />
+                    }<br />
+        }</p>
+<p>        return (T) Tuple.from(null);<br />
+    }</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-18663">
+			<cite>Irfan Jamadar</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-18663" title="">July 22nd, 2008 at 6:56 am</a> </small>
+
+			<p>Also have Tuple implement the Iterator interface i.e.:</p>
+<p>Iterable</p>
+<p>And then include the following (in Tuple class):</p>
+<p>    public Iterator iterator ()<br />
+    {<br />
+        return new Itr(this);<br />
+    }</p>
+<p>    private class Itr implements Iterator<br />
+    {<br />
+        // Index of element to be returned by subsequent call to next.<br />
+        private Tuple cursor;</p>
+<p>        private boolean atEnd;</p>
+<p>        public Itr (Tuple start)<br />
+        {<br />
+            cursor = start;<br />
+            atEnd = false;<br />
+        }</p>
+<p>        public boolean hasNext()<br />
+        {<br />
+            return !atEnd;<br />
+        }</p>
+<p>        public First next()<br />
+        {<br />
+            if (!hasNext())<br />
+                throw new NoSuchElementException();</p>
+<p>            Variable var = new Variable();<br />
+            Object r = cursor.extract(var);<br />
+            if (End.class.isAssignableFrom(r.getClass()))<br />
+                atEnd = true;<br />
+            else<br />
+            {<br />
+                @SuppressWarnings("unchecked")<br />
+                Tuple r2 = (Tuple)r;<br />
+                cursor = r2;<br />
+            }</p>
+<p>            return var.get();<br />
+        }</p>
+<p>        public void remove()<br />
+        {<br />
+            throw new IllegalStateException("Remove operation not supported");<br />
+        }<br />
+    }</p>
+<p>You can then do, for example:</p>
+<p>        for (String item : tuple)<br />
+            System.out.println("    value = "+ item);</p>
+<p>Naturally, if mixed types are in the tuple then you will have to use the super type common to all elements (for item).</p>
+
+		</li>
+
+	
+	
+		<li class="" id="comment-18689">
+			<cite>Michael L Perry</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-18689" title="">July 22nd, 2008 at 10:01 pm</a> </small>
+
+			<p>Cool changes, Irfan. It's not the way that I use tuples, but it's cool nonetheless.</p>
+<p>To my mathematical background, a tuple is not a collection. It's size cannot vary, and if all of it's elements are the same type, well that's just a coincidence.</p>
+<p>The type of a tuple is based on the number and types of its members. That's the reason I switched to the generic version. It demonstrates that Java's generics, while they have some problems, are powerful enough to infer aggregate types out of simple ones.</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-18830">
+			<cite>Steve</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-18830" title="">July 27th, 2008 at 2:17 pm</a> </small>
+
+			<p>Noticed a bug in Tuple.compareTo when comparing identical cases. The problem is that Tuple.compareTo doesn't check for "End", so if you have identical Tuples it'll throw an exception when it hits end. The solution is to check to see if you've reached the End in compareTo. See the end of this message for a possible solution.</p>
+<p>This test case will result in "java.lang.ClassCastException: com.mallardsoft.tuple.End cannot be cast to java.lang.Comparable":</p>
+<p>public void testTupleEquality() {<br />
+		Triple t=new Triple("my", 123, "fake");<br />
+                Triple t2=new Triple("my", 123, "fake");<br />
+		try<br />
+		{<br />
+			System.out.println("Comparison: " + t.compareTo(t2));<br />
+		}<br />
+		catch (Exception e)<br />
+		{<br />
+			e.printStackTrace();<br />
+		}<br />
+	}</p>
+<p>---- My fix:<br />
+	// Order by the most significant element first.<br />
+	// The tuples must agree in size and type.<br />
+	public int compareTo(Tuple that) {<br />
+		int compare = ((Comparable) this.first).compareTo(that.first);<br />
+		if (compare != 0)<br />
+			return compare;<br />
+		else {<br />
+			if (this.rest instanceof End &amp;&amp; that.rest instanceof End) {<br />
+			return 0;<br />
+			} else<br />
+				return ((Comparable) this.rest).compareTo(that.rest);<br />
+		}<br />
+	}</p>
+
+		</li>
+
+	
+	
+		<li class="" id="comment-18903">
+			<cite>Alex</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-18903" title="">July 30th, 2008 at 4:20 am</a> </small>
+
+			<p>What license is JavaTuples under?</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-18907">
+			<cite>Michael L Perry</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-18907" title="">July 30th, 2008 at 5:41 pm</a> </small>
+
+			<p>The code is licensed under <a href="http://creativecommons.org/licenses/by/3.0/us/" rel="nofollow">Creative Commons Attribution 3.0</a>. Feel free to use it for any project, commercial or otherwise. Modify it to meet your needs. Just please attribute the source.</p>
+
+		</li>
+
+	
+	
+		<li class="" id="comment-19112">
+			<cite>Michael L Perry</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-19112" title="">August 6th, 2008 at 9:45 pm</a> </small>
+
+			<p>Thanks, Steve. I applied a slightly different fix.</p>
+<pre>
+package com.mallardsoft.tuple;
+
+public class End implements SeparatedAppender, Comparable&lt;End&gt; {
+
+	private static End instance = new End();
+
+	public static End getInstance() {
+		return instance;
+	}
+
+	private End() { }
+
+	public void appendString(StringBuffer buffer, String separator) {
+	}
+
+	@Override
+	public int compareTo(End o) {
+		return 0;
+	}
+
+}
+</pre>
+<p>I made End implement Comparable<end> and always return 0. Every End is equal to every other End.</p>
+<p>One caveat to this is that comparing tuples of different sizes will produce a ClassCastException when the runtime tries to cast a Tuple to End or End to Tuple in order to call the last compareTo. But if you let the compiler verify your types for you, then this will be caught early. Your unit test uses Tuple as a raw type, so the compiler can't help you. But the following change retains type information:</p>
+<pre>
+Triple&lt;String, Integer, String&gt; t = Tuple.from("my", 123, "fake");
+Triple&lt;String, Integer, String&gt; t2 = Tuple.from("my", 123, "fake");
+</pre>
+<p></end></p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-21396">
+			<cite>Peter Niederwieser</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-21396" title="">October 30th, 2008 at 6:43 pm</a> </small>
+
+			<p>Great to see a tuple implementation for Java. How about including the license in the JAR?</p>
+
+		</li>
+
+	
+	
+		<li class="" id="comment-21928">
+			<cite>Karl Isenberg</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-21928" title="">November 20th, 2008 at 3:18 pm</a> </small>
+
+			<p>You should be able to remove the Comparable cast in the compareTo method if you change the class definition to:</p>
+<blockquote><p>public class Tuple&lt;First extends Comparable, Rest extends Comparable&gt; implements SeparatedAppender,<br />
+    Comparable&lt;Tuple&gt; {</p></blockquote>
+<p>And yes, you should probably include the license in the JAR and also add JavaDoc headers for all of the classes that says they are all part of the same package and under the same license.</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-21929">
+			<cite>Karl Isenberg</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-21929" title="">November 20th, 2008 at 3:20 pm</a> </small>
+
+			<p>hmm, it ate some of my code.<br />
+How about:<br />
+<code>public class Tuple&lt;First extends Comparable, Rest extends Comparable&gt; implements SeparatedAppender,<br />
+    Comparable&lt;Tuple&gt; {</code></p>
+
+		</li>
+
+	
+	
+		<li class="" id="comment-21930">
+			<cite>Karl Isenberg</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-21930" title="">November 20th, 2008 at 3:24 pm</a> </small>
+
+			<p>nope...<br />
+Third times the charm?</p>
+<blockquote><p>public class Tuple&lt;First extends Comparable&lt;First&gt;, Rest extends Comparable&lt;Rest&gt;&gt; implements SeparatedAppender,<br />
+    Comparable&lt;Tuple&lt;First, Rest&gt;&gt; {</p></blockquote>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-22033">
+			<cite>Michael L Perry</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-22033" title="">November 22nd, 2008 at 1:46 pm</a> </small>
+
+			<p>Thanks, Karl. What made it through was just enough to get your point across. I've updated the source code with your suggestion. It works like a champ.</p>
+<p>I've included the license in the zip file and in the header of each source file. Please feel free to reuse, redistribute, modify, and enjoy!</p>
+
+		</li>
+
+	
+	
+		<li class="" id="comment-22275">
+			<cite><a href='http://ripper.profitux.cz/' rel='external nofollow'>Kamil Páral</a></cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-22275" title="">November 30th, 2008 at 4:59 am</a> </small>
+
+			<p>I wanted to use javatuple in my opensource project, but as I see, I can't, because of the CC-BY license. First of all, CC licenses are not intended to be used for software:<br />
+<a href="http://wiki.creativecommons.org/Frequently_Asked_Questions#Can_I_use_a_Creative_Commons_license_for_software.3F" rel="nofollow">http://wiki.creativecommons.org/Frequently_Asked_Questions#Can_I_use_a_Creative_Commons_license_for_software.3F</a><br />
+Also, CC-BY (at least 2.0) is incompatible with GNU GPL:<br />
+<a href="http://www.gnu.org/licenses/license-list.html#OtherLicenses" rel="nofollow">http://www.gnu.org/licenses/license-list.html#OtherLicenses</a></p>
+<p>As a second remark, it would be very convenient if you provide at least an ant build script.</p>
+<p>And it is very unfortunate that you don't even provide your email so people can hardly contact you (using comments in some blog forum is really pretty useless).</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-22281">
+			<cite>Michael L Perry</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-22281" title="">November 30th, 2008 at 6:06 pm</a> </small>
+
+			<p>Very good points, Kamil. I'll look into the license issue and tell you what I decide to change it to. I did not realize that CC was not recommended for software, or that it was incompatible with GPL.</p>
+<p>It is my intent that you should be able to use Java Tuple for any project, open source or otherwise. For that reason, I will not be using GPL. I may, however, choose LGPL.</p>
+<p>I can certainly provide an Ant build script. I build with Eclipse, so I have no need for Ant myself. Still, I suspect that the script will be simple.</p>
+<p>I prefer an open conversation via comment posts, so I encourage people to contact me that way. For this reason, I have posted this message both as a comment and as an email.</p>
+<p>That said, if you would prefer to contact me directly rather than posting, you can reach me at mperry at aventures in software dot com. I will reply to direct email in kind, not by posting a comment.</p>
+<p>Thanks for your comments, and I'll let you know when I've made a licensing decision.</p>
+
+		</li>
+
+	
+	
+		<li class="" id="comment-22283">
+			<cite>Michael L Perry</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-22283" title="">November 30th, 2008 at 9:08 pm</a> </small>
+
+			<p>Thanks to Kamil's feedback, I've selected a FreeBSD license and added an Ant script. You can find the updates on <a href="http://javatuple.com./" rel="nofollow">http://javatuple.com.</a></p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-22294">
+			<cite><a href='http://ripper.profitux.cz/' rel='external nofollow'>Kamil Páral</a></cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-22294" title="">December 1st, 2008 at 4:49 am</a> </small>
+
+			<p>Thank you very much.</p>
+
+		</li>
+
+	
+	
+		<li class="" id="comment-22328">
+			<cite><a href='http://ripper.profitux.cz/' rel='external nofollow'>Kamil Páral</a></cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-22328" title="">December 2nd, 2008 at 4:16 pm</a> </small>
+
+			<p>The licence text appended after class description destroyed some of the javadocs for that class. See Tuple class. The license text is now part of description of the second parameter.</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-22363">
+			<cite>Michael L Perry</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-22363" title="">December 3rd, 2008 at 9:09 pm</a> </small>
+
+			<p>Problem solved. Thanks again.</p>
+
+		</li>
+
+	
+	
+		<li class="" id="comment-22386">
+			<cite><a href='http://datasurfer.blogspot.com/' rel='external nofollow'>DataSurfer</a></cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-22386" title="">December 4th, 2008 at 5:47 pm</a> </small>
+
+			<p>[code]Tuple&lt;Double,Tuple&lt;Integer,Tuple&gt;&gt; t1 =<br />
+   Tuple.from("c").prepend(2).prepend(2.3);[/code]</p>
+<p>[quote]Although this method is more flexible, it is more difficult syntax. The elements must be added to the tuple in reverse order. And the type is expressed in its fully exploded form. If you must use this syntax, then take full advantage of Eclipse's refactoring tools to generate type declarations.[/quote]</p>
+<p>Couldn't you use varargs to simplify this?</p>
+<p>Something ala:<br />
+[code]    public static Tuple from(Comparable... members) {<br />
+        Comparable lastMember = members[members.length - 1];<br />
+        Tuple tuple;<br />
+             if (lastMember instanceof       Byte) tuple = Tuple.from((      Byte) lastMember);<br />
+        else if (lastMember instanceof      Short) tuple = Tuple.from((     Short) lastMember);<br />
+        else if (lastMember instanceof    Integer) tuple = Tuple.from((   Integer) lastMember);<br />
+        else if (lastMember instanceof       Long) tuple = Tuple.from((      Long) lastMember);<br />
+        else if (lastMember instanceof      Float) tuple = Tuple.from((     Float) lastMember);<br />
+        else if (lastMember instanceof     Double) tuple = Tuple.from((    Double) lastMember);<br />
+        else if (lastMember instanceof    Boolean) tuple = Tuple.from((   Boolean) lastMember);<br />
+        else if (lastMember instanceof  Character) tuple = Tuple.from(( Character) lastMember);<br />
+        else if (lastMember instanceof BigDecimal) tuple = Tuple.from((BigDecimal) lastMember);<br />
+        else if (lastMember instanceof BigInteger) tuple = Tuple.from((BigInteger) lastMember);<br />
+        else if (lastMember instanceof     String) tuple = Tuple.from((    String) lastMember);<br />
+        else if (lastMember instanceof       Enum) tuple = Tuple.from((      Enum) lastMember);<br />
+        else                                       tuple = Tuple.from(             lastMember);</p>
+<p>        if (members.length &gt; 1) {<br />
+            for (int i = members.length - 2; i &gt; 0; i--) {<br />
+                     if (members[i] instanceof       Byte) tuple = tuple.prepend((      Byte) members[i]);<br />
+                else if (members[i] instanceof      Short) tuple = tuple.prepend((     Short) members[i]);<br />
+                else if (members[i] instanceof    Integer) tuple = tuple.prepend((   Integer) members[i]);<br />
+                else if (members[i] instanceof       Long) tuple = tuple.prepend((      Long) members[i]);<br />
+                else if (members[i] instanceof      Float) tuple = tuple.prepend((     Float) members[i]);<br />
+                else if (members[i] instanceof     Double) tuple = tuple.prepend((    Double) members[i]);<br />
+                else if (members[i] instanceof    Boolean) tuple = tuple.prepend((   Boolean) members[i]);<br />
+                else if (members[i] instanceof  Character) tuple = tuple.prepend(( Character) members[i]);<br />
+                else if (members[i] instanceof BigDecimal) tuple = tuple.prepend((BigDecimal) members[i]);<br />
+                else if (members[i] instanceof BigInteger) tuple = tuple.prepend((BigInteger) members[i]);<br />
+                else if (members[i] instanceof     String) tuple = tuple.prepend((    String) members[i]);<br />
+                else if (members[i] instanceof       Enum) tuple = tuple.prepend((      Enum) members[i]);<br />
+                else                                       tuple = tuple.prepend(             members[i]);<br />
+            }<br />
+        }<br />
+        return tuple;<br />
+    }[/code]</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-22401">
+			<cite>Michael L Perry</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-22401" title="">December 5th, 2008 at 4:02 pm</a> </small>
+
+			<p>Sorry about the code formatting. I should probably find a more code friendly comments plug-in for Wordpress.</p>
+<p>The problem with the varargs idea is that it works against Java's generics. The compiler cannot determine the actual type of the Tuple produced. Since Java's generics are compile-time only, there is no problem at run time. But I'm trying to be as compiler-friendly as possible with this library.</p>
+
+		</li>
+
+	
+	
+		<li class="" id="comment-22486">
+			<cite><a href='http://datasurfer.blogspot.com/' rel='external nofollow'>DataSurfer</a></cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-22486" title="">December 8th, 2008 at 3:49 pm</a> </small>
+
+			<p>I intended for the return type to be Tuple&lt;?, End&gt;. I thought that combined with the large if else structures would help at least for the most basicly typed members of a Tuple.</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-23717">
+			<cite><a href='http://kiloblog.com/' rel='external nofollow'>Alan Gutierrez</a></cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-23717" title="">January 14th, 2009 at 12:39 am</a> </small>
+
+			<p>This project needs to be available from a Maven repository. I've built a pom.xml to build it for my own repository, but I'd love to see it at repo1.maven.org. Let me know if there is any way I can help.</p>
+
+		</li>
+
+	
+	
+		<li class="" id="comment-23764">
+			<cite><a href='http://www.antispamhub.com/msvoluserightssubacclic-146-microsoft-licensing-product-subscriber-access-license' rel='external nofollow'>The Anti Spam Hub</a></cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-23764" title="">January 15th, 2009 at 6:08 am</a> </small>
+
+			<p>[...] Adventures in Software » Blog Archive » Java Tuple [...]</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-24316">
+			<cite>Morgon</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-24316" title="">February 4th, 2009 at 7:07 pm</a> </small>
+
+			<p>It would be nice if there was a version that did not have the tuple classes required to implement Comparable! Simple enough to do on your own, but it would be nice to have in the library.</p>
+
+		</li>
+
+	
+	
+		<li class="" id="comment-25628">
+			<cite>alex</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-25628" title="">March 18th, 2009 at 7:09 am</a> </small>
+
+			<p>I also think, that It would be nice if there was a version that did not have the tuple classes required to implement Comparable</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-31271">
+			<cite>qedisk</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-31271" title="">June 8th, 2009 at 5:58 am</a> </small>
+
+			<p>Yes I agree. Version without necessity of using comparable!</p>
+
+		</li>
+
+	
+	
+		<li class="" id="comment-34276">
+			<cite>MC Murphy</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-34276" title="">July 24th, 2009 at 8:08 am</a> </small>
+
+			<p>The netbeans 6.7 IDE compiler doesn't seem to like:</p>
+<p>public &lt;T extends Comparable&gt; Tuple&lt;T, Tuple&gt; prepend(T m) {<br />
+		return new Tuple&lt;T, Tuple&gt;(m, this);<br />
+	}</p>
+<p>inside the Tuple class. The tuple class is defined as:</p>
+<p>public class Tuple&lt;First extends Comparable, Rest extends Comparable&gt; implements SeparatedAppender, Comparable&lt;Tuple&gt; {...}</p>
+<p>The compiler error is:</p>
+<p>"type parameter com.mallardsoft.tuple.Tuple is not within its bound"</p>
+<p>Now I can't see why it shouldn't accept this. I wonder whether this is a bug in the netbeans 6.7 IDE compiler or whether its<br />
+because the Tuple class has not been fully defined yet (i.e. this is within the class definition)?</p>
+<p>I've looked online and not found any articles on compiler bugs for netbeans 6.7 IDE yet. I'll have to try a different compiler as well.</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-34649">
+			<cite>Jason Frank</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-34649" title="">July 28th, 2009 at 9:39 am</a> </small>
+
+			<p>Here's another vote for not requiring Comparable.  I want to use this for the "multi-valued return" feature.  I want to return a Pair with a String and a List inside it.  I can't do it because List does not implement Comparable.  Since I'm not going to compare them, that is not an issue for me, but it means that I can't use this library.</p>
+
+		</li>
+
+	
+	
+		<li class="" id="comment-49874">
+			<cite>Rainer Schnitker</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-49874" title="">September 29th, 2009 at 7:52 am</a> </small>
+
+			<p>The tuple classes should implement Serializable. Required for remoting.</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-54269">
+			<cite>Jacek</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-54269" title="">November 3rd, 2009 at 12:19 pm</a> </small>
+
+			<p>Can you add your library to a Maven repo? It would help it's spread greatly....</p>
+
+		</li>
+
+	
+	
+		<li class="" id="comment-55780">
+			<cite>Norman Shelley</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-55780" title="">November 20th, 2009 at 3:09 pm</a> </small>
+
+			<p>Any feedback on the problem mentioned in July 24, 2009?</p>
+<p>I too am having this problem<br />
+Product Version: NetBeans IDE 6.7.1 (Build 200907230233)<br />
+Java: 1.6.0_16; Java HotSpot(TM) Client VM 14.2-b01<br />
+System: Windows XP version 5.1 running on x86; Cp1252; en_US (nb)<br />
+Userdir: C:\Documents and Settings\shellnk1\.netbeans\6.7</p>
+<p>MC Murphy Says: </p>
+<p>July 24th, 2009 at 8:08 am<br />
+The netbeans 6.7 IDE compiler doesn't seem to like:</p>
+<p>public  Tuple prepend(T m) {<br />
+return new Tuple(m, this);<br />
+}</p>
+<p>inside the Tuple class. The tuple class is defined as:</p>
+<p>public class Tuple implements SeparatedAppender, Comparable {...}</p>
+<p>The compiler error is:</p>
+<p>"type parameter com.mallardsoft.tuple.Tuple is not within its bound"</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-55847">
+			<cite>Casey</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-55847" title="">November 22nd, 2009 at 5:58 am</a> </small>
+
+			<p>And yet another vote for not requiring Comparable. Similar to Jason Frank I want to have Tuples with Collections inside them (Lists, Maps, etc). Any chance the library will get that update?</p>
+
+		</li>
+
+	
+	
+		<li class="" id="comment-56964">
+			<cite>pangea</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-56964" title="">November 30th, 2009 at 3:21 pm</a> </small>
+
+			<p>great work...can i copy the code and change the package names...leaving the confidential info as is? problem is that i cant have too many jars in my webapp ...so want to bundle these with others...1 more suggestion....why dont u donate (or whatever is more appropriate) this to google-guvava project...i think this is a perfect addition there...tx again</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-57174">
+			<cite><a href='http://bluraysoftware.blogspot.com/' rel='external nofollow'>Blu ray software</a></cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-57174" title="">December 2nd, 2009 at 8:36 pm</a> </small>
+
+			<p>Thx for sharing!</p>
+
+		</li>
+
+	
+	
+		<li class="" id="comment-60014">
+			<cite>Christian W.</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-60014" title="">January 5th, 2010 at 11:35 am</a> </small>
+
+			<p>I used the tuple-class in NetBeans 6.5 without any problems. Since NB 6.8 I get the<br />
+error: "type parameter * is not within its bound" as mentioned twice before.</p>
+<p>As Jason Frank says, one can delete all comparation-possibilities. I substituted:<br />
+1.<br />
+"public class Tuple&lt;First extends Comparable, Rest extends Comparable&gt; implements SeparatedAppender, Comparable&lt;Tuple&gt; {"<br />
+by<br />
+"public class Tuple implements SeparatedAppender {"</p>
+<p>2.<br />
+"public &lt;T extends Comparable&gt; Tuple&lt;T, Tuple&gt; prepend(T m) {<br />
+		return new Tuple&lt;T, Tuple&gt;(m, this);<br />
+	}"<br />
+by<br />
+"public  Tuple&lt;T, Tuple&gt; prepend(T m) {<br />
+		return new Tuple&lt;T, Tuple&gt;(m, this);<br />
+	}"<br />
+and deleted<br />
+3.<br />
+/*	public int compareTo(Tuple that) {<br />
+        int compare = this.first.compareTo(that.first);<br />
+        if (compare != 0)<br />
+        	return compare;<br />
+        else<br />
+        	return this.rest.compareTo(that.rest);<br />
+    }*/</p>
+<p>NB now compiles my project.</p>
+<p>But in order to stay compatible to all new NB versions and the original tuple-class, I need some hint how to get my project compiling without this ugly workaround. Isn't there any?</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-60635">
+			<cite>Christoph Schulz</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-60635" title="">January 12th, 2010 at 4:34 pm</a> </small>
+
+			<p>Hello,</p>
+<p>wrt. to the NetBeans compiler problem: What about specifying all arguments of the Tuple template explicitly (sorry for my C++ jargon), i.e.:</p>
+<p>public  Tuple&lt;T, Tuple &gt; prepend(T m) {<br />
+return new Tuple&lt;T, Tuple &gt;(m, this);<br />
+}</p>
+<p>Does this work?</p>
+
+		</li>
+
+	
+	
+		<li class="" id="comment-67319">
+			<cite>Erich Herz</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-67319" title="">March 19th, 2010 at 2:14 pm</a> </small>
+
+			<p>One more vote for not requiring the Tuple types to implement Comparable.  In my opinion Tuple comparison should default to using object hashCode().</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-71502">
+			<cite>victor</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-71502" title="">May 31st, 2010 at 8:08 am</a> </small>
+
+			<p>Hi, great library,</p>
+<p>But I found strange that the empty tuple does not exists. There is End but it is not a Tuple, so I can't use it where a Tuple is needed…</p>
+<p>Would be cool to have it (and maybe not really hard…)</p>
+
+		</li>
+
+	
+	
+		<li class="" id="comment-73535">
+			<cite>Aron</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-73535" title="">June 28th, 2010 at 5:13 pm</a> </small>
+
+			<p>Hello, thanks for the library.<br />
+I found it odd though, that there were no methods to update tuples, so I added them. I can email you Tuple.java if you wish. The methods are insert (opposite of extract), and setn (opposite of getn):</p>
+<p>	/**<br />
+	 * Change the first element in the tuple and return the rest.<br />
+	 * To insert all elements from the tuple, chain insert calls.<br />
+	 *<br />
+	 * @param value<br />
+	 * @return<br />
+	 */<br />
+	public Rest insert(First value) {<br />
+		first = value;<br />
+		return rest;<br />
+	}</p>
+<p>	public static &lt;T1 extends Comparable, Rest extends Comparable&gt; T1 set1(Tuple tuple, T1 value) {<br />
+		T1 result = Tuple.get1(tuple);<br />
+		tuple.first = value;<br />
+		return result;<br />
+	}</p>
+<p>	public static &lt;T1 extends Comparable, T2 extends Comparable, Rest extends Comparable&gt; T2 set2(Tuple&lt;T1, Tuple&gt; tuple, T2 value) {<br />
+		T2 result = Tuple.get2(tuple);<br />
+		tuple.rest.first = value;<br />
+		return result;<br />
+	}</p>
+<p>	public static &lt;T1 extends Comparable, T2 extends Comparable, T3 extends Comparable, Rest extends Comparable&gt; T3 set3(Tuple&lt;T1, Tuple&lt;T2, Tuple&gt;&gt; tuple, T3 value) {<br />
+		T3 result = Tuple.get3(tuple);<br />
+		tuple.rest.rest.first = value;<br />
+		return result;<br />
+	}</p>
+<p>	public static &lt;T1 extends Comparable, T2 extends Comparable, T3 extends Comparable, T4 extends Comparable, Rest extends Comparable&gt; T4 set4(Tuple&lt;T1, Tuple&lt;T2, Tuple&lt;T3, Tuple&gt;&gt;&gt; tuple, T4 value) {<br />
+		T4 result = Tuple.get4(tuple);<br />
+		tuple.rest.rest.rest.first = value;<br />
+		return result;<br />
+	}</p>
+<p>	public static &lt;T1 extends Comparable, T2 extends Comparable, T3 extends Comparable, T4 extends Comparable, T5 extends Comparable, Rest extends Comparable&gt; T5 set5(Tuple&lt;T1, Tuple&lt;T2, Tuple&lt;T3, Tuple&lt;T4, Tuple&gt;&gt;&gt;&gt; tuple, T5 value) {<br />
+		T5 result = Tuple.get5(tuple);<br />
+		tuple.rest.rest.rest.rest.first = value;<br />
+		return result;<br />
+	}</p>
+<p>	public static &lt;T1 extends Comparable, T2 extends Comparable, T3 extends Comparable, T4 extends Comparable, T5 extends Comparable, T6 extends Comparable, Rest extends Comparable&gt; T6 set6(Tuple&lt;T1, Tuple&lt;T2, Tuple&lt;T3, Tuple&lt;T4, Tuple&lt;T5, Tuple&gt;&gt;&gt;&gt;&gt; tuple, T6 value) {<br />
+		T6 result = Tuple.get6(tuple);<br />
+		tuple.rest.rest.rest.rest.rest.first = value;<br />
+		return result;<br />
+	}</p>
+<p>	public static &lt;T1 extends Comparable, T2 extends Comparable, T3 extends Comparable, T4 extends Comparable, T5 extends Comparable, T6 extends Comparable, T7 extends Comparable, Rest extends Comparable&gt; T7 set7(Tuple&lt;T1, Tuple&lt;T2, Tuple&lt;T3, Tuple&lt;T4, Tuple&lt;T5, Tuple&lt;T6, Tuple&gt;&gt;&gt;&gt;&gt;&gt; tuple, T7 value) {<br />
+		T7 result = Tuple.get7(tuple);<br />
+		tuple.rest.rest.rest.rest.rest.rest.first = value;<br />
+		return result;<br />
+	}</p>
+<p>	public static &lt;T1 extends Comparable, T2 extends Comparable, T3 extends Comparable, T4 extends Comparable, T5 extends Comparable, T6 extends Comparable, T7 extends Comparable, T8 extends Comparable, Rest extends Comparable&gt; T8 set8(Tuple&lt;T1, Tuple&lt;T2, Tuple&lt;T3, Tuple&lt;T4, Tuple&lt;T5, Tuple&lt;T6, Tuple&lt;T7, Tuple&gt;&gt;&gt;&gt;&gt;&gt;&gt; tuple, T8 value) {<br />
+		T8 result = Tuple.get8(tuple);<br />
+		tuple.rest.rest.rest.rest.rest.rest.rest.first = value;<br />
+		return result;<br />
+	}</p>
+<p>	public static &lt;T1 extends Comparable, T2 extends Comparable, T3 extends Comparable, T4 extends Comparable, T5 extends Comparable, T6 extends Comparable, T7 extends Comparable, T8 extends Comparable, T9 extends Comparable, Rest extends Comparable&gt; T9 set9(Tuple&lt;T1, Tuple&lt;T2, Tuple&lt;T3, Tuple&lt;T4, Tuple&lt;T5, Tuple&lt;T6, Tuple&lt;T7, Tuple&lt;T8, Tuple&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; tuple, T9 value) {<br />
+		T9 result = Tuple.get9(tuple);<br />
+		tuple.rest.rest.rest.rest.rest.rest.rest.rest.first = value;<br />
+		return result;<br />
+	}</p>
+<p>	public static &lt;T1 extends Comparable, T2 extends Comparable, T3 extends Comparable, T4 extends Comparable, T5 extends Comparable, T6 extends Comparable, T7 extends Comparable, T8 extends Comparable, T9 extends Comparable, T10 extends Comparable, Rest extends Comparable&gt; T10 set10(Tuple&lt;T1, Tuple&lt;T2, Tuple&lt;T3, Tuple&lt;T4, Tuple&lt;T5, Tuple&lt;T6, Tuple&lt;T7, Tuple&lt;T8, Tuple&lt;T9, Tuple&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; tuple, T10 value) {<br />
+		T10 result = Tuple.get10(tuple);<br />
+		tuple.rest.rest.rest.rest.rest.rest.rest.rest.rest.first = value;<br />
+		return result;<br />
+	}</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-80094">
+			<cite><a href='index4cfb.html?p=546' rel='external nofollow'>Adventures in Software &raquo; Blog Archive &raquo; Java Tuple update</a></cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-80094" title="">August 20th, 2010 at 2:15 pm</a> </small>
+
+			<p>[...] findCharacter returns Pair&lt;Boolean, Integer&gt;. I published the source and got a few [...]</p>
+
+		</li>
+
+	
+	
+	</ol>
+
+ 
+
+
+<h3 id="respond">Leave a Reply</h3>
+
+<p>You must be <a href="wp-login653b.html?redirect_to=http://adventuresinsoftware.com/blog/?p=43">logged in</a> to post a comment.</p>
+
+
+	
+	</div>
+		</td>
+	</tr>
+</table>
+
+<hr />
+<div id="footer">
+<!-- If you'd like to support WordPress, having the "powered by" link someone on your blog is the best way, it's our only promotion or advertising. -->
+	<p>
+		Adventures in Software is proudly powered by 
+		<a href="http://wordpress.org/">WordPress</a>
+		<br /><a href="indexd784.html?feed=rss2">Entries (RSS)</a>
+		and <a href="indexa6da.html?feed=comments-rss2">Comments (RSS)</a>.
+		<!-- 21 queries. 0.859 seconds. -->
+	</p>
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-389401-3");
+pageTracker._trackPageview();
+} catch(err) {}</script></div>
+
+<!-- Gorgeous design by Michael Heilemann - http://binarybonsai.com/kubrick/ -->
+
+		<div id="sk2-footer" style="color:#FFF; background-color:#444; padding: 3px 2px 3px 2px; border-top: #888 solid 1px;">This blog is protected by <a href="http://unknowngenius.com/blog/" title="Dave">dr Dave</a>'s <strong><a href="http://unknowngenius.com/blog/wordpress/spam-karma/" title="SK2">Spam Karma 2</a></strong>: <strong>274531</strong>  Spams eaten and counting...</div><script type="text/javascript" src="replies.js"></script>
+<script type="text/javascript" src="blogger.js"></script>
+<script type="text/javascript" src="http://twitter.com/statuses/user_timeline/michaellperry.json?callback=twitterCallback2&amp;count=5"></script>
+<script type="text/javascript" src="http://search.twitter.com/search.json?q=@michaellperry&amp;callback=twitterCallbackReplies&amp;rpp=5"></script>
+</body>
+
+<!-- Mirrored from adventuresinsoftware.com/blog/?p=43 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 Jan 2017 12:55:36 GMT -->
+</html>

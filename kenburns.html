@@ -1,0 +1,51 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+
+<!-- Mirrored from adventuresinsoftware.com/kenburns.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 Jan 2017 12:57:44 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<title>Ken Burns Slideshow</title>
+<link rel="stylesheet" type="text/css" href="burns.css">
+<style type="text/css">
+body
+{
+	background-color: black;
+}
+
+.burnsDiv
+{
+	overflow: hidden;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+}
+</style>
+</head>
+<body bgColor="black">
+<script type="text/javascript" src="burns.js">
+</script>
+<div id="buffer1" class="burnsDiv"></div>
+<div id="buffer2" class="burnsDiv"></div>
+<script type="text/javascript">
+var images = new Array(
+"pictures/DSCF4214.jpg",
+"pictures/DSCF5768.jpg",
+"pictures/DSCF7954.jpg",
+"pictures/DSC_0005.jpg",
+"pictures/DSC_0006.jpg",
+"pictures/DSC_0013.jpg",
+"pictures/DSC_0079-1.jpg",
+"pictures/DSC_0125.jpg",
+"pictures/DSC_0873.jpg"
+);
+
+randomizeList(images);
+startSlideshow(images, "buffer1", "buffer2");
+</script>
+</body>
+
+<!-- Mirrored from adventuresinsoftware.com/kenburns.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 Jan 2017 13:00:11 GMT -->
+</html>
+

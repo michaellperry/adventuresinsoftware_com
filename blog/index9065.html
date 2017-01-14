@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><!-- generator="wordpress/2.3.3" -->
+<rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	>
+<channel>
+	<title>Comments on: SQL injection attack via email address</title>
+	<link>http://adventuresinsoftware.com/blog/?p=368</link>
+	<description>Lessons learned on the road to quality computing</description>
+	<pubDate>Fri, 13 Jan 2017 12:57:06 +0000</pubDate>
+	<generator>http://wordpress.org/?v=2.3.3</generator>
+		<item>
+		<title>By: Michael L Perry</title>
+		<link>http://adventuresinsoftware.com/blog/?p=368#comment-30873</link>
+		<dc:creator>Michael L Perry</dc:creator>
+		<pubDate>Sun, 31 May 2009 16:33:43 +0000</pubDate>
+		<guid>http://adventuresinsoftware.com/blog/?p=368#comment-30873</guid>
+		<description>Thanks for the response, Patrick. It was your interview with Scott Hanselman that prompted me to check the metrics of my open source project.
+
+I'm hoping that tools and frameworks will get better at separating text from code. The fact that we put SQL into a "string" variable is a problem. The fact that we produce HTML as a stream of characters is a problem. SQL and HTML are not character strings. With the correct data typing, our libraries could constrain our actions, and properly escape the result to match the intent.
+
+BTW, I registered using a different email address, and found that my open source library is too small to get any meaningful data out of. The whole thing is just over 5,000 LOC, and all but 300 LOC are no longer relevant to most users.</description>
+		<content:encoded><![CDATA[<p>Thanks for the response, Patrick. It was your interview with Scott Hanselman that prompted me to check the metrics of my open source project.</p>
+<p>I'm hoping that tools and frameworks will get better at separating text from code. The fact that we put SQL into a "string" variable is a problem. The fact that we produce HTML as a stream of characters is a problem. SQL and HTML are not character strings. With the correct data typing, our libraries could constrain our actions, and properly escape the result to match the intent.</p>
+<p>BTW, I registered using a different email address, and found that my open source library is too small to get any meaningful data out of. The whole thing is just over 5,000 LOC, and all but 300 LOC are no longer relevant to most users.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Patrick Smacchia</title>
+		<link>http://adventuresinsoftware.com/blog/?p=368#comment-30719</link>
+		<dc:creator>Patrick Smacchia</dc:creator>
+		<pubDate>Fri, 29 May 2009 07:43:56 +0000</pubDate>
+		<guid>http://adventuresinsoftware.com/blog/?p=368#comment-30719</guid>
+		<description>I am responsible for that issue and indeed the word 'update' can be problematic.
+
+As you say we 'treat it as text, not code' user inputs, but we still estimate an email address with 'update' in it can be a potential threat.
+
+We were surprised that an ISV like us has been attacked several time, frankly who can value so badly its time to spend it for bothering us? Poor guy!
+
+But now we put in place 5 different level of defense, including both 'SQL word verification in email address' and 'treat user input as text, not code'. I understand the second 'should' discard the first, but when it comes to data of our company, I prefer not trusting blindly SQL and ADO.NET providers.</description>
+		<content:encoded><![CDATA[<p>I am responsible for that issue and indeed the word 'update' can be problematic.</p>
+<p>As you say we 'treat it as text, not code' user inputs, but we still estimate an email address with 'update' in it can be a potential threat.</p>
+<p>We were surprised that an ISV like us has been attacked several time, frankly who can value so badly its time to spend it for bothering us? Poor guy!</p>
+<p>But now we put in place 5 different level of defense, including both 'SQL word verification in email address' and 'treat user input as text, not code'. I understand the second 'should' discard the first, but when it comes to data of our company, I prefer not trusting blindly SQL and ADO.NET providers.</p>
+]]></content:encoded>
+	</item>
+</channel>
+</rss>

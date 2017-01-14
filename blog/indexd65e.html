@@ -1,0 +1,700 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+
+
+<!-- Mirrored from adventuresinsoftware.com/blog/?cat=8 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 Jan 2017 12:57:05 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>Adventures in Software   &raquo; User Interface</title>
+
+<meta name="generator" content="WordPress 2.3.3" /> <!-- leave this for stats -->
+
+<link rel="stylesheet" href="wp-content/themes/ais2/style.css" type="text/css" media="screen" />
+<link rel="alternate" type="application/rss+xml" title="Adventures in Software RSS Feed" href="indexd784.html?feed=rss2" />
+<link rel="pingback" href="xmlrpc.html" />
+    <script type="text/javascript">
+        function onSilverlightError(sender, args) {
+            var appSource = "";
+            if (sender != null && sender != 0) {
+              appSource = sender.getHost().Source;
+            }
+            
+            var errorType = args.ErrorType;
+            var iErrorCode = args.ErrorCode;
+
+            if (errorType == "ImageError" || errorType == "MediaError") {
+              return;
+            }
+
+            var errMsg = "Unhandled Error in Silverlight Application " +  appSource + "\n" ;
+
+            errMsg += "Code: "+ iErrorCode + "    \n";
+            errMsg += "Category: " + errorType + "       \n";
+            errMsg += "Message: " + args.ErrorMessage + "     \n";
+
+            if (errorType == "ParserError") {
+                errMsg += "File: " + args.xamlFile + "     \n";
+                errMsg += "Line: " + args.lineNumber + "     \n";
+                errMsg += "Position: " + args.charPosition + "     \n";
+            }
+            else if (errorType == "RuntimeError") {           
+                if (args.lineNumber != 0) {
+                    errMsg += "Line: " + args.lineNumber + "     \n";
+                    errMsg += "Position: " +  args.charPosition + "     \n";
+                }
+                errMsg += "MethodName: " + args.methodName + "     \n";
+            }
+
+            throw new Error(errMsg);
+        }
+    </script>
+
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc0db0.php?rsd" />
+ <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="wp-includes/wlwmanifest.xml" /> <style type='text/css'>
+<!--#header { background: url('wp-content/themes/ais2/images/header-imgae03.html?upper=A7A73F&amp;lower=77773F') no-repeat bottom center; }
+--></style>
+</head>
+<body>
+<div id="page">
+
+<div class="aisTopBar">
+	<form method="get" id="searchform" action="http://adventuresinsoftware.com/blog/">
+<div>
+<a href="indexd784.html?feed=rss2"><img src="../images/feed-icon-28x28.png" border="0"></a>
+<input type="text" value="" name="s" id="s" />
+<input type="submit" id="searchsubmit" value="Search" />
+</div>
+</form>
+</div>
+
+<div class="aisHeaderImageRight">
+	<div class="aisHeaderImage">
+	<div class="aisHeaderCornerRight">
+	<div class="aisHeaderCornerLeft">
+	<div class="aisImageBar">
+	<div class="aisSubSites">
+		<a href="index.html" class="aisSubSiteLink"><span class="aisSiteTabRight"><span class="aisSiteTabLeft"><span class="aisSiteTab">
+			home</span></span></span></a>
+		<a class="aisSubSiteLink" href="indexb60a.html?cat=27"><span class="aisSiteTabRight"><span class="aisSiteTabLeft"><span class="aisSiteTab">
+			historic modeling</span></span></span></a>
+		<a class="aisSubSiteLink" href="indexa88f.html?cat=36"><span class="aisSiteTabRight"><span class="aisSiteTabLeft"><span class="aisSiteTab">
+			update controls</span></span></span></a>
+		<a href="index2d79.html?cat=26" class="aisSubSiteLink"><span class="aisSiteTabRight"><span class="aisSiteTabLeft"><span class="aisSiteTab">
+			degrees of freedom</span></span></span></a>
+		<a class="aisSubSiteLink" href="indexba53.html?page_id=2"><span class="aisSiteTabRight"><span class="aisSiteTabLeft"><span class="aisSiteTab">
+			about us</span></span></span></a>
+
+	</div>
+	</div>
+	</div>
+	</div>
+	</div>
+</div>
+
+<table style="width: 100%" cellspacing="0" cellpadding="0">
+	<tr valign="top">
+		<td width="210px">
+<div id="sidebar">
+<div class="aisLeftColumnFill">
+<div class="aisLeftColumnBottom">
+<div class="aisLeftColumnTop">
+<div id="twitter_div" class="aisLeftNav">
+<h2 class="sidebar-title">Twitter Updates</h2>
+<ul id="twitter_update_list"></ul>
+<a href="http://twitter.com/michaellperry" id="follow">Follow me</a>
+</div>
+<div id="twitter_reply_div" class="aisLeftNav">
+<h2 class="sidebar-title">Twitter Replies</h2>
+<ul id="twitter_reply_list"></ul>
+</div>
+
+<div class="aisLeftNav">
+<a href='http://ineta.org/Speakers/SearchCommunitySpeakers.aspx?SpeakerId=c5110e21-9243-461b-a464-a6548524e885'><img alt='INETA Community Speakers Program' border='0' src='../../www.ineta.org/images/OfficialLogos/InetaCommunitySpeakersRequestMe.html' /></a>
+</div>
+
+<div class="aisLeftNav">
+	<li class="pagenav"><h2>Pages</h2><ul><li class="page_item page-item-2"><a href="indexba53.html?page_id=2" title="About Us">About Us</a></li>
+<li class="page_item page-item-210"><a href="index6ae3.html?page_id=210" title="Templates">Templates</a></li>
+</ul></li></div>
+
+<div class="aisLeftNav">
+<h2>Archives</h2>
+<ul>
+	<li><a href='indexb4d5.html?m=201110' title='October 2011'>October 2011</a></li>
+	<li><a href='indexc61a.html?m=201106' title='June 2011'>June 2011</a></li>
+	<li><a href='indexa80d.html?m=201105' title='May 2011'>May 2011</a></li>
+	<li><a href='index512b.html?m=201104' title='April 2011'>April 2011</a></li>
+	<li><a href='index08fb.html?m=201103' title='March 2011'>March 2011</a></li>
+	<li><a href='index52f4.html?m=201102' title='February 2011'>February 2011</a></li>
+	<li><a href='index74f1.html?m=201101' title='January 2011'>January 2011</a></li>
+	<li><a href='index8956.html?m=201012' title='December 2010'>December 2010</a></li>
+	<li><a href='indexa1aa.html?m=201011' title='November 2010'>November 2010</a></li>
+	<li><a href='indexe3d5.html?m=201010' title='October 2010'>October 2010</a></li>
+	<li><a href='index9ab9.html?m=201009' title='September 2010'>September 2010</a></li>
+	<li><a href='index1ff0.html?m=201008' title='August 2010'>August 2010</a></li>
+	<li><a href='index9f11.html?m=201007' title='July 2010'>July 2010</a></li>
+	<li><a href='index31f0.html?m=201006' title='June 2010'>June 2010</a></li>
+	<li><a href='indexd189.html?m=201005' title='May 2010'>May 2010</a></li>
+	<li><a href='indexb5c0.html?m=201004' title='April 2010'>April 2010</a></li>
+	<li><a href='indexf258.html?m=201003' title='March 2010'>March 2010</a></li>
+	<li><a href='index6e30.html?m=201002' title='February 2010'>February 2010</a></li>
+	<li><a href='index6b19.html?m=201001' title='January 2010'>January 2010</a></li>
+	<li><a href='index5c0a.html?m=200912' title='December 2009'>December 2009</a></li>
+	<li><a href='index8f62.html?m=200911' title='November 2009'>November 2009</a></li>
+	<li><a href='index451d.html?m=200910' title='October 2009'>October 2009</a></li>
+	<li><a href='index3e04.html?m=200909' title='September 2009'>September 2009</a></li>
+	<li><a href='index425a.html?m=200908' title='August 2009'>August 2009</a></li>
+	<li><a href='index9907.html?m=200907' title='July 2009'>July 2009</a></li>
+	<li><a href='index3104.html?m=200906' title='June 2009'>June 2009</a></li>
+	<li><a href='indexc36d.html?m=200905' title='May 2009'>May 2009</a></li>
+	<li><a href='index17e8.html?m=200904' title='April 2009'>April 2009</a></li>
+	<li><a href='index10a5.html?m=200903' title='March 2009'>March 2009</a></li>
+	<li><a href='index8988.html?m=200902' title='February 2009'>February 2009</a></li>
+	<li><a href='index1419.html?m=200901' title='January 2009'>January 2009</a></li>
+	<li><a href='index7866.html?m=200812' title='December 2008'>December 2008</a></li>
+	<li><a href='index55f6.html?m=200811' title='November 2008'>November 2008</a></li>
+	<li><a href='indexa7bc.html?m=200810' title='October 2008'>October 2008</a></li>
+	<li><a href='indexe77c.html?m=200809' title='September 2008'>September 2008</a></li>
+	<li><a href='indexcffc.html?m=200808' title='August 2008'>August 2008</a></li>
+	<li><a href='index0e62.html?m=200807' title='July 2008'>July 2008</a></li>
+	<li><a href='indexfda7.html?m=200806' title='June 2008'>June 2008</a></li>
+	<li><a href='index7d64.html?m=200805' title='May 2008'>May 2008</a></li>
+	<li><a href='index94dd.html?m=200804' title='April 2008'>April 2008</a></li>
+	<li><a href='index9631.html?m=200803' title='March 2008'>March 2008</a></li>
+	<li><a href='indexdd52.html?m=200802' title='February 2008'>February 2008</a></li>
+	<li><a href='index21ee.html?m=200801' title='January 2008'>January 2008</a></li>
+	<li><a href='index363c.html?m=200712' title='December 2007'>December 2007</a></li>
+	<li><a href='index7493.html?m=200711' title='November 2007'>November 2007</a></li>
+	<li><a href='index93a7.html?m=200710' title='October 2007'>October 2007</a></li>
+	<li><a href='index4ca8.html?m=200709' title='September 2007'>September 2007</a></li>
+	<li><a href='index6124.html?m=200708' title='August 2007'>August 2007</a></li>
+	<li><a href='index6013.html?m=200707' title='July 2007'>July 2007</a></li>
+	<li><a href='index2ab6.html?m=200706' title='June 2007'>June 2007</a></li>
+	<li><a href='index44f0.html?m=200705' title='May 2007'>May 2007</a></li>
+	<li><a href='indexf0b4.html?m=200704' title='April 2007'>April 2007</a></li>
+	<li><a href='index481d.html?m=200703' title='March 2007'>March 2007</a></li>
+	<li><a href='indexcbea.html?m=200702' title='February 2007'>February 2007</a></li>
+	<li><a href='index9cdc.html?m=200701' title='January 2007'>January 2007</a></li>
+	<li><a href='index3ea4.html?m=200612' title='December 2006'>December 2006</a></li>
+	<li><a href='index67ca.html?m=200611' title='November 2006'>November 2006</a></li>
+	<li><a href='indexff49.html?m=200610' title='October 2006'>October 2006</a></li>
+	<li><a href='index611c.html?m=200609' title='September 2006'>September 2006</a></li>
+	<li><a href='index9a21.html?m=200608' title='August 2006'>August 2006</a></li>
+	<li><a href='index3ee9.html?m=200607' title='July 2006'>July 2006</a></li>
+	<li><a href='indexe13a.html?m=200606' title='June 2006'>June 2006</a></li>
+</ul>
+</div>
+
+<div class="aisLeftNav">
+	</div>
+
+<div class="aisLeftNav">
+<h2>Books</h2>
+<iframe src="http://rcm.amazon.com/e/cm?t=adventures0d2-20&amp;o=1&amp;p=8&amp;l=as1&amp;asins=0764526413&amp;fc1=000000&amp;IS2=1&amp;lt1=_blank&amp;lc1=0000ff&amp;bc1=000000&amp;bg1=ffffff&amp;f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" name="I5" id="I5"></iframe>
+<br/>
+<iframe src="http://rcm.amazon.com/e/cm?t=adventures0d2-20&amp;o=1&amp;p=8&amp;l=as1&amp;asins=0201633612&amp;fc1=000000&amp;IS2=1&amp;lt1=_blank&amp;lc1=0000ff&amp;bc1=000000&amp;bg1=ffffff&amp;f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" name="I6" id="I6"></iframe>
+<br/>
+<iframe src="http://rcm.amazon.com/e/cm?t=adventures0d2-20&amp;o=1&amp;p=8&amp;l=as1&amp;asins=0136291554&amp;fc1=000000&amp;IS2=1&amp;lt1=_blank&amp;lc1=0000ff&amp;bc1=000000&amp;bg1=ffffff&amp;f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" name="I7" id="I7"></iframe>
+<br/>
+<iframe src="http://rcm.amazon.com/e/cm?t=adventures0d2-20&amp;o=1&amp;p=8&amp;l=as1&amp;asins=1888009195&amp;fc1=000000&amp;IS2=1&amp;lt1=_blank&amp;lc1=0000ff&amp;bc1=000000&amp;bg1=ffffff&amp;f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" name="I8" id="I8"></iframe>
+</div>
+<div class="aisLeftNav">
+<h2>Meta</h2>
+<ul>
+		<li><a href="wp-login.html">Login</a></li>
+	<li><a href="http://validator.w3.org/check/referer" title="This page validates as XHTML 1.0 Transitional">Valid <abbr title="eXtensible HyperText Markup Language">XHTML</abbr></a></li>
+	<li><a href="http://gmpg.org/xfn/"><abbr title="XHTML Friends Network">XFN</abbr></a></li>
+	<li><a href="http://wordpress.org/" title="Powered by WordPress, state-of-the-art semantic personal publishing platform.">WordPress</a></li>
+	</ul>
+</div>
+<div class="aisLeftContent">
+<h2>Community</h2>
+<ul>
+	<script type="text/javascript" src="../../localhost/embed/92q2bbma.js"></script>
+</ul>
+</div>
+
+</div></div></div>
+</div>		</td>
+		<td>
+
+	<div id="content" class="narrowcolumn">
+
+		
+		 		<h2 class="pagetitle">Archive for the &#8216;User Interface&#8217; Category</h2>
+
+ 	  
+
+		<div class="navigation">
+			<div class="alignleft"><a href="index85c8.html?cat=8&amp;paged=2">&laquo; Previous Entries</a></div>
+			<div class="alignright"></div>
+		</div>
+
+				<div class="post">
+				<h3 id="post-376"><a href="index264a.html?p=376" rel="bookmark" title="Permanent Link to Structure of a WPF view">Structure of a WPF view</a></h3>
+				<small>Friday, June 5th, 2009</small>
+
+				<div class="entry">
+					<p><a href="wp-content/uploads/2009/06/commuter-view-in-blend.png"><img style="border-right: 0px; border-top: 0px; border-left: 0px; border-bottom: 0px" height="455" alt="Commuter View in Blend" src="wp-content/uploads/2009/06/commuter-view-in-blend-thumb.png" width="579" align="right" border="0"></a> The <a href="index50ca.html?p=345">Commuter View Model interface</a> is written. The next step is to hook it to a view.</p>
+<p>I like to think of the view as just a convenience. If the user could access properties directly, all they would need is the View Model interface. Thinking about the View Model this way helps me ensure that it is complete and targeted.</p>
+<p>So I created the interface as a way of describing what would be on the view. A designer given the interface and a wireframe could build a view. Not having a designer handy, I did it myself. Here's how.</p>
+<p><strong>Create a mock</strong><br />The first step was to create a mock implementation of the View Model interface. In truth, it's not just one interface; it's a set of interrelated interfaces. So I have interrelated mocks. Most of them are simple data access objects: collections of properties with no behavior. Create a read/write property for every property of the interface, even if the interface property is read-only. So for the IPodcastEpisode interface:</p>
+<pre><span style="color: blue">public</span> <span style="color: blue">interface</span> IPodcastEpisode
+{
+    <span style="color: blue">string</span> Name { <span style="color: blue">get</span>; }
+    <span style="color: blue">string</span> PodcastName { <span style="color: blue">get</span>; }
+    <span style="color: blue">string</span> DurationAsString { <span style="color: blue">get</span>; }
+}
+</pre>
+<p>I created a PodcastEpisodeSample class:</p>
+<pre><span style="color: blue">public</span> <span style="color: blue">class</span> PodcastEpisodeSample : IPodcastEpisode
+{
+    <span style="color: blue">public</span> <span style="color: blue">string</span> Name { <span style="color: blue">get</span>; <span style="color: blue">set</span>; }
+    <span style="color: blue">public</span> <span style="color: blue">string</span> PodcastName { <span style="color: blue">get</span>; <span style="color: blue">set</span>; }
+    <span style="color: blue">public</span> <span style="color: blue">string</span> DurationAsString { <span style="color: blue">get</span>; <span style="color: blue">set</span>; }
+}
+</pre>
+<p>The root class has a little more to it. It has to initialize itself and its children in its constructor. I don't like putting code in a constructor, but you don't have another chance to set your properties.</p>
+<pre><span style="color: blue">public</span> <span style="color: blue">class</span> CommuterViewModelSample : ICommuterViewModel
+{
+    <span style="color: blue">public</span> CommuterViewModelSample()
+    {
+        <span style="color: green">// Set up some sample data.</span>
+        List&lt;IPlaylist&gt; playlists = <span style="color: blue">new</span> List&lt;IPlaylist&gt;();
+        playlists.Add(<span style="color: blue">new</span> PlaylistSample() { Name = <span style="color: maroon">"Favorites"</span> });
+        PlaylistSample commutePlaylist = <span style="color: blue">new</span> PlaylistSample() { Name = <span style="color: maroon">"Commute"</span> };
+        playlists.Add(commutePlaylist);
+        playlists.Add(<span style="color: blue">new</span> PlaylistSample() { Name = <span style="color: maroon">"Energy Songs"</span> });
+        Playlists = playlists;
+        SelectedPlaylist = commutePlaylist;
+
+        List&lt;IPodcast&gt; podcasts = <span style="color: blue">new</span> List&lt;IPodcast&gt;();
+        podcasts.Add(<span style="color: blue">new</span> PodcastViewModel(<span style="color: blue">new</span> Podcast() { Name = <span style="color: maroon">".NET Rocks!"</span>, Selected = <span style="color: maroon">false</span>, Rank = <span style="color: maroon">0</span> }));
+        podcasts.Add(<span style="color: blue">new</span> PodcastViewModel(<span style="color: blue">new</span> Podcast() { Name = <span style="color: maroon">"Hanselminutes"</span>, Selected = <span style="color: maroon">true</span>, Rank = <span style="color: maroon">3</span> }));
+        podcasts.Add(<span style="color: blue">new</span> PodcastViewModel(<span style="color: blue">new</span> Podcast() { Name = <span style="color: maroon">"Deep Fried Bytes"</span>, Selected = <span style="color: maroon">true</span>, Rank = <span style="color: maroon">4</span> }));
+        podcasts.Add(<span style="color: blue">new</span> PodcastViewModel(<span style="color: blue">new</span> Podcast() { Name = <span style="color: maroon">"They Might Be Giants"</span>, Selected = <span style="color: maroon">true</span>, Rank = <span style="color: maroon">5</span> }));
+        Podcasts = podcasts;
+
+        List&lt;IPodcastEpisode&gt; queue = <span style="color: blue">new</span> List&lt;IPodcastEpisode&gt;();
+        queue.Add(<span style="color: blue">new</span> PodcastEpisodeSample() { Name = <span style="color: maroon">"5-A"</span>, PodcastName = <span style="color: maroon">"They Might Be Giants"</span>, DurationAsString = <span style="color: maroon">"9:30"</span> });
+        queue.Add(<span style="color: blue">new</span> PodcastEpisodeSample() { Name = <span style="color: maroon">"JavaFX and the Web's Four Virtual Machines"</span>, PodcastName = <span style="color: maroon">"Hanselminutes"</span>, DurationAsString = <span style="color: maroon">"40:24"</span> });
+        PodcastEpisodeSample deepFriedBytesEpisode = <span style="color: blue">new</span> PodcastEpisodeSample() { Name = <span style="color: maroon">"New Ideas for the Web with Thomas Krotkiewski"</span>, PodcastName = <span style="color: maroon">"Deep Fried Bytes"</span>, DurationAsString = <span style="color: maroon">"53:15"</span> };
+        queue.Add(deepFriedBytesEpisode);
+        Queue = queue;
+        SelectedEpisode = deepFriedBytesEpisode;
+
+        TotalDurationAsString = <span style="color: maroon">"1:43:09"</span>;
+    }
+
+    <span style="color: blue">public</span> IEnumerable&lt;IPlaylist&gt; Playlists { <span style="color: blue">get</span>; <span style="color: blue">set</span>; }
+    <span style="color: blue">public</span> IPlaylist SelectedPlaylist { <span style="color: blue">get</span>; <span style="color: blue">set</span>; }
+    <span style="color: blue">public</span> IEnumerable&lt;IPodcast&gt; Podcasts { <span style="color: blue">get</span>; <span style="color: blue">set</span>; }
+    <span style="color: blue">public</span> IEnumerable&lt;IPodcastEpisode&gt; Queue { <span style="color: blue">get</span>; <span style="color: blue">set</span>; }
+    <span style="color: blue">public</span> IPodcastEpisode SelectedEpisode { <span style="color: blue">get</span>; <span style="color: blue">set</span>; }
+    <span style="color: blue">public</span> <span style="color: blue">string</span> TotalDurationAsString { <span style="color: blue">get</span>; <span style="color: blue">set</span>; }
+    <span style="color: blue">public</span> ICommand Skip { <span style="color: blue">get</span>; <span style="color: blue">set</span>; }
+}
+</pre>
+<p>You can hook up the mock in Blend. In the Window's properties, press the "New" button next to DataContext. Select the CommuterViewModelSample class from the solution. Now Blend will show the data from your mock object while you edit the view.</p>
+<p><strong>Overall structure: Grid</strong><br />The structure of the Window itself is defined by a Grid. Grid is the best container for a window, because it supports "star" sizing. You can be specific about the size of some components, and then leave the rest of the real estate to be carved up proportionally. A Grid is the default layout root that Blend puts into a window, but if you have something else there (like a StackPanel for example), you can right-click on it and select "Change Layout Type".</p>
+<p>Select the Grid in the object pane (where you right-clicked to change the layout type) and expand the layout properties. Hit the ellipsis button to set the RowDefinitions property. For Commuter I added 8 rows. I set the height of all but one to "Auto"; the remaining one I left at "1 Star". This one row will resize with the windows, and the others will be the height of their contents.</p>
+<p>I populated the rows with controls, alternating between TextBlocks for labels and other controls for inputs. To tell you the truth, it was easier to drop into XML for this part. If you've set the row sizes to "Auto", then there is no space into which to drop controls. And if you haven't you spend a lot of time resetting Margin, HorizontalAlignment, and VerticalAlignment after you drag a control into the right row. Here's the structure so far.</p>
+<pre><span style="color: blue">&lt;</span><span style="color: maroon">Window</span>
+    <span style="color: red">xmlns</span>="<span style="color: blue">http://schemas.microsoft.com/winfx/2006/xaml/presentation</span>"
+    <span style="color: red">xmlns:x</span>="<span style="color: blue">http://schemas.microsoft.com/winfx/2006/xaml</span>"
+    <span style="color: red">x:Class</span>="<span style="color: blue">Commuter.Window1</span>"
+    <span style="color: red">Title</span>="<span style="color: blue">Commuter</span>" <span style="color: red">Height</span>="<span style="color: blue">420</span>" <span style="color: red">Width</span>="<span style="color: blue">540</span>" <span style="color: red">xmlns:d</span>="<span style="color: blue">http://schemas.microsoft.com/expression/blend/2008</span>" <span style="color: red">xmlns:mc</span>="<span style="color: blue">http://schemas.openxmlformats.org/markup-compatibility/2006</span>" <span style="color: red">mc:Ignorable</span>="<span style="color: blue">d</span>" <span style="color: red">xmlns:Commuter</span>="<span style="color: blue">clr-namespace:Commuter</span>"<span style="color: blue">&gt;</span>
+	<span style="color: blue">&lt;</span><span style="color: maroon">Window.DataContext</span><span style="color: blue">&gt;</span>
+		<span style="color: blue">&lt;</span><span style="color: maroon">Commuter:CommuterViewModelSample/</span><span style="color: blue">&gt;</span>
+	<span style="color: blue">&lt;</span>/<span style="color: maroon">Window.DataContext</span><span style="color: blue">&gt;</span>
+    <span style="color: blue">&lt;</span><span style="color: maroon">Grid</span><span style="color: blue">&gt;</span>
+    	<span style="color: blue">&lt;</span><span style="color: maroon">Grid.RowDefinitions</span><span style="color: blue">&gt;</span>
+    		<span style="color: blue">&lt;</span><span style="color: maroon">RowDefinition</span> <span style="color: red">Height</span>="<span style="color: blue">Auto</span>"/<span style="color: blue">&gt;</span>
+    		<span style="color: blue">&lt;</span><span style="color: maroon">RowDefinition</span> <span style="color: red">Height</span>="<span style="color: blue">Auto</span>"/<span style="color: blue">&gt;</span>
+    		<span style="color: blue">&lt;</span><span style="color: maroon">RowDefinition</span> <span style="color: red">Height</span>="<span style="color: blue">Auto</span>"/<span style="color: blue">&gt;</span>
+    		<span style="color: blue">&lt;</span><span style="color: maroon">RowDefinition</span> <span style="color: red">Height</span>="<span style="color: blue">Auto</span>"/<span style="color: blue">&gt;</span>
+    		<span style="color: blue">&lt;</span><span style="color: maroon">RowDefinition</span> <span style="color: red">Height</span>="<span style="color: blue">Auto</span>"/<span style="color: blue">&gt;</span>
+    		<span style="color: blue">&lt;</span><span style="color: maroon">RowDefinition</span> <span style="color: red">Height</span>="<span style="color: blue">*</span>"/<span style="color: blue">&gt;</span>
+    		<span style="color: blue">&lt;</span><span style="color: maroon">RowDefinition</span> <span style="color: red">Height</span>="<span style="color: blue">Auto</span>"/<span style="color: blue">&gt;</span>
+    		<span style="color: blue">&lt;</span><span style="color: maroon">RowDefinition</span> <span style="color: red">Height</span>="<span style="color: blue">Auto</span>"/<span style="color: blue">&gt;</span>
+    	<span style="color: blue">&lt;</span>/<span style="color: maroon">Grid.RowDefinitions</span><span style="color: blue">&gt;</span>
+	<span style="color: blue">&lt;</span>/<span style="color: maroon">Grid</span><span style="color: blue">&gt;</span>
+<span style="color: blue">&lt;</span>/<span style="color: maroon">Window</span><span style="color: blue">&gt;</span>
+</pre>
+<p><strong>Non-resizeable list: ListBox of Grid</strong><br />The Podcasts list contains for each podcast a selection box, rating buttons, and the name of the podcast. The selection box and rating buttons are all fixed width. The only thing that varies is the width of the name. This sounds like a job for Grid again. The buttons can assume the width of their contents ("Auto"), while the name can consume all remaining space ("1 Star").</p>
+<p>I dropped a ListBox into the appropriate row and set its Height property to a number I liked. Dragging the handle didn't do the right thing, because Blend couldn't tell whether I wanted to resize the row or not. When the property is set explicitly, it's obvious what you intend.</p>
+<p>The next step was to bind the ItemsSource to the Podcasts property of the View Model. Click on the little gray dot to the right of the ItemsSource property and select "Data Binding". You'll want the "Explicit Data Context" tab, though I'm not sure why it's called that. You're using the DataContext inherited from the parent Window. Open up the View Model object and select the collection you want to show. I chose the Podcasts property.</p>
+<p>Now you need to define how each item in the list looks. Right-click on the ListBox and select "Edit Control Parts (Template)", "Create Empty". Give the template an appropriate name (like PodcastsTemplate), leave "This Window" selected, and hit "OK". This creates a data template resource within the Window itself. If you had created it in the Application, it could be shared among windows. Since I don't see a need for that, I kept it local.</p>
+<p>I'm not sure why this is called a "data template". It seems that it should be called a "view template". It's not a template for the data: that's defined by the bound interface property. Anyway...</p>
+<p><a href="wp-content/uploads/2009/06/back-button.png"><img style="border-right: 0px; border-top: 0px; border-left: 0px; border-bottom: 0px" height="155" alt="Back Button" src="wp-content/uploads/2009/06/back-button-thumb.png" width="214" align="right" border="0"></a> From here, you can use a Grid layout just like you did for the Window, but set the ColumnDefinitions instead of the RowDefinitions. When you're done, click the button in the picture on the right to go back to the window. I can't tell you how long it took me to discover this thing.</p>
+<p>You may notice that each of the rows is squashed at this point. Set the HorizontalContentAlignment property to "Stretch" to fix this.</p>
+<p>Here's the resulting XAML.</p>
+<pre><span style="color: blue">&lt;</span><span style="color: maroon">DataTemplate</span> <span style="color: red">x:Key</span>="<span style="color: blue">PodcastsTemplate</span>"<span style="color: blue">&gt;</span>
+    <span style="color: blue">&lt;</span><span style="color: maroon">Grid</span> <span style="color: red">Height</span>="<span style="color: blue">18</span>"<span style="color: blue">&gt;</span>
+        <span style="color: blue">&lt;</span><span style="color: maroon">Grid.ColumnDefinitions</span><span style="color: blue">&gt;</span>
+            <span style="color: blue">&lt;</span><span style="color: maroon">ColumnDefinition</span> <span style="color: red">Width</span>="<span style="color: blue">16</span>"/<span style="color: blue">&gt;</span>
+            <span style="color: blue">&lt;</span><span style="color: maroon">ColumnDefinition</span> <span style="color: red">Width</span>="<span style="color: blue">*</span>"/<span style="color: blue">&gt;</span>
+            <span style="color: blue">&lt;</span><span style="color: maroon">ColumnDefinition</span> <span style="color: red">Width</span>="<span style="color: blue">38</span>"/<span style="color: blue">&gt;</span>
+            <span style="color: blue">&lt;</span><span style="color: maroon">ColumnDefinition</span> <span style="color: red">Width</span>="<span style="color: blue">38</span>"/<span style="color: blue">&gt;</span>
+            <span style="color: blue">&lt;</span><span style="color: maroon">ColumnDefinition</span> <span style="color: red">Width</span>="<span style="color: blue">38</span>"/<span style="color: blue">&gt;</span>
+            <span style="color: blue">&lt;</span><span style="color: maroon">ColumnDefinition</span> <span style="color: red">Width</span>="<span style="color: blue">38</span>"/<span style="color: blue">&gt;</span>
+            <span style="color: blue">&lt;</span><span style="color: maroon">ColumnDefinition</span> <span style="color: red">Width</span>="<span style="color: blue">38</span>"/<span style="color: blue">&gt;</span>
+        <span style="color: blue">&lt;</span>/<span style="color: maroon">Grid.ColumnDefinitions</span><span style="color: blue">&gt;</span>
+        <span style="color: blue">&lt;</span><span style="color: maroon">CheckBox</span> <span style="color: red">Width</span>="<span style="color: blue">13</span>" <span style="color: red">VerticalAlignment</span>="<span style="color: blue">Center</span>" <span style="color: red">Grid.Column</span>="<span style="color: blue">0</span>"/<span style="color: blue">&gt;</span>
+        <span style="color: blue">&lt;</span><span style="color: maroon">TextBlock</span> <span style="color: red">Width</span>="<span style="color: blue">Auto</span>" <span style="color: red">Text</span>="<span style="color: blue">{Binding Path=Name, Mode=Default}</span>" <span style="color: red">Grid.Column</span>="<span style="color: blue">1</span>" <span style="color: red">VerticalAlignment</span>="<span style="color: blue">Center</span>"/<span style="color: blue">&gt;</span>
+        <span style="color: blue">&lt;</span><span style="color: maroon">CheckBox</span> <span style="color: red">Grid.Column</span>="<span style="color: blue">2</span>" <span style="color: red">Template</span>="<span style="color: blue">{DynamicResource CarCheckBox}</span>" <span style="color: red">IsChecked</span>="<span style="color: blue">{Binding Path=Rank1, Mode=Default}</span>"/<span style="color: blue">&gt;</span>
+        <span style="color: blue">&lt;</span><span style="color: maroon">CheckBox</span> <span style="color: red">Grid.Column</span>="<span style="color: blue">3</span>" <span style="color: red">Template</span>="<span style="color: blue">{DynamicResource CarCheckBox}</span>" <span style="color: red">IsChecked</span>="<span style="color: blue">{Binding Path=Rank2, Mode=Default}</span>"/<span style="color: blue">&gt;</span>
+        <span style="color: blue">&lt;</span><span style="color: maroon">CheckBox</span> <span style="color: red">Grid.Column</span>="<span style="color: blue">4</span>" <span style="color: red">Template</span>="<span style="color: blue">{DynamicResource CarCheckBox}</span>" <span style="color: red">IsChecked</span>="<span style="color: blue">{Binding Path=Rank3, Mode=Default}</span>"/<span style="color: blue">&gt;</span>
+        <span style="color: blue">&lt;</span><span style="color: maroon">CheckBox</span> <span style="color: red">Grid.Column</span>="<span style="color: blue">5</span>" <span style="color: red">Template</span>="<span style="color: blue">{DynamicResource CarCheckBox}</span>" <span style="color: red">IsChecked</span>="<span style="color: blue">{Binding Path=Rank4, Mode=Default}</span>"/<span style="color: blue">&gt;</span>
+        <span style="color: blue">&lt;</span><span style="color: maroon">CheckBox</span> <span style="color: red">Grid.Column</span>="<span style="color: blue">6</span>" <span style="color: red">Template</span>="<span style="color: blue">{DynamicResource CarCheckBox}</span>" <span style="color: red">IsChecked</span>="<span style="color: blue">{Binding Path=Rank5, Mode=Default}</span>"/<span style="color: blue">&gt;</span>
+    <span style="color: blue">&lt;</span>/<span style="color: maroon">Grid</span><span style="color: blue">&gt;</span>
+<span style="color: blue">&lt;</span>/<span style="color: maroon">DataTemplate</span><span style="color: blue">&gt;</span>
+...
+<span style="color: blue">&lt;</span><span style="color: maroon">ListBox</span> <span style="color: red">ItemsSource</span>="<span style="color: blue">{Binding Path=Podcasts, Mode=Default}</span>" <span style="color: red">ItemTemplate</span>="<span style="color: blue">{DynamicResource PodcastsTemplate}</span>" <span style="color: red">HorizontalContentAlignment</span>="<span style="color: blue">Stretch</span>" <span style="color: red">Height</span>="<span style="color: blue">76</span>" <span style="color: red">Grid.Row</span>="<span style="color: blue">3</span>"/<span style="color: blue">&gt;</span></pre>
+<p><strong>Resizable list: ListView</strong><br />The list of episodes contains three string columns. It makes sense to let the user individually resize these, unlike the single text field among a bunch of fixed-width buttons. So I decided on a ListView for this control.</p>
+<p>You'll probably have to click the chevrons on the bottom of the toolbar to find the ListView tool. It's not one that's visible out-of-the-box. Set the ItemsSource just as before, But this time, rather than defining a data template, you need to set the View. Expand the "View" property hiding in "Miscellaneous". Click on the "Columns" button to add three columns. Set the Header property and bind the DisplayMemberBinding.</p>
+<p>Here's one frustrating part of Blend. Even though we've bound the ItemsSource, Blend presents us with the properties of the CommuterViewModelSample. It should be able to recognize that the ItemsSource is a collection of IPodcastEpisode and give us the properties of that interface. Since it can't we just have to manually enter a path expression. Check the box at the bottom and enter the property name.</p>
+<p><a href="wp-content/uploads/2009/06/use-custom-path-expression.png"><img style="border-right: 0px; border-top: 0px; border-left: 0px; border-bottom: 0px" height="104" alt="Use custom path expression" src="wp-content/uploads/2009/06/use-custom-path-expression-thumb.png" width="600" border="0"></a> </p>
+<pre><span style="color: blue">&lt;</span><span style="color: maroon">ListView</span> <span style="color: red">ItemsSource</span>="<span style="color: blue">{Binding Path=Queue, Mode=Default}</span>" <span style="color: red">SelectedItem</span>="<span style="color: blue">{Binding Path=SelectedEpisode, Mode=Default}</span>" <span style="color: red">Grid.Row</span>="<span style="color: blue">5</span>" <span style="color: red">HorizontalContentAlignment</span>="<span style="color: blue">Stretch</span>"<span style="color: blue">&gt;</span>
+    <span style="color: blue">&lt;</span><span style="color: maroon">ListView.View</span><span style="color: blue">&gt;</span>
+        <span style="color: blue">&lt;</span><span style="color: maroon">GridView</span><span style="color: blue">&gt;</span>
+            <span style="color: blue">&lt;</span><span style="color: maroon">GridViewColumn</span> <span style="color: red">Width</span>="<span style="color: blue">300</span>" <span style="color: red">Header</span>="<span style="color: blue">Name</span>" <span style="color: red">DisplayMemberBinding</span>="<span style="color: blue">{Binding Name}</span>"/<span style="color: blue">&gt;</span>
+            <span style="color: blue">&lt;</span><span style="color: maroon">GridViewColumn</span> <span style="color: red">Width</span>="<span style="color: blue">140</span>" <span style="color: red">Header</span>="<span style="color: blue">Podcast</span>" <span style="color: red">DisplayMemberBinding</span>="<span style="color: blue">{Binding PodcastName}</span>"/<span style="color: blue">&gt;</span>
+            <span style="color: blue">&lt;</span><span style="color: maroon">GridViewColumn</span> <span style="color: red">Width</span>="<span style="color: blue">50</span>" <span style="color: red">Header</span>="<span style="color: blue">Duration</span>" <span style="color: red">DisplayMemberBinding</span>="<span style="color: blue">{Binding DurationAsString}</span>"/<span style="color: blue">&gt;</span>
+        <span style="color: blue">&lt;</span>/<span style="color: maroon">GridView</span><span style="color: blue">&gt;</span>
+    <span style="color: blue">&lt;</span>/<span style="color: maroon">ListView.View</span><span style="color: blue">&gt;</span>
+<span style="color: blue">&lt;</span>/<span style="color: maroon">ListView</span><span style="color: blue">&gt;</span></pre>
+<p><strong>Spacing: Style</strong><br />By default, all of the controls in a grid are pushed right up next to each other. To add spacing, I defined a set of styles. Each style targets a control type in the grid, and sets the Margin property.</p>
+<pre>    <span style="color: blue">&lt;</span><span style="color: maroon">Window.Resources</span><span style="color: blue">&gt;</span>
+        <span style="color: blue">&lt;</span><span style="color: maroon">Style</span> <span style="color: red">TargetType</span>="<span style="color: blue">{x:Type ComboBox}</span>"<span style="color: blue">&gt;</span>
+            <span style="color: blue">&lt;</span><span style="color: maroon">Setter</span> <span style="color: red">Property</span>="<span style="color: blue">Margin</span>" <span style="color: red">Value</span>="<span style="color: blue">3</span>"/<span style="color: blue">&gt;</span>
+        <span style="color: blue">&lt;</span>/<span style="color: maroon">Style</span><span style="color: blue">&gt;</span>
+        <span style="color: blue">&lt;</span><span style="color: maroon">Style</span> <span style="color: red">TargetType</span>="<span style="color: blue">{x:Type TextBlock}</span>"<span style="color: blue">&gt;</span>
+        	<span style="color: blue">&lt;</span><span style="color: maroon">Setter</span> <span style="color: red">Property</span>="<span style="color: blue">Margin</span>" <span style="color: red">Value</span>="<span style="color: blue">3</span>"/<span style="color: blue">&gt;</span>
+        <span style="color: blue">&lt;</span>/<span style="color: maroon">Style</span><span style="color: blue">&gt;</span>
+        <span style="color: blue">&lt;</span><span style="color: maroon">Style</span> <span style="color: red">TargetType</span>="<span style="color: blue">{x:Type ListBox}</span>"<span style="color: blue">&gt;</span>
+            <span style="color: blue">&lt;</span><span style="color: maroon">Setter</span> <span style="color: red">Property</span>="<span style="color: blue">Margin</span>" <span style="color: red">Value</span>="<span style="color: blue">3</span>"/<span style="color: blue">&gt;</span>
+        <span style="color: blue">&lt;</span>/<span style="color: maroon">Style</span><span style="color: blue">&gt;</span>
+        <span style="color: blue">&lt;</span><span style="color: maroon">Style</span> <span style="color: red">TargetType</span>="<span style="color: blue">{x:Type ListView}</span>"<span style="color: blue">&gt;</span>
+            <span style="color: blue">&lt;</span><span style="color: maroon">Setter</span> <span style="color: red">Property</span>="<span style="color: blue">Margin</span>" <span style="color: red">Value</span>="<span style="color: blue">3</span>"/<span style="color: blue">&gt;</span>
+        <span style="color: blue">&lt;</span>/<span style="color: maroon">Style</span><span style="color: blue">&gt;</span>
+        <span style="color: blue">&lt;</span><span style="color: maroon">Style</span> <span style="color: red">TargetType</span>="<span style="color: blue">{x:Type Button}</span>"<span style="color: blue">&gt;</span>
+            <span style="color: blue">&lt;</span><span style="color: maroon">Setter</span> <span style="color: red">Property</span>="<span style="color: blue">Margin</span>" <span style="color: red">Value</span>="<span style="color: blue">3</span>"/<span style="color: blue">&gt;</span>
+        <span style="color: blue">&lt;</span>/<span style="color: maroon">Style</span><span style="color: blue">&gt;</span>
+    <span style="color: blue">&lt;</span>/<span style="color: maroon">Window.Resources</span><span style="color: blue">&gt;</span></pre>
+<p><strong>Going back to Visual Studio</strong><br />These patterns covered what I needed for this simple view. I suspect that they will cover most of my needs for data entry windows.</p>
+<p>Overall, I find Blend to be a bit cumbersome to work in. It was great for the geometry of the car buttons, but it gets in the way when laying out a form. Dropping a control in the right place is not possible when the container size is Auto. Several extra properties get set on your behalf, which you then need to hunt down and reset. And even though the XAML that I need is small, the Blend UI hides many of the properties behind expanders, buttons, and tabs. I have to navigate several pages just to see what is immediately visible in a single line of XAML.</p>
+<p>As a XAML editor, Blend is poor. It offers no intellisense the way that Visual Studio does. So now that I know the XAML that I need, I expect I'll be spending a lot more time in Visual Studio hand-crafting XAML.</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="indexc733.html?cat=38" title="View all posts in Commuter" rel="category">Commuter</a>,  <a href="indexd65e.html?cat=8" title="View all posts in User Interface" rel="category">User Interface</a> |   <a href="index264a.html?p=376#comments" title="Comment on Structure of a WPF view">1 Comment &#187;</a></p>
+
+			</div>
+
+				<div class="post">
+				<h3 id="post-369"><a href="index0261.html?p=369" rel="bookmark" title="Permanent Link to Big (D)esign Conference 2009">Big (D)esign Conference 2009</a></h3>
+				<small>Saturday, May 30th, 2009</small>
+
+				<div class="entry">
+					<p>The Big (D)esign Conference was an upbeat collaboration among designers, developers, and strategists. The common theme was finding ways to improve the quality of peoples lives through software. That's a theme that resonates with me, as I have made that my personal and professional mission.</p>
+<p>This was a brand new conference. As such, there were some minor logistical problems, like a scarcity of water. But the attendees took to Twitter and the organizers responded. By the end of lunch, water bottles were abundant.</p>
+<p>That's just one example of the dynamic nature of this conference. It wasn't about people expecting a solution to be handed to them. It was about people finding solutions, responding to needs, and making the conference a success. The organizers did a great job, but it was the attitude of the attendees -- who really made the conference their own -- that made this day a success.</p>
+<p>The <a href="http://search.twitter.com/search?q=BigD09">Twitter hash tag</a> was in full force during the conference. Many attendees Twittered salient points of the presentations, their own opinions of the topics, or just their sandwich selection. The Twitter stream was as lively a conversation as any occurring in the hall. Through this conversation, I made several new friends.</p>
+<p>In addition to making new friends, I ran into some old ones. One of my old friends, <a href="http://twitter.com/tscott">T. Scott</a>, is a designer. He <a href="http://www.yfrog.com/froggy.php?username=TScott">recorded his notes</a> and uploaded them for all to enjoy. So I decided to do the same, in my own way. My writing is not so beautiful, so here is a transcription of my notes from the sessions I attended.</p>
+<p><strong>Keynote: Norm Cox, Interaction Therapist</strong><br />Titles are limiting. When we think of ourselves as developer, designer, business analyst, or architect, we tell ourselves (and others) that that is all we do. We limit our own thinking.</p>
+<p>We should instead become jacks of many trades, masters of some. Know all of the disciplines related to solving someone's problem. Know which ones you are particularly good at, but don't let your skill set limit your solution.</p>
+<p>Clients don't know what they need. Don't do exactly as they tell you to. Be a therapist. See the big picture. Find the real problem. Don't limit yourself to the client's expectations.</p>
+<p><strong>Chris Koenig: Touch Computing</strong><br />A Natural User Interface (NUI) is touch, gesture, manipulation, and more. It doesn't replace the keyboard or the mouse. It is designed for different scenarios. And sometimes, it augments them.</p>
+<p>NUI is good for free-form exploration and social interaction. It is not good for precision. It is not good for data density. Those are best left to the keyboard and mouse.</p>
+<p>Touch is not click. Don't take old metaphors and idioms and apply them to NUI. This is a new space, with a new set of benefits. Add it to your tool belt, but don't replace your trusted tools.</p>
+<p><strong>Stephen P Anderson: The Art and Science of Seductive Interactions</strong><br />Good usability lowers friction. But that's not enough. You also need to increase motivation. That can only be achieved by understanding psychology.</p>
+<p>People respond to levels and rewards. LinkedIn rates the completeness of your profile, and tells you what to do to take it to the next level. That motivates people to behave the way LinkedIn wants. This behavior benefits LinkedIn, but it also benefits the individual.</p>
+<p>Seduction is deliberately enticing a person to perform a desired behavior. It requires feedback. The person needs to see that their actions modify the results. Their curiosity will lead them to try other behaviors and see how the results change.</p>
+<p>People respond to visual imagery. They look for patterns in everything they see. They recognize, even if they can't recall. Software that uses these traits to its advantage will successfully guide users to perform the desired behavior. So show people images and have them find patterns that give you information about them. Don't give them a blank slate and ask them to recall that information.</p>
+<p><strong>Bill Scott, design patterns you should know</strong><br />Nuance is where a lot of good interaction is missed. Pay attention to the details to eliminate friction.</p>
+<p>Make it direct. Where there is output, let there also be input. Let interactions be symmetric; don't enter a feature one way and leave it another.</p>
+<p>Make it lightweight. Interactions have a "click-weight". Too many interactions, and your users are going to get tired and go away.</p>
+<p>Avoid confusing and annoying anti-patterns. Don't hover-and-cover, popping up new content over old content, or hiding navigation. Avoid "mystery meat" navigation, when the user doesn't know what a click is going to do until they do it. Follow Fitts' Law and give the users a big enough target.</p>
+<p>Stay on the page. Use overlays (pop-out) and inlays (slide-down) wisely. Don't stop the proceedings with idiocy. Use carousels, endless scrolling, and deep zoom where appropriate.</p>
+<p>Offer an invitation. Play on your user's curiosity. Give them a call to action. Show them the steps involved. Walk them through. Make it discoverable.</p>
+<p>Show transitions. Fade in and out. Animate zoom and motion to draw people to the next state.</p>
+<p><strong>Garrett Dimon, Feedback and Feature Requests</strong><br />The creator of Sifter talks about how he solicits feedback from his customers, and how he rolls that in to new features of the product.</p>
+<p>The lifecycle of feedback is: generate, receive, reply, absorb, and respond. Generate feedback by actively soliciting it from your users. Receive it in the form of analytics, web forms, email, phone calls, and anything else that is accessible to your users. Reply quickly to tell them whether you're looking into it, or if not why. Take the time to absorb the feature request and consider its full impact. Then respond by implementing the feature, a different feature, or giving the customer the results of your full consideration.</p>
+<p>Don't be afraid to be transparent in your product development process. People will not steal your ideas. If your idea is really great, you are going to have to shove it down their throats.</p>
+<p>If it needs instructions, then it's broken. Instead of explaining to people how to use your software, fix the problem. If you have Frequently Asked Questions, you have feedback. Fix it.</p>
+<p>The proportion of criticism to encouragement is absurd. It will bring you down. But always be upbeat when you reply. It will turn the conversation around and open a constructive dialog.</p>
+<p>Always think about the need, not the prescription. Find out what problem people have. Don't give them the solution they ask for. Don't abdicate software design to the users. Listen to them, then deliver a solution.</p>
+<p>There are no takebacks with features. Consider whether it really belongs in your product before adding it. It may delight some people but confuse others. If you add it, you will have to support it for the life of the product.</p>
+<p><strong>Todd Wilkens, Saying "No" and Failing</strong><br />Saying "No" limits the scope and gives you clear focus. First evaluate features based on importance and feasibility. Implement the ones that are important and feasible. Consider the ones in the middle. Ignore the ones at the low end of the scales.</p>
+<p>Design is about specific customer value. Start with the things that you can do exceedingly well, and deliver that value completely. Each evolutionary step after that should provide complete customer value for a new problem, not a new part of an incomplete solution.</p>
+<p>Failure is always an option. Everybody fails often. Just make sure you are failing forward. Fail early and often, and learn from each iteration.</p>
+<p>If failure is not allowed, then risk is not allowed. The companies that succeed openly encourage failure internally. Separate personal feelings from ideas, so that the ideas can fail without damaging the people.</p>
+<p>Have a conversation with the materials. Through the process of making something, we change the thing that we are making in response to the stuff that we are making it out of. Create an informal iterative process for failing often.</p>
+<p><strong>Thor Muller, Work Like the Network</strong><br />Challenge the assumption of industry: that it is expensive to coordinate a large number of people to build something. When we move electrons instead of molecules, those economics no longer hold. The use of a physical product reduces its value. The use of an idea increases its value.</p>
+<p>There are six ways to remodel the organization to act more like a network.</p>
+<table cellspacing="0" cellpadding="2" width="400" border="0">
+<tbody>
+<tr>
+<td valign="top" width="200"><strong>Move from</strong></td>
+<td valign="top" width="200"><strong>To</strong></td>
+</tr>
+<tr>
+<td valign="top" width="200">Control</td>
+<td valign="top" width="200">Chaos</td>
+</tr>
+<tr>
+<td valign="top" width="200">Process</td>
+<td valign="top" width="200">Flow</td>
+</tr>
+<tr>
+<td valign="top" width="200">Documentation</td>
+<td valign="top" width="200">Collaboration</td>
+</tr>
+<tr>
+<td valign="top" width="200">Fear</td>
+<td valign="top" width="200">Confidence</td>
+</tr>
+<tr>
+<td valign="top" width="200">Hidden</td>
+<td valign="top" width="200">Shown</td>
+</tr>
+<tr>
+<td valign="top" width="200">Ownership</td>
+<td valign="top" width="200">Stewardship</td>
+</tr>
+</tbody>
+</table>
+<p>It was a relief to hear someone talk about agile processes and flow without being dogmatic about it. Thor just demonstrated the value of these principles, and showed how organizations have applied them successfully.</p>
+<p><strong>Christina Wasson, When Design Met Anthropology</strong><br />Ethnographic anthropology is the study of cultures by becoming an observant participant. It is a systematic approach involving capturing information, coding it, and analyzing it. These techniques can be applied to software to give us a scientific basis for measuring the quality of a design.</p>
+<p>Ironically, the case study that Christina shared was juxtaposed against the spirit of the conference. a study of Social TV, a Motorola project to join families in different living rooms around the viewing experience. The case study was punctuated by videos of people talking about how they negotiate over the remote, how television fits in with their lives, and how their family members react. It was depressing to see people still engaging in a one-sided conversation with old media, instead of using their talents to create something awesome.</p>
+<p>I'm excited to have met such a fantastic group of people. I look forward to working with them to improve the quality of peoples lives through software. I'm looking forward to checking in next year to see how we've done.</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="indexd65e.html?cat=8" title="View all posts in User Interface" rel="category">User Interface</a> |   <a href="index0261.html?p=369#respond" title="Comment on Big (D)esign Conference 2009">No Comments &#187;</a></p>
+
+			</div>
+
+				<div class="post">
+				<h3 id="post-303"><a href="indexa853.html?p=303" rel="bookmark" title="Permanent Link to Custom WPF and Silverlight ListBox ItemTemplates eat mouse clicks">Custom WPF and Silverlight ListBox ItemTemplates eat mouse clicks</a></h3>
+				<small>Sunday, March 15th, 2009</small>
+
+				<div class="entry">
+					<p>A WPF or Silverlight ListBox can display anything. By default, it just displays the ToString() of the objects in the ItemsSource, but that can be adjusted. If you want to display a string other than the ToString(), you need to define an ItemTemplate:</p>
+<pre><span style="color: blue">&lt;</span><span style="color: maroon">ListBox</span> <span style="color: red">Height</span>="<span style="color: blue">200</span>" <span style="color: red">ItemsSource</span>="<span style="color: blue">{Binding Posts}</span>" <span style="color: red">SelectedItem</span>="<span style="color: blue">{Binding SelectedPost}</span>"<span style="color: blue">&gt;</span>
+    <span style="color: blue">&lt;</span><span style="color: maroon">ListBox.ItemTemplate</span><span style="color: blue">&gt;</span>
+        <span style="color: blue">&lt;</span><span style="color: maroon">DataTemplate</span><span style="color: blue">&gt;</span>
+            <span style="color: blue">&lt;</span><span style="color: maroon">ListBoxItem</span> <span style="color: red">Content</span>="<span style="color: blue">{Binding Title}</span>"/<span style="color: blue">&gt;</span>
+        <span style="color: blue">&lt;</span>/<span style="color: maroon">DataTemplate</span><span style="color: blue">&gt;</span>
+    <span style="color: blue">&lt;</span>/<span style="color: maroon">ListBox.ItemTemplate</span><span style="color: blue">&gt;</span>
+<span style="color: blue">&lt;</span>/<span style="color: maroon">ListBox</span><span style="color: blue">&gt;</span></pre>
+<p>Unfortunately, when you do this the string eats your mouse clicks. You can click anywhere around the string, but clicking on the string does not select the item.</p>
+<p><strong>Here's my solution</strong><br />
+Through trial and error (and <a href="http://social.msdn.microsoft.com/Forums/en-US/wpf/thread/a1067e9f-1991-49dc-a3b0-dc96abaf66e9/">MSDN</a>) I finally found a solution:</p>
+<pre><span style="color: blue">&lt;</span><span style="color: maroon">ListBox</span> <span style="color: red">Height</span>="<span style="color: blue">200</span>" <span style="color: red">ItemsSource</span>="<span style="color: blue">{Binding Posts}</span>" <span style="color: red">SelectedItem</span>="<span style="color: blue">{Binding SelectedPost}</span>"<span style="color: blue">&gt;</span>
+    <span style="color: blue">&lt;</span><span style="color: maroon">ListBox.ItemTemplate</span><span style="color: blue">&gt;</span>
+        <span style="color: blue">&lt;</span><span style="color: maroon">DataTemplate</span><span style="color: blue">&gt;</span>
+            <span style="color: blue">&lt;</span><span style="color: maroon">ListBoxItem</span> <strong><span style="color: red">IsHitTestVisible</span>="<span style="color: blue">False</span>"</strong> <strong><span style="color: red">Focusable</span>="<span style="color: blue">False</span>"</strong> <span style="color: red">Content</span>="<span style="color: blue">{Binding Title}</span>"/<span style="color: blue">&gt;</span>
+        <span style="color: blue">&lt;</span>/<span style="color: maroon">DataTemplate</span><span style="color: blue">&gt;</span>
+    <span style="color: blue">&lt;</span>/<span style="color: maroon">ListBox.ItemTemplate</span><span style="color: blue">&gt;</span>
+<span style="color: blue">&lt;</span>/<span style="color: maroon">ListBox</span><span style="color: blue">&gt;</span></pre>
+<p>If you set IsHitTestVisible and Focusable both to False on the ListBoxItem, then clicking the text selects the item, just like in the default ToString() scenario. Setting just one or the other does not change the behavior. Both must be changed.</p>
+<p>This seems backwards to me. I would expect that you would have to set IsHitTestVisible to False on a TextBlock inside the ListBoxItem, not the ListBoxItem itself. Making the ListBoxItem invisible to hit tests seems like the <em>opposite</em> of what you want to do.</p>
+<p>Nevertheless, this works, so I'll add those two attributes from now on. And BTW, my real XAML code uses Update Controls, but I thought I'd show you some Binding code just in case you haven't converted yet.</p>
+<p><strong>Update</strong><br />
+Here's a simpler solution:</p>
+<pre><span style="color: blue">&lt;</span><span style="color: maroon">ListBox</span> <span style="color: red">Height</span>="<span style="color: blue">200</span>" <span style="color: red">ItemsSource</span>="<span style="color: blue">{Binding Posts}</span>" <span style="color: red">SelectedItem</span>="<span style="color: blue">{Binding SelectedPost}</span>"<span style="color: blue">&gt;</span>
+    <span style="color: blue">&lt;</span><span style="color: maroon">ListBox.ItemTemplate</span><span style="color: blue">&gt;</span>
+        <span style="color: blue">&lt;</span><span style="color: maroon">DataTemplate</span><span style="color: blue">&gt;</span>
+            <span style="color: blue">&lt;</span><strong><span style="color: maroon">TextBlock</span></strong> <span style="color: red">Text</span>="<span style="color: blue">{Binding Title}</span>"/<span style="color: blue">&gt;</span>
+        <span style="color: blue">&lt;</span>/<span style="color: maroon">DataTemplate</span><span style="color: blue">&gt;</span>
+    <span style="color: blue">&lt;</span>/<span style="color: maroon">ListBox.ItemTemplate</span><span style="color: blue">&gt;</span>
+<span style="color: blue">&lt;</span>/<span style="color: maroon">ListBox</span><span style="color: blue">&gt;</span></pre>
+<p>It turns out that the content of a ListBox DataTemplate does not have to be a ListBoxItem. There's my old-school Win32 thinking kicking in. If you make it a TextBlock, then it responds correctly to mouse clicks.</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="indexd65e.html?cat=8" title="View all posts in User Interface" rel="category">User Interface</a> |   <a href="indexa853.html?p=303#respond" title="Comment on Custom WPF and Silverlight ListBox ItemTemplates eat mouse clicks">No Comments &#187;</a></p>
+
+			</div>
+
+				<div class="post">
+				<h3 id="post-239"><a href="index1639-2.html?p=239" rel="bookmark" title="Permanent Link to Update Controls on Code Project">Update Controls on Code Project</a></h3>
+				<small>Friday, April 11th, 2008</small>
+
+				<div class="entry">
+					<p>I wrote a short article for The Code Project called <b><a href="http://www.codeproject.com/KB/miscctrl/updatecontrols.aspx">A Simple Alternative to Windows Forms Data Binding</a></b>. It's a real quick introduction to Update Controls. The goal here is just to get people trying it out to see how it simplifies Windows UI programming.</p>
+<p>It's only been up for a day, but already I've gotten a comment from <b><a href="http://www.codeproject.com/script/Membership/Profiles.aspx?mid=36803">Marc Clifton</a></b> himself! If you have spent any time on <a href="http://www.codeproject.com/">Code Project</a>, you've read at least one of his articles. The man is a brilliant communicator. And he wears a nice hat.</p>
+<p>Please check out the article. And if you haven't done so yet, check out <a href="http://updatecontrols.net/">Update Controls .NET</a>.</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="indexd65e.html?cat=8" title="View all posts in User Interface" rel="category">User Interface</a> |   <a href="index1639-2.html?p=239#respond" title="Comment on Update Controls on Code Project">No Comments &#187;</a></p>
+
+			</div>
+
+				<div class="post">
+				<h3 id="post-222"><a href="indexb4c1.html?p=222" rel="bookmark" title="Permanent Link to Update Controls .NET released under LGPL">Update Controls .NET released under LGPL</a></h3>
+				<small>Tuesday, March 18th, 2008</small>
+
+				<div class="entry">
+					<p>I have released <a href="http://updatecontrols.net/vb">Update Controls .NET</a> as an open source project.</p>
+<p>Update Controls is a set of .NET Windows Forms controls that update themselves automatically. Instead of setting properties, you handle events. For example, the GetText event fires on an <a href="http://updatecontrols.net/documentation/classDocumentation/vb/UpdateControls.Forms.UpdateTextBox.do">UpdateTextBox</a> when it needs to update itself. The event returns the text string to display. Then, when any data that was used to calculate that string changes, the event fires again. Automatically.</p>
+<p>Think of how you use a spreadsheet. You enter a formula in a cell, with references to other cells. When those other cells change, the formula is recalculated. You don't have to tell it to update, it just figures out when to do so.</p>
+<p>I created the algorithm at the core of Update Controls almost ten years ago in C++. Since then, I've translated it first into Delphi, then <a href="http://www.javaworld.com/javaworld/jw-08-2001/jw-0817-automatic.html">Java</a>, and finally C#. The Update Controls library is that core algorithm applied to the common Windows Forms controls. It also includes a handful of themed controls for better visual appeal.</p>
+<p><strong>Not data binding</strong><br />For as long as Microsoft has done demos of VB, they've tried to convince us that we can write real software with zero lines of code. It works fine on the projector screen, but it fails to translate to a full-scale application. Once you get outside the box of direct column/control relationships, it is impossible to adapt data binding to your needs.</p>
+<p>But Update Controls is completely flexible. You can start with a simple event that returns one value, but then modify it to combine two or more values as your needs change. Since you are writing real code, you are in complete control.</p>
+<p>A data-bound control attaches directly to a column in the database, or a property of an object in the data model. It cannot call through more complex business logic.</p>
+<p>But an Update Control can call any business logic that you specify. Whatever data the business logic touches in order to do its work, that data affects the control's behavior. When any of it changes, the event fires and calls the business logic again.</p>
+<p><strong>Not the observer pattern</strong><br />The observer pattern is obsolete. It requires that you manually register each observer with each subject. To make it work, you have to know ahead of time all of the objects in the data model that affect each user interface component. A large portion of your source code is dedicated to making and breaking those connections.</p>
+<p>Update Controls, on the other hand, discovers those dependencies on its own. It can see through business logic, so you don't have to directly tie your user interface to your data model. And if that business logic switches to a new path, the dependencies are updated as well.</p>
+<p>The observer pattern also suffers from cascading redundant updates. If your observer depends upon two subjects and both are changed at the same time, the observer pattern will give you two updates. The problem gets even worse when you have indirect dependencies, as the redundancy rolls through the system like so many dominoes.</p>
+<p>But Update Controls queues the updates until the last possible moment, so they occur only once. Even indirect dependencies are calculated in the best possible order, with each update being invoked just once as the information bubbles to the surface.</p>
+<p><strong>Please give it a try</strong><br />The library works in C# and VB. It can be used in either Visual Studio 2005 or 2008, with .NET 2.0, 3.0, or 3.5. You can <a href="http://www.codeplex.com/updatecontrols/SourceControl/ListDownloadableCommits.aspx">download the source code</a> and build it yourself, or just run the <a href="http://updatecontrols.net/vb/download.shtml">convenient installer</a>. <a href="http://updatecontrols.net/vb/videos.shtml">Videos</a>, <a href="http://updatecontrols.net/vb/start.shtml">demos</a>, and <a href="http://updatecontrols.net/vb/documentation.shtml">documentation</a> are all available to help you get started.</p>
+<p>Once you write a Winforms app with Update Controls, you'll never want to code without them.</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="index7f33.html?cat=31" title="View all posts in Licensing" rel="category">Licensing</a>,  <a href="indexb0b7.html?cat=6" title="View all posts in Patterns" rel="category">Patterns</a>,  <a href="indexd65e.html?cat=8" title="View all posts in User Interface" rel="category">User Interface</a> |   <a href="indexb4c1.html?p=222#respond" title="Comment on Update Controls .NET released under LGPL">No Comments &#187;</a></p>
+
+			</div>
+
+				<div class="post">
+				<h3 id="post-203"><a href="indexc39e.html?p=203" rel="bookmark" title="Permanent Link to The metaphor is only skin deep">The metaphor is only skin deep</a></h3>
+				<small>Tuesday, February 5th, 2008</small>
+
+				<div class="entry">
+					<p>One of the &quot;new&quot; apps that was made available for the iPod Touch is Notes. (Yes, I paid the $20 bounty on them rather than jailbreaking it. I just wasn't worth the drama.)</p>
+<p>The app looks like a yellow legal pad. It uses a comic font to simulate handwriting (although my actual handwriting never looked as neat), it has hand-drawn icons for email and trash, and it plays a page turning animation when you switch from one note to another.</p>
+<p>As I've said before, this kind of <a href="indexccf8.html?p=179">detail sells software</a>. But there is one caveat. The metaphor should never limit the application.</p>
+<p>In the early 90's, as software was becoming a commodity in the lives of average people, the graphical user interface was going mainstream. We saw several attempts to make software look like a real thing. The Macintosh and Windows both had desktop metaphors, some online &quot;communities&quot; actually looked like streets with buildings for different destinations, and of course there was Microsoft Bob.</p>
+<p>As Alan Cooper tells us in the <a title="http://a.parsons.edu/~jchen/F05/ms/downloads/read/The_Myth_of_Metaphor.pdf" href="http://a.parsons.edu/~jchen/F05/ms/downloads/read/The_Myth_of_Metaphor.pdf">Myth of Metaphor</a>, software should not limit itself based on the metaphor it chooses. It should be idioms to guide UI design. Idioms are patterns that users come to recognize, even though they have no basis in reality, and may not even be intuitive.</p>
+<p>The iPod Touch employs several idioms that we were used to from previous iPods and other software. For example, you can scroll through a list, pick an item, and then the screen slides to the left to reveal a new list. When you go back, the prior list slides back in from the left. The Touch also created some new idioms thanks to its multi-touch screen. Now you can scroll through those lists with a flick of the finger. Most people have to be shown these idioms, but once they see them they apply them everywhere.</p>
+<p>The iPod Touch Notes application is not a slave to its metaphor. For example, you can make a note as long as you like. It is not limited to the length of a piece of paper. If it strictly adhered to its metaphor, you would have to turn the page to keep writing. Thankfully, it's one page per note.</p>
+<p>But the Notes application does adhere to the iPod Touch idioms. The notes appear in a list, which scrolls with a flick of the finger and slides to the left when you select a note. Notes themselves scroll, even though the &quot;binder&quot; stays fixed at the top of the screen. No physical legal pad in existence could work this way, but that doesn't keep us from understanding it.</p>
+<p>The metaphor is only there to give the app a consistent visual design. The idiom gives it its usability.</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="indexd65e.html?cat=8" title="View all posts in User Interface" rel="category">User Interface</a> |   <a href="indexc39e.html?p=203#respond" title="Comment on The metaphor is only skin deep">No Comments &#187;</a></p>
+
+			</div>
+
+				<div class="post">
+				<h3 id="post-187"><a href="indexc885.html?p=187" rel="bookmark" title="Permanent Link to Elevator Crowding and Human Behavior">Elevator Crowding and Human Behavior</a></h3>
+				<small>Tuesday, January 15th, 2008</small>
+
+				<div class="entry">
+					<p>I don't know why, but elevators fascinate me. I guess it's because they represent a daily junction of people, process, and technology. They embody many of the problems we face with limited resources, queues, and traffic.</p>
+<p>I've noticed that people tend to gather in front of doors that are about to open. It's probably preservation of your place in line so that the elevator doesn't fill up with people who haven't been waiting as long as you have.</p>
+<p>The problem with this behavior is that the elevator is invariably filled with people wanting to get off. There is always a dance where the people trying to get out negotiate with the people trying to get in for a traffic lane. The dance lasts for about three seconds and it always ends with the people crowding around the doors retreating into the lobby to give the others a lane of egress.</p>
+<p>Wouldn't it be better for everyone if people would stand away from the doors? You can be fairly certain, especially on the ground floor, that there are people trying to get off the elevator. There is limited space inside the car, but comparatively unlimited space in the lobby. It only makes sense to let them off first.</p>
+<p>But people don't behave that way. The elevator represents a limited resource that they have already invested in. They have to preserve their access to that resource.</p>
+<p><strong>Here's my solution</strong>    <br />Put the alert light and bell on a delay. Instead of alerting the people waiting for the elevator before the doors open, only give the indication after the people in the car have had the chance to get out.</p>
+<p>What does this have to do with software?</p>
+<p>Well, besides the trivial observation that modern elevators are run by software, this is an example of user interaction design. It recognizes human behavior and uses it to solve the problem. You might even call it a life hack.</p>
+<p>So many software systems fight against human behavior. They put up punitive error messages to try to get the human to change their ways, or force the user through some complicated dance of gesticulations in order to get a simple task accomplished. But well-designed software recognizes the human as part of the system, and incorporates their behavior as-is into the solution.</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="index5c96.html?cat=28" title="View all posts in Elevator analogies" rel="category">Elevator analogies</a>,  <a href="indexd65e.html?cat=8" title="View all posts in User Interface" rel="category">User Interface</a> |   <a href="indexc885.html?p=187#respond" title="Comment on Elevator Crowding and Human Behavior">No Comments &#187;</a></p>
+
+			</div>
+
+				<div class="post">
+				<h3 id="post-183"><a href="indexe8f5.html?p=183" rel="bookmark" title="Permanent Link to Convenience and the Ground Floor Elevator Button">Convenience and the Ground Floor Elevator Button</a></h3>
+				<small>Thursday, January 3rd, 2008</small>
+
+				<div class="entry">
+					<p>Why don't elevator panels have a really big button for the first floor?</p>
+<p><a href="../../www.adventuresinsoftware.com/blog/wp-content/uploads/2008/01/elevator1.jpg"><img style="border-right: 0px; border-top: 0px; margin: 0px 0px 0px 5px; border-left: 0px; border-bottom: 0px" height="244" alt="elevator" src="../../www.adventuresinsoftware.com/blog/wp-content/uploads/2008/01/elevator-thumb1.jpg" width="205" align="right" border="0" /></a>Most people ride the elevator up to a particular floor, conduct their business, and then ride it back down to the first floor. Rarely does anyone need to ride between two upper floors. So by inference, half of the time you step into an elevator you have to push the "1" button.</p>
+<p>Making the ground floor button more convenient will certainly make the others less so. But not all of the buttons are equal. The minor increase in effort spent looking for an upper floor button is far outweighed by the decrease in effort on the way back down.</p>
+<p>When we design software, we usually think in terms of functionality. We want to cram in everything that the user might want, and account for every possible situation. Instead, we should focus on the things that the user does most often and make them the most convenient. It's not the feature matrix that sells software, it's the big red button that gets you where you want to go.</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="index5c96.html?cat=28" title="View all posts in Elevator analogies" rel="category">Elevator analogies</a>,  <a href="indexd65e.html?cat=8" title="View all posts in User Interface" rel="category">User Interface</a> |   <a href="indexe8f5.html?p=183#comments" title="Comment on Convenience and the Ground Floor Elevator Button">2 Comments &#187;</a></p>
+
+			</div>
+
+				<div class="post">
+				<h3 id="post-179"><a href="indexccf8.html?p=179" rel="bookmark" title="Permanent Link to User Interaction as Marketing">User Interaction as Marketing</a></h3>
+				<small>Monday, December 17th, 2007</small>
+
+				<div class="entry">
+					<p>Successful marketing makes a product more desirable. User interaction design makes software more desirable. So is user interaction design successful marketing for software? I think so.</p>
+<blockquote><p>With so many folks talking about the iPhone right now, it surprises me how few people remark on the effect of its lovely interaction design. Notice the difference between the advertisements for the iPhone and every other phone on the market. Other phones show people talking on the phone, snapping pictures of each other, dancing around, getting into kung fu battles with phones as weapons, everything except what the <a href="http://www.apple.com/iphone/ads/">iPhone ads</a> show you: <i>how you use the phone</i>. Think about that. They sell the iPhone by showing you thirty seconds of someone using it, assuming that this will make people want it &#8230; which it does, because people recognize that using a product with good interaction design feels good.</p>
+</blockquote>
+<blockquote><p>- Jonathan Korman, <a href="http://www.cooper.com/insights/journal_of_design/articles/intuition_pleasure_and_gesture_1.html">Intuition, pleasure, and gestures</a></p>
+</blockquote>
+<p>If we intend to sell our software to the masses, we need to adopt the iPhone marketing model. Whether or not you agree, most people find the iPhone ads desirable. My friend's 5-year-old son will come running into the room to watch a commercial when he hears the distinctive iPhone music. I will stop my TiVo to watch an iPhone or iPod Touch ad. And I own an iPod Touch! The interface is so pleasurable that we want to watch people use it.</p>
+<p>But even companies that don't have the money to run TV spots should aspire to the standard that Apple has set. Software sells by word-of-mouth. Every time a user fires up your software, they should be seeing an ad.</p>
+<p>I'm not talking about ad-supported software. I'm talking about the user having such a great experience that they want to tell people about it. I'm talking about a user interface so fun that people want to <a href="http://www.youtube.com/watch?v=KKQUZPqDZb0">watch it on YouTube</a>.</p>
+<p>The iPhone is sorely lacking in features. The iPod Touch has extremely limited capacity for the price and crashes fairly often. But the icons fly in when you hit the home button. And the album cover flips and rotates when you turn it. These are the things that you see in the commercials. These things are fun. These are the things that sell.</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="indexd65e.html?cat=8" title="View all posts in User Interface" rel="category">User Interface</a> |   <a href="indexccf8.html?p=179#comments" title="Comment on User Interaction as Marketing">1 Comment &#187;</a></p>
+
+			</div>
+
+				<div class="post">
+				<h3 id="post-176"><a href="index3440.html?p=176" rel="bookmark" title="Permanent Link to The Right Time to Update">The Right Time to Update</a></h3>
+				<small>Monday, November 26th, 2007</small>
+
+				<div class="entry">
+					<p>I use subversion for all of my personal and professional source code control. As I've stated before, I highly recommend that you <a href="index5eda.html?p=95">set up an SVN repository</a> for managing and sharing your own projects. My client of choice is <a href="http://syncrosvnclient.com/">Syncro SVN</a>. But like all the other SVN clients that I've tried, it picks the wrong time to update.</p>
+<p>When drilling down through the folders of a repository, all SVN clients pause each time a folder is opened to fetch data from the server. Syncro SVN keeps the tree populated while the program is running, so you can collapse and expand folders without penalty. However, once you close the program, it has to fetch folder contents all over again the next time you run it.</p>
+<p>This pause for every folder puts a small tax on user navigation. It puts a speed bump on the road that the user takes to get something done. I hold in my head the place that I need to go and the thing that I need to do once I get there. A series of speed bumps, like the so-called &quot;Chinese&quot; water torture, can distract me from that goal and derail my progress.</p>
+<p>An even more common example of the wrong time to update can be found in just about any program that downloads new versions of itself. Every once in a while, I start Firefox, Quicken, or iTunes to be asked if I want to install an update. The reason that I started this program was not to install an update. It was to get something accomplished. This question completely puts me off my goal and makes me worry. Is there some serious bug or security problem that I should let them fix? How long will this update take? What's the chance that it will fail and prevent me from accomplishing my goal altogether?</p>
+<p>All of these programs let me say no, which I do by default. But then in most cases I'm just asked the question again the next time I try to get something done, so I eventually relent. Firefox is the best of a bad bunch, because it will hold off the update until the end of my session. Of course, it still has to ask, and then it has to tell me that it will update itself. I'd rather it just do that by default.</p>
+<p><strong>Here's my solution</strong>    <br />I recently implemented automatic self update in a Windows program. I fashioned it after the Firefox model, but just made it work without any pop-ups.</p>
+<p>First I created a launcher for the program. This launcher just runs the program, after doing some bookkeeping that I'll describe soon.</p>
+<p>Then, when the program starts, it starts a background thread to go to the web site and check for newer versions. If it finds one, it downloads it in the background. If the user closes the program before the download completes, it is canceled. It will try again the next time the program starts.</p>
+<p>If the download succeeds, then the new version is put in a sub folder for the launcher to find. This is the bookkeeping I was talking about. The next time the user runs the program, the launcher quickly (and silently) installs the new version before running it.</p>
+<p><strong>Update data in the background</strong>    <br />The right time to update is when the user isn't looking. This works equally well for data updates as it does for software updates. Syncro SVN could start a background thread to pull down folder contents. This would get that processing off the main thread, and keep the user from experiencing a series of speed bumps.</p>
+<p>But background processing isn't enough. If the background process is fired on demand, then the user is still waiting before going to the next step. You also need persistence. Once the folder contents are on the client, they should be accessible no matter what happens. If the user restarts the program, they should still be able to get instant access to folders that they've visited before. That means that those contents should be cached in someplace other than memory.</p>
+<p>But wait! The user isn't seeing an up-to-date picture of the data! That's OK. It's fresh enough for the user to move forward toward his goal. Just refresh the data (in the background) when it gets too old. And give the user a manual refresh button if they don't see what they are looking for. Your user is smart. Just keep the speed bumps out of his way.</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="indexb0b7.html?cat=6" title="View all posts in Patterns" rel="category">Patterns</a>,  <a href="indexd65e.html?cat=8" title="View all posts in User Interface" rel="category">User Interface</a> |   <a href="index3440.html?p=176#respond" title="Comment on The Right Time to Update">No Comments &#187;</a></p>
+
+			</div>
+
+		
+		<div class="navigation">
+			<div class="alignleft"><a href="index85c8.html?cat=8&amp;paged=2">&laquo; Previous Entries</a></div>
+			<div class="alignright"></div>
+		</div>
+
+	
+	</div>
+		</td>
+	</tr>
+</table>
+
+<hr />
+<div id="footer">
+<!-- If you'd like to support WordPress, having the "powered by" link someone on your blog is the best way, it's our only promotion or advertising. -->
+	<p>
+		Adventures in Software is proudly powered by 
+		<a href="http://wordpress.org/">WordPress</a>
+		<br /><a href="indexd784.html?feed=rss2">Entries (RSS)</a>
+		and <a href="indexa6da.html?feed=comments-rss2">Comments (RSS)</a>.
+		<!-- 17 queries. 0.449 seconds. -->
+	</p>
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-389401-3");
+pageTracker._trackPageview();
+} catch(err) {}</script></div>
+
+<!-- Gorgeous design by Michael Heilemann - http://binarybonsai.com/kubrick/ -->
+
+		<div id="sk2-footer" style="color:#FFF; background-color:#444; padding: 3px 2px 3px 2px; border-top: #888 solid 1px;">This blog is protected by <a href="http://unknowngenius.com/blog/" title="Dave">dr Dave</a>'s <strong><a href="http://unknowngenius.com/blog/wordpress/spam-karma/" title="SK2">Spam Karma 2</a></strong>: <strong>274531</strong>  Spams eaten and counting...</div><script type="text/javascript" src="replies.js"></script>
+<script type="text/javascript" src="blogger.js"></script>
+<script type="text/javascript" src="http://twitter.com/statuses/user_timeline/michaellperry.json?callback=twitterCallback2&amp;count=5"></script>
+<script type="text/javascript" src="http://search.twitter.com/search.json?q=@michaellperry&amp;callback=twitterCallbackReplies&amp;rpp=5"></script>
+</body>
+
+<!-- Mirrored from adventuresinsoftware.com/blog/?cat=8 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 Jan 2017 12:57:05 GMT -->
+</html>

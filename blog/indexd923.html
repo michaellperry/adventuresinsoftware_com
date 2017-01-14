@@ -1,0 +1,428 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+
+
+<!-- Mirrored from adventuresinsoftware.com/blog/?cat=6&paged=6 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 Jan 2017 13:10:08 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>Adventures in Software   &raquo; Patterns</title>
+
+<meta name="generator" content="WordPress 2.3.3" /> <!-- leave this for stats -->
+
+<link rel="stylesheet" href="wp-content/themes/ais2/style.css" type="text/css" media="screen" />
+<link rel="alternate" type="application/rss+xml" title="Adventures in Software RSS Feed" href="indexd784.html?feed=rss2" />
+<link rel="pingback" href="xmlrpc.html" />
+    <script type="text/javascript">
+        function onSilverlightError(sender, args) {
+            var appSource = "";
+            if (sender != null && sender != 0) {
+              appSource = sender.getHost().Source;
+            }
+            
+            var errorType = args.ErrorType;
+            var iErrorCode = args.ErrorCode;
+
+            if (errorType == "ImageError" || errorType == "MediaError") {
+              return;
+            }
+
+            var errMsg = "Unhandled Error in Silverlight Application " +  appSource + "\n" ;
+
+            errMsg += "Code: "+ iErrorCode + "    \n";
+            errMsg += "Category: " + errorType + "       \n";
+            errMsg += "Message: " + args.ErrorMessage + "     \n";
+
+            if (errorType == "ParserError") {
+                errMsg += "File: " + args.xamlFile + "     \n";
+                errMsg += "Line: " + args.lineNumber + "     \n";
+                errMsg += "Position: " + args.charPosition + "     \n";
+            }
+            else if (errorType == "RuntimeError") {           
+                if (args.lineNumber != 0) {
+                    errMsg += "Line: " + args.lineNumber + "     \n";
+                    errMsg += "Position: " +  args.charPosition + "     \n";
+                }
+                errMsg += "MethodName: " + args.methodName + "     \n";
+            }
+
+            throw new Error(errMsg);
+        }
+    </script>
+
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc0db0.php?rsd" />
+ <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="wp-includes/wlwmanifest.xml" /> <style type='text/css'>
+<!--#header { background: url('wp-content/themes/ais2/images/header-imgae03.html?upper=A7A73F&amp;lower=77773F') no-repeat bottom center; }
+--></style>
+</head>
+<body>
+<div id="page">
+
+<div class="aisTopBar">
+	<form method="get" id="searchform" action="http://adventuresinsoftware.com/blog/">
+<div>
+<a href="indexd784.html?feed=rss2"><img src="../images/feed-icon-28x28.png" border="0"></a>
+<input type="text" value="" name="s" id="s" />
+<input type="submit" id="searchsubmit" value="Search" />
+</div>
+</form>
+</div>
+
+<div class="aisHeaderImageRight">
+	<div class="aisHeaderImage">
+	<div class="aisHeaderCornerRight">
+	<div class="aisHeaderCornerLeft">
+	<div class="aisImageBar">
+	<div class="aisSubSites">
+		<a href="index.html" class="aisSubSiteLink"><span class="aisSiteTabRight"><span class="aisSiteTabLeft"><span class="aisSiteTab">
+			home</span></span></span></a>
+		<a class="aisSubSiteLink" href="indexb60a.html?cat=27"><span class="aisSiteTabRight"><span class="aisSiteTabLeft"><span class="aisSiteTab">
+			historic modeling</span></span></span></a>
+		<a class="aisSubSiteLink" href="indexa88f.html?cat=36"><span class="aisSiteTabRight"><span class="aisSiteTabLeft"><span class="aisSiteTab">
+			update controls</span></span></span></a>
+		<a href="index2d79.html?cat=26" class="aisSubSiteLink"><span class="aisSiteTabRight"><span class="aisSiteTabLeft"><span class="aisSiteTab">
+			degrees of freedom</span></span></span></a>
+		<a class="aisSubSiteLink" href="indexba53.html?page_id=2"><span class="aisSiteTabRight"><span class="aisSiteTabLeft"><span class="aisSiteTab">
+			about us</span></span></span></a>
+
+	</div>
+	</div>
+	</div>
+	</div>
+	</div>
+</div>
+
+<table style="width: 100%" cellspacing="0" cellpadding="0">
+	<tr valign="top">
+		<td width="210px">
+<div id="sidebar">
+<div class="aisLeftColumnFill">
+<div class="aisLeftColumnBottom">
+<div class="aisLeftColumnTop">
+<div id="twitter_div" class="aisLeftNav">
+<h2 class="sidebar-title">Twitter Updates</h2>
+<ul id="twitter_update_list"></ul>
+<a href="http://twitter.com/michaellperry" id="follow">Follow me</a>
+</div>
+<div id="twitter_reply_div" class="aisLeftNav">
+<h2 class="sidebar-title">Twitter Replies</h2>
+<ul id="twitter_reply_list"></ul>
+</div>
+
+<div class="aisLeftNav">
+<a href='http://ineta.org/Speakers/SearchCommunitySpeakers.aspx?SpeakerId=c5110e21-9243-461b-a464-a6548524e885'><img alt='INETA Community Speakers Program' border='0' src='../../www.ineta.org/images/OfficialLogos/InetaCommunitySpeakersRequestMe.html' /></a>
+</div>
+
+<div class="aisLeftNav">
+	<li class="pagenav"><h2>Pages</h2><ul><li class="page_item page-item-2"><a href="indexba53.html?page_id=2" title="About Us">About Us</a></li>
+<li class="page_item page-item-210"><a href="index6ae3.html?page_id=210" title="Templates">Templates</a></li>
+</ul></li></div>
+
+<div class="aisLeftNav">
+<h2>Archives</h2>
+<ul>
+	<li><a href='indexb4d5.html?m=201110' title='October 2011'>October 2011</a></li>
+	<li><a href='indexc61a.html?m=201106' title='June 2011'>June 2011</a></li>
+	<li><a href='indexa80d.html?m=201105' title='May 2011'>May 2011</a></li>
+	<li><a href='index512b.html?m=201104' title='April 2011'>April 2011</a></li>
+	<li><a href='index08fb.html?m=201103' title='March 2011'>March 2011</a></li>
+	<li><a href='index52f4.html?m=201102' title='February 2011'>February 2011</a></li>
+	<li><a href='index74f1.html?m=201101' title='January 2011'>January 2011</a></li>
+	<li><a href='index8956.html?m=201012' title='December 2010'>December 2010</a></li>
+	<li><a href='indexa1aa.html?m=201011' title='November 2010'>November 2010</a></li>
+	<li><a href='indexe3d5.html?m=201010' title='October 2010'>October 2010</a></li>
+	<li><a href='index9ab9.html?m=201009' title='September 2010'>September 2010</a></li>
+	<li><a href='index1ff0.html?m=201008' title='August 2010'>August 2010</a></li>
+	<li><a href='index9f11.html?m=201007' title='July 2010'>July 2010</a></li>
+	<li><a href='index31f0.html?m=201006' title='June 2010'>June 2010</a></li>
+	<li><a href='indexd189.html?m=201005' title='May 2010'>May 2010</a></li>
+	<li><a href='indexb5c0.html?m=201004' title='April 2010'>April 2010</a></li>
+	<li><a href='indexf258.html?m=201003' title='March 2010'>March 2010</a></li>
+	<li><a href='index6e30.html?m=201002' title='February 2010'>February 2010</a></li>
+	<li><a href='index6b19.html?m=201001' title='January 2010'>January 2010</a></li>
+	<li><a href='index5c0a.html?m=200912' title='December 2009'>December 2009</a></li>
+	<li><a href='index8f62.html?m=200911' title='November 2009'>November 2009</a></li>
+	<li><a href='index451d.html?m=200910' title='October 2009'>October 2009</a></li>
+	<li><a href='index3e04.html?m=200909' title='September 2009'>September 2009</a></li>
+	<li><a href='index425a.html?m=200908' title='August 2009'>August 2009</a></li>
+	<li><a href='index9907.html?m=200907' title='July 2009'>July 2009</a></li>
+	<li><a href='index3104.html?m=200906' title='June 2009'>June 2009</a></li>
+	<li><a href='indexc36d.html?m=200905' title='May 2009'>May 2009</a></li>
+	<li><a href='index17e8.html?m=200904' title='April 2009'>April 2009</a></li>
+	<li><a href='index10a5.html?m=200903' title='March 2009'>March 2009</a></li>
+	<li><a href='index8988.html?m=200902' title='February 2009'>February 2009</a></li>
+	<li><a href='index1419.html?m=200901' title='January 2009'>January 2009</a></li>
+	<li><a href='index7866.html?m=200812' title='December 2008'>December 2008</a></li>
+	<li><a href='index55f6.html?m=200811' title='November 2008'>November 2008</a></li>
+	<li><a href='indexa7bc.html?m=200810' title='October 2008'>October 2008</a></li>
+	<li><a href='indexe77c.html?m=200809' title='September 2008'>September 2008</a></li>
+	<li><a href='indexcffc.html?m=200808' title='August 2008'>August 2008</a></li>
+	<li><a href='index0e62.html?m=200807' title='July 2008'>July 2008</a></li>
+	<li><a href='indexfda7.html?m=200806' title='June 2008'>June 2008</a></li>
+	<li><a href='index7d64.html?m=200805' title='May 2008'>May 2008</a></li>
+	<li><a href='index94dd.html?m=200804' title='April 2008'>April 2008</a></li>
+	<li><a href='index9631.html?m=200803' title='March 2008'>March 2008</a></li>
+	<li><a href='indexdd52.html?m=200802' title='February 2008'>February 2008</a></li>
+	<li><a href='index21ee.html?m=200801' title='January 2008'>January 2008</a></li>
+	<li><a href='index363c.html?m=200712' title='December 2007'>December 2007</a></li>
+	<li><a href='index7493.html?m=200711' title='November 2007'>November 2007</a></li>
+	<li><a href='index93a7.html?m=200710' title='October 2007'>October 2007</a></li>
+	<li><a href='index4ca8.html?m=200709' title='September 2007'>September 2007</a></li>
+	<li><a href='index6124.html?m=200708' title='August 2007'>August 2007</a></li>
+	<li><a href='index6013.html?m=200707' title='July 2007'>July 2007</a></li>
+	<li><a href='index2ab6.html?m=200706' title='June 2007'>June 2007</a></li>
+	<li><a href='index44f0.html?m=200705' title='May 2007'>May 2007</a></li>
+	<li><a href='indexf0b4.html?m=200704' title='April 2007'>April 2007</a></li>
+	<li><a href='index481d.html?m=200703' title='March 2007'>March 2007</a></li>
+	<li><a href='indexcbea.html?m=200702' title='February 2007'>February 2007</a></li>
+	<li><a href='index9cdc.html?m=200701' title='January 2007'>January 2007</a></li>
+	<li><a href='index3ea4.html?m=200612' title='December 2006'>December 2006</a></li>
+	<li><a href='index67ca.html?m=200611' title='November 2006'>November 2006</a></li>
+	<li><a href='indexff49.html?m=200610' title='October 2006'>October 2006</a></li>
+	<li><a href='index611c.html?m=200609' title='September 2006'>September 2006</a></li>
+	<li><a href='index9a21.html?m=200608' title='August 2006'>August 2006</a></li>
+	<li><a href='index3ee9.html?m=200607' title='July 2006'>July 2006</a></li>
+	<li><a href='indexe13a.html?m=200606' title='June 2006'>June 2006</a></li>
+</ul>
+</div>
+
+<div class="aisLeftNav">
+	</div>
+
+<div class="aisLeftNav">
+<h2>Books</h2>
+<iframe src="http://rcm.amazon.com/e/cm?t=adventures0d2-20&amp;o=1&amp;p=8&amp;l=as1&amp;asins=0764526413&amp;fc1=000000&amp;IS2=1&amp;lt1=_blank&amp;lc1=0000ff&amp;bc1=000000&amp;bg1=ffffff&amp;f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" name="I5" id="I5"></iframe>
+<br/>
+<iframe src="http://rcm.amazon.com/e/cm?t=adventures0d2-20&amp;o=1&amp;p=8&amp;l=as1&amp;asins=0201633612&amp;fc1=000000&amp;IS2=1&amp;lt1=_blank&amp;lc1=0000ff&amp;bc1=000000&amp;bg1=ffffff&amp;f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" name="I6" id="I6"></iframe>
+<br/>
+<iframe src="http://rcm.amazon.com/e/cm?t=adventures0d2-20&amp;o=1&amp;p=8&amp;l=as1&amp;asins=0136291554&amp;fc1=000000&amp;IS2=1&amp;lt1=_blank&amp;lc1=0000ff&amp;bc1=000000&amp;bg1=ffffff&amp;f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" name="I7" id="I7"></iframe>
+<br/>
+<iframe src="http://rcm.amazon.com/e/cm?t=adventures0d2-20&amp;o=1&amp;p=8&amp;l=as1&amp;asins=1888009195&amp;fc1=000000&amp;IS2=1&amp;lt1=_blank&amp;lc1=0000ff&amp;bc1=000000&amp;bg1=ffffff&amp;f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" name="I8" id="I8"></iframe>
+</div>
+<div class="aisLeftNav">
+<h2>Meta</h2>
+<ul>
+		<li><a href="wp-login.html">Login</a></li>
+	<li><a href="http://validator.w3.org/check/referer" title="This page validates as XHTML 1.0 Transitional">Valid <abbr title="eXtensible HyperText Markup Language">XHTML</abbr></a></li>
+	<li><a href="http://gmpg.org/xfn/"><abbr title="XHTML Friends Network">XFN</abbr></a></li>
+	<li><a href="http://wordpress.org/" title="Powered by WordPress, state-of-the-art semantic personal publishing platform.">WordPress</a></li>
+	</ul>
+</div>
+<div class="aisLeftContent">
+<h2>Community</h2>
+<ul>
+	<script type="text/javascript" src="../../localhost/embed/92q2bbma.js"></script>
+</ul>
+</div>
+
+</div></div></div>
+</div>		</td>
+		<td>
+
+	<div id="content" class="narrowcolumn">
+
+		
+		 		<h2 class="pagetitle">Archive for the &#8216;Patterns&#8217; Category</h2>
+
+ 	  
+
+		<div class="navigation">
+			<div class="alignleft"></div>
+			<div class="alignright"><a href="index731a.html?cat=6&amp;paged=5">Next Entries &raquo;</a></div>
+		</div>
+
+				<div class="post">
+				<h3 id="post-19"><a href="index5831.html?p=19" rel="bookmark" title="Permanent Link to The first tenet of object-oriented programming">The first tenet of object-oriented programming</a></h3>
+				<small>Wednesday, August 16th, 2006</small>
+
+				<div class="entry">
+					<p>What are the tenets of object-oriented programming? This was a popular interview question back in the early 90's. And the expected answer was: encapsulation, inheritance, and polymorphism.</p>
+<p>But go back and read Rumbaugh, OOM&#038;D. In chapter 3 where he begins to build the Object Modeling Technique, he starts with the idea of identity. Identity is the inherent uniqueness of objects, independent of any attributes. Two objects may look the same, act the same, and have the same state, but an action performed on one does not affect the other. They are two distinct objects.</p>
+<p>This fundamental idea is the keystone of object-oriented analysis, design, and programming. I argue that it is the most important of the four (not three) tenets of OO. And yet it is the one that people often neglect.</p>
+<p>If you program in any object-oriented language, I challenge you to really think about how identity manifests itself in your code and designs. Consider how you use it, and what its consequences are. For example, if you are a C++ programmer, consider why you would use a pointer rather than a value. If you pass a pointer to an object into a function, that function can operate on that particular object. If you pass the object itself (i.e. by value), then the function can only work on a copy of the object. But if that object itself contains a pointer to another object, then the pointer is copied, and the function again has access to it. So you use pointers when you want identity.</p>
+<p>If you work in Java, then pointer is a bad word. Some people like to say that there are no pointers in Java, because of the bad reputation pointers got in C++ (memory leaks, buffer overruns, protection faults). Others like to say that everything is a pointer in Java, because Java has a reference type system. Only some of the built-in types are values. So when you pass an object to a method in Java, you have to pass its identity to that function. The function can then do anything it wants to that object. The language does not make a copy, like C++ does, to protect its identity.</p>
+<p>This usually isn't a problem, because you are used to the way the language works. You might make objects immutable to avoid the possibility that the method will change it, or pass in an interface that exposes just the read-only methods. In extreme cases you might even make an explicit copy yourself. But you know that identity is being shared, and so you code for it.</p>
+<p>If you code in C#, then you have options. You can define types that want identity as classes, and types that don't want identity as structs. Classes are reference types (i.e. have identity), and structs are value types (i.e. don't). So when you pass an object to a method, you share its identity. When you pass a structure, you don't. But C# gives you one more choice. You can declare your value-typed parameter using "ref". This suddenly gives the structure identity so that the function can modify it. You probably won't need to do this very often, but when you do you will see identity at work in your app.</p>
+<p>Identity is also apparent in design. Most of the gang-of-four design patterns are heavily dependent upon identity. A visitor is given the identity of an object to visit. A state machine knows the identity of its current state. Each strategy has identity so that it can be distinguished from other strategies that implement the same interface. Patterns that do not take advantage of identity have consequences that derive from that fact. Flyweights must be immutable (since their identity is shared and must not be exploited). Singletons have identity, but the identity of the instance is synonymous with that of the type, and must therefore be protected (against multi-threaded access, or duplicate creation).</p>
+<p>If you draw your designs on a white board or a piece of paper, objects with identity will be visible as boxes or circles. They will be independent yet related to other objects in the drawing. If you draw an arrow from one object to another, you are representing the fact that one object knows the identity of the other. You will probably construct a graph of objects that know each others identities, and live for some time within the system.</p>
+<p>Types that don't want identity will appear as members or parameters of those objects. They will not have a life of their own outside of their identifiable hosts.</p>
+<p>If you engage in object-oriented analysis, design, or programming, you use identity. But most people fail to recognize it. You may find yourself wondering whether to declare that new C# type as a struct or a class. You may wonder whether you should make that method static or not. You may consider reusing an object instead of creating a new one each time. If you put the idea of identity at the front of your thinking, then the answers to all of these questions become apparent.</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="indexb0b7.html?cat=6" title="View all posts in Patterns" rel="category">Patterns</a> |   <a href="index5831.html?p=19#respond" title="Comment on The first tenet of object-oriented programming">No Comments &#187;</a></p>
+
+			</div>
+
+				<div class="post">
+				<h3 id="post-17"><a href="indexd8eb.html?p=17" rel="bookmark" title="Permanent Link to Where Does the UI Begin?">Where Does the UI Begin?</a></h3>
+				<small>Monday, August 7th, 2006</small>
+
+				<div class="entry">
+					<p>Today was my first day at Handmark. Though I did some important work and met some incredible people at Radiant Systems, I needed a change of pace. The upshot for you, dear reader, is that this content will be slightly biased toward Java, Linux, and MySQL. Whereas Radiant was part Java and part .NET, Handmark uses no Microsoft technologies on the server.</p>
+<p>From this new (for me) and interesting landscape comes a challenging puzzle. Handmark creates software for mobile devices. The server component runs at our datacenter, while the client component runs on the cell phone or PDA. My team is working on the server side while another team writes the client.</p>
+<p>The way that you would typically create a client/server application would be to split the system right around the business logic. For a thin client, only the UI would be on the device. For a rich client, the UI and almost all of the business logic is on the client. For a smart client, it's somewhere in between. But the general theme is that UI is on the client.</p>
+<p>Applying this line of reasoning to Handmark, you would expect my team to be working on business logic and data access, and the device team to be working on UI (and some business logic, since this is a smart client). To support multiple devices, you would adopt a common standard for the server, and have the client team to write different software for each device. They would all conform to the one server standard, so the server itself would be device agnostic.</p>
+<p>But here we have a problem. The devices we are talking about have very limited memory and processing power. Certain UI functions, like localization and parsing, are extremely taxing to these micro machines. They don't have the space for translation tables, nor the speed for snappy string manipulation. These functions are really easy for the server, so the client team asks that we preprocess the data for their device.</p>
+<p>Once we have preprocessed the data for one device, it is no longer suitable for another. So our server has to know about the device that is going to render the data. Based on the client device capabilities, the server will provide data in different formats, with images of different resolutions, localized according to the user's preferences. This places UI functionality squarely on the server.</p>
+<p>But isn't that incorrect? Shouldn't the client alone be responsible for UI. After all, it is the user-facing device.</p>
+<p>Actually, no, this is not incorrect. The confusion comes from the difference between logical tiers and physical tiers. We still have a three-tier <em>logical</em> structure, but where we choose to <em>physically</em> host those tiers is controlled by practical constraints. The decision to break the application at the business logic for the client\server boundary was arbitrary. Any other decision could be justified.</p>
+<p>Take a look at the most popular client\server application of all: the World Wide Web. Most web sites that have a three-tier logical structure locate all three tiers at the server. The client is just a dumb browser. The user interface is written in PHP, JSP, ASPX, or some other language that the browser does not understand. This code is executed on the server to produce HTML. And due to browser incompatibility, this server-side UI often has to be device-aware.</p>
+<p>The right solution depends upon the problem. In Handmark's case, the solution is to put some of the UI on the server. With the right infrastructure, this is fairly easy to do. Sometimes thinking outside the box means keeping more features inside the box. So don't put arbitrary demands on your clients. If the problem demands it, put some or all of the UI on the server.</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="indexb0b7.html?cat=6" title="View all posts in Patterns" rel="category">Patterns</a> |   <a href="indexd8eb.html?p=17#comments" title="Comment on Where Does the UI Begin?">3 Comments &#187;</a></p>
+
+			</div>
+
+				<div class="post">
+				<h3 id="post-16"><a href="index0e62-2.html?p=16" rel="bookmark" title="Permanent Link to A Memento&#8217;s a Memento">A Memento&#8217;s a Memento</a></h3>
+				<small>Thursday, August 3rd, 2006</small>
+
+				<div class="entry">
+					<p>A developer on my team just solved an insidious problem today. He found that an object that was correctly filled in on the client was incorrectly deserialized on the server. This object contained discrete amounts as separate properties. Two of these amounts are called Product and Tip. He found that on the server side Product was the sum of Product and Tip on the client side. Tip was still correct.</p>
+<p>After a moment of insight, he realized the problem. This class defines a calculated property called Total that returns Product + Tip. Because this class is serializable, Total cannot be read-only. Therefore, the setter assigns the value to Product. The server must have been deserializing Total after Product, and therefore overwriting the value.</p>
+<p>When described in so many words, it appears obvious. The setter for Total was wrong. But what should the setter for Total look like? My first instinct was that Total should set Product to the value minus the current Tip. That way, no matter what the object currently looks like, you can set the Total, get the Total and see exactly the result you expected.</p>
+<p>But this solution is wrong. The decision to change Product and not Tip is arbitrary. Sure, if the Tip was deserialized first, then this would produce the correct result. But not if deserialization occurs in the order Product, Total, Tip. In this case, Product would initiallly be set correctly, then overwritten by the total (Total-current Tip, which is 0). Finally Tip would be set correctly. You would again be left with a Product that is too high.</p>
+<p>So how about this solution. Instead of making Total a property, make GetTotal() a method. That way the runtime doesn't try to serialize it. This, in fact, is what my coworker did, and it worked. However, even this solution is wrong. Consider what he had to do in the first place, and you'll see why.</p>
+<p>.NET web services do some interesting magic for you. First, you can write a class, decorate it with the appropriate attributes, and build. .NET will generate a WSDL descriptor for the data type. Cool. Then, you can import that WSDL into another project and it will reconstruct that class. Double cool. Now you can pass objects of that class to and from the web service.</p>
+<p>But wait! That's not the same class! It has the same name and lives in the same namespace, but it is different. .NET generated that type from WSDL, which doesn't describe things like methods (outside of web service methods), inheritance, and interfaces. .NET <em>couldn't</em> generate exactly the same class.</p>
+<p>If you add a method to the class, it doesn't make it to the other side. If you create a derived class, the web service slices your objects to the base class. If you declare interfaces, just forget all about them. So how did my coleague create a class with a calculated property? Isn't that a method?</p>
+<p>Well, he defined that class on the server side. When .NET did its round trip from class to WSDL and back to class, it lost that calculation. So he just edited the generated code so that it used the original class defined on the server side. This allows the client and server to share code, and code reuse is good, right?</p>
+<p>Well, no, not always. This was <em>generated</em> code. It was already reusing the description, even if not the actual code, of the server side. If a programmer needs to make a change to this class, the programmer still needs to change only one source file. It doesn't matter how much work the compiler needs to do.</p>
+<p>But the core of the problem is this: .NET web services were designed to exchange mementos. The documentation doesn't come right out and say that, and the compiler doesn't complain if the class has more than just properties. But the fact is that things just don't work out right unless the types used in web services are just mementos.</p>
+<p>This is true for any serialization, persistence, or network communication strategy. You are not exchanging objects, you are exchanging data. We are so used to object-oriented programming that we fail to recognize when something is not an object. We want to send an object of a derived class to a web service method that expects the base. We want the web service to act polymorphically on the object. We want the object to handle its own behavior. But it just can't work that way. Persistable objects are just mementos, and all behavior needs to be implemented elsewhere.</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="indexb0b7.html?cat=6" title="View all posts in Patterns" rel="category">Patterns</a> |   <a href="index0e62-2.html?p=16#comments" title="Comment on A Memento&#8217;s a Memento">1 Comment &#187;</a></p>
+
+			</div>
+
+				<div class="post">
+				<h3 id="post-10"><a href="index64b4.html?p=10" rel="bookmark" title="Permanent Link to SOA Tight Coupling">SOA Tight Coupling</a></h3>
+				<small>Friday, July 7th, 2006</small>
+
+				<div class="entry">
+					<p>Service Oriented Architecture is a name for modeling an automated process as a set of services. This approach pushes back against the usual IT pattern of defining a central database that various programs interface with. SOA solves some problems, but I have found that it doesn't go far enough.</p>
+<p>The problem with the monolithic central database pattern of traditional IT is one of dependency. All of the applications that interface with the central database come to depend upon its schema. And in order for them to communicate with each other, their schema dependencies must overlap. This makes it difficult to modify one application without breaking the others. As a result, the applications not only become too dependent upon the database, they also become too dependent upon each other.</p>
+<p>The SOA solution to this is to integrate applications through contracts instead of through databases. Each application, or service as it is now called, defines a set of requests that it can process, and the schema for those requests. Services house their own databases, so that internal schema can change without affecting any other services.</p>
+<p>This is an improvement, but I have found that it is not enough. In practice, SOA still leads to tight coupling. This happens in two ways.</p>
+<p>First, a service -- a logical concept -- becomes tightly coupled to machines -- a physical concept. The service must be installed on a server or set of servers, and its database must be housed within that farm. Clients of the service are configured to send requests to that machine or farm. It is difficult to move a service to new hardware, or to start a second instance of a service within the organization.</p>
+<p>Second, service contracts get tightly coupled to their implementations. Most contracts in practice are not negotiated among a group of service providers and clients. Instead, each contract is dictated by the service provider. In some implementation technologies, such as WSDL, a client must contact the service to discover the contract. And even when the contract was negotiated, as was ISO-8583 for financial exchange, it is often implemented inconsistently from one service provider to the next. The end result is that the client must know the particular service provider it is using instead of a general purpose contract.</p>
+<p><strong>Here's my solution</strong><br />
+At the day job, we have a number of third-party integration solutions where we play the role of service provider. We reduce coupling by moving the integration point away from the network. Instead, we publish client-side APIs that talk to our servers. We use language constructs such as interfaces to define contracts. Language-based interfaces tend to be less fragile than protocol-based contracts because we have compiler validation.</p>
+<p>We have to write a client implementation for each technology that is expected to use the service (e.g. both Java and .NET). But this is more than offset by the time saved by the consumer of the service. It is much easier for one party to ensure interoperability on both sides of the protocol. Just look at how easily a .NET web service client talks to a .NET web service, as compared to bridging .NET and Java.</p>
+<p>If more than one service provider implements the interface, then the client can quickly swap one service for another. In fact, this switch can be made at run time, where some requests are sent to one provider and others to another provider.</p>
+<p>This is only a partial solution, however. Our service is still tightly coupled to our datacenter. It would not be easy to move or split the data. But if we needed to, at least those concerns will be neatly hidden away behind a client-side interface.</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="indexb0b7.html?cat=6" title="View all posts in Patterns" rel="category">Patterns</a> |   <a href="index64b4.html?p=10#respond" title="Comment on SOA Tight Coupling">No Comments &#187;</a></p>
+
+			</div>
+
+				<div class="post">
+				<h3 id="post-9"><a href="indexb5fb.html?p=9" rel="bookmark" title="Permanent Link to Prefer asynchronous messaging">Prefer asynchronous messaging</a></h3>
+				<small>Wednesday, July 5th, 2006</small>
+
+				<div class="entry">
+					<p>We are in the middle of a rewrite of one of our main products. The current generation of the product has a large number of significant problems that manifest as support incidents and low customer satisfaction. One of the core faults behind these problems is the messaging infrastructure.</p>
+<p>We developed a SOAP infrastructure before .NET was released, and before the ink on web service standards was dry. Our infrastructure was based on remote procedure calls (RPCs). This was great for development and worked fine in the lab. We could define an interface, create a proxy, and call it as if it were a local object.</p>
+<p>When a real procedure is called, the thread transfers execution to a subroutine. When the subroutine terminates, the thread returns to the caller. Simple.</p>
+<p>RPCs attempt to simulate the same model across machine boundaries. To do so, they block the client thread while the message is delivered to the server. The server processes the message and returns the result to the client. Only then is the client's thread resumed.</p>
+<p>This works well, except when it doesn't. In a real procedure call, it is inconceivable that the thread will not make it into the subroutine. In an RPC, however, many factors conspire to interfere with the message. You do not have guaranteed delivery. Therefore, your RPC can't truly look just like a real procedure call. It has to be prepared for failures such as dropped connections and timeouts.</p>
+<p>Furthermore, this approach does not scale. While the message is in transit and work is being performed on the server, the client's thread is blocked. And when problems occur, clients retry, and that forces the server to do the same work all over again. These retries escalate the problem, and cause an avalanche of activity during which the server is too busy to get any work done.</p>
+<p><strong>Here's my solution</strong><br />
+Face it, the RPC model is broken. Don't use it. Don't allow your clients to expect an immediate answer to their queries. Instead, use asynchronous messaging. An asynchronous message does not return anything, so the caller doesn't have to wait for it to be processed. Furthermore, asynchronous messages can guarantee durable delivery, depending on the implementation you choose.</p>
+<p>If you can, use a message queue. MSMQ now supports HTTP transport, so it is finally ready for the Internet. In the Java space, JMS is your tool of choice. But if your client's are too light-weight for a message queue, you still have options.</p>
+<p>Web services are based on HTTP, which is intrinsically synchronous. However, they can be used asynchronously. .NET goes part of the way for you. It adds Begin and End pairs to your web service proxies. This at least keeps your threads free, but it offloads the waiting to the framework. Just look at what it does behind the scenes and you'll see that this isn't a full solution. Your requests are still serialized: if you begin methods A, B, and C, you will receive always the results in exactly that order, even if A is slow and C is fast. The methods still queue up and get submitted synchronously.</p>
+<p>What you can do is to break your methods up. Have one method for delivery, and another for retrieving results. If the results are not ready, don't wait for them. Return immediately. That way, you can deliver messages in any order, and periodically check for their results without blocking. It sounds like more work on the server, but it is actually more scalable.</p>
+<p>This is how message queues work under the covers. This is also the approach we are taking in our rewrite, since we can't afford a message queue on the client. It's more difficult to write the code this way, but test are already showing that it is a more stable solution. If you can use a real message queue, then you will have the best of both worlds.</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="indexb0b7.html?cat=6" title="View all posts in Patterns" rel="category">Patterns</a> |   <a href="indexb5fb.html?p=9#respond" title="Comment on Prefer asynchronous messaging">No Comments &#187;</a></p>
+
+			</div>
+
+				<div class="post">
+				<h3 id="post-7"><a href="indexc4f7.html?p=7" rel="bookmark" title="Permanent Link to Versioning in a heterogeneous environment">Versioning in a heterogeneous environment</a></h3>
+				<small>Thursday, June 29th, 2006</small>
+
+				<div class="entry">
+					<p>I work on Enterprise software systems. These systems tend to have many components distributed across several machines. These machines are joined by networks, but separated by time and space.</p>
+<p>Some of the machines are under our control. Some are not. We control the machines in the datacenter: web servers, application servers, and database servers, among others. We do not control the customer's machines that run our client software, the customer datacenters that replicates our tables, or the third-party integration servers that call our web services.</p>
+<p>We run heterogeneous versions of our software every day. We can't force someone else to upgrade their machines when we upgrade ours. And even on the machines that we control, we have to tolerate heterogeneous versions during the roll out. This is a 24*7 environment. We can't take the datacenter down, roll out all the upgrades, then bring it back up. We have to roll out while live. And we have to be careful. So a rollout may take a week or more.</p>
+<p>We have found a few patterns that help us cope with heterogeneous versions of our software running on several machines. Here are a few of them.</p>
+<p>When making changes to the database, we can only add to the schema. We can add tables, add columns to existing tables, add stored procedures, add parameters to the end of existing stored procedures, and add columns that stored procedures return. And all new parameters must have defaults. We cannot take away or rearrange anything. All database access is accomplished through stored procedures.</p>
+<p>These rules allow us to upgrade the database before the application servers. The older code will work just fine with the new procs.</p>
+<p>Since messages flow both ways between clients and servers, we can't get by with the same rules that we use for the database. So we use loose data types for client-server boundaries. Our favorite data type is the property bag. A property bag simply contains named properties of various types. Bags can contain bags, and arrays of bags, allowing for fairly complex data structures. But these data structures are not strict. If either the client or the server don't find a property that they expect, they have to assume a reasonable default.</p>
+<p>Property bags allow us to upgrade distributed components on varying schedules, but they are loose data types. Strict data types are better for third-party integration. So we have a different pattern for that. We usually do this sort of integration through web services. So we will publish a certain version of the WSDL that includes the strict data types that that version expects. We will create a virtual folder for that web service that is named according to the WSDL version. When we need to make a change, we will publish new WSDL to a new virtual folder. Even if only one data type changed, we will make that an entirely new WSDL deployment.</p>
+<p>These are just three of the patterns that we've learned over time. Post comments and let me know what patterns you use.</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="indexb0b7.html?cat=6" title="View all posts in Patterns" rel="category">Patterns</a> |   <a href="indexc4f7.html?p=7#respond" title="Comment on Versioning in a heterogeneous environment">No Comments &#187;</a></p>
+
+			</div>
+
+				<div class="post">
+				<h3 id="post-6"><a href="index42dc.html?p=6" rel="bookmark" title="Permanent Link to The timestamp\bookmark pattern">The timestamp\bookmark pattern</a></h3>
+				<small>Wednesday, June 28th, 2006</small>
+
+				<div class="entry">
+					<p>Quite often I've found the need to synchronize data in two different stores. This usually occurs in an integration project, where one party has a database in one form and another has a database in another. They want to replicate changes from the source database to the target database. This also occurs in our client-server systems where we cache data on the client and synchronize it to the server.</p>
+<p>A pattern that I've used on several of these projects is the timestamp\bookmark pattern. In this pattern, every row of the source table includes a datetime column that indicates the time at which the row was inserted or last updated. The destination database queries for rows after a specified datetime. Usually this query includes a "top N" statement and is ordered by the modified datetime. The destination keeps track of the most recent modified datetime it has seen and uses that in the query.</p>
+<p>This pattern is incredibly simple, scalable, durable, and robust. Since the destination holds the state of the transfer, the source (usually the more active database) is stateless. The source can synchronize with any number of destinations simultaneously. And if the destination fails to receive or process the results of a query, it just asks again.</p>
+<p>Unfortunately, this pattern is not without its drawbacks. Here are some to watch out for.</p>
+<p>This pattern does not synchronize deletions. If a row is deleted from the source, the query returns nothing to the destination that would indicate that this has happened.</p>
+<p>This pattern does not ensure consistency. If multiple related tables are synchronized according to this pattern (as so often happens), the destination may see a combination of records that never actually occurred at the source.</p>
+<p>This pattern is not auditable. There is no real history of the changes made to the tables.</p>
+<p>This pattern does not support subsets very well. The query could filter the data according to some criteria specified by the destination, but that criteria cannot change. If we later find that we need to broaden the subset, there is no way to go back and get the records that we missed. At least not without starting all over again from scratch.</p>
+<p>If these problems are not a concern for your need, then timestamp\bookmark may be the right solution for you.</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="indexb0b7.html?cat=6" title="View all posts in Patterns" rel="category">Patterns</a> |   <a href="index42dc.html?p=6#respond" title="Comment on The timestamp\bookmark pattern">No Comments &#187;</a></p>
+
+			</div>
+
+		
+		<div class="navigation">
+			<div class="alignleft"></div>
+			<div class="alignright"><a href="index731a.html?cat=6&amp;paged=5">Next Entries &raquo;</a></div>
+		</div>
+
+	
+	</div>
+		</td>
+	</tr>
+</table>
+
+<hr />
+<div id="footer">
+<!-- If you'd like to support WordPress, having the "powered by" link someone on your blog is the best way, it's our only promotion or advertising. -->
+	<p>
+		Adventures in Software is proudly powered by 
+		<a href="http://wordpress.org/">WordPress</a>
+		<br /><a href="indexd784.html?feed=rss2">Entries (RSS)</a>
+		and <a href="indexa6da.html?feed=comments-rss2">Comments (RSS)</a>.
+		<!-- 17 queries. 2.242 seconds. -->
+	</p>
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-389401-3");
+pageTracker._trackPageview();
+} catch(err) {}</script></div>
+
+<!-- Gorgeous design by Michael Heilemann - http://binarybonsai.com/kubrick/ -->
+
+		<div id="sk2-footer" style="color:#FFF; background-color:#444; padding: 3px 2px 3px 2px; border-top: #888 solid 1px;">This blog is protected by <a href="http://unknowngenius.com/blog/" title="Dave">dr Dave</a>'s <strong><a href="http://unknowngenius.com/blog/wordpress/spam-karma/" title="SK2">Spam Karma 2</a></strong>: <strong>274531</strong>  Spams eaten and counting...</div><script type="text/javascript" src="replies.js"></script>
+<script type="text/javascript" src="blogger.js"></script>
+<script type="text/javascript" src="http://twitter.com/statuses/user_timeline/michaellperry.json?callback=twitterCallback2&amp;count=5"></script>
+<script type="text/javascript" src="http://search.twitter.com/search.json?q=@michaellperry&amp;callback=twitterCallbackReplies&amp;rpp=5"></script>
+</body>
+
+<!-- Mirrored from adventuresinsoftware.com/blog/?cat=6&paged=6 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 Jan 2017 13:10:08 GMT -->
+</html>

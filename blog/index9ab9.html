@@ -1,0 +1,910 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+
+
+<!-- Mirrored from adventuresinsoftware.com/blog/?m=201009 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 Jan 2017 12:35:18 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>Adventures in Software   &raquo; 2010&raquo; September</title>
+
+<meta name="generator" content="WordPress 2.3.3" /> <!-- leave this for stats -->
+
+<link rel="stylesheet" href="wp-content/themes/ais2/style.css" type="text/css" media="screen" />
+<link rel="alternate" type="application/rss+xml" title="Adventures in Software RSS Feed" href="indexd784.html?feed=rss2" />
+<link rel="pingback" href="xmlrpc.html" />
+    <script type="text/javascript">
+        function onSilverlightError(sender, args) {
+            var appSource = "";
+            if (sender != null && sender != 0) {
+              appSource = sender.getHost().Source;
+            }
+            
+            var errorType = args.ErrorType;
+            var iErrorCode = args.ErrorCode;
+
+            if (errorType == "ImageError" || errorType == "MediaError") {
+              return;
+            }
+
+            var errMsg = "Unhandled Error in Silverlight Application " +  appSource + "\n" ;
+
+            errMsg += "Code: "+ iErrorCode + "    \n";
+            errMsg += "Category: " + errorType + "       \n";
+            errMsg += "Message: " + args.ErrorMessage + "     \n";
+
+            if (errorType == "ParserError") {
+                errMsg += "File: " + args.xamlFile + "     \n";
+                errMsg += "Line: " + args.lineNumber + "     \n";
+                errMsg += "Position: " + args.charPosition + "     \n";
+            }
+            else if (errorType == "RuntimeError") {           
+                if (args.lineNumber != 0) {
+                    errMsg += "Line: " + args.lineNumber + "     \n";
+                    errMsg += "Position: " +  args.charPosition + "     \n";
+                }
+                errMsg += "MethodName: " + args.methodName + "     \n";
+            }
+
+            throw new Error(errMsg);
+        }
+    </script>
+
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc0db0.php?rsd" />
+ <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="wp-includes/wlwmanifest.xml" /> <style type='text/css'>
+<!--#header { background: url('wp-content/themes/ais2/images/header-imgae03.html?upper=A7A73F&amp;lower=77773F') no-repeat bottom center; }
+--></style>
+</head>
+<body>
+<div id="page">
+
+<div class="aisTopBar">
+	<form method="get" id="searchform" action="http://adventuresinsoftware.com/blog/">
+<div>
+<a href="indexd784.html?feed=rss2"><img src="../images/feed-icon-28x28.png" border="0"></a>
+<input type="text" value="" name="s" id="s" />
+<input type="submit" id="searchsubmit" value="Search" />
+</div>
+</form>
+</div>
+
+<div class="aisHeaderImageRight">
+	<div class="aisHeaderImage">
+	<div class="aisHeaderCornerRight">
+	<div class="aisHeaderCornerLeft">
+	<div class="aisImageBar">
+	<div class="aisSubSites">
+		<a href="index.html" class="aisSubSiteLink"><span class="aisSiteTabRight"><span class="aisSiteTabLeft"><span class="aisSiteTab">
+			home</span></span></span></a>
+		<a class="aisSubSiteLink" href="indexb60a.html?cat=27"><span class="aisSiteTabRight"><span class="aisSiteTabLeft"><span class="aisSiteTab">
+			historic modeling</span></span></span></a>
+		<a class="aisSubSiteLink" href="indexa88f.html?cat=36"><span class="aisSiteTabRight"><span class="aisSiteTabLeft"><span class="aisSiteTab">
+			update controls</span></span></span></a>
+		<a href="index2d79.html?cat=26" class="aisSubSiteLink"><span class="aisSiteTabRight"><span class="aisSiteTabLeft"><span class="aisSiteTab">
+			degrees of freedom</span></span></span></a>
+		<a class="aisSubSiteLink" href="indexba53.html?page_id=2"><span class="aisSiteTabRight"><span class="aisSiteTabLeft"><span class="aisSiteTab">
+			about us</span></span></span></a>
+
+	</div>
+	</div>
+	</div>
+	</div>
+	</div>
+</div>
+
+<table style="width: 100%" cellspacing="0" cellpadding="0">
+	<tr valign="top">
+		<td width="210px">
+<div id="sidebar">
+<div class="aisLeftColumnFill">
+<div class="aisLeftColumnBottom">
+<div class="aisLeftColumnTop">
+<div id="twitter_div" class="aisLeftNav">
+<h2 class="sidebar-title">Twitter Updates</h2>
+<ul id="twitter_update_list"></ul>
+<a href="http://twitter.com/michaellperry" id="follow">Follow me</a>
+</div>
+<div id="twitter_reply_div" class="aisLeftNav">
+<h2 class="sidebar-title">Twitter Replies</h2>
+<ul id="twitter_reply_list"></ul>
+</div>
+
+<div class="aisLeftNav">
+<a href='http://ineta.org/Speakers/SearchCommunitySpeakers.aspx?SpeakerId=c5110e21-9243-461b-a464-a6548524e885'><img alt='INETA Community Speakers Program' border='0' src='../../www.ineta.org/images/OfficialLogos/InetaCommunitySpeakersRequestMe.html' /></a>
+</div>
+
+<div class="aisLeftNav">
+	<li class="pagenav"><h2>Pages</h2><ul><li class="page_item page-item-2"><a href="indexba53.html?page_id=2" title="About Us">About Us</a></li>
+<li class="page_item page-item-210"><a href="index6ae3.html?page_id=210" title="Templates">Templates</a></li>
+</ul></li></div>
+
+<div class="aisLeftNav">
+<h2>Archives</h2>
+<ul>
+	<li><a href='indexb4d5.html?m=201110' title='October 2011'>October 2011</a></li>
+	<li><a href='indexc61a.html?m=201106' title='June 2011'>June 2011</a></li>
+	<li><a href='indexa80d.html?m=201105' title='May 2011'>May 2011</a></li>
+	<li><a href='index512b.html?m=201104' title='April 2011'>April 2011</a></li>
+	<li><a href='index08fb.html?m=201103' title='March 2011'>March 2011</a></li>
+	<li><a href='index52f4.html?m=201102' title='February 2011'>February 2011</a></li>
+	<li><a href='index74f1.html?m=201101' title='January 2011'>January 2011</a></li>
+	<li><a href='index8956.html?m=201012' title='December 2010'>December 2010</a></li>
+	<li><a href='indexa1aa.html?m=201011' title='November 2010'>November 2010</a></li>
+	<li><a href='indexe3d5.html?m=201010' title='October 2010'>October 2010</a></li>
+	<li><a href='index9ab9.html?m=201009' title='September 2010'>September 2010</a></li>
+	<li><a href='index1ff0.html?m=201008' title='August 2010'>August 2010</a></li>
+	<li><a href='index9f11.html?m=201007' title='July 2010'>July 2010</a></li>
+	<li><a href='index31f0.html?m=201006' title='June 2010'>June 2010</a></li>
+	<li><a href='indexd189.html?m=201005' title='May 2010'>May 2010</a></li>
+	<li><a href='indexb5c0.html?m=201004' title='April 2010'>April 2010</a></li>
+	<li><a href='indexf258.html?m=201003' title='March 2010'>March 2010</a></li>
+	<li><a href='index6e30.html?m=201002' title='February 2010'>February 2010</a></li>
+	<li><a href='index6b19.html?m=201001' title='January 2010'>January 2010</a></li>
+	<li><a href='index5c0a.html?m=200912' title='December 2009'>December 2009</a></li>
+	<li><a href='index8f62.html?m=200911' title='November 2009'>November 2009</a></li>
+	<li><a href='index451d.html?m=200910' title='October 2009'>October 2009</a></li>
+	<li><a href='index3e04.html?m=200909' title='September 2009'>September 2009</a></li>
+	<li><a href='index425a.html?m=200908' title='August 2009'>August 2009</a></li>
+	<li><a href='index9907.html?m=200907' title='July 2009'>July 2009</a></li>
+	<li><a href='index3104.html?m=200906' title='June 2009'>June 2009</a></li>
+	<li><a href='indexc36d.html?m=200905' title='May 2009'>May 2009</a></li>
+	<li><a href='index17e8.html?m=200904' title='April 2009'>April 2009</a></li>
+	<li><a href='index10a5.html?m=200903' title='March 2009'>March 2009</a></li>
+	<li><a href='index8988.html?m=200902' title='February 2009'>February 2009</a></li>
+	<li><a href='index1419.html?m=200901' title='January 2009'>January 2009</a></li>
+	<li><a href='index7866.html?m=200812' title='December 2008'>December 2008</a></li>
+	<li><a href='index55f6.html?m=200811' title='November 2008'>November 2008</a></li>
+	<li><a href='indexa7bc.html?m=200810' title='October 2008'>October 2008</a></li>
+	<li><a href='indexe77c.html?m=200809' title='September 2008'>September 2008</a></li>
+	<li><a href='indexcffc.html?m=200808' title='August 2008'>August 2008</a></li>
+	<li><a href='index0e62.html?m=200807' title='July 2008'>July 2008</a></li>
+	<li><a href='indexfda7.html?m=200806' title='June 2008'>June 2008</a></li>
+	<li><a href='index7d64.html?m=200805' title='May 2008'>May 2008</a></li>
+	<li><a href='index94dd.html?m=200804' title='April 2008'>April 2008</a></li>
+	<li><a href='index9631.html?m=200803' title='March 2008'>March 2008</a></li>
+	<li><a href='indexdd52.html?m=200802' title='February 2008'>February 2008</a></li>
+	<li><a href='index21ee.html?m=200801' title='January 2008'>January 2008</a></li>
+	<li><a href='index363c.html?m=200712' title='December 2007'>December 2007</a></li>
+	<li><a href='index7493.html?m=200711' title='November 2007'>November 2007</a></li>
+	<li><a href='index93a7.html?m=200710' title='October 2007'>October 2007</a></li>
+	<li><a href='index4ca8.html?m=200709' title='September 2007'>September 2007</a></li>
+	<li><a href='index6124.html?m=200708' title='August 2007'>August 2007</a></li>
+	<li><a href='index6013.html?m=200707' title='July 2007'>July 2007</a></li>
+	<li><a href='index2ab6.html?m=200706' title='June 2007'>June 2007</a></li>
+	<li><a href='index44f0.html?m=200705' title='May 2007'>May 2007</a></li>
+	<li><a href='indexf0b4.html?m=200704' title='April 2007'>April 2007</a></li>
+	<li><a href='index481d.html?m=200703' title='March 2007'>March 2007</a></li>
+	<li><a href='indexcbea.html?m=200702' title='February 2007'>February 2007</a></li>
+	<li><a href='index9cdc.html?m=200701' title='January 2007'>January 2007</a></li>
+	<li><a href='index3ea4.html?m=200612' title='December 2006'>December 2006</a></li>
+	<li><a href='index67ca.html?m=200611' title='November 2006'>November 2006</a></li>
+	<li><a href='indexff49.html?m=200610' title='October 2006'>October 2006</a></li>
+	<li><a href='index611c.html?m=200609' title='September 2006'>September 2006</a></li>
+	<li><a href='index9a21.html?m=200608' title='August 2006'>August 2006</a></li>
+	<li><a href='index3ee9.html?m=200607' title='July 2006'>July 2006</a></li>
+	<li><a href='indexe13a.html?m=200606' title='June 2006'>June 2006</a></li>
+</ul>
+</div>
+
+<div class="aisLeftNav">
+	</div>
+
+<div class="aisLeftNav">
+<h2>Books</h2>
+<iframe src="http://rcm.amazon.com/e/cm?t=adventures0d2-20&amp;o=1&amp;p=8&amp;l=as1&amp;asins=0764526413&amp;fc1=000000&amp;IS2=1&amp;lt1=_blank&amp;lc1=0000ff&amp;bc1=000000&amp;bg1=ffffff&amp;f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" name="I5" id="I5"></iframe>
+<br/>
+<iframe src="http://rcm.amazon.com/e/cm?t=adventures0d2-20&amp;o=1&amp;p=8&amp;l=as1&amp;asins=0201633612&amp;fc1=000000&amp;IS2=1&amp;lt1=_blank&amp;lc1=0000ff&amp;bc1=000000&amp;bg1=ffffff&amp;f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" name="I6" id="I6"></iframe>
+<br/>
+<iframe src="http://rcm.amazon.com/e/cm?t=adventures0d2-20&amp;o=1&amp;p=8&amp;l=as1&amp;asins=0136291554&amp;fc1=000000&amp;IS2=1&amp;lt1=_blank&amp;lc1=0000ff&amp;bc1=000000&amp;bg1=ffffff&amp;f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" name="I7" id="I7"></iframe>
+<br/>
+<iframe src="http://rcm.amazon.com/e/cm?t=adventures0d2-20&amp;o=1&amp;p=8&amp;l=as1&amp;asins=1888009195&amp;fc1=000000&amp;IS2=1&amp;lt1=_blank&amp;lc1=0000ff&amp;bc1=000000&amp;bg1=ffffff&amp;f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" name="I8" id="I8"></iframe>
+</div>
+<div class="aisLeftNav">
+<h2>Meta</h2>
+<ul>
+		<li><a href="wp-login.html">Login</a></li>
+	<li><a href="http://validator.w3.org/check/referer" title="This page validates as XHTML 1.0 Transitional">Valid <abbr title="eXtensible HyperText Markup Language">XHTML</abbr></a></li>
+	<li><a href="http://gmpg.org/xfn/"><abbr title="XHTML Friends Network">XFN</abbr></a></li>
+	<li><a href="http://wordpress.org/" title="Powered by WordPress, state-of-the-art semantic personal publishing platform.">WordPress</a></li>
+	</ul>
+</div>
+<div class="aisLeftContent">
+<h2>Community</h2>
+<ul>
+	<script type="text/javascript" src="../../localhost/embed/92q2bbma.js"></script>
+</ul>
+</div>
+
+</div></div></div>
+</div>		</td>
+		<td>
+
+	<div id="content" class="narrowcolumn">
+
+		
+		 		<h2 class="pagetitle">Archive for September, 2010</h2>
+
+		
+
+		<div class="navigation">
+			<div class="alignleft"></div>
+			<div class="alignright"></div>
+		</div>
+
+				<div class="post">
+				<h3 id="post-558"><a href="index193e.html?p=558" rel="bookmark" title="Permanent Link to Linq to SQL and the Repository Pattern">Linq to SQL and the Repository Pattern</a></h3>
+				<small>Monday, September 27th, 2010</small>
+
+				<div class="entry">
+					<p>Earlier this month, I posted <a href="indexa165.html?p=550">Entity Framework and the Repository Pattern</a>. Mickey <a href="http://github.com/mickeyvip/RepositoryPattern">posted</a> that code on GitHub, along with his own Linq to SQL implementation.</p>
+<p>For those new to Git, here’s how you can get Mickey’s repository:</p>
+<ul>
+<li>Install <a href="http://code.google.com/p/msysgit/">msysgit</a> (if you are on Windows).</li>
+<li>Create a folder for the project.</li>
+<li>Right-click and choose “Git Bash Here”.</li>
+<li>git init</li>
+<li>git remote add origin <a href="http://github.com/mickeyvip/RepositoryPattern.git">http://github.com/mickeyvip/RepositoryPattern.git</a></li>
+<li>git pull origin master</li>
+<li>Open RepositoryPattern.sln.</li>
+</ul>
+<p>Mickey took the time to complete the story for me. I posted only enough code to make my point (which was, BTW, that the Repository Pattern takes more work than you might expect). Mikey reverse engineered the database that I used for my example, and even populated it with data from this blog. Wow!</p>
+<p>Now let’s review his work.</p>
+<h3>Tests</h3>
+<p><a href="wp-content/uploads/2010/09/image.png"><img style="border-bottom: 0px; border-left: 0px; display: inline; margin-left: 0px; border-top: 0px; margin-right: 0px; border-right: 0px" title="image" border="0" alt="image" align="right" src="wp-content/uploads/2010/09/image-thumb.png" width="244" height="184" /></a> Mickey not only includes unit test (the motivation for my original post), but also integration tests. Just open the solution and hit Ctrl+R, A to run all tests. If you find that the tests don’t deploy the database file, double-click the Local.testsettings file and add the dbf to the Deployment section. I found that the tests passed before I turned on code coverage, but then I had to make this change.</p>
+<p>I enabled code coverage and found that he achieves 92%-100% in all modules except for the generated code. The reason that it is not 100% is mostly due to the fact that my original tests didn’t add anything to the repository.</p>
+<h3>Two sets of data types</h3>
+<p>The goal of the original post was not persistence ignorance, it was testing. But persistence ignorance is often a reason for using the Repository Pattern. Mickey’s solution is not persistence ignorant, either.</p>
+<p>If you look in the Data project, you will see NoteworthyEntitiesL2SModel.dbml <em>and</em> NoteworthyEntitiesEFModel.edmx. That is, he used both EF and L2S to generate models from the database. This created two separate sets of data types.</p>
+<p>This division necessarily permeates the solution, since those generated data types are exposed from the repository. As a result, he has a separate memory provider for each data access technology. The EF memory provider expects ObjectContext and ObjectQuery. The L2S memory provider replaces those with DataContext and Table.</p>
+<p>Both of the memory providers have unit tests. They distinguish between the two by namespace. EF and L2S use different strategies for naming associative tables, but other than that the code looks the same.</p>
+<p>In practice, you will typically choose one data access technology, so this lack of persistence ignorance is not a problem. But if it bothers you, please look into POCO support for EF and L2S to see if there’s a way to remove the dependency upon the data access technology.</p>
+<h3>Thank you, Mickey</h3>
+<p>I am quite impressed with the effort that Mickey put into packaging this example and making it available to us. He took code that only worked on my machine and filled in the missing components so that we can all run the tests. And he took what was working for Entity Framework and ported it to Linq to SQL so that you have the choice. Now, either way you go, you can test your data services.</p>
+<p>Thanks, man.</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="index9591.html?cat=37" title="View all posts in DDD" rel="category">DDD</a>,  <a href="indexe8fb.html?cat=39" title="View all posts in Entity Framework" rel="category">Entity Framework</a>,  <a href="index3f7b.html?cat=2" title="View all posts in Unit testing" rel="category">Unit testing</a> |   <a href="index193e.html?p=558#respond" title="Comment on Linq to SQL and the Repository Pattern">No Comments &#187;</a></p>
+
+			</div>
+
+				<div class="post">
+				<h3 id="post-555"><a href="index960c.html?p=555" rel="bookmark" title="Permanent Link to Correspondence code cadence">Correspondence code cadence</a></h3>
+				<small>Sunday, September 26th, 2010</small>
+
+				<div class="entry">
+					<p>As a follow up to the demonstration of Correspondence on Windows Phone 7, I’ve added a feature to the Reversi app. This demonstrates the cadence of coding with Correspondence.</p>
+<p>The cadence is:</p>
+<ul>
+<li>Fact </li>
+<li>Community </li>
+<li>Query </li>
+<li>View Model </li>
+</ul>
+<p>First, you define a fact in the model. A fact represents an action taken by a user. It is a fact that a player sent a message in a game.</p>
+<p>Second, you add that fact to the community. When the user presses “Send”, call Community.AddFact(new Message()).</p>
+<p>Third, you write a query in a related fact. Query a game for all of the messages.</p>
+<p>Fourth, you expose that query through the view model. Data bind to the collection of messages.</p>
+<p>Watch this video for an example of that code cadence as I add the chat feature to Reversi, both in WPF and in Windows Phone 7.</p>
+<p> <iframe height="360" src="http://player.vimeo.com/video/15300219" frameborder="0" width="600"></iframe>
+<p><a href="http://vimeo.com/15300219">Coding Correspondence on WP7 and WPF</a> from <a href="http://vimeo.com/michaellperry">Michael L Perry</a> on <a href="http://vimeo.com/">Vimeo</a>.</p>
+<p>Bonus question: what step is usually part of a client\server application that you do <em>not</em> see in this cadence?</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="index489b.html?cat=34" title="View all posts in Synchronization" rel="category">Synchronization</a> |   <a href="index960c.html?p=555#respond" title="Comment on Correspondence code cadence">No Comments &#187;</a></p>
+
+			</div>
+
+				<div class="post">
+				<h3 id="post-554"><a href="index0971.html?p=554" rel="bookmark" title="Permanent Link to Correspondence on Windows Phone 7">Correspondence on Windows Phone 7</a></h3>
+				<small>Sunday, September 26th, 2010</small>
+
+				<div class="entry">
+					<p>Correspondence is the ideal platform for creating phone applications. Express your model once, and it generates local storage <em>and</em> network communications. Here’s a demo of Reversi running on Windows Phone 7, and a quick walkthrough of the code.</p>
+<p> <iframe height="356" src="http://player.vimeo.com/video/15291930" frameborder="0" width="600"></iframe>
+<p><a href="http://vimeo.com/15291930">Correspondence on Windows Phone 7</a> from <a href="http://vimeo.com/michaellperry">Michael L Perry</a> on <a href="http://vimeo.com/">Vimeo</a>.</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="index489b.html?cat=34" title="View all posts in Synchronization" rel="category">Synchronization</a> |   <a href="index0971.html?p=554#respond" title="Comment on Correspondence on Windows Phone 7">No Comments &#187;</a></p>
+
+			</div>
+
+				<div class="post">
+				<h3 id="post-553"><a href="indexa7b7.html?p=553" rel="bookmark" title="Permanent Link to Access resources within WMI commands in a Windows service">Access resources within WMI commands in a Windows service</a></h3>
+				<small>Friday, September 24th, 2010</small>
+
+				<div class="entry">
+					<p>This is a little obscure. I’m writing a Windows service that can be controlled via WMI. I use Log4Net to log all of the service’s activities. I can see logs from the service starting up and doing its regular processing, but I can’t see logs from WMI commands.</p>
+<p>In addition, when the WMI command tells the service to access a resource (eg. load a configuration file or walk a directory tree), the command fails. WMI error messages aren’t much help (“Not found” anybody? How about “The RPC server is unavailable.”) And with logging not working, I have to attach the debugger to see what’s happening.</p>
+<h3>Cancel impersonation</h3>
+<p>The reason for both of these problems is that the WMI user doesn’t have access to either the log file or the resource I’m trying to access. The solution, cancel impersonation:</p>
+<pre class="code"><span style="color: blue">public class </span><span style="color: #2b91af">CancelImpersonation </span>: <span style="color: #2b91af">IDisposable
+</span>{
+    <span style="color: blue">private </span><span style="color: #2b91af">WindowsImpersonationContext </span>_impersonationContext;
+
+    <span style="color: blue">public </span>CancelImpersonation()
+    {
+        _impersonationContext = <span style="color: #2b91af">WindowsIdentity</span>.Impersonate(<span style="color: #2b91af">IntPtr</span>.Zero);
+    }
+
+    <span style="color: blue">public void </span>Dispose()
+    {
+        _impersonationContext.Undo();
+    }
+}</pre>
+<p>Wrap one of these in a using statement, then anything you do in the brackets is running as local system (or whatever user the service is configured to run as).</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="index8e7f.html?cat=19" title="View all posts in C#" rel="category">C#</a> |   <a href="indexa7b7.html?p=553#respond" title="Comment on Access resources within WMI commands in a Windows service">No Comments &#187;</a></p>
+
+			</div>
+
+				<div class="post">
+				<h3 id="post-552"><a href="index5195.html?p=552" rel="bookmark" title="Permanent Link to TDD test drive number 3">TDD test drive number 3</a></h3>
+				<small>Thursday, September 23rd, 2010</small>
+
+				<div class="entry">
+					<p>On two prior occasions, I have given TDD a test drive. Neither attempt convinced me that it was a useful way to design a system. To me, TDD has always stood for Top Down Design.</p>
+<p>On the <a href="index2df4.html?p=8">first attempt</a> way back in 2006, I added a step to the Red Green Refactor cadence. I Redrew the design diagram before Green. My observation was that tests are no substitute for visualizing the solution.</p>
+<p>On the second attempt in January 2009, I used TDD to design and construct a web navigation framework. It had three intersecting axes: URL mapping, security, and menu hierarchy. It ended up being extremely well tested, but incredibly complex. It worked, and continues to work, but it defies understanding.</p>
+<p>Last month I began attending <a href="http://www.meetup.com/Geeknight-Dallas/">Dallas Geek Night</a> at ThoughtWorks. This is a weekly meetup where open-source developers pair up and work on each other’s projects. I’ve used this opportunity to improve the tests for both Update Controls and Correspondence.</p>
+<p>All of the work is done in pairs, and all of it is test driven.</p>
+<h3>Question and answer</h3>
+<p>On that first day, I paired with <a href="http://dfw-software-geek.blogspot.com/">Richard Jensen</a>, one of the organizers of the event. He asked questions about Update Controls. We answered those questions with tests.</p>
+<p>For example, does Update Controls notify when something doesn’t actually change?</p>
+<pre class="code">[<span style="color: #2b91af">TestMethod</span>]
+<span style="color: blue">public void </span>WhenSortOrderIsChangedButNotDifferentWeShouldNotGetACollectionChanged()
+{
+    <span style="color: #2b91af">ContactViewModel </span>defaultOrder = _viewModel.Contacts.First();
+    _viewModel.SortOrder = <span style="color: #2b91af">ContactListSortOrder</span>.FirstName;
+
+    <span style="color: #2b91af">ContactViewModel </span>firstByFirstName = _viewModel.Contacts.First();
+    _viewModel.SortOrder = <span style="color: #2b91af">ContactListSortOrder</span>.FirstName;
+
+    <span style="color: #2b91af">Assert</span>.AreEqual(1, _collectionChangedCount);
+
+}</pre>
+<p>At first this test failed. Then we added this code to make it pass:</p>
+<pre class="code"><span style="color: blue">public </span><span style="color: #2b91af">ContactListSortOrder </span>SortOrder
+{
+    <span style="color: blue">get
+    </span>{
+        _indSortOrder.OnGet();
+        <span style="color: blue">return </span>_sortOrder;
+    }
+    <span style="color: blue">set
+    </span>{
+        <strong><span style="color: blue">if </span>(_sortOrder != <span style="color: blue">value</span>)</strong> _indSortOrder.OnSet();
+        _sortOrder = <span style="color: blue">value</span>;
+    }
+}</pre>
+<p>I could have just answered the question, but this helped keep the discussion measureable. A simple answer would have just been based on faith, and could even have been wrong.</p>
+<h3>Finding bugs</h3>
+<p>On the second day, I paired with Dhruv Chandna. We were testing Correspondence synchronizing between two machines. He asked some good questions, too.</p>
+<p>For example, what would happen if I added a fact to the opposite community:</p>
+<pre class="code">[<span style="color: #2b91af">TestMethod</span>]
+<span style="color: blue">public void </span>WhenLogOnToOtherMachine_ShouldThrow()
+{
+    <span style="color: #2b91af">Machine </span>playerOneMachine = _playerOneCommuniy.AddFact(<span style="color: blue">new </span><span style="color: #2b91af">Machine</span>());
+    <span style="color: #2b91af">User </span>playerOne = _playerOneCommuniy.AddFact(<span style="color: blue">new </span><span style="color: #2b91af">User</span>(<span style="color: #a31515">&quot;one&quot;</span>));
+
+    <span style="color: blue">try
+    </span>{
+        _playerTwoCommuniy.AddFact(<span style="color: blue">new </span><span style="color: #2b91af">LogOn</span>(playerOne, playerOneMachine));
+        <span style="color: #2b91af">Assert</span>.Fail(<span style="color: #a31515">&quot;AddFact did not throw.&quot;</span>);
+    }
+    <span style="color: blue">catch </span>(<span style="color: #2b91af">CorrespondenceException </span>ex)
+    {
+        <span style="color: #2b91af">Assert</span>.AreEqual(<span style="color: #a31515">&quot;A fact cannot be added to a different community than its predecessors.&quot;</span>, ex.Message);
+    }
+}</pre>
+<p>This error should have been caught. It was not. So after writing this failing test, Dhruv dug into the code base and fixed it.</p>
+<pre class="code"><span style="color: blue">foreach </span>(<span style="color: #2b91af">RoleMemento </span>role <span style="color: blue">in </span>prototype.PredecessorRoles)
+{
+    <span style="color: #2b91af">PredecessorBase </span>predecessor = prototype.GetPredecessor(role);
+    <span style="color: blue">if </span>(predecessor.Community != <span style="color: blue">null </span>&amp;&amp; predecessor.Community != _community)
+        <span style="color: blue">throw new </span><span style="color: #2b91af">CorrespondenceException</span>(<span style="color: #a31515">&quot;A fact cannot be added to a different community than its predecessors.&quot;</span>);
+}</pre>
+<p>There were a few other changes required to make this work, but they did not significantly impact the design.</p>
+<h3>TDD as communication</h3>
+<p><a href="http://java.sys-con.com/node/37795">Dan North</a> says TDD is not about testing, it’s all about design. My experience tells me otherwise. Whenever I’ve let my design emerge through tests, I’ve ended up with an overly complex mess. It’s like pouring concrete into a mold. It takes the right shape because it is forced to. But the results are not as pretty as a sculpture.</p>
+<p>Instead, I’m beginning to see TDD as a form of communication. This helps a pair to discuss a problem in tangible terms. It gives them something to point to. And it gives you a specific goal so that the conversation doesn’t get derailed. You are done when the test passes.</p>
+<p>So I will continue to construct top-down designs. I will continue to use unit tests to verify my implementation of those designs. But when I pair, we will communicate through TDD.</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="index9035.html?cat=22" title="View all posts in Agile" rel="category">Agile</a>,  <a href="index3f7b.html?cat=2" title="View all posts in Unit testing" rel="category">Unit testing</a> |   <a href="index5195.html?p=552#respond" title="Comment on TDD test drive number 3">No Comments &#187;</a></p>
+
+			</div>
+
+				<div class="post">
+				<h3 id="post-551"><a href="index46de.html?p=551" rel="bookmark" title="Permanent Link to A fluent interface gone wrong, so wrong">A fluent interface gone wrong, so wrong</a></h3>
+				<small>Friday, September 17th, 2010</small>
+
+				<div class="entry">
+					<p>In January I created a unit test helper called <a href="http://qedcode.com/content/predassert">Predassert</a>. The goal of this library was to make assertions more readable, both in code and in test results. I wanted to turn this:</p>
+<pre><span style="color: #2b91af">Assert</span>.AreEqual(<span style="color: maroon">3</span>, theResult);</pre>
+<p>Into this:</p>
+<pre><span style="color: #2b91af">Pred</span>.Assert(theResult, <span style="color: #2b91af">Is</span>.EqualTo(<span style="color: maroon">3</span>));</pre>
+<p>And to turn this:</p>
+<blockquote>
+<p>System.InvalidOperationException: Sequence contains no matching element</p>
+</blockquote>
+<p>Into this:</p>
+<blockquote>
+<p>Microsoft.VisualStudio.TestTools.UnitTesting.AssertFailedException: Assert.Fail failed. The collection contains no matching element.<br />
+    <br />&#160; The property Name is not correct. Expected ThisOne, actual ThatOne.</p>
+</blockquote>
+<p>It started out harmless enough. I created classes with names like “Is”, “Contains”, and “Has”. These had methods like “SameAs”, “That”, and “Property”. I was able to string together grammatically correct sentences that were at once predicates and assertions (hence the name). Things were fine, it’s the dress that makes you look fat, and I can quit anytime I want.</p>
+<p>Then I paired with <a href="http://paulhammant.com/">Paul Hammant</a> at ThoughtWorks. I had to show him this:</p>
+<pre><span style="color: #2b91af">Pred</span>.Assert(result.Facts, <span style="color: #2b91af">Contains</span>&lt;<span style="color: #2b91af">Fact</span>&gt;.That(
+    <span style="color: #2b91af">Has</span>&lt;<span style="color: #2b91af">Fact</span>&gt;.Property(fact =&gt; fact.Members, <span style="color: #2b91af">Contains</span>&lt;<span style="color: #2b91af">FactMember</span>&gt;.That(
+        <span style="color: #2b91af">KindOf</span>&lt;<span style="color: #2b91af">FactMember</span>, <span style="color: #2b91af">DataMember</span>&gt;.That(
+            <span style="color: #2b91af">Has</span>&lt;<span style="color: #2b91af">DataMember</span>&gt;.Property(field =&gt; field.Name, <span style="color: #2b91af">Is</span>.EqualTo(<span style="color: maroon">&quot;players&quot;</span>)) &amp;
+            <span style="color: #2b91af">Has</span>&lt;<span style="color: #2b91af">DataMember</span>&gt;.Property(field =&gt; field.Type,
+                <span style="color: #2b91af">Has</span>&lt;<span style="color: #2b91af">DataType</span>&gt;.Property(type =&gt; type.Cardinality, <span style="color: #2b91af">Is</span>.EqualTo(<span style="color: #2b91af">Cardinality</span>.Many)) &amp;
+                <span style="color: #2b91af">KindOf</span>&lt;<span style="color: #2b91af">DataType</span>, <span style="color: #2b91af">DataTypeFact</span>&gt;.That(
+                    <span style="color: #2b91af">Has</span>&lt;<span style="color: #2b91af">DataTypeFact</span>&gt;.Property(type =&gt; type.FactName, <span style="color: #2b91af">Is</span>.EqualTo(<span style="color: maroon">&quot;User&quot;</span>)) &amp;
+                    <span style="color: #2b91af">Has</span>&lt;<span style="color: #2b91af">DataTypeFact</span>&gt;.Property(type =&gt; type.IsPivot, <span style="color: #2b91af">Is</span>.EqualTo(<span style="color: maroon">true</span>))
+                )
+            ) &amp;
+            <span style="color: #2b91af">Has</span>&lt;<span style="color: #2b91af">DataMember</span>&gt;.Property(field =&gt; field.LineNumber, <span style="color: #2b91af">Is</span>.EqualTo(<span style="color: maroon">4</span>))
+        )
+    ))
+));</pre>
+<p>When this test fails, this is the result.</p>
+<blockquote>
+<p>Microsoft.VisualStudio.TestTools.UnitTesting.AssertFailedException: Assert.Fail failed. The collection contains no matching element.<br />
+    <br />&#160; The property Members is not correct. The collection contains no matching element.</p>
+<p>&#160; The property Type is not correct. The property IsPivot is not correct. Expected True, actual False.</p>
+</blockquote>
+<p>How did it ever come to this?</p>
+<p>After some gentle suggestions from Paul, the test looks like this.</p>
+<pre><span style="color: blue">string</span> code =
+    <span style="color: maroon">&quot;namespace Reversi.GameModel; &quot;</span> +
+    <span style="color: maroon">&quot;                             &quot;</span> +
+    <span style="color: maroon">&quot;fact Game {                  &quot;</span> +
+    <span style="color: maroon">&quot;  publish User *players;     &quot;</span> +
+    <span style="color: maroon">&quot;}                            &quot;</span>;
+<span style="color: #2b91af">Namespace</span> result = <span style="color: #2b91af">ParseToNamespace</span>(code);
+<span style="color: #2b91af">Field</span> players = result.WithFactNamed(<span style="color: maroon">&quot;Game&quot;</span>).WithFieldNamed(<span style="color: maroon">&quot;players&quot;</span>);
+<span style="color: #2b91af">Assert</span>.IsInstanceOfType(players.Type, <span style="color: blue">typeof</span>(<span style="color: #2b91af">DataTypeFact</span>));
+<span style="color: #2b91af">Assert</span>.IsTrue(((<span style="color: #2b91af">DataTypeFact</span>)players.Type).IsPivot,&#160;&#160;&#160; <span style="color: maroon">&quot;The players field is not a pivot.&quot;</span>);</pre>
+<p>And the test failure reads:</p>
+<blockquote>
+<p>Assert.IsTrue failed. The players field is not a pivot.</p>
+</blockquote>
+<p>If you ever want to see the abomination that was Predassert, you will have to dig through the revision history of <a href="http://correspondence.codeplex.com/">Correspondence</a>.</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="index3f7b.html?cat=2" title="View all posts in Unit testing" rel="category">Unit testing</a> |   <a href="index46de.html?p=551#respond" title="Comment on A fluent interface gone wrong, so wrong">No Comments &#187;</a></p>
+
+			</div>
+
+				<div class="post">
+				<h3 id="post-550"><a href="indexa165.html?p=550" rel="bookmark" title="Permanent Link to Entity Framework and the Repository Pattern">Entity Framework and the Repository Pattern</a></h3>
+				<small>Thursday, September 9th, 2010</small>
+
+				<div class="entry">
+					<p>When I’ve asked <a href="http://stackoverflow.com/questions/575190/is-there-an-in-memory-provider-for-entity-framework">how to unit test Entity Framework</a>, the best answer was “use the Repository pattern to encapsulate your EF code” (thanks <a href="http://andrewpeters.net/">Andrew Peters</a>). I recently asked the same thing about RIA Services. <a href="http://azurecoding.net/blogs/brownie/">Mike Brown</a> responded with the same advice, even going so far as to spend a couple of hours with me on Live Meeting.</p>
+<p>Since <strong>all you gotta do is</strong> implement the Repository Pattern, it should be easy, right? Let’s take a look at a minimalist implementation.</p>
+<h3>Inject the implementation</h3>
+<p>To support unit testing, we need to be able to swap out our implementation. At the top level, the consumer of a repository begins a unit of work. So we’ll inject a unit of work factory.</p>
+<pre class="code"><span style="color: blue">public interface </span><span style="color: #2b91af">IUnitOfWorkFactory
+</span>{
+    <span style="color: #2b91af">IUnitOfWork </span>Begin();
+}</pre>
+<pre class="code"><span style="color: blue">public class </span><span style="color: #2b91af">NoteworthyService
+</span>{
+    <span style="color: blue">private </span><span style="color: #2b91af">IUnitOfWorkFactory </span>_unitOfWorkFactory;
+
+    <span style="color: blue">public </span>NoteworthyService(<span style="color: #2b91af">IUnitOfWorkFactory </span>unitOfWorkFactory)
+    {
+        _unitOfWorkFactory = unitOfWorkFactory;
+    }
+}</pre>
+<h3>Identify the repository</h3>
+<p>In DDD we create one repository per aggregate root, which is the entity from which you begin the query. In EF, entities exist in a container. So we’ll take two steps to get the repository via the container.</p>
+<pre class="code"><span style="color: blue">public interface </span><span style="color: #2b91af">IUnitOfWork </span>: <span style="color: #2b91af">IDisposable
+</span>{
+    <span style="color: #2b91af">IContainer</span>&lt;TContainer&gt; UsingContainer&lt;TContainer&gt;()
+        <span style="color: blue">where </span>TContainer : <span style="color: #2b91af">ObjectContext</span>, <span style="color: blue">new</span>();
+}
+
+<span style="color: blue">public interface </span><span style="color: #2b91af">IContainer</span>&lt;TContainer&gt; : <span style="color: #2b91af">IDisposable
+</span>{
+    <span style="color: #2b91af">IRepository</span>&lt;TEntity&gt; GetRepository&lt;TEntity&gt;(<span style="color: #2b91af">Func</span>&lt;TContainer, <span style="color: #2b91af">ObjectQuery</span>&lt;TEntity&gt;&gt; repositorySelector)
+        <span style="color: blue">where </span>TEntity : <span style="color: #2b91af">EntityObject</span>;
+}</pre>
+<h3>Provide a specification</h3>
+<p>The second half of the Repository Pattern is the Specification. A specification identifies which entities to pull from the repository. In Linq, we use lambdas for that. So a repository should be able to give you back some entities when given a lambda.</p>
+<pre class="code"><span style="color: blue">public interface </span><span style="color: #2b91af">IRepository</span>&lt;TEntity&gt;
+{
+    <span style="color: #2b91af">IQueryable</span>&lt;TEntity&gt; GetSatisfying(<span style="color: #2b91af">Expression</span>&lt;<span style="color: #2b91af">Func</span>&lt;TEntity, <span style="color: blue">bool</span>&gt;&gt; specification);
+    <span style="color: blue">void </span>Add(TEntity entity);
+}</pre>
+<h3>Query the repository</h3>
+<p>With those interfaces in place, here’s what a query looks like.</p>
+<pre class="code"><span style="color: blue">public </span><span style="color: #2b91af">List</span>&lt;<span style="color: #2b91af">Article</span>&gt; GetArticlesByTopic(<span style="color: blue">string </span>topicName)
+{
+    <span style="color: blue">using </span>(<span style="color: blue">var </span>unitOfWork = _unitOfWorkFactory.Begin())
+    {
+        <span style="color: blue">return </span>unitOfWork.UsingContainer&lt;<span style="color: #2b91af">NoteworthyEntities</span>&gt;().GetRepository(container =&gt; container.Articles)
+            .GetSatisfying(article =&gt; article.Topics.Any(topic =&gt; topic.TopicName == topicName))
+            .ToList();
+    }
+}</pre>
+<h3>Implement in memory</h3>
+<p>For unit testing, we implement the repository interfaces using in-memory lists.</p>
+<pre class="code"><span style="color: blue">public class </span><span style="color: #2b91af">MemoryUnitOfWorkFactory </span>: <span style="color: #2b91af">IUnitOfWorkFactory
+</span>{
+    <span style="color: blue">private </span><span style="color: #2b91af">MemoryUnitOfWork </span>_unitOfWork = <span style="color: blue">new </span><span style="color: #2b91af">MemoryUnitOfWork</span>();
+
+    <span style="color: blue">public </span><span style="color: #2b91af">IUnitOfWork </span>Begin()
+    {
+        <span style="color: blue">return </span>_unitOfWork;
+    }
+}
+
+<span style="color: blue">public class </span><span style="color: #2b91af">MemoryUnitOfWork </span>: <span style="color: #2b91af">IUnitOfWork
+</span>{
+    <span style="color: blue">private </span><span style="color: #2b91af">Dictionary</span>&lt;<span style="color: #2b91af">Type</span>, <span style="color: blue">object</span>&gt; _containerByType = <span style="color: blue">new </span><span style="color: #2b91af">Dictionary</span>&lt;<span style="color: #2b91af">Type</span>, <span style="color: blue">object</span>&gt;();
+
+    <span style="color: blue">public </span><span style="color: #2b91af">IContainer</span>&lt;TContainer&gt; UsingContainer&lt;TContainer&gt;()
+        <span style="color: blue">where </span>TContainer : <span style="color: #2b91af">ObjectContext</span>, <span style="color: blue">new</span>()
+    {
+        <span style="color: blue">object </span>container;
+        <span style="color: blue">if </span>(!_containerByType.TryGetValue(<span style="color: blue">typeof</span>(TContainer), <span style="color: blue">out </span>container))
+        {
+            container = <span style="color: blue">new </span><span style="color: #2b91af">MemoryContainer</span>&lt;TContainer&gt;();
+            _containerByType.Add(<span style="color: blue">typeof</span>(TContainer), container);
+        }
+        <span style="color: blue">return </span>(<span style="color: #2b91af">IContainer</span>&lt;TContainer&gt;)container;
+    }
+
+    <span style="color: blue">public void </span>Dispose()
+    {
+    }
+}
+
+<span style="color: blue">public class </span><span style="color: #2b91af">MemoryContainer</span>&lt;TContainer&gt; : <span style="color: #2b91af">IContainer</span>&lt;TContainer&gt;
+    <span style="color: blue">where </span>TContainer : <span style="color: #2b91af">ObjectContext</span>, <span style="color: blue">new</span>()
+{
+    <span style="color: blue">private </span><span style="color: #2b91af">Dictionary</span>&lt;<span style="color: #2b91af">Type</span>, <span style="color: blue">object</span>&gt; _containerByType = <span style="color: blue">new </span><span style="color: #2b91af">Dictionary</span>&lt;<span style="color: #2b91af">Type</span>, <span style="color: blue">object</span>&gt;();
+
+    <span style="color: blue">public </span><span style="color: #2b91af">IRepository</span>&lt;TEntity&gt; GetRepository&lt;TEntity&gt;(<span style="color: #2b91af">Func</span>&lt;TContainer, <span style="color: #2b91af">ObjectQuery</span>&lt;TEntity&gt;&gt; repositorySelector)
+        <span style="color: blue">where </span>TEntity : <span style="color: #2b91af">EntityObject
+    </span>{
+        <span style="color: blue">object </span>container;
+        <span style="color: blue">if </span>(!_containerByType.TryGetValue(<span style="color: blue">typeof</span>(TEntity), <span style="color: blue">out </span>container))
+        {
+            container = <span style="color: blue">new </span><span style="color: #2b91af">MemoryRepository</span>&lt;TEntity&gt;();
+            _containerByType.Add(<span style="color: blue">typeof</span>(TEntity), container);
+        }
+        <span style="color: blue">return </span>(<span style="color: #2b91af">IRepository</span>&lt;TEntity&gt;)container;
+    }
+
+    <span style="color: blue">public void </span>Dispose()
+    {
+    }
+}
+
+<span style="color: blue">public class </span><span style="color: #2b91af">MemoryRepository</span>&lt;TEntity&gt; : <span style="color: #2b91af">IRepository</span>&lt;TEntity&gt;
+    <span style="color: blue">where </span>TEntity : <span style="color: #2b91af">EntityObject
+</span>{
+    <span style="color: blue">private </span><span style="color: #2b91af">List</span>&lt;TEntity&gt; _entities = <span style="color: blue">new </span><span style="color: #2b91af">List</span>&lt;TEntity&gt;();
+
+    <span style="color: blue">public </span><span style="color: #2b91af">IQueryable</span>&lt;TEntity&gt; GetSatisfying(<span style="color: #2b91af">Expression</span>&lt;<span style="color: #2b91af">Func</span>&lt;TEntity, <span style="color: blue">bool</span>&gt;&gt; specification)
+    {
+        <span style="color: blue">return </span>_entities.Where(specification.Compile()).AsQueryable();
+    }
+
+    <span style="color: blue">public void </span>Add(TEntity entity)
+    {
+        _entities.Add(entity);
+    }
+}</pre>
+<p>And here’s what a unit test looks like.</p>
+<pre class="code">[<span style="color: #2b91af">TestClass</span>]
+<span style="color: blue">public class </span><span style="color: #2b91af">NoteworthyServiceTest
+</span>{
+    <span style="color: blue">private </span><span style="color: #2b91af">NoteworthyService </span>_noteworthyService;
+
+    [<span style="color: #2b91af">TestInitialize</span>]
+    <span style="color: blue">public void </span>Initialize()
+    {
+        <span style="color: #2b91af">IUnitOfWorkFactory </span>memory = <span style="color: blue">new </span><span style="color: #2b91af">MemoryUnitOfWorkFactory</span>();
+
+        <span style="color: #2b91af">IRepository</span>&lt;<span style="color: #2b91af">Article</span>&gt; articlesRepository = memory.Begin()
+            .UsingContainer&lt;<span style="color: #2b91af">NoteworthyEntities</span>&gt;()
+            .GetRepository(container =&gt; container.Articles);
+        <span style="color: #2b91af">Topic </span>ddd = <span style="color: blue">new </span><span style="color: #2b91af">Topic</span>()
+        {
+            TopicName = <span style="color: #a31515">&quot;ddd&quot;
+        </span>};
+        <span style="color: #2b91af">Topic </span>corresopndence = <span style="color: blue">new </span><span style="color: #2b91af">Topic</span>()
+        {
+            TopicName = <span style="color: #a31515">&quot;correspondence&quot;
+        </span>};
+        <span style="color: #2b91af">Article </span>efRepository = <span style="color: blue">new </span><span style="color: #2b91af">Article</span>()
+        {
+            Title = <span style="color: #a31515">&quot;Entity Framework and the Repository Pattern&quot;
+        </span>};
+        efRepository.Topics.Add(ddd);
+        <span style="color: #2b91af">Article </span>correspondenceLaunch = <span style="color: blue">new </span><span style="color: #2b91af">Article</span>()
+        {
+            Title = <span style="color: #a31515">&quot;Correspondence Launch&quot;
+        </span>};
+        correspondenceLaunch.Topics.Add(corresopndence);
+        <span style="color: #2b91af">Article </span>correspondenceDDD = <span style="color: blue">new </span><span style="color: #2b91af">Article</span>()
+        {
+            Title = <span style="color: #a31515">&quot;Correspondence and DDD&quot;
+        </span>};
+        correspondenceDDD.Topics.Add(ddd);
+        correspondenceDDD.Topics.Add(corresopndence);
+
+        articlesRepository.Add(efRepository);
+        articlesRepository.Add(correspondenceLaunch);
+        articlesRepository.Add(correspondenceDDD);
+
+        _noteworthyService = <span style="color: blue">new </span><span style="color: #2b91af">NoteworthyService</span>(memory);
+    }
+
+    [<span style="color: #2b91af">TestMethod</span>]
+    <span style="color: blue">public void </span>QueryReturnsArticles()
+    {
+        <span style="color: blue">var </span>articles = _noteworthyService.GetArticlesByTopic(<span style="color: #a31515">&quot;ddd&quot;</span>).ToArray();
+
+        <span style="color: #2b91af">Assert</span>.AreEqual(<span style="color: #a31515">&quot;Entity Framework and the Repository Pattern&quot;</span>, articles[0].Title);
+        <span style="color: #2b91af">Assert</span>.AreEqual(<span style="color: #a31515">&quot;Correspondence and DDD&quot;</span>, articles[1].Title);
+    }
+}</pre>
+<h3>Implement with Entity Framework</h3>
+<p>Finally, we implement the real thing using Entity Framework.</p>
+<pre class="code"><span style="color: blue">public class </span><span style="color: #2b91af">EntityFrameworkUnitOfWorkFactory </span>: <span style="color: #2b91af">IUnitOfWorkFactory
+</span>{
+    <span style="color: blue">public </span><span style="color: #2b91af">IUnitOfWork </span>Begin()
+    {
+        <span style="color: blue">return new </span><span style="color: #2b91af">EntityFrameworkUnitOfWork</span>();
+    }
+}
+
+<span style="color: blue">public class </span><span style="color: #2b91af">EntityFrameworkUnitOfWork </span>: <span style="color: #2b91af">IUnitOfWork
+</span>{
+    <span style="color: blue">private </span><span style="color: #2b91af">Dictionary</span>&lt;<span style="color: #2b91af">Type</span>, <span style="color: #2b91af">IDisposable</span>&gt; _containerByType = <span style="color: blue">new </span><span style="color: #2b91af">Dictionary</span>&lt;<span style="color: #2b91af">Type</span>, <span style="color: #2b91af">IDisposable</span>&gt;();
+
+    <span style="color: blue">public </span><span style="color: #2b91af">IContainer</span>&lt;TContainer&gt; UsingContainer&lt;TContainer&gt;()
+        <span style="color: blue">where </span>TContainer : <span style="color: #2b91af">ObjectContext</span>, <span style="color: blue">new</span>()
+    {
+        <span style="color: #2b91af">IDisposable </span>container;
+        <span style="color: blue">if </span>(!_containerByType.TryGetValue(<span style="color: blue">typeof</span>(TContainer), <span style="color: blue">out </span>container))
+        {
+            container = <span style="color: blue">new </span><span style="color: #2b91af">EntityFrameworkContainer</span>&lt;TContainer&gt;();
+            _containerByType.Add(<span style="color: blue">typeof</span>(TContainer), container);
+        }
+        <span style="color: blue">return </span>(<span style="color: #2b91af">IContainer</span>&lt;TContainer&gt;)container;
+    }
+
+    <span style="color: blue">public void </span>Dispose()
+    {
+        <span style="color: blue">foreach </span>(<span style="color: blue">var </span>container <span style="color: blue">in </span>_containerByType.Values)
+            container.Dispose();
+    }
+}
+
+<span style="color: blue">public class </span><span style="color: #2b91af">EntityFrameworkContainer</span>&lt;TContainer&gt; : <span style="color: #2b91af">IContainer</span>&lt;TContainer&gt;
+    <span style="color: blue">where </span>TContainer : <span style="color: #2b91af">ObjectContext</span>, <span style="color: blue">new</span>()
+{
+    <span style="color: blue">private </span>TContainer _container;
+
+    <span style="color: blue">public </span>EntityFrameworkContainer()
+    {
+        _container = <span style="color: blue">new </span>TContainer();
+    }
+
+    <span style="color: blue">public </span><span style="color: #2b91af">IRepository</span>&lt;TEntity&gt; GetRepository&lt;TEntity&gt;(<span style="color: #2b91af">Func</span>&lt;TContainer, <span style="color: #2b91af">ObjectQuery</span>&lt;TEntity&gt;&gt; repositorySelector)
+        <span style="color: blue">where </span>TEntity : <span style="color: #2b91af">EntityObject
+    </span>{
+        <span style="color: blue">return new </span><span style="color: #2b91af">EntityFrameworkRepository</span>&lt;TContainer, TEntity&gt;(_container, repositorySelector(_container));
+    }
+
+    <span style="color: blue">public void </span>Dispose()
+    {
+        _container.Dispose();
+    }
+}
+
+<span style="color: blue">public class </span><span style="color: #2b91af">EntityFrameworkRepository</span>&lt;TContainer, TEntity&gt; : <span style="color: #2b91af">IRepository</span>&lt;TEntity&gt;
+    <span style="color: blue">where </span>TContainer : <span style="color: #2b91af">ObjectContext</span>, <span style="color: blue">new</span>()
+    <span style="color: blue">where </span>TEntity : <span style="color: #2b91af">EntityObject
+</span>{
+    <span style="color: blue">private </span>TContainer _container;
+    <span style="color: blue">private </span><span style="color: #2b91af">ObjectQuery</span>&lt;TEntity&gt; _objectQuery;
+
+    <span style="color: blue">public </span>EntityFrameworkRepository(TContainer container, <span style="color: #2b91af">ObjectQuery</span>&lt;TEntity&gt; objectQuery)
+    {
+        _container = container;
+        _objectQuery = objectQuery;
+    }
+
+    <span style="color: blue">public </span><span style="color: #2b91af">IQueryable</span>&lt;TEntity&gt; GetSatisfying(<span style="color: #2b91af">Expression</span>&lt;<span style="color: #2b91af">Func</span>&lt;TEntity, <span style="color: blue">bool</span>&gt;&gt; specification)
+    {
+        <span style="color: blue">return </span>_objectQuery.Where(specification);
+    }
+
+    <span style="color: blue">public void </span>Add(TEntity entity)
+    {
+        _container.AddObject(_objectQuery.Name, entity);
+    }
+}</pre>
+<h3>Analysis</h3>
+<p>This is the smallest implementation of the Repository pattern that I could come up with. It is obviously not feature complete. For example, it does not implement Delete, nor does it allow you to specify eager loading with Include. There are <a href="http://www.codeproject.com/KB/database/ImplRepositoryPatternEF.aspx">other implementations that are bigger</a>, but I doubt that there could be one smaller. Even at this size, this doesn’t qualify as “all you need to do is”.</p>
+<p>One benefit of the Repository pattern is supposed to be that it abstracts the persistence mechanism. But this implementation returns EntityObjects, which are a distinctly Entity Framework-ish data type. I could try for a POCO compliant implementation to solve that problem.</p>
+<p>Because this implementation requires EntityObjects, it could never work with RIA Services. I would have to write a different Repository implementation to unit test my client code.</p>
+<p>And finally, Entity Framework does some things that the in-memory repository does not. My unit tests can’t verify that I’m using EF correctly. For example, Entity Framework does eager loading if I explicitly request it. The in-memory implementation always has all navigation properties populated. Because of this difference, I can’t verify with a unit test that I have included all of the required navigations.</p>
+<h3>Conclusion</h3>
+<p>All of this leads me to conclude that the Repository pattern is not the best way to add testability to an untestable framework. The framework needs to be testable from the beginning. If Entity Framework had provided an in-memory implementation for testing, then I could test <em>my use of</em> EF, including eager loading.</p>
+<p>By the way, <a href="http://correspondence.codeplex.com/">Correspondence</a> does in fact provide an in-memory implementation for unit testing. Please go through the lessons to see what I think a testable framework should look like.</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="index9591.html?cat=37" title="View all posts in DDD" rel="category">DDD</a>,  <a href="indexe8fb.html?cat=39" title="View all posts in Entity Framework" rel="category">Entity Framework</a>,  <a href="index3f7b.html?cat=2" title="View all posts in Unit testing" rel="category">Unit testing</a> |   <a href="indexa165.html?p=550#comments" title="Comment on Entity Framework and the Repository Pattern">6 Comments &#187;</a></p>
+
+			</div>
+
+				<div class="post">
+				<h3 id="post-549"><a href="indexbcc1.html?p=549" rel="bookmark" title="Permanent Link to Pass context parameters to SSRS reports in a web application">Pass context parameters to SSRS reports in a web application</a></h3>
+				<small>Tuesday, September 7th, 2010</small>
+
+				<div class="entry">
+					<p>When <a href="index7cc7.html?p=547">viewing reports within an application</a>, the application can provide context that SSRS otherwise would not have. With this context the experience of using the application can be better than the report manager. Parameters that the user would otherwise have to set for every report can be assigned programmatically.</p>
+<p>In my case, the logged-in user belongs to a medical practice. Every report takes the practice ID as a parameter, called “Domain”. I want to pass that parameter without the user ever seeing it.</p>
+<h3>Render the menu</h3>
+<p>Earlier, we wrote code to <a href="index0d79.html?p=542">navigate the reports</a>. Let’s display this structure in a hierarchy.</p>
+<pre class="code"><span style="color: blue">public string </span>GetMenu()
+{
+    <span style="color: #2b91af">StringBuilder </span>result = <span style="color: blue">new </span><span style="color: #2b91af">StringBuilder</span>();
+    WriteItems(result, <span style="color: #2b91af">ReportNavigator</span>.GetRootFolder(_credentials).Items);
+    <span style="color: blue">return </span>result.ToString();
+}
+
+<span style="color: blue">private static void </span>WriteItems(<span style="color: #2b91af">StringBuilder </span>result, <span style="color: #2b91af">IEnumerable</span>&lt;<span style="color: #2b91af">Item</span>&gt; items)
+{
+    <span style="color: blue">foreach </span>(<span style="color: #2b91af">Item </span>item <span style="color: blue">in </span>items)
+    {
+        <span style="color: #2b91af">Folder </span>subFolder = item <span style="color: blue">as </span><span style="color: #2b91af">Folder</span>;
+        <span style="color: blue">if </span>(subFolder != <span style="color: blue">null</span>)
+        {
+            WriteFolder(result, subFolder);
+            <span style="color: blue">continue</span>;
+        }
+
+        <span style="color: #2b91af">Report </span>report = item <span style="color: blue">as </span><span style="color: #2b91af">Report</span>;
+        <span style="color: blue">if </span>(report != <span style="color: blue">null</span>)
+        {
+            WriteReport(result, report);
+            <span style="color: blue">continue</span>;
+        }
+    }
+}
+
+<span style="color: blue">private static void </span>WriteFolder(<span style="color: #2b91af">StringBuilder </span>result, <span style="color: #2b91af">Folder </span>folder)
+{
+    <span style="color: blue">if </span>(folder.ContainsAnyReport)
+    {
+        result.Append(<span style="color: #2b91af">String</span>.Format(<span style="color: #a31515">&quot;&lt;li class=\&quot;folder\&quot;&gt;{0}: {1}&lt;ul&gt;&quot;</span>,
+            <span style="color: #2b91af">HttpUtility</span>.HtmlEncode(folder.Name),
+            <span style="color: #2b91af">HttpUtility</span>.HtmlEncode(folder.Description)));
+        WriteItems(result, folder.Items);
+        result.Append(<span style="color: #a31515">&quot;&lt;/ul&gt;&lt;/li&gt;&quot;</span>);
+    }
+}
+
+<span style="color: blue">private static void </span>WriteReport(<span style="color: #2b91af">StringBuilder </span>result, <span style="color: #2b91af">Report </span>report)
+{
+    result.Append(<span style="color: #2b91af">String</span>.Format(<span style="color: #a31515">&quot;&lt;li class=\&quot;report\&quot;&gt;&lt;a href=\&quot;ViewReport.aspx?Path={1}\&quot;&gt;{0}: {2}&lt;/a&gt;&lt;/li&gt;&quot;</span>,
+        <span style="color: #2b91af">HttpUtility</span>.HtmlEncode(report.Name),
+        <span style="color: #2b91af">HttpUtility</span>.UrlEncode(report.Path),
+        <span style="color: #2b91af">HttpUtility</span>.HtmlEncode(report.Description)));
+}</pre>
+<p>This mutually-recursive set of methods renders a tree of unordered lists. It shows only the folders that contain a report. When it gets down to a report, it renders a link to the ViewReport page. This is our page containing a report viewer control.</p>
+<h3>Display the report</h3>
+<p>The ViewReport page simply contains a report viewer control. Page_Load sets the path, the <a href="indexfded.html?p=539">credentials</a>, and the Domain parameter.</p>
+<pre class="code"><span style="color: blue">protected void </span>Page_Load(<span style="color: blue">object </span>sender, <span style="color: #2b91af">EventArgs </span>e)
+{
+    _path = Request[<span style="color: #a31515">&quot;Path&quot;</span>];
+
+    <span style="color: blue">if </span>(Request.HttpMethod == <span style="color: #a31515">&quot;GET&quot; </span>&amp;&amp; !<span style="color: blue">string</span>.IsNullOrEmpty(_path))
+    {
+        ReportViewer1.ServerReport.ReportPath = _path;
+        _reportTitle = _path.Split(<span style="color: #a31515">'/'</span>).LastOrDefault();
+
+        <span style="color: green">// MLP: Get the user's credentials from forms auth.
+        </span><span style="color: #2b91af">IIdentity </span>identity = <span style="color: #2b91af">HttpContext</span>.Current.User.Identity;
+        <span style="color: #2b91af">FormsIdentity </span>formsIdentity = (<span style="color: #2b91af">FormsIdentity</span>)identity;
+        <span style="color: blue">string </span>username = formsIdentity.Name;
+        <span style="color: blue">string </span>encryptedPassword = formsIdentity.Ticket.UserData;
+
+        <span style="color: green">// MLP: Decrypt the password.
+        </span><span style="color: blue">byte</span>[] usernameHash = <span style="color: #2b91af">Crypto</span>.ComputeStringHash(username, _hashAlgorith);
+        <span style="color: blue">byte</span>[] encryptedMessage = <span style="color: #2b91af">Convert</span>.FromBase64String(encryptedPassword);
+        <span style="color: blue">string </span>password = <span style="color: #2b91af">Crypto</span>.DecryptMessage(encryptedMessage, _symmetricAlgorithm, _key, usernameHash);
+
+        <span style="color: #2b91af">NetworkReportServerCredentials </span>credentials = <span style="color: blue">new </span><span style="color: #2b91af">NetworkReportServerCredentials</span>(username, password, <span style="color: #a31515">&quot;ABSG&quot;</span>);
+        ReportViewer1.ServerReport.ReportServerCredentials = credentials;
+
+        <span style="color: blue">string </span>domain = GetDomainOfUser(username);
+        <span style="color: #2b91af">ReportParameterInfoCollection </span>parameters = ReportViewer1.ServerReport.GetParameters();
+        <span style="color: blue">if </span>(parameters.Any(p =&gt; p.Name == <span style="color: #a31515">&quot;Domain&quot; </span>&amp;&amp; p.DataType == <span style="color: #2b91af">ParameterDataType</span>.String))
+            ReportViewer1.ServerReport.SetParameters(<span style="color: blue">new </span><span style="color: #2b91af">ReportParameter</span>(<span style="color: #a31515">&quot;Domain&quot;</span>, domain, <span style="color: blue"><strong>false</strong></span>));
+    }
+}</pre>
+<p>The app looks up the domain based on the user name. Then it checks the parameters to see if this report accepts “Domain”. If so, it sets it.</p>
+<p>The “false” in the ReportParameter tells the report viewer to hide the parameter from the user. If it were “true”, the user would still see the parameter, even though it was set to a default value.</p>
+<p>Now my business administrators can create any report they need in SSRS report manager. Their report will appear on the menu automatically. If they follow the convention and specify a “Domain” parameter, the report will be context sensitive. This gives the end user of my application be best experience possible.</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="index363a.html?cat=45" title="View all posts in Reports" rel="category">Reports</a> |   <a href="indexbcc1.html?p=549#respond" title="Comment on Pass context parameters to SSRS reports in a web application">No Comments &#187;</a></p>
+
+			</div>
+
+				<div class="post">
+				<h3 id="post-548"><a href="index1dc8.html?p=548" rel="bookmark" title="Permanent Link to Drupal Argument #2 should be an array in system.module on line 1015">Drupal Argument #2 should be an array in system.module on line 1015</a></h3>
+				<small>Monday, September 6th, 2010</small>
+
+				<div class="entry">
+					<p>If you update Drupal or one of its modules and you get the following error on a white page with no style:</p>
+<blockquote><p>warning: array_map() [function.array-map]: Argument #2 should be an array in system.module on line 1015</p>
+</blockquote>
+<p>It means that your theme is no longer enabled.</p>
+<p>I updated Drupal using the instructions <a href="http://drupal.org/node/297496">Upgrading Drupal rapidly using SSH/Shell commands</a>. This is an excellent resource. Take the time to follow all of the steps, including making backups! It’s the backup that allowed me to quickly resolve the issue.</p>
+<p>The instructions preserve the sites folder, but not the themes folder. I created a custom theme for my wife’s blog. When upgrading Drupal, this custom theme was backed up, but not applied to the new installation.</p>
+<p>The discussion on this <a href="http://drupal.org/node/696184">issue report</a> led me to look at the Themes admin page, where I discovered that the custom theme was no longer listed. I copied the theme from the backup (cp -r d-backup/themes/mtheme/ themes/) and refreshed the page. The theme was listed, but not enabled. I enabled it, set it to the default, and checked the site again. The issue was resolved.</p>
+<p>Overall, I like Drupal. But it suffers from its PHP foundation. In general, it does a good job of abstracting the user from the PHP underpinnings, but when it breaks, it breaks hard.</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="indexf528.html?cat=47" title="View all posts in Drupal" rel="category">Drupal</a> |   <a href="index1dc8.html?p=548#respond" title="Comment on Drupal Argument #2 should be an array in system.module on line 1015">No Comments &#187;</a></p>
+
+			</div>
+
+		
+		<div class="navigation">
+			<div class="alignleft"></div>
+			<div class="alignright"></div>
+		</div>
+
+	
+	</div>
+		</td>
+	</tr>
+</table>
+
+<hr />
+<div id="footer">
+<!-- If you'd like to support WordPress, having the "powered by" link someone on your blog is the best way, it's our only promotion or advertising. -->
+	<p>
+		Adventures in Software is proudly powered by 
+		<a href="http://wordpress.org/">WordPress</a>
+		<br /><a href="indexd784.html?feed=rss2">Entries (RSS)</a>
+		and <a href="indexa6da.html?feed=comments-rss2">Comments (RSS)</a>.
+		<!-- 17 queries. 0.431 seconds. -->
+	</p>
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-389401-3");
+pageTracker._trackPageview();
+} catch(err) {}</script></div>
+
+<!-- Gorgeous design by Michael Heilemann - http://binarybonsai.com/kubrick/ -->
+
+		<div id="sk2-footer" style="color:#FFF; background-color:#444; padding: 3px 2px 3px 2px; border-top: #888 solid 1px;">This blog is protected by <a href="http://unknowngenius.com/blog/" title="Dave">dr Dave</a>'s <strong><a href="http://unknowngenius.com/blog/wordpress/spam-karma/" title="SK2">Spam Karma 2</a></strong>: <strong>274531</strong>  Spams eaten and counting...</div><script type="text/javascript" src="replies.js"></script>
+<script type="text/javascript" src="blogger.js"></script>
+<script type="text/javascript" src="http://twitter.com/statuses/user_timeline/michaellperry.json?callback=twitterCallback2&amp;count=5"></script>
+<script type="text/javascript" src="http://search.twitter.com/search.json?q=@michaellperry&amp;callback=twitterCallbackReplies&amp;rpp=5"></script>
+</body>
+
+<!-- Mirrored from adventuresinsoftware.com/blog/?m=201009 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 Jan 2017 12:35:23 GMT -->
+</html>

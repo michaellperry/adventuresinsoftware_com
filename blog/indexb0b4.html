@@ -1,0 +1,439 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+
+
+<!-- Mirrored from adventuresinsoftware.com/blog/?cat=48 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 Jan 2017 12:54:11 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>Adventures in Software   &raquo; Windows Phone 7</title>
+
+<meta name="generator" content="WordPress 2.3.3" /> <!-- leave this for stats -->
+
+<link rel="stylesheet" href="wp-content/themes/ais2/style.css" type="text/css" media="screen" />
+<link rel="alternate" type="application/rss+xml" title="Adventures in Software RSS Feed" href="indexd784.html?feed=rss2" />
+<link rel="pingback" href="xmlrpc.html" />
+    <script type="text/javascript">
+        function onSilverlightError(sender, args) {
+            var appSource = "";
+            if (sender != null && sender != 0) {
+              appSource = sender.getHost().Source;
+            }
+            
+            var errorType = args.ErrorType;
+            var iErrorCode = args.ErrorCode;
+
+            if (errorType == "ImageError" || errorType == "MediaError") {
+              return;
+            }
+
+            var errMsg = "Unhandled Error in Silverlight Application " +  appSource + "\n" ;
+
+            errMsg += "Code: "+ iErrorCode + "    \n";
+            errMsg += "Category: " + errorType + "       \n";
+            errMsg += "Message: " + args.ErrorMessage + "     \n";
+
+            if (errorType == "ParserError") {
+                errMsg += "File: " + args.xamlFile + "     \n";
+                errMsg += "Line: " + args.lineNumber + "     \n";
+                errMsg += "Position: " + args.charPosition + "     \n";
+            }
+            else if (errorType == "RuntimeError") {           
+                if (args.lineNumber != 0) {
+                    errMsg += "Line: " + args.lineNumber + "     \n";
+                    errMsg += "Position: " +  args.charPosition + "     \n";
+                }
+                errMsg += "MethodName: " + args.methodName + "     \n";
+            }
+
+            throw new Error(errMsg);
+        }
+    </script>
+
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc0db0.php?rsd" />
+ <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="wp-includes/wlwmanifest.xml" /> <style type='text/css'>
+<!--#header { background: url('wp-content/themes/ais2/images/header-imgae03.html?upper=A7A73F&amp;lower=77773F') no-repeat bottom center; }
+--></style>
+</head>
+<body>
+<div id="page">
+
+<div class="aisTopBar">
+	<form method="get" id="searchform" action="http://adventuresinsoftware.com/blog/">
+<div>
+<a href="indexd784.html?feed=rss2"><img src="../images/feed-icon-28x28.png" border="0"></a>
+<input type="text" value="" name="s" id="s" />
+<input type="submit" id="searchsubmit" value="Search" />
+</div>
+</form>
+</div>
+
+<div class="aisHeaderImageRight">
+	<div class="aisHeaderImage">
+	<div class="aisHeaderCornerRight">
+	<div class="aisHeaderCornerLeft">
+	<div class="aisImageBar">
+	<div class="aisSubSites">
+		<a href="index.html" class="aisSubSiteLink"><span class="aisSiteTabRight"><span class="aisSiteTabLeft"><span class="aisSiteTab">
+			home</span></span></span></a>
+		<a class="aisSubSiteLink" href="indexb60a.html?cat=27"><span class="aisSiteTabRight"><span class="aisSiteTabLeft"><span class="aisSiteTab">
+			historic modeling</span></span></span></a>
+		<a class="aisSubSiteLink" href="indexa88f.html?cat=36"><span class="aisSiteTabRight"><span class="aisSiteTabLeft"><span class="aisSiteTab">
+			update controls</span></span></span></a>
+		<a href="index2d79.html?cat=26" class="aisSubSiteLink"><span class="aisSiteTabRight"><span class="aisSiteTabLeft"><span class="aisSiteTab">
+			degrees of freedom</span></span></span></a>
+		<a class="aisSubSiteLink" href="indexba53.html?page_id=2"><span class="aisSiteTabRight"><span class="aisSiteTabLeft"><span class="aisSiteTab">
+			about us</span></span></span></a>
+
+	</div>
+	</div>
+	</div>
+	</div>
+	</div>
+</div>
+
+<table style="width: 100%" cellspacing="0" cellpadding="0">
+	<tr valign="top">
+		<td width="210px">
+<div id="sidebar">
+<div class="aisLeftColumnFill">
+<div class="aisLeftColumnBottom">
+<div class="aisLeftColumnTop">
+<div id="twitter_div" class="aisLeftNav">
+<h2 class="sidebar-title">Twitter Updates</h2>
+<ul id="twitter_update_list"></ul>
+<a href="http://twitter.com/michaellperry" id="follow">Follow me</a>
+</div>
+<div id="twitter_reply_div" class="aisLeftNav">
+<h2 class="sidebar-title">Twitter Replies</h2>
+<ul id="twitter_reply_list"></ul>
+</div>
+
+<div class="aisLeftNav">
+<a href='http://ineta.org/Speakers/SearchCommunitySpeakers.aspx?SpeakerId=c5110e21-9243-461b-a464-a6548524e885'><img alt='INETA Community Speakers Program' border='0' src='../../www.ineta.org/images/OfficialLogos/InetaCommunitySpeakersRequestMe.html' /></a>
+</div>
+
+<div class="aisLeftNav">
+	<li class="pagenav"><h2>Pages</h2><ul><li class="page_item page-item-2"><a href="indexba53.html?page_id=2" title="About Us">About Us</a></li>
+<li class="page_item page-item-210"><a href="index6ae3.html?page_id=210" title="Templates">Templates</a></li>
+</ul></li></div>
+
+<div class="aisLeftNav">
+<h2>Archives</h2>
+<ul>
+	<li><a href='indexb4d5.html?m=201110' title='October 2011'>October 2011</a></li>
+	<li><a href='indexc61a.html?m=201106' title='June 2011'>June 2011</a></li>
+	<li><a href='indexa80d.html?m=201105' title='May 2011'>May 2011</a></li>
+	<li><a href='index512b.html?m=201104' title='April 2011'>April 2011</a></li>
+	<li><a href='index08fb.html?m=201103' title='March 2011'>March 2011</a></li>
+	<li><a href='index52f4.html?m=201102' title='February 2011'>February 2011</a></li>
+	<li><a href='index74f1.html?m=201101' title='January 2011'>January 2011</a></li>
+	<li><a href='index8956.html?m=201012' title='December 2010'>December 2010</a></li>
+	<li><a href='indexa1aa.html?m=201011' title='November 2010'>November 2010</a></li>
+	<li><a href='indexe3d5.html?m=201010' title='October 2010'>October 2010</a></li>
+	<li><a href='index9ab9.html?m=201009' title='September 2010'>September 2010</a></li>
+	<li><a href='index1ff0.html?m=201008' title='August 2010'>August 2010</a></li>
+	<li><a href='index9f11.html?m=201007' title='July 2010'>July 2010</a></li>
+	<li><a href='index31f0.html?m=201006' title='June 2010'>June 2010</a></li>
+	<li><a href='indexd189.html?m=201005' title='May 2010'>May 2010</a></li>
+	<li><a href='indexb5c0.html?m=201004' title='April 2010'>April 2010</a></li>
+	<li><a href='indexf258.html?m=201003' title='March 2010'>March 2010</a></li>
+	<li><a href='index6e30.html?m=201002' title='February 2010'>February 2010</a></li>
+	<li><a href='index6b19.html?m=201001' title='January 2010'>January 2010</a></li>
+	<li><a href='index5c0a.html?m=200912' title='December 2009'>December 2009</a></li>
+	<li><a href='index8f62.html?m=200911' title='November 2009'>November 2009</a></li>
+	<li><a href='index451d.html?m=200910' title='October 2009'>October 2009</a></li>
+	<li><a href='index3e04.html?m=200909' title='September 2009'>September 2009</a></li>
+	<li><a href='index425a.html?m=200908' title='August 2009'>August 2009</a></li>
+	<li><a href='index9907.html?m=200907' title='July 2009'>July 2009</a></li>
+	<li><a href='index3104.html?m=200906' title='June 2009'>June 2009</a></li>
+	<li><a href='indexc36d.html?m=200905' title='May 2009'>May 2009</a></li>
+	<li><a href='index17e8.html?m=200904' title='April 2009'>April 2009</a></li>
+	<li><a href='index10a5.html?m=200903' title='March 2009'>March 2009</a></li>
+	<li><a href='index8988.html?m=200902' title='February 2009'>February 2009</a></li>
+	<li><a href='index1419.html?m=200901' title='January 2009'>January 2009</a></li>
+	<li><a href='index7866.html?m=200812' title='December 2008'>December 2008</a></li>
+	<li><a href='index55f6.html?m=200811' title='November 2008'>November 2008</a></li>
+	<li><a href='indexa7bc.html?m=200810' title='October 2008'>October 2008</a></li>
+	<li><a href='indexe77c.html?m=200809' title='September 2008'>September 2008</a></li>
+	<li><a href='indexcffc.html?m=200808' title='August 2008'>August 2008</a></li>
+	<li><a href='index0e62.html?m=200807' title='July 2008'>July 2008</a></li>
+	<li><a href='indexfda7.html?m=200806' title='June 2008'>June 2008</a></li>
+	<li><a href='index7d64.html?m=200805' title='May 2008'>May 2008</a></li>
+	<li><a href='index94dd.html?m=200804' title='April 2008'>April 2008</a></li>
+	<li><a href='index9631.html?m=200803' title='March 2008'>March 2008</a></li>
+	<li><a href='indexdd52.html?m=200802' title='February 2008'>February 2008</a></li>
+	<li><a href='index21ee.html?m=200801' title='January 2008'>January 2008</a></li>
+	<li><a href='index363c.html?m=200712' title='December 2007'>December 2007</a></li>
+	<li><a href='index7493.html?m=200711' title='November 2007'>November 2007</a></li>
+	<li><a href='index93a7.html?m=200710' title='October 2007'>October 2007</a></li>
+	<li><a href='index4ca8.html?m=200709' title='September 2007'>September 2007</a></li>
+	<li><a href='index6124.html?m=200708' title='August 2007'>August 2007</a></li>
+	<li><a href='index6013.html?m=200707' title='July 2007'>July 2007</a></li>
+	<li><a href='index2ab6.html?m=200706' title='June 2007'>June 2007</a></li>
+	<li><a href='index44f0.html?m=200705' title='May 2007'>May 2007</a></li>
+	<li><a href='indexf0b4.html?m=200704' title='April 2007'>April 2007</a></li>
+	<li><a href='index481d.html?m=200703' title='March 2007'>March 2007</a></li>
+	<li><a href='indexcbea.html?m=200702' title='February 2007'>February 2007</a></li>
+	<li><a href='index9cdc.html?m=200701' title='January 2007'>January 2007</a></li>
+	<li><a href='index3ea4.html?m=200612' title='December 2006'>December 2006</a></li>
+	<li><a href='index67ca.html?m=200611' title='November 2006'>November 2006</a></li>
+	<li><a href='indexff49.html?m=200610' title='October 2006'>October 2006</a></li>
+	<li><a href='index611c.html?m=200609' title='September 2006'>September 2006</a></li>
+	<li><a href='index9a21.html?m=200608' title='August 2006'>August 2006</a></li>
+	<li><a href='index3ee9.html?m=200607' title='July 2006'>July 2006</a></li>
+	<li><a href='indexe13a.html?m=200606' title='June 2006'>June 2006</a></li>
+</ul>
+</div>
+
+<div class="aisLeftNav">
+	</div>
+
+<div class="aisLeftNav">
+<h2>Books</h2>
+<iframe src="http://rcm.amazon.com/e/cm?t=adventures0d2-20&amp;o=1&amp;p=8&amp;l=as1&amp;asins=0764526413&amp;fc1=000000&amp;IS2=1&amp;lt1=_blank&amp;lc1=0000ff&amp;bc1=000000&amp;bg1=ffffff&amp;f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" name="I5" id="I5"></iframe>
+<br/>
+<iframe src="http://rcm.amazon.com/e/cm?t=adventures0d2-20&amp;o=1&amp;p=8&amp;l=as1&amp;asins=0201633612&amp;fc1=000000&amp;IS2=1&amp;lt1=_blank&amp;lc1=0000ff&amp;bc1=000000&amp;bg1=ffffff&amp;f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" name="I6" id="I6"></iframe>
+<br/>
+<iframe src="http://rcm.amazon.com/e/cm?t=adventures0d2-20&amp;o=1&amp;p=8&amp;l=as1&amp;asins=0136291554&amp;fc1=000000&amp;IS2=1&amp;lt1=_blank&amp;lc1=0000ff&amp;bc1=000000&amp;bg1=ffffff&amp;f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" name="I7" id="I7"></iframe>
+<br/>
+<iframe src="http://rcm.amazon.com/e/cm?t=adventures0d2-20&amp;o=1&amp;p=8&amp;l=as1&amp;asins=1888009195&amp;fc1=000000&amp;IS2=1&amp;lt1=_blank&amp;lc1=0000ff&amp;bc1=000000&amp;bg1=ffffff&amp;f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" name="I8" id="I8"></iframe>
+</div>
+<div class="aisLeftNav">
+<h2>Meta</h2>
+<ul>
+		<li><a href="wp-login.html">Login</a></li>
+	<li><a href="http://validator.w3.org/check/referer" title="This page validates as XHTML 1.0 Transitional">Valid <abbr title="eXtensible HyperText Markup Language">XHTML</abbr></a></li>
+	<li><a href="http://gmpg.org/xfn/"><abbr title="XHTML Friends Network">XFN</abbr></a></li>
+	<li><a href="http://wordpress.org/" title="Powered by WordPress, state-of-the-art semantic personal publishing platform.">WordPress</a></li>
+	</ul>
+</div>
+<div class="aisLeftContent">
+<h2>Community</h2>
+<ul>
+	<script type="text/javascript" src="../../localhost/embed/92q2bbma.js"></script>
+</ul>
+</div>
+
+</div></div></div>
+</div>		</td>
+		<td>
+
+	<div id="content" class="narrowcolumn">
+
+		
+		 		<h2 class="pagetitle">Archive for the &#8216;Windows Phone 7&#8217; Category</h2>
+
+ 	  
+
+		<div class="navigation">
+			<div class="alignleft"></div>
+			<div class="alignright"></div>
+		</div>
+
+				<div class="post">
+				<h3 id="post-643"><a href="indexb0f8.html?p=643" rel="bookmark" title="Permanent Link to Windows Phone navigation workarounds">Windows Phone navigation workarounds</a></h3>
+				<small>Tuesday, April 26th, 2011</small>
+
+				<div class="entry">
+					<p>Silverlight for Windows Phone has adopted a navigation mechanism reminiscent of a web browser. Each page is authored as a separate resource. The application issues commands to a NavigationService to move from one page to the next. The phone even has a hardware back button. This choice of web-like navigation causes no end of difficulties to application developers.</p>
+<p>Navigation in Windows Phone starts with a URI. But rather than identifying an HTML resource, this URI identifies a XAML resource. The application doesn’t create pages; it just identifies them. The runtime creates each page based on the given URI. This causes three problems.</p>
+<ul>
+<li>Parameters</li>
+<li>View model location</li>
+<li>Back-stack modification</li>
+</ul>
+<h3>Parameters</h3>
+<p>The URI must contain all of the information required to construct the page. For the main page of the application, this is usually fine. Just bring up the XAML representation of the main menu. But subsequent pages often drill down into detail. If the main page displays a list of articles, and we want to bring up a specific article when the user taps, then we have to identify the article in the URI. <em>All</em> of the article links target the same XAML resource. It’s the data that differs.</p>
+<p>To differentiate the links, many developers take the typical web-based approach. They add <strong>query string</strong> parameters to the URL. Chris Koenig gives <a href="http://chriskoenig.net/2010/05/16/wp7-part-3-navigation/">an excellent example of parameter-passing</a>. The Silverlight NavigationContext object exposes these parameters via the QueryString property, specifically for this purpose.</p>
+<p>The problem with query string parameters is that they requires an application to drop down to string-based identification, rather than rely upon direct object access. To generate the query string, an application has to extract an ID from an object. To consume the query string, it has to look that ID up in an object model. It usually ends up getting right back to the object that it started with. Wouldn’t it be easier to use that object reference directly?</p>
+<p>The web was designed for stateless operation. Each request is isolated from the ones that came before. No objects are assumed to be kept on the server for the user’s next request. Each request must contain enough information to reload those objects and generate the required page. This is what allows the web to scale.</p>
+<p>But the phone isn’t like a stateless web server. It has rich object state. It exists to serve just one user. It can afford to load objects into memory, and use references among those objects as that user navigates through the application. To drop down to a string only to come back to the same object is not taking full advantage of the platform. What’s good for the web is not necessarily good for the phone.</p>
+<h3>View model location</h3>
+<p>The second problem is pairing a view model with a view. Since navigation is based on identifying the view, Windows Phone forces you into a view-first approach. The view is left with the responsibility of finding its view model. To complicate matters, the view must sometimes pass its query string parameters to the view model. The view model uses the parameters to find a reference to the model object.</p>
+<p>A common solution to this problem is the view model locator pattern. A view model locator is a single-instance object registered as an application resource. Each view binds its DataContext to a property of this resource, which is an instance of a view model.</p>
+<pre class="code">    <span style="color: blue">&lt;</span><span style="color: #a31515">Application.Resources</span><span style="color: blue">&gt;
+        &lt;</span><span style="color: #a31515">vm</span><span style="color: blue">:</span><span style="color: #a31515">ViewModelLocator </span><span style="color: red">x</span><span style="color: blue">:</span><span style="color: red">Key</span><span style="color: blue">=&quot;Locator&quot;/&gt;
+    &lt;/</span><span style="color: #a31515">Application.Resources</span><span style="color: blue">&gt;
+
+</span></pre>
+<pre class="code"><span style="color: blue">public class </span><span style="color: #2b91af">ViewModelLocator
+</span>{
+    <span style="color: blue">private readonly </span><span style="color: #2b91af">MainViewModel </span>_main;
+
+    <span style="color: blue">public </span>ViewModelLocator()
+    {
+        _main = <span style="color: blue">new </span><span style="color: #2b91af">MainViewModel</span>();
+    }
+
+    <span style="color: blue">public </span><span style="color: #2b91af">MainViewModel </span>Main
+    {
+        <span style="color: blue">get </span>{ <span style="color: blue">return </span>_main; }
+    }
+}</pre>
+<pre class="code"><span style="color: blue">&lt;</span><span style="color: #a31515">UserControl </span><span style="color: red">x</span><span style="color: blue">:</span><span style="color: red">Class</span><span style="color: blue">=&quot;ToDoList.MainPage&quot;
+    ...</span><span style="color: blue">
+    </span><span style="color: red">DataContext</span><span style="color: blue">=&quot;{</span><span style="color: #a31515">Binding </span><span style="color: red">Main</span><span style="color: blue">, </span><span style="color: red">Source</span><span style="color: blue">={</span><span style="color: #a31515">StaticResource </span><span style="color: red">Locator</span><span style="color: blue">}}&quot;&gt;
+</span></pre>
+<p>The biggest problem with the view model locator pattern is that it treats view models as <strong>singletons</strong>. Since the view model locator is an application resource, there is only one instance serving all of the view models. And since each view data binds to a property, the view model locator can only have one instance of each view model. It is not a view model <em>factory</em>. There is no way to pass query string parameters to a method in order to <em>construct</em> an instance of a view model. You have to write code in the view to pass the parameters to the view model in its DataContext. That one and only instance of the view model must be able to change its behavior to point to a different model instance every time the user navigates.</p>
+<h3>Back-stack modification</h3>
+<p>The third problem is removing pages from the back-stack. Some interactions have intermediate steps: the user logs in before seeing content, or a wizard guides a user through a multi-page process to achieve a result. When the user has completed these intermediate steps, they don’t want to return to them. If they have completed the steps prior to reaching the main menu (as in the login example), then they want to exit the application when they hit back from the main menu. They don’t want to see the login screen again. Or if the intermediate steps occur after the main page (as in the wizard example), then they want to return to the main page when they are finished. These intermediate pages should be popped off the stack.</p>
+<p>Unfortunately, the Windows Phone OS is completely in charge of the back-stack. It keeps track of each URI that the user visits, and returns to past URIs when they hit the back button. There is no API for removing a URI from the stack. We are left with a couple of hacks. To skip intermediate pages at the beginning of the stack (login), we can <a href="http://blogs.msdn.com/b/ptorr/archive/2010/08/01/exiting-a-windows-phone-application.aspx">exit the application prematurely by throwing an unhandled exception</a>. To skip pages later in the stack (wizard), we can <a href="http://stackoverflow.com/questions/3809578/how-to-remove-a-page-from-the-navigation-history">bounce to each intermediate page in the main page’s OnNavigatedTo</a>. Neither solution is particularly appealing.</p>
+<h3>Conclusion</h3>
+<p>The Windows Phone navigation system is based on the web metaphor. Unfortunately, the web is the wrong model for a single-user device. The decision to model navigation in this way has caused phone applications to act like web pages. The intent was to bring a well-understood interaction language to the phone. But in practice, it just forced application developers to work around the shortcomings of a misappropriated model.</p>
+<p>This decision leads developers into a view-first approach, rather than beginning with the view model. It forces developers to convert object references to strings, only to convert them back into object references. And it requires ugly hacks to produce even the simplest of interactions. If you write Windows Phone apps, prepare to use these workarounds.</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="indexb0b4.html?cat=48" title="View all posts in Windows Phone 7" rel="category">Windows Phone 7</a> |   <a href="indexb0f8.html?p=643#comments" title="Comment on Windows Phone navigation workarounds">2 Comments &#187;</a></p>
+
+			</div>
+
+				<div class="post">
+				<h3 id="post-597"><a href="index53ba.html?p=597" rel="bookmark" title="Permanent Link to Change the Windows Phone 7 background image for the light or dark theme">Change the Windows Phone 7 background image for the light or dark theme</a></h3>
+				<small>Sunday, November 28th, 2010</small>
+
+				<div class="entry">
+					<p>Windows Phone 7 applications have a better sense of presence when they have their own background image. By default, the background is white for the light theme or black for the dark theme. Using only XAML markup, we can choose either a light or dark background image instead.</p>
+<p>Create two 480x800 images, one dark and one light. The easiest way to do this is take a photograph, scale and crop it to the right size, then adjust the contrast and brightness. For both images, you want a low contrast. For the dark image, turn down the brightness. For the light one, turn it up.</p>
+<p><a href="wp-content/uploads/2010/11/background2d.png"><img style="background-image: none; border-bottom: 0px; border-left: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top: 0px; border-right: 0px; padding-top: 0px" title="background2d" border="0" alt="background2d" src="wp-content/uploads/2010/11/background2d-thumb.png" width="148" height="244" /></a>&#160; <a href="wp-content/uploads/2010/11/background2l.png"><img style="background-image: none; border-bottom: 0px; border-left: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top: 0px; border-right: 0px; padding-top: 0px" title="background2l" border="0" alt="background2l" src="wp-content/uploads/2010/11/background2l-thumb.png" width="148" height="244" /></a></p>
+<p>Save both as png, and add them to an Images folder in your application. Set “Build Action” to “Resource” and “Copy to Output Directory” to “Do not copy”.</p>
+<p><a href="wp-content/uploads/2010/11/image.png"><img style="background-image: none; border-bottom: 0px; border-left: 0px; margin: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top: 0px; border-right: 0px; padding-top: 0px" title="image" border="0" alt="image" src="wp-content/uploads/2010/11/image-thumb.png" width="153" height="244" /></a></p>
+<p>Create two Image controls in your page’s LayoutRoot. By default, the LayoutRoot is a Grid offset 30 pixels from the top. Set the margins to 0,–30,0,0 so that the image fills the entire page. The grid has two rows by default, so set the RowSpan to 2.</p>
+<p><a href="wp-content/uploads/2010/11/image1.png"><img style="background-image: none; border-bottom: 0px; border-left: 0px; margin: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top: 0px; border-right: 0px; padding-top: 0px" title="image" border="0" alt="image" src="wp-content/uploads/2010/11/image-thumb1.png" width="244" height="222" /></a>&#160; <a href="wp-content/uploads/2010/11/image2.png"><img style="background-image: none; border-bottom: 0px; border-left: 0px; margin: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top: 0px; border-right: 0px; padding-top: 0px" title="image" border="0" alt="image" src="wp-content/uploads/2010/11/image-thumb2.png" width="244" height="202" /></a></p>
+<p>Set the Source of one Image to the dark png. Set Stretch to UniformToFill. Then bind its visibility to PhoneDarkThemeVisibility. Set the Source and Stretch of the other Image, and bind its Visibility to PhoneLightThemeVisibility.</p>
+<p><a href="wp-content/uploads/2010/11/image3.png"><img style="background-image: none; border-bottom: 0px; border-left: 0px; margin: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top: 0px; border-right: 0px; padding-top: 0px" title="image" border="0" alt="image" src="wp-content/uploads/2010/11/image-thumb3.png" width="244" height="101" /></a>&#160; <a href="wp-content/uploads/2010/11/image4.png"><img style="background-image: none; border-bottom: 0px; border-left: 0px; margin: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top: 0px; border-right: 0px; padding-top: 0px" title="image" border="0" alt="image" src="wp-content/uploads/2010/11/image-thumb4.png" width="244" height="157" /></a></p>
+<p>Now using the Blend Device window, switch between dark and light to make sure the result is what you expect.</p>
+<p><a href="wp-content/uploads/2010/11/image5.png"><img style="background-image: none; border-bottom: 0px; border-left: 0px; margin: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top: 0px; border-right: 0px; padding-top: 0px" title="image" border="0" alt="image" src="wp-content/uploads/2010/11/image-thumb5.png" width="244" height="119" /></a>&#160; <a href="wp-content/uploads/2010/11/image6.png"><img style="background-image: none; border-bottom: 0px; border-left: 0px; margin: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top: 0px; border-right: 0px; padding-top: 0px" title="image" border="0" alt="image" src="wp-content/uploads/2010/11/image-thumb6.png" width="138" height="244" /></a></p>
+<p>This all works directly in XAML without editing code. You can use this technique for most visual aspects. But if you need to detect which theme is active in code, Magnus Johansson has instructions at <a href="http://insomniacgeek.com/code/how-to-detect-dark-or-light-theme-in-windows-phone-7/">Insomniac Geek</a>.</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="indexb0b4.html?cat=48" title="View all posts in Windows Phone 7" rel="category">Windows Phone 7</a> |   <a href="index53ba.html?p=597#respond" title="Comment on Change the Windows Phone 7 background image for the light or dark theme">No Comments &#187;</a></p>
+
+			</div>
+
+				<div class="post">
+				<h3 id="post-578"><a href="indexa722.html?p=578" rel="bookmark" title="Permanent Link to What makes a good phone app?">What makes a good phone app?</a></h3>
+				<small>Wednesday, November 24th, 2010</small>
+
+				<div class="entry">
+					<p>My head-to-head Reversi app is almost ready for the Windows Phone marketplace. I finally have it on my phone, and I am testing it rigorously.</p>
+<p>I’ve owned an iPod Touch, an Android G1, and now a Windows Phone 7. Based on that experience and the reactions from my testers, here’s what I think makes a good phone app.</p>
+<h3>Quality</h3>
+<p>It’s hard to quantify but easy to recognize. If an app feels hacked together, I don’t want to use it. It doesn’t matter if it’s only 99 cents, or even if its free. I don’t want to reward an app developer who does not obviously care.</p>
+<h3>Purposefulness</h3>
+<p>We are used to doing work with our computers. We are actively involved in every step of the process -- clicking on menus, filling in forms, verifying results.</p>
+<p>But a smart phone is an agent. I want to tell it what to do, and then let it do the work. If I have to go through all the steps myself, then the phone is the wrong platform.</p>
+<h3>Disconnected operation</h3>
+<p>Smart phones have many radios, so connectivity shouldn’t be a problem, right? Not so. These radios don’t work well indoors, on the road, or in large crowds. If an app needs a connection to work properly, it may as well be a web page.</p>
+<p>Smart phones have a lot of storage. I expect my apps to use it. When I pull up IMDB, I expect that the list of movies on the front page will be similar to the ones I saw yesterday. It shouldn’t have to hit the network. Refresh the list in the background, and let me work with the information that I already have.</p>
+<h3>Discoverability</h3>
+<p>There is no instruction manual that comes with an app. A user needs to figure it out based only on the clues that it gives them.</p>
+<p>An app should know the very next thing that the user wants to do. It should put that plainly on the screen with a meaningful icon, a natural gesture, or as a last resort text.</p>
+<p>An app should also anticipate what the user might try. For example, if you have a Windows Phone, press the home button on the lock screen. The screen will bounce to indicate that there is something below it. The user swipes up to see what it is, thereby learning the correct unlock gesture.</p>
+<h3>Fit the platform</h3>
+<p>An iPhone app should have an icon with rounded corners and reflections. It should use the standard page animations, title, and back button showing the title of the prior page. A Windows Phone app, on the other hand, should have a flat square icon, and no on-screen back button. Pivot and panorama work on the Windows Phone. Don’t try them on Android.</p>
+<h3>The mistakes I’ve made</h3>
+<p>My Reversi game made several of these mistakes.</p>
+<p>With respect to quality, it had some serious bugs when I started testing with other people. I had forgiven these bugs, since I know the workarounds. But others did not. Get other people to test your app.</p>
+<p>Another quality issue was responsiveness. Initially it took a full second for the game board to appear. This confused people. So I made the game board a separate XAML element. It still takes a second for the pieces to initially appear, but at least the game board is there. It feels like a more solid app.</p>
+<p>A final quality issue was that it was far too easy to accidentally hit the home button. I put a piece at the bottom of the board to indicate that it is your move. You drag this piece onto the board to play. Unfortunately, the piece appeared just above the home button on the physical device. My wife went to the home screen once for every 2 or 3 moves that she made.</p>
+<p>To provide purposefulness, I give you additional information about the game. I show you not only the pieces that you are about to capture, but also the moves that you are allowing your opponent. Reversi, as it turns out, is more about moves than it is pieces. But I didn’t take purposefulness far enough. I also needed to continue showing those moves after the piece is dropped, so your opponent can easily see what’s available to him. It raises the level of abstraction.</p>
+<p>For discoverability, I show a pulsing glow behind the new piece. People understand that this means “drag me”. But I didn’t anticipate what the user would try. Most people just try to touch the square where they want to move. Since that’s what they try, I now honor that gesture.</p>
+<p>Disconnected operation is the one place where I focused my attention. Reversi is the inaugural Correspondence application, and Correspondence was designed for disconnected operation. Still, there were a few things that I had to fix. Most significantly, if you make a move while disconnected, it is queued on the device. Once you are connected again, you have to tell the application to send the move. The way you do that in Reversi is to return to the main screen. This is naturally what the user would do, since they can’t do anything else on the game screen.</p>
+<p>Finally, to fit the Windows Phone platform, Reversi uses very simple flat graphics. However, the platform also calls for background images. The application feels incomplete without photography. So I’m taking pictures of real Reversi pieces to give the user the feeling of presence.</p>
+<p>The app will be in the Marketplace after another week or two of testing.</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="indexb0b4.html?cat=48" title="View all posts in Windows Phone 7" rel="category">Windows Phone 7</a> |   <a href="indexa722.html?p=578#respond" title="Comment on What makes a good phone app?">No Comments &#187;</a></p>
+
+			</div>
+
+				<div class="post">
+				<h3 id="post-569"><a href="index475a.html?p=569" rel="bookmark" title="Permanent Link to Getting the users anonymous Live ID on Windows Phone 7">Getting the users anonymous Live ID on Windows Phone 7</a></h3>
+				<small>Wednesday, October 6th, 2010</small>
+
+				<div class="entry">
+					<p>While working on a Reversi game for Windows Phone 7, I needed a good way to identify the user. The idea is to let users challenge their friends by entering their name. On the one hand, anybody with a Windows Phone 7 should be able to play. On the other hand, I don’t want to be in the identity business. So the obvious choice is to use Live ID. You have to use Live ID to activate the phone, so every one of my users would have one.</p>
+<p>A quick search reveals that there is <a href="http://msdn.microsoft.com/en-us/library/microsoft.phone.info.userextendedproperties.getvalue(v=VS.92).aspx">an API to obtain the user’s anonymous Live ID</a>. Unfortunately, more vigorous searching does not reveal what an “anonymous” Live ID is. If it’s an ID, how can it be anonymous?</p>
+<p>Here is the sample code from the MSDN site:</p>
+<pre class="code"><span style="color: blue">string </span>anid = <span style="color: #2b91af">UserExtendedProperties</span>.GetValue(<span style="color: #a31515">&quot;ANID&quot;</span>) <span style="color: blue">as string</span>;
+<span style="color: blue">string </span>anonymousUserId = anid.Substring(2, 32);</pre>
+<p>This code raises a number of questions for me:</p>
+<ul>
+<li>What is an anonymous Live ID? </li>
+<li>Is the length always 32? </li>
+<li>What are those first two characters you’re skipping? </li>
+</ul>
+<p>To find some answers, I ran this code in the emulator. If you’ve tried it, you know that it throws a NullReferenceException. UserExtendedProperties.GetValue(“ANID”) returns null. So you’re stuck. Unless you know someone with a WP7 device.</p>
+<p><a href="http://chriskoenig.net/">And I do</a>.</p>
+<p>Chris Koenig was kind enough to run the sample code on an actual phone. Here is what the API returns (I’ve anonymized his anonymous ID by scrambling the characters).</p>
+<blockquote>
+<p>? anid</p>
+<p>&quot;A=2E434B328BC68118DB640915FFFFFFFF&amp;E=a45&amp;W=1&quot;</p>
+<p>? anonymousUserId</p>
+<p>&quot;2E434B328BC68118DB640915FFFFFFFF&quot;</p>
+</blockquote>
+<p>So now we have an answer to the questions. The anonymous Live ID is a GUID with no punctuation. It is unique to the user without telling an outside observer with no other information who it is. Yes, it is always 32 characters (since it’s a GUID). And the first two characters are the name half of a name/value pair.</p>
+<p>Not wanting to assume that the character position will never change, I modified the parse code. Here’s a parser that will extract the value of “A” in an ampersand-delimited list of name/value pairs.</p>
+<pre class="code"><span style="color: blue">public static string </span>Parse(<span style="color: blue">string </span>anid)
+{
+    <span style="color: blue">string</span>[] parts = anid.Split(<span style="color: #a31515">'&amp;'</span>);
+    <span style="color: #2b91af">IEnumerable</span>&lt;<span style="color: blue">string</span>[]&gt; pairs = parts.Select(part =&gt; part.Split(<span style="color: #a31515">'='</span>));
+    <span style="color: blue">string </span>id = pairs
+        .Where(pair =&gt; pair.Length == 2 &amp;&amp; pair[0] == <span style="color: #a31515">&quot;A&quot;</span>)
+        .Select(pair =&gt; pair[1])
+        .FirstOrDefault();
+    <span style="color: blue">return </span>id;
+}</pre>
+<p>The plan is to prompt the user for an alias the first time they use the app. I’ll send the anonymous ID and the alias to my server, which will ensure that the alias is not already taken and associate the two. Then other users can challenge them using that alias. I get the best of both worlds. I can rely upon Microsoft to be the identity provider, and I can let my users challenge each other with their own names.</p>
+<p>Thanks, Chris!</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="indexb0b4.html?cat=48" title="View all posts in Windows Phone 7" rel="category">Windows Phone 7</a> |   <a href="index475a.html?p=569#comments" title="Comment on Getting the users anonymous Live ID on Windows Phone 7">2 Comments &#187;</a></p>
+
+			</div>
+
+		
+		<div class="navigation">
+			<div class="alignleft"></div>
+			<div class="alignright"></div>
+		</div>
+
+	
+	</div>
+		</td>
+	</tr>
+</table>
+
+<hr />
+<div id="footer">
+<!-- If you'd like to support WordPress, having the "powered by" link someone on your blog is the best way, it's our only promotion or advertising. -->
+	<p>
+		Adventures in Software is proudly powered by 
+		<a href="http://wordpress.org/">WordPress</a>
+		<br /><a href="indexd784.html?feed=rss2">Entries (RSS)</a>
+		and <a href="indexa6da.html?feed=comments-rss2">Comments (RSS)</a>.
+		<!-- 17 queries. 0.325 seconds. -->
+	</p>
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-389401-3");
+pageTracker._trackPageview();
+} catch(err) {}</script></div>
+
+<!-- Gorgeous design by Michael Heilemann - http://binarybonsai.com/kubrick/ -->
+
+		<div id="sk2-footer" style="color:#FFF; background-color:#444; padding: 3px 2px 3px 2px; border-top: #888 solid 1px;">This blog is protected by <a href="http://unknowngenius.com/blog/" title="Dave">dr Dave</a>'s <strong><a href="http://unknowngenius.com/blog/wordpress/spam-karma/" title="SK2">Spam Karma 2</a></strong>: <strong>274531</strong>  Spams eaten and counting...</div><script type="text/javascript" src="replies.js"></script>
+<script type="text/javascript" src="blogger.js"></script>
+<script type="text/javascript" src="http://twitter.com/statuses/user_timeline/michaellperry.json?callback=twitterCallback2&amp;count=5"></script>
+<script type="text/javascript" src="http://search.twitter.com/search.json?q=@michaellperry&amp;callback=twitterCallbackReplies&amp;rpp=5"></script>
+</body>
+
+<!-- Mirrored from adventuresinsoftware.com/blog/?cat=48 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 Jan 2017 12:54:11 GMT -->
+</html>

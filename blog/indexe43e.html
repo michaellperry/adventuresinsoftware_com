@@ -1,0 +1,854 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+
+
+<!-- Mirrored from adventuresinsoftware.com/blog/?paged=10 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 Jan 2017 13:10:18 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>Adventures in Software  </title>
+
+<meta name="generator" content="WordPress 2.3.3" /> <!-- leave this for stats -->
+
+<link rel="stylesheet" href="wp-content/themes/ais2/style.css" type="text/css" media="screen" />
+<link rel="alternate" type="application/rss+xml" title="Adventures in Software RSS Feed" href="indexd784.html?feed=rss2" />
+<link rel="pingback" href="xmlrpc.html" />
+    <script type="text/javascript">
+        function onSilverlightError(sender, args) {
+            var appSource = "";
+            if (sender != null && sender != 0) {
+              appSource = sender.getHost().Source;
+            }
+            
+            var errorType = args.ErrorType;
+            var iErrorCode = args.ErrorCode;
+
+            if (errorType == "ImageError" || errorType == "MediaError") {
+              return;
+            }
+
+            var errMsg = "Unhandled Error in Silverlight Application " +  appSource + "\n" ;
+
+            errMsg += "Code: "+ iErrorCode + "    \n";
+            errMsg += "Category: " + errorType + "       \n";
+            errMsg += "Message: " + args.ErrorMessage + "     \n";
+
+            if (errorType == "ParserError") {
+                errMsg += "File: " + args.xamlFile + "     \n";
+                errMsg += "Line: " + args.lineNumber + "     \n";
+                errMsg += "Position: " + args.charPosition + "     \n";
+            }
+            else if (errorType == "RuntimeError") {           
+                if (args.lineNumber != 0) {
+                    errMsg += "Line: " + args.lineNumber + "     \n";
+                    errMsg += "Position: " +  args.charPosition + "     \n";
+                }
+                errMsg += "MethodName: " + args.methodName + "     \n";
+            }
+
+            throw new Error(errMsg);
+        }
+    </script>
+
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc0db0.php?rsd" />
+ <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="wp-includes/wlwmanifest.xml" /> <style type='text/css'>
+<!--#header { background: url('wp-content/themes/ais2/images/header-imgae03.html?upper=A7A73F&amp;lower=77773F') no-repeat bottom center; }
+--></style>
+</head>
+<body>
+<div id="page">
+
+<div class="aisTopBar">
+	<form method="get" id="searchform" action="http://adventuresinsoftware.com/blog/">
+<div>
+<a href="indexd784.html?feed=rss2"><img src="../images/feed-icon-28x28.png" border="0"></a>
+<input type="text" value="" name="s" id="s" />
+<input type="submit" id="searchsubmit" value="Search" />
+</div>
+</form>
+</div>
+
+<div class="aisHeaderImageRight">
+	<div class="aisHeaderImage">
+	<div class="aisHeaderCornerRight">
+	<div class="aisHeaderCornerLeft">
+	<div class="aisImageBar">
+	<div class="aisSubSites">
+		<a href="index.html" class="aisSubSiteLink"><span class="aisSiteTabRight"><span class="aisSiteTabLeft"><span class="aisSiteTab">
+			home</span></span></span></a>
+		<a class="aisSubSiteLink" href="indexb60a.html?cat=27"><span class="aisSiteTabRight"><span class="aisSiteTabLeft"><span class="aisSiteTab">
+			historic modeling</span></span></span></a>
+		<a class="aisSubSiteLink" href="indexa88f.html?cat=36"><span class="aisSiteTabRight"><span class="aisSiteTabLeft"><span class="aisSiteTab">
+			update controls</span></span></span></a>
+		<a href="index2d79.html?cat=26" class="aisSubSiteLink"><span class="aisSiteTabRight"><span class="aisSiteTabLeft"><span class="aisSiteTab">
+			degrees of freedom</span></span></span></a>
+		<a class="aisSubSiteLink" href="indexba53.html?page_id=2"><span class="aisSiteTabRight"><span class="aisSiteTabLeft"><span class="aisSiteTab">
+			about us</span></span></span></a>
+
+	</div>
+	</div>
+	</div>
+	</div>
+	</div>
+</div>
+
+<table style="width: 100%" cellspacing="0" cellpadding="0">
+	<tr valign="top">
+		<td width="210px">
+<div id="sidebar">
+<div class="aisLeftColumnFill">
+<div class="aisLeftColumnBottom">
+<div class="aisLeftColumnTop">
+<div id="twitter_div" class="aisLeftNav">
+<h2 class="sidebar-title">Twitter Updates</h2>
+<ul id="twitter_update_list"></ul>
+<a href="http://twitter.com/michaellperry" id="follow">Follow me</a>
+</div>
+<div id="twitter_reply_div" class="aisLeftNav">
+<h2 class="sidebar-title">Twitter Replies</h2>
+<ul id="twitter_reply_list"></ul>
+</div>
+
+<div class="aisLeftNav">
+<a href='http://ineta.org/Speakers/SearchCommunitySpeakers.aspx?SpeakerId=c5110e21-9243-461b-a464-a6548524e885'><img alt='INETA Community Speakers Program' border='0' src='../../www.ineta.org/images/OfficialLogos/InetaCommunitySpeakersRequestMe.html' /></a>
+</div>
+
+<div class="aisLeftNav">
+	<li class="pagenav"><h2>Pages</h2><ul><li class="page_item page-item-2"><a href="indexba53.html?page_id=2" title="About Us">About Us</a></li>
+<li class="page_item page-item-210"><a href="index6ae3.html?page_id=210" title="Templates">Templates</a></li>
+</ul></li></div>
+
+<div class="aisLeftNav">
+<h2>Archives</h2>
+<ul>
+	<li><a href='indexb4d5.html?m=201110' title='October 2011'>October 2011</a></li>
+	<li><a href='indexc61a.html?m=201106' title='June 2011'>June 2011</a></li>
+	<li><a href='indexa80d.html?m=201105' title='May 2011'>May 2011</a></li>
+	<li><a href='index512b.html?m=201104' title='April 2011'>April 2011</a></li>
+	<li><a href='index08fb.html?m=201103' title='March 2011'>March 2011</a></li>
+	<li><a href='index52f4.html?m=201102' title='February 2011'>February 2011</a></li>
+	<li><a href='index74f1.html?m=201101' title='January 2011'>January 2011</a></li>
+	<li><a href='index8956.html?m=201012' title='December 2010'>December 2010</a></li>
+	<li><a href='indexa1aa.html?m=201011' title='November 2010'>November 2010</a></li>
+	<li><a href='indexe3d5.html?m=201010' title='October 2010'>October 2010</a></li>
+	<li><a href='index9ab9.html?m=201009' title='September 2010'>September 2010</a></li>
+	<li><a href='index1ff0.html?m=201008' title='August 2010'>August 2010</a></li>
+	<li><a href='index9f11.html?m=201007' title='July 2010'>July 2010</a></li>
+	<li><a href='index31f0.html?m=201006' title='June 2010'>June 2010</a></li>
+	<li><a href='indexd189.html?m=201005' title='May 2010'>May 2010</a></li>
+	<li><a href='indexb5c0.html?m=201004' title='April 2010'>April 2010</a></li>
+	<li><a href='indexf258.html?m=201003' title='March 2010'>March 2010</a></li>
+	<li><a href='index6e30.html?m=201002' title='February 2010'>February 2010</a></li>
+	<li><a href='index6b19.html?m=201001' title='January 2010'>January 2010</a></li>
+	<li><a href='index5c0a.html?m=200912' title='December 2009'>December 2009</a></li>
+	<li><a href='index8f62.html?m=200911' title='November 2009'>November 2009</a></li>
+	<li><a href='index451d.html?m=200910' title='October 2009'>October 2009</a></li>
+	<li><a href='index3e04.html?m=200909' title='September 2009'>September 2009</a></li>
+	<li><a href='index425a.html?m=200908' title='August 2009'>August 2009</a></li>
+	<li><a href='index9907.html?m=200907' title='July 2009'>July 2009</a></li>
+	<li><a href='index3104.html?m=200906' title='June 2009'>June 2009</a></li>
+	<li><a href='indexc36d.html?m=200905' title='May 2009'>May 2009</a></li>
+	<li><a href='index17e8.html?m=200904' title='April 2009'>April 2009</a></li>
+	<li><a href='index10a5.html?m=200903' title='March 2009'>March 2009</a></li>
+	<li><a href='index8988.html?m=200902' title='February 2009'>February 2009</a></li>
+	<li><a href='index1419.html?m=200901' title='January 2009'>January 2009</a></li>
+	<li><a href='index7866.html?m=200812' title='December 2008'>December 2008</a></li>
+	<li><a href='index55f6.html?m=200811' title='November 2008'>November 2008</a></li>
+	<li><a href='indexa7bc.html?m=200810' title='October 2008'>October 2008</a></li>
+	<li><a href='indexe77c.html?m=200809' title='September 2008'>September 2008</a></li>
+	<li><a href='indexcffc.html?m=200808' title='August 2008'>August 2008</a></li>
+	<li><a href='index0e62.html?m=200807' title='July 2008'>July 2008</a></li>
+	<li><a href='indexfda7.html?m=200806' title='June 2008'>June 2008</a></li>
+	<li><a href='index7d64.html?m=200805' title='May 2008'>May 2008</a></li>
+	<li><a href='index94dd.html?m=200804' title='April 2008'>April 2008</a></li>
+	<li><a href='index9631.html?m=200803' title='March 2008'>March 2008</a></li>
+	<li><a href='indexdd52.html?m=200802' title='February 2008'>February 2008</a></li>
+	<li><a href='index21ee.html?m=200801' title='January 2008'>January 2008</a></li>
+	<li><a href='index363c.html?m=200712' title='December 2007'>December 2007</a></li>
+	<li><a href='index7493.html?m=200711' title='November 2007'>November 2007</a></li>
+	<li><a href='index93a7.html?m=200710' title='October 2007'>October 2007</a></li>
+	<li><a href='index4ca8.html?m=200709' title='September 2007'>September 2007</a></li>
+	<li><a href='index6124.html?m=200708' title='August 2007'>August 2007</a></li>
+	<li><a href='index6013.html?m=200707' title='July 2007'>July 2007</a></li>
+	<li><a href='index2ab6.html?m=200706' title='June 2007'>June 2007</a></li>
+	<li><a href='index44f0.html?m=200705' title='May 2007'>May 2007</a></li>
+	<li><a href='indexf0b4.html?m=200704' title='April 2007'>April 2007</a></li>
+	<li><a href='index481d.html?m=200703' title='March 2007'>March 2007</a></li>
+	<li><a href='indexcbea.html?m=200702' title='February 2007'>February 2007</a></li>
+	<li><a href='index9cdc.html?m=200701' title='January 2007'>January 2007</a></li>
+	<li><a href='index3ea4.html?m=200612' title='December 2006'>December 2006</a></li>
+	<li><a href='index67ca.html?m=200611' title='November 2006'>November 2006</a></li>
+	<li><a href='indexff49.html?m=200610' title='October 2006'>October 2006</a></li>
+	<li><a href='index611c.html?m=200609' title='September 2006'>September 2006</a></li>
+	<li><a href='index9a21.html?m=200608' title='August 2006'>August 2006</a></li>
+	<li><a href='index3ee9.html?m=200607' title='July 2006'>July 2006</a></li>
+	<li><a href='indexe13a.html?m=200606' title='June 2006'>June 2006</a></li>
+</ul>
+</div>
+
+<div class="aisLeftNav">
+			<li id="linkcat-16" class="linkcat"><h2>Blogroll</h2>
+	<ul>
+<li><a href="http://ayende.com/Blog">Ayende Rahien</a></li>
+<li><a href="http://www.softinsight.com/bnoyes/default.aspx">Brian Noyes</a></li>
+<li><a href="http://chriskoenig.net/">Chris Koenig</a></li>
+<li><a href="http://scienceblogs.com/goodmath/" title="MarkCC reveals the beauty in mathematics and exposes its misuse.">Good Math, Bad Math</a></li>
+<li><a href="http://joshsmithonwpf.wordpress.com/">Josh Smith on WPF</a></li>
+<li><a href="http://west-wind.com/Weblog/default.aspx">Rick Strahl</a></li>
+<li><a href="http://www.udidahan.com/?blog=true">Udi Dahan</a></li>
+
+	</ul>
+</li>
+<li id="linkcat-17" class="linkcat"><h2>Links</h2>
+	<ul>
+<li><a href="http://www.absg.com/" title="my day job">ABSG</a></li>
+<li><a href="http://www.d20universe.com/" title="my friends boostrap">d20 Universe</a></li>
+<li><a href="http://updatecontrols.net/" title="my open source project">Update Controls .NET</a></li>
+
+	</ul>
+</li>
+<li id="linkcat-32" class="linkcat"><h2>Podroll</h2>
+	<ul>
+<li><a href="http://dotnetrocks.com/" title="Interviews with leaders in the .NET community.">.NET Rocks!</a></li>
+<li><a href="http://hanselminutes.com/" title="News and interviews from all aspects of software, with an insider&#039;s view of Microsoft.">Hanselminutes</a></li>
+
+	</ul>
+</li>
+	</div>
+
+<div class="aisLeftNav">
+<h2>Books</h2>
+<iframe src="http://rcm.amazon.com/e/cm?t=adventures0d2-20&amp;o=1&amp;p=8&amp;l=as1&amp;asins=0764526413&amp;fc1=000000&amp;IS2=1&amp;lt1=_blank&amp;lc1=0000ff&amp;bc1=000000&amp;bg1=ffffff&amp;f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" name="I5" id="I5"></iframe>
+<br/>
+<iframe src="http://rcm.amazon.com/e/cm?t=adventures0d2-20&amp;o=1&amp;p=8&amp;l=as1&amp;asins=0201633612&amp;fc1=000000&amp;IS2=1&amp;lt1=_blank&amp;lc1=0000ff&amp;bc1=000000&amp;bg1=ffffff&amp;f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" name="I6" id="I6"></iframe>
+<br/>
+<iframe src="http://rcm.amazon.com/e/cm?t=adventures0d2-20&amp;o=1&amp;p=8&amp;l=as1&amp;asins=0136291554&amp;fc1=000000&amp;IS2=1&amp;lt1=_blank&amp;lc1=0000ff&amp;bc1=000000&amp;bg1=ffffff&amp;f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" name="I7" id="I7"></iframe>
+<br/>
+<iframe src="http://rcm.amazon.com/e/cm?t=adventures0d2-20&amp;o=1&amp;p=8&amp;l=as1&amp;asins=1888009195&amp;fc1=000000&amp;IS2=1&amp;lt1=_blank&amp;lc1=0000ff&amp;bc1=000000&amp;bg1=ffffff&amp;f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" name="I8" id="I8"></iframe>
+</div>
+<div class="aisLeftNav">
+<h2>Meta</h2>
+<ul>
+		<li><a href="wp-login.html">Login</a></li>
+	<li><a href="http://validator.w3.org/check/referer" title="This page validates as XHTML 1.0 Transitional">Valid <abbr title="eXtensible HyperText Markup Language">XHTML</abbr></a></li>
+	<li><a href="http://gmpg.org/xfn/"><abbr title="XHTML Friends Network">XFN</abbr></a></li>
+	<li><a href="http://wordpress.org/" title="Powered by WordPress, state-of-the-art semantic personal publishing platform.">WordPress</a></li>
+	</ul>
+</div>
+<div class="aisLeftContent">
+<h2>Community</h2>
+<ul>
+	<script type="text/javascript" src="../../localhost/embed/92q2bbma.js"></script>
+</ul>
+</div>
+
+</div></div></div>
+</div>		</td>
+		<td>
+
+	<div id="content" class="narrowcolumn">
+
+	
+		
+			<div class="post" id="post-477">
+				<h2><a href="index778b.html?p=477" rel="bookmark" title="Permanent Link to We Are Microsoft">We Are Microsoft</a></h2>
+				<small>January 16th, 2010 <!-- by Michael L Perry --></small>
+
+				<div class="entry">
+					<p><a href="wp-content/uploads/2010/01/secondwind.jpg"><img style="border-bottom: 0px; border-left: 0px; display: inline; margin-left: 0px; border-top: 0px; margin-right: 0px; border-right: 0px" title="Second Wind" border="0" alt="Second Wind" align="right" src="wp-content/uploads/2010/01/secondwind-thumb.jpg" width="244" height="157" /></a> The “<a href="http://wearemicrosoft.com/">We Are Microsoft</a>” charity coding weekend is an opportunity for developers to donate their time to local charities. It is organized primarily by <a href="http://twitter.com/MissToi">Toi Wright</a>. Matt Lagrotte of <a href="http://www.verio.com/">Verio</a> has graciously provided web hosting for all of the charities. Without their support, and the support of Microsoft and other sponsors, 20 charities would go without the IT support that they need.</p>
+<p>Our charity is <a href="http://secondwinddallas.org/">Second Wind Dallas</a>. They find sponsors for local families in need. Schools identify those families, and a committee determines which sponsor will adopt which family. Several volunteers coordinate the communications among schools, families, and sponsors. Right now, the system is run completely by phone, email, and Excel. They need help.</p>
+<p>We are building an online database to coordinate this information. Volunteer assignments, family referrals, and sponsor adoptions all change year after year. As a result, we are developing this as a historic model.</p>
+</p>
+<p>The primary function of the site is data entry. An administrator will set up the volunteer, school, family, and sponsor records. They will manage the assignments of volunteers to schools, the school referrals of families, and the adoption of families by sponsors.</p>
+<p>The secondary function of the site is notification. A volunteer will be reminded to contact sponsors for donations. They will pick up those donations at the school and deliver them to the families. They will be reminded to send a thank you to each sponsor for those donations.</p>
+<p>We are building this system using ASP .NET Web Forms, SQL Server 2005, and Entity Framework. We will have it done within the next 48 hours. And when we are done, Second Wind will have a much more manageable process.</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="indexac94.html?cat=42" title="View all posts in Charity" rel="category">Charity</a> |   <a href="index778b.html?p=477#respond" title="Comment on We Are Microsoft">No Comments &#187;</a></p>
+			</div>
+
+		
+			<div class="post" id="post-473">
+				<h2><a href="index01a2.html?p=473" rel="bookmark" title="Permanent Link to Build your own rules engine 5: The rule model">Build your own rules engine 5: The rule model</a></h2>
+				<small>December 29th, 2009 <!-- by Michael L Perry --></small>
+
+				<div class="entry">
+					<p>Download the <a href="wp-content/uploads/2009/12/byorulesengine.zip">source code</a> and follow along.</p>
+<p>This post is part of a series:</p>
+<ol>
+<li><a href="indexbbbc.html?p=463">The customer is not you</a>.</li>
+<li><a href="index1beb.html?p=470">If-then is backwards</a>.</li>
+<li><a href="index2c5f.html?p=471">Condition and outcome templates</a>.</li>
+<li><a href="index8c8c.html?p=472">Condition composition</a>.</li>
+<li>The rule model.</li>
+</ol>
+<p>We’ve defined interfaces for the various types of rules in our point-of-sale system.</p>
+<pre><span style="color: blue">public</span> <span style="color: blue">interface</span> <span style="color: #2b91af">IFreeItemsRule</span>
+{
+    <span style="color: #2b91af">IEnumerable</span>&lt;<span style="color: #2b91af">Item</span>&gt; GetFreeItems(<span style="color: #2b91af">Check</span> check);
+} 
+
+<span style="color: blue">public</span> <span style="color: blue">interface</span> <span style="color: #2b91af">IDiscountRule</span>
+{
+    <span style="color: #2b91af">IEnumerable</span>&lt;<span style="color: #2b91af">Discount</span>&gt; GetDiscounts(<span style="color: #2b91af">Check</span> check);
+} 
+
+<span style="color: blue">public</span> <span style="color: blue">interface</span> <span style="color: #2b91af">ICouponRule</span>
+{
+    <span style="color: #2b91af">IEnumerable</span>&lt;<span style="color: #2b91af">Coupon</span>&gt; GetCoupons(<span style="color: #2b91af">Check</span> check);
+}</pre>
+<p>These interfaces assume that we can execute rules based entirely on the check. While this is true for the majority of our example rules, this is not true for the frequent diner discount.</p>
+<ul>
+<li><em>m dollars</em> for every <em>n</em> prior visits of <em>minimum</em> dollars or more that have not already been rewarded.</li>
+</ul>
+<p>This rule needs access to the history of visits. So instead of providing a simple Check, we’ll provide a richer object. Inspired by the Model-View-ViewModel pattern, I’ve decided to call this rich object a Rule Model.</p>
+<p><strong>The RuleModel class</strong></p>
+<p>The Rule Model has access not only to the Check that the user is currently editing, but also to a repository. It can query the repository for any historical information that a rule may require.</p>
+<pre><span style="color: blue">public</span> <span style="color: blue">class</span> <span style="color: #2b91af">RuleModel</span>
+{
+    <span style="color: blue">private</span> <span style="color: #2b91af">Check</span> _check;
+    <span style="color: blue">private</span> <span style="color: #2b91af">IRepository</span> _repository; 
+
+    <span style="color: blue">public</span> <span style="color: #2b91af">RuleModel</span>(<span style="color: #2b91af">Check</span> check, <span style="color: #2b91af">IRepository</span> repository)
+    {
+        _check = check;
+        _repository = repository;
+    } 
+
+    <span style="color: blue">public</span> <span style="color: #2b91af">Check</span> Check
+    {
+        <span style="color: blue">get</span> { <span style="color: blue">return</span> _check; }
+    }
+}</pre>
+<p>For example, our frequent diner rule needs access to the history of visits.</p>
+<pre><span style="color: blue">public</span> <span style="color: blue">int</span> GetPriorVisitCount(
+    <span style="color: #2b91af">FrequentDiner</span> frequentDiner,
+    <span style="color: blue">decimal</span> minimumAmountPerVisit)
+{
+    <span style="color: blue">int</span> totalPriorVisitCount = _repository
+        .GetChecks(check =&gt; check.FrequentDiner == frequentDiner &amp;&amp;
+            check.TotalBeforeDiscounts &gt; minimumAmountPerVisit)
+        .Count();
+    <span style="color: blue">int</span> discountedPriorVisitCount = _repository
+        .GetChecks(check =&gt; check.FrequentDiner == frequentDiner)
+        .SelectMany(check =&gt; check.Discounts)
+        .OfType&lt;<span style="color: #2b91af">PriorVisitDiscount</span>&gt;()
+        .Sum(discount =&gt; discount.VisitsCounted);
+    <span style="color: blue">return</span> totalPriorVisitCount - discountedPriorVisitCount;
+}</pre>
+<p>The RuleModel can satisfy the demands of the frequent diner discount rule. It can count the number of prior visits by this frequent diner, and it can count the number of prior visits that have already been rewarded. The difference is needed to determine whether the frequent diner has earned a new discount.</p>
+<p><strong>Let history decide</strong></p>
+<p>When the frequent diner earns a discount, we record that reward on the new check. We use a derivative of the Discount class that captures the number of visits counted.</p>
+<pre><span style="color: blue">public</span> <span style="color: blue">class</span> <span style="color: #2b91af">PriorVisitDiscount</span> : <span style="color: #2b91af">Discount</span>
+{
+    <span style="color: blue">private</span> <span style="color: blue">int</span> _visitsCounted; 
+
+    <span style="color: blue">public</span> PriorVisitDiscount(
+        <span style="color: blue">string</span> description,
+        <span style="color: blue">decimal</span> amount,
+        <span style="color: blue">int</span> visitsCounted)
+        : <span style="color: blue">base</span>(description, amount)
+    {
+        _visitsCounted = visitsCounted;
+    } 
+
+    <span style="color: blue">public</span> <span style="color: blue">int</span> VisitsCounted
+    {
+        <span style="color: blue">get</span> { <span style="color: blue">return</span> _visitsCounted; }
+    }
+}</pre>
+<p>By capturing this information in the discount itself, we ensure that our action is atomic. The very act of awarding the discount deducts the visits required to earn it. Refer back to the GetPriorVisitCount method to see how this historical information is used.</p>
+<p>By capturing data historically rather than keeping a separate tally, we can greatly reduce the likelihood of a defect. And if there ever is a question about discounts awarded (or not awarded), the entire history is there to be audited.</p>
+<p><strong>Rules are independent</strong></p>
+<p><a href="wp-content/uploads/2009/12/byorulesengine.zip">Download the source code</a> and examine the tests. You’ll find that each of the example rules that we originally promised the customer are working as expected. You will also find that they are working independently of one another. As we discussed at the beginning of this series, independence is important for understanding the behavior of the rule engine. If the rules depend upon one another, it becomes difficult to explain why they behave the way that they do.</p>
+<p>An example of independence can be found if we combine a free item rule with a coupon rule.</p>
+<ul>
+<li>Buy 5 burgers, get 2 ice creams free.</li>
+<li>Buy an ice cream and get a coupon for half off your next visit.</li>
+</ul>
+<p>Take a look at the IndependentRulesTest to see how we express these rules:</p>
+<pre>[<span style="color: #2b91af">TestInitialize</span>]
+<span style="color: blue">public</span> <span style="color: blue">void</span> Initialize()
+{
+    InitializeService(
+        <span style="color: blue">new</span> <span style="color: #2b91af">List</span>&lt;<span style="color: #2b91af">IDiscountRule</span>&gt;(),
+        <span style="color: blue">new</span> <span style="color: #2b91af">List</span>&lt;<span style="color: #2b91af">IFreeItemsRule</span>&gt;() {
+            <span style="color: blue">new</span> <span style="color: #2b91af">BuyOneGetOneRule</span>(<span style="color: maroon">5</span>, <span style="color: #2b91af">BurgerId</span>, <span style="color: maroon">2</span>, <span style="color: #2b91af">IceCreamId</span>) },
+        <span style="color: blue">new</span> <span style="color: #2b91af">List</span>&lt;<span style="color: #2b91af">ICouponRule</span>&gt;() {
+            <span style="color: blue">new</span> <span style="color: #2b91af">TriggerItemCouponRule</span>(<span style="color: maroon">1</span>, <span style="color: #2b91af">IceCreamId</span>, <span style="color: maroon">"Half off"</span>) }
+    );
+}</pre>
+<p>You might worry that the customer would be awarded free coupons for the two free ice creams. But fear not:</p>
+<pre>[<span style="color: #2b91af">TestMethod</span>]
+<span style="color: blue">public</span> <span style="color: blue">void</span> DontAwardACouponForFreeIceCream()
+{
+    <span style="color: green">// Buy five burgers.</span>
+    <span style="color: #2b91af">Check</span> check = <span style="color: blue">new</span> <span style="color: #2b91af">Check</span>();
+    check.AddItem(<span style="color: #2b91af">BurgerId</span>).Quantity = <span style="color: maroon">5</span>;
+    <span style="color: #2b91af">Check</span> outputCheck = _service.ExecuteRules(check); 
+
+    <span style="color: green">// No coupons awarded.</span>
+    <span style="color: #2b91af">Pred</span>.Assert(outputCheck.Coupons, <span style="color: #2b91af">Is</span>.Empty&lt;<span style="color: #2b91af">Coupon</span>&gt;());
+}</pre>
+<p>As you can see, no coupons are awarded when the customer buys 5 burgers. This is because the rules are independent of one another. Each rule is evaluated against the original check. Rules are never permitted to modify the check. No rule depends upon the results of another.</p>
+<p><strong>Conclusion</strong></p>
+<p>The next time your customer asks for customizable business logic, consider what we’ve gone over here. You could use a general purpose off the shelf rules engine, but that is probably asking too much of your customer. They would be forced to think like a programmer. Instead, you can provide specific goal-directed rules that they can parameterize. Use set unions to compose rules, and be sure that each rule runs independently of the others. The result will be a simple, powerful, and extensible custom rules engine that will empower, rather than confuse, your customer.</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="indexffca.html?cat=41" title="View all posts in Rules engine" rel="category">Rules engine</a> |   <a href="index01a2.html?p=473#comments" title="Comment on Build your own rules engine 5: The rule model">2 Comments &#187;</a></p>
+			</div>
+
+		
+			<div class="post" id="post-472">
+				<h2><a href="index8c8c.html?p=472" rel="bookmark" title="Permanent Link to Build your own rules engine 4: Condition composition">Build your own rules engine 4: Condition composition</a></h2>
+				<small>December 19th, 2009 <!-- by Michael L Perry --></small>
+
+				<div class="entry">
+					<p>Download the <a href="wp-content/uploads/2009/12/byorulesengine.zip">source code</a> and follow along.</p>
+<p>This post is part of a series:</p>
+<ol>
+<li><a href="indexbbbc.html?p=463">The customer is not you</a>.</li>
+<li><a href="index1beb.html?p=470">If-then is backwards</a>.</li>
+<li><a href="index2c5f.html?p=471">Condition and outcome templates</a>.</li>
+<li>Condition composition.</li>
+<li><a href="index01a2.html?p=473">The rule model</a>.</li>
+</ol>
+<p>So far, we have defined rules by using concrete examples. We turned them around to express them in terms of the goal. And we coded one interface per outcome, one class per condition.</p>
+<p>With this code, we could easily write a system that applies one rule.</p>
+<pre><span style="color: blue">public</span> <span style="color: blue">class</span> <span style="color: #2b91af">PointOfSaleService</span>
+{
+    <span style="color: blue">private</span> <span style="color: #2b91af">IDiscountRule</span> _discountRule;
+
+    <span style="color: blue">public</span> PointOfSaleService(<span style="color: #2b91af">IDiscountRule</span> discountRule)
+    {
+        _discountRule = discountRule;
+    }
+
+    <span style="color: blue">public</span> <span style="color: #2b91af">CheckWithDiscounts</span> AddDiscounts(<span style="color: #2b91af">Check</span> check)
+    {
+        <span style="color: blue">return</span> <span style="color: #2b91af">CheckWithDiscounts</span>.Create(check, _discountRule.GetDiscounts(check));
+    }
+}</pre>
+<p>Notice that the rule does not modify the original check. If it did, we could not safely execute the rule again. Instead, it returns a new object: a check with discounts. The check is independent. The check with discounts is dependent – upon the check and upon the rules.</p>
+<p>Sorry, make that rule (singular). We inject the rule into the service. There is probably some code elsewhere that loads the rule from the database, so that the user can modify it.</p>
+<p>But the user probably wants to write several different rules. They don’t want just one combo; they want a whole menu of them. Furthermore, they also want discounts for prior visits. We need to apply all of these discounts.</p>
+<p><strong>Union of collections</strong></p>
+<p>The IDiscountRule is coded to return a collection of Discount objects. We did this because one rule could apply multiple discounts. We can take advantage of that fact to compose these rules. All we need to do is take the union of their outcomes.</p>
+<pre><span style="color: blue">public</span> <span style="color: blue">class</span> <span style="color: #2b91af">PointOfSaleService</span>
+{
+    <span style="color: blue">private</span> <strong><span style="color: #2b91af">List</span>&lt;</strong><span style="color: #2b91af">IDiscountRule</span><strong>&gt;</strong> _discountRules;
+
+    <span style="color: blue">public</span> PointOfSaleService(<span style="color: #2b91af">List</span>&lt;<span style="color: #2b91af">IDiscountRule</span>&gt; discountRules)
+    {
+        _discountRules = discountRules;
+    }
+
+    <span style="color: blue">public</span> <span style="color: #2b91af">CheckWithDiscounts</span> AddDiscounts(<span style="color: #2b91af">Check</span> check)
+    {
+        <span style="color: blue">return</span> <span style="color: #2b91af">CheckWithDiscounts</span>.Create(
+            check,
+            _discountRules.<strong>SelectMany</strong>(
+                rule =&gt; rule.GetDiscounts(check)));
+    }
+}</pre>
+<p>The SelectMany extension method takes the union of several different sets. Each set is generated by one element of the source collection. You can think of it as flattening a tree. In this case, the parent of the tree is the rule, and the child is the list of discounts that the rule generates.</p>
+<p><strong>Isolation</strong></p>
+<p>We’ve taken care to remove cycles from our rules before we started. Remember the Big Spender rule? Give a 5% discount on checks totaling more than $500. To eliminate cycles, we need to consider the total of the original check, not the total after discounts have been applied.</p>
+<p>Consider another way that we could have written the method:</p>
+<pre><span style="color: blue">public</span> <span style="color: blue">class</span> <span style="color: #2b91af">PointOfSaleService</span>
+{
+    <span style="color: blue">private</span> <span style="color: #2b91af">List</span>&lt;<span style="color: #2b91af">IDiscountRule</span>&gt; _discountRules;
+
+    <span style="color: blue">public</span> PointOfSaleService(<span style="color: #2b91af">List</span>&lt;<span style="color: #2b91af">IDiscountRule</span>&gt; discountRules)
+    {
+        _discountRules = discountRules;
+    }
+
+    <span style="color: blue">public</span> void AddDiscounts(<span style="color: #2b91af">Check</span> check)
+    {
+        <span style="color: green">// WARNING!!</span>
+        <span style="color: green">// This is the wrong way to apply multiple rules.</span>
+        <span style="color: blue">foreach</span> (<span style="color: #2b91af">IDiscountRule</span> rule <span style="color: blue">in</span> _discountRules)
+            check.AddDiscounts(rule.GetDiscounts(check));
+    }
+}</pre>
+<p>In this version, we are modifying the original check after each rule. The next rule sees the modifications. So what would happen if our Big Spender purchased a combo? If the combo brought the total of the check down below $500, he would no longer get his 5% discount. That is, unless we moved the Big Spender discount to the front of the list.</p>
+<p>This is the mistake that so many rules engines have made. Each rule has the opportunity to change the state of the system. Each rule can see the effects of the rules that came before. Now, all of a sudden, order matters. The user has to prioritize rules. The rules engine has to run complex solutions like the Rete algorithm in order to iterate to a solution. We can no longer develop rules in isolation without running the risk of affecting the other rules.</p>
+<p><strong>Preserve original state</strong></p>
+<p>A point-of-sale system is interactive. The user can add items to a check and see what discounts are applied. They can then add or subtract other items and see how the discount is affected.</p>
+<p>Imagine how we would accomplish that interactivity if we modified the check to apply discounts. Add a combo, and the rules engine adds a discount. Then remove one of the items. The rules engine would have to recognize what just happened and remove the discount in response. Can you imagine the code it would take to make this work? Can you imagine all of the corner cases? Can you imagine how much testing you would need to do to be sure it was right?</p>
+<p>It is much easier to instead preserve the original state of the system. Our correct rules engine (second listing) does just that. Our incorrect rules engine (third listing) destroys the original check. It is nearly impossible to get back to the original.</p>
+<p>In the correct rules engine, any changes that the user makes are applied to the original Check. The object that appears on the user’s screen, however, is the resulting CheckWithDiscounts. It is a very simple matter of re-running the rules after every change to update the discounts. If the user removes a trigger item, the rule will no longer fire, and the discount will be “removed”.</p>
+<p>The only way to safely apply multiple rules is to allow each rule to see only the original data. Rules should not modify data. Instead, the engine should gather their outcomes and build a new state from that union. Even then, that new state does not replace the original state. When the original state changes, you can simply re-run the rules to evaluate their new effect.</p>
+<p>To finish it all off, we provide all of the context that the rules need in the <a href="index01a2.html?p=473">Rule Model</a>.</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="indexffca.html?cat=41" title="View all posts in Rules engine" rel="category">Rules engine</a> |   <a href="index8c8c.html?p=472#respond" title="Comment on Build your own rules engine 4: Condition composition">No Comments &#187;</a></p>
+			</div>
+
+		
+			<div class="post" id="post-471">
+				<h2><a href="index2c5f.html?p=471" rel="bookmark" title="Permanent Link to Build your own rules engine 3: Condition and outcome templates">Build your own rules engine 3: Condition and outcome templates</a></h2>
+				<small>December 10th, 2009 <!-- by Michael L Perry --></small>
+
+				<div class="entry">
+					<p>Download the <a href="wp-content/uploads/2009/12/byorulesengine.zip">source code</a> and follow along.</p>
+<p>This post is part of a series:</p>
+<ol>
+<li><a href="indexbbbc.html?p=463">The customer is not you</a>.</li>
+<li><a href="index1beb.html?p=470">If-then is backwards</a>.</li>
+<li>Condition and outcome templates.</li>
+<li><a href="index8c8c.html?p=472">Condition composition</a>.</li>
+<li><a href="index01a2.html?p=473">The rule model</a>.</li>
+</ol>
+<p>We have rewritten our rules in terms of goals rather than conditions:</p>
+<ul>
+<li>Free items = 1 sandwich for every 4 on the original check.</li>
+<li>Discount =
+<ul>
+<li>75 cents for every combination of sandwich, chips, and drink on the original check, plus</li>
+<li>5 dollars for every 10 prior visits of 5 dollars or more that have not already been rewarded.</li>
+</ul>
+</li>
+<li>Coupons = 1 half-off coupon for every ice cream.</li>
+</ul>
+<p>Now we need to give the customer a way to express rules in those terms. One way to do this is to identify all of the properties mentioned in the rules and provide them to the user:</p>
+<ul>
+<li>Check</li>
+<li>Item</li>
+<li>Quantity</li>
+<li>Total</li>
+<li>Visit</li>
+<li>Coupon</li>
+<li>etc.</li>
+</ul>
+<p>This approach works for programmers, but it does not work for business users. The customer is not you.  programmer can build a rule out of tiny parts. But the business user does not think this way. If you force them to think this way, they will get it wrong.</p>
+<p>For example, while working on an eCommerce system, I asked a business user what properties they want in their rules engine. I explained that we could use an operator to compare a property against a number. One of the properties they asked for was “Any Item”. “How would you use that?”, I asked. “Like this: if Any Item &gt; $50.00, then print a coupon.” This makes perfect sense to a business user. But this property is nonsense to a programmer.</p>
+<p><strong>Templates</strong><br />
+Rather than attacking the problem from a programmer’s perspective, attack it from the business user’s perspective. Business users can’t build a rule out of small pieces. So we have to build rules for them. We can do so by creating templates.</p>
+<p>This is why we want specific examples of rules. For each example of a rule, start by turning every constant into a parameter:</p>
+<ul>
+<li>Free items = <em>m promotionalItemId</em> for every <em>n triggerItemId</em> on the original check.</li>
+<li>Discount =
+<ul>
+<li><em>m dollars</em> for every combination of <em>{itemIds}</em> on the original check, plus</li>
+<li><em>m dollars</em> for every <em>n</em> prior visits of <em>minimum</em> dollars or more that have not already been rewarded.</li>
+</ul>
+</li>
+<li>Coupons = 1 <em>couponType</em> coupon for every <em>n triggerItemId</em>.</li>
+</ul>
+<p>There may be some trivial parameters that you need to add. The example rule only dealt with one trigger item for a coupon, but you can imagine that they might want to specify the number. A coefficient of 1 tends to get forgotten.</p>
+<p>We now have a set of outcome templates and condition templates. The outcomes are goal-oriented, and the conditions satisfy the outcomes. Conditions in this context are not just true or false; they govern the behavior of the outcome. That is why conditions must be expressed within the scope of an outcome, not the other way around.</p>
+<p><strong>Interface per outcome template</strong><br />
+We can finally start putting rules into code. The first thing we will want to do is express each of our outcome templates as an interface. In a condition-oriented rules engine, an outcome would be an action: add a free item, print a coupon, etc. But in a goal-oriented rules engine, an outcome is a query. Given a check, what are my free items. What are my coupons. These are the interfaces that represent our three outcome templates:</p>
+<pre><span style="color: blue">public</span> <span style="color: blue">interface</span> <span style="color: #2b91af">IFreeItemsRule</span>
+{
+    <span style="color: #2b91af">IEnumerable</span>&lt;<span style="color: #2b91af">Item</span>&gt; GetFreeItems(<span style="color: #2b91af">Check</span> check);
+}
+
+<span style="color: blue">public</span> <span style="color: blue">interface</span> <span style="color: #2b91af">IDiscountRule</span>
+{
+    <span style="color: #2b91af">IEnumerable</span>&lt;<span style="color: #2b91af">Discount</span>&gt; GetDiscounts(<span style="color: #2b91af">Check</span> check);
+}
+
+<span style="color: blue">public</span> <span style="color: blue">interface</span> <span style="color: #2b91af">ICouponRule</span>
+{
+    <span style="color: #2b91af">IEnumerable</span>&lt;<span style="color: #2b91af">Coupon</span>&gt; GetCoupons(<span style="color: #2b91af">Check</span> check);
+}</pre>
+<p>Each interface is implemented by a rule. We don’t know at this point what kinds of rules might implement these interfaces, but we do know precisely what the outcome of those rules can be. A rule can yield free items, or it can yield coupons. But it can’t do both. The rules are goal-oriented.</p>
+<p><strong>Class per condition template</strong></p>
+<p>Once we have outcome templates expressed as interfaces, we can write our condition templates as classes that implement those interfaces. Remember that these conditions are not simply true or false. They influence the outcome.</p>
+<pre><span style="color: blue">public</span> <span style="color: blue">class</span> <span style="color: #2b91af">CombinationDiscountRule</span> : <span style="color: #2b91af">IDiscountRule</span>
+{
+    <span style="color: blue">private</span> <span style="color: blue">string</span> _description;
+    <span style="color: blue">private</span> <span style="color: blue">decimal</span> _amount;
+    <span style="color: blue">private</span> <span style="color: #2b91af">List</span>&lt;<span style="color: #2b91af">ItemId</span>&gt; _triggerItems;
+
+    <span style="color: blue">public</span> CombinationDiscountRule(<span style="color: blue">string</span> description, <span style="color: blue">decimal</span> amount, <span style="color: #2b91af">List</span>&lt;<span style="color: #2b91af">ItemId</span>&gt; triggerItems)
+    {
+        _description = description;
+        _amount = amount;
+        _triggerItems = triggerItems;
+    }
+
+    <span style="color: blue">public</span> <span style="color: #2b91af">IEnumerable</span>&lt;<span style="color: #2b91af">Discount</span>&gt; GetDiscounts(<span style="color: #2b91af">Check</span> check)
+    {
+        <span style="color: green">// Get the minimum quantity of all trigger items.</span>
+        <span style="color: blue">int</span> comboCount = _triggerItems
+            .Select(triggerItemId =&gt; check
+                .Items
+                .Where(item =&gt; item.ItemId == triggerItemId)
+                .Sum(item =&gt; item.Quantity))
+            .Min();
+        <span style="color: blue">for</span> (<span style="color: blue">int</span> i = <span style="color: maroon">0</span>; i &lt; comboCount; i++)
+            <span style="color: blue">yield</span> <span style="color: blue">return</span> <span style="color: blue">new</span> <span style="color: #2b91af">Discount</span>(_description, _amount);
+    }
+}</pre>
+<p>To define a rule, all the business user has to do is fill in the parameters.</p>
+<p>To our programmer sensibilities, it seems that we are putting too much behavior into one class. Not only is it looking for combinations, but it is also creating discounts. But to a business user, it’s one rule. They don’t build things from pieces. They need a template.</p>
+<p>Still, there is some refactoring that we can do. We’ll tackle that next in <a href="index8c8c.html?p=472">Condition composition</a>.</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="indexffca.html?cat=41" title="View all posts in Rules engine" rel="category">Rules engine</a> |   <a href="index2c5f.html?p=471#respond" title="Comment on Build your own rules engine 3: Condition and outcome templates">No Comments &#187;</a></p>
+			</div>
+
+		
+			<div class="post" id="post-470">
+				<h2><a href="index1beb.html?p=470" rel="bookmark" title="Permanent Link to Build your own rules engine 2: If-then is backwards">Build your own rules engine 2: If-then is backwards</a></h2>
+				<small>December 4th, 2009 <!-- by Michael L Perry --></small>
+
+				<div class="entry">
+					<p>Download the <a href="wp-content/uploads/2009/12/byorulesengine.zip">source code</a> and follow along.</p>
+<p>This post is part of a series:</p>
+<ol>
+<li><a href="indexbbbc.html?p=463">The customer is not you.</a></li>
+<li>If-then is backwards.</li>
+<li><a href="index2c5f.html?p=471">Condition and outcome templates</a>.</li>
+<li><a href="index8c8c.html?p=472">Condition composition</a>.</li>
+<li><a href="index01a2.html?p=473">The rule model</a>.</li>
+</ol>
+<p>It seems that every new rules technology is just another way to write an "if" statement. We are used to expressing conditional logic in procedural code with flow control. Most of the rules engines that you could buy apply that same paradigm to rules. This is a mistake. It is better to turn that around.</p>
+<p>Take, for example, the <a href="http://msdn.microsoft.com/en-us/library/aa480193.aspx">Windows Workflow Foundation Rules Engine</a>. Every rule in the rule set is made up of three components:</p>
+<ul>
+<li>Condition</li>
+<li>Then actions</li>
+<li>Else actions</li>
+</ul>
+<p>The condition can read any property of the workflow. It determines which of the two actions to execute. Both of the actions can modify any property of the workflow. Reading and writing from the same set of properties causes problems.</p>
+<p><strong>Conflicts</strong><br />
+<a href="wp-content/uploads/2009/12/replace.jpg"><img src="wp-content/uploads/2009/12/replace-thumb.jpg" style="border-width: 0px" alt="Replace" width="207" align="right" border="0" height="135" /></a> One problem occurs when two rules have actions that write to the same property. For example:</p>
+<ul>
+<li>If A = 1 then C = 3</li>
+<li>If B = 2 then C = 4</li>
+</ul>
+<p>Given this rule set, when A=1 and B=2, what is the correct value of C?</p>
+<p>Workflow and other rule engines solve this problem by prioritizing rules. Rules with higher priority take precedence over rules with lower priority. The unfortunate consequence of this is that you have to understand the priorities of existing rules in order to correctly prioritize a new rule. You cannot insert the new rule with confidence that it won't break anything.</p>
+<p><strong><a href="wp-content/uploads/2009/12/cycle.jpg"><img src="wp-content/uploads/2009/12/cycle-thumb.jpg" style="border-width: 0px" alt="Cycle" width="207" align="right" border="0" height="63" /></a> Cycles</strong><br />
+Another problem occurs when a cycle arises among conditions and actions:</p>
+<ul>
+<li>If D &gt; 4 then E = 7</li>
+<li>If E &gt; 5 then D = 3</li>
+</ul>
+<p>If the second rule fires, should we re-run the first? How do we know when to stop?</p>
+<p>Many rules engines use a sophisticated pattern-matching strategy called the <a href="http://en.wikipedia.org/wiki/Rete_algorithm">Rete Algorithm</a> to solve this problem. This algorithm runs subsets of the rules on each iteration based on the effects of the prior iteration. It walks the deltas toward a satisfactory solution.</p>
+<p>Unfortunately, this algorithm is complex and can produce unexpected results. A business user defining a rule set cannot easily reason through cycles to determine exactly what the system will do. It is easier to reason about an acyclic system.</p>
+<p><strong>Goal directed rules</strong><br />
+What works better is to express the rules in terms of the goal, not in terms of the condition. Rather than saying "If the amount is less than $500, the loan is approved", turn it around. "The loan is approved when the amount is less than $500." While this seems like a semantic distinction, it solves the problems of conflicts and cycles quite neatly.</p>
+<p>When I say "The loan is approved when the amount is less than $500", I am also saying that there are no other conditions. To add another condition, I would have to modify the statement. For example: "The loan is approved when the amount is less than $500 or the amount is between $500 and $1000 and the credit score is over 700."</p>
+<p>Think about the way that Excel spreadsheets work. I don't write a rule that says "Add one to B2 and store the result in C3". I put a formula in C3 that says "=B2+1". I cannot simply add another rule to the system that also affects C3. I would have to modify the formula in C3. The result is unambiguous.</p>
+<p>Think also about the way that Linq works. I don't write a loop that modifies my target collection. I write an expression that calculates it. The behavior of the loop is harder to predict; the behavior of the expression is explicit.</p>
+<p>A goal directed rule states the value of one property based on the values of other properties. The rule is explicit. Properties are not allowed to change, and rules are complete, so one rule cannot conflict with another.</p>
+<p><strong><a href="wp-content/uploads/2009/12/stack.jpg"><img src="wp-content/uploads/2009/12/stack-thumb.jpg" style="border-width: 0px" alt="Stack" width="220" align="right" border="0" height="351" /></a> Find and eliminate cycles</strong><br />
+When rules are goal directed, cycles are easy to find. The algorithm is simple. Start with one property that you intend to solve for. Mark it as being evaluated, and then evaluate it. If that rule refers to another property, check to see if it's marked. If it is not, mark it and evaluate it. If it is, you have found a cycle.</p>
+<p>Suppose we wanted to add this rule to our point-of-sale system:</p>
+<ul>
+<li>People who spend more than $500 get a 5% big spender discount.</li>
+</ul>
+<p>More formally:</p>
+<ul>
+<li>Discount  = if Big Spender, 5%, otherwise 0.</li>
+<li>Big Spender = Order Total &gt; $500.</li>
+<li>Order Total = sum of Items minus Discount.</li>
+</ul>
+<p>We mark Discount and evaluate it. We see that it requires Big Spender, so we mark and evaluate Big Spender. This leads us to Order Total, and then back to Discount. Since Discount is marked, our rules form a cycle.</p>
+<p>To break this cycle, we make our rule more explicit:</p>
+<ul>
+<li>People who spend more than $500 <strong>before discounts are applied</strong> get a 5% big spender discount.</li>
+</ul>
+<p>Now our formal definition looks like this:</p>
+<ul>
+<li>Discount  = if Big Spender, 5%, otherwise 0.</li>
+<li>Big Spender = Order Total &gt; $500.</li>
+<li>Order Total = sum of Items <strike><strong>minus Discount</strong></strike>.</li>
+</ul>
+<p>The cycle has been eliminated, and it is easier to reason about the system. No complex algorithm is required.</p>
+<p><strong>Point-of-sale as goal directed rules</strong><br />
+Let's rewrite the example rules of the point-of-sale system. We turn the if-then around to make it goal directed. We combine rules that influence the same goal. And we eliminate cycles by being explicit. Here's the result:</p>
+<ul>
+<li>Free items = 1 sandwich for every 4 on the original check.</li>
+<li>Discount =
+<ul>
+<li>75 cents for every combination of sandwich, chips, and drink on the original check, plus</li>
+<li>5 dollars for every 10 prior visits of 5 dollars or more that have not already been rewarded.</li>
+</ul>
+</li>
+<li>Coupons = 1 half-off coupon for every ice cream.</li>
+</ul>
+<p>These are some rules that we can easily reason about. Coming up in the series, we'll start to put these rules into code with <a href="index2c5f.html?p=471">Condition and outcome templates</a>.</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="indexffca.html?cat=41" title="View all posts in Rules engine" rel="category">Rules engine</a> |   <a href="index1beb.html?p=470#respond" title="Comment on Build your own rules engine 2: If-then is backwards">No Comments &#187;</a></p>
+			</div>
+
+		
+			<div class="post" id="post-463">
+				<h2><a href="indexbbbc.html?p=463" rel="bookmark" title="Permanent Link to Build your own rules engine 1: The customer is not you">Build your own rules engine 1: The customer is not you</a></h2>
+				<small>December 1st, 2009 <!-- by Michael L Perry --></small>
+
+				<div class="entry">
+					<p>Download the <a href="wp-content/uploads/2009/12/byorulesengine.zip">source code</a> and follow along.</p>
+<p>This post is part of a series:</p>
+<ol>
+<li>The customer is not you.</li>
+<li><a href="index1beb.html?p=470">If-then is backwards.</a></li>
+<li><a href="index2c5f.html?p=471">Condition and outcome templates</a>.</li>
+<li><a href="index8c8c.html?p=472">Condition composition</a>.</li>
+<li><a href="index01a2.html?p=473">The rule model</a>.</li>
+</ol>
+<p>Some problems call for customizable rules. Scientific and statistical analysis of data must be modified as new facts are learned and new questions are asked. Loan approvals are adjusted according to the latest actuarial tables. Sales and marketing systems are tweaked to incorporate new promotions. If a programmer has to change the code to customize these rules, the system has failed.</p>
+<p>One solution to this problem is to build in support for a business rules engine. In .NET, you might use <a href="http://msdn.microsoft.com/en-us/netframework/dd980559.aspx">Windows Workflow Foundation</a> or <a href="http://blogs.msdn.com/biztalkbre/">BizTalk BRE</a>. In Java, you might try <a href="http://www.jboss.org/drools/">Drools</a>. These tools allow customization of business logic at run time. They are general-purpose, out-of-the-box, inexpensive solutions.</p>
+<p>Another solution is to build in a scripting language. In .NET you have <a href="http://boo.codehaus.org/">Boo</a> and <a href="http://www.codeplex.com/IronPython">IronPython</a>. In Java, you have <a href="http://groovy.codehaus.org/">Groovy</a> and <a href="http://www.jython.org/">Jython</a>. A scripting language offers much more power than a typical business rules engine, but is targeted toward people who write code. While they do allow code to be changed after deployment, scripting languages force the programmer to stay in the loop.</p>
+<p><strong>Know thy customer, for he is not thee</strong><br />
+The problem with both of these solutions is that the person creating the rules has to learn a new skill. When a scripting language is used, the problem is obvious. The rules are written in code. But what's wrong with a graphical workflow? There's no code involved. The user just drags-and-drops parts to build a schematic. Not only does this sound easy, it sounds like fun!</p>
+<p>The truth is that it does not matter whether the system is expressed in code or in diagrams. The kind of thinking required in either case is the same. Programmers are used to building things up. Other people are used to breaking things down. A person using a business system can describe their problem and how they want to solve it. But they are not skilled in putting pieces together to build that solution. Whether they are staring at a blinking cursor or a blank canvas, the business user has the same reaction: "Now what?"</p>
+<p><strong>Domain specific rules</strong><br />
+To design a rules engine that really meets your customer's needs, it needs to speak your customer's language. Don't make them learn a new skill; bring the solution to them. The rules engine should be domain specific.</p>
+<p>The best way to capture the language of the domain is to ask for specific examples of business rules. Reassure your customer that the rules engine will be flexible enough to handle several kinds of rules, but write down as many specific rules as possible.</p>
+<p>Take, for example, a point-of-sale system. Here are some specific rules that a business user would want to create:</p>
+<ul>
+<li>When the customer buys four sandwiches, they get a fifth one free.</li>
+<li>When the customer buys a sandwich, chips, and a drink, they get a 75 cent discount.</li>
+<li>When the customer buys an ice cream, print a coupon for half off on their next visit.</li>
+<li>After 10 visits of 5 dollars or more, the custom gets 5 dollars off the 11th visit.</li>
+</ul>
+<p>When asked for this information, the business user might try to use generic terms like BOGO (buy-one-get-one), discount, and loyalty. You must press the issue. You will need specific catalog items, specific dollar amounts, and specific thresholds. What is a sandwich? You must print out the catalog and have them highlight all of the sandwich items. Without specifics, you are assuming that the business user is making the correct generalizations. Remember, you are good at figuring out what pieces to put together; your customer is not.</p>
+<p>In the remainder of this series, we will build a point-of-sale rules engine that can run these rules and others like them. The goal is to provide the business user with all of the power they need, and no more.</p>
+<p>Next, <a href="index1beb.html?p=470">If-then is backwards</a>.</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="indexffca.html?cat=41" title="View all posts in Rules engine" rel="category">Rules engine</a> |   <a href="indexbbbc.html?p=463#respond" title="Comment on Build your own rules engine 1: The customer is not you">No Comments &#187;</a></p>
+			</div>
+
+		
+			<div class="post" id="post-462">
+				<h2><a href="indexd526.html?p=462" rel="bookmark" title="Permanent Link to Not At PDC">Not At PDC</a></h2>
+				<small>November 23rd, 2009 <!-- by Michael L Perry --></small>
+
+				<div class="entry">
+					<p>I was saddened when I was unable to attend PDC this year. One project is winding down, we're staffing up for the next, and I cannot be spared at this particular time. I was not present when Scott Hanselman dragged and dropped his way through a data binding demo. Nevertheless, I was groaning from afar.</p>
+<p>I did, however, have the chance to participate in the <a href="http://notatpdc.com/">Not@PDC</a> conference. It was quickly organized via Twitter and blogs to be an online get together for folks who were not lucky enough to be in LA. (Lucky to be in LA? Did I really say that?) It turned out to be a wonderful substitute. OK, not really a substitute; more like consolation.</p>
+<p>I presented <a href="http://updatecontrols.net/doc/examples/awesome">Data Binding Without INotifyPropertyChanged</a>, a 70-minute demo of Update Controls in WPF, Winforms, and Silverlight. In the video, I show you the most awesome application ever: Microsoft Excel. Excel is awesome because you can use the MVVM pattern. It's true.</p>
+<p>As you watch, please forgive the poor video quality and even poorer jokes. I'll be polishing the demo and taking it on the road. My first stop will hopefully be the North Dallas .NET Users' Group. I'll keep you posted.</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="indexa88f.html?cat=36" title="View all posts in Update Controls" rel="category">Update Controls</a> |   <a href="indexd526.html?p=462#respond" title="Comment on Not At PDC">No Comments &#187;</a></p>
+			</div>
+
+		
+			<div class="post" id="post-461">
+				<h2><a href="indexfe24.html?p=461" rel="bookmark" title="Permanent Link to Fibonacci solution">Fibonacci solution</a></h2>
+				<small>November 8th, 2009 <!-- by Michael L Perry --></small>
+
+				<div class="entry">
+					<p>The question is how bad the recursive Fibonacci algorithm.</p>
+<blockquote><p>To calculate <em>fib n</em>, how many times does this method evaluate <em>fib m</em>, where <em>m</em> &lt; <em>n</em> and both <em>m</em> and <em>n</em> &gt;= 0.</p>
+</blockquote>
+<p>The answer, as you might expect, is pretty bad.</p>
+<p>Let’s look at the code again:</p>
+<div style="font-family: courier new"><span style="color: blue">let</span>&#160;<span style="color: blue">rec</span> fib n =&#160; <br />&#160; <span style="color: blue">if</span> n &lt; <span style="color: maroon">2</span>&#160;<span style="color: blue">then</span>&#160;<span style="color: maroon">1</span>&#160; <br />&#160; <span style="color: blue">else</span> fib <span style="color: blue">(</span>n-<span style="color: maroon">1</span><span style="color: blue">)</span> + fib <span style="color: blue">(</span>n-<span style="color: maroon">2</span><span style="color: blue">)</span></div>
+<p>When would <em>fib n</em> be called recursively? When <em>fib (n+1)</em> or <em>fib (n+2)</em> is called.</p>
+<p>How many times would <em>fib n</em> be called? Count of <em>fib n</em> is count of <em>fib (n+1)</em> plus count of <em>fib (n+2)</em>. Look familiar?</p>
+<p>The count is the Fibonacci sequence in reverse.</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="index97dc.html?cat=33" title="View all posts in Problems" rel="category">Problems</a> |   <a href="indexfe24.html?p=461#respond" title="Comment on Fibonacci solution">No Comments &#187;</a></p>
+			</div>
+
+		
+			<div class="post" id="post-460">
+				<h2><a href="indexb3e1.html?p=460" rel="bookmark" title="Permanent Link to Fibonacci inefficiency">Fibonacci inefficiency</a></h2>
+				<small>November 4th, 2009 <!-- by Michael L Perry --></small>
+
+				<div class="entry">
+					<p>The Fibonacci function is often the first code that someone writes to learn a new functional language. Ironically, it's not always the best example of functional programming. Here's the Fibonacci function in F#:</p>
+<div style="font-family: courier new"><span style="color: blue">let</span>&nbsp;<span style="color: blue">rec</span> fib n = <br />&nbsp; <span style="color: blue">if</span> n &lt; <span style="color: maroon">2</span>&nbsp;<span style="color: blue">then</span>&nbsp;<span style="color: maroon">1</span> <br />&nbsp; <span style="color: blue">else</span> fib <span style="color: blue">(</span>n-<span style="color: maroon">1</span><span style="color: blue">)</span> + fib <span style="color: blue">(</span>n-<span style="color: maroon">2</span><span style="color: blue">)</span></div>
+<p>The code matches the mathematical definition, which is a strength of functional programming. However, it performs poorly unless the language has a feature called "memoization". F# does not have this feature.</p>
+<p>Can you spot the difference between these two statements?</p>
+<ul>
+<li>Each Fibonacci number is the sum of the prior two Fibonacci numbers.</li>
+<li>To calculate Fibonacci of <em>n</em>, add Fibonacci of <em>n</em>-1 to Fibonacci of <em>n</em>-2.</li>
+</ul>
+<p>They might seem to say the same thing, but in fact they are different. The first is a definition. The second is an algorithm.</p>
+<p>Memoization is a memory/time tradeoff wherein the results of a function are stored in the expectation that the same function will be called with the same parameters. It helps us get across the gap between definition and algorithm.</p>
+<p><strong>Your homework</strong><br />Nevertheless, F# does not have built-in memoization. So when you execute this Fibonacci function, it will execute recursively and redundantly. It will call fib for smaller numbers multiple times. Your homework is to find out how many times.</p>
+<blockquote><p>To calculate <em>fib n</em>, how many times does this method evaluate <em>fib m</em>, where <em>m</em> &lt; <em>n</em> and both <em>m</em> and <em>n</em> &gt;= 0.</p>
+</blockquote>
+<p>Email or post your answers. Code is good, but proof is better.</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="index97dc.html?cat=33" title="View all posts in Problems" rel="category">Problems</a> |   <a href="indexb3e1.html?p=460#respond" title="Comment on Fibonacci inefficiency">No Comments &#187;</a></p>
+			</div>
+
+		
+			<div class="post" id="post-459">
+				<h2><a href="index6595.html?p=459" rel="bookmark" title="Permanent Link to The Proportional Change Principle">The Proportional Change Principle</a></h2>
+				<small>October 29th, 2009 <!-- by Michael L Perry --></small>
+
+				<div class="entry">
+					<p>The change in the solution should be proportional to the change in the problem.</p>
+<p><strong>Demoware</strong><br />Have you ever attended one of these demos? "No code required!" "Drag and drop!" "It's automagic!"</p>
+<p>The presenter points and clicks his way through a canned problem and creates a solution extremely rapidly. He data binds to an Access database. He lays out a report. He generates a web site directly from tables. Then he walks off stage.</p>
+<p>If you've tried to use VB 6 data binding or Dynamic Data in a production system, you know the problem with demoware. It only works for a simple problem. Once the problem becomes complex, the demoware does not work. Your only recourse is to rewrite.</p>
+<p>If you were to plot the total amount of work against features, you might see something like this:</p>
+<p><a href="wp-content/uploads/2009/10/rewrite.jpg"><img style="border-top-width: 0px; border-left-width: 0px; border-bottom-width: 0px; border-right-width: 0px" height="500" alt="Rewrite" src="wp-content/uploads/2009/10/rewrite-thumb.jpg" width="660" border="0"></a> </p>
+<p>The slope of the line before the rewrite, when you were relying upon automagic demoware,&nbsp; is fairly constant. Each new feature you added required you to drag a new column onto the designer. Not only is it easy to perform each change, each change is roughly the same size.</p>
+<p>The slope of the line after the rewrite is also fairly constant. Here you are no longer using the automagic demoware framework. You have switched to a production-ready framework. Even though have to actually write code for each feature, the amount of code per feature is about the same. Moreover, since you've learned the new framework and the pattern that it demands, it's really not that hard to write that code. The slope is steeper than it was with the automagic demoware, but at least it's constant.</p>
+<p><strong>Up front design</strong><br />Let's imagine that we skipped that demo and instead designed the infrastructure that our problem demands. Our total effort vs. features might look like this:</p>
+<p><a href="wp-content/uploads/2009/10/design.jpg"><img style="border-top-width: 0px; border-left-width: 0px; border-bottom-width: 0px; border-right-width: 0px" height="500" alt="Design" src="wp-content/uploads/2009/10/design-thumb.jpg" width="660" border="0"></a> </p>
+<p>We spend significantly more hours before we can deliver the first feature. But once we do, the effort per new feature is constant. We avoid the big rewrite cliff because we create a framework that can handle all of features that we'll need to write. We don't know ahead of time what all those features will be, but we do know that our chosen framework will handle whatever we throw at it.</p>
+<p>I evaluate everything from the principle of Proportional Change. When the problem changes a little, I should only need a small change in the solution. Big changes in the solution should only occur when there are big changes in the problem. I've found that many things violate this principle, not just demoware. Here's a few more examples:</p>
+<ul>
+<li>YAGNI - Yes, you really are gonna need it.</li>
+<li>Refactoring to a design - Small steps cannot always get you to your goal.</li>
+<li>Code generation</li>
+<li>Event-driven code</li>
+</ul>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="index54cb.html?cat=23" title="View all posts in Processes" rel="category">Processes</a> |   <a href="index6595.html?p=459#respond" title="Comment on The Proportional Change Principle">No Comments &#187;</a></p>
+			</div>
+
+		
+		<div class="navigation">
+			<div class="alignleft"><a href="indexf5ce.html?paged=11">&laquo; Previous Entries</a></div>
+			<div class="alignright"><a href="indexa359.html?paged=9">Next Entries &raquo;</a></div>
+		</div>
+
+	
+	</div>
+		</td>
+	</tr>
+</table>
+
+<hr />
+<div id="footer">
+<!-- If you'd like to support WordPress, having the "powered by" link someone on your blog is the best way, it's our only promotion or advertising. -->
+	<p>
+		Adventures in Software is proudly powered by 
+		<a href="http://wordpress.org/">WordPress</a>
+		<br /><a href="indexd784.html?feed=rss2">Entries (RSS)</a>
+		and <a href="indexa6da.html?feed=comments-rss2">Comments (RSS)</a>.
+		<!-- 21 queries. 0.427 seconds. -->
+	</p>
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-389401-3");
+pageTracker._trackPageview();
+} catch(err) {}</script></div>
+
+<!-- Gorgeous design by Michael Heilemann - http://binarybonsai.com/kubrick/ -->
+
+		<div id="sk2-footer" style="color:#FFF; background-color:#444; padding: 3px 2px 3px 2px; border-top: #888 solid 1px;">This blog is protected by <a href="http://unknowngenius.com/blog/" title="Dave">dr Dave</a>'s <strong><a href="http://unknowngenius.com/blog/wordpress/spam-karma/" title="SK2">Spam Karma 2</a></strong>: <strong>274531</strong>  Spams eaten and counting...</div><script type="text/javascript" src="replies.js"></script>
+<script type="text/javascript" src="blogger.js"></script>
+<script type="text/javascript" src="http://twitter.com/statuses/user_timeline/michaellperry.json?callback=twitterCallback2&amp;count=5"></script>
+<script type="text/javascript" src="http://search.twitter.com/search.json?q=@michaellperry&amp;callback=twitterCallbackReplies&amp;rpp=5"></script>
+</body>
+
+<!-- Mirrored from adventuresinsoftware.com/blog/?paged=10 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 Jan 2017 13:10:18 GMT -->
+</html>

@@ -1,0 +1,812 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+
+
+<!-- Mirrored from adventuresinsoftware.com/blog/?m=200904 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 Jan 2017 12:44:52 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>Adventures in Software   &raquo; 2009&raquo; April</title>
+
+<meta name="generator" content="WordPress 2.3.3" /> <!-- leave this for stats -->
+
+<link rel="stylesheet" href="wp-content/themes/ais2/style.css" type="text/css" media="screen" />
+<link rel="alternate" type="application/rss+xml" title="Adventures in Software RSS Feed" href="indexd784.html?feed=rss2" />
+<link rel="pingback" href="xmlrpc.html" />
+    <script type="text/javascript">
+        function onSilverlightError(sender, args) {
+            var appSource = "";
+            if (sender != null && sender != 0) {
+              appSource = sender.getHost().Source;
+            }
+            
+            var errorType = args.ErrorType;
+            var iErrorCode = args.ErrorCode;
+
+            if (errorType == "ImageError" || errorType == "MediaError") {
+              return;
+            }
+
+            var errMsg = "Unhandled Error in Silverlight Application " +  appSource + "\n" ;
+
+            errMsg += "Code: "+ iErrorCode + "    \n";
+            errMsg += "Category: " + errorType + "       \n";
+            errMsg += "Message: " + args.ErrorMessage + "     \n";
+
+            if (errorType == "ParserError") {
+                errMsg += "File: " + args.xamlFile + "     \n";
+                errMsg += "Line: " + args.lineNumber + "     \n";
+                errMsg += "Position: " + args.charPosition + "     \n";
+            }
+            else if (errorType == "RuntimeError") {           
+                if (args.lineNumber != 0) {
+                    errMsg += "Line: " + args.lineNumber + "     \n";
+                    errMsg += "Position: " +  args.charPosition + "     \n";
+                }
+                errMsg += "MethodName: " + args.methodName + "     \n";
+            }
+
+            throw new Error(errMsg);
+        }
+    </script>
+
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc0db0.php?rsd" />
+ <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="wp-includes/wlwmanifest.xml" /> <style type='text/css'>
+<!--#header { background: url('wp-content/themes/ais2/images/header-imgae03.html?upper=A7A73F&amp;lower=77773F') no-repeat bottom center; }
+--></style>
+</head>
+<body>
+<div id="page">
+
+<div class="aisTopBar">
+	<form method="get" id="searchform" action="http://adventuresinsoftware.com/blog/">
+<div>
+<a href="indexd784.html?feed=rss2"><img src="../images/feed-icon-28x28.png" border="0"></a>
+<input type="text" value="" name="s" id="s" />
+<input type="submit" id="searchsubmit" value="Search" />
+</div>
+</form>
+</div>
+
+<div class="aisHeaderImageRight">
+	<div class="aisHeaderImage">
+	<div class="aisHeaderCornerRight">
+	<div class="aisHeaderCornerLeft">
+	<div class="aisImageBar">
+	<div class="aisSubSites">
+		<a href="index.html" class="aisSubSiteLink"><span class="aisSiteTabRight"><span class="aisSiteTabLeft"><span class="aisSiteTab">
+			home</span></span></span></a>
+		<a class="aisSubSiteLink" href="indexb60a.html?cat=27"><span class="aisSiteTabRight"><span class="aisSiteTabLeft"><span class="aisSiteTab">
+			historic modeling</span></span></span></a>
+		<a class="aisSubSiteLink" href="indexa88f.html?cat=36"><span class="aisSiteTabRight"><span class="aisSiteTabLeft"><span class="aisSiteTab">
+			update controls</span></span></span></a>
+		<a href="index2d79.html?cat=26" class="aisSubSiteLink"><span class="aisSiteTabRight"><span class="aisSiteTabLeft"><span class="aisSiteTab">
+			degrees of freedom</span></span></span></a>
+		<a class="aisSubSiteLink" href="indexba53.html?page_id=2"><span class="aisSiteTabRight"><span class="aisSiteTabLeft"><span class="aisSiteTab">
+			about us</span></span></span></a>
+
+	</div>
+	</div>
+	</div>
+	</div>
+	</div>
+</div>
+
+<table style="width: 100%" cellspacing="0" cellpadding="0">
+	<tr valign="top">
+		<td width="210px">
+<div id="sidebar">
+<div class="aisLeftColumnFill">
+<div class="aisLeftColumnBottom">
+<div class="aisLeftColumnTop">
+<div id="twitter_div" class="aisLeftNav">
+<h2 class="sidebar-title">Twitter Updates</h2>
+<ul id="twitter_update_list"></ul>
+<a href="http://twitter.com/michaellperry" id="follow">Follow me</a>
+</div>
+<div id="twitter_reply_div" class="aisLeftNav">
+<h2 class="sidebar-title">Twitter Replies</h2>
+<ul id="twitter_reply_list"></ul>
+</div>
+
+<div class="aisLeftNav">
+<a href='http://ineta.org/Speakers/SearchCommunitySpeakers.aspx?SpeakerId=c5110e21-9243-461b-a464-a6548524e885'><img alt='INETA Community Speakers Program' border='0' src='../../www.ineta.org/images/OfficialLogos/InetaCommunitySpeakersRequestMe.html' /></a>
+</div>
+
+<div class="aisLeftNav">
+	<li class="pagenav"><h2>Pages</h2><ul><li class="page_item page-item-2"><a href="indexba53.html?page_id=2" title="About Us">About Us</a></li>
+<li class="page_item page-item-210"><a href="index6ae3.html?page_id=210" title="Templates">Templates</a></li>
+</ul></li></div>
+
+<div class="aisLeftNav">
+<h2>Archives</h2>
+<ul>
+	<li><a href='indexb4d5.html?m=201110' title='October 2011'>October 2011</a></li>
+	<li><a href='indexc61a.html?m=201106' title='June 2011'>June 2011</a></li>
+	<li><a href='indexa80d.html?m=201105' title='May 2011'>May 2011</a></li>
+	<li><a href='index512b.html?m=201104' title='April 2011'>April 2011</a></li>
+	<li><a href='index08fb.html?m=201103' title='March 2011'>March 2011</a></li>
+	<li><a href='index52f4.html?m=201102' title='February 2011'>February 2011</a></li>
+	<li><a href='index74f1.html?m=201101' title='January 2011'>January 2011</a></li>
+	<li><a href='index8956.html?m=201012' title='December 2010'>December 2010</a></li>
+	<li><a href='indexa1aa.html?m=201011' title='November 2010'>November 2010</a></li>
+	<li><a href='indexe3d5.html?m=201010' title='October 2010'>October 2010</a></li>
+	<li><a href='index9ab9.html?m=201009' title='September 2010'>September 2010</a></li>
+	<li><a href='index1ff0.html?m=201008' title='August 2010'>August 2010</a></li>
+	<li><a href='index9f11.html?m=201007' title='July 2010'>July 2010</a></li>
+	<li><a href='index31f0.html?m=201006' title='June 2010'>June 2010</a></li>
+	<li><a href='indexd189.html?m=201005' title='May 2010'>May 2010</a></li>
+	<li><a href='indexb5c0.html?m=201004' title='April 2010'>April 2010</a></li>
+	<li><a href='indexf258.html?m=201003' title='March 2010'>March 2010</a></li>
+	<li><a href='index6e30.html?m=201002' title='February 2010'>February 2010</a></li>
+	<li><a href='index6b19.html?m=201001' title='January 2010'>January 2010</a></li>
+	<li><a href='index5c0a.html?m=200912' title='December 2009'>December 2009</a></li>
+	<li><a href='index8f62.html?m=200911' title='November 2009'>November 2009</a></li>
+	<li><a href='index451d.html?m=200910' title='October 2009'>October 2009</a></li>
+	<li><a href='index3e04.html?m=200909' title='September 2009'>September 2009</a></li>
+	<li><a href='index425a.html?m=200908' title='August 2009'>August 2009</a></li>
+	<li><a href='index9907.html?m=200907' title='July 2009'>July 2009</a></li>
+	<li><a href='index3104.html?m=200906' title='June 2009'>June 2009</a></li>
+	<li><a href='indexc36d.html?m=200905' title='May 2009'>May 2009</a></li>
+	<li><a href='index17e8.html?m=200904' title='April 2009'>April 2009</a></li>
+	<li><a href='index10a5.html?m=200903' title='March 2009'>March 2009</a></li>
+	<li><a href='index8988.html?m=200902' title='February 2009'>February 2009</a></li>
+	<li><a href='index1419.html?m=200901' title='January 2009'>January 2009</a></li>
+	<li><a href='index7866.html?m=200812' title='December 2008'>December 2008</a></li>
+	<li><a href='index55f6.html?m=200811' title='November 2008'>November 2008</a></li>
+	<li><a href='indexa7bc.html?m=200810' title='October 2008'>October 2008</a></li>
+	<li><a href='indexe77c.html?m=200809' title='September 2008'>September 2008</a></li>
+	<li><a href='indexcffc.html?m=200808' title='August 2008'>August 2008</a></li>
+	<li><a href='index0e62.html?m=200807' title='July 2008'>July 2008</a></li>
+	<li><a href='indexfda7.html?m=200806' title='June 2008'>June 2008</a></li>
+	<li><a href='index7d64.html?m=200805' title='May 2008'>May 2008</a></li>
+	<li><a href='index94dd.html?m=200804' title='April 2008'>April 2008</a></li>
+	<li><a href='index9631.html?m=200803' title='March 2008'>March 2008</a></li>
+	<li><a href='indexdd52.html?m=200802' title='February 2008'>February 2008</a></li>
+	<li><a href='index21ee.html?m=200801' title='January 2008'>January 2008</a></li>
+	<li><a href='index363c.html?m=200712' title='December 2007'>December 2007</a></li>
+	<li><a href='index7493.html?m=200711' title='November 2007'>November 2007</a></li>
+	<li><a href='index93a7.html?m=200710' title='October 2007'>October 2007</a></li>
+	<li><a href='index4ca8.html?m=200709' title='September 2007'>September 2007</a></li>
+	<li><a href='index6124.html?m=200708' title='August 2007'>August 2007</a></li>
+	<li><a href='index6013.html?m=200707' title='July 2007'>July 2007</a></li>
+	<li><a href='index2ab6.html?m=200706' title='June 2007'>June 2007</a></li>
+	<li><a href='index44f0.html?m=200705' title='May 2007'>May 2007</a></li>
+	<li><a href='indexf0b4.html?m=200704' title='April 2007'>April 2007</a></li>
+	<li><a href='index481d.html?m=200703' title='March 2007'>March 2007</a></li>
+	<li><a href='indexcbea.html?m=200702' title='February 2007'>February 2007</a></li>
+	<li><a href='index9cdc.html?m=200701' title='January 2007'>January 2007</a></li>
+	<li><a href='index3ea4.html?m=200612' title='December 2006'>December 2006</a></li>
+	<li><a href='index67ca.html?m=200611' title='November 2006'>November 2006</a></li>
+	<li><a href='indexff49.html?m=200610' title='October 2006'>October 2006</a></li>
+	<li><a href='index611c.html?m=200609' title='September 2006'>September 2006</a></li>
+	<li><a href='index9a21.html?m=200608' title='August 2006'>August 2006</a></li>
+	<li><a href='index3ee9.html?m=200607' title='July 2006'>July 2006</a></li>
+	<li><a href='indexe13a.html?m=200606' title='June 2006'>June 2006</a></li>
+</ul>
+</div>
+
+<div class="aisLeftNav">
+	</div>
+
+<div class="aisLeftNav">
+<h2>Books</h2>
+<iframe src="http://rcm.amazon.com/e/cm?t=adventures0d2-20&amp;o=1&amp;p=8&amp;l=as1&amp;asins=0764526413&amp;fc1=000000&amp;IS2=1&amp;lt1=_blank&amp;lc1=0000ff&amp;bc1=000000&amp;bg1=ffffff&amp;f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" name="I5" id="I5"></iframe>
+<br/>
+<iframe src="http://rcm.amazon.com/e/cm?t=adventures0d2-20&amp;o=1&amp;p=8&amp;l=as1&amp;asins=0201633612&amp;fc1=000000&amp;IS2=1&amp;lt1=_blank&amp;lc1=0000ff&amp;bc1=000000&amp;bg1=ffffff&amp;f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" name="I6" id="I6"></iframe>
+<br/>
+<iframe src="http://rcm.amazon.com/e/cm?t=adventures0d2-20&amp;o=1&amp;p=8&amp;l=as1&amp;asins=0136291554&amp;fc1=000000&amp;IS2=1&amp;lt1=_blank&amp;lc1=0000ff&amp;bc1=000000&amp;bg1=ffffff&amp;f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" name="I7" id="I7"></iframe>
+<br/>
+<iframe src="http://rcm.amazon.com/e/cm?t=adventures0d2-20&amp;o=1&amp;p=8&amp;l=as1&amp;asins=1888009195&amp;fc1=000000&amp;IS2=1&amp;lt1=_blank&amp;lc1=0000ff&amp;bc1=000000&amp;bg1=ffffff&amp;f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" name="I8" id="I8"></iframe>
+</div>
+<div class="aisLeftNav">
+<h2>Meta</h2>
+<ul>
+		<li><a href="wp-login.html">Login</a></li>
+	<li><a href="http://validator.w3.org/check/referer" title="This page validates as XHTML 1.0 Transitional">Valid <abbr title="eXtensible HyperText Markup Language">XHTML</abbr></a></li>
+	<li><a href="http://gmpg.org/xfn/"><abbr title="XHTML Friends Network">XFN</abbr></a></li>
+	<li><a href="http://wordpress.org/" title="Powered by WordPress, state-of-the-art semantic personal publishing platform.">WordPress</a></li>
+	</ul>
+</div>
+<div class="aisLeftContent">
+<h2>Community</h2>
+<ul>
+	<script type="text/javascript" src="../../localhost/embed/92q2bbma.js"></script>
+</ul>
+</div>
+
+</div></div></div>
+</div>		</td>
+		<td>
+
+	<div id="content" class="narrowcolumn">
+
+		
+		 		<h2 class="pagetitle">Archive for April, 2009</h2>
+
+		
+
+		<div class="navigation">
+			<div class="alignleft"><a href="index0034.html?m=200904&amp;paged=2">&laquo; Previous Entries</a></div>
+			<div class="alignright"></div>
+		</div>
+
+				<div class="post">
+				<h3 id="post-339"><a href="indexb247.html?p=339" rel="bookmark" title="Permanent Link to Avoid mutable variables in linq expressions">Avoid mutable variables in linq expressions</a></h3>
+				<small>Wednesday, April 29th, 2009</small>
+
+				<div class="entry">
+					<p>Please take a moment to determine whether this unit test (in C#) passes.</p>
+<pre><font color="#0000ff">var</font> collection = <span style="color: blue">new</span> <font color="#008080">NamedNumber</font>[]
+{
+    <span style="color: blue">new</span> <font color="#008080">NamedNumber</font>() { Name = <span style="color: maroon">"One"</span>, Number = <span style="color: maroon">1</span> },
+    <span style="color: blue">new</span> <font color="#008080">NamedNumber</font>() { Name = <span style="color: maroon">"Two"</span>, Number = <span style="color: maroon">2</span> },
+    <span style="color: blue">new</span> <font color="#008080">NamedNumber</font>() { Name = <span style="color: maroon">"Three"</span>, Number = <span style="color: maroon">3</span> }
+};
+<font color="#008080">IEnumerable</font>&lt;<font color="#0000ff">string</font>&gt; names = <span style="color: blue">null</span>;
+<span style="color: blue">for</span> (<span style="color: blue">int</span> i = <span style="color: maroon">1</span>; i &lt; <span style="color: maroon">3</span>; ++i)
+{
+    <span style="color: blue">if</span> (i == <span style="color: maroon">1</span>)
+        names = <font color="#0000ff">from</font> n <font color="#0000ff">in</font> collection <font color="#0000ff">where</font> n.Number == i <font color="#0000ff">select</font> n.Name;
+}
+
+<font color="#0000ff">string</font> name = names.Single();
+<font color="#008080">Assert</font>.AreEqual(<span style="color: maroon">"One"</span>, name);
+</pre>
+<p>We are producing an enumerator over named numbers using linq syntax. Only when i is equal to 1 do we produce this enumerator. You would therefore assume that it would enumerate only the numbers equal to 1.</p>
+<p>If that were the case, I wouldn't bother to write this post. Indeed, I wouldn't have even written this unit test. Nope, this test fails:</p>
+<blockquote>
+<p>Assert.AreEqual failed. Expected:&lt;One&gt;. Actual:&lt;Three&gt;.</p>
+</blockquote>
+<p>As you may already know, a linq expression is not evaluated until it is realized. The IEnumerable holds the instructions to perform the query, but does not actually do so until the enumeration is traversed. In this case, we traverse the query with the call to "Single".</p>
+<p>By the time we get to "Single", the for loop has terminated. At that point i will be equal to 3. (Notice I didn't use &lt;= 3, which would have terminated with i = 4). Only then was the expression evaluated, finding all of the numbers equal to three.</p>
+<p><strong>Closures</strong><br />Many functional languages have a concept called a closure. A closure is a block of code (a.k.a. a function) that refers to a variable from the outside. This function can be passed around and executed at any time, but it carries with it that variable. Here's a very simple example in F#:</p>
+<pre><font color="#0000ff">let</font> x = <span style="color: maroon">1</span>
+<font color="#0000ff">let</font> xplus y = x + y</pre>
+<p>The function xplus carries with it the variable x. The word "variable" can be misleading. The "variable" cannot actually vary at all. It is immutable. At least in a functional language.</p>
+<p><strong>Java</strong><br />The closest thing to a closure in Java is an anonymous inner class (at least for now). Here's the same test in Java (using my <a href="index4978.html?p=244">Java Query</a> library to approximate linq):</p>
+<pre>List&lt;NamedNumber&gt; numbers = <span style="color: blue">new</span> ArrayList&lt;NamedNumber&gt;();
+numbers.add(<span style="color: blue">new</span> NamedNumber(<span style="color: maroon">"One"</span>, <span style="color: maroon">1</span>));
+numbers.add(<span style="color: blue">new</span> NamedNumber(<span style="color: maroon">"Two"</span>, <span style="color: maroon">2</span>));
+numbers.add(<span style="color: blue">new</span> NamedNumber(<span style="color: maroon">"Three"</span>, <span style="color: maroon">3</span>));
+
+Iterable&lt;String&gt; names = <span style="color: blue">null</span>;
+<span style="color: blue">for</span> (<span style="color: blue">int</span> i = <span style="color: maroon">1</span>; i &lt; <span style="color: maroon">3</span>; ++i) {
+<span style="color: blue">    <strong>final</strong></span><strong> <span style="color: blue">int</span> fi = i;</strong>
+    <span style="color: blue">if</span> (fi == <span style="color: maroon">1</span>) {
+        names = Query
+            .from(numbers)
+            .where(<span style="color: blue">new</span> Predicate&lt;NamedNumber&gt;() {
+                <span style="color: blue">public</span> <span style="color: blue">boolean</span> where(NamedNumber row) {
+                    <span style="color: blue">return</span> row.getNumber() == fi;
+                }
+            })
+            .select(<span style="color: blue">new</span> Selector&lt;NamedNumber, String&gt;() {
+                <span style="color: blue">public</span> String select(NamedNumber row) {
+                    <span style="color: blue">return</span> row.getName();
+                }
+            });
+    }
+}
+String name = Query.from(names).selectOne();
+assertEquals(<span style="color: maroon">"One"</span>, name);
+</pre>
+<p>Notice the extra step I had to include. I had to create a "final" variable. A final variable must be initialized, and cannot change. It is immutable. Java requires that any variable used inside of an anonymous inner class be declared final.</p>
+<p>You may be thinking at this point that the value of fi <em>does</em> change during the course of this method. It is assigned a new value for each iteration of the loop. Not true. In fact, a new fi is created each time the loop is entered. Each instance of fi is initialized to a different value. While there is only one i, there are two fi's (1 and 2). The instance of the anonymous inner class is a closure that carries that instance of fi with it wherever it goes.</p>
+<p><strong>Here's my solution</strong><br />Seeing how Java forces you to solve the problem, let's try the same technique in C#.</p>
+<pre><span style="color: blue">var</span> collection = <span style="color: blue">new</span> <font color="#008080">NamedNumber</font>[]
+{
+    <span style="color: blue">new</span> <font color="#008080">NamedNumber</font>() { Name = <span style="color: maroon">"One"</span>, Number = <span style="color: maroon">1</span> },
+    <span style="color: blue">new</span> <font color="#008080">NamedNumber</font>() { Name = <span style="color: maroon">"Two"</span>, Number = <span style="color: maroon">2</span> },
+    <span style="color: blue">new</span> <font color="#008080">NamedNumber</font>() { Name = <span style="color: maroon">"Three"</span>, Number = <span style="color: maroon">3</span> }
+};
+<font color="#008080">IEnumerable</font>&lt;<span style="color: blue">string</span>&gt; names = <span style="color: blue">null</span>;
+<span style="color: blue">for</span> (<span style="color: blue">int</span> i = <span style="color: maroon">1</span>; i &lt; <span style="color: maroon">3</span>; ++i)
+{
+    <strong><span style="color: blue">int</span> fi = i;
+</strong>    <span style="color: blue">if</span> (fi == <span style="color: maroon">1</span>)
+        names = <span style="color: blue">from</span> n <span style="color: blue">in</span> collection <span style="color: blue">where</span> n.Number == <strong>fi</strong> <span style="color: blue">select</span> n.Name;
+}
+
+<span style="color: blue">string</span> name = names.Single();
+<font color="#008080">Assert</font>.AreEqual(<span style="color: maroon">"One"</span>, name);
+</pre>
+<p>Now if you run this unit test, it passes. The linq query captures the instance of fi that was created during that loop (1). It doesn't matter that a new instance of fi (2) was created before the query had a chance to execute. The query carries around the first instance (1), and uses it to select the name.</p>
+<p>While C# has its own equivalent of closures (lambdas and linq), it does not force you to use immutable variables inside of them. It's up to you to be careful never to change a variable referenced inside of a linq expression. Initialize a new variable that never changes, and use it exclusively.</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="index8e7f.html?cat=19" title="View all posts in C#" rel="category">C#</a> |   <a href="indexb247.html?p=339#respond" title="Comment on Avoid mutable variables in linq expressions">No Comments &#187;</a></p>
+
+			</div>
+
+				<div class="post">
+				<h3 id="post-338"><a href="indexbcd6.html?p=338" rel="bookmark" title="Permanent Link to .NET to .NET web services without WSDL">.NET to .NET web services without WSDL</a></h3>
+				<small>Thursday, April 23rd, 2009</small>
+
+				<div class="entry">
+					<p>We are using web services internally as an RPC mechanism. Our web tier calls our application tier via service interfaces. We are both exposing these interfaces and consuming them. They are not intended for external consumption.</p>
+<p>Since we control both ends of the conversation, WSDL is overkill. WSDL is generated by .NET when you publish a web service. Any compliant consumer can import that WSDL and generate a service proxy. When the consumer is another .NET application, you can use either "Import Service Reference" or "svcutil.exe". Publish the service, generate the proxy, and start calling it.</p>
+<p>This publish/import workflow causes problems in a homogeneous .NET/.NET environment. The generated proxy classes are all imported into one namespace, even if the published classes come from different namespaces. While this alone is confusing, it can cause real problems if you pass messages among through one service to another, or from multiple clients. Every client defines types of exactly the same shape, but since they are in different namespaces and assemblies, they are not the same type.</p>
+<p>Another problem that this causes is version inconsistencies between clients and servers. We use TFS automated builds for continuous integration. After the build, the server is published to the development environment. If we generated client proxies from that development environment, we would have an old version of the client proxy checked in at the same time as a newer version of the service.</p>
+<p><strong>Here's my solution</strong><br />Instead of going through WSDL and generating a proxy, the client can use exactly the same data types that the server publishes. If you look at the code that is generated for you, you can see how. All of the magic is in System.ServiceModel.ClientBase&lt;T&gt;. This class generates a proxy on the fly based on the interface you specify. Rather than importing that interface from WSDL, you can include it from the source.</p>
+<p>Put all of your web service contracts into a single project. This includes all of the ServiceContract interfaces that define the service methods, and the DataContract classes that define their parameters and return values. This project will need to reference System.Runtime.Serialization and System.ServiceModel. None of the implementation goes in this project. In the spirit of the <a href="http://www.objectmentor.com/resources/articles/dip.pdf">Dependency Inversion Principle</a>, it is completely abstract. I like to call it &lt;MySolution&gt;.Contracts.</p>
+<p>Next, add a reference from your web service project to &lt;MySolution&gt;.Contracts. Implement the service contract interface, and do the work of the web service here.</p>
+<p>Finally, add a reference from your client project to &lt;MySolution&gt;.Contracts. Don't add a service reference. Don't run svcutil.exe. Instead, add this little interface/class pair to your arsenal:</p>
+<pre><span style="color: blue">public</span> <span style="color: blue">interface</span> IServiceClientFactory&lt;TServiceInterface&gt;
+{
+	<span style="color: blue">void</span> CallService(Action&lt;TServiceInterface&gt; action);
+	TResult CallService&lt;TResult&gt;(Func&lt;TServiceInterface, TResult&gt; function);
+}
+
+<span style="color: blue">public</span> <span style="color: blue">class</span> ServiceClientFactory&lt;TServiceInterface&gt; :
+	IServiceClientFactory&lt;TServiceInterface&gt;
+	where TServiceInterface : <span style="color: blue">class</span>
+{
+	<span style="color: blue">class</span> Client : System.ServiceModel.ClientBase&lt;TServiceInterface&gt;
+	{
+		<span style="color: blue">public</span> TServiceInterface Service
+		{
+			get { <span style="color: blue">return</span> base.Channel; }
+		}
+	}
+
+	<span style="color: blue">public</span> <span style="color: blue">void</span> CallService(Action&lt;TServiceInterface&gt; action)
+	{
+		Client client = <span style="color: blue">new</span> Client();
+
+		<span style="color: blue">try</span>
+		{
+			action(client.Service);
+			client.Close();
+		}
+		<span style="color: blue">catch</span> (Exception)
+		{
+			client.Abort();
+			<span style="color: blue">throw</span>;
+		}
+	}
+
+	<span style="color: blue">public</span> TResult CallService&lt;TResult&gt;(Func&lt;TServiceInterface, TResult&gt; function)
+	{
+		Client client = <span style="color: blue">new</span> Client();
+
+		<span style="color: blue">try</span>
+		{
+			TResult result = function(client.Service);
+			client.Close();
+			<span style="color: blue">return</span> result;
+		}
+		<span style="color: blue">catch</span> (Exception)
+		{
+			client.Abort();
+			<span style="color: blue">throw</span>;
+		}
+	}
+}
+</pre>
+<p>With this, you can call a web service in one of two ways. Either you can invoke a method that returns nothing:</p>
+<pre>_serviceClientFactory.CallService(client =&gt;
+{
+	client.DoAction(parameters);
+})
+</pre>
+<p>Or, you can invoke a method with a return:</p>
+<pre>var something = _serviceClientFactory.CallService(client =&gt; client.GetSomething(parameters));
+</pre>
+<p>The client calls the service without ever importing the WSDL. The ServiceClientFactory does the proper Close() or Abort() pattern on the service reference. And the interface makes it suitable for IoC and unit testing.</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="index8e7f.html?cat=19" title="View all posts in C#" rel="category">C#</a> |   <a href="indexbcd6.html?p=338#respond" title="Comment on .NET to .NET web services without WSDL">No Comments &#187;</a></p>
+
+			</div>
+
+				<div class="post">
+				<h3 id="post-337"><a href="indexf6a9.html?p=337" rel="bookmark" title="Permanent Link to AutoMapper misses the point">AutoMapper misses the point</a></h3>
+				<small>Sunday, April 19th, 2009</small>
+
+				<div class="entry">
+					<p>Jimmy Bogard created <a href="http://www.lostechies.com/blogs/jimmy_bogard/archive/2009/01/22/automapper-the-object-object-mapper.aspx">AutoMapper</a> to generate left-hand-right-hand code. This is the mapping code that often appears when you are translating one object model to another parallel object model. He gives the example of mapping a data model to a view model:</p>
+<pre><span style="color: blue">public</span> <span style="color: blue">class</span> <font color="#0080c0">OrderToOrderViewModelMapper</font>
+{
+    <span style="color: blue">public</span> <font color="#0080c0">OrderViewModel</font> Map(<font color="#0080c0">Order</font> order)
+    {
+        <span style="color: blue">return</span> <span style="color: blue">new</span> <font color="#0080c0">OrderViewModel</font>
+            {
+                CustomerFullName = order.Customer.GetFullName(),
+                Total = order.GetTotal(),
+                LineItems = order.GetLineItems()
+                    .Select(x =&gt; <span style="color: blue">new</span> <font color="#0080c0">OrderLineItemViewModel</font>
+                        {
+                            Price = x.Price,
+                            Quantity = x.Quantity,
+                            Total = x.GetTotal(),
+                            ProductName = x.Product.Name
+                        })
+                    .ToArray()
+            };
+    }
+}</pre>
+<p>This misses the point. The problem is not in the tedious mapping code. The problem is that you are doubling the amount of independent data.</p>
+<p>Let me start at the beginning. This is a field:</p>
+<pre><span style="color: blue">public</span> <span style="color: blue">class</span> <font color="#0080c0">Customer</font>
+{
+    <strong><span style="color: blue">private</span> <font color="#0000ff">string</font> _fullName;</strong>
+}
+</pre>
+<p>This field is independent data. It can change independent of anything else in the system.</p>
+<p>This is a property:</p>
+<pre><span style="color: blue">public</span> <span style="color: blue">class</span> <font color="#0080c0">Customer</font>
+{
+    <span style="color: blue">private</span> <font color="#0000ff">string</font> _fullName;
+
+<strong>    <span style="color: blue">public</span> <font color="#0000ff">string</font> FullName
+    {
+        <font color="#0000ff">get</font> { <span style="color: blue">return</span> _fullName; }
+        <font color="#0000ff">set</font> { _fullName = <font color="#0000ff">value</font>; }
+    }
+</strong>}
+</pre>
+<p>This property is dependent data. Its behavior depends entirely on the field.</p>
+<p>This is an immutable field:</p>
+<pre><span style="color: blue">public</span> <span style="color: blue">class</span> <font color="#0080c0">OrderViewModel</font>
+{
+    <strong><span style="color: blue">private</span> <font color="#0080c0">Order</font> _order;</strong>
+
+    <span style="color: blue">public</span> OrderViewModel(<strong><font color="#0080c0">Order</font> order</strong>)
+    {
+        <strong>_order = order;</strong>
+    }
+}
+</pre>
+<p>This immutable field is not independent. It cannot be changed. It is immutable.</p>
+<p>This is another property:</p>
+<pre><span style="color: blue">public</span> <span style="color: blue">class</span> <font color="#0080c0">OrderViewModel</font>
+{
+    <span style="color: blue">private</span> <font color="#0080c0">Order</font> _order;
+
+    <span style="color: blue">public</span> OrderViewModel(<font color="#0080c0">Order</font> order)
+    {
+        _order = order;
+    }
+
+<strong>    <span style="color: blue">public</span> <font color="#0000ff">string</font> CustomerFullName
+    {
+        <font color="#0000ff">get</font> { <span style="color: blue">return</span> _order.Customer.FullName; }
+    }
+</strong>}
+</pre>
+<p>Adding independent data to a system increases its degrees of freedom. Adding dependent data does not. Adding an immutable field does not.</p>
+<p>You want no more degrees of freedom in the system than the problem calls for. Degrees of freedom are moving parts. Moving parts break. Moving parts need to be tested. You should therefore avoid adding independent data when dependent data is sufficient.</p>
+<p>The problem with Jimmy Bogard's example wasn't the code to copy data from one object to another. It was that data had to be copied at all. The view model should not have fields (independent data). It should have properties (dependent data).</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="indexb0b7.html?cat=6" title="View all posts in Patterns" rel="category">Patterns</a>,  <a href="index2d79.html?cat=26" title="View all posts in dof" rel="category">dof</a> |   <a href="indexf6a9.html?p=337#comments" title="Comment on AutoMapper misses the point">4 Comments &#187;</a></p>
+
+			</div>
+
+				<div class="post">
+				<h3 id="post-336"><a href="index71fc.html?p=336" rel="bookmark" title="Permanent Link to Update Controls in Silverlight 3 proof-of-concept">Update Controls in Silverlight 3 proof-of-concept</a></h3>
+				<small>Sunday, April 19th, 2009</small>
+
+				<div class="entry">
+					<p>I have confirmed that Update Controls will work in Silverlight 3. I have wrapped a data object with one that uses DependencyProperties and successfully bound to the wrapper in Silverlight 3. This POC did not work in Silverlight 2 because it did not support DependencyProperty binding. Here's the code:</p>
+<pre><font color="#0000ff">using</font> System;
+<font color="#0000ff">using</font> System.Windows;
+<font color="#0000ff">using</font> UpdateControls;
+
+<font color="#0000ff">namespace</font> SL3Test
+{
+    <span style="color: blue">public</span> <span style="color: blue">class</span> <font color="#0080ff">PersonWrapper</font> : <font color="#0080ff">DependencyObject</font>
+    {
+        <span style="color: green">/////////////////////////////////////////////////////////////////////////////</span>
+        <span style="color: green">// Static section.</span>
+        <span style="color: green">//</span>
+        <span style="color: green">// Set up the dependency properties for all instances.</span>
+
+        <span style="color: green">// Register dependency properties. XAML can bind to these by name, even though</span>
+        <span style="color: green">// there is no CLR property to be found.</span>
+        <span style="color: blue">private</span> <span style="color: blue">static</span> <font color="#0080ff">DependencyProperty</font> _firstNameProperty = <font color="#0080ff">DependencyProperty</font>.Register(
+            <span style="color: maroon">"FirstName"</span>,
+            <font color="#0000ff">typeof</font>(<font color="#0000ff">string</font>),
+            <font color="#0000ff">typeof</font>(<font color="#0080ff">PersonWrapper</font>),
+            <span style="color: blue">new</span> <font color="#0080ff">PropertyMetadata</font>(OnFirstNameChanged));
+        <span style="color: blue">private</span> <span style="color: blue">static</span> <font color="#0080ff">DependencyProperty</font> _fullNameProperty = <font color="#0080ff">DependencyProperty</font>.Register(
+            <span style="color: maroon">"FullName"</span>,
+            <font color="#0000ff">typeof</font>(<font color="#0000ff">string</font>),
+            <font color="#0000ff">typeof</font>(<font color="#0080ff">PersonWrapper</font>),
+            <span style="color: blue">new</span> <font color="#0080ff">PropertyMetadata</font>(<span style="color: maroon">""</span>));
+
+        <span style="color: green">// Called when the user edits the first name. Delegates to the object instance.</span>
+        <span style="color: blue">private</span> <span style="color: blue">static</span> <span style="color: blue">void</span> OnFirstNameChanged(<font color="#0080ff">DependencyObject</font> obj, <font color="#0080ff">DependencyPropertyChangedEventArgs</font> e)
+        {
+            ((<font color="#0080ff">PersonWrapper</font>)obj).OnFirstNameChanged();
+        }
+
+        <span style="color: green">/////////////////////////////////////////////////////////////////////////////</span>
+        <span style="color: green">// Instance section.</span>
+        <span style="color: green">//</span>
+        <span style="color: green">// Coordinate between the dependency properties and the wrapped instance.</span>
+
+        <span style="color: green">// The data object being wrapped</span>
+        <span style="color: blue">private</span> <font color="#0080ff">Person</font> _person = <span style="color: blue">new</span> <font color="#0080ff">Person</font>();
+
+        <span style="color: green">// Dependent sentries.</span>
+        <span style="color: blue">private</span> <font color="#0080ff">Dependent</font> _depFirstName;
+        <span style="color: blue">private</span> <font color="#0080ff">Dependent</font> _depFullName;
+
+        <span style="color: blue">public</span> <font color="#0080ff">PersonWrapper</font>()
+        {
+            <span style="color: green">// When the dependent property is out of date, update it from the wrapped object.</span>
+            _depFirstName = <span style="color: blue">new</span> <font color="#0080ff">Dependent</font>(<font color="#0000ff">delegate</font>() { SetValue(_firstNameProperty, _person.FirstName); });
+            _depFullName = <span style="color: blue">new</span> <font color="#0080ff">Dependent</font>(<font color="#0000ff">delegate</font>() { SetValue(_fullNameProperty, _person.FullName); });
+
+            <span style="color: green">// When the dependent property becomes out of date, trigger an update.</span>
+            _depFirstName.Invalidated += <span style="color: blue">new</span> <font color="#0080ff">Action</font>(TriggerFirstNameUpdate);
+            _depFullName.Invalidated += <span style="color: blue">new</span> <font color="#0080ff">Action</font>(TriggerFullNameUpdate);
+
+            <span style="color: green">// The properties are out of date right now, so trigger the first update.</span>
+            TriggerFirstNameUpdate();
+            TriggerFullNameUpdate();
+        }
+
+        <span style="color: green">// Called by the dependency property when the user changes the first name.</span>
+        <span style="color: blue">private</span> <span style="color: blue">void</span> OnFirstNameChanged()
+        {
+            <span style="color: green">// Set the first name in the wrapped object.</span>
+            _person.FirstName = (<font color="#0000ff">string</font>)GetValue(_firstNameProperty);
+        }
+
+        <span style="color: green">// Called by Update Controls whenever the dependent property becomes out of date.</span>
+        <span style="color: blue">private</span> <span style="color: blue">void</span> TriggerFirstNameUpdate()
+        {
+            <span style="color: green">// Queue an update for first name. Don't do it right now.</span>
+            Dispatcher.BeginInvoke(<span style="color: blue">new</span> <font color="#0080ff">Action</font>(<font color="#0000ff">delegate</font>() { _depFirstName.OnGet(); }));
+        }
+        <span style="color: blue">private</span> <span style="color: blue">void</span> TriggerFullNameUpdate()
+        {
+            <span style="color: green">// Queue an update for full name. Don't do it right now.</span>
+            Dispatcher.BeginInvoke(<span style="color: blue">new</span> <font color="#0080ff">Action</font>(<font color="#0000ff">delegate</font>() { _depFullName.OnGet(); }));
+        }
+    }
+}
+</pre>
+<p>This is the kind of code that Update Controls hides from you, so let me walk you through it.</p>
+<p><strong>Set up dependency properties</strong><br />Silverlight 3 can bind to dependency properties. Verifying that was the whole point of this exercise. A dependency property is a property of a dependency object managed by a pair of classes. The first is the DependencyObject base class, which PersonWrapper inherits. The second is the DependencyProperty class, which PersonWrapper uses. There is one DependencyObject per instance, and one DependencyProperty per property. Values are managed at the intersection of these two: one property of one instance.</p>
+<p>Since there is one DependencyProperty per property, rather than per property instance, we create static DepenencyProperties. We want the _firstNameProperty to support two-way binding, so we give it a property changed callback. This event is fired when the user changes the dependency property through the two-way binding. We use this to set the FirstName of the wrapped data object.</p>
+<p><strong>Set up dependent sentries</strong><br />Going back the other way, we use the Dependent sentry.</p>
+<p>In your typical usage of Update Controls, you see only the Independent class. Independent wraps a single property that can change independent of any other property. It has methods called OnGet and OnSet that you call whenever that property is accessed or modified, respectively.</p>
+<p>The other half of the equation is the Dependent class. Dependent wraps a single property that changes only by observing other properties. As such, it has no OnSet; the user cannot set it. Instead, it has an update delegate.</p>
+<p>The update delegate is passed into the Dependent's constructor. That delegate is called to calculate the value of the dependent property. You can see in the POC code that it calculates the dependent property by calling the wrapped data object.</p>
+<p>The trick is that Dependent will sit idle until someone observes the dependent property. It will happily remain out-of-date if no one needs it to be updated. You tell it that you are interested by calling OnGet.</p>
+<p>OnGet will call the update delegate only if it is out-of-date. When it does, it will record everything that the update delegate does so that it knows when to become out-of-date again. If Independent.OnGet is called by the update delegate, then the Dependent knows that it depends upon that Independent.</p>
+<p><strong>Update asynchronously</strong><br />When Independent.OnSet is called, it makes all of the Dependents that have accessed it out-of-date. When this happens, the Invalidated event is fired. The POC code handles this event by calling Dispatcher.BeginInvoke. This queues up an action to be performed later. The action is performed on the UI thread after all current UI operations are complete. So what action do we queue up? A call to Dependent.OnGet.</p>
+<p>The properties begin their lives as out-of-date. The Invalidated event won't fire this first time. So we have to manually queue the first calls to Dependent.OnGet. That's the reason for the two calls directly to the Trigger... methods.</p>
+<p><strong>The round trip</strong><br /><a href="wp-content/uploads/2009/04/dependencywrapper.png"><img style="border-right: 0px; border-top: 0px; border-left: 0px; border-bottom: 0px" height="259" alt="DependencyWrapper" src="wp-content/uploads/2009/04/dependencywrapper-thumb.png" width="463" align="right" border="0"></a> So think about the ebb and flow. The user enters data into the first name text box. Through two-way binding, that sets a dependency property. The wrapper responds to that change by setting the FirstName property on a wrapped data object. That calls Independent.OnSet, which causes the Dependent sentries (_depFirstName and _depFullName) to become out-of-date. The Invalidated event is fired, causing two Dependent.OnGet calls to be queued.</p>
+<p>Silverlight finishes with handing the text box, then invokes the two queued actions. Dependent.OnGet is called on both _depFirstName and _depFullName (the order doesn't matter), and they update themselves by getting their respective values from the wrapped data object. In the process, they cause Independent.OnGet to be called, reestablishing the fact that they both depend upon the FirstName property. They then set their respective DependencyProperties, and Silverlight updates the UI.</p>
+<p>This proves that Update Controls will work in Silverlight 3. The next step is to make it easy.</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="indexa88f.html?cat=36" title="View all posts in Update Controls" rel="category">Update Controls</a> |   <a href="index71fc.html?p=336#respond" title="Comment on Update Controls in Silverlight 3 proof-of-concept">No Comments &#187;</a></p>
+
+			</div>
+
+				<div class="post">
+				<h3 id="post-333"><a href="indexf604.html?p=333" rel="bookmark" title="Permanent Link to Returning the autoincrement ID of the last row inserted">Returning the autoincrement ID of the last row inserted</a></h3>
+				<small>Friday, April 17th, 2009</small>
+
+				<div class="entry">
+					<p>It's a common scenario. You've defined an autoincrement primary key on a table. After you insert a row into this table, you need the ID. Maybe you need to insert related rows into a child table. Maybe you need to redirect the user to a page displaying the new data. It's easy to imagine reasons for needing this ID. In fact, it's hard to imagine <em>not</em> needing it.</p>
+<p>Why, then, is it so hard to get it?</p>
+<p>Well, now it's easy add this class to your project:</p>
+<pre>using System;
+using System.Data;
+
+namespace AdventuresInSoftware.Data
+{
+    <span style="color: green">/// &lt;summary&gt;</span>
+    <span style="color: green">/// Create a ConnectionScope inside of a using to open and close a</span>
+    <span style="color: green">/// database connection. Also offers a convenient LastId method.</span>
+    <span style="color: green">/// &lt;/summary&gt;</span>
+    <span style="color: blue">public</span> <span style="color: blue">class</span> ConnectionScope : IDisposable
+    {
+        <span style="color: blue">private</span> IDbConnection _connection;
+
+        <span style="color: green">/// &lt;summary&gt;</span>
+        <span style="color: green">/// Wrap a database connection inside of a ConnectionScope in</span>
+        <span style="color: green">/// a using statement.</span>
+        <span style="color: green">/// &lt;/summary&gt;</span>
+        <span style="color: green">/// &lt;param name="connection"&gt;The connection to open and close.&lt;/param&gt;</span>
+        <span style="color: blue">public</span> ConnectionScope(IDbConnection connection)
+        {
+            _connection = connection;
+            connection.Open();
+        }
+
+        <span style="color: green">/// &lt;summary&gt;</span>
+        <span style="color: green">/// Get the autoincrement key generated by the last insert.</span>
+        <span style="color: green">/// &lt;/summary&gt;</span>
+        <span style="color: green">/// &lt;returns&gt;The ID of the last row inserted.&lt;/returns&gt;</span>
+        <span style="color: blue">public</span> <span style="color: blue">int</span> LastId()
+        {
+            using (IDbCommand command = _connection.CreateCommand())
+            {
+                command.CommandText = <span style="color: maroon">"SELECT @@IDENTITY"</span>;
+                command.CommandType = CommandType.Text;
+                <span style="color: blue">return</span> (<span style="color: blue">int</span>)(decimal)command.ExecuteScalar();
+            }
+        }
+
+        <span style="color: green">/// &lt;summary&gt;</span>
+        <span style="color: green">/// Closes the connection. Intended to be called automatically</span>
+        <span style="color: green">/// by the using statement.</span>
+        <span style="color: green">/// &lt;/summary&gt;</span>
+        <span style="color: blue">public</span> <span style="color: blue">void</span> Dispose()
+        {
+            _connection.Close();
+        }
+    }
+}</pre>
+<p>Then write code like this:</p>
+<pre><span style="color: blue">public</span> <span style="color: blue">int</span> SaveVendor(string vendorName)
+{
+    VendorTableAdapter vendorTableAdapter = <span style="color: blue">new</span> VendorTableAdapter();
+    using (var scope = <span style="color: blue">new</span> ConnectionScope(vendorTableAdapter.Connection))
+    {
+        <span style="color: green">// Insert the vendor and return the new ID.</span>
+        vendorTableAdapter.Insert(vendorName);
+        <span style="color: blue">return</span> scope.LastId();
+    }
+}</pre>
+<p>As you can see, the above code uses a typed TableAdapter. This is a convenient class generated by ADO .NET to give you strongly typed objects and methods for accessing tables. TableAdapters have been largely obsoleted by ORMs and Entity Framework, but they are still handy for smaller client-side projects. This code is from a smart-client project built on SQL CE.</p>
+<p>A typed TableAdapter has a method called Insert which returns an integer. Oh boy! It must be returning the ID of the new row! After all, what else could I possibly want out of an Insert?</p>
+<p>No, sorry. Insert returns a row count. That's right. The Insert method, which inserts a row, returns a row count.</p>
+<p>Let me say that again. This method who's only reason for existing is to <strong>insert <em>one</em> row</strong> returns the number of rows it inserted. Did you get that? It always returns the number 1! By design!</p>
+<p>Inane, yes, I know. But there it is. Enjoy.</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="index8e7f.html?cat=19" title="View all posts in C#" rel="category">C#</a>,  <a href="indexc728.html?cat=7" title="View all posts in Databases" rel="category">Databases</a> |   <a href="indexf604.html?p=333#respond" title="Comment on Returning the autoincrement ID of the last row inserted">No Comments &#187;</a></p>
+
+			</div>
+
+				<div class="post">
+				<h3 id="post-332"><a href="index221f.html?p=332" rel="bookmark" title="Permanent Link to Coming soon: Update Controls in Silverlight">Coming soon: Update Controls in Silverlight</a></h3>
+				<small>Monday, April 13th, 2009</small>
+
+				<div class="entry">
+					</p>
+<p>When I was porting Update Controls to WPF, I tried to hit Silverlight 2 simultaneously. Unfortunately, a couple of things got in my way. One of those problems may be fixed in Silverlight 3. And I've just learned about a new technique that might work in Silverlight 2.</p>
+<p><strong>Custom markup extensions</strong><br />The first problem is that Silverlight 2 does not support custom markup extensions. A markup extension is a class that inherits MarkupExtension. It is available to XAML properties using the bracket syntax. "{Binding}" is a markup extension. Update Controls for WPF defines a custom markup extension called "{Update}".</p>
+<p>Silverlight 2 does not allow us to create our own markup extensions. It supports only the "{Binding}", "{StaticResource}", and "{TemplateBinding}" built-in markup extensions. The library doesn't even include the MarkupExtension base class. The three supported classes are well-known to the Silverlight 2 runtime. From the CTP of Silverlight 3, it doesn't look like it does any better in this area.</p>
+<p><strong>Dependency properties</strong><br />The second problem I ran in to is that Silverlight 2 does not bind to <a href="http://msdn.microsoft.com/en-us/library/ms753358.aspx">dependency properties</a>. A dependency property is managed by the framework. You inherit DependencyObject, then create a static instance of DependencyProperty for each property. The DependencyObject base class manages all of the properties for that instance; DependencyProperty is the key that identifies one property within a dependency object.</p>
+<p>You typically define a CLR property to call GetValue and SetValue for each dependency property. But this is not strictly necessary. WPF binds to every DependencyProperties registered with your type when it sees the DependencyObject base class. It doesn't even see your CLR property. It's only there for the convenience of other code.</p>
+<p>One thing I tried doing was to reflect over a .NET object and create a DependencyProperty for each of its CLR properties. Sort of turn the pattern inside-out. I got this working, and WPF was able to data-bind to my wrapper object. Unfortunately, Silverlight 2 again stood in my way. Silverlight 2 does not bind to dependency properties.</p>
+<p><strong>Silverlight 3 fix coming soon</strong><br />Silverlight 3 now offers support for binding from one XAML property to another. While I generally consider this a <a href="index5b31.html?p=290">bad idea</a>, it does offer a glimmer of hope. Properties of other controls tend to be dependency properties. This means that maybe Silverlight 3 will bind to a dependency property of any DependencyObject, just the way that WPF does.</p>
+<p>I was unable to locate my old dependency property wrapper code. Apparently I was too frustrated to even check it into source control. So I'll recreate it and see if it works with Silverlight 3. If so, there will be one annoying step that you'll have to take to wrap your Presentation Model (a.k.a. View Model), your Navigation Model, and your Data Model before Silverlight can bind to them. But I think the advantages outweigh the inconvenience.</p>
+<p><strong>And possibly Silverlight 2?</strong><br />In <a href="http://www.codeproject.com/KB/WPF/BeginWPF5.aspx">WPF: A Beginner's Guide</a>, Sacha Barber tells me that markup extensions and the "{}" syntax are just a shorthand. There is a way to set a property to an object with more verbose syntax. I don't know if this verbose syntax will give me the hooks that ProvideValue offers, but it's worth a try. This would be more convenient than the wrapper described above, so I'll favor this approach if it works.</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="indexa88f.html?cat=36" title="View all posts in Update Controls" rel="category">Update Controls</a> |   <a href="index221f.html?p=332#respond" title="Comment on Coming soon: Update Controls in Silverlight">No Comments &#187;</a></p>
+
+			</div>
+
+				<div class="post">
+				<h3 id="post-331"><a href="index371d.html?p=331" rel="bookmark" title="Permanent Link to Update Controls on Polymorphic Podcast">Update Controls on Polymorphic Podcast</a></h3>
+				<small>Friday, April 10th, 2009</small>
+
+				<div class="entry">
+					<p>Many thanks to Craig Shoemaker, host of <a href="http://www.getpixel8ed.com/">Pixel8 Radio</a> and the <a href="http://www.polymorphicpodcast.com/">Polymorphic Podcast</a>, and overall beneficiary to the .NET community. I was honored to have a chance to <a href="http://polymorphicpodcast.com/shows/updatecontrols/">speak with him about Update Controls</a>.</p>
+<p>We talked about the benefits of Update Controls over INotifyPropertyChanged and Binding for WPF. We talked about how to get started using it. And hopefully my explanations of how it works were somewhat understandable.</p>
+<p>Have a listen. And if I don't sound like a complete idiot, it's only because of Craig's editing skills.</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="indexa88f.html?cat=36" title="View all posts in Update Controls" rel="category">Update Controls</a> |   <a href="index371d.html?p=331#respond" title="Comment on Update Controls on Polymorphic Podcast">No Comments &#187;</a></p>
+
+			</div>
+
+				<div class="post">
+				<h3 id="post-330"><a href="index1639.html?p=330" rel="bookmark" title="Permanent Link to Ignore whitespace in TFS compare">Ignore whitespace in TFS compare</a></h3>
+				<small>Friday, April 10th, 2009</small>
+
+				<div class="entry">
+					<p>Thanks to <a href="http://jb-brown.blogspot.com/2009/03/whitesapce-in-team-system-compare.html">JB Brown</a>, <a href="http://blogs.msdn.com/jmanning/articles/535573.aspx">James Manning</a>, and <a href="http://social.msdn.microsoft.com/forums/en-US/tfsgeneral/thread/c939de17-98fe-4526-b69c-2ed0affb3dba/">Brian Harry</a> for this information. Unfortunately, nobody I could find puts it all in one place, step-by-step. So here it is.</p>
+<ul>
+<li>In Visual Studio, select "Tools", "Options", "Source Control", ":Visual Studio Team Foundation Server".</li>
+<li>Click "Configure User Tools".</li>
+<li>Click "Add".</li>
+<li>Extension: .cs</li>
+<li>Operation: Compare</li>
+<li>Command: C:\Program Files\Microsoft Visual Studio 9.0\Common7\IDE\diffmerge.exe</li>
+<li>Arguments: %1 %2 %6 %7 %5 /ignorespace</li>
+<li>OK</li>
+<li>OK</li>
+<li>OK</li>
+</ul>
+<p>If you use VB, C++, XML, or any other file extension, go back and add those extensions, too.</p>
+<p>And please, Microsoft. Why is this not the default?</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="indexb31a.html?cat=1" title="View all posts in Uncategorized" rel="category">Uncategorized</a> |   <a href="index1639.html?p=330#comments" title="Comment on Ignore whitespace in TFS compare">2 Comments &#187;</a></p>
+
+			</div>
+
+				<div class="post">
+				<h3 id="post-320"><a href="indexe513.html?p=320" rel="bookmark" title="Permanent Link to Excel as Specification">Excel as Specification</a></h3>
+				<small>Thursday, April 9th, 2009</small>
+
+				<div class="entry">
+					<p>I used to work with engineers. These are people who, like me, think in equations. Until moving on to other domains, I never realized just how lucky I was to work with these people.</p>
+<p>A common practice among the engineers was to try out new analysis methods in Excel. It was really easy to put in some data, graph it, write equations against it, and iterate over the problem. If you needed to find a root, "Goal Seek" was right there. If you needed something more powerful, you could drop down into VBA.</p>
+<p>On more than one occasion, I received an Excel worksheet along with the instruction to "make the program do this." Those were some of the easiest specifications to follow. First, the math was right there; it just had to be translated from Excel to C++. Second, test data could be plugged into both systems, and their results compared. And third, if there was a problem, I could always go back to the engineer and ask questions while pointing to the worksheet.</p>
+<p>Fast forward to today. I'm working for business people, not engineers. They use Excel, but not in the same way. They think in numbers, not equations. Their specifications are written in a different Office product, are less precise, and are not executable.</p>
+<p><strong>Turning it around</strong><br /><a href="wp-content/uploads/2009/04/inputsandoutputs6.png"><img style="border-right: 0px; border-top: 0px; border-left: 0px; border-bottom: 0px" height="225" alt="InputsAndOutputs" src="wp-content/uploads/2009/04/inputsandoutputs-thumb1.png" width="469" align="right" border="0"></a> Since my customer is not going to give me an Excel worksheet, I decided to give one to them. I received a Word document describing some complex interactions among several pieces of data. Some were coming from our ERP system (Baan), some from a site administrator, and some from the user. Many of the fields had different names, depending upon who was looking at it. Some of the rules were contradictory, others were ambiguous, and a few were missing. After several mutually frustrating conversations with the business trying to understand this spec, I took matters into my own hands.</p>
+<p>I created an Excel worksheet that has all of the inputs and outputs. These are organized according to the UI screens on which they appear, and are named according to the spec. Database and code names are not used.</p>
+<p>Using this worksheet, the business can try out different scenarios and determine whether it does what they expect. If not, they can point to the worksheet and tell me what it should do. It may be asking too much for this group to fix the spreadsheet themselves, but at least we have a precise and executable communication tool.</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="index54cb.html?cat=23" title="View all posts in Processes" rel="category">Processes</a> |   <a href="indexe513.html?p=320#respond" title="Comment on Excel as Specification">No Comments &#187;</a></p>
+
+			</div>
+
+				<div class="post">
+				<h3 id="post-317"><a href="index4ef8.html?p=317" rel="bookmark" title="Permanent Link to Historic Modeling site launched">Historic Modeling site launched</a></h3>
+				<small>Tuesday, April 7th, 2009</small>
+
+				<div class="entry">
+					<p>I've started a new site specifically about <a href="http://historicmodeling.com/">Historic Modeling</a>. The historic modeling content on AiS will remain here, but new content will be posted there. Adventures in Software will continue to be about lessons learned on the road to quality computing. Historic Modeling will be dedicated to the theory and practice of the technique, and the tools and processes I'm developing to support it.</p>
+<p>The first series of posts is complete. It takes you step-by-step through the creation of a historic model. This example is drawn from real-life experience, and includes just enough complexity to demonstrate how the technique applies to real-world problems. Please enjoy.</p>
+<ul>
+<li><a href="http://historicmodeling.com/book/node/4">Step One: Identify Changes</a>
+<li><a href="http://historicmodeling.com/book/node/5">Step Two: Refine Changes</a>
+<li><a href="http://historicmodeling.com/book/node/6">Step Three: Query the Model</a>
+<li><a href="http://historicmodeling.com/book/node/7">Step Four: Repeat</a> </li>
+</ul>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="indexb60a.html?cat=27" title="View all posts in Historic Modeling" rel="category">Historic Modeling</a> |   <a href="index4ef8.html?p=317#comments" title="Comment on Historic Modeling site launched">1 Comment &#187;</a></p>
+
+			</div>
+
+		
+		<div class="navigation">
+			<div class="alignleft"><a href="index0034.html?m=200904&amp;paged=2">&laquo; Previous Entries</a></div>
+			<div class="alignright"></div>
+		</div>
+
+	
+	</div>
+		</td>
+	</tr>
+</table>
+
+<hr />
+<div id="footer">
+<!-- If you'd like to support WordPress, having the "powered by" link someone on your blog is the best way, it's our only promotion or advertising. -->
+	<p>
+		Adventures in Software is proudly powered by 
+		<a href="http://wordpress.org/">WordPress</a>
+		<br /><a href="indexd784.html?feed=rss2">Entries (RSS)</a>
+		and <a href="indexa6da.html?feed=comments-rss2">Comments (RSS)</a>.
+		<!-- 17 queries. 1.116 seconds. -->
+	</p>
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-389401-3");
+pageTracker._trackPageview();
+} catch(err) {}</script></div>
+
+<!-- Gorgeous design by Michael Heilemann - http://binarybonsai.com/kubrick/ -->
+
+		<div id="sk2-footer" style="color:#FFF; background-color:#444; padding: 3px 2px 3px 2px; border-top: #888 solid 1px;">This blog is protected by <a href="http://unknowngenius.com/blog/" title="Dave">dr Dave</a>'s <strong><a href="http://unknowngenius.com/blog/wordpress/spam-karma/" title="SK2">Spam Karma 2</a></strong>: <strong>274531</strong>  Spams eaten and counting...</div><script type="text/javascript" src="replies.js"></script>
+<script type="text/javascript" src="blogger.js"></script>
+<script type="text/javascript" src="http://twitter.com/statuses/user_timeline/michaellperry.json?callback=twitterCallback2&amp;count=5"></script>
+<script type="text/javascript" src="http://search.twitter.com/search.json?q=@michaellperry&amp;callback=twitterCallbackReplies&amp;rpp=5"></script>
+</body>
+
+<!-- Mirrored from adventuresinsoftware.com/blog/?m=200904 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 Jan 2017 12:45:24 GMT -->
+</html>

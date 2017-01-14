@@ -1,0 +1,1172 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+
+
+<!-- Mirrored from adventuresinsoftware.com/blog/?m=201105 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 Jan 2017 12:32:22 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>Adventures in Software   &raquo; 2011&raquo; May</title>
+
+<meta name="generator" content="WordPress 2.3.3" /> <!-- leave this for stats -->
+
+<link rel="stylesheet" href="wp-content/themes/ais2/style.css" type="text/css" media="screen" />
+<link rel="alternate" type="application/rss+xml" title="Adventures in Software RSS Feed" href="indexd784.html?feed=rss2" />
+<link rel="pingback" href="xmlrpc.html" />
+    <script type="text/javascript">
+        function onSilverlightError(sender, args) {
+            var appSource = "";
+            if (sender != null && sender != 0) {
+              appSource = sender.getHost().Source;
+            }
+            
+            var errorType = args.ErrorType;
+            var iErrorCode = args.ErrorCode;
+
+            if (errorType == "ImageError" || errorType == "MediaError") {
+              return;
+            }
+
+            var errMsg = "Unhandled Error in Silverlight Application " +  appSource + "\n" ;
+
+            errMsg += "Code: "+ iErrorCode + "    \n";
+            errMsg += "Category: " + errorType + "       \n";
+            errMsg += "Message: " + args.ErrorMessage + "     \n";
+
+            if (errorType == "ParserError") {
+                errMsg += "File: " + args.xamlFile + "     \n";
+                errMsg += "Line: " + args.lineNumber + "     \n";
+                errMsg += "Position: " + args.charPosition + "     \n";
+            }
+            else if (errorType == "RuntimeError") {           
+                if (args.lineNumber != 0) {
+                    errMsg += "Line: " + args.lineNumber + "     \n";
+                    errMsg += "Position: " +  args.charPosition + "     \n";
+                }
+                errMsg += "MethodName: " + args.methodName + "     \n";
+            }
+
+            throw new Error(errMsg);
+        }
+    </script>
+
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc0db0.php?rsd" />
+ <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="wp-includes/wlwmanifest.xml" /> <style type='text/css'>
+<!--#header { background: url('wp-content/themes/ais2/images/header-imgae03.html?upper=A7A73F&amp;lower=77773F') no-repeat bottom center; }
+--></style>
+</head>
+<body>
+<div id="page">
+
+<div class="aisTopBar">
+	<form method="get" id="searchform" action="http://adventuresinsoftware.com/blog/">
+<div>
+<a href="indexd784.html?feed=rss2"><img src="../images/feed-icon-28x28.png" border="0"></a>
+<input type="text" value="" name="s" id="s" />
+<input type="submit" id="searchsubmit" value="Search" />
+</div>
+</form>
+</div>
+
+<div class="aisHeaderImageRight">
+	<div class="aisHeaderImage">
+	<div class="aisHeaderCornerRight">
+	<div class="aisHeaderCornerLeft">
+	<div class="aisImageBar">
+	<div class="aisSubSites">
+		<a href="index.html" class="aisSubSiteLink"><span class="aisSiteTabRight"><span class="aisSiteTabLeft"><span class="aisSiteTab">
+			home</span></span></span></a>
+		<a class="aisSubSiteLink" href="http://www.adventuresinsoftware.com/blog/?cat=27"><span class="aisSiteTabRight"><span class="aisSiteTabLeft"><span class="aisSiteTab">
+			historic modeling</span></span></span></a>
+		<a class="aisSubSiteLink" href="http://www.adventuresinsoftware.com/blog/?cat=36"><span class="aisSiteTabRight"><span class="aisSiteTabLeft"><span class="aisSiteTab">
+			update controls</span></span></span></a>
+		<a href="http://www.adventuresinsoftware.com/blog/?cat=26" class="aisSubSiteLink"><span class="aisSiteTabRight"><span class="aisSiteTabLeft"><span class="aisSiteTab">
+			degrees of freedom</span></span></span></a>
+		<a class="aisSubSiteLink" href="indexba53.html?page_id=2"><span class="aisSiteTabRight"><span class="aisSiteTabLeft"><span class="aisSiteTab">
+			about us</span></span></span></a>
+
+	</div>
+	</div>
+	</div>
+	</div>
+	</div>
+</div>
+
+<table style="width: 100%" cellspacing="0" cellpadding="0">
+	<tr valign="top">
+		<td width="210px">
+<div id="sidebar">
+<div class="aisLeftColumnFill">
+<div class="aisLeftColumnBottom">
+<div class="aisLeftColumnTop">
+<div id="twitter_div" class="aisLeftNav">
+<h2 class="sidebar-title">Twitter Updates</h2>
+<ul id="twitter_update_list"></ul>
+<a href="http://twitter.com/michaellperry" id="follow">Follow me</a>
+</div>
+<div id="twitter_reply_div" class="aisLeftNav">
+<h2 class="sidebar-title">Twitter Replies</h2>
+<ul id="twitter_reply_list"></ul>
+</div>
+
+<div class="aisLeftNav">
+<a href='http://ineta.org/Speakers/SearchCommunitySpeakers.aspx?SpeakerId=c5110e21-9243-461b-a464-a6548524e885'><img alt='INETA Community Speakers Program' border='0' src='../../www.ineta.org/images/OfficialLogos/InetaCommunitySpeakersRequestMe.html' /></a>
+</div>
+
+<div class="aisLeftNav">
+	<li class="pagenav"><h2>Pages</h2><ul><li class="page_item page-item-2"><a href="indexba53.html?page_id=2" title="About Us">About Us</a></li>
+<li class="page_item page-item-210"><a href="index6ae3.html?page_id=210" title="Templates">Templates</a></li>
+</ul></li></div>
+
+<div class="aisLeftNav">
+<h2>Archives</h2>
+<ul>
+	<li><a href='indexb4d5.html?m=201110' title='October 2011'>October 2011</a></li>
+	<li><a href='indexc61a.html?m=201106' title='June 2011'>June 2011</a></li>
+	<li><a href='indexa80d.html?m=201105' title='May 2011'>May 2011</a></li>
+	<li><a href='index512b.html?m=201104' title='April 2011'>April 2011</a></li>
+	<li><a href='index08fb.html?m=201103' title='March 2011'>March 2011</a></li>
+	<li><a href='index52f4.html?m=201102' title='February 2011'>February 2011</a></li>
+	<li><a href='index74f1.html?m=201101' title='January 2011'>January 2011</a></li>
+	<li><a href='index8956.html?m=201012' title='December 2010'>December 2010</a></li>
+	<li><a href='indexa1aa.html?m=201011' title='November 2010'>November 2010</a></li>
+	<li><a href='indexe3d5.html?m=201010' title='October 2010'>October 2010</a></li>
+	<li><a href='index9ab9.html?m=201009' title='September 2010'>September 2010</a></li>
+	<li><a href='index1ff0.html?m=201008' title='August 2010'>August 2010</a></li>
+	<li><a href='index9f11.html?m=201007' title='July 2010'>July 2010</a></li>
+	<li><a href='index31f0.html?m=201006' title='June 2010'>June 2010</a></li>
+	<li><a href='indexd189.html?m=201005' title='May 2010'>May 2010</a></li>
+	<li><a href='indexb5c0.html?m=201004' title='April 2010'>April 2010</a></li>
+	<li><a href='indexf258.html?m=201003' title='March 2010'>March 2010</a></li>
+	<li><a href='index6e30.html?m=201002' title='February 2010'>February 2010</a></li>
+	<li><a href='index6b19.html?m=201001' title='January 2010'>January 2010</a></li>
+	<li><a href='index5c0a.html?m=200912' title='December 2009'>December 2009</a></li>
+	<li><a href='index8f62.html?m=200911' title='November 2009'>November 2009</a></li>
+	<li><a href='index451d.html?m=200910' title='October 2009'>October 2009</a></li>
+	<li><a href='index3e04.html?m=200909' title='September 2009'>September 2009</a></li>
+	<li><a href='index425a.html?m=200908' title='August 2009'>August 2009</a></li>
+	<li><a href='index9907.html?m=200907' title='July 2009'>July 2009</a></li>
+	<li><a href='index3104.html?m=200906' title='June 2009'>June 2009</a></li>
+	<li><a href='indexc36d.html?m=200905' title='May 2009'>May 2009</a></li>
+	<li><a href='index17e8.html?m=200904' title='April 2009'>April 2009</a></li>
+	<li><a href='index10a5.html?m=200903' title='March 2009'>March 2009</a></li>
+	<li><a href='index8988.html?m=200902' title='February 2009'>February 2009</a></li>
+	<li><a href='index1419.html?m=200901' title='January 2009'>January 2009</a></li>
+	<li><a href='index7866.html?m=200812' title='December 2008'>December 2008</a></li>
+	<li><a href='index55f6.html?m=200811' title='November 2008'>November 2008</a></li>
+	<li><a href='indexa7bc.html?m=200810' title='October 2008'>October 2008</a></li>
+	<li><a href='indexe77c.html?m=200809' title='September 2008'>September 2008</a></li>
+	<li><a href='indexcffc.html?m=200808' title='August 2008'>August 2008</a></li>
+	<li><a href='index0e62.html?m=200807' title='July 2008'>July 2008</a></li>
+	<li><a href='indexfda7.html?m=200806' title='June 2008'>June 2008</a></li>
+	<li><a href='index7d64.html?m=200805' title='May 2008'>May 2008</a></li>
+	<li><a href='index94dd.html?m=200804' title='April 2008'>April 2008</a></li>
+	<li><a href='index9631.html?m=200803' title='March 2008'>March 2008</a></li>
+	<li><a href='indexdd52.html?m=200802' title='February 2008'>February 2008</a></li>
+	<li><a href='index21ee.html?m=200801' title='January 2008'>January 2008</a></li>
+	<li><a href='index363c.html?m=200712' title='December 2007'>December 2007</a></li>
+	<li><a href='index7493.html?m=200711' title='November 2007'>November 2007</a></li>
+	<li><a href='index93a7.html?m=200710' title='October 2007'>October 2007</a></li>
+	<li><a href='index4ca8.html?m=200709' title='September 2007'>September 2007</a></li>
+	<li><a href='index6124.html?m=200708' title='August 2007'>August 2007</a></li>
+	<li><a href='index6013.html?m=200707' title='July 2007'>July 2007</a></li>
+	<li><a href='index2ab6.html?m=200706' title='June 2007'>June 2007</a></li>
+	<li><a href='index44f0.html?m=200705' title='May 2007'>May 2007</a></li>
+	<li><a href='indexf0b4.html?m=200704' title='April 2007'>April 2007</a></li>
+	<li><a href='index481d.html?m=200703' title='March 2007'>March 2007</a></li>
+	<li><a href='indexcbea.html?m=200702' title='February 2007'>February 2007</a></li>
+	<li><a href='index9cdc.html?m=200701' title='January 2007'>January 2007</a></li>
+	<li><a href='index3ea4.html?m=200612' title='December 2006'>December 2006</a></li>
+	<li><a href='index67ca.html?m=200611' title='November 2006'>November 2006</a></li>
+	<li><a href='indexff49.html?m=200610' title='October 2006'>October 2006</a></li>
+	<li><a href='index611c.html?m=200609' title='September 2006'>September 2006</a></li>
+	<li><a href='index9a21.html?m=200608' title='August 2006'>August 2006</a></li>
+	<li><a href='index3ee9.html?m=200607' title='July 2006'>July 2006</a></li>
+	<li><a href='indexe13a.html?m=200606' title='June 2006'>June 2006</a></li>
+</ul>
+</div>
+
+<div class="aisLeftNav">
+	</div>
+
+<div class="aisLeftNav">
+<h2>Books</h2>
+<iframe src="http://rcm.amazon.com/e/cm?t=adventures0d2-20&amp;o=1&amp;p=8&amp;l=as1&amp;asins=0764526413&amp;fc1=000000&amp;IS2=1&amp;lt1=_blank&amp;lc1=0000ff&amp;bc1=000000&amp;bg1=ffffff&amp;f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" name="I5" id="I5"></iframe>
+<br/>
+<iframe src="http://rcm.amazon.com/e/cm?t=adventures0d2-20&amp;o=1&amp;p=8&amp;l=as1&amp;asins=0201633612&amp;fc1=000000&amp;IS2=1&amp;lt1=_blank&amp;lc1=0000ff&amp;bc1=000000&amp;bg1=ffffff&amp;f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" name="I6" id="I6"></iframe>
+<br/>
+<iframe src="http://rcm.amazon.com/e/cm?t=adventures0d2-20&amp;o=1&amp;p=8&amp;l=as1&amp;asins=0136291554&amp;fc1=000000&amp;IS2=1&amp;lt1=_blank&amp;lc1=0000ff&amp;bc1=000000&amp;bg1=ffffff&amp;f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" name="I7" id="I7"></iframe>
+<br/>
+<iframe src="http://rcm.amazon.com/e/cm?t=adventures0d2-20&amp;o=1&amp;p=8&amp;l=as1&amp;asins=1888009195&amp;fc1=000000&amp;IS2=1&amp;lt1=_blank&amp;lc1=0000ff&amp;bc1=000000&amp;bg1=ffffff&amp;f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" name="I8" id="I8"></iframe>
+</div>
+<div class="aisLeftNav">
+<h2>Meta</h2>
+<ul>
+		<li><a href="wp-login.html">Login</a></li>
+	<li><a href="http://validator.w3.org/check/referer" title="This page validates as XHTML 1.0 Transitional">Valid <abbr title="eXtensible HyperText Markup Language">XHTML</abbr></a></li>
+	<li><a href="http://gmpg.org/xfn/"><abbr title="XHTML Friends Network">XFN</abbr></a></li>
+	<li><a href="http://wordpress.org/" title="Powered by WordPress, state-of-the-art semantic personal publishing platform.">WordPress</a></li>
+	</ul>
+</div>
+<div class="aisLeftContent">
+<h2>Community</h2>
+<ul>
+	<script type="text/javascript" src="../../localhost/embed/92q2bbma.js"></script>
+</ul>
+</div>
+
+</div></div></div>
+</div>		</td>
+		<td>
+
+	<div id="content" class="narrowcolumn">
+
+		
+		 		<h2 class="pagetitle">Archive for May, 2011</h2>
+
+		
+
+		<div class="navigation">
+			<div class="alignleft"><a href="indexfa2d.html?m=201105&amp;paged=2">&laquo; Previous Entries</a></div>
+			<div class="alignright"></div>
+		</div>
+
+				<div class="post">
+				<h3 id="post-675"><a href="index8374.html?p=675" rel="bookmark" title="Permanent Link to Thought Cloud UI #5: Arrange your thoughts">Thought Cloud UI #5: Arrange your thoughts</a></h3>
+				<small>Tuesday, May 31st, 2011</small>
+
+				<div class="entry">
+					<p>I’ll be presenting <a href="https://github.com/michaellperry/FacetedWorlds.ThoughtCloud">Thought Cloud</a> at the Dallas .NET User Group and the North Texas Silverlight User Group in a couple of weeks. I’m finishing up the demo now.</p>
+<p>In the last installment, we added the ability to open a cloud in a tab. Now we need to display the thoughts in a cloud of bubbles rather than in a list. To make a plan, I created a mock view.</p>
+<p><a href="../pictures/Thought-Cloud-UI-_11FED/image.png"><img style="background-image: none; border-bottom: 0px; border-left: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top: 0px; border-right: 0px; padding-top: 0px" title="image" border="0" alt="image" src="../pictures/Thought-Cloud-UI-_11FED/image_thumb.png" width="634" height="484" /></a></p>
+<p>The mock is not backed by sample data. It does not bind to the view models. But it does exercise some XAML that we want to use for the real view. Most significantly, I determined how to position the bubbles.</p>
+<p>First, I determined how to position the text within an ellipse. I want the ellipse to be a fixed margin away from the text, but to expand with the text’s length. After playing around with a few variations, the one that worked best for me was to put both the ellipse and the text block in a grid. The text determines the size of the grid, and the grid determines the size of the ellipse.</p>
+<pre class="code"><span style="color: blue">&lt;</span><span style="color: #a31515">Grid</span><span style="color: blue">&gt;
+    &lt;</span><span style="color: #a31515">Ellipse </span><span style="color: blue">/&gt;
+    &lt;</span><span style="color: #a31515">TextBlock </span><span style="color: red">Text</span><span style="color: blue">=&quot;Star Wars&quot; </span><span style="color: red">Margin</span><span style="color: blue">=&quot;15,10&quot; </span><span style="color: red">HorizontalAlignment</span><span style="color: blue">=&quot;Center&quot; </span><span style="color: red">VerticalAlignment</span><span style="color: blue">=&quot;Center&quot; </span><span style="color: blue">/&gt;
+&lt;/</span><span style="color: #a31515">Grid</span><span style="color: blue">&gt;
+</span></pre>
+<p>Then there was the question of positioning the thought bubble within the cloud. My first thought was to use a Canvas. Unfortunately, Canvas lays out its children based on the left and top. I want to position my thought bubbles based on the center. In order to convert center to left and top, I would need to measure width and height. That would require doing the layout in the view. I’m going to try to do everything through data binding in the view model.</p>
+<p>What I settled on was using a Grid as a container, centering each thought bubble, and positioning them thought their margins. A centered bubble at {0,0,0,0} will appear in the center of the Grid. When I change the margin to {10,0,-10,0}, it moves to the right by 10 units. So I need to bind the margin to {X, Y, -X,-Y}.</p>
+<p>Throw in a text block for editing the thought and this is the item template that I need to bind.</p>
+<pre class="code"><span style="color: blue">&lt;</span><span style="color: #a31515">DataTemplate </span><span style="color: red">x</span><span style="color: blue">:</span><span style="color: red">Key</span><span style="color: blue">=&quot;ThoughtItemTemplate&quot;&gt;
+    &lt;</span><span style="color: #a31515">Grid </span><span style="color: red">HorizontalAlignment</span><span style="color: blue">=&quot;Center&quot; </span><span style="color: red">VerticalAlignment</span><span style="color: blue">=&quot;Center&quot; </span><span style="color: red">Margin</span><span style="color: blue">=&quot;{</span><span style="color: #a31515">Binding </span><span style="color: red">Margin</span><span style="color: blue">}&quot;&gt;
+        &lt;</span><span style="color: #a31515">Ellipse </span><span style="color: blue">/&gt;
+        &lt;</span><span style="color: #a31515">TextBlock </span><span style="color: red">Text</span><span style="color: blue">=&quot;{</span><span style="color: #a31515">Binding </span><span style="color: red">Text</span><span style="color: blue">}&quot; </span><span style="color: red">Margin</span><span style="color: blue">=&quot;15,10&quot; </span><span style="color: red">HorizontalAlignment</span><span style="color: blue">=&quot;Center&quot; </span><span style="color: red">VerticalAlignment</span><span style="color: blue">=&quot;Center&quot; </span><span style="color: blue">/&gt;
+        &lt;</span><span style="color: #a31515">TextBox </span><span style="color: red">Text</span><span style="color: blue">=&quot;{</span><span style="color: #a31515">Binding </span><span style="color: red">Text</span><span style="color: blue">, </span><span style="color: red">Mode</span><span style="color: blue">=TwoWay}&quot; </span><span style="color: red">VerticalAlignment</span><span style="color: blue">=&quot;Center&quot; </span><span style="color: red">HorizontalAlignment</span><span style="color: blue">=&quot;Center&quot; </span><span style="color: red">Visibility</span><span style="color: blue">=&quot;{</span><span style="color: #a31515">Binding </span><span style="color: red">Editing</span><span style="color: blue">, </span><span style="color: red">Converter</span><span style="color: blue">={</span><span style="color: #a31515">StaticResource </span><span style="color: red">VisibleWhenTrueConverter</span><span style="color: blue">}}&quot;/&gt;
+    &lt;/</span><span style="color: #a31515">Grid</span><span style="color: blue">&gt;
+&lt;/</span><span style="color: #a31515">DataTemplate</span><span style="color: blue">&gt;
+</span></pre>
+<p>Let’s add these properties to the ThoughtViewModel.</p>
+<pre class="code"><span style="color: blue">public interface </span><span style="color: #2b91af">ThoughtViewModel
+</span>{
+    <span style="color: blue">string </span>Text { <span style="color: blue">get</span>; <span style="color: blue">set</span>; }
+    <span style="color: #2b91af">Thickness </span>Margin { <span style="color: blue">get</span>; }
+    <span style="color: blue">bool </span>Editing { <span style="color: blue">get</span>; }
+}</pre>
+<h3>Calculate position</h3>
+<p>The position of a thought is calculated. In other words, it’s dependent. The user doesn’t get to position it. The tricky part is that it depends upon where the thought falls within the cloud among its neighbors. So a ThoughtViewModel doesn’t have enough information to calculate position. That is the responsibility of the CloudViewModel.</p>
+<p>Let’s give the CloudViewModel a dependent dictionary of Points by Thought. We introduce the Dependent class from Update Controls, which tracks dependency using an update method. It will invoke the update method only when the property is out-of-date. In this case, the dictionary depends upon the collection of thoughts.</p>
+<pre class="code"><span style="color: blue">public class </span><span style="color: #2b91af">CloudViewModel
+</span>{
+    ...
+    <span style="color: blue">private </span><span style="color: #2b91af">Dictionary</span>&lt;<span style="color: #2b91af">Thought</span>, <span style="color: #2b91af">Point</span>&gt; _centerByThought = <span style="color: blue">new </span><span style="color: #2b91af">Dictionary</span>&lt;<span style="color: #2b91af">Thought</span>, <span style="color: #2b91af">Point</span>&gt;();
+    <span style="color: blue">private </span><span style="color: #2b91af">Dependent </span>_depCenterByThought;
+
+    <span style="color: blue">public </span>CloudViewModel(<span style="color: #2b91af">Cloud </span>cloud)
+    {
+        _depCenterByThought = <span style="color: blue">new </span><span style="color: #2b91af">Dependent</span>(() =&gt; _centerByThought = CalculateCenterByThought());
+    }
+
+    <span style="color: blue">private </span><span style="color: #2b91af">Dictionary</span>&lt;<span style="color: #2b91af">Thought</span>, <span style="color: #2b91af">Point</span>&gt; CalculateCenterByThought()
+    {
+        <span style="color: #2b91af">Thought </span>centralThought = _cloud.<strong>CentralThought</strong>;
+        <span style="color: #2b91af">Dictionary</span>&lt;<span style="color: #2b91af">Thought</span>, <span style="color: #2b91af">Point</span>&gt; centerByThought = <span style="color: blue">new </span><span style="color: #2b91af">Dictionary</span>&lt;<span style="color: #2b91af">Thought</span>, <span style="color: #2b91af">Point</span>&gt;();
+        <span style="color: blue">if </span>(centralThought != <span style="color: blue">null</span>)
+        {
+            centerByThought.Add(centralThought, <span style="color: blue">new </span><span style="color: #2b91af">Point</span>(0.0, 0.0));
+            <span style="color: #2b91af">List</span>&lt;<span style="color: #2b91af">Thought</span>&gt; neighbors = centralThought.<strong>Neighbors</strong>
+                .Where(n =&gt; n != centralThought)
+                .ToList();
+            <span style="color: blue">int </span>step = 0;
+            <span style="color: blue">double </span>horizontalRadius = 230.0;
+            <span style="color: blue">double </span>verticalRadius = 120.0;
+            <span style="color: blue">foreach </span>(<span style="color: #2b91af">Thought </span>neighbor <span style="color: blue">in </span>neighbors)
+            {
+                <span style="color: blue">double </span>theta = 2 * <span style="color: #2b91af">Math</span>.PI * (<span style="color: blue">double</span>)step / (<span style="color: blue">double</span>)neighbors.Count;
+                centerByThought.Add(neighbor, <span style="color: blue">new </span><span style="color: #2b91af">Point</span>(
+                    horizontalRadius * <span style="color: #2b91af">Math</span>.Cos(theta),
+                    verticalRadius * <span style="color: #2b91af">Math</span>.Sin(theta)));
+                ++step;
+            }
+        }
+        <span style="color: blue">return </span>centerByThought;
+    }
+}</pre>
+<p>Because the update method gets the neighbors of the central thought, it will become out-of-date whenever a neighbor is added or removed, or the central thought is changed.</p>
+<p>Next we need to give the ThoughtViewModel a way to access its own center point. Let’s pass a function into its constructor. This function will look up the thought’s center point from the dictionary. The call to OnGet will ensure that the dictionary is up-to-date.</p>
+<pre class="code"><span style="color: blue">public class </span><span style="color: #2b91af">CloudViewModel
+</span>{
+    ...
+
+    <span style="color: blue">public </span><span style="color: #2b91af">IEnumerable</span>&lt;<span style="color: #2b91af">ThoughtViewModel</span>&gt; Thoughts
+    {
+        <span style="color: blue">get
+        </span>{
+            <span style="color: #2b91af">Thought </span>centralThought = _cloud.CentralThought;
+            <span style="color: blue">if </span>(centralThought == <span style="color: blue">null</span>)
+            {
+                <span style="color: blue">return </span><span style="color: #2b91af">Enumerable</span>.Repeat(<span style="color: blue">new </span><span style="color: #2b91af">ThoughtViewModelSimulated</span>(_cloud), 1)
+                    .OfType&lt;<span style="color: #2b91af">ThoughtViewModel</span>&gt;();
+            }
+            <span style="color: blue">else
+            </span>{
+                <span style="color: blue">return </span><span style="color: #2b91af">Enumerable</span>.Repeat(<span style="color: blue">new </span><span style="color: #2b91af">ThoughtViewModelActual</span>(centralThought, <strong>GetCenterByThought</strong>), 1).Union(
+                    <span style="color: blue">from </span>n <span style="color: blue">in </span>centralThought.Neighbors
+                    <span style="color: blue">where </span>n != centralThought
+                    <span style="color: blue">select new </span><span style="color: #2b91af">ThoughtViewModelActual</span>(n, <strong>GetCenterByThought</strong>))
+                    .OfType&lt;<span style="color: #2b91af">ThoughtViewModel</span>&gt;();
+            }
+        }
+    }
+
+    <span style="color: blue">private </span><span style="color: #2b91af">Point </span>GetCenterByThought(<span style="color: #2b91af">Thought </span>thought)
+    {
+        _depCenterByThought.OnGet();
+        <span style="color: #2b91af">Point </span>center = <span style="color: blue">new </span><span style="color: #2b91af">Point</span>();
+        _centerByThought.TryGetValue(thought, <span style="color: blue">out </span>center);
+        <span style="color: blue">return </span>center;
+    }
+}</pre>
+<p>Now the ThoughtViewModel can calculate its own Margin.</p>
+<pre class="code"><span style="color: blue">public class </span><span style="color: #2b91af">ThoughtViewModelActual </span>: <span style="color: #2b91af">ThoughtViewModel
+</span>{
+    ...
+    <span style="color: blue">private readonly </span>Func&lt;<span style="color: #2b91af">Thought</span>, <span style="color: #2b91af">Point</span>&gt; _getCenterByThought;
+
+    <span style="color: blue">public </span>ThoughtViewModelActual(<span style="color: #2b91af">Thought </span>thought, Func&lt;<span style="color: #2b91af">Thought</span>, <span style="color: #2b91af">Point</span>&gt; getCenterByThought)
+    {
+        _getCenterByThought = getCenterByThought;
+    }
+
+    <span style="color: blue">public </span><span style="color: #2b91af">Thickness </span>Margin
+    {
+        <span style="color: blue">get
+        </span>{
+            <span style="color: #2b91af">Point </span>center = _getCenterByThought(_thought);
+            <span style="color: blue">return new </span><span style="color: #2b91af">Thickness</span>(center.X, center.Y, -center.X, -center.Y);
+        }
+    }
+}</pre>
+<p>By using a dependent dictionary, the cloud can calculate the position of all of its thoughts once, and let each thought access it to data bind into place. When a new thought arrives, either from the local user or from a remote collaborator, the positioning will be recalculated and all thoughts will move to their new locations.</p>
+<p><a href="../pictures/Thought-Cloud-UI-_11FED/Thought-Cloud.png"><img style="background-image: none; border-bottom: 0px; border-left: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top: 0px; border-right: 0px; padding-top: 0px" title="Thought Cloud" border="0" alt="Thought Cloud" src="../pictures/Thought-Cloud-UI-_11FED/Thought-Cloud_thumb.png" width="609" height="346" /></a></p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="index38d0.html?cat=46" title="View all posts in Correspondence" rel="category">Correspondence</a> |   <a href="index8374.html?p=675#respond" title="Comment on Thought Cloud UI #5: Arrange your thoughts">No Comments &#187;</a></p>
+
+			</div>
+
+				<div class="post">
+				<h3 id="post-674"><a href="index030b.html?p=674" rel="bookmark" title="Permanent Link to Thought Cloud UI #4: Open the clouds">Thought Cloud UI #4: Open the clouds</a></h3>
+				<small>Monday, May 30th, 2011</small>
+
+				<div class="entry">
+					<p>The <a href="https://github.com/michaellperry/FacetedWorlds.ThoughtCloud">Thought Cloud</a> example will be ready just in time for my talk at the Dallas .NET User Group. I hope you’ll join me.</p>
+<p>We’ve created a very simple home view that shows a list of clouds and has an add button. Next we’ll need to open a cloud and show it in a separate view. Remember how we keep track of what the user has opened? That’s right: the navigation model.</p>
+<pre class="code"><span style="color: blue">public class </span><span style="color: #2b91af">NavigationModel
+</span>{
+    ... </pre>
+<pre class="code">    <span style="color: blue">private </span><span style="color: #2b91af"><strong>IndependentList</strong></span>&lt;<span style="color: #2b91af">Cloud</span>&gt; _openClouds = <span style="color: blue">new </span><span style="color: #2b91af">IndependentList</span>&lt;<span style="color: #2b91af">Cloud</span>&gt;();
+
+    <span style="color: blue">public </span><span style="color: #2b91af">IEnumerable</span>&lt;<span style="color: #2b91af">Cloud</span>&gt; OpenClouds
+    {
+        <span style="color: blue">get </span>{ <span style="color: blue">return </span>_openClouds; }
+    }
+
+    <span style="color: blue">public void </span>OpenCloud(<span style="color: #2b91af">Cloud </span>cloud)
+    {
+        <span style="color: blue">if </span>(!_openClouds.Contains(cloud))
+            _openClouds.Add(cloud);
+    }
+}</pre>
+<p>We keep an IndependentList of opened clouds. This is kind of like an ObservableCollection, but it works with dependency tracking. Whenever a cloud is added or removed, all dependent properties that reference this list will be updated.</p>
+<p>To add a cloud to the list, we need to know which one the user has selected. So we add that to the navigation model too.</p>
+<pre class="code"><span style="color: blue">public class </span><span style="color: #2b91af">NavigationModel
+</span>{
+    ...
+
+    <span style="color: blue">private </span><span style="color: #2b91af">Independent</span>&lt;<span style="color: #2b91af">Cloud</span>&gt; _selectedCloud = <span style="color: blue">new </span><span style="color: #2b91af">Independent</span>&lt;<span style="color: #2b91af">Cloud</span>&gt;();
+
+    <span style="color: blue">public </span><span style="color: #2b91af">Cloud </span>SelectedCloud
+    {
+        <span style="color: blue">get </span>{ <span style="color: blue">return </span>_selectedCloud; }
+        <span style="color: blue">set </span>{ _selectedCloud.Value = <span style="color: blue">value</span>; }
+    }
+}</pre>
+<p>And then we need to data bind that to the SelectedItem of the list box. Since the list box shows CloudSummaryViewModels, the SelectedItem needs to be of that type as well.</p>
+<pre class="code"><span style="color: blue">public class </span><span style="color: #2b91af">HomeViewModel
+</span>{
+    ...
+
+    <span style="color: blue">public </span><span style="color: #2b91af">CloudSummaryViewModel </span>SelectedCloud
+    {
+        <span style="color: blue">get
+        </span>{
+            <span style="color: blue">return </span>_navigation.SelectedCloud == <span style="color: blue">null
+                </span>? <span style="color: blue">null
+                </span>: <span style="color: blue">new </span><span style="color: #2b91af">CloudSummaryViewModel</span>(_navigation.SelectedCloud);
+        }
+        <span style="color: blue">set
+        </span>{
+            _navigation.SelectedCloud = <span style="color: blue">value </span>== <span style="color: blue">null
+                </span>? <span style="color: blue">null
+                </span>: <span style="color: blue">value</span>.Cloud;
+        }
+    }
+}</pre>
+<p>Now we have all the pieces to create the OpenCloud command.</p>
+<pre class="code"><span style="color: blue">public class </span><span style="color: #2b91af">HomeViewModel
+</span>{
+    ...
+
+    <span style="color: blue">public </span><span style="color: #2b91af">ICommand </span>OpenCloud
+    {
+        <span style="color: blue">get
+        </span>{
+            <span style="color: blue">return </span><span style="color: #2b91af">MakeCommand
+                </span>.When(() =&gt; _navigation.SelectedCloud != <span style="color: blue">null</span>)
+                .Do(() =&gt; _navigation.OpenCloud(_navigation.SelectedCloud));
+        }
+    }
+}</pre>
+</p>
+<p>Data bind the SelectedItem of the cloud list and an “Open Cloud” button in the home view. Now the user can select a cloud and open it. Nothing happens, yet, but it’s added to the navigation model.</p>
+<h3>Tab through the open clouds</h3>
+<p>Next we want a tab control that displays all of the open clouds. So we’ll need a view model for a tab. This will determine the tab header and content.</p>
+<pre class="code"><span style="color: blue">public class </span><span style="color: #2b91af">CloudTabViewModel
+</span>{
+    <span style="color: blue">private readonly </span><span style="color: #2b91af">Cloud </span>_cloud;
+
+    <span style="color: blue">public </span>CloudTabViewModel(<span style="color: #2b91af">Cloud </span>cloud)
+    {
+        _cloud = cloud;
+    }
+
+    <span style="color: blue">internal </span><span style="color: #2b91af">Cloud </span>Cloud
+    {
+        <span style="color: blue">get </span>{ <span style="color: blue">return </span>_cloud; }
+    }
+
+    <span style="color: blue">public string </span><strong>Header</strong>
+    {
+        <span style="color: blue">get
+        </span>{
+            <span style="color: #2b91af">Thought </span>centralThought = _cloud.CentralThought;
+            <span style="color: blue">if </span>(centralThought == <span style="color: blue">null</span>)
+                <span style="color: blue">return </span><span style="color: #a31515">&quot;&lt;New cloud&gt;&quot;</span>;
+            <span style="color: blue">string </span>text = centralThought.Text;
+            <span style="color: blue">if </span>(text == <span style="color: blue">null</span>)
+                <span style="color: blue">return </span><span style="color: #a31515">&quot;&lt;New cloud&gt;&quot;</span>;
+            <span style="color: blue">return </span>text;
+        }
+    }
+
+    <span style="color: blue">public </span><span style="color: #2b91af">CloudViewModel </span><strong>Content</strong>
+    {
+        <span style="color: blue">get </span>{ <span style="color: blue">return new </span><span style="color: #2b91af">CloudViewModel</span>(_cloud); }
+    }
+}</pre>
+<p>The content, of course, will be a CloudView. We’ll build that user control next time. For now, we add the open clouds to the MainViewModel.</p>
+<pre class="code"><span style="color: blue">public class </span><span style="color: #2b91af">MainViewModel
+</span>{
+    ...
+
+    <span style="color: blue">public </span><span style="color: #2b91af">IEnumerable</span>&lt;<span style="color: #2b91af">CloudTabViewModel</span>&gt; OpenClouds
+    {
+        <span style="color: blue">get
+        </span>{
+            <span style="color: blue">return
+                from </span>cloud <span style="color: blue">in </span>_navigationModel.OpenClouds
+                <span style="color: blue">select new </span><span style="color: #2b91af">CloudTabViewModel</span>(cloud);
+        }
+    }
+}</pre>
+<p>Add a tab control to the MainPage and bind ItemsSource to OpenClouds. This should work, but Silverlight throws an exception.</p>
+<blockquote>
+<p>Unable to cast object of type 'UpdateControls.XAML.Wrapper.ObjectInstance`1[FacetedWorlds.ThoughtCloud.ViewModel.CloudTabViewModel]' to type 'System.Windows.Controls.TabItem'.</p>
+</blockquote>
+<p>Amanda Wang provides the <a href="http://forums.silverlight.net/forums/t/44291.aspx">solution</a>. We’ve given the view a list of CloudTabViewModels (which Update Controls has wrapped for dependency tracking), but it expects a list of TabItems. We need to convert them.</p>
+<p>I created a value converter based on Amanda’s proposed solution, but I made it specific to Update Controls. It data binds the Header and Content properties to the source object. It also expects an ObservableCollection, so that changes to the collection result in changes to tabs. See the source code for details.</p>
+<p>Now when a user selects a cloud from the list and hits the open button, the cloud is added to the navigation model. The tabs depend upon the navigation model, so the new tab is opened.</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="index38d0.html?cat=46" title="View all posts in Correspondence" rel="category">Correspondence</a> |   <a href="index030b.html?p=674#respond" title="Comment on Thought Cloud UI #4: Open the clouds">No Comments &#187;</a></p>
+
+			</div>
+
+				<div class="post">
+				<h3 id="post-673"><a href="index8631.html?p=673" rel="bookmark" title="Permanent Link to Thought Cloud UI #3: Synchronization status">Thought Cloud UI #3: Synchronization status</a></h3>
+				<small>Thursday, May 26th, 2011</small>
+
+				<div class="entry">
+					<p>The <a href="https://github.com/michaellperry/FacetedWorlds.ThoughtCloud">Thought Cloud</a> demo is on GitHub. Fork it and follow along.</p>
+<p>We just got an application limping along. It hard-codes the user, and it displays a list of clouds. We can see that isolated storage is working for us, because we can close the application and our clouds don’t disappear. But how do we know if the communication strategy is working?</p>
+<p>You can report the status of the communications directly to your user through data binding. Community has two properties designed for this:</p>
+<ul>
+<li>Synchronizing</li>
+<li>LastException</li>
+</ul>
+<p>These two properties are Independent, so you can data bind them through any view model. Let’s add these to the MainViewModel.</p>
+<pre class="code"><span style="color: blue">public bool </span>Synchronizing
+{
+    <span style="color: blue">get </span>{ <span style="color: blue">return </span>_community.Synchronizing; }
+}
+
+<span style="color: blue">public bool </span>HasError
+{
+    <span style="color: blue">get </span>{ <span style="color: blue">return </span>_community.LastException != <span style="color: blue">null</span>; }
+}
+
+<span style="color: blue">public string </span>LastError
+{
+    <span style="color: blue">get
+    </span>{
+        <span style="color: blue">return </span>_community.LastException == <span style="color: blue">null
+            </span>? <span style="color: blue">null
+            </span>: _community.LastException.Message;
+    }
+}</pre>
+<p>Then we can data bind these properties to some controls. The busy indicator will be visible when Synchronizing is true. The error indicator will be visible when HasError is true. And the text of the error indicator will be the LastError string. To help us convert boolean to Visibility, let’s add a reference to Itzben. It contains a useful little VisibleWhenTrueConverter. Itzben is available on NuGet.</p>
+<p><a href="../pictures/Thought-Cloud-UI-3-Status-reporting_110DB/image.png"><img style="background-image: none; border-bottom: 0px; border-left: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top: 0px; border-right: 0px; padding-top: 0px" title="image" border="0" alt="image" src="../pictures/Thought-Cloud-UI-3-Status-reporting_110DB/image_thumb.png" width="618" height="738" /></a></p>
+<p>When we run the app, we see a problem. The error message says: “Domain &lt;&lt;Your API key&gt;&gt; not registered.” We have to use a real Correspondence API key. If you want to use my Correspondence server, please email or mention me for a key. I am letting people use the server free for a limited time.</p>
+<pre class="code"><span style="color: blue">public class </span><span style="color: #2b91af">POXConfigurationProvider </span>: <span style="color: #2b91af">IPOXConfigurationProvider
+</span>{
+    <span style="color: blue">public </span><span style="color: #2b91af">POXConfiguration </span>Configuration
+    {
+        <span style="color: blue">get
+        </span>{
+            <span style="color: blue">string </span>address = <span style="color: #a31515">&quot;https://api.facetedworlds.com:9443/correspondence_server_web/pox&quot;</span>;
+            <span style="color: blue">string </span>apiKey = <span style="color: #a31515">&quot;<strong>B22E33EB0ABD46FE9161BF4FB8748A65</strong>&quot;</span>;
+            <span style="color: blue">return new </span><span style="color: #2b91af">POXConfiguration</span>(address, <span style="color: #a31515">&quot;FacetedWorlds.ThoughtCloud&quot;</span>, apiKey);
+        }
+    }
+}</pre>
+<p>Once we put the real API key in place, the service works. It sends new clouds to the server. If you run the application on a different machine, it will pull those clouds back down from the server.</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="index38d0.html?cat=46" title="View all posts in Correspondence" rel="category">Correspondence</a> |   <a href="index8631.html?p=673#respond" title="Comment on Thought Cloud UI #3: Synchronization status">No Comments &#187;</a></p>
+
+			</div>
+
+				<div class="post">
+				<h3 id="post-672"><a href="indexaa11.html?p=672" rel="bookmark" title="Permanent Link to Thought Cloud UI #2: Summary view models">Thought Cloud UI #2: Summary view models</a></h3>
+				<small>Wednesday, May 25th, 2011</small>
+
+				<div class="entry">
+					<p>We’ve started building the <a href="https://github.com/michaellperry/FacetedWorlds.ThoughtCloud">Thought Cloud</a> user interface. It won’t be long until we see something working.</p>
+<p><a href="wp-content/uploads/2011/05/image.png"><img style="border-right-width: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; margin-left: 0px; border-left-width: 0px; margin-right: 0px" title="image" border="0" alt="image" align="right" src="wp-content/uploads/2011/05/image-thumb.png" width="288" height="266" /></a> I like to build Silverlight user interfaces via composition. I construct each view as a separate UserControl. Then I compose them into a working application. Taking this approach, let’s create a Views folder in the application, and a HomeView UserControl.</p>
+<p>I use Visual Studio to cerate all of my user controls, since Blend messes up the namespaces. But once it’s created, I switch to Blend for everything else.</p>
+<h3>Create sample data</h3>
+<p>The HomeView will be data bound to the HomeViewModel. The first step is to create sample data from that class. This will give us all of the properties that we can data bind to, and it will let Blend automatically generate some very useful things.</p>
+<p><a href="wp-content/uploads/2011/05/image1.png"><img style="border-bottom: 0px; border-left: 0px; display: inline; border-top: 0px; border-right: 0px" title="image" border="0" alt="image" src="wp-content/uploads/2011/05/image-thumb1.png" width="280" height="134" /></a> </p>
+<p><a href="wp-content/uploads/2011/05/image2.png"><img style="border-bottom: 0px; border-left: 0px; display: inline; border-top: 0px; border-right: 0px" title="image" border="0" alt="image" src="wp-content/uploads/2011/05/image-thumb2.png" width="324" height="484" /></a> </p>
+<p>The home view model simply has a list of clouds and a command to add a new cloud. Each cloud in the list has a list of thoughts and a command to add a new thought. There’s a problem with that. On <em>this</em> view, we intend to show a summary of each cloud. The <em>next</em> view will let you edit thoughts. Let’s change our cloud view models to cloud summary view models.</p>
+<pre class="code"><span style="color: blue">public class </span><span style="color: #2b91af">CloudSummaryViewModel
+</span>{
+    <span style="color: blue">private </span><span style="color: #2b91af">Cloud </span>_cloud;
+
+    <span style="color: blue">public </span>CloudSummaryViewModel(<span style="color: #2b91af">Cloud </span>cloud)
+    {
+        _cloud = cloud;
+    }
+
+    <span style="color: blue"><strong>internal</strong> </span><span style="color: #2b91af">Cloud </span>Cloud
+    {
+        <span style="color: blue">get </span>{ <span style="color: blue">return </span>_cloud; }
+    }
+
+    <span style="color: blue">public string </span>Text
+    {
+        <span style="color: blue">get
+        </span>{
+            <span style="color: #2b91af">Thought </span>centralThought = _cloud.CentralThought;
+            <span style="color: blue">if </span>(centralThought == <span style="color: blue">null</span>)
+                <span style="color: blue">return </span><span style="color: #a31515">&quot;&lt;New cloud&gt;&quot;</span>;
+            <span style="color: blue">string </span>text = centralThought.Text;
+            <span style="color: blue">if </span>(text == <span style="color: blue">null</span>)
+                <span style="color: blue">return </span><span style="color: #a31515">&quot;&lt;New cloud&gt;&quot;</span>;
+            <span style="color: blue">return </span>text;
+        }
+    }
+
+    <span style="color: blue">public override bool </span><strong>Equals</strong>(<span style="color: blue">object </span>obj)
+    {
+        <span style="color: blue">if </span>(obj == <span style="color: blue">this</span>)
+            <span style="color: blue">return true</span>;
+        <span style="color: #2b91af">CloudSummaryViewModel </span>that = obj <span style="color: blue">as </span><span style="color: #2b91af">CloudSummaryViewModel</span>;
+        <span style="color: blue">if </span>(that == <span style="color: blue">null</span>)
+            <span style="color: blue">return false</span>;
+        <span style="color: blue">return </span>_cloud == that._cloud;
+    }
+
+    <span style="color: blue">public override int </span><strong>GetHashCode</strong>()
+    {
+        <span style="color: blue">return </span>_cloud.GetHashCode();
+    }
+}</pre>
+<p>The cloud summary view model displays the text of the central thought. If it has no central thought, or if the text is not yet initialized, then it displays “&lt;New cloud&gt;”. This is different than the “My thought” behavior that we implemented in the cloud view model. When the user is looking at a list of clouds, they might get confused if one of them claims to be a thought.</p>
+<p>The cloud summary view model also returns the wrapped Cloud object, and implements Equals and GetHashCode. This pattern always arises for a view model that appears in a selectable list. The Cloud property let’s us correlate user selection with the model (it is internal so that we don’t accidentally data bind to it). And the Equals and GetHashCode methods make sure that the user selection is equal to a member of the list, even if a new view model is created.</p>
+<h3>Regenerate sample data</h3>
+<p>Since we changed the view model after generating the sample data, Blend warns us that it is incorrect.</p>
+<p><a href="wp-content/uploads/2011/05/image3.png"><img style="border-bottom: 0px; border-left: 0px; display: inline; border-top: 0px; border-right: 0px" title="image" border="0" alt="image" src="wp-content/uploads/2011/05/image-thumb3.png" width="282" height="150" /></a> </p>
+<p><a href="wp-content/uploads/2011/05/image4.png"><img style="border-bottom: 0px; border-left: 0px; display: inline; margin-left: 0px; border-top: 0px; margin-right: 0px; border-right: 0px" title="image" border="0" alt="image" align="right" src="wp-content/uploads/2011/05/image-thumb4.png" width="244" height="192" /></a>The easiest thing to do is delete it and recreate it. Then we can drag the Clouds property onto the art board. We end up with a list box filled with lorem ipsum text for several clouds.</p>
+<p>What Blend has done is to create an item template that brings in the item properties. In this case, the list contains CloudSummaryViewModels, which has only the Text property. (Remember that we made the Cloud property internal so Blend would ignore it.) To see the generated item template, right-click the list, choose “Edit Additional Templates”, “Edit Generated Items (ItemTemplate)”, “Edit Current”.</p>
+<p><a href="wp-content/uploads/2011/05/image5.png"><img style="border-bottom: 0px; border-left: 0px; display: inline; border-top: 0px; border-right: 0px" title="image" border="0" alt="image" src="wp-content/uploads/2011/05/image-thumb5.png" width="650" height="105" /></a> </p>
+<p>This will dive into the list box and show you an item template with just one TextBlock. It is bound to the Text property.</p>
+<h3>Compose the application</h3>
+<p>To see the application running, we need to do a couple more things. First, drop a button on the HomeView and drag the AddCloud command onto it. This data binds the button to the command. Then open the MainPage and add a HomeView to the page. You can get to the HomeView by clicking the “Assets” toolbar button and selecting “Project”.</p>
+<p><a href="wp-content/uploads/2011/05/image6.png"><img style="border-bottom: 0px; border-left: 0px; display: inline; border-top: 0px; border-right: 0px" title="image" border="0" alt="image" src="wp-content/uploads/2011/05/image-thumb6.png" width="468" height="138" /></a> </p>
+</p>
+</p>
+<p>Now we need to give the view a view model. Recall from the last post that MainPage uses a view model locator to find a MainViewModel. So we can just expose a HomeViewModel from MainViewModel.</p>
+<pre class="code"><span style="color: blue">public </span><span style="color: #2b91af">HomeViewModel </span>Home
+{
+    <span style="color: blue">get
+    </span>{
+        <span style="color: blue">return </span>_navigationModel.CurrentUser == <span style="color: blue">null
+            </span>? <span style="color: blue">null
+            </span>: <span style="color: blue">new </span><span style="color: #2b91af">HomeViewModel</span>(_navigationModel.CurrentUser);
+    }
+}</pre>
+<p>This property will give us a home view model if the user is logged in. If not, it will return null. When the user logs in or out, CurrentUser changes (remember that it is Independent), so the view model will fire PropertyChanged. We haven’t implemented the log in logic, so let’s just fake it for now.</p>
+<pre class="code"><span style="color: blue">public class </span><span style="color: #2b91af">SynchronizationService
+</span>{
+    ...
+
+    <span style="color: blue">public void </span>Initialize()
+    {
+        ...
+
+        _navigationModel.CurrentUser = _community.AddFact(<span style="color: blue">new </span><span style="color: #2b91af">Identity</span>(<span style="color: #a31515">&quot;mike&quot;</span>));
+    }
+}</pre>
+<p>All that remains is to data bind the DataContext of the HomeView inside of the MainPage to the Home property. Generate sample data for MainViewModel, and drag the Home property onto the HomeView. We now have an app that will add “&lt;New Cloud&gt;” to a list box whenever you hit the “New Cloud” button.</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="index38d0.html?cat=46" title="View all posts in Correspondence" rel="category">Correspondence</a> |   <a href="indexaa11.html?p=672#respond" title="Comment on Thought Cloud UI #2: Summary view models">No Comments &#187;</a></p>
+
+			</div>
+
+				<div class="post">
+				<h3 id="post-657"><a href="index7d08.html?p=657" rel="bookmark" title="Permanent Link to Thought Cloud UI #1: Structure of the UI project">Thought Cloud UI #1: Structure of the UI project</a></h3>
+				<small>Tuesday, May 24th, 2011</small>
+
+				<div class="entry">
+					<p>The TDD phase of <a href="https://github.com/michaellperry/FacetedWorlds.ThoughtCloud">Thought Cloud</a> is done (for now). Now we begin building the user interface.</p>
+<p>When I set up the project structure, I added the NuGet package “Correspondence.Silverlight.App” to a Silverlight application. In addition to adding a reference to the Correspondence and Update Controls assemblies, this added a few features to the app:</p>
+<ul>
+<li>View Model Locator </li>
+<li>Synchronization Service </li>
+<li>Navigation Model </li>
+</ul>
+<h3>View Model Locator</h3>
+<p>I am not a big fan of the View Model Locator pattern. I believe that it is backwards. A view should not locate its view model: a view model should be injected into a view. Nevertheless, Silverlight’s architecture makes it easier to work with the VML than against it. So I’ll fight that battle another day.</p>
+<p>The ViewModelLocator class created by the NuGet package exposes a MainViewModel. It wraps the view model for the view using Update Controls’ ForView.Wrap() method. This sets up all of the property changed notification through automatic dependency tracking.</p>
+<pre class="code"><span style="color: blue">public class </span><span style="color: #2b91af">ViewModelLocator
+</span>{
+    <span style="color: blue">private readonly </span><span style="color: #2b91af">SynchronizationService </span>_synchronizationService;
+
+    <span style="color: blue">private readonly </span><span style="color: #2b91af">MainViewModel </span>_main;
+
+    <span style="color: blue">public </span>ViewModelLocator()
+    {
+        <span style="color: #2b91af">NavigationModel </span>navigationModel = <span style="color: blue">new </span><span style="color: #2b91af">NavigationModel</span>();
+        _synchronizationService = <span style="color: blue">new </span><span style="color: #2b91af">SynchronizationService</span>(navigationModel);
+        <span style="color: blue">if </span>(!<span style="color: #2b91af">DesignerProperties</span>.IsInDesignTool)
+            _synchronizationService.Initialize();
+        _main = <span style="color: blue">new </span><span style="color: #2b91af">MainViewModel</span>(_synchronizationService.Community, navigationModel, _synchronizationService);
+    }
+
+    <span style="color: blue">public object </span>Main
+    {
+        <span style="color: blue">get </span>{ <span style="color: blue">return </span><strong><span style="color: #2b91af">ForView</span>.Wrap</strong>(_main); }
+    }
+}</pre>
+<p>To use the view model locator, we follow the instructions in Readme.txt. We need to add it to application resources, and reference it from the main page.</p>
+<p>In addition, the view model locator creates the synchronization service and navigation model, and passes those into the main view model.</p>
+<h3>Synchronization Service</h3>
+<p>The SynchronizationService class is responsible for synchronizing the local data storage with the remote service. As part of that responsibility, it sets up the Community. It uses the IsolatedStorageStorageStrategy to persist facts locally, and the POXAsynchronousCommunicationStrategy to exchange those facts with the server.</p>
+<pre class="code"><span style="color: blue">public class </span><span style="color: #2b91af">SynchronizationService
+</span>{
+    ...
+
+    <span style="color: blue">public void </span>Initialize()
+    {
+        <span style="color: #2b91af">POXConfigurationProvider </span>configurationProvider = <span style="color: blue">new </span><span style="color: #2b91af">POXConfigurationProvider</span>();
+        _community = <span style="color: blue">new </span><span style="color: #2b91af">Community</span>(<span style="color: #2b91af">IsolatedStorageStorageStrategy</span>.Load())
+            .AddAsynchronousCommunicationStrategy(<span style="color: blue">new </span><span style="color: #2b91af">POXAsynchronousCommunicationStrategy</span>(configurationProvider))
+            .Register&lt;<span style="color: #2b91af">CorrespondenceModel</span>&gt;()
+            <strong>.Subscribe(() =&gt; _navigationModel.CurrentUser)
+</strong>            <strong>.Subscribe(() =&gt; _navigationModel.CurrentUser.SharedClouds)
+</strong>            <strong>.Subscribe(() =&gt; _navigationModel.CurrentUser.Clouds)
+</strong>            ;
+
+        <span style="color: green">// Synchronize whenever the user has something to send.
+        </span>_community.FactAdded += <span style="color: blue">delegate
+        </span>{
+            Synchronize();
+        };
+
+        <span style="color: green">// And synchronize on startup.
+        </span>Synchronize();
+    }
+
+    ...
+}</pre>
+<p>During testing, we found which subscriptions need to be set up. We add those subscriptions here. The synchronization service subscribes to the current user as provided by the navigation model.</p>
+<h3>Navigation Model</h3>
+<p>The NavigationModel class is responsible for maintaining the user temporary state. This state represents the user’s point-of-view as they navigate through the system. Typical things that you will find in a <a href="http://updatecontrols.net/doc/tips/navigationmodel">navigation model</a> are:</p>
+<ul>
+<li>Selected items </li>
+<li>Search terms </li>
+<li>Open windows </li>
+<li>User session </li>
+</ul>
+<p>These things are all important to the user, but not actually part of the model. They are transient, and don’t get persisted to storage or shared with other users.</p>
+<pre class="code"><span style="color: blue">public class </span><span style="color: #2b91af">NavigationModel
+</span>{
+    <span style="color: blue">private </span><span style="color: #2b91af"><strong>Independent</strong></span>&lt;<span style="color: #2b91af">Identity</span>&gt; _currentUser = <span style="color: blue">new </span><span style="color: #2b91af">Independent</span>&lt;<span style="color: #2b91af">Identity</span>&gt;();
+
+    <span style="color: blue">public </span><span style="color: #2b91af">Identity </span>CurrentUser
+    {
+        <span style="color: blue">get </span>{ <span style="color: blue">return </span>_currentUser; }
+        <span style="color: blue">set </span>{ _currentUser.Value = <span style="color: blue">value</span>; }
+    }
+}</pre>
+<p>Fields of a navigation model are independent, meaning that the user can change them directly. We have to mark them using the Update Controls Independent modifier. Dependent behaviors, like view model properties and subscriptions, will respond to changes in independent fields. So when a user logs on and CurrentUser is set, not only will the view model update (and fire the appropriate PropertyChanged events), but the Community subscriptions will refresh as well.</p>
+<p>With these three components generated for us, we can start assembling the user interface of the application.</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="index38d0.html?cat=46" title="View all posts in Correspondence" rel="category">Correspondence</a> |   <a href="index7d08.html?p=657#respond" title="Comment on Thought Cloud UI #1: Structure of the UI project">No Comments &#187;</a></p>
+
+			</div>
+
+				<div class="post">
+				<h3 id="post-656"><a href="indexe712.html?p=656" rel="bookmark" title="Permanent Link to Thought Cloud TDD #10: Think back">Thought Cloud TDD #10: Think back</a></h3>
+				<small>Tuesday, May 24th, 2011</small>
+
+				<div class="entry">
+					<p>We’re just about done with the TDD push on <a href="https://github.com/michaellperry/FacetedWorlds.ThoughtCloud">Thought Cloud</a>. This is the last test before creating some UI.</p>
+<p>In the last test, Mike published a thought to Russell. Let’s see if Russell can send one back to Mike.</p>
+<pre class="code">[<span style="color: #2b91af">TestMethod</span>]
+<span style="color: blue">public void </span>RussellCanShareAThoughtWithMike()
+{
+    <span style="color: #2b91af">Cloud </span>cloud = MikeSharesCloudWithRussell();
+    <span style="color: #2b91af">Thought </span>thought = cloud.NewThought();
+    cloud.CentralThought = thought;
+    thought.Text = <span style="color: #a31515">&quot;Lunch suggestions&quot;</span>;
+
+    Synchronize();
+
+    <span style="color: #2b91af">Cloud </span>sharedCloud = _russellsIdentity.SharedClouds.Single();
+    <span style="color: #2b91af">Thought </span>newThought = sharedCloud.NewThought();
+    newThought.Text = <span style="color: #a31515">&quot;Mi Pueblo&quot;</span>;
+    <span style="color: #2b91af">Thought </span>centralThought = sharedCloud.CentralThought;
+    centralThought.LinkTo(newThought);
+
+    Synchronize();
+
+    <span style="color: #2b91af">IEnumerable</span>&lt;<span style="color: #2b91af">Thought</span>&gt; suggestions = thought.Neighbors.Where(n =&gt; n != thought);
+    <span style="color: #2b91af">Assert</span>.AreEqual(1, suggestions.Count());
+    <span style="color: blue">string </span>suggestionText = suggestions.Single().Text;
+    <span style="color: #2b91af">Assert</span>.AreEqual(<span style="color: #a31515">&quot;Mi Pueblo&quot;</span>, suggestionText);
+}</pre>
+<p>In this test, Mike shares a cloud with the central thought “Lunch suggestions” with Russell. Russell responds by creating a linked thought with the text “Mi Pueblo”. Does Mike see the response?</p>
+<p>No! The test fails. Can you see why?</p>
+<p>The reason is that we have subscribed to all clouds shared with us. We haven’t subscribed to the clouds that we created ourselves.</p>
+<pre class="code">_mikesCommunity = <span style="color: blue">new </span><span style="color: #2b91af">Community</span>(<span style="color: blue">new </span><span style="color: #2b91af">MemoryStorageStrategy</span>())
+    .AddCommunicationStrategy(sharedCommunication)
+    .Register&lt;Model.<span style="color: #2b91af">CorrespondenceModel</span>&gt;()
+    .Subscribe(() =&gt; _mikesIdentity)
+    .Subscribe(() =&gt; _mikesIdentity.SharedClouds)
+    <strong>.Subscribe(() =&gt; _mikesIdentity.Clouds)
+</strong>    ;</pre>
+<p>With this new subscription, the test passes. Mike created the cloud, so now he subscribes to it. When Russell adds a thought to it, that thought is published to Mike’s cloud.</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="index38d0.html?cat=46" title="View all posts in Correspondence" rel="category">Correspondence</a> |   <a href="indexe712.html?p=656#respond" title="Comment on Thought Cloud TDD #10: Think back">No Comments &#187;</a></p>
+
+			</div>
+
+				<div class="post">
+				<h3 id="post-655"><a href="indexef11.html?p=655" rel="bookmark" title="Permanent Link to Thought Cloud TDD #9: Penny for your thoughts">Thought Cloud TDD #9: Penny for your thoughts</a></h3>
+				<small>Monday, May 23rd, 2011</small>
+
+				<div class="entry">
+					<p>The <a href="https://github.com/michaellperry/FacetedWorlds.ThoughtCloud">Thought Cloud</a> application just needs a few more tests. Then we are on to building the UI.</p>
+<p>In the last test, we made it possible to share clouds with other users. But what we really want to do is share thoughts.</p>
+<pre class="code">[<span style="color: #2b91af">TestMethod</span>]
+<span style="color: blue">public void </span>MikeCanShareThoughtsWithRussell()
+{
+    <span style="color: #2b91af">Cloud </span>cloud = MikeSharesCloudWithRussell();
+    <span style="color: #2b91af">Thought </span>thought = cloud.NewThought();
+    cloud.CentralThought = thought;
+    thought.Text = <span style="color: #a31515">&quot;Lunch suggestions&quot;</span>;
+
+    Synchronize();
+
+    <span style="color: #2b91af">Thought </span>sharedThought = _russellsIdentity.SharedClouds.Single().CentralThought;
+    <span style="color: blue">string </span>sharedText = sharedThought.Text;
+    <span style="color: #2b91af">Assert</span>.AreEqual(<span style="color: #a31515">&quot;Lunch suggestions&quot;</span>, sharedText);
+}</pre>
+<p>In this test, Mike is sharing the cloud with Russell, and then adding a thought. Russell should be able to see the thought and the text that Michael put into it. The test, of course, fails.</p>
+<h3>Subscribe to related facts</h3>
+<p>The test fails because Russell thinks that CentralThought is still null. The Share was published to him, but not the CentralThought. Let’s publish that now.</p>
+<pre class="code">fact Cloud {
+key:
+    unique;
+    Identity creator;
+
+mutable:
+    <strong>publish</strong> Thought centralThought;
+}</pre>
+<p>This keyword publishes the CentralThought property to the Cloud. So to receive it, Russell must subscribe to the cloud.</p>
+<pre class="code">_russellsCommunity = <span style="color: blue">new </span><span style="color: #2b91af">Community</span>(<span style="color: blue">new </span><span style="color: #2b91af">MemoryStorageStrategy</span>())
+    .AddCommunicationStrategy(sharedCommunication)
+    .Register&lt;Model.<span style="color: #2b91af">CorrespondenceModel</span>&gt;()
+    .Subscribe(() =&gt; _russellsIdentity)
+    <strong>.Subscribe(() =&gt; _russellsIdentity.SharedClouds)
+</strong>    ;</pre>
+<p>With this subscription, Russell receives all facts published to the clouds that have been shared with him. This should be enough to let him see CentralThought. But the test still fails.</p>
+<h3>Publish successors to shared facts</h3>
+<p>The test fails now because Russell thinks that the central thought’s text is still null. He can’t see that Mike has changed it. So we somehow need to publish the thought’s text to the Cloud.</p>
+<p>Text is a mutable field of a Thought, so it can be published to a Thought. It cannot be published directly to a Cloud. But a Thought <em>can</em> be published to a Cloud.</p>
+<pre class="code">fact Thought {
+key:
+    unique;
+    <strong>publish</strong> Cloud cloud;
+
+...
+}</pre>
+<p>This change makes the unit test pass. Why? Because of rule #5.</p>
+<blockquote>
+<p>Rule #5: All successors of published facts are automatically published.</p>
+</blockquote>
+<p>The Text property of the central thought is a successor of the Thought. The Thought is published to the Cloud. Therefore, a subscriber to the Cloud will also see the Text.</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="index38d0.html?cat=46" title="View all posts in Correspondence" rel="category">Correspondence</a> |   <a href="indexef11.html?p=655#respond" title="Comment on Thought Cloud TDD #9: Penny for your thoughts">No Comments &#187;</a></p>
+
+			</div>
+
+				<div class="post">
+				<h3 id="post-654"><a href="indexa818.html?p=654" rel="bookmark" title="Permanent Link to Thought Cloud TDD #8: Hey, you, get onto my cloud">Thought Cloud TDD #8: Hey, you, get onto my cloud</a></h3>
+				<small>Monday, May 23rd, 2011</small>
+
+				<div class="entry">
+					<p>This <a href="https://github.com/michaellperry/FacetedWorlds.ThoughtCloud">Thought Cloud</a> application is going to be a lot of fun. It’s about to get really exciting.</p>
+<p>What good is a collaborative mind mapper if you can’t share thoughts with other people? It’s time to bring on the collaboration tests. The ModelTest creates two communities representing two user’s machines: Mike and Russell.</p>
+<pre class="code">[<span style="color: #2b91af">TestInitialize</span>]
+<span style="color: blue">public void </span>Initialize()
+{
+    <span style="color: blue">var </span>sharedCommunication = <span style="color: blue">new </span><span style="color: #2b91af">MemoryCommunicationStrategy</span>();
+    _mikesCommunity = <span style="color: blue">new </span><span style="color: #2b91af">Community</span>(<span style="color: blue">new </span><span style="color: #2b91af">MemoryStorageStrategy</span>())
+        .AddCommunicationStrategy(<strong>sharedCommunication</strong>)
+        .Register&lt;Model.<span style="color: #2b91af">CorrespondenceModel</span>&gt;()
+        .Subscribe(() =&gt; _mikesIdentity)
+        ;
+    _russellsCommunity = <span style="color: blue">new </span><span style="color: #2b91af">Community</span>(<span style="color: blue">new </span><span style="color: #2b91af">MemoryStorageStrategy</span>())
+        .AddCommunicationStrategy(<strong>sharedCommunication</strong>)
+        .Register&lt;Model.<span style="color: #2b91af">CorrespondenceModel</span>&gt;()
+        .Subscribe(() =&gt; _russellsIdentity)
+        ;
+
+    _mikesIdentity = _mikesCommunity.AddFact(<span style="color: blue">new </span><span style="color: #2b91af">Identity</span>(<span style="color: #a31515">&quot;mike&quot;</span>));
+    _russellsIdentity = _russellsCommunity.AddFact(<span style="color: blue">new </span><span style="color: #2b91af">Identity</span>(<span style="color: #a31515">&quot;russell&quot;</span>));
+}</pre>
+<p>The communities are joined by a shared communication strategy. That means that facts created in one community can flow into the other. In order to trigger this flow, we have to call Synchronize.</p>
+<pre class="code"><span style="color: blue">private void </span>Synchronize()
+{
+    <span style="color: blue">while </span>(_mikesCommunity.Synchronize() || _russellsCommunity.Synchronize()) ;
+}</pre>
+<p>The Synchronize method continues to push facts between the two communities until neither one has facts to share. We can use this to set up tests. The first test is that if Mike shares a cloud with Russell, Russell can see the cloud.</p>
+<pre class="code">[<span style="color: #2b91af">TestMethod</span>]
+<span style="color: blue">public void </span>MikeCanShareCloudWithRussell()
+{
+    <span style="color: #2b91af">Cloud </span>cloud = _mikesIdentity.NewCloud();
+    <span style="color: #2b91af">Identity </span>russell = _mikesCommunity.AddFact(<span style="color: blue">new </span><span style="color: #2b91af">Identity</span>(<span style="color: #a31515">&quot;russell&quot;</span>));
+    russell.NewShare(cloud);
+
+    Synchronize();
+
+    <span style="color: #2b91af">Assert</span>.AreEqual(1, _russellsIdentity.SharedClouds.Count());
+    <span style="color: #2b91af">Assert</span>.AreEqual(<span style="color: #a31515">&quot;mike&quot;</span>, _russellsIdentity.SharedClouds.Single().Creator.AnonymousId);
+}</pre>
+<p>Mike adds a fact to his community with the id of “russell”. This fact matches the one in Russell’s community, so it will be treated as the same fact when the two synchronize. He then shares his cloud with Russell. After they synchronize, Russell should see the shared cloud created by Mike.</p>
+<h3>A shared fact</h3>
+<p>To make this test pass, we need to define a fact that shares a cloud with an identity.</p>
+<pre class="code">fact Share {
+key:
+    Identity recipient;
+    Cloud cloud;
+}</pre>
+<p>Then we need to query an identity for all of the shared clouds.</p>
+<pre class="code">fact Identity {
+...
+
+query:
+
+    Cloud* sharedClouds {
+        Share s : s.recipient = this
+        Cloud c : s.cloud = c
+    }
+}</pre>
+<p>That query combines two sets. First, the set of all shares to this recipient. Then, the set of all clouds thus shared. Finally, we need a method in our partial class to create a new share.</p>
+<pre class="code"><span style="color: blue">public partial class </span><span style="color: #2b91af">Identity
+</span>{
+    ...
+
+    <span style="color: blue">public void </span>NewShare(<span style="color: #2b91af">Cloud </span>cloud)
+    {
+        Community.AddFact(<span style="color: blue">new </span><span style="color: #2b91af">Share</span>(<span style="color: blue">this</span>, cloud));
+    }
+}</pre>
+<p>With these changes, the test should pass. But it doesn’t. Why not?</p>
+<h3>Publish shared facts</h3>
+<p>If you look closely at the setup of each Community, you’ll see a subscription. Here it is again:</p>
+<pre class="code">_russellsCommunity = <span style="color: blue">new </span><span style="color: #2b91af">Community</span>(<span style="color: blue">new </span><span style="color: #2b91af">MemoryStorageStrategy</span>())
+    .AddCommunicationStrategy(sharedCommunication)
+    .Register&lt;Model.<span style="color: #2b91af">CorrespondenceModel</span>&gt;()
+    <strong>.Subscribe(() =&gt; _russellsIdentity)
+</strong>    ;</pre>
+<p>That line says that Russell’s community is only interested in facts that are published to Russell’s identity. So to get the Share over to the other community, we need to publish it to the Identity.</p>
+<pre class="code">fact Share {
+key:
+    <strong>publish</strong> Identity recipient;
+    Cloud cloud;
+}</pre>
+<p>And now the test passes.</p>
+<blockquote>
+<p>Rule #4: A community only receives published facts to which it subscribes.</p>
+</blockquote>
+<p>Wait a minute! The test asserts that Russell can see that the cloud was created by Mike. How can Russell see Mike’s identity if it wasn’t published?</p>
+<p>Before a fact is sent, all of its predecessors must first be sent. That means that in order to receive a Share, Russell must first receive the Cloud that it references. Before he can receive the Cloud, he must receive the Identity of the creator.</p>
+<blockquote>
+<p>Rule #4.1: … and all of their predecessors.</p>
+</blockquote>
+<p>A community doesn’t receive all facts. It only receives what it subscribes to. You need to manage the publications and subscriptions. Once you do, two Communities can collaborate through a shared synchronization strategy.</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="index38d0.html?cat=46" title="View all posts in Correspondence" rel="category">Correspondence</a> |   <a href="indexa818.html?p=654#respond" title="Comment on Thought Cloud TDD #8: Hey, you, get onto my cloud">No Comments &#187;</a></p>
+
+			</div>
+
+				<div class="post">
+				<h3 id="post-653"><a href="index5d49.html?p=653" rel="bookmark" title="Permanent Link to Thought Cloud TDD #7: Devoid of thought">Thought Cloud TDD #7: Devoid of thought</a></h3>
+				<small>Friday, May 20th, 2011</small>
+
+				<div class="entry">
+					<p>I’m writing <a href="https://github.com/michaellperry/FacetedWorlds.ThoughtCloud">Thought Cloud</a> for a demo in a couple of weeks. Help me out.</p>
+<p>During the last refactoring, we introduced a bug. There just isn’t a test to show it yet. The bug is related to rule number two:</p>
+<blockquote><p>Rule #2: Create one fact for each user action.</p></blockquote>
+<p>In the last refactoring, a single user action created three facts: a cloud, and thought, and a central thought assignment. (You can’t always see it, but an assignment to a mutable field is a new fact.) The problem with creating three facts for a single user action is that we cannot guarantee that all three facts are atomic. There may be situations – particularly when collaborating with another user – where we see only a subset of the facts.</p>
+<h3>Honor the default state</h3>
+<p>After each fact that we create, we must assume that the system is in a valid state. In this scenario, we have two intermediate states which must be considered valid:</p>
+<ul>
+<li>The cloud has been created, but it has no thoughts.</li>
+<li>The cloud has a thought, but no central thought.</li>
+</ul>
+<p>These are the states that arise after the creation of the first and second facts. We must honor the default state of a cloud. Let’s drop the initialization steps from the unit test and see what happens:</p>
+<pre class="code">[<span style="color: #2b91af">TestInitialize</span>]
+<span style="color: blue">public void </span>Initialize()
+{
+    _community = <span style="color: blue">new </span><span style="color: #2b91af">Community</span>(<span style="color: blue">new </span><span style="color: #2b91af">MemoryStorageStrategy</span>())
+        .Register&lt;Model.<span style="color: #2b91af">CorrespondenceModel</span>&gt;();
+
+    _identity = _community.AddFact(<span style="color: blue">new </span><span style="color: #2b91af">Identity</span>(<span style="color: #a31515">"mike"</span>));
+    <span style="color: #2b91af">Cloud </span>cloud = _community.AddFact(<span style="color: blue">new </span><span style="color: #2b91af">Cloud</span>(_identity));
+    <span style="color: green"><strong>//Thought thought = _community.AddFact(new Thought(cloud));
+</strong>    <strong>//cloud.CentralThought = thought;</strong>
+    </span>_cloudViewModel = <span style="color: blue">new </span><span style="color: #2b91af">CloudViewModel</span>(cloud);
+}</pre>
+<p>Now all three of the tests in this suite fail. They all throw null reference exceptions. The first null reference is in the Thoughts property of the CloudViewModel. The cloud has no central thought. In this situation, we want to simulate a thought to make the tests pass.</p>
+<pre class="code"><span style="color: blue">public </span><span style="color: #2b91af">IEnumerable</span>&lt;<span style="color: #2b91af">ThoughtViewModel</span>&gt; Thoughts
+{
+    <span style="color: blue">get
+    </span>{
+        <span style="color: #2b91af">Thought </span>centralThought = _cloud.CentralThought;
+        <span style="color: blue">if </span>(centralThought == <span style="color: blue">null</span>)
+        {
+            <span style="color: blue">return </span><span style="color: #2b91af">Enumerable</span>.Repeat(<span style="color: blue">new </span><span style="color: #2b91af"><strong>ThoughtViewModelSimulated</strong></span>(_cloud), 1)
+                .OfType&lt;<span style="color: #2b91af">ThoughtViewModel</span>&gt;();
+        }
+        <span style="color: blue">else
+        </span>{
+            <span style="color: blue">return </span><span style="color: #2b91af">Enumerable</span>.Repeat(<span style="color: blue">new </span><span style="color: #2b91af"><strong>ThoughtViewModelActual</strong></span>(centralThought), 1).Union(
+                <span style="color: blue">from </span>n <span style="color: blue">in </span>centralThought.Neighbors
+                <span style="color: blue">where </span>n != centralThought
+                <span style="color: blue">select new </span><span style="color: #2b91af"><strong>ThoughtViewModelActual</strong></span>(n))
+                .OfType&lt;<span style="color: #2b91af">ThoughtViewModel</span>&gt;();
+        }
+    }
+}</pre>
+<p>If the central thought has not been set, then we return a simulated thought view model. If it has, then we return actual thought view models. Those calls to OfType are there because an IEnumerable of a derived type can’t be converted to an IEnumerable of the base type. Covariance will solve this problem, once it is available in Silverlight.</p>
+<p>When the user sets the thought text, the simulated thought view model needs a place to store it. So at that point, it creates a thought.</p>
+<pre class="code"><span style="color: blue">public class </span><span style="color: #2b91af">ThoughtViewModelSimulated </span>: <span style="color: #2b91af">ThoughtViewModel
+</span>{
+    <span style="color: blue">private </span><span style="color: #2b91af">Cloud </span>_cloud;
+
+    <span style="color: blue">public </span>ThoughtViewModelSimulated(<span style="color: #2b91af">Cloud </span>cloud)
+    {
+        _cloud = cloud;
+    }
+
+    <span style="color: blue">public string </span>Text
+    {
+        <span style="color: blue">get </span>{ <span style="color: blue">return </span><span style="color: #a31515">"My thought"</span>; }
+        <span style="color: blue">set
+        </span>{
+            <strong><span style="color: #2b91af">Thought </span>thought = _cloud.NewThought();
+</strong>            <strong>_cloud.CentralThought = thought;
+</strong>            <strong>thought.Text = <span style="color: blue">value</span>;
+</strong>        }
+    }
+}</pre>
+<p>The last null reference exception occurs in the NewThought command of CloudViewModel. It tries to link the new thought to the central thought, but the central thought is null. We must honor this situation, and create a new central thought when needed.</p>
+<pre class="code"><span style="color: blue">public </span><span style="color: #2b91af">ICommand </span>NewThought
+{
+    <span style="color: blue">get
+    </span>{
+        <span style="color: blue">return </span><span style="color: #2b91af">MakeCommand</span>.Do(() =&gt;
+        {
+            <span style="color: #2b91af">Thought </span>thought = _cloud.NewThought();
+            <span style="color: #2b91af">Thought </span>centralThought = _cloud.CentralThought;
+            <strong><span style="color: blue">if </span>(centralThought == <span style="color: blue">null</span>)
+</strong>            <strong>{
+</strong>                <strong>centralThought = _cloud.NewThought();
+</strong>                <strong>_cloud.CentralThought = centralThought;
+</strong>            <strong>}
+</strong>            centralThought.LinkTo(thought);
+        });
+    }
+}</pre>
+<p>Now the CloudViewModel honors the default state of the Cloud fact. It is valid to have a Cloud with no central thought. Just as the ThoughtViewModel returns the simulated text “My thought” when the Text property has not yet been set, the CloudViewModel returns a simulated thought when no central thought has been created. When the user makes a change, the actual Thought is created. But not before.</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="index38d0.html?cat=46" title="View all posts in Correspondence" rel="category">Correspondence</a> |   <a href="index5d49.html?p=653#respond" title="Comment on Thought Cloud TDD #7: Devoid of thought">No Comments &#187;</a></p>
+
+			</div>
+
+				<div class="post">
+				<h3 id="post-652"><a href="index47dc.html?p=652" rel="bookmark" title="Permanent Link to Thought Cloud TDD #6: Get your thoughts in order">Thought Cloud TDD #6: Get your thoughts in order</a></h3>
+				<small>Friday, May 20th, 2011</small>
+
+				<div class="entry">
+					<p>I found it backwards that you have to create a thought before you create a cloud.</p>
+<pre class="code"><span style="color: blue">public </span><span style="color: #2b91af">ICommand </span>AddCloud
+{
+    <span style="color: blue">get
+    </span>{
+        <span style="color: blue">return </span><span style="color: #2b91af">MakeCommand
+            </span>.Do(<span style="color: blue">delegate
+            </span>{
+                <span style="color: #2b91af">Thought </span>thought = <strong>_identity.NewThought()</strong>;
+                <strong>_identity.NewCloud(thought)</strong>;
+            });
+    }
+}</pre>
+<p>A thought is part of a cloud, so the cloud should be a predecessor. But since we made a thought part of the cloud’s key, the <em>thought</em> is a predecessor.</p>
+<blockquote>
+<p>Rule #3: Facts that are part of the key (a.k.a predecessors) must be created first.</p>
+</blockquote>
+<p>It makes more sense if we create a cloud first, and then add thoughts to it. A cloud should be a predecessor of a thought. Let’s make that change.</p>
+<pre class="code">fact Thought {
+key:
+    unique;
+    Cloud cloud;
+
+...
+}</pre>
+<p>Now we need to create a thought in a Cloud. Let’s move the NewThought method from Identity to Cloud where it belongs.</p>
+<pre class="code"><span style="color: blue">public partial class </span><span style="color: #2b91af">Cloud
+</span>{
+    <span style="color: blue">public </span><span style="color: #2b91af">Thought </span>NewThought()
+    {
+        <span style="color: blue">return </span>Community.AddFact(<span style="color: blue">new </span><span style="color: #2b91af">Thought</span>(<span style="color: blue">this</span>));
+    }
+}</pre>
+<p>Now we can create the cloud first.&#160; But hold on! The cloud needs a central thought. The central thought is in the cloud. That’s a circular reference. The predecessor rule makes it <strong>impossible to create circular references</strong> out of keys. This is an important feature of Correspondence.</p>
+<p>But a circular reference can be constructed if one of the fields is mutable. So let’s change the central thought.</p>
+<pre class="code">fact Cloud {
+key:
+    unique;
+    Identity creator;
+
+<strong>mutable:
+</strong>    Thought centralThought;
+}</pre>
+<p>Now that the central thought is mutable, a cloud can be constructed with no central thought. Then the thought is created, and finally it is assigned.</p>
+<pre class="code"><span style="color: blue">public </span><span style="color: #2b91af">ICommand </span>AddCloud
+{
+    <span style="color: blue">get
+    </span>{
+        <span style="color: blue">return </span><span style="color: #2b91af">MakeCommand
+            </span>.Do(<span style="color: blue">delegate
+            </span>{
+                <span style="color: #2b91af">Cloud </span>cloud = _identity.NewCloud();
+                <span style="color: #2b91af">Thought </span>thought = cloud.NewThought();
+                cloud.CentralThought = thought;
+            });
+    }
+}</pre>
+<p>This makes more sense. Now thoughts belong to a cloud, not the other way around. After following the ripples out to the edges of the pond, we can compile and pass the unit tests. But we’ve introduced a bug. We just need to write a test to prove it.</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="index38d0.html?cat=46" title="View all posts in Correspondence" rel="category">Correspondence</a> |   <a href="index47dc.html?p=652#respond" title="Comment on Thought Cloud TDD #6: Get your thoughts in order">No Comments &#187;</a></p>
+
+			</div>
+
+		
+		<div class="navigation">
+			<div class="alignleft"><a href="indexfa2d.html?m=201105&amp;paged=2">&laquo; Previous Entries</a></div>
+			<div class="alignright"></div>
+		</div>
+
+	
+	</div>
+		</td>
+	</tr>
+</table>
+
+<hr />
+<div id="footer">
+<!-- If you'd like to support WordPress, having the "powered by" link someone on your blog is the best way, it's our only promotion or advertising. -->
+	<p>
+		Adventures in Software is proudly powered by 
+		<a href="http://wordpress.org/">WordPress</a>
+		<br /><a href="indexd784.html?feed=rss2">Entries (RSS)</a>
+		and <a href="indexa6da.html?feed=comments-rss2">Comments (RSS)</a>.
+		<!-- 17 queries. 0.470 seconds. -->
+	</p>
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-389401-3");
+pageTracker._trackPageview();
+} catch(err) {}</script></div>
+
+<!-- Gorgeous design by Michael Heilemann - http://binarybonsai.com/kubrick/ -->
+
+		<div id="sk2-footer" style="color:#FFF; background-color:#444; padding: 3px 2px 3px 2px; border-top: #888 solid 1px;">This blog is protected by <a href="http://unknowngenius.com/blog/" title="Dave">dr Dave</a>'s <strong><a href="http://unknowngenius.com/blog/wordpress/spam-karma/" title="SK2">Spam Karma 2</a></strong>: <strong>274531</strong>  Spams eaten and counting...</div><script type="text/javascript" src="replies.js"></script>
+<script type="text/javascript" src="blogger.js"></script>
+<script type="text/javascript" src="http://twitter.com/statuses/user_timeline/michaellperry.json?callback=twitterCallback2&amp;count=5"></script>
+<script type="text/javascript" src="http://search.twitter.com/search.json?q=@michaellperry&amp;callback=twitterCallbackReplies&amp;rpp=5"></script>
+</body>
+
+<!-- Mirrored from adventuresinsoftware.com/blog/?m=201105 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 Jan 2017 12:32:22 GMT -->
+</html>

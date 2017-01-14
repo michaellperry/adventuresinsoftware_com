@@ -1,0 +1,913 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+
+
+<!-- Mirrored from adventuresinsoftware.com/blog/?cat=40 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 Jan 2017 12:55:42 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>Adventures in Software   &raquo; qed</title>
+
+<meta name="generator" content="WordPress 2.3.3" /> <!-- leave this for stats -->
+
+<link rel="stylesheet" href="wp-content/themes/ais2/style.css" type="text/css" media="screen" />
+<link rel="alternate" type="application/rss+xml" title="Adventures in Software RSS Feed" href="indexd784.html?feed=rss2" />
+<link rel="pingback" href="xmlrpc.html" />
+    <script type="text/javascript">
+        function onSilverlightError(sender, args) {
+            var appSource = "";
+            if (sender != null && sender != 0) {
+              appSource = sender.getHost().Source;
+            }
+            
+            var errorType = args.ErrorType;
+            var iErrorCode = args.ErrorCode;
+
+            if (errorType == "ImageError" || errorType == "MediaError") {
+              return;
+            }
+
+            var errMsg = "Unhandled Error in Silverlight Application " +  appSource + "\n" ;
+
+            errMsg += "Code: "+ iErrorCode + "    \n";
+            errMsg += "Category: " + errorType + "       \n";
+            errMsg += "Message: " + args.ErrorMessage + "     \n";
+
+            if (errorType == "ParserError") {
+                errMsg += "File: " + args.xamlFile + "     \n";
+                errMsg += "Line: " + args.lineNumber + "     \n";
+                errMsg += "Position: " + args.charPosition + "     \n";
+            }
+            else if (errorType == "RuntimeError") {           
+                if (args.lineNumber != 0) {
+                    errMsg += "Line: " + args.lineNumber + "     \n";
+                    errMsg += "Position: " +  args.charPosition + "     \n";
+                }
+                errMsg += "MethodName: " + args.methodName + "     \n";
+            }
+
+            throw new Error(errMsg);
+        }
+    </script>
+
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc0db0.php?rsd" />
+ <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="wp-includes/wlwmanifest.xml" /> <style type='text/css'>
+<!--#header { background: url('wp-content/themes/ais2/images/header-imgae03.html?upper=A7A73F&amp;lower=77773F') no-repeat bottom center; }
+--></style>
+</head>
+<body>
+<div id="page">
+
+<div class="aisTopBar">
+	<form method="get" id="searchform" action="http://adventuresinsoftware.com/blog/">
+<div>
+<a href="indexd784.html?feed=rss2"><img src="../images/feed-icon-28x28.png" border="0"></a>
+<input type="text" value="" name="s" id="s" />
+<input type="submit" id="searchsubmit" value="Search" />
+</div>
+</form>
+</div>
+
+<div class="aisHeaderImageRight">
+	<div class="aisHeaderImage">
+	<div class="aisHeaderCornerRight">
+	<div class="aisHeaderCornerLeft">
+	<div class="aisImageBar">
+	<div class="aisSubSites">
+		<a href="index.html" class="aisSubSiteLink"><span class="aisSiteTabRight"><span class="aisSiteTabLeft"><span class="aisSiteTab">
+			home</span></span></span></a>
+		<a class="aisSubSiteLink" href="indexb60a.html?cat=27"><span class="aisSiteTabRight"><span class="aisSiteTabLeft"><span class="aisSiteTab">
+			historic modeling</span></span></span></a>
+		<a class="aisSubSiteLink" href="indexa88f.html?cat=36"><span class="aisSiteTabRight"><span class="aisSiteTabLeft"><span class="aisSiteTab">
+			update controls</span></span></span></a>
+		<a href="index2d79.html?cat=26" class="aisSubSiteLink"><span class="aisSiteTabRight"><span class="aisSiteTabLeft"><span class="aisSiteTab">
+			degrees of freedom</span></span></span></a>
+		<a class="aisSubSiteLink" href="indexba53.html?page_id=2"><span class="aisSiteTabRight"><span class="aisSiteTabLeft"><span class="aisSiteTab">
+			about us</span></span></span></a>
+
+	</div>
+	</div>
+	</div>
+	</div>
+	</div>
+</div>
+
+<table style="width: 100%" cellspacing="0" cellpadding="0">
+	<tr valign="top">
+		<td width="210px">
+<div id="sidebar">
+<div class="aisLeftColumnFill">
+<div class="aisLeftColumnBottom">
+<div class="aisLeftColumnTop">
+<div id="twitter_div" class="aisLeftNav">
+<h2 class="sidebar-title">Twitter Updates</h2>
+<ul id="twitter_update_list"></ul>
+<a href="http://twitter.com/michaellperry" id="follow">Follow me</a>
+</div>
+<div id="twitter_reply_div" class="aisLeftNav">
+<h2 class="sidebar-title">Twitter Replies</h2>
+<ul id="twitter_reply_list"></ul>
+</div>
+
+<div class="aisLeftNav">
+<a href='http://ineta.org/Speakers/SearchCommunitySpeakers.aspx?SpeakerId=c5110e21-9243-461b-a464-a6548524e885'><img alt='INETA Community Speakers Program' border='0' src='../../www.ineta.org/images/OfficialLogos/InetaCommunitySpeakersRequestMe.html' /></a>
+</div>
+
+<div class="aisLeftNav">
+	<li class="pagenav"><h2>Pages</h2><ul><li class="page_item page-item-2"><a href="indexba53.html?page_id=2" title="About Us">About Us</a></li>
+<li class="page_item page-item-210"><a href="index6ae3.html?page_id=210" title="Templates">Templates</a></li>
+</ul></li></div>
+
+<div class="aisLeftNav">
+<h2>Archives</h2>
+<ul>
+	<li><a href='indexb4d5.html?m=201110' title='October 2011'>October 2011</a></li>
+	<li><a href='indexc61a.html?m=201106' title='June 2011'>June 2011</a></li>
+	<li><a href='indexa80d.html?m=201105' title='May 2011'>May 2011</a></li>
+	<li><a href='index512b.html?m=201104' title='April 2011'>April 2011</a></li>
+	<li><a href='index08fb.html?m=201103' title='March 2011'>March 2011</a></li>
+	<li><a href='index52f4.html?m=201102' title='February 2011'>February 2011</a></li>
+	<li><a href='index74f1.html?m=201101' title='January 2011'>January 2011</a></li>
+	<li><a href='index8956.html?m=201012' title='December 2010'>December 2010</a></li>
+	<li><a href='indexa1aa.html?m=201011' title='November 2010'>November 2010</a></li>
+	<li><a href='indexe3d5.html?m=201010' title='October 2010'>October 2010</a></li>
+	<li><a href='index9ab9.html?m=201009' title='September 2010'>September 2010</a></li>
+	<li><a href='index1ff0.html?m=201008' title='August 2010'>August 2010</a></li>
+	<li><a href='index9f11.html?m=201007' title='July 2010'>July 2010</a></li>
+	<li><a href='index31f0.html?m=201006' title='June 2010'>June 2010</a></li>
+	<li><a href='indexd189.html?m=201005' title='May 2010'>May 2010</a></li>
+	<li><a href='indexb5c0.html?m=201004' title='April 2010'>April 2010</a></li>
+	<li><a href='indexf258.html?m=201003' title='March 2010'>March 2010</a></li>
+	<li><a href='index6e30.html?m=201002' title='February 2010'>February 2010</a></li>
+	<li><a href='index6b19.html?m=201001' title='January 2010'>January 2010</a></li>
+	<li><a href='index5c0a.html?m=200912' title='December 2009'>December 2009</a></li>
+	<li><a href='index8f62.html?m=200911' title='November 2009'>November 2009</a></li>
+	<li><a href='index451d.html?m=200910' title='October 2009'>October 2009</a></li>
+	<li><a href='index3e04.html?m=200909' title='September 2009'>September 2009</a></li>
+	<li><a href='index425a.html?m=200908' title='August 2009'>August 2009</a></li>
+	<li><a href='index9907.html?m=200907' title='July 2009'>July 2009</a></li>
+	<li><a href='index3104.html?m=200906' title='June 2009'>June 2009</a></li>
+	<li><a href='indexc36d.html?m=200905' title='May 2009'>May 2009</a></li>
+	<li><a href='index17e8.html?m=200904' title='April 2009'>April 2009</a></li>
+	<li><a href='index10a5.html?m=200903' title='March 2009'>March 2009</a></li>
+	<li><a href='index8988.html?m=200902' title='February 2009'>February 2009</a></li>
+	<li><a href='index1419.html?m=200901' title='January 2009'>January 2009</a></li>
+	<li><a href='index7866.html?m=200812' title='December 2008'>December 2008</a></li>
+	<li><a href='index55f6.html?m=200811' title='November 2008'>November 2008</a></li>
+	<li><a href='indexa7bc.html?m=200810' title='October 2008'>October 2008</a></li>
+	<li><a href='indexe77c.html?m=200809' title='September 2008'>September 2008</a></li>
+	<li><a href='indexcffc.html?m=200808' title='August 2008'>August 2008</a></li>
+	<li><a href='index0e62.html?m=200807' title='July 2008'>July 2008</a></li>
+	<li><a href='indexfda7.html?m=200806' title='June 2008'>June 2008</a></li>
+	<li><a href='index7d64.html?m=200805' title='May 2008'>May 2008</a></li>
+	<li><a href='index94dd.html?m=200804' title='April 2008'>April 2008</a></li>
+	<li><a href='index9631.html?m=200803' title='March 2008'>March 2008</a></li>
+	<li><a href='indexdd52.html?m=200802' title='February 2008'>February 2008</a></li>
+	<li><a href='index21ee.html?m=200801' title='January 2008'>January 2008</a></li>
+	<li><a href='index363c.html?m=200712' title='December 2007'>December 2007</a></li>
+	<li><a href='index7493.html?m=200711' title='November 2007'>November 2007</a></li>
+	<li><a href='index93a7.html?m=200710' title='October 2007'>October 2007</a></li>
+	<li><a href='index4ca8.html?m=200709' title='September 2007'>September 2007</a></li>
+	<li><a href='index6124.html?m=200708' title='August 2007'>August 2007</a></li>
+	<li><a href='index6013.html?m=200707' title='July 2007'>July 2007</a></li>
+	<li><a href='index2ab6.html?m=200706' title='June 2007'>June 2007</a></li>
+	<li><a href='index44f0.html?m=200705' title='May 2007'>May 2007</a></li>
+	<li><a href='indexf0b4.html?m=200704' title='April 2007'>April 2007</a></li>
+	<li><a href='index481d.html?m=200703' title='March 2007'>March 2007</a></li>
+	<li><a href='indexcbea.html?m=200702' title='February 2007'>February 2007</a></li>
+	<li><a href='index9cdc.html?m=200701' title='January 2007'>January 2007</a></li>
+	<li><a href='index3ea4.html?m=200612' title='December 2006'>December 2006</a></li>
+	<li><a href='index67ca.html?m=200611' title='November 2006'>November 2006</a></li>
+	<li><a href='indexff49.html?m=200610' title='October 2006'>October 2006</a></li>
+	<li><a href='index611c.html?m=200609' title='September 2006'>September 2006</a></li>
+	<li><a href='index9a21.html?m=200608' title='August 2006'>August 2006</a></li>
+	<li><a href='index3ee9.html?m=200607' title='July 2006'>July 2006</a></li>
+	<li><a href='indexe13a.html?m=200606' title='June 2006'>June 2006</a></li>
+</ul>
+</div>
+
+<div class="aisLeftNav">
+	</div>
+
+<div class="aisLeftNav">
+<h2>Books</h2>
+<iframe src="http://rcm.amazon.com/e/cm?t=adventures0d2-20&amp;o=1&amp;p=8&amp;l=as1&amp;asins=0764526413&amp;fc1=000000&amp;IS2=1&amp;lt1=_blank&amp;lc1=0000ff&amp;bc1=000000&amp;bg1=ffffff&amp;f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" name="I5" id="I5"></iframe>
+<br/>
+<iframe src="http://rcm.amazon.com/e/cm?t=adventures0d2-20&amp;o=1&amp;p=8&amp;l=as1&amp;asins=0201633612&amp;fc1=000000&amp;IS2=1&amp;lt1=_blank&amp;lc1=0000ff&amp;bc1=000000&amp;bg1=ffffff&amp;f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" name="I6" id="I6"></iframe>
+<br/>
+<iframe src="http://rcm.amazon.com/e/cm?t=adventures0d2-20&amp;o=1&amp;p=8&amp;l=as1&amp;asins=0136291554&amp;fc1=000000&amp;IS2=1&amp;lt1=_blank&amp;lc1=0000ff&amp;bc1=000000&amp;bg1=ffffff&amp;f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" name="I7" id="I7"></iframe>
+<br/>
+<iframe src="http://rcm.amazon.com/e/cm?t=adventures0d2-20&amp;o=1&amp;p=8&amp;l=as1&amp;asins=1888009195&amp;fc1=000000&amp;IS2=1&amp;lt1=_blank&amp;lc1=0000ff&amp;bc1=000000&amp;bg1=ffffff&amp;f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" name="I8" id="I8"></iframe>
+</div>
+<div class="aisLeftNav">
+<h2>Meta</h2>
+<ul>
+		<li><a href="wp-login.html">Login</a></li>
+	<li><a href="http://validator.w3.org/check/referer" title="This page validates as XHTML 1.0 Transitional">Valid <abbr title="eXtensible HyperText Markup Language">XHTML</abbr></a></li>
+	<li><a href="http://gmpg.org/xfn/"><abbr title="XHTML Friends Network">XFN</abbr></a></li>
+	<li><a href="http://wordpress.org/" title="Powered by WordPress, state-of-the-art semantic personal publishing platform.">WordPress</a></li>
+	</ul>
+</div>
+<div class="aisLeftContent">
+<h2>Community</h2>
+<ul>
+	<script type="text/javascript" src="../../localhost/embed/92q2bbma.js"></script>
+</ul>
+</div>
+
+</div></div></div>
+</div>		</td>
+		<td>
+
+	<div id="content" class="narrowcolumn">
+
+		
+		 		<h2 class="pagetitle">Archive for the &#8216;qed&#8217; Category</h2>
+
+ 	  
+
+		<div class="navigation">
+			<div class="alignleft"><a href="index92e3.html?cat=40&amp;paged=2">&laquo; Previous Entries</a></div>
+			<div class="alignright"></div>
+		</div>
+
+				<div class="post">
+				<h3 id="post-512"><a href="indexb87d.html?p=512" rel="bookmark" title="Permanent Link to Speaking at the North Dallas .NET Users Group">Speaking at the North Dallas .NET Users Group</a></h3>
+				<small>Sunday, July 4th, 2010</small>
+
+				<div class="entry">
+					<p>I’ll be speaking at <a href="http://nddnug.net/">NDDNUG</a> on Wednesday about the CAP Theorem and its implications. Here’s a preview of what you can expect:</p>
+<p>
+<div style="padding-bottom: 0px; margin: 0px; padding-left: 0px; padding-right: 0px; display: inline; float: none; padding-top: 0px" id="scid:5737277B-5D6D-4f48-ABFC-DD9C333F4C5D:31eea35b-a874-4731-b725-0567f5371db1" class="wlWriterEditableSmartContent">
+<div id="19695943-9694-4116-a54d-3c35ab361723" style="margin: 0px; padding: 0px; display: inline;">
+<div><a href="http://www.youtube.com/watch?v=Jw1iFr4v58M" target="_new"><img src="wp-content/uploads/2010/07/videod6013d036963.jpg" style="border-style: none" galleryimg="no" onload="var downlevelDiv = document.getElementById('19695943-9694-4116-a54d-3c35ab361723'); downlevelDiv.innerHTML = &quot;&lt;div&gt;&lt;object width=\&quot;425\&quot; height=\&quot;355\&quot;&gt;&lt;param name=\&quot;movie\&quot; value=\&quot;http://www.youtube.com/v/Jw1iFr4v58M&amp;hl=en\&quot;&gt;&lt;\/param&gt;&lt;embed src=\&quot;http://www.youtube.com/v/Jw1iFr4v58M&amp;hl=en\&quot; type=\&quot;application/x-shockwave-flash\&quot; width=\&quot;425\&quot; height=\&quot;355\&quot;&gt;&lt;\/embed&gt;&lt;\/object&gt;&lt;\/div&gt;&quot;;" alt=""></a></div>
+</div>
+</div>
+<p>I’ll be posting slides and source code at <a href="http://qedcode.com/">qedcode.com</a>. Hope to see you there.</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="index51fa.html?cat=40" title="View all posts in qed" rel="category">qed</a> |   <a href="indexb87d.html?p=512#respond" title="Comment on Speaking at the North Dallas .NET Users Group">No Comments &#187;</a></p>
+
+			</div>
+
+				<div class="post">
+				<h3 id="post-452"><a href="index20a4.html?p=452" rel="bookmark" title="Permanent Link to Topic specific sites">Topic specific sites</a></h3>
+				<small>Saturday, October 10th, 2009</small>
+
+				<div class="entry">
+					<p>I now have three sites for topic-specific content.</p>
+<ul>
+<li><a href="http://historicmodeling.com/">Historic Modeling</a>
+<li><a href="http://updatecontrols.net/doc">Update Controls</a>
+<li><a href="http://qedcode.com/">Q.E.D. Code</a></li>
+</ul>
+<p>I have seeded these sites with articles from Adventures in Software. But from now on, articles specific to those topics will go on those sites. Please subscribe to those RSS feeds as well as this one.</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="indexb60a.html?cat=27" title="View all posts in Historic Modeling" rel="category">Historic Modeling</a>,  <a href="indexa88f.html?cat=36" title="View all posts in Update Controls" rel="category">Update Controls</a>,  <a href="index51fa.html?cat=40" title="View all posts in qed" rel="category">qed</a> |   <a href="index20a4.html?p=452#respond" title="Comment on Topic specific sites">No Comments &#187;</a></p>
+
+			</div>
+
+				<div class="post">
+				<h3 id="post-451"><a href="indexc31c.html?p=451" rel="bookmark" title="Permanent Link to A provable Socket API">A provable Socket API</a></h3>
+				<small>Thursday, October 8th, 2009</small>
+
+				<div class="entry">
+					<p>Two weeks ago, I assigned <a href="indexe982.html?p=440">homework</a>. Rewrite the .NET Socket API so that you can prove the following assertions:</p>
+<ul>
+<li>You cannot use a Socket returned from Accept to accept any additional connections from the connection queue.
+<li>You cannot call Accept, Bind, Connect, Listen, Receive, or Send if the socket has been closed.
+<li>You must call Bind before you can call the Listen method.
+<li>You must call Listen before calling Accept.
+<li>Connect(string host, int port) can only be called if addressFamily is either InterNetwork or InterNetworkV6.
+<li>Connect cannot be called if Listen has been called.
+<li>You have to either call Connect or Accept before Sending and Receiving data.
+<li>If the socket has been previously disconnected, then you cannot use Connect to restore the connection.</li>
+</ul>
+<p>These assertions are prominently listed in the MSDN documentation. Why not roll them into the API itself? Let the compiler prove that we are using sockets correctly.</p>
+<p>Last week, I gave you a <a href="index0ecd.html?p=445">hint</a>. I moved the Send and Receive methods out to a different class so that we can prove that you've called Accept or Connect prior to Send or Receive. Both Accept and Connect became factory methods. You must call the factory before you get the object, and you must get the object before you call its methods. Q.E.D.</p>
+<p>Let's start from there and prove the rest of the assertions.</p>
+<p><strong>Starting point</strong></p>
+<ul>
+<li>You have to either call Connect or Accept before Sending and Receiving data.</li>
+</ul>
+<pre><span style="color: blue">public</span> <span style="color: blue">class</span> ConnectedSocket
+{
+    <span style="color: blue">public</span> <span style="color: blue">int</span> Receive(<span style="color: blue">byte</span>[] buffer);
+    <span style="color: blue">public</span> <span style="color: blue">int</span> Send(<span style="color: blue">byte</span>[] buffer);
+}
+
+<span style="color: blue">public</span> <span style="color: blue">class</span> Socket : IDisposable
+{
+    <span style="color: blue">public</span> Socket(SocketInformation socketInformation);
+    <span style="color: blue">public</span> Socket(AddressFamily addressFamily, SocketType socketType, ProtocolType protocolType);
+
+    <span style="color: blue">public</span> ConnectedSocket Accept();
+    <span style="color: blue">public</span> <span style="color: blue">void</span> Bind(EndPoint localEP);
+    <span style="color: blue">public</span> ConnectedSocket Connect(EndPoint remoteEP);
+    <span style="color: blue">public</span> ConnectedSocket Connect(<span style="color: blue">string</span> host, <span style="color: blue">int</span> port);
+    <span style="color: blue">public</span> <span style="color: blue">void</span> Dispose();
+    <span style="color: blue">public</span> <span style="color: blue">void</span> Listen(<span style="color: blue">int</span> backlog);
+}</pre>
+<p>Looking through the list of assertions, we find that this one is already taken care of by the first change:</p>
+<ul>
+<li>You cannot use a Socket returned from Accept to accept any additional connections from the connection queue.</li>
+</ul>
+<p>The ConnectedSocket class doesn't have an Accept method, so you can't call it. Q.E.D.</p>
+<p><strong>Other prerequisites</strong><br />There are three other prerequisite assertions that we can prove in exactly the same way:</p>
+<ul>
+<li>You must call Bind before you can call the Listen method.
+<li>You must call Listen before calling Accept.
+<li>Connect cannot be called if Listen has been called.</li>
+</ul>
+<pre><span style="color: blue">public</span> <span style="color: blue">class</span> Socket : IDisposable
+{
+    <span style="color: blue">public</span> Socket(SocketInformation socketInformation);
+    <span style="color: blue">public</span> Socket(AddressFamily addressFamily, SocketType socketType, ProtocolType protocolType);
+
+    <span style="color: blue">public</span> <strong>BoundSocket</strong> Bind(EndPoint localEP);
+    <span style="color: blue">public</span> ConnectedSocket Connect(EndPoint remoteEP);
+    <span style="color: blue">public</span> ConnectedSocket Connect(<span style="color: blue">string</span> host, <span style="color: blue">int</span> port);
+    <span style="color: blue">public</span> <span style="color: blue">void</span> Dispose();
+}
+
+<span style="color: blue">public</span> <span style="color: blue">class</span> BoundSocket
+{
+    <span style="color: blue">public</span> ListeningSocket Listen(<span style="color: blue">int</span> backlog);
+<span style="color: blue"><font color="#000000">    </font>public</span> ConnectedSocket Connect(EndPoint remoteEP);
+<span style="color: blue"><font color="#000000">    </font>public</span> ConnectedSocket Connect(<span style="color: blue">string</span> host, <span style="color: blue">int</span> port);
+}
+
+<span style="color: blue">public</span> <span style="color: blue">class</span> ListeningSocket
+{
+    <span style="color: blue">public</span> ConnectedSocket Accept();
+}</pre>
+<p>Bind becomes a factory for the class that gives you Listen. Bind does not take away your ability to call Connect. Listen does.</p>
+<p><strong>Factory and product</strong><br />Factories are great prerequisites. Now that it is becoming more obvious that we are using that pattern, let's rename Socket and move IDisposable to the product.</p>
+<pre><span style="color: blue">public</span> <span style="color: blue">class</span> <strong>SocketFactory</strong>
+{
+    <span style="color: blue">public</span> SocketFactory(SocketInformation socketInformation);
+    <span style="color: blue">public</span> SocketFactory(AddressFamily addressFamily, SocketType socketType, ProtocolType protocolType);
+
+    <span style="color: blue">public</span> BoundSocket Bind(EndPoint localEP);
+    <span style="color: blue">public</span> ConnectedSocket Connect(EndPoint remoteEP);
+    <span style="color: blue">public</span> ConnectedSocket Connect(<span style="color: blue">string</span> host, <span style="color: blue">int</span> port);
+}
+
+<span style="color: blue">public</span> <span style="color: blue">class</span> ConnectedSocket : <strong>IDisposable</strong>
+{
+    <span style="color: blue">public</span> <span style="color: blue">int</span> Receive(<span style="color: blue">byte</span>[] buffer);
+    <span style="color: blue">public</span> <span style="color: blue">int</span> Send(<span style="color: blue">byte</span>[] buffer);
+    <span style="color: blue">public</span> <span style="color: blue">void</span> Dispose();
+}</pre>
+<p>The ConnectedSocket is the ultimate product. That's the socket that needs to be closed. And what do you know, this change proves another of our assertions:</p>
+<ul>
+<li>If the socket has been previously disconnected, then you cannot use Connect to restore the connection.</li>
+</ul>
+<p>It is impossible to call Connect on a socket that has been disposed, since they aren't the same object anymore.</p>
+<p><strong>Dispose once</strong><br />Now that the Dispose method is where it belongs, let's focus on the assertion most concerned with its use:</p>
+<ul>
+<li>You cannot call Accept, Bind, Connect, Listen, Receive, or Send if the socket has been closed.</li>
+</ul>
+<p>Accept, Bind, Connect, and Listen have already been taken care of, since they have become factory methods. To handle Send and Receive, we turn every ConnectedSocket factory into a callback:</p>
+<pre><span style="color: blue">public</span> <span style="color: blue">class</span> ConnectedSocket
+{
+    <span style="color: blue">public</span> <span style="color: blue">int</span> Receive(<span style="color: blue">byte</span>[] buffer);
+    <span style="color: blue">public</span> <span style="color: blue">int</span> Send(<span style="color: blue">byte</span>[] buffer);
+}
+
+<span style="color: blue">public</span> <span style="color: blue"><strong>void</strong></span> Connect(<span style="color: blue">string</span> host, <span style="color: blue">int</span> port, <strong>Action&lt;ConnectedSocket&gt;</strong> action);</pre>
+<p>We have taken away the capability of disposing a socket. The factory does it on the consumer's behalf. Since there is no way for the consumer to call Dispose, and since the callback returns before Dispose is called, there is no way to call Send or Receive after Dispose. Q.E.D.</p>
+<p><strong>Specialized factory</strong><br />Which leaves us with one final assertion:</p>
+<ul>
+<li>Connect(string host, int port) can only be called if addressFamily is either InterNetwork or InterNetworkV6.</li>
+</ul>
+<p>Again, we want to move the restricted method into its own special class. But now, we want to enforce that certain values are provided, not that certain methods are called. We'll limit this by creating our own smaller enumeration.</p>
+<pre><span style="color: blue">public</span> <span style="color: blue">class</span> IPSocketFactory : SocketFactory
+{
+    <span style="color: blue">public</span> <span style="color: blue">enum</span> Version { V4, V6 }
+    <span style="color: blue">public</span> IPSocketFactory(<strong>Version version</strong>, SocketType socketType, ProtocolType protocolType)
+        : <span style="color: blue">base</span>(
+            version == Version.V4 ? AddressFamily.InterNetwork : AddressFamily.InterNetworkV6,
+            socketType,
+            protocolType) { }
+
+    <span style="color: blue">public</span> <span style="color: blue">void</span> Connect(<span style="color: blue">string</span> host, <span style="color: blue">int</span> port, Action&lt;ConnectedSocket&gt; action);
+}</pre>
+<p>If you want to call the Connect overload with two parameters, you have to use the limited enumeration to get the right factory. I didn't mess with the overloaded constructor, because it complicates things.</p>
+<p>One slight wrinkle. In a previous change we created a copy of the Connect method, since it can be called after Bind(). So we make the same change there:</p>
+<pre><span style="color: blue">public</span> <span style="color: blue">class</span> IPBoundSocket : BoundSocket
+{
+    <span style="color: blue">public</span> <span style="color: blue">void</span> Connect(<span style="color: blue">string</span> host, <span style="color: blue">int</span> port, Action&lt;ConnectedSocket&gt; action);
+}
+
+<span style="color: blue">public</span> <span style="color: blue">class</span> IPSocketFactory : SocketFactory
+{
+    <span style="color: blue">public</span> <span style="color: blue">enum</span> Version { V4, V6 }
+    <span style="color: blue">public</span> IPSocketFactory(Version version, SocketType socketType, ProtocolType protocolType)
+        : <span style="color: blue">base</span>(
+            version == Version.V4 ? AddressFamily.InterNetwork : AddressFamily.InterNetworkV6,
+            socketType,
+            protocolType) { }
+
+    <span style="color: blue">public</span> <strong>IPBoundSocket</strong> Bind(EndPoint localEP);
+    <span style="color: blue">public</span> <span style="color: blue">void</span> Connect(<span style="color: blue">string</span> host, <span style="color: blue">int</span> port, Action&lt;ConnectedSocket&gt; action);
+}</pre>
+<p>The only way to get an IPBoundSocket is to use the IPSocketFactory. Therefore, you must have selected one of the Internet protocols. By the way, this is taking advantage of a little-used feature of C# called covarience. This is the one part of the proof that might not work in other languages.</p>
+<p>So there you have it. A provably correct Socket API. There is no way to use it incorrectly. The compiler enforces all of the assertions that we would otherwise have to read the documentation to discover.</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="index51fa.html?cat=40" title="View all posts in qed" rel="category">qed</a> |   <a href="indexc31c.html?p=451#respond" title="Comment on A provable Socket API">No Comments &#187;</a></p>
+
+			</div>
+
+				<div class="post">
+				<h3 id="post-445"><a href="index0ecd.html?p=445" rel="bookmark" title="Permanent Link to Hint on socket homework">Hint on socket homework</a></h3>
+				<small>Thursday, October 1st, 2009</small>
+
+				<div class="entry">
+					<p>Your homework is extended for another week, but let me give you a hint what I'm looking for. The problem was to <a href="indexe982.html?p=440">Fix the Socket API</a>. Rewrite the .NET Socket interface so that the assertions made in the MSDN documentation can be proven.</p>
+<p>To give you an example of what I'm looking for, take the following assertion:</p>
+<ul>
+<li>You have to either call Connect or Accept before Sending and Receiving data.</li>
+</ul>
+<p>This is a prerequisite assertion. We must first call Connect or Accept, then we can call Send or Receive. To prove this assertion, I'll use factory methods. Here's the original Socket class:</p>
+<pre><span style="color: blue">public</span> <span style="color: blue">class</span> Socket : IDisposable
+{
+    <span style="color: blue">public</span> Socket(SocketInformation socketInformation);
+    <span style="color: blue">public</span> Socket(AddressFamily addressFamily, SocketType socketType, ProtocolType protocolType);
+
+    <span style="color: blue">public</span> Socket Accept();
+    <span style="color: blue">public</span> <span style="color: blue">void</span> Bind(EndPoint localEP);
+    <span style="color: blue">public</span> <span style="color: blue">void</span> Connect(EndPoint remoteEP);
+    <span style="color: blue">public</span> <span style="color: blue">void</span> Connect(<span style="color: blue">string</span> host, <span style="color: blue">int</span> port);
+    <span style="color: blue">public</span> <span style="color: blue">void</span> Dispose();
+    <span style="color: blue">public</span> <span style="color: blue">void</span> Listen(<span style="color: blue">int</span> backlog);
+    <span style="color: blue">public</span> <span style="color: blue">int</span> Receive(<span style="color: blue">byte</span>[] buffer);
+    <span style="color: blue">public</span> <span style="color: blue">int</span> Send(<span style="color: blue">byte</span>[] buffer);
+}</pre>
+<p>Move the Send and Receive methods out of this class. We cannot call them yet. Move them into a new class called ConnectedSocket.</p>
+<pre><span style="color: blue">public</span> <span style="color: blue">class</span> ConnectedSocket
+{
+    <span style="color: blue">public</span> <span style="color: blue">int</span> Receive(<span style="color: blue">byte</span>[] buffer);
+    <span style="color: blue">public</span> <span style="color: blue">int</span> Send(<span style="color: blue">byte</span>[] buffer);
+}</pre>
+<p>To prove that we have to call Connect or Accept before any of the ConnectedSocket methods, we make Connect and Accept factory methods:</p>
+<pre><span style="color: blue">public</span> <span style="color: blue">class</span> Socket : IDisposable
+{
+    <span style="color: blue">public</span> Socket(SocketInformation socketInformation);
+    <span style="color: blue">public</span> Socket(AddressFamily addressFamily, SocketType socketType, ProtocolType protocolType);
+
+    <span style="color: blue">public</span> <strong>ConnectedSocket</strong> Accept();
+    <span style="color: blue">public</span> <span style="color: blue">void</span> Bind(EndPoint localEP);
+    <span style="color: blue">public</span> <strong>ConnectedSocket</strong> Connect(EndPoint remoteEP);
+    <span style="color: blue">public</span> <strong>ConnectedSocket</strong> Connect(<span style="color: blue">string</span> host, <span style="color: blue">int</span> port);
+    <span style="color: blue">public</span> <span style="color: blue">void</span> Dispose();
+    <span style="color: blue">public</span> <span style="color: blue">void</span> Listen(<span style="color: blue">int</span> backlog);
+}</pre>
+<p>This API proves one of the assertions in the MSDN documentation. Try the others on your own. Answers will be posted next week.</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="index51fa.html?cat=40" title="View all posts in qed" rel="category">qed</a> |   <a href="index0ecd.html?p=445#respond" title="Comment on Hint on socket homework">No Comments &#187;</a></p>
+
+			</div>
+
+				<div class="post">
+				<h3 id="post-439"><a href="indexfcc0.html?p=439" rel="bookmark" title="Permanent Link to Relaxed locking on thread-safe cache">Relaxed locking on thread-safe cache</a></h3>
+				<small>Friday, September 18th, 2009</small>
+
+				<div class="entry">
+					<p>In a <a href="index14c7.html?p=437">prior post</a>, I showed how callbacks can be used to prove prerequisites and thread-safety. The example was a cache. But the solution left the cache too constraining. While it was correct, it was too tightly locked. All users of the class will line up behind one another, whether they are after the same data or not.</p>
+<p>To resolve this problem, let's move the lock. Instead of locking on the cache while fetching the value, let's lock on the key. Two clients accessing the cache with the same key will line up, but clients with different keys will not.</p>
+<p>But we can't lock on the key itself. We need to lock on something with identity. The identity of the key is not important. A client can create a new instance of the key having the same value, and that should qualify as the same key. So we have to look elsewhere.</p>
+<p>Fortunately, the value of the key is used to find an object in the dictionary. That object <em>does</em> have identity. So we move the lock there.</p>
+<pre><span style="color: blue">public</span> <span style="color: blue">class</span> CachedObject&lt;TValue&gt;
+{
+    <span style="color: blue">private</span> TValue _value;
+    <span style="color: blue">private</span> <span style="color: blue">bool</span> _fetched = <span style="color: maroon">false</span>;
+    <span style="color: blue">public</span> DateTime DateCached { <span style="color: blue">get</span>; <span style="color: blue">private</span> <span style="color: blue">set</span>; }
+
+    <span style="color: blue">public</span> CachedObject(DateTime dateCached)
+    {
+        DateCached = dateCached;
+    }
+
+    <span style="color: blue">public</span> TValue Value
+    {
+        <span style="color: blue">get</span> { <span style="color: blue">return</span> _value; }
+        <span style="color: blue">set</span> { _value = value; _fetched = <span style="color: maroon">true</span>; }
+    }
+
+    <span style="color: blue">public</span> <span style="color: blue">bool</span> Fetched
+    {
+        <span style="color: blue">get</span> { <span style="color: blue">return</span> _fetched; }
+    }
+}
+
+<span style="color: blue">public</span> <span style="color: blue">class</span> Cache&lt;TKey, TValue&gt;
+{
+    <span style="color: blue">private</span> TimeSpan _expiry;
+    <span style="color: blue">private</span> Dictionary&lt;TKey, CachedObject&lt;TValue&gt;&gt; _store =
+        <span style="color: blue">new</span> Dictionary&lt;TKey, CachedObject&lt;TValue&gt;&gt;();
+
+    <span style="color: blue">public</span> Cache(TimeSpan expiry)
+    {
+        _expiry = expiry;
+    }
+
+    <span style="color: blue">public</span> TValue Get(TKey key, Func&lt;TKey, TValue&gt; fetch)
+    {
+        CachedObject&lt;TValue&gt; found;
+
+        <span style="color: blue">lock</span> (_store)
+        {
+            <span style="color: green">// If the object is not in the cache, or it is expired,</span>
+            <span style="color: green">// fetch it and add it to the cache.</span>
+            DateTime now = DateTime.Now;
+            <span style="color: blue">if</span> (_store.TryGetValue(key, <span style="color: blue">out</span> found) &amp;&amp;
+                found.DateCached + _expiry &lt; now)
+            {
+                <span style="color: blue">return</span> found.Value;
+            }
+
+            found = <span style="color: blue">new</span> CachedObject&lt;TValue&gt;(now);
+            _store.Add(key, found);
+        }
+
+        <span style="color: blue">lock</span> (found)
+        {
+            <span style="color: blue">if</span> (!found.Fetched)
+                found.Value = fetch(key);
+            <span style="color: blue">return</span> found.Value;
+        }
+    }
+}</pre>
+<p>The Get method locks first on the cache. This protects the data structure, and ensures that we get just one instance of CachedObject. Once it has that, it locks on the found CachedObject so that clients after the same key line up.</p>
+<p>Inside the lock, it checks to see whether the value has already been fetched. If not, this thread is the first in line, so it fetches the value. But if it <em>has</em> already been fetched, then the thread was not the first in line and can just use the fetched object.</p>
+<p>The above is not a formal proof, and has many logical holes. Hopefully we'll have time to shore it up, and possibly find bugs in the code along the way. This is the kind of code that definitely needs to be proven. Sure, unit testing can give us some confidence, but no amount of unit testing can verify that this code is completely thread safe.</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="index51fa.html?cat=40" title="View all posts in qed" rel="category">qed</a> |   <a href="indexfcc0.html?p=439#respond" title="Comment on Relaxed locking on thread-safe cache">No Comments &#187;</a></p>
+
+			</div>
+
+				<div class="post">
+				<h3 id="post-437"><a href="index14c7.html?p=437" rel="bookmark" title="Permanent Link to Thread safety through callbacks">Thread safety through callbacks</a></h3>
+				<small>Wednesday, September 16th, 2009</small>
+
+				<div class="entry">
+					<p>While callbacks are good at proving prerequisites, they are also good at proving thread safety. Take, for example, this cache:</p>
+<pre><span style="color: blue">public</span> <span style="color: blue">class</span> CachedObject&lt;TValue&gt;
+{
+    <span style="color: blue">public</span> TValue Value { <span style="color: blue">get</span>; <span style="color: blue">private</span> <span style="color: blue">set</span>; }
+    <span style="color: blue">public</span> DateTime DateCached { <span style="color: blue">get</span>; <span style="color: blue">private</span> <span style="color: blue">set</span>; }
+
+    <span style="color: blue">public</span> CachedObject(TValue value, DateTime dateCached)
+    {
+        Value = value;
+        DateCached = dateCached;
+    }
+}
+
+<span style="color: blue">public</span> <span style="color: blue">class</span> Cache&lt;TKey, TValue&gt;
+{
+    <span style="color: blue">private</span> TimeSpan _expiry;
+    <span style="color: blue">private</span> Dictionary&lt;TKey, CachedObject&lt;TValue&gt;&gt; _store =
+        <span style="color: blue">new</span> Dictionary&lt;TKey, CachedObject&lt;TValue&gt;&gt;();
+
+    <span style="color: blue">public</span> Cache(TimeSpan expiry)
+    {
+        _expiry = expiry;
+    }
+
+    <span style="color: blue">public</span> TValue Get(TKey key)
+    {
+        CachedObject&lt;TValue&gt; found;
+
+        <span style="color: green">// If the object is in the cache, check the date.</span>
+        <span style="color: blue">if</span> (_store.TryGetValue(key, <span style="color: blue">out</span> found) &amp;&amp;
+            found.DateCached + _expiry &lt; DateTime.Now)
+        {
+            <span style="color: blue">return</span> found.Value;
+        }
+        <span style="color: blue">else</span>
+        {
+            <span style="color: blue">return</span> <span style="color: blue">default</span>(TValue);
+        }
+    }
+
+    <span style="color: blue">public</span> <span style="color: blue">void</span> Put(TKey key, TValue value)
+    {
+        _store.Add(key, <span style="color: blue">new</span> CachedObject&lt;TValue&gt;(value, DateTime.Now));
+    }
+}</pre>
+<p>The caller has to use it properly for it to work. They have to call Get before Put (prerequisite), and they have to synchronize around the two calls. If they don't, they run the risk of creating a race condition.</p>
+<p>A race condition occurs when the outcome of an operation depends upon other operations happening in parallel. If one thread gets finished first, there is one result. If another thread finishes first, there is another. In this case, two threads could try to Get the same value. Finding none, they can both race to fetch the value and put it in the cache.</p>
+<p>To prove that a race condition cannot occur, we can use a callback.</p>
+<pre><span style="color: blue">public</span> <span style="color: blue">class</span> Cache&lt;TKey, TValue&gt;
+{
+    <span style="color: blue">private</span> TimeSpan _expiry;
+    <span style="color: blue">private</span> Dictionary&lt;TKey, CachedObject&lt;TValue&gt;&gt; _store =
+        <span style="color: blue">new</span> Dictionary&lt;TKey, CachedObject&lt;TValue&gt;&gt;();
+
+    <span style="color: blue">public</span> Cache(TimeSpan expiry)
+    {
+        _expiry = expiry;
+    }
+
+    <span style="color: blue">public</span> TValue Get(TKey key, Func&lt;TKey, TValue&gt; fetch)
+    {
+        <span style="color: blue">lock</span> (_store)
+        {
+            CachedObject&lt;TValue&gt; found;
+
+            <span style="color: green">// If the object is not in the cache, or it is expired,</span>
+            <span style="color: green">// fetch it and add it to the cache.</span>
+            DateTime now = DateTime.Now;
+            <span style="color: blue">if</span> (!_store.TryGetValue(key, <span style="color: blue">out</span> found) ||
+                found.DateCached + _expiry &gt;= now)
+            {
+                found = <span style="color: blue">new</span> CachedObject&lt;TValue&gt;(fetch(key), now);
+               _store.Add(key, found);
+            }
+            <span style="color: blue">return</span> found.Value;
+        }
+    }
+}</pre>
+<p>This version of the cache takes a callback to fetch the value if it is not found. Synchronization is now built into the Get method. The caller doesn't need to synchronize around it. More importantly, we can prove the correctness of the code without seeing the caller. There is no way to get it wrong.</p>
+<p>This cache still has problems. The lock is to broad. In preventing a race condition on two thread getting the same value, we've inadvertently blocked two threads getting different values. We'll fix that next.</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="index51fa.html?cat=40" title="View all posts in qed" rel="category">qed</a> |   <a href="index14c7.html?p=437#respond" title="Comment on Thread safety through callbacks">No Comments &#187;</a></p>
+
+			</div>
+
+				<div class="post">
+				<h3 id="post-436"><a href="indexc1f6.html?p=436" rel="bookmark" title="Permanent Link to Fixing an unhelpful API">Fixing an unhelpful API</a></h3>
+				<small>Tuesday, September 15th, 2009</small>
+
+				<div class="entry">
+					<p>I started Q.E.D. Hour at work to discuss ways that we can use mathematical proof to have more confidence in our code. In last week's session, we walked through some improvements to a particular piece of code. Here is how it started:</p>
+<pre><span style="color: blue">public</span> <span style="color: blue">void</span> DoWorkWithOrderService()
+{
+    <span style="color: blue">using</span> (ITransaction currentTransaction = <span style="color: blue">new</span> AcidTransaction(_container))
+    {
+        OrderService.Transaction = currentTransaction;
+        OrderService.DoWork();
+        currentTransaction.Commit();
+    }
+}</pre>
+<p>It is only possible to prove the correctness of this code based on the caller (seen here), and not the order service itself. If the caller forgets to initialize the transaction property, if the caller forgets to create the transaction in a using statement, or if the caller forgets to create a new instance per thread, then bad things can happen.</p>
+<p><a href="wp-content/uploads/2009/09/unhelpful-api.jpg"><img style="border-top-width: 0px; border-left-width: 0px; border-bottom-width: 0px; border-right-width: 0px" height="133" alt="Unhelpful_API" src="wp-content/uploads/2009/09/unhelpful-api-thumb.jpg" width="244" align="right" border="0"></a> The order service is an unhelpful API. When you approach it, you have to use caution. If you use it in the wrong way, bad things will happen. If you're lucky, it will throw an exception. If you are unlucky, you won't catch errors until you release to production.</p>
+<p>An unhelpful API must be approached with fear.</p>
+<p><strong>Parameters are prerequisites</strong><br />The first step in improving this unhelpful API is to ensure that a transaction exists before a service method is called. We can do this by turning the property into a parameter.</p>
+<p>Before:</p>
+<pre><span style="color: blue">public</span> <span style="color: blue">class</span> Service : IService
+{
+    <span style="color: blue">public</span> ITransaction Transaction
+    {
+        <span style="color: blue">set</span>;
+        <span style="color: blue">get</span>;
+    }
+
+    <span style="color: blue">public</span> <span style="color: blue">void</span> DoWork() { }
+}</pre>
+<p>After:</p>
+<pre><span style="color: blue">public</span> <span style="color: blue">class</span> ServiceFactory : IServiceFactory
+{
+    <span style="color: blue">public</span> IService CreateService(ITransaction transaction)
+    {
+        <span style="color: blue">return</span> <span style="color: blue">new</span> Service(transaction);
+    }
+}
+
+<span style="color: blue">public</span> <span style="color: blue">class</span> Service : IService
+{
+    <span style="color: blue">private</span> ITransaction _transaction;
+
+    <span style="color: blue">public</span> Service(ITransaction transaction)
+    {
+        _transaction = transaction;
+    }
+
+    <span style="color: blue">public</span> <span style="color: blue">void</span> DoWork() { }
+}</pre>
+<p>You cannot get a service from the factory without providing a transaction. Therefore, you cannot make any service calls before providing a transaction. Q.E.D.</p>
+<p><strong>Callbacks are prerequisites</strong><br />We have proven that a transaction is provided before a service method is called, but we haven't yet proven that the transaction gets disposed. We can take one more step toward making this a helpful, provable API using a callback.</p>
+<pre><span style="color: blue">public</span> <span style="color: blue">class</span> ServiceFactory : IServiceFactory
+{
+    <span style="color: blue">private</span> ITransactionFactory _transactionFactory;
+
+    <span style="color: blue">public</span> <span style="color: blue">void</span> CallService(Action&lt;IService&gt; action)
+    {
+        <span style="color: blue">using</span> (ITransaction transaction =
+            _transactionFactory.CreateTransaction())
+        {
+            action(<span style="color: blue">new</span> Service(transaction));
+        }
+    }
+}</pre>
+<p>A transaction factory is injected into the service factory (via constructor not shown here), and that is used to create a transaction as needed. That creation happens within a using statement in the service factory, not in the calling code. There is no way for the caller to forget to do this. Thus we have proven that the transaction gets disposed.</p>
+<p>In these two steps, we have transformed an unhelpful API into a helpful one. The unhelpful API offered many options, most of them wrong. The helpful API offers only the options that are correct. It guides the caller in its proper use. It cannot be used incorrectly.</p>
+<p>An unhelpful API cannot be proven. It must be approached with fear. A helpful API can be proven. It can be approached with confidence.</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="index51fa.html?cat=40" title="View all posts in qed" rel="category">qed</a> |   <a href="indexc1f6.html?p=436#respond" title="Comment on Fixing an unhelpful API">No Comments &#187;</a></p>
+
+			</div>
+
+				<div class="post">
+				<h3 id="post-432"><a href="indexecc4.html?p=432" rel="bookmark" title="Permanent Link to Proof based on imperative programming">Proof based on imperative programming</a></h3>
+				<small>Monday, September 14th, 2009</small>
+
+				<div class="entry">
+					<p>Our Q.E.D. homework for last week was to prove some code to be correct. In particular, prove that:</p>
+<ul>
+<li>The service has a transaction when it is called.
+<li>The transaction is disposed.
+<li>The code is thread safe.</li>
+</ul>
+<p>The code in question was:</p>
+<pre><span style="color: blue">public</span> Order GetOrder(<span style="color: blue">int</span> orderId)
+{
+   <span style="color: blue">return</span> InvokeGetOrder(() =&gt; OrderServiceProvider.GetOrderWithItems(orderId));
+}
+
+<span style="color: blue">public</span> Order InvokeGetOrder(Func&lt;Order&gt; function)
+{
+    Order order;
+    <span style="color: blue">using</span> (IBusinessTransactionContext currentBusinessTransactionContext =
+        <span style="color: blue">new</span> AcidBusinessTransactionContext(_container, <span style="color: maroon">false</span>))
+    {
+        OrderServiceProvider.BusinessTransactionContext =
+            currentBusinessTransactionContext;
+
+        order = function();
+        OrderServiceProvider.BusinessTransactionContext.Commit();
+    }
+
+    <span style="color: blue">return</span> order;
+}</pre>
+<p>The proof of the first two points is pretty straight forward. Because the transaction is assigned prior to calling the service function, we know the service function has a transaction. And because the transaction is created in a using statement, we know that it will be disposed.</p>
+<p>The third point is harder to prove. If two threads call GetOrder on the same object, they will both try to assign a transaction to the same OrderServiceProvider. We have to prove that this won't happen. For that, we look at the Castle configuration:</p>
+<pre><span style="color: blue">&lt;</span><span style="color: maroon">component</span>
+    <span style="color: red">id</span>="...OrderService"
+    <span style="color: red">service</span>="...OrderService, ..."
+    <span style="color: red">type</span>="...OrderService, ..."
+    <span style="color: red">lifestyle</span>="<strong>transient</strong>”<span style="color: blue">&gt;</span>
+        <span style="color: blue">&lt;</span><span style="color: maroon">parameters</span><span style="color: blue">&gt;</span>
+            <span style="color: blue">&lt;</span><span style="color: maroon">orderRepository</span><span style="color: blue">&gt;</span>
+                ${...OrderRepository}
+            <span style="color: blue">&lt;</span>/<span style="color: maroon">orderRepository</span><span style="color: blue">&gt;</span>
+        <span style="color: blue">&lt;</span>/<span style="color: maroon">parameters</span><span style="color: blue">&gt;</span>
+<span style="color: blue">&lt;</span>/<span style="color: maroon">component</span><span style="color: blue">&gt;</span></pre>
+<p>Because the OrderService is declared to be transient, we are guaranteed to get a new instance each time the component is resolved. Each web request resolves the service, so we know that each web request gets a unique object. The request is thread safe. Q.E.D.</p>
+<p><strong>Perils of imperative proofs</strong><br />While these proofs are correct, there is a significant problem. We proved correctness based on the code that calls OrderService, not based on OrderService itself. In fact, there is nothing about the OrderService API that compels the caller to use it correctly.</p>
+<p>For example, the service requires that we set the BusinessTransactionContext property before we call a method. If we forget one little assignment statement, then the service does not have a transaction. This problem can be caught no earlier than integration testing.</p>
+<p>If, on the other hand, we forget to create our transaction in a using statement, we have a more subtle problem. We may see that database connections leak over time. Or we may see blocking because failed transactions remain open instead of being rolled back. This problem won't be caught in integration testing, and may be very difficult to diagnose when it finally is identified.</p>
+<p>And what if we forget to configure our components to be transient? The only time this causes a measurable problem is when we have concurrency greater than 1. This doesn't happen during a typical integration test. Nor does this usually happen during manual testing. The first time a web application sees concurrency is usually during stress testing, or maybe even production.</p>
+<p>This lead into a discussion of prerequisites. There are ways that we can rewrite the OrderService API so that it cannot be used incorrectly. Some examples are to <a href="indexd519.html?p=415">require a parameter</a> and to <a href="index5750.html?p=416">use the constructor</a>. We'll apply these techniques to the OrderService in the next post.</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="index51fa.html?cat=40" title="View all posts in qed" rel="category">qed</a> |   <a href="indexecc4.html?p=432#respond" title="Comment on Proof based on imperative programming">No Comments &#187;</a></p>
+
+			</div>
+
+				<div class="post">
+				<h3 id="post-431"><a href="index88c3.html?p=431" rel="bookmark" title="Permanent Link to My wish for C#: class parameters">My wish for C#: class parameters</a></h3>
+				<small>Friday, September 11th, 2009</small>
+
+				<div class="entry">
+					<p>How C# works today:</p>
+<pre><span style="color: blue">public</span> <span style="color: blue">class</span> Order
+{
+    <span style="color: blue">private</span> Customer _customer;
+
+    <span style="color: blue">public</span> Order(Customer customer)
+    {
+        _customer = customer;
+    }
+
+    <span style="color: blue">public</span> Customer Customer
+    {
+        <span style="color: blue">get</span> { <span style="color: blue">return</span> _customer; }
+    }
+
+    <span style="color: blue">public</span> <span style="color: blue">void</span> Fulfill()
+    {
+        Package.ShipTo(_customer.ShippingAddress);
+    }
+}</pre>
+<p>How I wish it worked:</p>
+<pre><span style="color: blue">public</span> <span style="color: blue">class</span> Order(Customer _customer)
+{
+    <span style="color: blue">public</span> Customer Customer
+    {
+        <span style="color: blue">get</span> { <span style="color: blue">return</span> _customer; }
+    }
+
+    <span style="color: blue">public</span> <span style="color: blue">void</span> Fulfill()
+    {
+        Package.ShipTo(_customer.ShippingAddress);
+    }
+}</pre>
+<p>Advantages:</p>
+<ul>
+<li>Class parameters would be immutable.</li>
+<li>Classes could only have one constructor.</li>
+<li>Constructors could not have side effects.</li>
+<li>Constructors could not throw exceptions.</li>
+<li>Class parameters would only have to be declared once instead of 3 times (counting the assignment).</li>
+</ul>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="index8e7f.html?cat=19" title="View all posts in C#" rel="category">C#</a>,  <a href="index51fa.html?cat=40" title="View all posts in qed" rel="category">qed</a> |   <a href="index88c3.html?p=431#respond" title="Comment on My wish for C#: class parameters">No Comments &#187;</a></p>
+
+			</div>
+
+				<div class="post">
+				<h3 id="post-430"><a href="indexbdc5.html?p=430" rel="bookmark" title="Permanent Link to Anonymous delegates vs. lambdas">Anonymous delegates vs. lambdas</a></h3>
+				<small>Thursday, September 10th, 2009</small>
+
+				<div class="entry">
+					<p>An interesting question came up during last week's Q.E.D. discussion on closure. Why are there two language features in C# that do the same thing?</p>
+<p>Lambdas:</p>
+<pre><span style="color: blue">public</span> Order GetOrder(<span style="color: blue">string</span> orderId)
+{
+    <span style="color: blue">return</span> GetOrderRepository()
+        .GetSatisfying(o =&gt; o.OrderId == orderId)
+        .Query()
+        .FirstOrDefault();
+}</pre>
+<p>Anonymous delegates:</p>
+<pre><span style="color: blue">public</span> Order GetOrder(<span style="color: blue">string</span> orderId)
+{
+    <span style="color: blue">return</span> GetOrderRepository()
+        .GetSatisfying(<span style="color: blue">delegate</span>(Order o)
+            { <span style="color: blue">return</span> o.OrderId == orderId; })
+        .Query()
+        .FirstOrDefault();
+}</pre>
+<p>Do you see the difference? Let me give you a clue. Here's another way to write the anonymous delegate:</p>
+<pre><span style="color: blue">public</span> Order GetOrder(<span style="color: blue">string</span> orderId)
+{
+    <span style="color: blue">return</span> GetOrderRepository()
+        .GetSatisfying(o =&gt;
+           { <span style="color: blue">return</span> o.OrderId == orderId; })
+        .Query()
+        .FirstOrDefault();
+}</pre>
+<p>Even though this syntax uses the lambda operator "=&gt;", it still behaves more like an anonymous delegate. The important difference is not the "=&gt;" or the "delegate", its the "return" and the semicolon.</p>
+<p>A lambda contains an expression. An anonymous delegate contains statements. Sure, that <em>could</em> be a single return statement, but it doesn't have to be.</p>
+<p>It should be stated that only the first block of code compiles in this instance. That's because GetSatisfying takes "Expression&lt;Func&lt;Order, bool&gt;&gt;", and not just "Func&lt;Order, bool&gt;". A function is just a block of code that you can call which happens to return a value. An expression, on the other hand, exists only to produce that value.</p>
+<p>Lambdas are expressions. Anonymous delegates are functions.</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="index8e7f.html?cat=19" title="View all posts in C#" rel="category">C#</a>,  <a href="index51fa.html?cat=40" title="View all posts in qed" rel="category">qed</a> |   <a href="indexbdc5.html?p=430#respond" title="Comment on Anonymous delegates vs. lambdas">No Comments &#187;</a></p>
+
+			</div>
+
+		
+		<div class="navigation">
+			<div class="alignleft"><a href="index92e3.html?cat=40&amp;paged=2">&laquo; Previous Entries</a></div>
+			<div class="alignright"></div>
+		</div>
+
+	
+	</div>
+		</td>
+	</tr>
+</table>
+
+<hr />
+<div id="footer">
+<!-- If you'd like to support WordPress, having the "powered by" link someone on your blog is the best way, it's our only promotion or advertising. -->
+	<p>
+		Adventures in Software is proudly powered by 
+		<a href="http://wordpress.org/">WordPress</a>
+		<br /><a href="indexd784.html?feed=rss2">Entries (RSS)</a>
+		and <a href="indexa6da.html?feed=comments-rss2">Comments (RSS)</a>.
+		<!-- 17 queries. 0.393 seconds. -->
+	</p>
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-389401-3");
+pageTracker._trackPageview();
+} catch(err) {}</script></div>
+
+<!-- Gorgeous design by Michael Heilemann - http://binarybonsai.com/kubrick/ -->
+
+		<div id="sk2-footer" style="color:#FFF; background-color:#444; padding: 3px 2px 3px 2px; border-top: #888 solid 1px;">This blog is protected by <a href="http://unknowngenius.com/blog/" title="Dave">dr Dave</a>'s <strong><a href="http://unknowngenius.com/blog/wordpress/spam-karma/" title="SK2">Spam Karma 2</a></strong>: <strong>274531</strong>  Spams eaten and counting...</div><script type="text/javascript" src="replies.js"></script>
+<script type="text/javascript" src="blogger.js"></script>
+<script type="text/javascript" src="http://twitter.com/statuses/user_timeline/michaellperry.json?callback=twitterCallback2&amp;count=5"></script>
+<script type="text/javascript" src="http://search.twitter.com/search.json?q=@michaellperry&amp;callback=twitterCallbackReplies&amp;rpp=5"></script>
+</body>
+
+<!-- Mirrored from adventuresinsoftware.com/blog/?cat=40 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 Jan 2017 12:55:42 GMT -->
+</html>

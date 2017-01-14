@@ -1,0 +1,777 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+
+
+<!-- Mirrored from adventuresinsoftware.com/blog/?cat=6&paged=2 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 Jan 2017 13:03:10 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>Adventures in Software   &raquo; Patterns</title>
+
+<meta name="generator" content="WordPress 2.3.3" /> <!-- leave this for stats -->
+
+<link rel="stylesheet" href="wp-content/themes/ais2/style.css" type="text/css" media="screen" />
+<link rel="alternate" type="application/rss+xml" title="Adventures in Software RSS Feed" href="indexd784.html?feed=rss2" />
+<link rel="pingback" href="xmlrpc.html" />
+    <script type="text/javascript">
+        function onSilverlightError(sender, args) {
+            var appSource = "";
+            if (sender != null && sender != 0) {
+              appSource = sender.getHost().Source;
+            }
+            
+            var errorType = args.ErrorType;
+            var iErrorCode = args.ErrorCode;
+
+            if (errorType == "ImageError" || errorType == "MediaError") {
+              return;
+            }
+
+            var errMsg = "Unhandled Error in Silverlight Application " +  appSource + "\n" ;
+
+            errMsg += "Code: "+ iErrorCode + "    \n";
+            errMsg += "Category: " + errorType + "       \n";
+            errMsg += "Message: " + args.ErrorMessage + "     \n";
+
+            if (errorType == "ParserError") {
+                errMsg += "File: " + args.xamlFile + "     \n";
+                errMsg += "Line: " + args.lineNumber + "     \n";
+                errMsg += "Position: " + args.charPosition + "     \n";
+            }
+            else if (errorType == "RuntimeError") {           
+                if (args.lineNumber != 0) {
+                    errMsg += "Line: " + args.lineNumber + "     \n";
+                    errMsg += "Position: " +  args.charPosition + "     \n";
+                }
+                errMsg += "MethodName: " + args.methodName + "     \n";
+            }
+
+            throw new Error(errMsg);
+        }
+    </script>
+
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc0db0.php?rsd" />
+ <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="wp-includes/wlwmanifest.xml" /> <style type='text/css'>
+<!--#header { background: url('wp-content/themes/ais2/images/header-imgae03.html?upper=A7A73F&amp;lower=77773F') no-repeat bottom center; }
+--></style>
+</head>
+<body>
+<div id="page">
+
+<div class="aisTopBar">
+	<form method="get" id="searchform" action="http://adventuresinsoftware.com/blog/">
+<div>
+<a href="indexd784.html?feed=rss2"><img src="../images/feed-icon-28x28.png" border="0"></a>
+<input type="text" value="" name="s" id="s" />
+<input type="submit" id="searchsubmit" value="Search" />
+</div>
+</form>
+</div>
+
+<div class="aisHeaderImageRight">
+	<div class="aisHeaderImage">
+	<div class="aisHeaderCornerRight">
+	<div class="aisHeaderCornerLeft">
+	<div class="aisImageBar">
+	<div class="aisSubSites">
+		<a href="index.html" class="aisSubSiteLink"><span class="aisSiteTabRight"><span class="aisSiteTabLeft"><span class="aisSiteTab">
+			home</span></span></span></a>
+		<a class="aisSubSiteLink" href="indexb60a.html?cat=27"><span class="aisSiteTabRight"><span class="aisSiteTabLeft"><span class="aisSiteTab">
+			historic modeling</span></span></span></a>
+		<a class="aisSubSiteLink" href="indexa88f.html?cat=36"><span class="aisSiteTabRight"><span class="aisSiteTabLeft"><span class="aisSiteTab">
+			update controls</span></span></span></a>
+		<a href="index2d79.html?cat=26" class="aisSubSiteLink"><span class="aisSiteTabRight"><span class="aisSiteTabLeft"><span class="aisSiteTab">
+			degrees of freedom</span></span></span></a>
+		<a class="aisSubSiteLink" href="indexba53.html?page_id=2"><span class="aisSiteTabRight"><span class="aisSiteTabLeft"><span class="aisSiteTab">
+			about us</span></span></span></a>
+
+	</div>
+	</div>
+	</div>
+	</div>
+	</div>
+</div>
+
+<table style="width: 100%" cellspacing="0" cellpadding="0">
+	<tr valign="top">
+		<td width="210px">
+<div id="sidebar">
+<div class="aisLeftColumnFill">
+<div class="aisLeftColumnBottom">
+<div class="aisLeftColumnTop">
+<div id="twitter_div" class="aisLeftNav">
+<h2 class="sidebar-title">Twitter Updates</h2>
+<ul id="twitter_update_list"></ul>
+<a href="http://twitter.com/michaellperry" id="follow">Follow me</a>
+</div>
+<div id="twitter_reply_div" class="aisLeftNav">
+<h2 class="sidebar-title">Twitter Replies</h2>
+<ul id="twitter_reply_list"></ul>
+</div>
+
+<div class="aisLeftNav">
+<a href='http://ineta.org/Speakers/SearchCommunitySpeakers.aspx?SpeakerId=c5110e21-9243-461b-a464-a6548524e885'><img alt='INETA Community Speakers Program' border='0' src='../../www.ineta.org/images/OfficialLogos/InetaCommunitySpeakersRequestMe.html' /></a>
+</div>
+
+<div class="aisLeftNav">
+	<li class="pagenav"><h2>Pages</h2><ul><li class="page_item page-item-2"><a href="indexba53.html?page_id=2" title="About Us">About Us</a></li>
+<li class="page_item page-item-210"><a href="index6ae3.html?page_id=210" title="Templates">Templates</a></li>
+</ul></li></div>
+
+<div class="aisLeftNav">
+<h2>Archives</h2>
+<ul>
+	<li><a href='indexb4d5.html?m=201110' title='October 2011'>October 2011</a></li>
+	<li><a href='indexc61a.html?m=201106' title='June 2011'>June 2011</a></li>
+	<li><a href='indexa80d.html?m=201105' title='May 2011'>May 2011</a></li>
+	<li><a href='index512b.html?m=201104' title='April 2011'>April 2011</a></li>
+	<li><a href='index08fb.html?m=201103' title='March 2011'>March 2011</a></li>
+	<li><a href='index52f4.html?m=201102' title='February 2011'>February 2011</a></li>
+	<li><a href='index74f1.html?m=201101' title='January 2011'>January 2011</a></li>
+	<li><a href='index8956.html?m=201012' title='December 2010'>December 2010</a></li>
+	<li><a href='indexa1aa.html?m=201011' title='November 2010'>November 2010</a></li>
+	<li><a href='indexe3d5.html?m=201010' title='October 2010'>October 2010</a></li>
+	<li><a href='index9ab9.html?m=201009' title='September 2010'>September 2010</a></li>
+	<li><a href='index1ff0.html?m=201008' title='August 2010'>August 2010</a></li>
+	<li><a href='index9f11.html?m=201007' title='July 2010'>July 2010</a></li>
+	<li><a href='index31f0.html?m=201006' title='June 2010'>June 2010</a></li>
+	<li><a href='indexd189.html?m=201005' title='May 2010'>May 2010</a></li>
+	<li><a href='indexb5c0.html?m=201004' title='April 2010'>April 2010</a></li>
+	<li><a href='indexf258.html?m=201003' title='March 2010'>March 2010</a></li>
+	<li><a href='index6e30.html?m=201002' title='February 2010'>February 2010</a></li>
+	<li><a href='index6b19.html?m=201001' title='January 2010'>January 2010</a></li>
+	<li><a href='index5c0a.html?m=200912' title='December 2009'>December 2009</a></li>
+	<li><a href='index8f62.html?m=200911' title='November 2009'>November 2009</a></li>
+	<li><a href='index451d.html?m=200910' title='October 2009'>October 2009</a></li>
+	<li><a href='index3e04.html?m=200909' title='September 2009'>September 2009</a></li>
+	<li><a href='index425a.html?m=200908' title='August 2009'>August 2009</a></li>
+	<li><a href='index9907.html?m=200907' title='July 2009'>July 2009</a></li>
+	<li><a href='index3104.html?m=200906' title='June 2009'>June 2009</a></li>
+	<li><a href='indexc36d.html?m=200905' title='May 2009'>May 2009</a></li>
+	<li><a href='index17e8.html?m=200904' title='April 2009'>April 2009</a></li>
+	<li><a href='index10a5.html?m=200903' title='March 2009'>March 2009</a></li>
+	<li><a href='index8988.html?m=200902' title='February 2009'>February 2009</a></li>
+	<li><a href='index1419.html?m=200901' title='January 2009'>January 2009</a></li>
+	<li><a href='index7866.html?m=200812' title='December 2008'>December 2008</a></li>
+	<li><a href='index55f6.html?m=200811' title='November 2008'>November 2008</a></li>
+	<li><a href='indexa7bc.html?m=200810' title='October 2008'>October 2008</a></li>
+	<li><a href='indexe77c.html?m=200809' title='September 2008'>September 2008</a></li>
+	<li><a href='indexcffc.html?m=200808' title='August 2008'>August 2008</a></li>
+	<li><a href='index0e62.html?m=200807' title='July 2008'>July 2008</a></li>
+	<li><a href='indexfda7.html?m=200806' title='June 2008'>June 2008</a></li>
+	<li><a href='index7d64.html?m=200805' title='May 2008'>May 2008</a></li>
+	<li><a href='index94dd.html?m=200804' title='April 2008'>April 2008</a></li>
+	<li><a href='index9631.html?m=200803' title='March 2008'>March 2008</a></li>
+	<li><a href='indexdd52.html?m=200802' title='February 2008'>February 2008</a></li>
+	<li><a href='index21ee.html?m=200801' title='January 2008'>January 2008</a></li>
+	<li><a href='index363c.html?m=200712' title='December 2007'>December 2007</a></li>
+	<li><a href='index7493.html?m=200711' title='November 2007'>November 2007</a></li>
+	<li><a href='index93a7.html?m=200710' title='October 2007'>October 2007</a></li>
+	<li><a href='index4ca8.html?m=200709' title='September 2007'>September 2007</a></li>
+	<li><a href='index6124.html?m=200708' title='August 2007'>August 2007</a></li>
+	<li><a href='index6013.html?m=200707' title='July 2007'>July 2007</a></li>
+	<li><a href='index2ab6.html?m=200706' title='June 2007'>June 2007</a></li>
+	<li><a href='index44f0.html?m=200705' title='May 2007'>May 2007</a></li>
+	<li><a href='indexf0b4.html?m=200704' title='April 2007'>April 2007</a></li>
+	<li><a href='index481d.html?m=200703' title='March 2007'>March 2007</a></li>
+	<li><a href='indexcbea.html?m=200702' title='February 2007'>February 2007</a></li>
+	<li><a href='index9cdc.html?m=200701' title='January 2007'>January 2007</a></li>
+	<li><a href='index3ea4.html?m=200612' title='December 2006'>December 2006</a></li>
+	<li><a href='index67ca.html?m=200611' title='November 2006'>November 2006</a></li>
+	<li><a href='indexff49.html?m=200610' title='October 2006'>October 2006</a></li>
+	<li><a href='index611c.html?m=200609' title='September 2006'>September 2006</a></li>
+	<li><a href='index9a21.html?m=200608' title='August 2006'>August 2006</a></li>
+	<li><a href='index3ee9.html?m=200607' title='July 2006'>July 2006</a></li>
+	<li><a href='indexe13a.html?m=200606' title='June 2006'>June 2006</a></li>
+</ul>
+</div>
+
+<div class="aisLeftNav">
+	</div>
+
+<div class="aisLeftNav">
+<h2>Books</h2>
+<iframe src="http://rcm.amazon.com/e/cm?t=adventures0d2-20&amp;o=1&amp;p=8&amp;l=as1&amp;asins=0764526413&amp;fc1=000000&amp;IS2=1&amp;lt1=_blank&amp;lc1=0000ff&amp;bc1=000000&amp;bg1=ffffff&amp;f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" name="I5" id="I5"></iframe>
+<br/>
+<iframe src="http://rcm.amazon.com/e/cm?t=adventures0d2-20&amp;o=1&amp;p=8&amp;l=as1&amp;asins=0201633612&amp;fc1=000000&amp;IS2=1&amp;lt1=_blank&amp;lc1=0000ff&amp;bc1=000000&amp;bg1=ffffff&amp;f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" name="I6" id="I6"></iframe>
+<br/>
+<iframe src="http://rcm.amazon.com/e/cm?t=adventures0d2-20&amp;o=1&amp;p=8&amp;l=as1&amp;asins=0136291554&amp;fc1=000000&amp;IS2=1&amp;lt1=_blank&amp;lc1=0000ff&amp;bc1=000000&amp;bg1=ffffff&amp;f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" name="I7" id="I7"></iframe>
+<br/>
+<iframe src="http://rcm.amazon.com/e/cm?t=adventures0d2-20&amp;o=1&amp;p=8&amp;l=as1&amp;asins=1888009195&amp;fc1=000000&amp;IS2=1&amp;lt1=_blank&amp;lc1=0000ff&amp;bc1=000000&amp;bg1=ffffff&amp;f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" name="I8" id="I8"></iframe>
+</div>
+<div class="aisLeftNav">
+<h2>Meta</h2>
+<ul>
+		<li><a href="wp-login.html">Login</a></li>
+	<li><a href="http://validator.w3.org/check/referer" title="This page validates as XHTML 1.0 Transitional">Valid <abbr title="eXtensible HyperText Markup Language">XHTML</abbr></a></li>
+	<li><a href="http://gmpg.org/xfn/"><abbr title="XHTML Friends Network">XFN</abbr></a></li>
+	<li><a href="http://wordpress.org/" title="Powered by WordPress, state-of-the-art semantic personal publishing platform.">WordPress</a></li>
+	</ul>
+</div>
+<div class="aisLeftContent">
+<h2>Community</h2>
+<ul>
+	<script type="text/javascript" src="../../localhost/embed/92q2bbma.js"></script>
+</ul>
+</div>
+
+</div></div></div>
+</div>		</td>
+		<td>
+
+	<div id="content" class="narrowcolumn">
+
+		
+		 		<h2 class="pagetitle">Archive for the &#8216;Patterns&#8217; Category</h2>
+
+ 	  
+
+		<div class="navigation">
+			<div class="alignleft"><a href="indexb4fb.html?cat=6&amp;paged=3">&laquo; Previous Entries</a></div>
+			<div class="alignright"><a href="indexb0b7.html?cat=6">Next Entries &raquo;</a></div>
+		</div>
+
+				<div class="post">
+				<h3 id="post-398"><a href="index9d24.html?p=398" rel="bookmark" title="Permanent Link to Data bound menus">Data bound menus</a></h3>
+				<small>Friday, July 3rd, 2009</small>
+
+				<div class="entry">
+					<p>I had a twitter conversation recently with <a href="http://twitter.com/edward_tanguay">Edward Tanguay</a> about his StackOverflow question on <a href="http://stackoverflow.com/questions/1067903/how-can-i-bind-an-observablecollection-of-viewmodels-to-a-menuitem">binding menus to an Observable Collection</a>. Naturally, I locked on to the ObservableCollection part and didn't get the true gist of his question. I took a step back, reread his question and the provided answers, and finally caught on to the problem. I wish I could upvote Kent Boogaart's answer more than once, because it set me on a trail of discovery.</p>
+<p>This example uses <a href="http://updatecontrols.net/">Update Controls</a>. Download the example source code: <a href="wp-content/uploads/2009/07/databoundmenus.zip" title="databoundmenus.zip">databoundmenus.zip</a>.</p>
+<p>There is not just one way to make a WPF menu work. There are several techniques that you have to combine. Much of an application's menu is static. Some of it is context sensitive, and only appears in certain conditions. And in a few places, the menu items are dynamic, like recently opened files or currently open windows. Update Controls can help with all of these things.</p>
+<p><strong>Declarative menu structure</strong><br />
+For the static menus, you want to declare the structure entirely in XAML. This gives you the greatest design/code separation, and the best tool support. Use <a href="index07ee.html?p=297">Command Binding</a> for all menu items.</p>
+<pre><span style="color: blue">&lt;</span><span style="color: maroon">Menu</span> <span style="color: red">DockPanel.Dock</span>="<span style="color: blue">Top</span>"<span style="color: blue">&gt;</span>
+    <span style="color: blue">&lt;</span><span style="color: maroon">MenuItem</span> <span style="color: red">Header</span>="<span style="color: blue">_File</span>"<span style="color: blue">&gt;</span>
+        <span style="color: blue">&lt;</span><span style="color: maroon">MenuItem</span> <span style="color: red">Header</span>="<span style="color: blue">_New</span>" <span style="color: red">Command</span>="<span style="color: blue">{Binding FileNewCommand}</span>"/<span style="color: blue">&gt;</span>
+        <span style="color: blue">&lt;</span><span style="color: maroon">MenuItem</span> <span style="color: red">Header</span>="<span style="color: blue">_Open</span>" <span style="color: red">Command</span>="<span style="color: blue">{Binding FileOpenCommand}</span>"/<span style="color: blue">&gt;</span>
+        <span style="color: blue">&lt;</span><span style="color: maroon">MenuItem</span> <span style="color: red">Header</span>="<span style="color: blue">_Save</span>" <span style="color: red">Command</span>="<span style="color: blue">{Binding FileSaveCommand}</span>"/<span style="color: blue">&gt;</span>
+        <span style="color: blue">&lt;</span><span style="color: maroon">MenuItem</span> <span style="color: red">Header</span>="<span style="color: blue">_Close</span>" <span style="color: red">Command</span>="<span style="color: blue">{Binding FileCloseCommand}</span>"/<span style="color: blue">&gt;</span>
+    <span style="color: blue">&lt;</span>/<span style="color: maroon">MenuItem</span><span style="color: blue">&gt;</span>
+<span style="color: blue">&lt;</span>/<span style="color: maroon">Menu</span><span style="color: blue">&gt;</span></pre>
+<p>Use Update Controls MakeCommand to create all of the bindable ICommand properties. The When clause will enable and disable the menu item.</p>
+<pre><span style="color: blue">public</span> ICommand FileSaveCommand
+{
+    <span style="color: blue">get</span>
+    {
+        <span style="color: green">// We can only save a file when one is open.</span>
+        <span style="color: blue">return</span> MakeCommand
+            .<strong>When</strong>(() =&gt; _dataModel.OpenFileName != <span style="color: blue">null</span>)
+            .Do(() =&gt; _dataModel.LastAction = <span style="color: maroon">"Save"</span>);
+    }
+}</pre>
+<p>Some of the menu items are not application actions, but window actions. These can be handled in code-behind.</p>
+<pre><span style="color: blue">&lt;</span><span style="color: maroon">Separator/</span><span style="color: blue">&gt;</span>
+<span style="color: blue">&lt;</span><span style="color: maroon">MenuItem</span> <span style="color: red">Header</span>="<span style="color: blue">E_xit</span>" <span style="color: red">Click</span>="<span style="color: blue">Exit_Click</span>"/<span style="color: blue">&gt;</span></pre>
+<pre><span style="color: blue">private</span> <span style="color: blue">void</span> Exit_Click(<span style="color: blue">object</span> sender, RoutedEventArgs e)
+{
+    Close();
+}</pre>
+<p><strong>Context sensitive menus</strong><br />
+You want context sensitive menus to appear under certain conditions. WPF has a mechanism for that: the <a href="http://msdn.microsoft.com/en-us/library/system.windows.datatrigger.aspx">DataTrigger</a>. A DataTrigger sets a control property when a data property is equal to a specific value. In this case, we want to set a MenuItem's Visibility property to Hidden when the data property IsFileOpen is False.</p>
+<pre><span style="color: blue">&lt;</span><span style="color: maroon">Window.Resources</span><span style="color: blue">&gt;</span>
+    <span style="color: blue">&lt;</span><span style="color: maroon">Style</span> <span style="color: red">x:Key</span>="<span style="color: blue">VisibleWhenFileIsOpen</span>" <span style="color: red">TargetType</span>="<span style="color: blue">MenuItem</span>"<span style="color: blue">&gt;</span>
+        <span style="color: blue">&lt;</span><span style="color: maroon">Style.Triggers</span><span style="color: blue">&gt;</span>
+            <span style="color: blue">&lt;</span><span style="color: maroon">DataTrigger</span> <span style="color: red">Binding</span>="<span style="color: blue">{Binding IsFileOpen}</span>" <span style="color: red">Value</span>="<span style="color: blue">False</span>"<span style="color: blue">&gt;</span>
+                <span style="color: blue">&lt;</span><span style="color: maroon">Setter</span> <span style="color: red">Property</span>="<span style="color: blue">Visibility</span>" <span style="color: red">Value</span>="<span style="color: blue">Hidden</span>"/<span style="color: blue">&gt;</span>
+            <span style="color: blue">&lt;</span>/<span style="color: maroon">DataTrigger</span><span style="color: blue">&gt;</span>
+        <span style="color: blue">&lt;</span>/<span style="color: maroon">Style.Triggers</span><span style="color: blue">&gt;</span>
+    <span style="color: blue">&lt;</span>/<span style="color: maroon">Style</span><span style="color: blue">&gt;</span>
+<span style="color: blue">&lt;</span>/<span style="color: maroon">Window.Resources</span><span style="color: blue">&gt;</span></pre>
+<p>We apply this style to any menu that is sensitive to this context.</p>
+<pre><span style="color: blue">&lt;</span><span style="color: maroon">MenuItem</span> <span style="color: red">Header</span>="<span style="color: blue">_Edit</span>" <span style="color: red">Style</span>="<span style="color: blue">{StaticResource VisibleWhenFileIsOpen}</span>"<span style="color: blue">&gt;</span>
+    <span style="color: blue">&lt;</span><span style="color: maroon">MenuItem</span> <span style="color: red">Header</span>="<span style="color: blue">Cu_t</span>"/<span style="color: blue">&gt;</span>
+    <span style="color: blue">&lt;</span><span style="color: maroon">MenuItem</span> <span style="color: red">Header</span>="<span style="color: blue">_Copy</span>"/<span style="color: blue">&gt;</span>
+    <span style="color: blue">&lt;</span><span style="color: maroon">MenuItem</span> <span style="color: red">Header</span>="<span style="color: blue">_Paste</span>"/<span style="color: blue">&gt;</span>
+<span style="color: blue">&lt;</span>/<span style="color: maroon">MenuItem</span><span style="color: blue">&gt;</span></pre>
+<p>DataTriggers automatically reset. When the IsFileOpen data property is no longer False, the Visibility control property will go back to the default Visible. There is no need to create another trigger for that rule.</p>
+<p><strong>Dynamic menus</strong><br />
+For recently opened files or currently open windows, you want each menu item to represent a data object. You want to bind the menu to a list.</p>
+<p>If you bind to the raw data objects, you will have a hard time getting exactly the behavior that you want in the view. XAML is declarative, and is easiest to use when the data is already in the right format. That's where the View Model comes in.</p>
+<pre><span style="color: blue">public</span> <span style="color: blue">class</span> RecentFileViewModel
+{
+    <span style="color: blue">private</span> <span style="color: blue">int</span> _index;
+    <span style="color: blue">private</span> <span style="color: blue">string</span> _fileName;
+    <span style="color: blue">private</span> IFileHandler _fileHandler;
+
+    <span style="color: blue">public</span> RecentFileViewModel(<span style="color: blue">int</span> index, <span style="color: blue">string</span> fileName, IFileHandler fileHandler)
+    {
+        _index = index;
+        _fileName = fileName;
+        _fileHandler = fileHandler;
+    }
+
+    <span style="color: blue">public</span> <span style="color: blue">string</span> FileName
+    {
+        <span style="color: blue">get</span> { <span style="color: blue">return</span> <span style="color: blue">string</span>.Format(<span style="color: maroon">"_{0} - {1}"</span>, _index + <span style="color: maroon">1</span>, _fileName); }
+    }
+
+    <span style="color: blue">public</span> ICommand Open
+    {
+        <span style="color: blue">get</span>
+        {
+            <span style="color: blue">return</span> MakeCommand
+                .Do(() =&gt; _fileHandler.Open(_fileName));
+        }
+    }
+}</pre>
+<p>The recent file view model presents the file name in a format suitable for the menu item. It even adds the underscore to turn the 1-based index into a hot key.</p>
+<p>The view model also provides the command to open the file. It doesn't actually perform the operation; it delegates to a file handler and provides the context.</p>
+<p>We provide a list of these view models based on the list of recently opened files.</p>
+<pre><span style="color: blue">public</span> IEnumerable&lt;RecentFileViewModel&gt; RecentFiles
+{
+    <span style="color: blue">get</span>
+    {
+        <span style="color: green">// Create a RecentFileViewModel for each recent file.</span>
+        <span style="color: green">// The view model serves the menu item.</span>
+        <span style="color: blue">return</span> _dataModel.RecentFiles
+            .Select((fileName, index) =&gt;
+                <span style="color: blue">new</span> RecentFileViewModel(index, fileName, <span style="color: blue">this</span>));
+    }
+}</pre>
+<p>Please note that this pattern does not work with ObservableCollection. Once you call .Select() on an ObservableCollection, it is no longer observable. This pattern only works with Update Controls.</p>
+<p>Now we need to bind MenuItems to this collection. My first instinct was to set the ItemTemplate of the parent MenuItem to a DataTemplate containing a child MenuItem. The problem with that is that a DataTemplate controls the <em>content</em> of the child item, not the child item itself. So instead of setting ItemTemplate, you need to set the ItemContainerStyle.</p>
+<pre><span style="color: blue">&lt;</span><span style="color: maroon">MenuItem</span> <span style="color: red">Header</span>="<span style="color: blue">_Recent Files</span>" <span style="color: red">ItemsSource</span>="<span style="color: blue">{Binding RecentFiles}</span>"<span style="color: blue">&gt;</span>
+    <span style="color: blue">&lt;</span><span style="color: maroon">MenuItem.ItemContainerStyle</span><span style="color: blue">&gt;</span>
+        <span style="color: blue">&lt;</span><span style="color: maroon">Style</span><span style="color: blue">&gt;</span>
+            <span style="color: blue">&lt;</span><span style="color: maroon">Setter</span> <span style="color: red">Property</span>="<span style="color: blue">MenuItem.Header</span>" <span style="color: red">Value</span>="<span style="color: blue">{Binding FileName}</span>"/<span style="color: blue">&gt;</span>
+            <span style="color: blue">&lt;</span><span style="color: maroon">Setter</span> <span style="color: red">Property</span>="<span style="color: blue">MenuItem.Command</span>" <span style="color: red">Value</span>="<span style="color: blue">{Binding Open}</span>"/<span style="color: blue">&gt;</span>
+        <span style="color: blue">&lt;</span>/<span style="color: maroon">Style</span><span style="color: blue">&gt;</span>
+    <span style="color: blue">&lt;</span>/<span style="color: maroon">MenuItem.ItemContainerStyle</span><span style="color: blue">&gt;</span>
+<span style="color: blue">&lt;</span>/<span style="color: maroon">MenuItem</span><span style="color: blue">&gt;</span></pre>
+<p>A WPF menu should not be defined using just one technique. If you choose something to simple, you won't be able to handle the more interactive requirements. If you choose something too complex, you loose tool support and put too much of your design in code. With this combination of techniques, you can create interactive menus with ease.</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="indexb0b7.html?cat=6" title="View all posts in Patterns" rel="category">Patterns</a>,  <a href="indexa88f.html?cat=36" title="View all posts in Update Controls" rel="category">Update Controls</a> |   <a href="index9d24.html?p=398#comments" title="Comment on Data bound menus">1 Comment &#187;</a></p>
+
+			</div>
+
+				<div class="post">
+				<h3 id="post-345"><a href="index50ca.html?p=345" rel="bookmark" title="Permanent Link to The Commuter View Model">The Commuter View Model</a></h3>
+				<small>Monday, May 11th, 2009</small>
+
+				<div class="entry">
+					<p>I'm working on an application to automatically manage an iTunes playlist. I've done the proof-of-concept and created a <a href="indexc2ef.html?p=342">historic model</a>. Now I want to describe the functionality of the user interface. I'll do this by drawing a UI mockup, and by defining an interface for the View Model.</p>
+<p>The View Model is the name typically used in WPF for Martin Fowler's <a href="http://martinfowler.com/eaaDev/PresentationModel.html">Presentation Model</a> pattern. It is a class designed specifically for a view. It presents all of the information visible on the view, it accepts all of the input that the view gathers, and it provides all of the commands that the view exposes.</p>
+<p>I like to think of a UI as merely a convenience. If the user had a compiler instead of a UI, he could still use your application. The View Model is the user's API to your program.</p>
+<p><strong>The View Model</strong><br />An API is best defined as an interface. Here's the API that we are presenting to the user:</p>
+<pre><span style="color: blue">public</span> <span style="color: blue">interface</span> <font color="#0080c0">IPlaylist</font>
+{
+    <span style="color: blue">string</span> Name { <span style="color: blue">get</span>; }
+}
+
+<span style="color: blue">public</span> <span style="color: blue">interface</span> <font color="#0080c0">IPodcast</font>
+{
+    <span style="color: blue">string</span> Name { <span style="color: blue">get</span>; }
+    <span style="color: blue">bool</span> Selected { <span style="color: blue">get</span>; <span style="color: blue">set</span>; }
+    <span style="color: blue">int</span> Rank { <span style="color: blue">get</span>; <span style="color: blue">set</span>; }
+}
+
+<span style="color: blue">public</span> <span style="color: blue">interface</span> <font color="#0080c0">IPodcastEpisode</font>
+{
+    <span style="color: blue">string</span> Name { <span style="color: blue">get</span>; }
+    <span style="color: blue">string</span> PodcastName { <span style="color: blue">get</span>; }
+    <span style="color: blue">string</span> DurationAsString { <span style="color: blue">get</span>; }
+}
+
+<span style="color: blue">public</span> <span style="color: blue">interface</span> <font color="#0080c0">ICommuterViewModel</font>
+{
+    <font color="#0080c0">IEnumerable</font>&lt;<font color="#0080c0">IPlaylist</font>&gt; Playlists { <span style="color: blue">get</span>; }
+    <font color="#0080c0">IPlaylist</font> <font color="#0080c0">SelectedPlaylist</font> { <span style="color: blue">get</span>; <span style="color: blue">set</span>; }
+
+    <font color="#0080c0">IEnumerable</font>&lt;<font color="#0080c0">IPodcast</font>&gt; Podcasts { <span style="color: blue">get</span>; }
+
+    <font color="#0080c0">IEnumerable</font>&lt;<font color="#0080c0">IPodcastEpisode</font>&gt; Queue { <span style="color: blue">get</span>; }
+    <font color="#0080c0">IPodcastEpisode</font> SelectedEpisode { <span style="color: blue">get</span>; <span style="color: blue">set</span>; }
+    <span style="color: blue">string</span> TotalDurationAsString { <span style="color: blue">get</span>; }
+
+    <font color="#0080c0">ICommand</font> Skip { <span style="color: blue">get</span>; }
+}
+</pre>
+<p>This API lets the user see all of their playlists, and select one. It lets them see all of their podcasts, and individually select and rank them. Then it shows their queue, lets them select an episode, and skip it.</p>
+<p><strong>The mockup</strong><br />For the user's convenience, we will also provide this view (my code is much neater than my drawing):</p>
+<p align="center"><a href="wp-content/uploads/2009/05/commuter-mockup.png"><img style="border-right: 0px; border-top: 0px; border-left: 0px; border-bottom: 0px" height="556" alt="Commuter Mockup" src="wp-content/uploads/2009/05/commuter-mockup-thumb.png" width="420" border="0"></a></p>
+<p> You can see how each of the View Model properties maps to the view. With this interface, mockup, and Blend, a designer can create a nice convenient UI for our user. Just so they don't have to get their hands dirty with a compiler. That's our next step.</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="indexc733.html?cat=38" title="View all posts in Commuter" rel="category">Commuter</a>,  <a href="indexb0b7.html?cat=6" title="View all posts in Patterns" rel="category">Patterns</a> |   <a href="index50ca.html?p=345#respond" title="Comment on The Commuter View Model">No Comments &#187;</a></p>
+
+			</div>
+
+				<div class="post">
+				<h3 id="post-337"><a href="indexf6a9.html?p=337" rel="bookmark" title="Permanent Link to AutoMapper misses the point">AutoMapper misses the point</a></h3>
+				<small>Sunday, April 19th, 2009</small>
+
+				<div class="entry">
+					<p>Jimmy Bogard created <a href="http://www.lostechies.com/blogs/jimmy_bogard/archive/2009/01/22/automapper-the-object-object-mapper.aspx">AutoMapper</a> to generate left-hand-right-hand code. This is the mapping code that often appears when you are translating one object model to another parallel object model. He gives the example of mapping a data model to a view model:</p>
+<pre><span style="color: blue">public</span> <span style="color: blue">class</span> <font color="#0080c0">OrderToOrderViewModelMapper</font>
+{
+    <span style="color: blue">public</span> <font color="#0080c0">OrderViewModel</font> Map(<font color="#0080c0">Order</font> order)
+    {
+        <span style="color: blue">return</span> <span style="color: blue">new</span> <font color="#0080c0">OrderViewModel</font>
+            {
+                CustomerFullName = order.Customer.GetFullName(),
+                Total = order.GetTotal(),
+                LineItems = order.GetLineItems()
+                    .Select(x =&gt; <span style="color: blue">new</span> <font color="#0080c0">OrderLineItemViewModel</font>
+                        {
+                            Price = x.Price,
+                            Quantity = x.Quantity,
+                            Total = x.GetTotal(),
+                            ProductName = x.Product.Name
+                        })
+                    .ToArray()
+            };
+    }
+}</pre>
+<p>This misses the point. The problem is not in the tedious mapping code. The problem is that you are doubling the amount of independent data.</p>
+<p>Let me start at the beginning. This is a field:</p>
+<pre><span style="color: blue">public</span> <span style="color: blue">class</span> <font color="#0080c0">Customer</font>
+{
+    <strong><span style="color: blue">private</span> <font color="#0000ff">string</font> _fullName;</strong>
+}
+</pre>
+<p>This field is independent data. It can change independent of anything else in the system.</p>
+<p>This is a property:</p>
+<pre><span style="color: blue">public</span> <span style="color: blue">class</span> <font color="#0080c0">Customer</font>
+{
+    <span style="color: blue">private</span> <font color="#0000ff">string</font> _fullName;
+
+<strong>    <span style="color: blue">public</span> <font color="#0000ff">string</font> FullName
+    {
+        <font color="#0000ff">get</font> { <span style="color: blue">return</span> _fullName; }
+        <font color="#0000ff">set</font> { _fullName = <font color="#0000ff">value</font>; }
+    }
+</strong>}
+</pre>
+<p>This property is dependent data. Its behavior depends entirely on the field.</p>
+<p>This is an immutable field:</p>
+<pre><span style="color: blue">public</span> <span style="color: blue">class</span> <font color="#0080c0">OrderViewModel</font>
+{
+    <strong><span style="color: blue">private</span> <font color="#0080c0">Order</font> _order;</strong>
+
+    <span style="color: blue">public</span> OrderViewModel(<strong><font color="#0080c0">Order</font> order</strong>)
+    {
+        <strong>_order = order;</strong>
+    }
+}
+</pre>
+<p>This immutable field is not independent. It cannot be changed. It is immutable.</p>
+<p>This is another property:</p>
+<pre><span style="color: blue">public</span> <span style="color: blue">class</span> <font color="#0080c0">OrderViewModel</font>
+{
+    <span style="color: blue">private</span> <font color="#0080c0">Order</font> _order;
+
+    <span style="color: blue">public</span> OrderViewModel(<font color="#0080c0">Order</font> order)
+    {
+        _order = order;
+    }
+
+<strong>    <span style="color: blue">public</span> <font color="#0000ff">string</font> CustomerFullName
+    {
+        <font color="#0000ff">get</font> { <span style="color: blue">return</span> _order.Customer.FullName; }
+    }
+</strong>}
+</pre>
+<p>Adding independent data to a system increases its degrees of freedom. Adding dependent data does not. Adding an immutable field does not.</p>
+<p>You want no more degrees of freedom in the system than the problem calls for. Degrees of freedom are moving parts. Moving parts break. Moving parts need to be tested. You should therefore avoid adding independent data when dependent data is sufficient.</p>
+<p>The problem with Jimmy Bogard's example wasn't the code to copy data from one object to another. It was that data had to be copied at all. The view model should not have fields (independent data). It should have properties (dependent data).</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="indexb0b7.html?cat=6" title="View all posts in Patterns" rel="category">Patterns</a>,  <a href="index2d79.html?cat=26" title="View all posts in dof" rel="category">dof</a> |   <a href="indexf6a9.html?p=337#comments" title="Comment on AutoMapper misses the point">4 Comments &#187;</a></p>
+
+			</div>
+
+				<div class="post">
+				<h3 id="post-299"><a href="indexbc9e.html?p=299" rel="bookmark" title="Permanent Link to Why SOLID?">Why SOLID?</a></h3>
+				<small>Tuesday, March 10th, 2009</small>
+
+				<div class="entry">
+					<p>Robert C. Martin's <a href="http://www.objectmentor.com/resources/articles/Principles_and_Patterns.pdf">Design Principles and Design Patterns</a> have shaped my career. His influential paper has been recently rediscovered, and given the moniker "The SOLID Principles". I'm excited to see the reach of his influence expanding, and happy to have a new group of people to discuss these principles with.</p>
+<p>This week on the <a href="http://altnetpodcast.com/episodes/17-the-state-of-alt-net">Alt.NET Podcast</a>, Mike Moore talks with Scott Bellware on the state of Alt.NET. In this discussion, Bellware raises an interesting question. Why SOLID?</p>
+<p>Of course, Scott and Mike both know the answer, and the question itself wasn't the point of the conversation. They were expressing concern that most of the people new to the SOLID principles can't articulate <em>why</em> SOLID is good.</p>
+<p>While the new moniker gives us a name to invoke to begin a discussion, it unfortunately creates a barrier. Now that we have a mnemonic to help us remember the 5 principles, we can list them without reading the original paper. But that paper starts by answering the fundamental question, "Why?" Why does software go bad? Why does software rot?</p>
+<p>I won't go through the reasons here. I cannot improve upon Uncle Bob's work. Instead, I encourage you to please click on the link above, print out the paper, and read it slowly. It may change your career, the same way it changed mine.</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="indexb0b7.html?cat=6" title="View all posts in Patterns" rel="category">Patterns</a> |   <a href="indexbc9e.html?p=299#comments" title="Comment on Why SOLID?">1 Comment &#187;</a></p>
+
+			</div>
+
+				<div class="post">
+				<h3 id="post-290"><a href="index5b31.html?p=290" rel="bookmark" title="Permanent Link to The Navigation Model Pattern">The Navigation Model Pattern</a></h3>
+				<small>Monday, January 19th, 2009</small>
+
+				<div class="entry">
+					<p>View a <a href="http://updatecontrols.net/videos/NavigationModel/NavigationModel.html">video</a> of this demo. Download version 2.0.3 of <a href="http://updatecontrols.net/vb/download20.shtml">Update Controls</a> and the <a href="wp-content/uploads/2009/01/xamldemo.zip">demo source code</a> to follow along.</p>
+<p><strong><a href="wp-content/uploads/2009/01/navigation-model.jpg"><img style="border-top-width: 0px; border-left-width: 0px; border-bottom-width: 0px; border-right-width: 0px" height="244" alt="Navigation Model" src="wp-content/uploads/2009/01/navigation-model-thumb.jpg" width="184" align="right" border="0"></a> Intent</strong><br />The Navigation Model Pattern removes dependencies between view objects and makes UI state available to presentation logic.</p>
+<p>Use the Navigation Model Pattern when controls interact with one another in a non-trivial manner. For example, selecting an object in a list displays details in a grid. Or checking a checkbox enables an associated control.</p>
+<p><strong>Problem</strong><br />WPF makes it really easy to bind a property of one control to a property of another. For example, if the selected item in a list box becomes the data context for a grid, the code might look like this:</p>
+<pre><span style="color: blue">&lt;</span><span style="color: maroon">ListBox</span> <span style="color: red">ItemsSource</span>="<span style="color: blue">{Binding People}</span>" <strong><span style="color: red">x:Name</span>="<span style="color: blue">personListBox</span>"</strong><span style="color: blue">&gt;</span>
+	<span style="color: blue">&lt;</span>!-- ... --<span style="color: blue">&gt;</span>
+<span style="color: blue">&lt;</span>/<span style="color: maroon">ListBox</span><span style="color: blue">&gt;</span>
+
+<span style="color: blue">&lt;</span><span style="color: maroon">Grid</span> <strong><span style="color: red">DataContext</span>="<span style="color: blue">{Binding ElementName=personListBox, Path=SelectedItem}</span>"</strong><span style="color: blue">&gt;</span>
+	<span style="color: blue">&lt;</span>!-- ... --<span style="color: blue">&gt;</span>
+	<span style="color: blue">&lt;</span><span style="color: maroon">Label</span> <span style="color: red">Grid.Row</span>="<span style="color: blue">0</span>" <span style="color: red">Grid.Column</span>="<span style="color: blue">0</span>" <span style="color: red">Content</span>="<span style="color: blue">First Name:</span>"/<span style="color: blue">&gt;</span>
+	<span style="color: blue">&lt;</span><span style="color: maroon">TextBox</span> <span style="color: red">Grid.Row</span>="<span style="color: blue">0</span>" <span style="color: red">Grid.Column</span>="<span style="color: blue">1</span>" <span style="color: red">Text</span>="<span style="color: blue">{Binding First}</span>"/<span style="color: blue">&gt;</span>
+	<span style="color: blue">&lt;</span>!-- ... --<span style="color: blue">&gt;</span>
+<span style="color: blue">&lt;</span>/<span style="color: maroon">Grid</span><span style="color: blue">&gt;</span>
+</pre>
+<p>But direct control-to-control data binding causes trouble. Your UI is no longer composable, since controls directly reference one another. It is difficult to perform presentation logic on control properties, since the presentation model would have a reverse dependency upon the view. And it is difficult to programmatically set a control property based on user action.</p>
+<p><strong>Solution</strong><br />Instead of binding controls directly to one another, move all of the user selection state into a Navigation Model. The navigation model is one shared location where user selection state resides. All controls that use this shared state bind to this one place. The controls don't know about one another. Any control can set the selection state, and any control can consume it. When the selection changes, all controls are updated.</p>
+<p><strong>Create a navigation model class</strong><br />The navigation model is just a class. It has properties that correspond to the user's current selections. It has no persistent storage for this state. It survives only as long as the user's session.</p>
+<p>In the example that we've been building, the user can select a Person. The resulting navigation model looks like this:</p>
+<div style="font-family: courier new"><span style="color: blue">public</span>&nbsp;<span style="color: blue">class</span> NavigationModel <br />{ <br />&nbsp;&nbsp;&nbsp; <strong><span style="color: blue">private</span> Person _selectedPerson;</strong> </p>
+<p>&nbsp;&nbsp;&nbsp; <span style="color: blue">#region</span> Independent properties <br />&nbsp;&nbsp;&nbsp; <span style="color: green">// Generated by Update Controls --------------------------------</span> <br />&nbsp;&nbsp;&nbsp; <span style="color: blue">private</span> Independent _indSelectedPerson = <span style="color: blue">new</span> Independent(); </p>
+<p>&nbsp;&nbsp;&nbsp; <span style="color: blue">public</span> Person SelectedPerson <br />&nbsp;&nbsp;&nbsp; { <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color: blue">get</span> { _indSelectedPerson.OnGet(); <span style="color: blue">return</span> _selectedPerson; } <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color: blue">set</span> { _indSelectedPerson.OnSet(); _selectedPerson = value; } <br />&nbsp;&nbsp;&nbsp; } <br />&nbsp;&nbsp;&nbsp; <span style="color: green">// End generated code --------------------------------</span> <br />&nbsp;&nbsp;&nbsp; <span style="color: blue">#endregion</span> <br />} </div>
+<p>To generate this class, declare just the field. Select the field and press Ctrl+D, G. The Update Controls add-in will generate the property and the Independent sentry.</p>
+<p><strong>Expose the navigation model through the presentation model</strong><br />The presentation model is a thin, transparent wrapper around the data and navigation models. It adds presentation logic where necessary, but does not hide these raw models from the view.</p>
+<p>The presentation model initializes a reference to the navigation model in its constructor, and exposes that reference as a property. It also uses that reference in other presentation properties.</p>
+<div style="font-family: courier new"><span style="color: blue">public</span>&nbsp;<span style="color: blue">class</span> PresentationModel <br />{ <br />&nbsp;&nbsp;&nbsp; <span style="color: blue">private</span> PersonList _personList; <br />&nbsp;&nbsp;&nbsp; <strong><span style="color: blue">private</span> NavigationModel _navigationModel;</strong> </p>
+<p>&nbsp;&nbsp;&nbsp; <span style="color: blue">public</span> PresentationModel(PersonList personList, <strong>NavigationModel navigationModel</strong>) <br />&nbsp;&nbsp;&nbsp; { <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; _personList = personList; <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; _<strong>navigationModel = navigationModel;</strong> <br />&nbsp;&nbsp;&nbsp; } </p>
+<p>&nbsp;&nbsp;&nbsp; <span style="color: blue">public</span> PersonList PersonList <br />&nbsp;&nbsp;&nbsp; { <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color: blue">get</span> { <span style="color: blue">return</span> _personList; } <br />&nbsp;&nbsp;&nbsp; } </p>
+<p><strong>&nbsp;&nbsp;&nbsp; <span style="color: blue">public</span> NavigationModel NavigationModel <br />&nbsp;&nbsp;&nbsp; { <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color: blue">get</span> { <span style="color: blue">return</span> _navigationModel; } <br />&nbsp;&nbsp;&nbsp; } <br /></strong><br />&nbsp;&nbsp;&nbsp; <span style="color: blue">public</span>&nbsp;<span style="color: blue">string</span> Title <br />&nbsp;&nbsp;&nbsp; { <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color: blue">get</span> { <span style="color: blue">return</span>&nbsp;<span style="color: maroon">"People - "</span> +</div>
+<div style="font-family: courier new">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (<strong>_navigationModel.SelectedPerson</strong> != <span style="color: blue">null</span> ?</div>
+<div style="font-family: courier new">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>_navigationModel.SelectedPerson</strong>.Name : <span style="color: maroon">""</span>); } <br />&nbsp;&nbsp;&nbsp; } <br />} </div>
+<p>References to the data model and presentation model are not generated using Ctrl+D, G. These models don't change, so there is no need to inject Independent sentries for change tracking.</p>
+<p><strong>Connect controls to the navigation model</strong><br />The view can access navigation model properties through the presentation model's reference. Connect the SelectedItem property of the list box to the navigation model to allow the user to change it. Connect the DataContext property of the details grid to the navigation model so that it responds to user selection.</p>
+<pre><span style="color: blue">&lt;</span><span style="color: maroon">ListBox</span> <span style="color: red">ItemsSource</span>="<span style="color: blue">{u:Update PersonList.People}</span>" <strong><span style="color: red">SelectedItem</span>="<span style="color: blue">{u:Update NavigationModel.SelectedPerson}</span>"</strong><span style="color: blue">&gt;</span>
+	<span style="color: blue">&lt;</span>!-- ... --<span style="color: blue">&gt;</span>
+<span style="color: blue">&lt;</span>/<span style="color: maroon">ListBox</span><span style="color: blue">&gt;</span>
+
+<span style="color: blue">&lt;</span><span style="color: maroon">Grid</span> <strong><span style="color: red">DataContext</span>="<span style="color: blue">{u:Update NavigationModel.SelectedPerson}</span>"</strong><span style="color: blue">&gt;</span>
+	<span style="color: blue">&lt;</span>!-- ... --<span style="color: blue">&gt;</span>
+	<span style="color: blue">&lt;</span><span style="color: maroon">Label</span> <span style="color: red">Grid.Row</span>="<span style="color: blue">0</span>" <span style="color: red">Grid.Column</span>="<span style="color: blue">0</span>" <span style="color: red">Content</span>="<span style="color: blue">First Name:</span>"/<span style="color: blue">&gt;</span>
+	<span style="color: blue">&lt;</span><span style="color: maroon">TextBox</span> <span style="color: red">Grid.Row</span>="<span style="color: blue">0</span>" <span style="color: red">Grid.Column</span>="<span style="color: blue">1</span>" <span style="color: red">Text</span>="<span style="color: blue">{u:Update First}</span>"/<span style="color: blue">&gt;</span>
+	<span style="color: blue">&lt;</span>!-- ... --<span style="color: blue">&gt;</span>
+<span style="color: blue">&lt;</span>/<span style="color: maroon">Grid</span><span style="color: blue">&gt;</span>
+</pre>
+<p>We'll want some controls to become enabled only when conditions are right. To facilitate this, we add a boolean IsPersonSelected property to the navigation model. Be sure to use the SelectedPerson property, not the _selectedPerson field, so that we get the benefit of change tracking.</p>
+<div style="font-family: courier new"><span style="color: blue">public</span>&nbsp;<span style="color: blue">class</span> NavigationModel <br />{ <br />&nbsp;&nbsp;&nbsp; <span style="color: blue">private</span> Person _selectedPerson; </p>
+<p>&nbsp;&nbsp;&nbsp; <span style="color: blue">#region</span> Independent properties <span style="color: green">// ...</span> </p>
+<p><strong>&nbsp;&nbsp;&nbsp; <span style="color: blue">public</span>&nbsp;<span style="color: blue">bool</span> IsPersonSelected <br />&nbsp;&nbsp;&nbsp; { <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color: blue">get</span> { <span style="color: blue">return</span> SelectedPerson != <span style="color: blue">null</span>; } <br />&nbsp;&nbsp;&nbsp; } <br /></strong>} </div>
+<p>Connect this property to the IsEnabled property of selected controls. For entire groups of controls, we wrap the group in a container, and connect the property of the container to the boolean. We can't use the existing container, because it changes its own data context.</p>
+<pre><span style="color: blue">&lt;</span><span style="color: maroon">Button</span> <span style="color: red">Content</span>="<span style="color: blue">Delete</span>" <strong><span style="color: red">IsEnabled</span>="<span style="color: blue">{u:Update NavigationModel.IsPersonSelected}</span>"</strong> <span style="color: red">Click</span>="<span style="color: blue">DeleteButton_Click</span>" /<span style="color: blue">&gt;</span>
+
+<span style="color: blue">&lt;</span><span style="color: maroon">StackPanel</span> <strong><span style="color: red">IsEnabled</span>="<span style="color: blue">{u:Update NavigationModel.IsPersonSelected}</span>"</strong><span style="color: blue">&gt;</span>
+	<span style="color: blue">&lt;</span><span style="color: maroon">Grid</span> <span style="color: red">DataContext</span>="<span style="color: blue">{u:Update NavigationModel.SelectedPerson}</span>"<span style="color: blue">&gt;</span>
+		<span style="color: blue">&lt;</span>!-- ... --<span style="color: blue">&gt;</span>
+	<span style="color: blue">&lt;</span>/<span style="color: maroon">Grid</span><span style="color: blue">&gt;</span>
+<span style="color: blue">&lt;</span>/<span style="color: maroon">StackPanel</span><span style="color: blue">&gt;</span>
+</pre>
+<p><strong>Consequences</strong><br />While this pattern decouples view components to make them more composable, it does so at the cost of injecting code where once only markup was necessary. This means that it is difficult for a designer to express the behavior of an application without involving a developer.</p>
+<p>To mitigate this cost, designers and developers should agree on a contract beforehand. Obvious properties, like SelectedPerson, should be added to the navigation model immediately. Less obvious properties, like IsPersonSelected, can be added afterward. It is very difficult to refactor in a navigation model after view components have been constructed, so the architecture should start with this pattern in place.</p>
+<p>It is also troublesome that setting the DataContext of a control makes it impossible to get back to the presentation model. If detail controls need access to presentation logic or navigation state, then an additional presentation/navigation layer must be injected. This will be demonstrated in a future post.</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="indexb0b7.html?cat=6" title="View all posts in Patterns" rel="category">Patterns</a>,  <a href="indexa88f.html?cat=36" title="View all posts in Update Controls" rel="category">Update Controls</a> |   <a href="index5b31.html?p=290#respond" title="Comment on The Navigation Model Pattern">No Comments &#187;</a></p>
+
+			</div>
+
+				<div class="post">
+				<h3 id="post-284"><a href="index7b2c.html?p=284" rel="bookmark" title="Permanent Link to Presentation Model in WPF without INotifyPropertyChanged">Presentation Model in WPF without INotifyPropertyChanged</a></h3>
+				<small>Saturday, December 27th, 2008</small>
+
+				<div class="entry">
+					<p>View a <a href="http://updatecontrols.net/videos/PresentationModel/PresentationModel.html">video</a> of this demo.</p>
+<p>The <a href="http://martinfowler.com/eaaDev/PresentationModel.html">Presentation Model</a> pattern, otherwise known as <a href="http://blogs.msdn.com/johngossman/archive/2005/10/08/478683.aspx">Model/View/ViewModel</a>, inserts an intermediate class between your data model and your view. This intermediate class implements presentation logic, behavior directly related to user interaction. This logic doesn't belong in the data model, because it is not related to business logic. Nor does it belong in the view, because the view is difficult to unit test, and is more concerned with style and layout.</p>
+<p><a href="http://www.codeproject.com/KB/smart/PMinAction.aspx">Current implementations of Presentation Model in WPF</a> rely on data binding, which <a href="http://blogs.msdn.com/mattdotson/archive/2008/07/09/presentation-model-pattern-in-wpf-part-2.aspx">requires you to implement INotifyPropertyChanged</a>. While this is just a minor inconvenience when binding directly to data objects, it is particularly troublesome to a presentation model. Since a presentation model consumes properties of a data model, it must register for PropertyChanged events. And since the view binds to the presentation model rather than the data model, it must turn around and fire those events again.</p>
+<p><strong>Here's my solution</strong><br />As I <a href="index30e3.html?p=283">posted earlier</a>, Update Controls replaces WPF data binding and does not require you to implement INotifyPropertyChanged. I've just published a new version of Update Controls (2.0.2), which adds a feature especially useful for the Presentation Model pattern. You can now use dotted identifier syntax to reference objects indirectly. Now the presentation model doesn't have to pass through all of the properties of the data model. It only needs to implement those that it intends to tweak for the UI, and expose a reference to the data model for access to all the others.</p>
+<p><strong>Wrap the data object</strong><br />In the previous post, we created a Person data object and some XAML that bound to it. We'll keep the same Person object, but wrap it in a PersonPresentation object. This object exposes the Person as a property, and adds UI logic for the window title.</p>
+<pre><span style="color: blue">public</span> <span style="color: blue">class</span> PersonPresentation
+{
+    <span style="color: blue">private</span> Person _person;
+
+    <span style="color: blue">public</span> PersonPresentation(Person person)
+    {
+        _person = person;
+    }
+
+    <span style="color: blue">public</span> Person Person
+    {
+        <span style="color: blue">get</span> { <span style="color: blue">return</span> _person; }
+    }
+
+    <span style="color: blue">public</span> <span style="color: blue">string</span> Title
+    {
+        <span style="color: blue">get</span> { <span style="color: blue">return</span> <span style="color: maroon">"Person - "</span> + _person.Display; }
+    }
+}
+</pre>
+<p>Instead of directly using Person as the DataContext for the window, use a PersonPresentation.</p>
+<pre><span style="color: blue">public</span> <span style="color: blue">partial</span> <span style="color: blue">class</span> Window1 : Window
+{
+    <span style="color: blue">public</span> Window1()
+    {
+        InitializeComponent();
+        DataContext = <strong><span style="color: blue">new</span> PersonPresentation(</strong><span style="color: blue">new</span> Person()<strong>)</strong>;
+    }
+}
+</pre>
+<p>Now use dotted-identifier syntax in the XAML to access the Person for data properties. But for UI properties, like the window title, go directly after the PersonPresentation object.</p>
+<pre><span style="color: blue">&lt;</span><span style="color: maroon">Window</span> <span style="color: red">x:Class</span>="<span style="color: blue">UpdateControls.XAML.Test.Window1</span>"
+    <span style="color: red">xmlns</span>="<span style="color: blue">http://schemas.microsoft.com/winfx/2006/xaml/presentation</span>"
+    <span style="color: red">xmlns:x</span>="<span style="color: blue">http://schemas.microsoft.com/winfx/2006/xaml</span>"
+    <span style="color: red">xmlns:u</span>="<span style="color: blue">clr-namespace:UpdateControls.XAML;assembly=UpdateControls.XAML</span>"
+    <span style="color: red">Title</span>="<span style="color: blue">{u:Update <strong>Title</strong>}</span>" <span style="color: red">Height</span>="<span style="color: blue">300</span>" <span style="color: red">Width</span>="<span style="color: blue">300</span>"<span style="color: blue">&gt;</span>
+    <span style="color: blue">&lt;</span><span style="color: maroon">StackPanel</span><span style="color: blue">&gt;</span>
+        <span style="color: blue">&lt;</span><span style="color: maroon">StackPanel</span> <span style="color: red">Orientation</span>="<span style="color: blue">Horizontal</span>"<span style="color: blue">&gt;</span>
+            <span style="color: blue">&lt;</span><span style="color: maroon">Label</span> <span style="color: red">Content</span>="<span style="color: blue">First Name:</span>" <span style="color: red">Width</span>="<span style="color: blue">100</span>"/<span style="color: blue">&gt;</span>
+            <span style="color: blue">&lt;</span><span style="color: maroon">TextBox</span> <span style="color: red">Text</span>="<span style="color: blue">{u:Update <strong>Person.FirstName</strong>}</span>" <span style="color: red">Width</span>="<span style="color: blue">170</span>"/<span style="color: blue">&gt;</span>
+        <span style="color: blue">&lt;</span>/<span style="color: maroon">StackPanel</span><span style="color: blue">&gt;</span>
+        <span style="color: blue">&lt;</span><span style="color: maroon">StackPanel</span> <span style="color: red">Orientation</span>="<span style="color: blue">Horizontal</span>"<span style="color: blue">&gt;</span>
+            <span style="color: blue">&lt;</span><span style="color: maroon">Label</span> <span style="color: red">Content</span>="<span style="color: blue">Last Name:</span>" <span style="color: red">Width</span>="<span style="color: blue">100</span>"/<span style="color: blue">&gt;</span>
+            <span style="color: blue">&lt;</span><span style="color: maroon">TextBox</span> <span style="color: red">Text</span>="<span style="color: blue">{u:Update <strong>Person.LastName</strong>}</span>" <span style="color: red">Width</span>="<span style="color: blue">170</span>"/<span style="color: blue">&gt;</span>
+        <span style="color: blue">&lt;</span>/<span style="color: maroon">StackPanel</span><span style="color: blue">&gt;</span>
+        <span style="color: blue">&lt;</span><span style="color: maroon">StackPanel</span> <span style="color: red">Orientation</span>="<span style="color: blue">Horizontal</span>"<span style="color: blue">&gt;</span>
+            <span style="color: blue">&lt;</span><span style="color: maroon">Label</span> <span style="color: red">Content</span>="<span style="color: blue">Display As:</span>" <span style="color: red">Width</span>="<span style="color: blue">100</span>"/<span style="color: blue">&gt;</span>
+                <span style="color: blue">&lt;</span><span style="color: maroon">ComboBox</span> <span style="color: red">SelectedIndex</span>="<span style="color: blue">{u:Update <strong>Person.DisplayStrategy</strong>}</span>" <span style="color: red">Width</span>="<span style="color: blue">170</span>"<span style="color: blue">&gt;</span>
+                    <span style="color: blue">&lt;</span><span style="color: maroon">ComboBoxItem</span> <span style="color: red">Content</span>="<span style="color: blue">{u:Update <strong>Person.FirstLast</strong>}</span>" /<span style="color: blue">&gt;</span>
+                    <span style="color: blue">&lt;</span><span style="color: maroon">ComboBoxItem</span> <span style="color: red">Content</span>="<span style="color: blue">{u:Update <strong>Person.LastFirst</strong>}</span>"/<span style="color: blue">&gt;</span>
+                <span style="color: blue">&lt;</span>/<span style="color: maroon">ComboBox</span><span style="color: blue">&gt;</span>
+        <span style="color: blue">&lt;</span>/<span style="color: maroon">StackPanel</span><span style="color: blue">&gt;</span>
+    <span style="color: blue">&lt;</span>/<span style="color: maroon">StackPanel</span><span style="color: blue">&gt;</span>
+<span style="color: blue">&lt;</span>/<span style="color: maroon">Window</span><span style="color: blue">&gt;</span>
+</pre>
+<p>With the Presentation Model pattern, you achieve separation of concerns. Business logic is encapsulated in the data model, style and layout are in the view, and interaction logic is in the presentation model.</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="indexb0b7.html?cat=6" title="View all posts in Patterns" rel="category">Patterns</a>,  <a href="indexa88f.html?cat=36" title="View all posts in Update Controls" rel="category">Update Controls</a> |   <a href="index7b2c.html?p=284#respond" title="Comment on Presentation Model in WPF without INotifyPropertyChanged">No Comments &#187;</a></p>
+
+			</div>
+
+				<div class="post">
+				<h3 id="post-254"><a href="index6233.html?p=254" rel="bookmark" title="Permanent Link to Transactional remote receive in MSMQ">Transactional remote receive in MSMQ</a></h3>
+				<small>Thursday, September 25th, 2008</small>
+
+				<div class="entry">
+					<p>Can you implement publish-subscribe load balancing with MSMQ?</p>
+<p>Surprisingly, prior to Windows Server 2008 the answer was no! (Well, technically the capability is in Vista too, but who runs Vista in their datacenter?)</p>
+<p>It's a common scenario. I have work that I want to share among several load-balanced, redundant servers. Only one server can be working on an item at a time. If a server crashes while working on an item, then another server should pick it up instead.</p>
+<p>What's the solution? Publish the work items to a queue and have each of the servers subscribe. The servers receive the work items transactionally, so that if the work fails or the server crashes it is aborted back to the queue. But while one server has the work item locked, other servers will not receive it. They will get work items further down in the queue.</p>
+<p>The problem is that MSMQ 3.0 and prior cannot receive messages transactionally from a remote queue. This feature only works with local queues. Instead of a publish-subscribe model, you have to use a push model. Push the message to the machine that you want to process it.</p>
+<p><a href="http://blogs.msdn.com/johnbreakwell/archive/2007/12/11/how-do-i-get-transactional-remote-receives.aspx">John Breakwell posted your options.</a> You can upgrade to Windows Server 2008, implement a dispatcher (turning your pub-sub into a push), or peek-then-receive. The last is not really an option, because it violates the requirement that only one server is working on an item at a time.</p>
+<p><strong>Here's my solution</strong>    <br />I propose a fourth option. Don't use MSMQ. Instead, write a journal table in SQL Server. Getting the locking right is a bit tricky, but it's doable. (Hint: you will make use of <a href="http://msdn.microsoft.com/en-us/library/ms187373.aspx">UPDLOCK</a>.)</p>
+<p>Honestly, this is a primary use case for a queuing technology. No, this is <strong>the</strong> primary use case. How could you even release version 1.0 without support for pub-sub? I've gone my entire career assuming that this feature was there, only to find out in integration testing that it is lacking.</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="indexc728.html?cat=7" title="View all posts in Databases" rel="category">Databases</a>,  <a href="indexb0b7.html?cat=6" title="View all posts in Patterns" rel="category">Patterns</a> |   <a href="index6233.html?p=254#respond" title="Comment on Transactional remote receive in MSMQ">No Comments &#187;</a></p>
+
+			</div>
+
+				<div class="post">
+				<h3 id="post-249"><a href="index1a93.html?p=249" rel="bookmark" title="Permanent Link to No &#8220;new&#8221;s is good news">No &#8220;new&#8221;s is good news</a></h3>
+				<small>Friday, August 22nd, 2008</small>
+
+				<div class="entry">
+					<p>"New" is the new "goto". As mock object testing frameworks and inversion of control containers are becoming more commonplace, we are encouraged to avoid having objects directly create other objects.</p>
+<p><strong>Why is "new" a bad word?</strong><br />
+When a line of code includes the "new" keyword, it must also include the name of a concrete class. This line of code will appear within a different class (unless you are writing a singleton, in which case you have even bigger problems). You have just created a compile-time dependency between two classes.</p>
+<p>The <a href="http://www.objectmentor.com/resources/articles/dip.pdf">dependency inversion principle</a> states that we should depend upon abstractions (i.e. interfaces and abstract base classes), rather than concrete classes. The "new" keyword immediately violates this principle because it forces us to depend upon a concrete class. The name after the "new" cannot be an interface or abstract base class, but a concrete packet of implementation.</p>
+<p>Without dependency inversion, it is difficult or impossible to change units of behavior. If a class uses "new" to get access to a service component, you must change that code to replace it with a different service. If the change is a design-time decision, then recompiling the code just means more testing is required. But if the change is a run-time decision, then recompiling the code is not an option.</p>
+<p>Without dependency inversion, it is difficult or impossible to mock objects for testing. If the code that you are testing is invoking "new", then the mock framework cannot intercept that and replace it with a test harness. The dummy object is there to observe the calls that leak out of the object that you are testing, and make sure that they are the ones that the test expects to induce. If those calls go into a concrete class, then the scope of the test is bigger than intended, and visibility is lost.</p>
+<p><strong>Building blocks</strong><br />
+I once had a manager who compared good software component design to Legos. A complete solution can be built from interchangeable pieces. If you are using "new", your components are more like a puzzle pieces than building blocks. You create a solution out of pieces, but those pieces fit together in only one way.</p>
+<p>As a rule of thumb, critically examine every "new" in your software. See if you can find a way to push it up through dependency injection. If you can, push it all the way out of your code and into an IoC container. The fewer "new"s, the better.</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="indexb0b7.html?cat=6" title="View all posts in Patterns" rel="category">Patterns</a> |   <a href="index1a93.html?p=249#respond" title="Comment on No &#8220;new&#8221;s is good news">No Comments &#187;</a></p>
+
+			</div>
+
+				<div class="post">
+				<h3 id="post-247"><a href="index8cf0.html?p=247" rel="bookmark" title="Permanent Link to Inversion of Thought">Inversion of Thought</a></h3>
+				<small>Monday, June 30th, 2008</small>
+
+				<div class="entry">
+					<p>I've started a new project using Spring MVC. In doing so, I've had to invert my thinking.</p>
+<p><a href="http://www.theserverside.com/tt/articles/article.tss?l=IntrotoSpring25">Spring</a> is an inversion of control container, which means that you don't code dependencies of one class directly upon another. Instead you put all of your dependencies into one configuration file and keep your code as loosely coupled as possible. This one configuration file creates a graph of objects, each with references to the others. Since the configuration file specifies the classes and references, the code for one class doesn't need to know the names of other classes.</p>
+<p><strong>Why is this important?</strong><br />
+<a href="http://www.objectmentor.com/resources/articles/dip.pdf">The dependency inversion principle</a> tells us that it is better to depend upon something abstract than something concrete. This helps us to change how something is done without breaking the things that need it to be done. If your code depends upon an interface, you can change the thing that implements that interface without changing your code.</p>
+<p>There are other reasons which have come to light since Robert Martin published his paper back in 1996. Dependency inversion makes unit testing easier, because you can replace the components that a unit calls with mock objects. Dependency inversion makes distributed computing easier, because you can replace business objects with proxies that call business logic on remote servers. In general, dependency inversion is a good goal.</p>
+<p><strong>How does Spring do it?</strong><br />
+So if your class depends upon an interface rather than a concrete class, how does it get a reference to an object that implements that interface? It can't use "new" to create an instance, because "new" needs a concrete class name. To invert dependency, you have to move all of your "new"s into one place. That place is an inversion of control (IoC) container.</p>
+<p>Spring reads an XML file that contains a bunch of object descriptions. You can think of each of these as a call to "new". Each one specifies a class name, an instance name, and a set of properties. These are write-once properties (what I like to call <a href="indexdd23.html?p=33">definitive</a>), and should be initialized and never changed. These properties can include references to other object instances, thus forming a graph.</p>
+<p><strong>MVC</strong><br />
+<a href="http://static.springframework.org/spring/docs/2.0.x/reference/mvc.html">Spring MVC</a> combines the dependency inversion principle with the model-view-controller pattern to create a pretty compelling web framework. The controllers and URL mappings are all configured through the IoC container. The URL mapper has a reference to each of the controllers, so it knows how to delegate the handling of a request. Because dependency has been inverted, the URL mapper doesn't know about the concrete classes that are the controllers, it only knows about an interface. So you can use the out-of-the-box URL mapper with your own custom controllers.</p>
+<p>But it just so happens that Spring has a quaint mechanism for database access. In your XML file, you can configure a data source by providing a driver class name and a connection string to an instance of "org.apache.commons.dbcp.BasicDataSource".  Then you can use this data source to execute queries using "org.springframework.jdbc.core.simple.SimpleJdbcTemplate". I wanted to use this technique from my data access layer. However, the XML file that defines the object graph is way up in my web layer. How can I push that object graph, or at least the data source, down through the business logic layer and into the data access layer?</p>
+<p><strong>The epiphany</strong><br />
+That's when the full realization of dependency inversion hit me. I was thinking about the web layer depending upon the business logic layer, which then depended upon the data access layer. This is not the Spring way. Instead, the web, business logic, and data access layers are all independent. The IoC container depends upon them all. The individual components within these layers only depend upon interfaces.</p>
+<p>So the one XML file declares a data source. It then declares a data access component and gives it a reference to the data source. Next comes a business logic component and with a reference to the data access component. Then, the controller with a reference to the business logic component. And finally, the URL mapper comes last with a reference to the controller. As more URLs, controllers, and components are added, this chain widens into a graph.</p>
+<p>You can't pick and choose which pieces of your application use dependency inversion. Please don't try. Once you start down the Spring path, all dependencies are inverted. The graph that's defined at the highest layer of your application delves deep into the lowest, and touches all layers in between. Consider dependency inversion for your next project, and think carefully about the consequences.</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="index1cd2.html?cat=10" title="View all posts in Contracts" rel="category">Contracts</a>,  <a href="index5b0d.html?cat=12" title="View all posts in Java" rel="category">Java</a>,  <a href="indexb0b7.html?cat=6" title="View all posts in Patterns" rel="category">Patterns</a> |   <a href="index8cf0.html?p=247#comments" title="Comment on Inversion of Thought">2 Comments &#187;</a></p>
+
+			</div>
+
+				<div class="post">
+				<h3 id="post-222"><a href="indexb4c1.html?p=222" rel="bookmark" title="Permanent Link to Update Controls .NET released under LGPL">Update Controls .NET released under LGPL</a></h3>
+				<small>Tuesday, March 18th, 2008</small>
+
+				<div class="entry">
+					<p>I have released <a href="http://updatecontrols.net/vb">Update Controls .NET</a> as an open source project.</p>
+<p>Update Controls is a set of .NET Windows Forms controls that update themselves automatically. Instead of setting properties, you handle events. For example, the GetText event fires on an <a href="http://updatecontrols.net/documentation/classDocumentation/vb/UpdateControls.Forms.UpdateTextBox.do">UpdateTextBox</a> when it needs to update itself. The event returns the text string to display. Then, when any data that was used to calculate that string changes, the event fires again. Automatically.</p>
+<p>Think of how you use a spreadsheet. You enter a formula in a cell, with references to other cells. When those other cells change, the formula is recalculated. You don't have to tell it to update, it just figures out when to do so.</p>
+<p>I created the algorithm at the core of Update Controls almost ten years ago in C++. Since then, I've translated it first into Delphi, then <a href="http://www.javaworld.com/javaworld/jw-08-2001/jw-0817-automatic.html">Java</a>, and finally C#. The Update Controls library is that core algorithm applied to the common Windows Forms controls. It also includes a handful of themed controls for better visual appeal.</p>
+<p><strong>Not data binding</strong><br />For as long as Microsoft has done demos of VB, they've tried to convince us that we can write real software with zero lines of code. It works fine on the projector screen, but it fails to translate to a full-scale application. Once you get outside the box of direct column/control relationships, it is impossible to adapt data binding to your needs.</p>
+<p>But Update Controls is completely flexible. You can start with a simple event that returns one value, but then modify it to combine two or more values as your needs change. Since you are writing real code, you are in complete control.</p>
+<p>A data-bound control attaches directly to a column in the database, or a property of an object in the data model. It cannot call through more complex business logic.</p>
+<p>But an Update Control can call any business logic that you specify. Whatever data the business logic touches in order to do its work, that data affects the control's behavior. When any of it changes, the event fires and calls the business logic again.</p>
+<p><strong>Not the observer pattern</strong><br />The observer pattern is obsolete. It requires that you manually register each observer with each subject. To make it work, you have to know ahead of time all of the objects in the data model that affect each user interface component. A large portion of your source code is dedicated to making and breaking those connections.</p>
+<p>Update Controls, on the other hand, discovers those dependencies on its own. It can see through business logic, so you don't have to directly tie your user interface to your data model. And if that business logic switches to a new path, the dependencies are updated as well.</p>
+<p>The observer pattern also suffers from cascading redundant updates. If your observer depends upon two subjects and both are changed at the same time, the observer pattern will give you two updates. The problem gets even worse when you have indirect dependencies, as the redundancy rolls through the system like so many dominoes.</p>
+<p>But Update Controls queues the updates until the last possible moment, so they occur only once. Even indirect dependencies are calculated in the best possible order, with each update being invoked just once as the information bubbles to the surface.</p>
+<p><strong>Please give it a try</strong><br />The library works in C# and VB. It can be used in either Visual Studio 2005 or 2008, with .NET 2.0, 3.0, or 3.5. You can <a href="http://www.codeplex.com/updatecontrols/SourceControl/ListDownloadableCommits.aspx">download the source code</a> and build it yourself, or just run the <a href="http://updatecontrols.net/vb/download.shtml">convenient installer</a>. <a href="http://updatecontrols.net/vb/videos.shtml">Videos</a>, <a href="http://updatecontrols.net/vb/start.shtml">demos</a>, and <a href="http://updatecontrols.net/vb/documentation.shtml">documentation</a> are all available to help you get started.</p>
+<p>Once you write a Winforms app with Update Controls, you'll never want to code without them.</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="index7f33.html?cat=31" title="View all posts in Licensing" rel="category">Licensing</a>,  <a href="indexb0b7.html?cat=6" title="View all posts in Patterns" rel="category">Patterns</a>,  <a href="indexd65e.html?cat=8" title="View all posts in User Interface" rel="category">User Interface</a> |   <a href="indexb4c1.html?p=222#respond" title="Comment on Update Controls .NET released under LGPL">No Comments &#187;</a></p>
+
+			</div>
+
+		
+		<div class="navigation">
+			<div class="alignleft"><a href="indexb4fb.html?cat=6&amp;paged=3">&laquo; Previous Entries</a></div>
+			<div class="alignright"><a href="indexb0b7.html?cat=6">Next Entries &raquo;</a></div>
+		</div>
+
+	
+	</div>
+		</td>
+	</tr>
+</table>
+
+<hr />
+<div id="footer">
+<!-- If you'd like to support WordPress, having the "powered by" link someone on your blog is the best way, it's our only promotion or advertising. -->
+	<p>
+		Adventures in Software is proudly powered by 
+		<a href="http://wordpress.org/">WordPress</a>
+		<br /><a href="indexd784.html?feed=rss2">Entries (RSS)</a>
+		and <a href="indexa6da.html?feed=comments-rss2">Comments (RSS)</a>.
+		<!-- 17 queries. 0.493 seconds. -->
+	</p>
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-389401-3");
+pageTracker._trackPageview();
+} catch(err) {}</script></div>
+
+<!-- Gorgeous design by Michael Heilemann - http://binarybonsai.com/kubrick/ -->
+
+		<div id="sk2-footer" style="color:#FFF; background-color:#444; padding: 3px 2px 3px 2px; border-top: #888 solid 1px;">This blog is protected by <a href="http://unknowngenius.com/blog/" title="Dave">dr Dave</a>'s <strong><a href="http://unknowngenius.com/blog/wordpress/spam-karma/" title="SK2">Spam Karma 2</a></strong>: <strong>274531</strong>  Spams eaten and counting...</div><script type="text/javascript" src="replies.js"></script>
+<script type="text/javascript" src="blogger.js"></script>
+<script type="text/javascript" src="http://twitter.com/statuses/user_timeline/michaellperry.json?callback=twitterCallback2&amp;count=5"></script>
+<script type="text/javascript" src="http://search.twitter.com/search.json?q=@michaellperry&amp;callback=twitterCallbackReplies&amp;rpp=5"></script>
+</body>
+
+<!-- Mirrored from adventuresinsoftware.com/blog/?cat=6&paged=2 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 Jan 2017 13:03:10 GMT -->
+</html>

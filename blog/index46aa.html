@@ -1,0 +1,485 @@
+<?xml version="1.0" encoding="UTF-8"?><!-- generator="wordpress/2.3.3" -->
+<rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	>
+<channel>
+	<title>Comments on: Forms Authentication and the Active Directory membership provider</title>
+	<link>http://adventuresinsoftware.com/blog/?p=532</link>
+	<description>Lessons learned on the road to quality computing</description>
+	<pubDate>Fri, 13 Jan 2017 12:55:38 +0000</pubDate>
+	<generator>http://wordpress.org/?v=2.3.3</generator>
+		<item>
+		<title>By: Leonel dos Anjos</title>
+		<link>http://adventuresinsoftware.com/blog/?p=532#comment-212173</link>
+		<dc:creator>Leonel dos Anjos</dc:creator>
+		<pubDate>Fri, 13 Jan 2012 10:15:42 +0000</pubDate>
+		<guid>http://adventuresinsoftware.com/blog/?p=532#comment-212173</guid>
+		<description>Hi,
+i am developing a system that conects to AD, and i have done it fine by code,
+i have textbox txtUserName the get Authenticated User ond page Load,
+
+ond visual studio no problem, it takes the current user, but when a deploy i receive Network Service;
+
+i have    in Web.config,
+i Have configured  ? user but , i still get this error,
+
+the code i used to get the user is 
+IIdentity identity = System.Security.Principal.WindowsIdentity.GetCurrent(true);
+
+i can identity.name = "domain\\user" on debug machine.
+
+But after deployment 
+
+txtUserName.Text = "Network Service";
+
+Best regards.</description>
+		<content:encoded><![CDATA[<p>Hi,<br />
+i am developing a system that conects to AD, and i have done it fine by code,<br />
+i have textbox txtUserName the get Authenticated User ond page Load,</p>
+<p>ond visual studio no problem, it takes the current user, but when a deploy i receive Network Service;</p>
+<p>i have    in Web.config,<br />
+i Have configured  ? user but , i still get this error,</p>
+<p>the code i used to get the user is<br />
+IIdentity identity = System.Security.Principal.WindowsIdentity.GetCurrent(true);</p>
+<p>i can identity.name = "domain\\user" on debug machine.</p>
+<p>But after deployment </p>
+<p>txtUserName.Text = "Network Service";</p>
+<p>Best regards.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Michael L Perry</title>
+		<link>http://adventuresinsoftware.com/blog/?p=532#comment-141313</link>
+		<dc:creator>Michael L Perry</dc:creator>
+		<pubDate>Wed, 13 Apr 2011 17:37:31 +0000</pubDate>
+		<guid>http://adventuresinsoftware.com/blog/?p=532#comment-141313</guid>
+		<description>A minute and a half! Holy cow! I don't see any reason for that performance problem in your code. You should talk to your network admin. Also, install AD in a VM and test it yourself.</description>
+		<content:encoded><![CDATA[<p>A minute and a half! Holy cow! I don't see any reason for that performance problem in your code. You should talk to your network admin. Also, install AD in a VM and test it yourself.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: shrikant</title>
+		<link>http://adventuresinsoftware.com/blog/?p=532#comment-141023</link>
+		<dc:creator>shrikant</dc:creator>
+		<pubDate>Tue, 12 Apr 2011 16:15:53 +0000</pubDate>
+		<guid>http://adventuresinsoftware.com/blog/?p=532#comment-141023</guid>
+		<description>Hi All,
+We are able to create new user successfully on the active directory but the SetPassword method is taking around 1.5 minutes to complete the process. Below is the code of the snippet of SetPassword. Is there any better approach to set the password of new user?
+    #region SetPassword
+    /// 
+    /// This function is used to set user password
+    /// 
+    /// 
+    /// 
+    /// 
+    
+  /// 
+    internal static void SetPassword(string path, string userPassword)
+    {
+        if (_logger.IsDebugEnabled)
+            _logger.Debug("ADHelper.cs : Enter SetPassword");
+
+        try
+        {
+            using (DirectoryEntry usr = GetDirectoryEntry(path))
+            {
+                object ret = usr.Invoke("SetPassword", userPassword);
+                usr.CommitChanges();
+                usr.Close();
+            }
+
+            if (_logger.IsDebugEnabled)
+                _logger.Debug("ADHelper.cs : Exit SetPassword");
+        }
+        catch (Exception ex)
+        {
+            if (_logger.IsErrorEnabled)
+                _logger.Error("ADHelper.cs : Exception occurred in SetPassword. Message: ", ex);
+            
+            throw ex;
+        }
+    }
+
+    #endregion
+Here is our production environment type.
+•    IIS 7
+•    ASP.NET 3.5 (C#)
+•    Active Directory 
+•    Windows Server 2008 R2
+
+Add user snippet 
+#region AddUser
+
+    /// 
+    /// This function is used to add user to active directory
+    /// 
+    /// Active Directory
+    /// directory entry object
+    /// 
+    /// 
+    public static void AddUser(ADUser adUser)
+    {
+        if (_logger.IsDebugEnabled)
+            _logger.Debug("ADHelper.cs : Enter AddUser");
+
+        // Local variables
+        DirectoryEntry oDE = null;
+        DirectoryEntry oDENewUser = null;
+        DirectoryEntries oDEs = null;
+
+        try
+        {
+            oDE = GetDirectoryEntry(GetADPath(Constants.EnvironmentType.PROD, adUser.UserType));
+
+            // 1. Create user account
+            oDEs = oDE.Children;
+            oDENewUser = oDEs.Add(string.Format("{0}=", Constants.ADAttributes.CN) + adUser.UserName, "user");
+
+            // 2. Set properties
+            SetProperty(oDENewUser, Constants.ADAttributes.givenName, adUser.FirstName);
+            SetProperty(oDENewUser, Constants.ADAttributes.sn, adUser.LastName);
+            SetProperty(oDENewUser, Constants.ADAttributes.mail, adUser.Email);
+            SetProperty(oDENewUser, Constants.ADAttributes.sAMAccountName, adUser.UserName);
+            oDENewUser.CommitChanges();
+
+            // 3. Set password
+            SetPassword(oDENewUser.Path, adUser.Password);
+
+            // 4. Enable account            
+            EnableAccount(oDENewUser);
+
+            oDENewUser.Close();
+            oDE.Close();
+
+            if (_logger.IsDebugEnabled)
+                _logger.Debug("ADHelper.cs : Exit AddUser");
+        }
+        catch (Exception ex)
+        {
+            if (_logger.IsErrorEnabled)
+                _logger.Error("ADHelper.cs : Exception occurred in AddUser. Message: ", ex);
+
+            throw ex;
+        }
+        finally
+        {
+            if (oDENewUser != null)
+            {
+                oDENewUser.Dispose();
+                oDENewUser = null;
+            }
+
+            if (oDEs != null)
+            {
+                oDEs = null;
+            }
+
+            if (oDE != null)
+            {
+                oDE.Dispose();
+                oDE = null;
+            }
+        }
+    }
+
+    #endregion
+
+THANKS IN ADVANCE!!!</description>
+		<content:encoded><![CDATA[<p>Hi All,<br />
+We are able to create new user successfully on the active directory but the SetPassword method is taking around 1.5 minutes to complete the process. Below is the code of the snippet of SetPassword. Is there any better approach to set the password of new user?<br />
+    #region SetPassword<br />
+    ///<br />
+    /// This function is used to set user password<br />
+    ///<br />
+    ///<br />
+    ///<br />
+    /// </p>
+<p>  ///<br />
+    internal static void SetPassword(string path, string userPassword)<br />
+    {<br />
+        if (_logger.IsDebugEnabled)<br />
+            _logger.Debug("ADHelper.cs : Enter SetPassword");</p>
+<p>        try<br />
+        {<br />
+            using (DirectoryEntry usr = GetDirectoryEntry(path))<br />
+            {<br />
+                object ret = usr.Invoke("SetPassword", userPassword);<br />
+                usr.CommitChanges();<br />
+                usr.Close();<br />
+            }</p>
+<p>            if (_logger.IsDebugEnabled)<br />
+                _logger.Debug("ADHelper.cs : Exit SetPassword");<br />
+        }<br />
+        catch (Exception ex)<br />
+        {<br />
+            if (_logger.IsErrorEnabled)<br />
+                _logger.Error("ADHelper.cs : Exception occurred in SetPassword. Message: ", ex);</p>
+<p>            throw ex;<br />
+        }<br />
+    }</p>
+<p>    #endregion<br />
+Here is our production environment type.<br />
+•    IIS 7<br />
+•    ASP.NET 3.5 (C#)<br />
+•    Active Directory<br />
+•    Windows Server 2008 R2</p>
+<p>Add user snippet<br />
+#region AddUser</p>
+<p>    ///<br />
+    /// This function is used to add user to active directory<br />
+    ///<br />
+    /// Active Directory<br />
+    /// directory entry object<br />
+    ///<br />
+    ///<br />
+    public static void AddUser(ADUser adUser)<br />
+    {<br />
+        if (_logger.IsDebugEnabled)<br />
+            _logger.Debug("ADHelper.cs : Enter AddUser");</p>
+<p>        // Local variables<br />
+        DirectoryEntry oDE = null;<br />
+        DirectoryEntry oDENewUser = null;<br />
+        DirectoryEntries oDEs = null;</p>
+<p>        try<br />
+        {<br />
+            oDE = GetDirectoryEntry(GetADPath(Constants.EnvironmentType.PROD, adUser.UserType));</p>
+<p>            // 1. Create user account<br />
+            oDEs = oDE.Children;<br />
+            oDENewUser = oDEs.Add(string.Format("{0}=", Constants.ADAttributes.CN) + adUser.UserName, "user");</p>
+<p>            // 2. Set properties<br />
+            SetProperty(oDENewUser, Constants.ADAttributes.givenName, adUser.FirstName);<br />
+            SetProperty(oDENewUser, Constants.ADAttributes.sn, adUser.LastName);<br />
+            SetProperty(oDENewUser, Constants.ADAttributes.mail, adUser.Email);<br />
+            SetProperty(oDENewUser, Constants.ADAttributes.sAMAccountName, adUser.UserName);<br />
+            oDENewUser.CommitChanges();</p>
+<p>            // 3. Set password<br />
+            SetPassword(oDENewUser.Path, adUser.Password);</p>
+<p>            // 4. Enable account<br />
+            EnableAccount(oDENewUser);</p>
+<p>            oDENewUser.Close();<br />
+            oDE.Close();</p>
+<p>            if (_logger.IsDebugEnabled)<br />
+                _logger.Debug("ADHelper.cs : Exit AddUser");<br />
+        }<br />
+        catch (Exception ex)<br />
+        {<br />
+            if (_logger.IsErrorEnabled)<br />
+                _logger.Error("ADHelper.cs : Exception occurred in AddUser. Message: ", ex);</p>
+<p>            throw ex;<br />
+        }<br />
+        finally<br />
+        {<br />
+            if (oDENewUser != null)<br />
+            {<br />
+                oDENewUser.Dispose();<br />
+                oDENewUser = null;<br />
+            }</p>
+<p>            if (oDEs != null)<br />
+            {<br />
+                oDEs = null;<br />
+            }</p>
+<p>            if (oDE != null)<br />
+            {<br />
+                oDE.Dispose();<br />
+                oDE = null;<br />
+            }<br />
+        }<br />
+    }</p>
+<p>    #endregion</p>
+<p>THANKS IN ADVANCE!!!</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Michael L Perry</title>
+		<link>http://adventuresinsoftware.com/blog/?p=532#comment-116076</link>
+		<dc:creator>Michael L Perry</dc:creator>
+		<pubDate>Wed, 26 Jan 2011 15:15:23 +0000</pubDate>
+		<guid>http://adventuresinsoftware.com/blog/?p=532#comment-116076</guid>
+		<description>Whenever you see "Exception has been thrown by the target of an invocation", you need to look at the inner exception. That should give you more information.
+
+My guess is that the account that your application is running as does not have access to change passwords in Active Directory. I haven't tried this scenario myself, so I'm not sure which account you should use instead. Perhaps you could try impersonating an admin account. Or maybe you can even impersonate the user themselves given their current password as credentials.</description>
+		<content:encoded><![CDATA[<p>Whenever you see "Exception has been thrown by the target of an invocation", you need to look at the inner exception. That should give you more information.</p>
+<p>My guess is that the account that your application is running as does not have access to change passwords in Active Directory. I haven't tried this scenario myself, so I'm not sure which account you should use instead. Perhaps you could try impersonating an admin account. Or maybe you can even impersonate the user themselves given their current password as credentials.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: shrikant</title>
+		<link>http://adventuresinsoftware.com/blog/?p=532#comment-114950</link>
+		<dc:creator>shrikant</dc:creator>
+		<pubDate>Mon, 24 Jan 2011 13:41:51 +0000</pubDate>
+		<guid>http://adventuresinsoftware.com/blog/?p=532#comment-114950</guid>
+		<description>Hi,
+I have a web page through this page when I try to add a new user then users created successfully but when try resetting their password then I am getting errors’
+
+add New user successfully
+
+      public static void AddUser(ADUser adUser)
+        {
+            // Local variables
+            DirectoryEntry oDE = null;
+            DirectoryEntry oDENewUser = null;
+            DirectoryEntries oDEs = null;
+
+            try
+            {
+                oDE = GetDirectoryEntry(GetADPath(PROD, adUser.UserType));
+                
+                // 1. Create user account
+                oDEs = oDE.Children;
+                oDENewUser = oDEs.Add("CN=" + adUser.UserName, "user");
+                
+                // 2. Set properties
+                SetProperty(oDENewUser, "givenName", adUser.FirstName);
+                SetProperty(oDENewUser, "sn", adUser.LastName);
+                SetProperty(oDENewUser, "mail", adUser.Email);
+                SetProperty(oDENewUser, "sAMAccountName", adUser.UserName);
+                oDENewUser.CommitChanges();
+
+                /// 4. Enable account            
+                EnableAccount(oDENewUser);
+
+                // 3. Set password
+                //SetPassword(oDENewUser, adUser.Password);
+                SetPassword1(oDENewUser.Path, adUser.Password);
+                oDENewUser.CommitChanges();
+
+                oDENewUser.Close();
+                oDE.Close();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+I have try the following 2 SetPassword methods but getting error.
+Method 1.
+     internal static void SetPassword1(string path, string userPassword)
+        {
+            //Local variables
+            DirectoryEntry usr = null;
+            
+            try
+            {
+                usr = new DirectoryEntry();
+                usr.Path = path;
+                usr.AuthenticationType = AuthenticationTypes.Secure;
+                object ret = usr.Invoke("SetPassword", userPassword);
+                usr.CommitChanges();
+                usr.Close();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+The exception raised (Error Code 80072035: The server is unwilling to process the request)
+Method 2.
+internal static void SetPassword(DirectoryEntry de, string userPassword)
+        {
+            //Local variables
+            //DirectoryEntry usr = null;
+            string quotePwd;
+            byte[] pwdBin;
+            
+            try
+            {
+                quotePwd = String.Format(@"""{0}""", userPassword);
+                pwdBin = System.Text.Encoding.Unicode.GetBytes(quotePwd);
+                de.Properties["unicodePwd"].Value = pwdBin;
+                de.CommitChanges();
+                //usr.Close();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+The exception raised ("Exception has been thrown by the target of an invocation.")
+Is there an easy way to tell if there is a problem with changing a password?
+Please reply me as soon as possible.
+Thanks.</description>
+		<content:encoded><![CDATA[<p>Hi,<br />
+I have a web page through this page when I try to add a new user then users created successfully but when try resetting their password then I am getting errors’</p>
+<p>add New user successfully</p>
+<p>      public static void AddUser(ADUser adUser)<br />
+        {<br />
+            // Local variables<br />
+            DirectoryEntry oDE = null;<br />
+            DirectoryEntry oDENewUser = null;<br />
+            DirectoryEntries oDEs = null;</p>
+<p>            try<br />
+            {<br />
+                oDE = GetDirectoryEntry(GetADPath(PROD, adUser.UserType));</p>
+<p>                // 1. Create user account<br />
+                oDEs = oDE.Children;<br />
+                oDENewUser = oDEs.Add("CN=" + adUser.UserName, "user");</p>
+<p>                // 2. Set properties<br />
+                SetProperty(oDENewUser, "givenName", adUser.FirstName);<br />
+                SetProperty(oDENewUser, "sn", adUser.LastName);<br />
+                SetProperty(oDENewUser, "mail", adUser.Email);<br />
+                SetProperty(oDENewUser, "sAMAccountName", adUser.UserName);<br />
+                oDENewUser.CommitChanges();</p>
+<p>                /// 4. Enable account<br />
+                EnableAccount(oDENewUser);</p>
+<p>                // 3. Set password<br />
+                //SetPassword(oDENewUser, adUser.Password);<br />
+                SetPassword1(oDENewUser.Path, adUser.Password);<br />
+                oDENewUser.CommitChanges();</p>
+<p>                oDENewUser.Close();<br />
+                oDE.Close();<br />
+            }<br />
+            catch (Exception ex)<br />
+            {<br />
+                throw ex;<br />
+            }<br />
+        }<br />
+I have try the following 2 SetPassword methods but getting error.<br />
+Method 1.<br />
+     internal static void SetPassword1(string path, string userPassword)<br />
+        {<br />
+            //Local variables<br />
+            DirectoryEntry usr = null;</p>
+<p>            try<br />
+            {<br />
+                usr = new DirectoryEntry();<br />
+                usr.Path = path;<br />
+                usr.AuthenticationType = AuthenticationTypes.Secure;<br />
+                object ret = usr.Invoke("SetPassword", userPassword);<br />
+                usr.CommitChanges();<br />
+                usr.Close();<br />
+            }<br />
+            catch (Exception ex)<br />
+            {<br />
+                throw ex;<br />
+            }<br />
+        }<br />
+The exception raised (Error Code 80072035: The server is unwilling to process the request)<br />
+Method 2.<br />
+internal static void SetPassword(DirectoryEntry de, string userPassword)<br />
+        {<br />
+            //Local variables<br />
+            //DirectoryEntry usr = null;<br />
+            string quotePwd;<br />
+            byte[] pwdBin;</p>
+<p>            try<br />
+            {<br />
+                quotePwd = String.Format(@"""{0}""", userPassword);<br />
+                pwdBin = System.Text.Encoding.Unicode.GetBytes(quotePwd);<br />
+                de.Properties["unicodePwd"].Value = pwdBin;<br />
+                de.CommitChanges();<br />
+                //usr.Close();<br />
+            }<br />
+            catch (Exception ex)<br />
+            {<br />
+                throw ex;<br />
+            }<br />
+        }<br />
+The exception raised ("Exception has been thrown by the target of an invocation.")<br />
+Is there an easy way to tell if there is a problem with changing a password?<br />
+Please reply me as soon as possible.<br />
+Thanks.</p>
+]]></content:encoded>
+	</item>
+</channel>
+</rss>

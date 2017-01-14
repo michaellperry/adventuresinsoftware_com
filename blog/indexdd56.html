@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?><!-- generator="wordpress/2.3.3" -->
+<rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	>
+<channel>
+	<title>Comments on: Forward network credentials to Report Server</title>
+	<link>http://adventuresinsoftware.com/blog/?p=539</link>
+	<description>Lessons learned on the road to quality computing</description>
+	<pubDate>Fri, 13 Jan 2017 12:55:34 +0000</pubDate>
+	<generator>http://wordpress.org/?v=2.3.3</generator>
+		<item>
+		<title>By: Bakos</title>
+		<link>http://adventuresinsoftware.com/blog/?p=539#comment-153687</link>
+		<dc:creator>Bakos</dc:creator>
+		<pubDate>Wed, 18 May 2011 14:35:05 +0000</pubDate>
+		<guid>http://adventuresinsoftware.com/blog/?p=539#comment-153687</guid>
+		<description>Great article. Thnx a lot. I was looking for hours to understand the mechanism. However in visual studio 2010, I had to check whether it is a postback or not, in order to see the report, otherwise it was trying to load in an infinite loop. For more info, one can read also here http://blogs.msdn.com/b/brianhartman/archive/2010/03/21/reports-never-stop-loading-with-vs-2010.aspx
+
+Thnx again for the great article.
+
+Bakos</description>
+		<content:encoded><![CDATA[<p>Great article. Thnx a lot. I was looking for hours to understand the mechanism. However in visual studio 2010, I had to check whether it is a postback or not, in order to see the report, otherwise it was trying to load in an infinite loop. For more info, one can read also here <a href="http://blogs.msdn.com/b/brianhartman/archive/2010/03/21/reports-never-stop-loading-with-vs-2010.aspx" rel="nofollow">http://blogs.msdn.com/b/brianhartman/archive/2010/03/21/reports-never-stop-loading-with-vs-2010.aspx</a></p>
+<p>Thnx again for the great article.</p>
+<p>Bakos</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Graham</title>
+		<link>http://adventuresinsoftware.com/blog/?p=539#comment-151212</link>
+		<dc:creator>Graham</dc:creator>
+		<pubDate>Tue, 10 May 2011 09:29:05 +0000</pubDate>
+		<guid>http://adventuresinsoftware.com/blog/?p=539#comment-151212</guid>
+		<description>This is an absolutely brilliant article and exactly what I've been looking for!
+Spent an entire day Googling, came back into work the next day and came across this page after a few clicks.
+Many thanks for publishing this - it is something that should definitely be on MSDN by default.</description>
+		<content:encoded><![CDATA[<p>This is an absolutely brilliant article and exactly what I've been looking for!<br />
+Spent an entire day Googling, came back into work the next day and came across this page after a few clicks.<br />
+Many thanks for publishing this - it is something that should definitely be on MSDN by default.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Michael L Perry</title>
+		<link>http://adventuresinsoftware.com/blog/?p=539#comment-85570</link>
+		<dc:creator>Michael L Perry</dc:creator>
+		<pubDate>Fri, 17 Sep 2010 22:20:16 +0000</pubDate>
+		<guid>http://adventuresinsoftware.com/blog/?p=539#comment-85570</guid>
+		<description>Funny you should mention that. Check out the follow up posts:
+http://adventuresinsoftware.com/blog/?p=542
+http://adventuresinsoftware.com/blog/?p=547
+http://adventuresinsoftware.com/blog/?p=549
+
+Glad it helped.</description>
+		<content:encoded><![CDATA[<p>Funny you should mention that. Check out the follow up posts:<br />
+<a href="http://adventuresinsoftware.com/blog/?p=542" rel="nofollow">http://adventuresinsoftware.com/blog/?p=542</a><br />
+<a href="http://adventuresinsoftware.com/blog/?p=547" rel="nofollow">http://adventuresinsoftware.com/blog/?p=547</a><br />
+<a href="http://adventuresinsoftware.com/blog/?p=549" rel="nofollow">http://adventuresinsoftware.com/blog/?p=549</a></p>
+<p>Glad it helped.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: tootoomike</title>
+		<link>http://adventuresinsoftware.com/blog/?p=539#comment-85482</link>
+		<dc:creator>tootoomike</dc:creator>
+		<pubDate>Fri, 17 Sep 2010 10:21:44 +0000</pubDate>
+		<guid>http://adventuresinsoftware.com/blog/?p=539#comment-85482</guid>
+		<description>Michael, thanks very much for this excellent article, amazingly this is the only good, clear and simple explanation of consuming SRSS from an asp.net web app (I couldn't find anything on MSDN for example), if the SRSS is on a different unconnected domain. The example of the NetworkReportServerCredentials class is excellent, and has enabled me to use a SRSS web reference ReportingService2010 class to retrieve reportlisting to enable user selection...(is this something you've considered?), something like this...
+
+        internal static ReportingService2010WebReference.CatalogItem[] GetNavBarGroupForReportFolder(string reportDir, string groupTitle)
+        {
+            ReportingService2010WebReference.CatalogItem[] result = null;
+
+            ReportingService2010WebReference.ReportingService2010 rs = new ReportingService2010WebReference.ReportingService2010();
+            rs.Credentials = new NetworkReportServerCredentials("username", "password", "domain").NetworkCredentials;
+            result = rs.ListChildren(reportDir, false);
+
+            return result;
+        }
+
+cheers mate, great work
+Mike</description>
+		<content:encoded><![CDATA[<p>Michael, thanks very much for this excellent article, amazingly this is the only good, clear and simple explanation of consuming SRSS from an asp.net web app (I couldn't find anything on MSDN for example), if the SRSS is on a different unconnected domain. The example of the NetworkReportServerCredentials class is excellent, and has enabled me to use a SRSS web reference ReportingService2010 class to retrieve reportlisting to enable user selection...(is this something you've considered?), something like this...</p>
+<p>        internal static ReportingService2010WebReference.CatalogItem[] GetNavBarGroupForReportFolder(string reportDir, string groupTitle)<br />
+        {<br />
+            ReportingService2010WebReference.CatalogItem[] result = null;</p>
+<p>            ReportingService2010WebReference.ReportingService2010 rs = new ReportingService2010WebReference.ReportingService2010();<br />
+            rs.Credentials = new NetworkReportServerCredentials("username", "password", "domain").NetworkCredentials;<br />
+            result = rs.ListChildren(reportDir, false);</p>
+<p>            return result;<br />
+        }</p>
+<p>cheers mate, great work<br />
+Mike</p>
+]]></content:encoded>
+	</item>
+</channel>
+</rss>

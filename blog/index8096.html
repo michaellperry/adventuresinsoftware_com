@@ -1,0 +1,732 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+
+
+<!-- Mirrored from adventuresinsoftware.com/blog/?paged=17 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 Jan 2017 13:10:38 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>Adventures in Software  </title>
+
+<meta name="generator" content="WordPress 2.3.3" /> <!-- leave this for stats -->
+
+<link rel="stylesheet" href="wp-content/themes/ais2/style.css" type="text/css" media="screen" />
+<link rel="alternate" type="application/rss+xml" title="Adventures in Software RSS Feed" href="indexd784.html?feed=rss2" />
+<link rel="pingback" href="xmlrpc.html" />
+    <script type="text/javascript">
+        function onSilverlightError(sender, args) {
+            var appSource = "";
+            if (sender != null && sender != 0) {
+              appSource = sender.getHost().Source;
+            }
+            
+            var errorType = args.ErrorType;
+            var iErrorCode = args.ErrorCode;
+
+            if (errorType == "ImageError" || errorType == "MediaError") {
+              return;
+            }
+
+            var errMsg = "Unhandled Error in Silverlight Application " +  appSource + "\n" ;
+
+            errMsg += "Code: "+ iErrorCode + "    \n";
+            errMsg += "Category: " + errorType + "       \n";
+            errMsg += "Message: " + args.ErrorMessage + "     \n";
+
+            if (errorType == "ParserError") {
+                errMsg += "File: " + args.xamlFile + "     \n";
+                errMsg += "Line: " + args.lineNumber + "     \n";
+                errMsg += "Position: " + args.charPosition + "     \n";
+            }
+            else if (errorType == "RuntimeError") {           
+                if (args.lineNumber != 0) {
+                    errMsg += "Line: " + args.lineNumber + "     \n";
+                    errMsg += "Position: " +  args.charPosition + "     \n";
+                }
+                errMsg += "MethodName: " + args.methodName + "     \n";
+            }
+
+            throw new Error(errMsg);
+        }
+    </script>
+
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc0db0.php?rsd" />
+ <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="wp-includes/wlwmanifest.xml" /> <style type='text/css'>
+<!--#header { background: url('wp-content/themes/ais2/images/header-imgae03.html?upper=A7A73F&amp;lower=77773F') no-repeat bottom center; }
+--></style>
+</head>
+<body>
+<div id="page">
+
+<div class="aisTopBar">
+	<form method="get" id="searchform" action="http://adventuresinsoftware.com/blog/">
+<div>
+<a href="indexd784.html?feed=rss2"><img src="../images/feed-icon-28x28.png" border="0"></a>
+<input type="text" value="" name="s" id="s" />
+<input type="submit" id="searchsubmit" value="Search" />
+</div>
+</form>
+</div>
+
+<div class="aisHeaderImageRight">
+	<div class="aisHeaderImage">
+	<div class="aisHeaderCornerRight">
+	<div class="aisHeaderCornerLeft">
+	<div class="aisImageBar">
+	<div class="aisSubSites">
+		<a href="index.html" class="aisSubSiteLink"><span class="aisSiteTabRight"><span class="aisSiteTabLeft"><span class="aisSiteTab">
+			home</span></span></span></a>
+		<a class="aisSubSiteLink" href="indexb60a.html?cat=27"><span class="aisSiteTabRight"><span class="aisSiteTabLeft"><span class="aisSiteTab">
+			historic modeling</span></span></span></a>
+		<a class="aisSubSiteLink" href="indexa88f.html?cat=36"><span class="aisSiteTabRight"><span class="aisSiteTabLeft"><span class="aisSiteTab">
+			update controls</span></span></span></a>
+		<a href="index2d79.html?cat=26" class="aisSubSiteLink"><span class="aisSiteTabRight"><span class="aisSiteTabLeft"><span class="aisSiteTab">
+			degrees of freedom</span></span></span></a>
+		<a class="aisSubSiteLink" href="indexba53.html?page_id=2"><span class="aisSiteTabRight"><span class="aisSiteTabLeft"><span class="aisSiteTab">
+			about us</span></span></span></a>
+
+	</div>
+	</div>
+	</div>
+	</div>
+	</div>
+</div>
+
+<table style="width: 100%" cellspacing="0" cellpadding="0">
+	<tr valign="top">
+		<td width="210px">
+<div id="sidebar">
+<div class="aisLeftColumnFill">
+<div class="aisLeftColumnBottom">
+<div class="aisLeftColumnTop">
+<div id="twitter_div" class="aisLeftNav">
+<h2 class="sidebar-title">Twitter Updates</h2>
+<ul id="twitter_update_list"></ul>
+<a href="http://twitter.com/michaellperry" id="follow">Follow me</a>
+</div>
+<div id="twitter_reply_div" class="aisLeftNav">
+<h2 class="sidebar-title">Twitter Replies</h2>
+<ul id="twitter_reply_list"></ul>
+</div>
+
+<div class="aisLeftNav">
+<a href='http://ineta.org/Speakers/SearchCommunitySpeakers.aspx?SpeakerId=c5110e21-9243-461b-a464-a6548524e885'><img alt='INETA Community Speakers Program' border='0' src='../../www.ineta.org/images/OfficialLogos/InetaCommunitySpeakersRequestMe.html' /></a>
+</div>
+
+<div class="aisLeftNav">
+	<li class="pagenav"><h2>Pages</h2><ul><li class="page_item page-item-2"><a href="indexba53.html?page_id=2" title="About Us">About Us</a></li>
+<li class="page_item page-item-210"><a href="index6ae3.html?page_id=210" title="Templates">Templates</a></li>
+</ul></li></div>
+
+<div class="aisLeftNav">
+<h2>Archives</h2>
+<ul>
+	<li><a href='indexb4d5.html?m=201110' title='October 2011'>October 2011</a></li>
+	<li><a href='indexc61a.html?m=201106' title='June 2011'>June 2011</a></li>
+	<li><a href='indexa80d.html?m=201105' title='May 2011'>May 2011</a></li>
+	<li><a href='index512b.html?m=201104' title='April 2011'>April 2011</a></li>
+	<li><a href='index08fb.html?m=201103' title='March 2011'>March 2011</a></li>
+	<li><a href='index52f4.html?m=201102' title='February 2011'>February 2011</a></li>
+	<li><a href='index74f1.html?m=201101' title='January 2011'>January 2011</a></li>
+	<li><a href='index8956.html?m=201012' title='December 2010'>December 2010</a></li>
+	<li><a href='indexa1aa.html?m=201011' title='November 2010'>November 2010</a></li>
+	<li><a href='indexe3d5.html?m=201010' title='October 2010'>October 2010</a></li>
+	<li><a href='index9ab9.html?m=201009' title='September 2010'>September 2010</a></li>
+	<li><a href='index1ff0.html?m=201008' title='August 2010'>August 2010</a></li>
+	<li><a href='index9f11.html?m=201007' title='July 2010'>July 2010</a></li>
+	<li><a href='index31f0.html?m=201006' title='June 2010'>June 2010</a></li>
+	<li><a href='indexd189.html?m=201005' title='May 2010'>May 2010</a></li>
+	<li><a href='indexb5c0.html?m=201004' title='April 2010'>April 2010</a></li>
+	<li><a href='indexf258.html?m=201003' title='March 2010'>March 2010</a></li>
+	<li><a href='index6e30.html?m=201002' title='February 2010'>February 2010</a></li>
+	<li><a href='index6b19.html?m=201001' title='January 2010'>January 2010</a></li>
+	<li><a href='index5c0a.html?m=200912' title='December 2009'>December 2009</a></li>
+	<li><a href='index8f62.html?m=200911' title='November 2009'>November 2009</a></li>
+	<li><a href='index451d.html?m=200910' title='October 2009'>October 2009</a></li>
+	<li><a href='index3e04.html?m=200909' title='September 2009'>September 2009</a></li>
+	<li><a href='index425a.html?m=200908' title='August 2009'>August 2009</a></li>
+	<li><a href='index9907.html?m=200907' title='July 2009'>July 2009</a></li>
+	<li><a href='index3104.html?m=200906' title='June 2009'>June 2009</a></li>
+	<li><a href='indexc36d.html?m=200905' title='May 2009'>May 2009</a></li>
+	<li><a href='index17e8.html?m=200904' title='April 2009'>April 2009</a></li>
+	<li><a href='index10a5.html?m=200903' title='March 2009'>March 2009</a></li>
+	<li><a href='index8988.html?m=200902' title='February 2009'>February 2009</a></li>
+	<li><a href='index1419.html?m=200901' title='January 2009'>January 2009</a></li>
+	<li><a href='index7866.html?m=200812' title='December 2008'>December 2008</a></li>
+	<li><a href='index55f6.html?m=200811' title='November 2008'>November 2008</a></li>
+	<li><a href='indexa7bc.html?m=200810' title='October 2008'>October 2008</a></li>
+	<li><a href='indexe77c.html?m=200809' title='September 2008'>September 2008</a></li>
+	<li><a href='indexcffc.html?m=200808' title='August 2008'>August 2008</a></li>
+	<li><a href='index0e62.html?m=200807' title='July 2008'>July 2008</a></li>
+	<li><a href='indexfda7.html?m=200806' title='June 2008'>June 2008</a></li>
+	<li><a href='index7d64.html?m=200805' title='May 2008'>May 2008</a></li>
+	<li><a href='index94dd.html?m=200804' title='April 2008'>April 2008</a></li>
+	<li><a href='index9631.html?m=200803' title='March 2008'>March 2008</a></li>
+	<li><a href='indexdd52.html?m=200802' title='February 2008'>February 2008</a></li>
+	<li><a href='index21ee.html?m=200801' title='January 2008'>January 2008</a></li>
+	<li><a href='index363c.html?m=200712' title='December 2007'>December 2007</a></li>
+	<li><a href='index7493.html?m=200711' title='November 2007'>November 2007</a></li>
+	<li><a href='index93a7.html?m=200710' title='October 2007'>October 2007</a></li>
+	<li><a href='index4ca8.html?m=200709' title='September 2007'>September 2007</a></li>
+	<li><a href='index6124.html?m=200708' title='August 2007'>August 2007</a></li>
+	<li><a href='index6013.html?m=200707' title='July 2007'>July 2007</a></li>
+	<li><a href='index2ab6.html?m=200706' title='June 2007'>June 2007</a></li>
+	<li><a href='index44f0.html?m=200705' title='May 2007'>May 2007</a></li>
+	<li><a href='indexf0b4.html?m=200704' title='April 2007'>April 2007</a></li>
+	<li><a href='index481d.html?m=200703' title='March 2007'>March 2007</a></li>
+	<li><a href='indexcbea.html?m=200702' title='February 2007'>February 2007</a></li>
+	<li><a href='index9cdc.html?m=200701' title='January 2007'>January 2007</a></li>
+	<li><a href='index3ea4.html?m=200612' title='December 2006'>December 2006</a></li>
+	<li><a href='index67ca.html?m=200611' title='November 2006'>November 2006</a></li>
+	<li><a href='indexff49.html?m=200610' title='October 2006'>October 2006</a></li>
+	<li><a href='index611c.html?m=200609' title='September 2006'>September 2006</a></li>
+	<li><a href='index9a21.html?m=200608' title='August 2006'>August 2006</a></li>
+	<li><a href='index3ee9.html?m=200607' title='July 2006'>July 2006</a></li>
+	<li><a href='indexe13a.html?m=200606' title='June 2006'>June 2006</a></li>
+</ul>
+</div>
+
+<div class="aisLeftNav">
+			<li id="linkcat-16" class="linkcat"><h2>Blogroll</h2>
+	<ul>
+<li><a href="http://ayende.com/Blog">Ayende Rahien</a></li>
+<li><a href="http://www.softinsight.com/bnoyes/default.aspx">Brian Noyes</a></li>
+<li><a href="http://chriskoenig.net/">Chris Koenig</a></li>
+<li><a href="http://scienceblogs.com/goodmath/" title="MarkCC reveals the beauty in mathematics and exposes its misuse.">Good Math, Bad Math</a></li>
+<li><a href="http://joshsmithonwpf.wordpress.com/">Josh Smith on WPF</a></li>
+<li><a href="http://west-wind.com/Weblog/default.aspx">Rick Strahl</a></li>
+<li><a href="http://www.udidahan.com/?blog=true">Udi Dahan</a></li>
+
+	</ul>
+</li>
+<li id="linkcat-17" class="linkcat"><h2>Links</h2>
+	<ul>
+<li><a href="http://www.absg.com/" title="my day job">ABSG</a></li>
+<li><a href="http://www.d20universe.com/" title="my friends boostrap">d20 Universe</a></li>
+<li><a href="http://updatecontrols.net/" title="my open source project">Update Controls .NET</a></li>
+
+	</ul>
+</li>
+<li id="linkcat-32" class="linkcat"><h2>Podroll</h2>
+	<ul>
+<li><a href="http://dotnetrocks.com/" title="Interviews with leaders in the .NET community.">.NET Rocks!</a></li>
+<li><a href="http://hanselminutes.com/" title="News and interviews from all aspects of software, with an insider&#039;s view of Microsoft.">Hanselminutes</a></li>
+
+	</ul>
+</li>
+	</div>
+
+<div class="aisLeftNav">
+<h2>Books</h2>
+<iframe src="http://rcm.amazon.com/e/cm?t=adventures0d2-20&amp;o=1&amp;p=8&amp;l=as1&amp;asins=0764526413&amp;fc1=000000&amp;IS2=1&amp;lt1=_blank&amp;lc1=0000ff&amp;bc1=000000&amp;bg1=ffffff&amp;f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" name="I5" id="I5"></iframe>
+<br/>
+<iframe src="http://rcm.amazon.com/e/cm?t=adventures0d2-20&amp;o=1&amp;p=8&amp;l=as1&amp;asins=0201633612&amp;fc1=000000&amp;IS2=1&amp;lt1=_blank&amp;lc1=0000ff&amp;bc1=000000&amp;bg1=ffffff&amp;f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" name="I6" id="I6"></iframe>
+<br/>
+<iframe src="http://rcm.amazon.com/e/cm?t=adventures0d2-20&amp;o=1&amp;p=8&amp;l=as1&amp;asins=0136291554&amp;fc1=000000&amp;IS2=1&amp;lt1=_blank&amp;lc1=0000ff&amp;bc1=000000&amp;bg1=ffffff&amp;f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" name="I7" id="I7"></iframe>
+<br/>
+<iframe src="http://rcm.amazon.com/e/cm?t=adventures0d2-20&amp;o=1&amp;p=8&amp;l=as1&amp;asins=1888009195&amp;fc1=000000&amp;IS2=1&amp;lt1=_blank&amp;lc1=0000ff&amp;bc1=000000&amp;bg1=ffffff&amp;f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" name="I8" id="I8"></iframe>
+</div>
+<div class="aisLeftNav">
+<h2>Meta</h2>
+<ul>
+		<li><a href="wp-login.html">Login</a></li>
+	<li><a href="http://validator.w3.org/check/referer" title="This page validates as XHTML 1.0 Transitional">Valid <abbr title="eXtensible HyperText Markup Language">XHTML</abbr></a></li>
+	<li><a href="http://gmpg.org/xfn/"><abbr title="XHTML Friends Network">XFN</abbr></a></li>
+	<li><a href="http://wordpress.org/" title="Powered by WordPress, state-of-the-art semantic personal publishing platform.">WordPress</a></li>
+	</ul>
+</div>
+<div class="aisLeftContent">
+<h2>Community</h2>
+<ul>
+	<script type="text/javascript" src="../../localhost/embed/92q2bbma.js"></script>
+</ul>
+</div>
+
+</div></div></div>
+</div>		</td>
+		<td>
+
+	<div id="content" class="narrowcolumn">
+
+	
+		
+			<div class="post" id="post-317">
+				<h2><a href="index4ef8.html?p=317" rel="bookmark" title="Permanent Link to Historic Modeling site launched">Historic Modeling site launched</a></h2>
+				<small>April 7th, 2009 <!-- by Michael L Perry --></small>
+
+				<div class="entry">
+					<p>I've started a new site specifically about <a href="http://historicmodeling.com/">Historic Modeling</a>. The historic modeling content on AiS will remain here, but new content will be posted there. Adventures in Software will continue to be about lessons learned on the road to quality computing. Historic Modeling will be dedicated to the theory and practice of the technique, and the tools and processes I'm developing to support it.</p>
+<p>The first series of posts is complete. It takes you step-by-step through the creation of a historic model. This example is drawn from real-life experience, and includes just enough complexity to demonstrate how the technique applies to real-world problems. Please enjoy.</p>
+<ul>
+<li><a href="http://historicmodeling.com/book/node/4">Step One: Identify Changes</a>
+<li><a href="http://historicmodeling.com/book/node/5">Step Two: Refine Changes</a>
+<li><a href="http://historicmodeling.com/book/node/6">Step Three: Query the Model</a>
+<li><a href="http://historicmodeling.com/book/node/7">Step Four: Repeat</a> </li>
+</ul>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="indexb60a.html?cat=27" title="View all posts in Historic Modeling" rel="category">Historic Modeling</a> |   <a href="index4ef8.html?p=317#comments" title="Comment on Historic Modeling site launched">1 Comment &#187;</a></p>
+			</div>
+
+		
+			<div class="post" id="post-316">
+				<h2><a href="index258b.html?p=316" rel="bookmark" title="Permanent Link to Business logic in the database">Business logic in the database</a></h2>
+				<small>April 3rd, 2009 <!-- by Michael L Perry --></small>
+
+				<div class="entry">
+					<p>It's a common refrain among the DBAs that I've worked with. We talk about a new feature, and they describe how it can be done in the database. They could write a stored procedure, a calculated column, a view, and a series of triggers to get exactly the behavior required. Their toolset is not limited to tables and indexes. They want to do more than just storage.</p>
+<p>I respect that. I see what databases are capable of, and I want to take advantage of those capabilities where appropriate. On the other hand, I sympathize with arguments about separation of concerns. View logic is in the view, business logic is in the middle tier, and data access logic is in the database. Putting view logic or business logic into the data tier leads to trouble.</p>
+<p><strong>Calculating privileges</strong><br /><a href="wp-content/uploads/2009/04/privilegeerd.png"><img style="border-right: 0px; border-top: 0px; border-left: 0px; border-bottom: 0px" height="192" alt="PrivilegeERD" src="wp-content/uploads/2009/04/privilegeerd-thumb.png" width="244" align="right" border="0"></a> The business has asked for a rich security model for our eCommerce system. They've identified several privileges that map to features of the site. They want an admin user to create roles containing those privileges. The admin user can then assign those roles to other users of the system.</p>
+<p>Occasionally, there will be a one-off privilege that you want to explicitly grant or deny to a user. So after assigning a user some roles, the admin should be able to specify overrides. The ERD appears on the right.</p>
+<p>The UI for managing roles and privileges is somewhat complex. The admin user searches for a user, and is presented with a list of roles. The admin clicks checkboxes next to the roles to assign them to the user.</p>
+<p>Then the admin can navigate to another page where they are presented with a list of privileges. A green icon indicates default privileges -- the privileges that are part of a role to which the user is assigned. A checkbox indicates whether the user is granted that privilege. If there are no overrides, the green icons and the checkboxes agree. By checking and unchecking the privileges, the admin can create overrides.</p>
+<p>In more formal notation, here is the dependent behavior that interprets the tables.</p>
+<ul>
+<li>user_in_role(User u, Role r) = there exists UserRole ur where ur.user = u and ur.role = r</li>
+<li>privilege_in_role(Privilege p, Role r) = there exists RolePrivilege rp where rp.privilege = p and rp.role = r</li>
+<li>is_default_privilege(User u, Privilege p) = there exists Role r such that user_in_role(u, r) and privilege_in_role(p, r)</li>
+<li>user_has_privilege(User u, Privilege p) =<br />there exists Override o such that o.user = u and o.privilege = p -&gt; o.isGranted<br />else -&gt; is_default_privilege(u, p)</li>
+</ul>
+<p>The green icon reflects is_default_privilege, and the checkbox reflects user_has_privilege.</p>
+<p><strong>Calculating privileges in a view</strong><br />The DBA, upon seeing these requirements, designed a view that calculates privileges for a user. Each row is a privilege. One bit column indicates whether the privilege is a default for the user, and another indicates whether the privilege is granted to the user. Looking at the formal notation, you can see that SQL is a natural language in which to describe this behavior.</p>
+<p>But what happens when the user checks a checkbox? We want to either create or delete an Override. If the application code consumes the view, why should it need to also know about this logic?</p>
+<p>The DBA also took care of this. He created an INSTEAD-OF UPDATE trigger on the view. When user_has_privilege is updated, an Override is either created or deleted. Now all of the logic for interpreting this table structure is encapsulated in a view. The view is the contract with the database.</p>
+<p><strong>Appropriate for our architecture?</strong><br />This solution would be appropriate for a two-tier application. The page could bind directly to the view. But we have chosen a three-tier architecture. Between the page and the database is application logic. This approach is less desirable when a middle-tier is available.</p>
+<p>The view combines all of the information into one result set, which takes away the ability for the application tier to cache privileges. Privileges do not change, unless we deploy a new version of the code. So caching them indefinitely is appropriate. The combined result set is bigger than the source data that could change, so it is less efficient.</p>
+<p>The view is not a complete contract. The application still needs the ability to create and delete roles as individual entities. While this view encapsulates some of the business logic, it cannot encapsulate all of it. It is a leaky abstraction.</p>
+<p>What is your opinion? Is this a data access contract? Is it business logic? Or is it perhaps UI logic? Which tier should handle this behavior?</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="index1cd2.html?cat=10" title="View all posts in Contracts" rel="category">Contracts</a>,  <a href="indexc728.html?cat=7" title="View all posts in Databases" rel="category">Databases</a> |   <a href="index258b.html?p=316#respond" title="Comment on Business logic in the database">No Comments &#187;</a></p>
+			</div>
+
+		
+			<div class="post" id="post-313">
+				<h2><a href="index8c55.html?p=313" rel="bookmark" title="Permanent Link to Data binding through Linq queries">Data binding through Linq queries</a></h2>
+				<small>March 24th, 2009 <!-- by Michael L Perry --></small>
+
+				<div class="entry">
+					<p>One of the most talked about classes in WPF is <a href="http://msdn.microsoft.com/en-us/library/ms748365.aspx">ObservableCollection&lt;T&gt;</a>. This is a collection class that notifies listeners whenever something is added or removed. Examples abound of using an <a href="http://www.codeproject.com/KB/WPF/binding_in_linq-sql.aspx?display=Print">ObservableCollection&lt;Person&gt;</a> within the data model of an application. Add a person to the data model, and the view is updated.</p>
+<p>But a problem with ObservableCollection&lt;T&gt; appears when you want to filter, map, or otherwise modify the collection on the way to the view. The desired way to accomplish this is to write a Linq query. But that turns the ObservableCollection&lt;T&gt; into an IEnumerable&lt;T&gt;. While the original source collection is observable, the query is not.</p>
+<p><strong>Filtered collections are not observable</strong><br />In the following example, one list box is bound to People, while another is bound to PeopleStartingWithP. The first list is updated, but the second is not.</p>
+<pre><span style="color: blue">public</span> <span style="color: blue">class</span> AddressBook
+{
+    <span style="color: blue">private</span> ObservableCollection&lt;Person&gt; _people = <span style="color: blue">new</span> ObservableCollection&lt;Person&gt;();
+
+    <span style="color: blue">public</span> ObservableCollection&lt;Person&gt; People
+    {
+        get { <span style="color: blue">return</span> _people; }
+    }
+
+    <span style="color: blue">public</span> IEnumerable&lt;Person&gt; PeopleStartingWithP
+    {
+        get { <span style="color: blue">return</span> _people.Where(p =&gt; p.Name.StartsWith(<span style="color: maroon">"P"</span>)); }
+    }
+
+    <span style="color: blue">private</span> Random _random = <span style="color: blue">new</span> Random();
+    <span style="color: blue">public</span> <span style="color: blue">void</span> NewPerson()
+    {
+        _people.Add(<span style="color: blue">new</span> Person() { Name = <span style="color: maroon">"Person "</span> + _random.Next(<span style="color: maroon">100</span>) });
+    }
+}
+</pre>
+<pre><span style="color: blue">&lt;</span><span style="color: maroon">Window</span> <span style="color: red">x:Class</span>="<span style="color: blue">AddressBook.Window1</span>"
+    <span style="color: red">xmlns</span>="<span style="color: blue">http://schemas.microsoft.com/winfx/2006/xaml/presentation</span>"
+    <span style="color: red">xmlns:x</span>="<span style="color: blue">http://schemas.microsoft.com/winfx/2006/xaml</span>"
+    <span style="color: red">Title</span>="<span style="color: blue">Window1</span>" <span style="color: red">Height</span>="<span style="color: blue">300</span>" <span style="color: red">Width</span>="<span style="color: blue">300</span>"<span style="color: blue">&gt;</span>
+    <span style="color: blue">&lt;</span><span style="color: maroon">StackPanel</span><span style="color: blue">&gt;</span>
+        <span style="color: blue">&lt;</span><span style="color: maroon">ListBox</span> <span style="color: red">ItemsSource</span>="<span style="color: blue">{Binding People}</span>"<span style="color: blue">&gt;</span>
+            <span style="color: blue">&lt;</span><span style="color: maroon">ListBox.ItemTemplate</span><span style="color: blue">&gt;</span>
+                <span style="color: blue">&lt;</span><span style="color: maroon">DataTemplate</span><span style="color: blue">&gt;</span>
+                    <span style="color: blue">&lt;</span><span style="color: maroon">TextBlock</span> <span style="color: red">Text</span>="<span style="color: blue">{Binding Name}</span>"/<span style="color: blue">&gt;</span>
+                <span style="color: blue">&lt;</span>/<span style="color: maroon">DataTemplate</span><span style="color: blue">&gt;</span>
+            <span style="color: blue">&lt;</span>/<span style="color: maroon">ListBox.ItemTemplate</span><span style="color: blue">&gt;</span>
+        <span style="color: blue">&lt;</span>/<span style="color: maroon">ListBox</span><span style="color: blue">&gt;</span>
+        <span style="color: blue">&lt;</span><span style="color: maroon">ListBox</span> <font color="#ff0000">Name</font>="<font color="#0000ff">FilteredList</font>" <span style="color: red">ItemsSource</span>="<span style="color: blue">{Binding PeopleStartingWithP}</span>"<span style="color: blue">&gt;</span>
+            <span style="color: blue">&lt;</span><span style="color: maroon">ListBox.ItemTemplate</span><span style="color: blue">&gt;</span>
+                <span style="color: blue">&lt;</span><span style="color: maroon">DataTemplate</span><span style="color: blue">&gt;</span>
+                    <span style="color: blue">&lt;</span><span style="color: maroon">TextBlock</span> <span style="color: red">Text</span>="<span style="color: blue">{Binding Name}</span>"/<span style="color: blue">&gt;</span>
+                <span style="color: blue">&lt;</span>/<span style="color: maroon">DataTemplate</span><span style="color: blue">&gt;</span>
+            <span style="color: blue">&lt;</span>/<span style="color: maroon">ListBox.ItemTemplate</span><span style="color: blue">&gt;</span>
+        <span style="color: blue">&lt;</span>/<span style="color: maroon">ListBox</span><span style="color: blue">&gt;</span>
+        <span style="color: blue">&lt;</span><span style="color: maroon">Button</span> <span style="color: red">Content</span>="<span style="color: blue">New Person</span>" <span style="color: red">Click</span>="<span style="color: blue">NewPerson_Click</span>"/<span style="color: blue">&gt;</span>
+    <span style="color: blue">&lt;</span>/<span style="color: maroon">StackPanel</span><span style="color: blue">&gt;</span>
+<span style="color: blue">&lt;</span>/<span style="color: maroon">Window</span><span style="color: blue">&gt;</span>
+</pre>
+<pre><span style="color: blue">public</span> partial <span style="color: blue">class</span> Window1 : Window
+{
+    <span style="color: blue">private</span> AddressBook _addressBook = <span style="color: blue">new</span> AddressBook();
+
+    <span style="color: blue">public</span> Window1()
+    {
+        InitializeComponent();
+        DataContext = _addressBook;
+    }
+
+    <span style="color: blue">private</span> <span style="color: blue">void</span> NewPerson_Click(object sender, RoutedEventArgs e)
+    {
+        _addressBook.NewPerson();
+    }
+}
+</pre>
+<p>One commonly used solution to this problem is to programmatically set either the DataContext or ItemsSource to force the list to be updated. This works, but it completely defeats the purpose of using ObservableCollection&lt;T&gt;.</p>
+<pre><span style="color: blue">private</span> <span style="color: blue">void</span> NewPerson_Click(object sender, RoutedEventArgs e)
+{
+    _addressBook.NewPerson();
+    <strong>FilteredList.ItemsSource = _addressBook.PeopleStartingWithP;</strong>
+}
+</pre>
+<p>Writing code that reaches back into the XAML and sets properties is backwards. This is the way things were done in Winforms. XAML is meant to be declarative. The markup should declare its own ItemsSource, and not rely on code to set it.</p>
+<p><strong>Query parameters are not observable</strong><br />Another problem with this approach occurs when the filter in the Linq query references other data. For example, if we want the user to choose their own first letter, the list should update when a new letter is chosen.</p>
+<p>The following code makes this work by implementing INotifyPropertyChanged and firing an event when FirstLetter is changed.</p>
+<pre><span style="color: blue">private</span> string _firstLetter = string.Empty;
+
+<span style="color: blue">public</span> string FirstLetter
+{
+    get { <span style="color: blue">return</span> _firstLetter; }
+    set { _firstLetter = value; FirePropertyChanged(<span style="color: maroon"><strong>"PeopleStartingWithFirstLetter"</strong></span>); }
+}
+
+<span style="color: blue">public</span> IEnumerable&lt;Person&gt; PeopleStartingWithFirstLetter
+{
+    get
+    {
+        <span style="color: blue">if</span> (_firstLetter == string.Empty)
+            <span style="color: blue">return</span> _people;
+        <span style="color: blue">else</span>
+            <span style="color: blue">return</span> _people.Where(p =&gt; p.Name.StartsWith(_firstLetter));
+    }
+}
+
+<span style="color: blue">private</span> <span style="color: blue">void</span> FirePropertyChanged(string propertyName)
+{
+    <span style="color: blue">if</span> (PropertyChanged != <span style="color: blue">null</span>)
+        PropertyChanged(<span style="color: blue">this</span>, <span style="color: blue">new</span> PropertyChangedEventArgs(propertyName));
+}
+</pre>
+<p>Do you see the problem? I've highlighted it for you. FirstLetter fires an event indicating that PeopleStartingWithFirstLetter has changed. That's not the property that was changed! That's the property that was <em>affected</em> by the change. FirstLetter is independent -- the user can change it. PeopleStartingWithFirstLetter is dependent -- it only responds to change. We've created a reverse dependency where FirstLetter knows about PeopleStartingWithFirstLetter. Again, this code is backwards.</p>
+<p><strong>Here's my solution</strong><br />Update Controls makes data binding through linq queries a breeze. It doesn't require ObservableCollection&lt;T&gt;. It responds to changes to the source collection even if it is a plain-vanilla List&lt;T&gt;. And it even responds when the query parameters are changed. And it does all this without INotifyPropertyChanged or any backwards event registration code. Here's what the class looks like using Update Controls:</p>
+<pre><span style="color: blue">public</span> <span style="color: blue">class</span> AddressBook
+{
+    <span style="color: blue">private</span> List&lt;Person&gt; _people = <span style="color: blue">new</span> List&lt;Person&gt;();
+    <span style="color: blue">private</span> string _firstLetter = string.Empty;
+
+    <span style="color: blue">private</span> Independent _indPeople = <span style="color: blue">new</span> Independent();
+    <span style="color: blue">private</span> Independent _indFirstLetter = <span style="color: blue">new</span> Independent();
+
+    <span style="color: blue">public</span> IEnumerable&lt;Person&gt; People
+    {
+        get { _indPeople.OnGet(); <span style="color: blue">return</span> _people; }
+    }
+
+    <span style="color: blue">public</span> string FirstLetter
+    {
+        get { _indFirstLetter.OnGet(); <span style="color: blue">return</span> _firstLetter; }
+        set { _indFirstLetter.OnSet(); _firstLetter = value; }
+    }
+
+    <span style="color: blue">public</span> IEnumerable&lt;Person&gt; PeopleStartingWithFirstLetter
+    {
+        get
+        {
+            <span style="color: blue">if</span> (FirstLetter == string.Empty)
+                <span style="color: blue">return</span> People;
+            <span style="color: blue">else</span>
+                <span style="color: blue">return</span> People.Where(p =&gt; p.Name.StartsWith(FirstLetter));
+        }
+    }
+
+    <span style="color: blue">private</span> Random _random = <span style="color: blue">new</span> Random();
+    <span style="color: blue">public</span> <span style="color: blue">void</span> NewPerson()
+    {
+        _indPeople.OnSet();
+        _people.Add(<span style="color: blue">new</span> Person() { Name = <span style="color: maroon">"Person "</span> + _random.Next(<span style="color: maroon">100</span>) });
+    }
+}
+</pre>
+<p>You just need those Independent sentry objects to ride along side your data. Tell them when the data is accessed and changed, and they will notify the controls.</p>
+<p>For a more in-depth example, please see the latest <a href="http://updatecontrols.net/videos/Linq/Linq.html">video</a> and download the <a href="wp-content/uploads/2009/03/quickwriter.zip">source code</a>.</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="indexa88f.html?cat=36" title="View all posts in Update Controls" rel="category">Update Controls</a> |   <a href="index8c55.html?p=313#respond" title="Comment on Data binding through Linq queries">No Comments &#187;</a></p>
+			</div>
+
+		
+			<div class="post" id="post-311">
+				<h2><a href="index2e31.html?p=311" rel="bookmark" title="Permanent Link to The status anti-pattern">The status anti-pattern</a></h2>
+				<small>March 19th, 2009 <!-- by Michael L Perry --></small>
+
+				<div class="entry">
+					<p>State transition diagrams have their place. They are useful for interpreting limited sets of well-defined inputs: for example parsing text, recognizing mouse gestures, or negotiating network protocols. But state or status in the large is rigid, hard to synchronize, and information poor. History is much more useful.</p>
+<p>Business objects tend to accrete status fields. In our eCommerce system, for example, we have a status on a shopping cart, a status on an order, and a status on a line item. Each status means something different. The word "status" means nothing without knowing what statuses are available and when they change.</p>
+<p><a href="wp-content/uploads/2009/03/orderstatus.png"><img style="border-right: 0px; border-top: 0px; border-left: 0px; border-bottom: 0px" height="244" alt="OrderStatus" src="wp-content/uploads/2009/03/orderstatus-thumb.png" width="236" align="right" border="0"></a> Status can sometimes refer to several independent degrees of freedom simultaneously. An order can be invoiced, and it can be shipped. One does not necessarily happen before the other. In order to capture information accurately, we need a Cartesian product of statuses: neither invoiced nor shipped (confirmed), invoiced but not shipped (invoiced), shipped but not invoiced (shipped), and both invoiced and shipped (completed). Add a third degree of freedom, and the product explodes into an unmanageable mess.</p>
+<p>Many status changes need to capture additional information. When an order is shipped, we need to store a tracking number. Since we have to capture this information anyway, we could just look at the tracking number field to see if it is populated, rather than checking the status. Keeping this information in two fields means that we have more degrees of freedom than the problem calls for, and therefore more validation and testing.</p>
+<p><strong>An alternative: historic modeling</strong><br />Historic modeling is the practice of modeling object behavior based on its history, not its state. A historic modeling approach is to capture the historical events, and then determine the status. For example, invoicing an order is one event, and shipping is another. The status of the order is "confirmed" if neither of these events has been recorded, "completed" if both have, or "invoiced" or "shipped" if one exists but not the other.</p>
+<p>Historical events carry information. The shipping event carries the tracking number, for example. This eliminates nullable fields by moving them away from the entity. And since the tracking number and shipped status cannot vary individually anymore, we have only the degrees of information that the problem demands.</p>
+<p>The names of events tend to be much more informative than the word "status". Glancing at the data model, someone can see what events could happen with any given entity. If they only see the word "status", they don't have a clue.</p>
+<p><strong>Status is dependent upon history</strong><br /><a href="wp-content/uploads/2009/03/ordererd.png"><img style="border-right: 0px; border-top: 0px; border-left: 0px; border-bottom: 0px" height="163" alt="OrderERD" src="wp-content/uploads/2009/03/ordererd-thumb.png" width="244" align="right" border="0"></a> To model this system historically, we would create three tables: Order, Invoice, and Shipment. We allow only inserts into these tables. No updates. No deletes. (Yes, we allow data to be archived, but application logic never deletes information.)</p>
+<p>We determine the status of an order based on predicates. The order is "submitted" if neither an Invoice nor a Shipment exists. It is "invoiced" if an Invoice exists but no Shipment. It is "Shipped" if a Shipment exists but no Invoice. And it is "completed" if both exist. This status can be encoded in a view for easy reporting.</p>
+<p>Capturing this information historically, we can easily make sense of the model. It can only change in the ways we expect it to change. For example, in order to transition the order from "submitted" to "shipped", we have to enter a tracking number. The database can translate historic events into status. Status is dependent behavior, and history is independent.</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="indexc728.html?cat=7" title="View all posts in Databases" rel="category">Databases</a>,  <a href="indexb60a.html?cat=27" title="View all posts in Historic Modeling" rel="category">Historic Modeling</a> |   <a href="index2e31.html?p=311#respond" title="Comment on The status anti-pattern">No Comments &#187;</a></p>
+			</div>
+
+		
+			<div class="post" id="post-306">
+				<h2><a href="indexf167.html?p=306" rel="bookmark" title="Permanent Link to Lookup tables should not be modeled as related entities in Entity Framework">Lookup tables should not be modeled as related entities in Entity Framework</a></h2>
+				<small>March 16th, 2009 <!-- by Michael L Perry --></small>
+
+				<div class="entry">
+					<p><a href="wp-content/uploads/2009/03/orderstatusedmx.png"><img src="wp-content/uploads/2009/03/orderstatusedmx-thumb.png" style="border: 0px none " alt="OrderStatusEDMX" align="right" border="0" width="244" height="134" /></a> I am tracking the status of an order in an eCommerce system. In the database, I have a table called OrderStatus that lists all of the statuses that an order can be in. Lookup table like this are useful for populating combo-boxes and running reports. And a foreign key constraint on the status column ensures the status of each order is within the set.</p>
+<p>But within code, the lookup table is not necessary. I created an enumeration for the status values. The IDs were well-known. I didn't care about the descriptions.</p>
+<p>I brought both the Order entity and the OrderStatus entity into the EDMX. The Order entity so I could create orders, and the OrderStatus entity to populate a combo-box. Since the Order table has a foreign key constraint relating it to OrderStatus, Entity Framework created a relationship. This caused problems.</p>
+<p>When inserting an Order, I needed to set its status. So I created an OrderStatus and set its ID:</p>
+<pre>order.OrderStatus = <span style="color: blue">new</span> <font color="#2c92af">OrderStatus</font>() { OrderStatusId = <font color="#2c92af">OrderStatusEnum</font>.Submitted };</pre>
+<p>Entity Framework did not see this as setting the foreign key. Instead, it saw this as inserting both an Order and an OrderStatus. The result was a uniqueness constraint violation. The correct way to do this is to query for the existing order status, and then set the reference in the new order.</p>
+<pre><font color="#2c92af">OrderContainer</font> container = <span style="color: blue">new</span> <font color="#2c92af">OrderContainer</font>();
+order.OrderStatus =
+  container.OrderStatus
+    .Where(s =&gt; s.OrderStatusId == (<span style="color: blue">byte</span>)<font color="#2c92af">OrderStatusEnum</font>.Submitted)
+    .First();</pre>
+<p>That just seems like too much work to set a foreign key in a row that I'm inserting. I decided instead to delete the relationship that EF had created between Order and OrderStatus. Upon doing so, I received this error validating the model.</p>
+<blockquote><p>Foreign key constraint 'FK_Order_OrderStatus' from table Orders (OrderStatusId) to table OrderStatus (OrderStatusId):: Insufficient mapping: Foreign key must be mapped to some AssociationSet on the conceptual side.</p></blockquote>
+<p>Entity Framework had pulled the foreign key constraint in from the database schema, and it needed to be mapped. I just deleted the association on the "conceptual side" (i.e. the EDMX designer surface) that represented that constraint.</p>
+<p><strong>Here's my solution</strong><br />
+I actually have three. First, I could go back to my database and delete the foreign key constraint. This would make EF happy, but it would also remove the extra check on order status. It would take away some information that could be used by reporting tools. The foreign key constraint is the correct model, relationally, and I did not want to violate that model to satisfy EF. So I didn't do it.</p>
+<p>Next, I could move OrderStatus to its own EDMX. I took this approach on other parts of the system that had several lookup tables, creating one single Lookup.EDMX file for all of them. This would prevent EF from importing the related tables in the same context, and would prevent it from creating the relationship. This seemed a bit much in this case, since I didn't have any other lookups, so I didn't do it.</p>
+<p>Finally, I could remove the imported foreign key constraint. This requires hand-editing the XML, since the model browser doesn't allow you to delete any of the constraints that it has imported. To edit the XML, right-click on the EDMX file in solution explorer, select "Open With..." and then "XML Editor".</p>
+<p>Find the AssociationSet element that refers to the foreign key that's giving you trouble. I deleted this chunk of XML:</p>
+<pre><span style="color: blue">&lt;</span><span style="color: maroon">AssociationSet</span> <span style="color: red">Name</span>="<span style="color: blue">FK_Order_OrderStatus</span>" <span style="color: red">Association</span>="<span style="color: blue">Order.Store.FK_Order_OrderStatus</span>"<span style="color: blue">&gt;</span>
+  <span style="color: blue">&lt;</span><span style="color: maroon">End</span> <span style="color: red">Role</span>="<span style="color: blue">OrderStatus</span>" <span style="color: red">EntitySet</span>="<span style="color: blue">OrderStatus</span>" /<span style="color: blue">&gt;</span>
+  <span style="color: blue">&lt;</span><span style="color: maroon">End</span> <span style="color: red">Role</span>="<span style="color: blue">Orders</span>" <span style="color: red">EntitySet</span>="<span style="color: blue">Orders</span>" /<span style="color: blue">&gt;</span>
+<span style="color: blue">&lt;</span>/<span style="color: maroon">AssociationSet</span><span style="color: blue">&gt;</span></pre>
+<p>After cleaning that up, my EDMX validated again. Finally, to set the foreign key myself, I added a scalar property and mapped it to the column in the table.</p>
+<p>This is another case of the tool trying too hard to help you out. It can't tell based on the relational model that this is a lookup table, and that it is not supposed to insert rows. Entity Framework tries very hard to keep you from managing foreign keys yourself. But the database <em>is</em> relational, and you <em>do</em> need to know about constraints and foreign keys. You have to be incredibly forceful to get the tool to move out of your way and let you see the model as it truly is.</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="indexc728.html?cat=7" title="View all posts in Databases" rel="category">Databases</a>,  <a href="indexe8fb.html?cat=39" title="View all posts in Entity Framework" rel="category">Entity Framework</a> |   <a href="indexf167.html?p=306#comments" title="Comment on Lookup tables should not be modeled as related entities in Entity Framework">4 Comments &#187;</a></p>
+			</div>
+
+		
+			<div class="post" id="post-303">
+				<h2><a href="indexa853.html?p=303" rel="bookmark" title="Permanent Link to Custom WPF and Silverlight ListBox ItemTemplates eat mouse clicks">Custom WPF and Silverlight ListBox ItemTemplates eat mouse clicks</a></h2>
+				<small>March 15th, 2009 <!-- by Michael L Perry --></small>
+
+				<div class="entry">
+					<p>A WPF or Silverlight ListBox can display anything. By default, it just displays the ToString() of the objects in the ItemsSource, but that can be adjusted. If you want to display a string other than the ToString(), you need to define an ItemTemplate:</p>
+<pre><span style="color: blue">&lt;</span><span style="color: maroon">ListBox</span> <span style="color: red">Height</span>="<span style="color: blue">200</span>" <span style="color: red">ItemsSource</span>="<span style="color: blue">{Binding Posts}</span>" <span style="color: red">SelectedItem</span>="<span style="color: blue">{Binding SelectedPost}</span>"<span style="color: blue">&gt;</span>
+    <span style="color: blue">&lt;</span><span style="color: maroon">ListBox.ItemTemplate</span><span style="color: blue">&gt;</span>
+        <span style="color: blue">&lt;</span><span style="color: maroon">DataTemplate</span><span style="color: blue">&gt;</span>
+            <span style="color: blue">&lt;</span><span style="color: maroon">ListBoxItem</span> <span style="color: red">Content</span>="<span style="color: blue">{Binding Title}</span>"/<span style="color: blue">&gt;</span>
+        <span style="color: blue">&lt;</span>/<span style="color: maroon">DataTemplate</span><span style="color: blue">&gt;</span>
+    <span style="color: blue">&lt;</span>/<span style="color: maroon">ListBox.ItemTemplate</span><span style="color: blue">&gt;</span>
+<span style="color: blue">&lt;</span>/<span style="color: maroon">ListBox</span><span style="color: blue">&gt;</span></pre>
+<p>Unfortunately, when you do this the string eats your mouse clicks. You can click anywhere around the string, but clicking on the string does not select the item.</p>
+<p><strong>Here's my solution</strong><br />
+Through trial and error (and <a href="http://social.msdn.microsoft.com/Forums/en-US/wpf/thread/a1067e9f-1991-49dc-a3b0-dc96abaf66e9/">MSDN</a>) I finally found a solution:</p>
+<pre><span style="color: blue">&lt;</span><span style="color: maroon">ListBox</span> <span style="color: red">Height</span>="<span style="color: blue">200</span>" <span style="color: red">ItemsSource</span>="<span style="color: blue">{Binding Posts}</span>" <span style="color: red">SelectedItem</span>="<span style="color: blue">{Binding SelectedPost}</span>"<span style="color: blue">&gt;</span>
+    <span style="color: blue">&lt;</span><span style="color: maroon">ListBox.ItemTemplate</span><span style="color: blue">&gt;</span>
+        <span style="color: blue">&lt;</span><span style="color: maroon">DataTemplate</span><span style="color: blue">&gt;</span>
+            <span style="color: blue">&lt;</span><span style="color: maroon">ListBoxItem</span> <strong><span style="color: red">IsHitTestVisible</span>="<span style="color: blue">False</span>"</strong> <strong><span style="color: red">Focusable</span>="<span style="color: blue">False</span>"</strong> <span style="color: red">Content</span>="<span style="color: blue">{Binding Title}</span>"/<span style="color: blue">&gt;</span>
+        <span style="color: blue">&lt;</span>/<span style="color: maroon">DataTemplate</span><span style="color: blue">&gt;</span>
+    <span style="color: blue">&lt;</span>/<span style="color: maroon">ListBox.ItemTemplate</span><span style="color: blue">&gt;</span>
+<span style="color: blue">&lt;</span>/<span style="color: maroon">ListBox</span><span style="color: blue">&gt;</span></pre>
+<p>If you set IsHitTestVisible and Focusable both to False on the ListBoxItem, then clicking the text selects the item, just like in the default ToString() scenario. Setting just one or the other does not change the behavior. Both must be changed.</p>
+<p>This seems backwards to me. I would expect that you would have to set IsHitTestVisible to False on a TextBlock inside the ListBoxItem, not the ListBoxItem itself. Making the ListBoxItem invisible to hit tests seems like the <em>opposite</em> of what you want to do.</p>
+<p>Nevertheless, this works, so I'll add those two attributes from now on. And BTW, my real XAML code uses Update Controls, but I thought I'd show you some Binding code just in case you haven't converted yet.</p>
+<p><strong>Update</strong><br />
+Here's a simpler solution:</p>
+<pre><span style="color: blue">&lt;</span><span style="color: maroon">ListBox</span> <span style="color: red">Height</span>="<span style="color: blue">200</span>" <span style="color: red">ItemsSource</span>="<span style="color: blue">{Binding Posts}</span>" <span style="color: red">SelectedItem</span>="<span style="color: blue">{Binding SelectedPost}</span>"<span style="color: blue">&gt;</span>
+    <span style="color: blue">&lt;</span><span style="color: maroon">ListBox.ItemTemplate</span><span style="color: blue">&gt;</span>
+        <span style="color: blue">&lt;</span><span style="color: maroon">DataTemplate</span><span style="color: blue">&gt;</span>
+            <span style="color: blue">&lt;</span><strong><span style="color: maroon">TextBlock</span></strong> <span style="color: red">Text</span>="<span style="color: blue">{Binding Title}</span>"/<span style="color: blue">&gt;</span>
+        <span style="color: blue">&lt;</span>/<span style="color: maroon">DataTemplate</span><span style="color: blue">&gt;</span>
+    <span style="color: blue">&lt;</span>/<span style="color: maroon">ListBox.ItemTemplate</span><span style="color: blue">&gt;</span>
+<span style="color: blue">&lt;</span>/<span style="color: maroon">ListBox</span><span style="color: blue">&gt;</span></pre>
+<p>It turns out that the content of a ListBox DataTemplate does not have to be a ListBoxItem. There's my old-school Win32 thinking kicking in. If you make it a TextBlock, then it responds correctly to mouse clicks.</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="indexd65e.html?cat=8" title="View all posts in User Interface" rel="category">User Interface</a> |   <a href="indexa853.html?p=303#respond" title="Comment on Custom WPF and Silverlight ListBox ItemTemplates eat mouse clicks">No Comments &#187;</a></p>
+			</div>
+
+		
+			<div class="post" id="post-302">
+				<h2><a href="index52e8.html?p=302" rel="bookmark" title="Permanent Link to Entity Framework doesn&#8217;t properly model a summary view">Entity Framework doesn&#8217;t properly model a summary view</a></h2>
+				<small>March 12th, 2009 <!-- by Michael L Perry --></small>
+
+				<div class="entry">
+					<p>Entity Framework does not understand the difference between independent and dependent data.</p>
+<p><a href="wp-content/uploads/2009/03/orderedmx.png"><img src="wp-content/uploads/2009/03/orderedmx-thumb.png" style="border: 0px none " alt="OrderEDMX" align="right" border="0" width="244" height="239" /></a> We have in our schema a table containing orders, and another table containing order lines. We have a web page that shows a filtered list of orders. This page can be filtered and sorted according to several properties of the order, including total. Total is a dependent property, calculated from the order lines.</p>
+<p>To accomplish this filtering and sorting in the database, we've created an order summary view. This view aggregates properties of an order that depend upon its lines. The order and order line tables represent independent data -- they can be changed -- while the order summary view represents dependent data -- its behavior depends upon other objects.</p>
+<p>We've modeled this in Entity Framework in the picture to the right. An order has many order lines. An order is also associated with one order summary. We can write queries for orders based on properties of order summary. This works.</p>
+<p><strong>Insert fails</strong><br />
+The problem happens when we insert an order. Because the order is in one-to-one association with an order summary, Entity Framework wants us to create an OrderSummary object at the same time.</p>
+<blockquote><p>Entities in 'OrderContainer.Order' participate in the 'OrderOrderSummary' relationship. 0 related 'OrderSummary' were found. 1 'OrderSummary' is expected.</p></blockquote>
+<p>Entity Framework does not understand that the OrderSummary view is dependent upon the Order table. When I insert into Order, the database calculates an OrderSummary. It thinks that OrderSummary is independent -- that I have to insert it myself.</p>
+<p><strong>Here's my bad solution</strong><br />
+I changed multiplicity of the OrderSummary end from "One" to "Zero or One". This tells Entity Framework that the OrderSummary relationship is not required. Unfortunately, this is not the correct model. There always <em>will</em> be an order summary. If there is an order, the view will contain a row for it. One-to-one is not just a requirement, it is a promise. If the model only claims one-to-zero or one, then this promise is not expressed.</p>
+<p>When making this change, the following error appeared briefly:</p>
+<blockquote><p>The multiplicity 'ZeroOrOne' on End 'OrderSummary' in the conceptual side Association 'Order.OrderOrderSummary' doesn't match with multiplicity 'One' on end 'OrderSummary' on the object side Association 'Order.OrderOrderSummary'.</p></blockquote>
+<p>I don't recall when it went away, but I went through a few gyrations of saving, closing, reopening, refreshing, and shaking the box. This particular relationship was not generated from the database. How could it have been, since views don't have foreign key constraints. There should be no "conceptual side" to get out of sync, but there must have been something in the EDMX that thought differently.</p>
+<p><strong>A better solution</strong><br />
+I would prefer to tell EF that OrderSummary is dependent. It should know that I never have to insert it, update it, or delete it. Independent data can be changed. Dependent data cannot.</p>
+<p>Since that is not possible, I am considering moving the dependent fields from OrderSummary into Order itself. I may do this with a multi-table mapping (actually, one table and one view). Or I may expose all of the Order columns in the OrderSummary view and just bind Order to this view.</p>
+<p>Or I may skip the OrderSummary view altogether and see if I can express the total in linq. If linq can generate the appropriate aggregate, sort by it, and filter by it, then the view would not even be necessary. In this case, at least. We'll see.</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="indexc728.html?cat=7" title="View all posts in Databases" rel="category">Databases</a>,  <a href="indexe8fb.html?cat=39" title="View all posts in Entity Framework" rel="category">Entity Framework</a> |   <a href="index52e8.html?p=302#respond" title="Comment on Entity Framework doesn&#8217;t properly model a summary view">No Comments &#187;</a></p>
+			</div>
+
+		
+			<div class="post" id="post-299">
+				<h2><a href="indexbc9e.html?p=299" rel="bookmark" title="Permanent Link to Why SOLID?">Why SOLID?</a></h2>
+				<small>March 10th, 2009 <!-- by Michael L Perry --></small>
+
+				<div class="entry">
+					<p>Robert C. Martin's <a href="http://www.objectmentor.com/resources/articles/Principles_and_Patterns.pdf">Design Principles and Design Patterns</a> have shaped my career. His influential paper has been recently rediscovered, and given the moniker "The SOLID Principles". I'm excited to see the reach of his influence expanding, and happy to have a new group of people to discuss these principles with.</p>
+<p>This week on the <a href="http://altnetpodcast.com/episodes/17-the-state-of-alt-net">Alt.NET Podcast</a>, Mike Moore talks with Scott Bellware on the state of Alt.NET. In this discussion, Bellware raises an interesting question. Why SOLID?</p>
+<p>Of course, Scott and Mike both know the answer, and the question itself wasn't the point of the conversation. They were expressing concern that most of the people new to the SOLID principles can't articulate <em>why</em> SOLID is good.</p>
+<p>While the new moniker gives us a name to invoke to begin a discussion, it unfortunately creates a barrier. Now that we have a mnemonic to help us remember the 5 principles, we can list them without reading the original paper. But that paper starts by answering the fundamental question, "Why?" Why does software go bad? Why does software rot?</p>
+<p>I won't go through the reasons here. I cannot improve upon Uncle Bob's work. Instead, I encourage you to please click on the link above, print out the paper, and read it slowly. It may change your career, the same way it changed mine.</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="indexb0b7.html?cat=6" title="View all posts in Patterns" rel="category">Patterns</a> |   <a href="indexbc9e.html?p=299#comments" title="Comment on Why SOLID?">1 Comment &#187;</a></p>
+			</div>
+
+		
+			<div class="post" id="post-298">
+				<h2><a href="indexba86.html?p=298" rel="bookmark" title="Permanent Link to Entity Framework query based on properties of related objects">Entity Framework query based on properties of related objects</a></h2>
+				<small>March 5th, 2009 <!-- by Michael L Perry --></small>
+
+				<div class="entry">
+					<p>We're using Entity Framework for data access on an enterprise system. It has been painful, but we've gradually learned how to use the product. This last problem was our fault, but we blamed the tool.</p>
+<p>The situation is that we have Orders with OrderLines. We want to find all orders that include a particular item. From those orders, we want to get information from a related entity called OrderSummary.</p>
+<p>We tried several approaches until we found a syntax that would compile and give us the right set of orders. What we ended up with was a linq query using two "from" clauses:</p>
+<pre><font color="#2c92af">OrderContainer</font> container = <span style="color: blue">new</span> <font color="#2c92af">OrderContainer</font>();
+<font color="#0000ff">var</font> source = container.Orders.Include(<span style="color: maroon">"OrderSummary"</span>);
+
+<font color="#0000ff">var</font> orders =
+	<font color="#0000ff">from</font> o <font color="#0000ff">in</font> source
+	<font color="#0000ff">from</font> ol <font color="#0000ff">in</font> o.OrderLines
+	<font color="#0000ff">where</font> ol.ItemId == <span style="color: maroon">"32180"</span>
+	<font color="#0000ff">select</font> o;</pre>
+<p>This query returns the correct set of orders, but the OrderSummary navigation property is not loaded. We called it a bug in EF and worked around it. The workaround involved multiple queries, and was generally a bad idea.</p>
+<p>Fortunately, we took the time to revisit the problem. The first thing I did was to use Reflector to find out what that query was actually doing. Here's the equivalent:</p>
+<pre><font color="#0000ff">var</font> orders = source
+	.SelectMany(o =&gt; o.OrderLines, (o, ol) =&gt; <span style="color: blue">new</span> { order = o, orderLine = ol })
+	.Where(result =&gt; result.orderLine.ItemId == <span style="color: maroon">"32180"</span>)
+	.Select(result =&gt; result.order);</pre>
+<p>It's a round-about way of saying it, but it looks OK. It creates a tuple of orders and order lines, filters that tuple based on the item ID, then selects just the order part of the tuple. If you think about it relationally, this is pretty close to an old-fashioned WHERE join.</p>
+<p>Keeping with the explicit syntax, I wrote the query exactly as I wanted it. This is the result:</p>
+<pre><font color="#0000ff">var</font> orders = source
+	.Where(o =&gt; o.OrderLines
+		.Any(ol =&gt; ol.ItemId == <span style="color: maroon">"32180"</span>));</pre>
+<p>This reads like the specification. It gets all orders where any order line has the desired item ID.</p>
+<p>This version of the code not only selects exactly the orders I want, it also includes the OrderSummary. No longer do I have to do additional queries to fill in the missing details.</p>
+<p><strong>Here's my solution</strong><br />
+My advice after working through this problem is to skip the linq syntax. Get used to the more explicit extension method syntax. Understand .Where(), .Select(), and .Any(). When you are more explicit with your tools (and I'm not talking profanity here), you have a better chance of getting the behavior you want out of them.</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="index8e7f.html?cat=19" title="View all posts in C#" rel="category">C#</a>,  <a href="indexe8fb.html?cat=39" title="View all posts in Entity Framework" rel="category">Entity Framework</a> |   <a href="indexba86.html?p=298#respond" title="Comment on Entity Framework query based on properties of related objects">No Comments &#187;</a></p>
+			</div>
+
+		
+			<div class="post" id="post-297">
+				<h2><a href="index07ee.html?p=297" rel="bookmark" title="Permanent Link to Command binding in WPF with Update Controls">Command binding in WPF with Update Controls</a></h2>
+				<small>March 4th, 2009 <!-- by Michael L Perry --></small>
+
+				<div class="entry">
+					<p>Watch a <a href="http://updatecontrols.net/videos/CommandBinding/CommandBinding.html">video</a> on this topic, <a href="http://updatecontrols.net/bin/UpdateControls.2.0.3.1.msi">download</a> the latest bits, and check out the <a href="http://updatecontrols.codeplex.com/SourceControl/changeset/view/22311#316518">source code</a>.</p>
+<p>WPF gives us an interface for separating commands from the visual elements that invoke them. The ICommand interface determines whether a command can be executed, and what happens when it is. To enable or disable a visual element bound to the command, the ICommand interface also exposes an event called CanExecuteChanged. Update Controls keeps track of changes and fires this event for you.</p>
+<p><strong>Why use command binding?</strong><br />When I showed you the <a href="index7b2c.html?p=284">Presentation Model</a> pattern, I used XAML events in code behind to handle button clicks. The problem with this approach is that it puts code in the view. This code doesn't operate on the view. In fact, it just delegates to a method on the presentation model. So why not just put it there?</p>
+<p>Many people refer to the Presentation Model pattern as ViewModel (or Model-View-ViewModel for the palindromically inclined). That's because the ViewModel is a model designed specifically for the view. It expresses view-ish concerns, without actually <em>being</em> the view.</p>
+<p>One of those concerns is the list of commands that the view can invoke. The view can bind those commands to buttons, menu items, or any other visual element. That's how you move your code from the view to the presentation model.</p>
+<p><strong>Create a command</strong><br />WPF gives us a technique known as command binding. A command is an implementation of the ICommand interface. When it is bound to a visual element's Command property, the command controls when the visual element is enabled, and what it does when clicked.</p>
+<p>In the latest build of Update Controls (version 2.0.3.1), I added support for command binding. It takes the form of a static class called MakeCommand. Its job is to make commands. The syntax for creating a simple command looks like this:</p>
+<pre><span style="color: blue">public</span> ICommand AddPerson
+{
+    get
+    {
+        <span style="color: blue">return</span> MakeCommand
+            .Do(() =&gt;
+            {
+                Navigation.SelectedPerson = PersonList.NewPerson();
+            });
+    }
+}
+</pre>
+<p>That funny arrow syntax is a lambda expression. This particular lambda expression takes no parameters, so there are empty parentheses on the left. This lambda executes a block of code, so there are curly braces on the right. This command will execute the code in those braces whenever the command is invoked, adding a person to the list and selecting them.</p>
+<p>A slightly more complex command looks like this:</p>
+<pre><span style="color: blue">public</span> ICommand DeletePerson
+{
+    get
+    {
+        <span style="color: blue">return</span> MakeCommand
+            .When(() =&gt; Navigation.SelectedPerson != <span style="color: blue">null</span>)
+            .Do(() =&gt;
+            {
+                PersonList.DeletePerson(Navigation.SelectedPerson);
+            });
+    }
+}
+</pre>
+<p>Here we have two lambda expressions. The first tells us when the command can be executed, and the second tells us what it does. The When lambda returns a boolean. It says that this command is enabled only when the selected person is not null. The Do clause -- the one with the curly braces -- says that the selected person is deleted from the list when the command is invoked.</p>
+<p>The advantage of using Update Controls for command binding is that it automatically keeps the view up-to-date as the When clause changes. Since the When clause above references the SelectedPerson property, it is reevaluated every time the selected person changes. There is no need to manually fire the CanExecuteChanged event that ICommand exposes.</p>
+<p><strong>Bind to the command</strong><br />Now that the command is exposed as a property of the navigation model, it can be bound to elements in the view. Since the navigation model is already the DataContext of the view, it's just a matter of binding the Command property. For example:</p>
+<pre><span style="color: blue">&lt;</span><span style="color: maroon">Button</span> <span style="color: red">Content</span>="<span style="color: blue">Add</span>" <span style="color: red">Command</span>="<span style="color: blue">{u:Update AddPerson}</span>"/<span style="color: blue">&gt;</span>
+<span style="color: blue">&lt;</span><span style="color: maroon">Button</span> <span style="color: red">Content</span>="<span style="color: blue">Delete</span>" <span style="color: red">Command</span>="<span style="color: blue">{u:Update DeletePerson}</span>"/<span style="color: blue">&gt;</span>
+</pre>
+<p>This binds the Add and Delete buttons to the AddPerson and DeletePerson commands. The When clause of these commands controls whether the buttons are enabled, and the Do clause is executed when the button is clicked.</p>
+<p><strong>When not to move the code</strong><br />There is a button on this view that opens a new window. I have not moved this code into the presentation model, because it is concerned specifically with view logic. It creates a new view, something that the presentation model is incapable of doing. The presentation model does not have any dependency upon the view; the dependency goes the other way.</p>
+<p>For now, I've chosen to leave that code in the view. In the future, there may be a component concerned with the flow of user interaction among different views. If that architectural concern is added, then opening a new window would become a feature of that class. Until then, the feature is more appropriate on the view than on the presentation model.</p>
+<p>Moving the code out of the view and into the presentation model keeps it closer to the objects it needs. WPF command binding gives us a way to do that. The Update Controls MakeCommand class easily creates commands that can be bound to. These commands automatically keep the view up to date when the visual elements should be enabled or disabled.</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="indexa88f.html?cat=36" title="View all posts in Update Controls" rel="category">Update Controls</a> |   <a href="index07ee.html?p=297#respond" title="Comment on Command binding in WPF with Update Controls">No Comments &#187;</a></p>
+			</div>
+
+		
+		<div class="navigation">
+			<div class="alignleft"><a href="index5ea9.html?paged=18">&laquo; Previous Entries</a></div>
+			<div class="alignright"><a href="indexf07d.html?paged=16">Next Entries &raquo;</a></div>
+		</div>
+
+	
+	</div>
+		</td>
+	</tr>
+</table>
+
+<hr />
+<div id="footer">
+<!-- If you'd like to support WordPress, having the "powered by" link someone on your blog is the best way, it's our only promotion or advertising. -->
+	<p>
+		Adventures in Software is proudly powered by 
+		<a href="http://wordpress.org/">WordPress</a>
+		<br /><a href="indexd784.html?feed=rss2">Entries (RSS)</a>
+		and <a href="indexa6da.html?feed=comments-rss2">Comments (RSS)</a>.
+		<!-- 21 queries. 0.453 seconds. -->
+	</p>
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-389401-3");
+pageTracker._trackPageview();
+} catch(err) {}</script></div>
+
+<!-- Gorgeous design by Michael Heilemann - http://binarybonsai.com/kubrick/ -->
+
+		<div id="sk2-footer" style="color:#FFF; background-color:#444; padding: 3px 2px 3px 2px; border-top: #888 solid 1px;">This blog is protected by <a href="http://unknowngenius.com/blog/" title="Dave">dr Dave</a>'s <strong><a href="http://unknowngenius.com/blog/wordpress/spam-karma/" title="SK2">Spam Karma 2</a></strong>: <strong>274531</strong>  Spams eaten and counting...</div><script type="text/javascript" src="replies.js"></script>
+<script type="text/javascript" src="blogger.js"></script>
+<script type="text/javascript" src="http://twitter.com/statuses/user_timeline/michaellperry.json?callback=twitterCallback2&amp;count=5"></script>
+<script type="text/javascript" src="http://search.twitter.com/search.json?q=@michaellperry&amp;callback=twitterCallbackReplies&amp;rpp=5"></script>
+</body>
+
+<!-- Mirrored from adventuresinsoftware.com/blog/?paged=17 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 Jan 2017 13:10:38 GMT -->
+</html>

@@ -1,0 +1,1673 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+
+
+<!-- Mirrored from adventuresinsoftware.com/blog/?p=51 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 Jan 2017 13:09:45 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>Adventures in Software  &raquo; Blog Archive   &raquo; More Bad Behavior from iTunes</title>
+
+<meta name="generator" content="WordPress 2.3.3" /> <!-- leave this for stats -->
+
+<link rel="stylesheet" href="wp-content/themes/ais2/style.css" type="text/css" media="screen" />
+<link rel="alternate" type="application/rss+xml" title="Adventures in Software RSS Feed" href="indexd784.html?feed=rss2" />
+<link rel="pingback" href="xmlrpc.html" />
+    <script type="text/javascript">
+        function onSilverlightError(sender, args) {
+            var appSource = "";
+            if (sender != null && sender != 0) {
+              appSource = sender.getHost().Source;
+            }
+            
+            var errorType = args.ErrorType;
+            var iErrorCode = args.ErrorCode;
+
+            if (errorType == "ImageError" || errorType == "MediaError") {
+              return;
+            }
+
+            var errMsg = "Unhandled Error in Silverlight Application " +  appSource + "\n" ;
+
+            errMsg += "Code: "+ iErrorCode + "    \n";
+            errMsg += "Category: " + errorType + "       \n";
+            errMsg += "Message: " + args.ErrorMessage + "     \n";
+
+            if (errorType == "ParserError") {
+                errMsg += "File: " + args.xamlFile + "     \n";
+                errMsg += "Line: " + args.lineNumber + "     \n";
+                errMsg += "Position: " + args.charPosition + "     \n";
+            }
+            else if (errorType == "RuntimeError") {           
+                if (args.lineNumber != 0) {
+                    errMsg += "Line: " + args.lineNumber + "     \n";
+                    errMsg += "Position: " +  args.charPosition + "     \n";
+                }
+                errMsg += "MethodName: " + args.methodName + "     \n";
+            }
+
+            throw new Error(errMsg);
+        }
+    </script>
+
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc0db0.php?rsd" />
+ <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="wp-includes/wlwmanifest.xml" /> <style type='text/css'>
+<!--#header { background: url('wp-content/themes/ais2/images/header-imgae03.html?upper=A7A73F&amp;lower=77773F') no-repeat bottom center; }
+--></style>
+</head>
+<body>
+<div id="page">
+
+<div class="aisTopBar">
+	<form method="get" id="searchform" action="http://adventuresinsoftware.com/blog/">
+<div>
+<a href="indexd784.html?feed=rss2"><img src="../images/feed-icon-28x28.png" border="0"></a>
+<input type="text" value="" name="s" id="s" />
+<input type="submit" id="searchsubmit" value="Search" />
+</div>
+</form>
+</div>
+
+<div class="aisHeaderImageRight">
+	<div class="aisHeaderImage">
+	<div class="aisHeaderCornerRight">
+	<div class="aisHeaderCornerLeft">
+	<div class="aisImageBar">
+	<div class="aisSubSites">
+		<a href="index.html" class="aisSubSiteLink"><span class="aisSiteTabRight"><span class="aisSiteTabLeft"><span class="aisSiteTab">
+			home</span></span></span></a>
+		<a class="aisSubSiteLink" href="indexb60a.html?cat=27"><span class="aisSiteTabRight"><span class="aisSiteTabLeft"><span class="aisSiteTab">
+			historic modeling</span></span></span></a>
+		<a class="aisSubSiteLink" href="indexa88f.html?cat=36"><span class="aisSiteTabRight"><span class="aisSiteTabLeft"><span class="aisSiteTab">
+			update controls</span></span></span></a>
+		<a href="index2d79.html?cat=26" class="aisSubSiteLink"><span class="aisSiteTabRight"><span class="aisSiteTabLeft"><span class="aisSiteTab">
+			degrees of freedom</span></span></span></a>
+		<a class="aisSubSiteLink" href="indexba53.html?page_id=2"><span class="aisSiteTabRight"><span class="aisSiteTabLeft"><span class="aisSiteTab">
+			about us</span></span></span></a>
+
+	</div>
+	</div>
+	</div>
+	</div>
+	</div>
+</div>
+
+<table style="width: 100%" cellspacing="0" cellpadding="0">
+	<tr valign="top">
+		<td width="210px">
+<div id="sidebar">
+<div class="aisLeftColumnFill">
+<div class="aisLeftColumnBottom">
+<div class="aisLeftColumnTop">
+<div id="twitter_div" class="aisLeftNav">
+<h2 class="sidebar-title">Twitter Updates</h2>
+<ul id="twitter_update_list"></ul>
+<a href="http://twitter.com/michaellperry" id="follow">Follow me</a>
+</div>
+<div id="twitter_reply_div" class="aisLeftNav">
+<h2 class="sidebar-title">Twitter Replies</h2>
+<ul id="twitter_reply_list"></ul>
+</div>
+
+<div class="aisLeftNav">
+<a href='http://ineta.org/Speakers/SearchCommunitySpeakers.aspx?SpeakerId=c5110e21-9243-461b-a464-a6548524e885'><img alt='INETA Community Speakers Program' border='0' src='../../www.ineta.org/images/OfficialLogos/InetaCommunitySpeakersRequestMe.html' /></a>
+</div>
+
+<div class="aisLeftNav">
+	<li class="pagenav"><h2>Pages</h2><ul><li class="page_item page-item-2"><a href="indexba53.html?page_id=2" title="About Us">About Us</a></li>
+<li class="page_item page-item-210"><a href="index6ae3.html?page_id=210" title="Templates">Templates</a></li>
+</ul></li></div>
+
+<div class="aisLeftNav">
+<h2>Archives</h2>
+<ul>
+	<li><a href='indexb4d5.html?m=201110' title='October 2011'>October 2011</a></li>
+	<li><a href='indexc61a.html?m=201106' title='June 2011'>June 2011</a></li>
+	<li><a href='indexa80d.html?m=201105' title='May 2011'>May 2011</a></li>
+	<li><a href='index512b.html?m=201104' title='April 2011'>April 2011</a></li>
+	<li><a href='index08fb.html?m=201103' title='March 2011'>March 2011</a></li>
+	<li><a href='index52f4.html?m=201102' title='February 2011'>February 2011</a></li>
+	<li><a href='index74f1.html?m=201101' title='January 2011'>January 2011</a></li>
+	<li><a href='index8956.html?m=201012' title='December 2010'>December 2010</a></li>
+	<li><a href='indexa1aa.html?m=201011' title='November 2010'>November 2010</a></li>
+	<li><a href='indexe3d5.html?m=201010' title='October 2010'>October 2010</a></li>
+	<li><a href='index9ab9.html?m=201009' title='September 2010'>September 2010</a></li>
+	<li><a href='index1ff0.html?m=201008' title='August 2010'>August 2010</a></li>
+	<li><a href='index9f11.html?m=201007' title='July 2010'>July 2010</a></li>
+	<li><a href='index31f0.html?m=201006' title='June 2010'>June 2010</a></li>
+	<li><a href='indexd189.html?m=201005' title='May 2010'>May 2010</a></li>
+	<li><a href='indexb5c0.html?m=201004' title='April 2010'>April 2010</a></li>
+	<li><a href='indexf258.html?m=201003' title='March 2010'>March 2010</a></li>
+	<li><a href='index6e30.html?m=201002' title='February 2010'>February 2010</a></li>
+	<li><a href='index6b19.html?m=201001' title='January 2010'>January 2010</a></li>
+	<li><a href='index5c0a.html?m=200912' title='December 2009'>December 2009</a></li>
+	<li><a href='index8f62.html?m=200911' title='November 2009'>November 2009</a></li>
+	<li><a href='index451d.html?m=200910' title='October 2009'>October 2009</a></li>
+	<li><a href='index3e04.html?m=200909' title='September 2009'>September 2009</a></li>
+	<li><a href='index425a.html?m=200908' title='August 2009'>August 2009</a></li>
+	<li><a href='index9907.html?m=200907' title='July 2009'>July 2009</a></li>
+	<li><a href='index3104.html?m=200906' title='June 2009'>June 2009</a></li>
+	<li><a href='indexc36d.html?m=200905' title='May 2009'>May 2009</a></li>
+	<li><a href='index17e8.html?m=200904' title='April 2009'>April 2009</a></li>
+	<li><a href='index10a5.html?m=200903' title='March 2009'>March 2009</a></li>
+	<li><a href='index8988.html?m=200902' title='February 2009'>February 2009</a></li>
+	<li><a href='index1419.html?m=200901' title='January 2009'>January 2009</a></li>
+	<li><a href='index7866.html?m=200812' title='December 2008'>December 2008</a></li>
+	<li><a href='index55f6.html?m=200811' title='November 2008'>November 2008</a></li>
+	<li><a href='indexa7bc.html?m=200810' title='October 2008'>October 2008</a></li>
+	<li><a href='indexe77c.html?m=200809' title='September 2008'>September 2008</a></li>
+	<li><a href='indexcffc.html?m=200808' title='August 2008'>August 2008</a></li>
+	<li><a href='index0e62.html?m=200807' title='July 2008'>July 2008</a></li>
+	<li><a href='indexfda7.html?m=200806' title='June 2008'>June 2008</a></li>
+	<li><a href='index7d64.html?m=200805' title='May 2008'>May 2008</a></li>
+	<li><a href='index94dd.html?m=200804' title='April 2008'>April 2008</a></li>
+	<li><a href='index9631.html?m=200803' title='March 2008'>March 2008</a></li>
+	<li><a href='indexdd52.html?m=200802' title='February 2008'>February 2008</a></li>
+	<li><a href='index21ee.html?m=200801' title='January 2008'>January 2008</a></li>
+	<li><a href='index363c.html?m=200712' title='December 2007'>December 2007</a></li>
+	<li><a href='index7493.html?m=200711' title='November 2007'>November 2007</a></li>
+	<li><a href='index93a7.html?m=200710' title='October 2007'>October 2007</a></li>
+	<li><a href='index4ca8.html?m=200709' title='September 2007'>September 2007</a></li>
+	<li><a href='index6124.html?m=200708' title='August 2007'>August 2007</a></li>
+	<li><a href='index6013.html?m=200707' title='July 2007'>July 2007</a></li>
+	<li><a href='index2ab6.html?m=200706' title='June 2007'>June 2007</a></li>
+	<li><a href='index44f0.html?m=200705' title='May 2007'>May 2007</a></li>
+	<li><a href='indexf0b4.html?m=200704' title='April 2007'>April 2007</a></li>
+	<li><a href='index481d.html?m=200703' title='March 2007'>March 2007</a></li>
+	<li><a href='indexcbea.html?m=200702' title='February 2007'>February 2007</a></li>
+	<li><a href='index9cdc.html?m=200701' title='January 2007'>January 2007</a></li>
+	<li><a href='index3ea4.html?m=200612' title='December 2006'>December 2006</a></li>
+	<li><a href='index67ca.html?m=200611' title='November 2006'>November 2006</a></li>
+	<li><a href='indexff49.html?m=200610' title='October 2006'>October 2006</a></li>
+	<li><a href='index611c.html?m=200609' title='September 2006'>September 2006</a></li>
+	<li><a href='index9a21.html?m=200608' title='August 2006'>August 2006</a></li>
+	<li><a href='index3ee9.html?m=200607' title='July 2006'>July 2006</a></li>
+	<li><a href='indexe13a.html?m=200606' title='June 2006'>June 2006</a></li>
+</ul>
+</div>
+
+<div class="aisLeftNav">
+	</div>
+
+<div class="aisLeftNav">
+<h2>Books</h2>
+<iframe src="http://rcm.amazon.com/e/cm?t=adventures0d2-20&amp;o=1&amp;p=8&amp;l=as1&amp;asins=0764526413&amp;fc1=000000&amp;IS2=1&amp;lt1=_blank&amp;lc1=0000ff&amp;bc1=000000&amp;bg1=ffffff&amp;f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" name="I5" id="I5"></iframe>
+<br/>
+<iframe src="http://rcm.amazon.com/e/cm?t=adventures0d2-20&amp;o=1&amp;p=8&amp;l=as1&amp;asins=0201633612&amp;fc1=000000&amp;IS2=1&amp;lt1=_blank&amp;lc1=0000ff&amp;bc1=000000&amp;bg1=ffffff&amp;f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" name="I6" id="I6"></iframe>
+<br/>
+<iframe src="http://rcm.amazon.com/e/cm?t=adventures0d2-20&amp;o=1&amp;p=8&amp;l=as1&amp;asins=0136291554&amp;fc1=000000&amp;IS2=1&amp;lt1=_blank&amp;lc1=0000ff&amp;bc1=000000&amp;bg1=ffffff&amp;f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" name="I7" id="I7"></iframe>
+<br/>
+<iframe src="http://rcm.amazon.com/e/cm?t=adventures0d2-20&amp;o=1&amp;p=8&amp;l=as1&amp;asins=1888009195&amp;fc1=000000&amp;IS2=1&amp;lt1=_blank&amp;lc1=0000ff&amp;bc1=000000&amp;bg1=ffffff&amp;f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" name="I8" id="I8"></iframe>
+</div>
+<div class="aisLeftNav">
+<h2>Meta</h2>
+<ul>
+		<li><a href="wp-login.html">Login</a></li>
+	<li><a href="http://validator.w3.org/check/referer" title="This page validates as XHTML 1.0 Transitional">Valid <abbr title="eXtensible HyperText Markup Language">XHTML</abbr></a></li>
+	<li><a href="http://gmpg.org/xfn/"><abbr title="XHTML Friends Network">XFN</abbr></a></li>
+	<li><a href="http://wordpress.org/" title="Powered by WordPress, state-of-the-art semantic personal publishing platform.">WordPress</a></li>
+	</ul>
+</div>
+<div class="aisLeftContent">
+<h2>Community</h2>
+<ul>
+	<script type="text/javascript" src="../../localhost/embed/92q2bbma.js"></script>
+</ul>
+</div>
+
+</div></div></div>
+</div>		</td>
+		<td>
+
+	<div id="content" class="widecolumn">
+
+	
+		<div class="navigation">
+			<div class="alignleft">&laquo; <a href="index0012.html?p=49">Alternative to Role-Based Security</a></div>
+			<div class="alignright"><a href="index4579.html?p=52">Unused Icons on the Desktop</a> &raquo;</div>
+		</div>
+		<br/>
+
+		<div class="post" id="post-51">
+			<h1>More Bad Behavior from iTunes</h1>
+
+			<div class="entry">
+				<p>I use iTunes to rip CDs, download podcasts, and synch my iPod. I use eMusic to purchase music. eMusic downloads to one folder, and iTunes manages another. In order to back up my music, I like to consolidate it all into the iTunes folder.</p>
+<p>iTunes has a feature that does that for you. And it usually works. But today, this is what happened when I tried to consolidate my library:</p>
+<p><img src="../../www.adventuresinsoftware.com/blog/wp-content/uploads/2006/11/itunescopyfailed.jpg" alt="Copying Music failed. The file name was invalid or too long." title="Copying Music failed. The file name was invalid or too long." /></p>
+<p>Which file? Was it invalid, or was it too long? What would be valid? How do I fix this?</p>
+<p>Or better yet, iTunes should just rename the file itself and save me the hassle of this error message.</p>
+<p><strong>Update</strong></p>
+<p>After deleting, reimporting, and reconsolidating small groups of tracks, I discovered the file that was troubling iTunes. The file name including the ".mp3" extension was 134 characters long. I had to shorten it to 130 characters before iTunes would consolidate it. If you run into this error message, give that a try.</p>
+<p><strong>Update 2</strong><br />
+The comment from Torkel inspired me to write this quick application -- <a href="http://www.itunesfix.com/" title="iTunesFix">iTunesFix</a>. It is not a script, but a full-fledged .NET application. As such, it requres you to install the .NET framework and to trust that I haven't put anything evil in the exe. Run the program and browse for your iTunes Music Library.xml file. The program will scan the file looking for any file names that are over 130 characters in length. It will list them out for you to rename, delete, or otherwise manage as you will.</p>
+
+				
+				<p class="postmetadata alt">
+					<small>
+						This entry was posted
+												on Saturday, November 4th, 2006 at 11:04 am						and is filed under <a href="index81ea.html?cat=3" title="View all posts in Error messages" rel="category">Error messages</a>.
+						You can follow any responses to this entry through the <a href='index99b5.html?feed=rss2&amp;p=51'>RSS 2.0</a> feed.
+
+													You can <a href="#respond">leave a response</a>, or <a href="wp-trackback8cf7.html?p=51" rel="trackback">trackback</a> from your own site.
+
+						
+					</small>
+				</p>
+
+			</div>
+		</div>
+
+	
+<!-- You can start editing here. -->
+
+	<h3 id="comments">101 Responses to &#8220;More Bad Behavior from iTunes&#8221;</h3>
+
+	<ol class="commentlist">
+
+	
+		<li class="alt" id="comment-1066">
+			<cite>sarah</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-1066" title="">February 20th, 2007 at 10:35 pm</a> </small>
+
+			<p>thank you so much for this, i was dying, i had no idea what to do without being able to consolidate my itunes library.<br />
+A++</p>
+
+		</li>
+
+	
+	
+		<li class="" id="comment-1493">
+			<cite>Stu</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-1493" title="">March 17th, 2007 at 12:58 am</a> </small>
+
+			<p>Thank you!!! I wouldn't have known what to look for without your help!</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-1495">
+			<cite>Adam</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-1495" title="">March 17th, 2007 at 11:39 pm</a> </small>
+
+			<p>Thanks so much! I found your site via Google and your solution worked like a charm!</p>
+<p>iTunes needs to help the user identify exactly what file it is. Maybe someone should report that as a potential bug?</p>
+
+		</li>
+
+	
+	
+		<li class="" id="comment-1548">
+			<cite>Ali</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-1548" title="">March 27th, 2007 at 7:50 pm</a> </small>
+
+			<p>Me too! Though Im still unsure how to go looking through every file to find one thats too long, theres zillions! and the whole point of wanting to consolidate it was put the folders all into one place... im concerned I may not be able to find the file thats causing this problem. this has never happened before either. Anyone have any other ideas??</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-1632">
+			<cite><a href='http://baba.se/blog' rel='external nofollow'>Torkel</a></cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-1632" title="">April 3rd, 2007 at 4:24 pm</a> </small>
+
+			<p>Yeah, you rock for posting this!</p>
+<p>Tip for folks with this problem:<br />
+If you look in the \My Music\iTunes\iTunes music folder you can see what iTunes managed to copy before the gates to hell broke down and a 130+ character file was found. It still sucks but it beats looking through <i>every</i>file on your computer..</p>
+<p>anybody know how to script this? I would know how to do it in perl I think, besed off the itunes xml file. but perl isn't default on windows so it wouldn't do normal people much good now would it..</p>
+
+		</li>
+
+	
+	
+		<li class="" id="comment-1740">
+			<cite>garry</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-1740" title="">April 11th, 2007 at 10:19 am</a> </small>
+
+			<p>man, i hope this works am going to try it and shall let you know if this works out - i have 800 songs that have this hassle and no way for me to find out which is the one causingh the hassle - incase it works man ur god.......if it does not - well i guess the search for a solution goes on</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-1912">
+			<cite>Quinn</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-1912" title="">April 24th, 2007 at 12:32 am</a> </small>
+
+			<p>I googled this page, and it fixed the conssolidating problems I've had for months. Thanks so much, you rock!</p>
+
+		</li>
+
+	
+	
+		<li class="" id="comment-1924">
+			<cite>David</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-1924" title="">April 24th, 2007 at 12:55 pm</a> </small>
+
+			<p>Thanks so much for this tool, however it is bobming out on me when I try, may I send you buddy the error message? PLEASE? bigknot 0t yah00 d0t com</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-1932">
+			<cite>Michael L Perry</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-1932" title="">April 25th, 2007 at 6:43 am</a> </small>
+
+			<p>David,</p>
+<p>I couldn't send email to that address. Please post your error message here and I'll see if it's something I can fix. Thanks.</p>
+
+		</li>
+
+	
+	
+		<li class="" id="comment-2062">
+			<cite>Art Cravets</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-2062" title="">April 29th, 2007 at 2:51 pm</a> </small>
+
+			<p>I, too, am having a problem with your ITunesfix.exe.  I downloaded and installed .netframework 2.0 and then ran your app.  I am running MS XP.  I get the following messages when trying to run it against the itunes .xml file:</p>
+<p>"System.IO.FileNotFoundExecption:  Could not load file or assemble "mallardsoft.xml..."<br />
+and<br />
+"WRN:  Assemble Binding Logging is turned OFF...set registry value [hklm\software\microsoft\fusion!enablelog] (DWORD) to 1.<br />
+That value is not anywhere in my registry.  Help?</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-2065">
+			<cite>Art Cravets</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-2065" title="">April 29th, 2007 at 2:53 pm</a> </small>
+
+			<p>Sorry, wrong email on my last.</p>
+
+		</li>
+
+	
+	
+		<li class="" id="comment-2071">
+			<cite>Michael L Perry</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-2071" title="">April 29th, 2007 at 9:16 pm</a> </small>
+
+			<p>So sorry. I forgot to include that dll in the zip. It's there now, so please try again.</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-2084">
+			<cite>Art Cravets</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-2084" title="">April 30th, 2007 at 12:47 pm</a> </small>
+
+			<p>Thanks.  Solved the problem.</p>
+
+		</li>
+
+	
+	
+		<li class="" id="comment-2316">
+			<cite><a href='http://woo/' rel='external nofollow'>awsome dud</a></cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-2316" title="">May 7th, 2007 at 5:59 am</a> </small>
+
+			<p>worked great, thx</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-3308">
+			<cite><a href='http://3under3.livejournal.com/' rel='external nofollow'>Analisa Roche</a></cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-3308" title="">May 27th, 2007 at 4:00 pm</a> </small>
+
+			<p>Just another big thank you!</p>
+
+		</li>
+
+	
+	
+		<li class="" id="comment-3517">
+			<cite><a href='http://bish.co.uk/' rel='external nofollow'>Richard Bishop</a></cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-3517" title="">June 2nd, 2007 at 5:36 am</a> </small>
+
+			<p>You're a star, this was really annoying me. I'm so glad that you've helped me to fix this.</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-3787">
+			<cite>Shelley</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-3787" title="">June 11th, 2007 at 5:52 pm</a> </small>
+
+			<p>Thank you so much - I was ready to pull my hair out!</p>
+
+		</li>
+
+	
+	
+		<li class="" id="comment-3922">
+			<cite>Anoop</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-3922" title="">June 16th, 2007 at 2:22 pm</a> </small>
+
+			<p>fantastic! solved the problem in a minute! my girlfriend thought i was very intelligent too... but i'll pass the credit the the right person here... thanks a ton!</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-4046">
+			<cite>Mike</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-4046" title="">June 21st, 2007 at 8:05 pm</a> </small>
+
+			<p>dude, you're a rock star!  I just found this in google and it solved my problem!  A great example of a straight forward script solving a big common problem!</p>
+
+		</li>
+
+	
+	
+		<li class="" id="comment-4259">
+			<cite>Emily</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-4259" title="">June 28th, 2007 at 6:27 pm</a> </small>
+
+			<p>This worked me:<br />
+To find the song that was too long, I sorted the songs in my library by DATE ADDED. (right clip at the top next to play count) This is the order that iTunes consolidates your library. And I went through the songs to find the last song that didn't copy over. This is the song that is 'too long.' So then all you have to do is delete it or shorten it.</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-4768">
+			<cite>James</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-4768" title="">July 15th, 2007 at 10:29 pm</a> </small>
+
+			<p>This worked perfectly.  Thank you for saving me a huge headache.</p>
+
+		</li>
+
+	
+	
+		<li class="" id="comment-4848">
+			<cite>will</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-4848" title="">July 18th, 2007 at 5:06 am</a> </small>
+
+			<p>Cheerz for the help about time people did stuff like this ans stop screwing with every body over the net thanks heaps</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-4868">
+			<cite><a href='http://n/a' rel='external nofollow'>CD</a></cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-4868" title="">July 18th, 2007 at 5:00 pm</a> </small>
+
+			<p>Hi</p>
+<p>Thanks for this but I am a bit of a novice computer user - how do I get the Zip file to work?  I am running Win XP and haved saved it to my hard disc and extracted the ZIP file.  When I try to run it I get an error message "application failed to initailise properly".</p>
+<p>Any ideas what I'm doing wrong please?</p>
+<p>Thank you!!</p>
+<p>CD</p>
+
+		</li>
+
+	
+	
+		<li class="" id="comment-4870">
+			<cite><a href='http://n/a' rel='external nofollow'>CD</a></cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-4870" title="">July 18th, 2007 at 5:26 pm</a> </small>
+
+			<p>Oh My God - I just got it to work - I am such a clutz with computers!</p>
+<p>Thanks man!</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-4982">
+			<cite>Scott</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-4982" title="">July 23rd, 2007 at 12:20 pm</a> </small>
+
+			<p>Iget the error message when tryng to find problem files of "Mallardsoft.XML"  Can you help me???</p>
+<p>Thank You;</p>
+<p>Scott</p>
+
+		</li>
+
+	
+	
+		<li class="" id="comment-4983">
+			<cite>Scott</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-4983" title="">July 23rd, 2007 at 12:23 pm</a> </small>
+
+			<p>I, too, am having a problem with your ITunesfix.exe. I downloaded and installed .netframework 2.0 and then ran your app. I am running MS XP. I get the following messages when trying to run it against the itunes .xml file:  This is what happens to me..........</p>
+<p>“System.IO.FileNotFoundExecption: Could not load file or assemble “mallardsoft.xml…”<br />
+and<br />
+“WRN: Assemble Binding Logging is turned OFF…set registry value [hklm\software\microsoft\fusion!enablelog] (DWORD) to 1.</p>
+<p>Thank You;</p>
+<p>Scott</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-5486">
+			<cite>Harry</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-5486" title="">August 5th, 2007 at 10:59 pm</a> </small>
+
+			<p>wow program works great thanks!</p>
+
+		</li>
+
+	
+	
+		<li class="" id="comment-6153">
+			<cite>brid</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-6153" title="">August 25th, 2007 at 2:31 pm</a> </small>
+
+			<p>Works a treat, thankyou!</p>
+<p>Lesson learned from this would be to not listen to post-rock music.</p>
+<p>Explosions In the Sky - Those Who Tell the Truth Shall Die, Those Who Tell The Truth Shall Live Forever - 06 With Tired Eyes, Tired Minds, Tired Souls, We Slept.mp3</p>
+<p>Very unnecessary.</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-6633">
+			<cite>Martin</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-6633" title="">September 11th, 2007 at 12:03 am</a> </small>
+
+			<p>Downloaded everything, it found 1 file on the first run, I deleted the file, tried it again it didn't find anything. Went to itunes to consolidate the library and it still comes up with the original error message!! Any clues as to what I can do?</p>
+
+		</li>
+
+	
+	
+		<li class="" id="comment-6657">
+			<cite>Michael L Perry</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-6657" title="">September 11th, 2007 at 1:29 pm</a> </small>
+
+			<p>Martin,</p>
+<p>Did you delete the file using Windows, or using iTunes? If you just delete the mp3 file itself, then iTunes will still have a reference to it in its database. This will appear as a gray exclamation point in iTunes next to the song.</p>
+<p>If you did delete the song using iTunes, then there is apparently another reason for a file name to be invalid. iTunesFix.exe is only designed to find file names that are too long. Please let me know if this is the case and I'll research it further. I may need you to send me your iTunes Music Library.xml file, if that's OK.</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-6907">
+			<cite>Kara</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-6907" title="">September 17th, 2007 at 9:41 am</a> </small>
+
+			<p>This did not work for me at all.  I can't even give it a chance to work bc the itunes fix thingy won't run.  it won't let me enter the name "itunes music library" and click "find problem".  the error message is super long, and i can't copy paste it to you.  so i guess i'm screwed??  I'm a complete idiot when it comes to computers...sorry.  help if you can...</p>
+
+		</li>
+
+	
+	
+		<li class="" id="comment-6964">
+			<cite>Millertime</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-6964" title="">September 18th, 2007 at 12:58 pm</a> </small>
+
+			<p>Hey, man. that little fix program you wrote is GREAT! Thank you so much!</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-7179">
+			<cite>Von Patty</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-7179" title="">September 23rd, 2007 at 10:08 pm</a> </small>
+
+			<p>Hi, I downloaded your program, set it up, even had a bit of trouble with the missing mallardsoft file but fixed that, only to run itunesfix, have it scan for half a second and then display nothing. now itunes still won't consolidate the library and i have no idea why. any thoughts?</p>
+
+		</li>
+
+	
+	
+		<li class="" id="comment-7199">
+			<cite>Michael L Perry</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-7199" title="">September 24th, 2007 at 9:15 am</a> </small>
+
+			<p>Von Patty,</p>
+<p>Martin has reported a similar problem. He has sent me his iTunes Music Library.xml file so I can try to reproduce the problem. It seems that filename length is not the only thing that can cause this problem. I'm going through the file looking for anything else that might be the culprit.</p>
+<p>So far it looks like it might be an HTTP file in the library. If you use eMusic, it looks like they leave on-line samples in your library that cannot be consolidated. Let me know if this seems like your issue. If I can confirm this behavior, I'll update the program accordingly.</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-7435">
+			<cite>Ross Hipkins</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-7435" title="">September 30th, 2007 at 9:09 pm</a> </small>
+
+			<p>See the end of this message for details on invoking<br />
+just-in-time (JIT) debugging instead of this dialog box.</p>
+<p>************** Exception Text **************<br />
+System.Security.SecurityException: Request for the permission of type 'System.Security.Permissions.FileIOPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089' failed.<br />
+   at System.Security.CodeAccessSecurityEngine.Check(Object demand, StackCrawlMark&amp; stackMark, Boolean isPermSet)<br />
+   at System.Security.CodeAccessPermission.Demand()<br />
+   at System.Windows.Forms.IntSecurity.DemandFileIO(FileIOPermissionAccess access, String fileName)<br />
+   at System.Windows.Forms.FileDialog.get_FileName()<br />
+   at iTunesFix.MainForm.browseButton_Click(Object sender, EventArgs e)<br />
+   at System.Windows.Forms.Control.OnClick(EventArgs e)<br />
+   at System.Windows.Forms.Button.OnClick(EventArgs e)<br />
+   at System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)<br />
+   at System.Windows.Forms.Control.WmMouseUp(Message&amp; m, MouseButtons button, Int32 clicks)<br />
+   at System.Windows.Forms.Control.WndProc(Message&amp; m)<br />
+   at System.Windows.Forms.ButtonBase.WndProc(Message&amp; m)<br />
+   at System.Windows.Forms.Button.WndProc(Message&amp; m)<br />
+   at System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message&amp; m)<br />
+   at System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message&amp; m)<br />
+   at System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)<br />
+The action that failed was:<br />
+Demand<br />
+The type of the first permission that failed was:<br />
+System.Security.Permissions.FileIOPermission<br />
+The Zone of the assembly that failed was:<br />
+Internet</p>
+<p>************** Loaded Assemblies **************<br />
+mscorlib<br />
+    Assembly Version: 2.0.0.0<br />
+    Win32 Version: 2.0.50727.832 (QFE.050727-8300)<br />
+    CodeBase: file:///C:/WINDOWS/Microsoft.NET/Framework/v2.0.50727/mscorlib.dll<br />
+----------------------------------------<br />
+iTunesFix<br />
+    Assembly Version: 1.0.0.0<br />
+    Win32 Version: 1.0.0.0<br />
+    CodeBase: file:///C:/Documents%20and%20Settings/Ross%20Hipkins/Local%20Settings/Temporary%20Internet%20Files/Content.IE5/0RV7QWXX/itunesfix%5B1%5D/iTunesFix.exe<br />
+----------------------------------------<br />
+System.Windows.Forms<br />
+    Assembly Version: 2.0.0.0<br />
+    Win32 Version: 2.0.50727.832 (QFE.050727-8300)<br />
+    CodeBase: file:///C:/WINDOWS/assembly/GAC_MSIL/System.Windows.Forms/2.0.0.0__b77a5c561934e089/System.Windows.Forms.dll<br />
+----------------------------------------<br />
+System<br />
+    Assembly Version: 2.0.0.0<br />
+    Win32 Version: 2.0.50727.832 (QFE.050727-8300)<br />
+    CodeBase: file:///C:/WINDOWS/assembly/GAC_MSIL/System/2.0.0.0__b77a5c561934e089/System.dll<br />
+----------------------------------------<br />
+System.Drawing<br />
+    Assembly Version: 2.0.0.0<br />
+    Win32 Version: 2.0.50727.832 (QFE.050727-8300)<br />
+    CodeBase: file:///C:/WINDOWS/assembly/GAC_MSIL/System.Drawing/2.0.0.0__b03f5f7f11d50a3a/System.Drawing.dll<br />
+----------------------------------------</p>
+<p>************** JIT Debugging **************<br />
+To enable just-in-time (JIT) debugging, the .config file for this<br />
+application or computer (machine.config) must have the<br />
+jitDebugging value set in the system.windows.forms section.<br />
+The application must also be compiled with debugging<br />
+enabled.</p>
+<p>For example:</p>
+<p>When JIT debugging is enabled, any unhandled exception<br />
+will be sent to the JIT debugger registered on the computer<br />
+rather than be handled by this dialog box.</p>
+
+		</li>
+
+	
+	
+		<li class="" id="comment-7436">
+			<cite>Ross Hipkins</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-7436" title="">September 30th, 2007 at 9:11 pm</a> </small>
+
+			<p>I get this msg when trying to add my library file and helf would be great.</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-7443">
+			<cite>Ross Hipkins</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-7443" title="">September 30th, 2007 at 10:08 pm</a> </small>
+
+			<p>Problem solved. I had another operating system on other hard drive. The app worked from there. Big thankyou from Australia. Great App. Cheers</p>
+
+		</li>
+
+	
+	
+		<li class="" id="comment-7493">
+			<cite>Blake Heller</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-7493" title="">October 2nd, 2007 at 1:45 am</a> </small>
+
+			<p>Well it worked....... kinda i got everything changed and renamed and the program comes up with no more errors but i still get the error on iTunes so i cant figure out whats wrong and i looked at the last one it stopped at and cant see whats wrong so help me i will send you the xml file but i dont see your email so... help me</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-7981">
+			<cite>gabrielle123</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-7981" title="">October 14th, 2007 at 4:26 pm</a> </small>
+
+			<p>im having problem, i downloaded it and it still doesnt work. it still has an error when i let it scan through my itunes music library.xml</p>
+
+		</li>
+
+	
+	
+		<li class="" id="comment-9284">
+			<cite>Laura</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-9284" title="">November 18th, 2007 at 6:06 pm</a> </small>
+
+			<p>Hi there. Thank you for creating things to help others. I use windows XP home ediditon, and after downloading and unzipping, I get "The application failed to initialize properly (0xc0000135). Click OK to terminate the application.  I unblocked the application, still same error message (?)<br />
+Hope you have some time for this...<br />
+Laura</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-9721">
+			<cite>Valerie</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-9721" title="">December 1st, 2007 at 3:22 am</a> </small>
+
+			<p>Hi there, I downloaded your zip file, and I can open the fix fine but when I run it, it says there is a file missing? It appears to be the file that you have added to the zip file, but when I try to open that my computer does not recognize it, and it just appears as a notepad file. Where do I have to save the dll file, and what do I have to do with it? Thank you very much!<br />
+Valerie</p>
+
+		</li>
+
+	
+	
+		<li class="" id="comment-9923">
+			<cite>Robyn</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-9923" title="">December 6th, 2007 at 10:32 am</a> </small>
+
+			<p>You are awesome!  Thank you soooo much!</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-10514">
+			<cite>Tim</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-10514" title="">December 27th, 2007 at 7:01 pm</a> </small>
+
+			<p>I downloaded your program and it worked great. Found 13 files with long names out of +7000 songs! I changed the filename in Windows Explorer and then re-linked to the shorter named file from iTunes, but I still get the error message when I try and consolidate. I'm guessing that I've got some odd characters in some of the filenames.... any suggestions? have you written another version of your program that flags filenames with "bad" characters?<br />
+Appreciate any help you can provide.<br />
+thanks.</p>
+
+		</li>
+
+	
+	
+		<li class="" id="comment-12328">
+			<cite>andy</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-12328" title="">February 20th, 2008 at 11:07 pm</a> </small>
+
+			<p>wow that worked perfectly. i was like freaking out cause i couldnt get all my music from my old pc to my new mac. this let me round up all my music in diff places. thanks so much. that error was really annoying me. oh and it was one file that caused the problem. cant itunes just tell me the long file? do they have to be so vauge</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-12420">
+			<cite>ML</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-12420" title="">February 24th, 2008 at 5:21 pm</a> </small>
+
+			<p>You, sir, are the man. Thanks for help finding 12 songs out of 7000. Needle in a haystack, I dunno, but enough to be a major time saver. Again, you are the MAN.</p>
+
+		</li>
+
+	
+	
+		<li class="" id="comment-12601">
+			<cite>Rooney</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-12601" title="">February 29th, 2008 at 6:16 pm</a> </small>
+
+			<p>Hey im running windows xp and when after downloading the file and opening it up it only opens in notepad.  What file extension should i open it under??  Note i did install Windows NT 2.0 </p>
+<p>File name TOo long problem is what i am ecountering </p>
+<p><a href="mailto:trg05002@yahoo.com">trg05002@yahoo.com</a><br />
+Any help would be great plz email me</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-14176">
+			<cite>danny</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-14176" title="">April 9th, 2008 at 8:41 pm</a> </small>
+
+			<p>I love you.  </p>
+<p>I was stressed like a mofo.</p>
+<p>First set of google results no help. And this Baby. Did the trick faster than you can google goatse.</p>
+
+		</li>
+
+	
+	
+		<li class="" id="comment-15186">
+			<cite>sara</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-15186" title="">April 27th, 2008 at 12:34 pm</a> </small>
+
+			<p>Thanx!!!<br />
+it work!<br />
+lol im happy <img src='wp-includes/images/smilies/icon_biggrin.gif' alt=':D' class='wp-smiley' /> </p>
+<p>thanx alot! now i can can consolidate my itunes library!! <img src='wp-includes/images/smilies/icon_smile.gif' alt=':)' class='wp-smiley' /></p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-15187">
+			<cite>skyler</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-15187" title="">April 27th, 2008 at 12:53 pm</a> </small>
+
+			<p>thank you!! 1 song in 14,000 fixed and now everything works!</p>
+
+		</li>
+
+	
+	
+		<li class="" id="comment-17459">
+			<cite><a href='http://nalocomics.com/' rel='external nofollow'>stickboybob</a></cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-17459" title="">June 16th, 2008 at 12:39 pm</a> </small>
+
+			<p>thanks so much for this program. this thing is a life saver. i recently lost all sound on my pc and have to reinstall windows. this really helped me out moving my music collection.</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-17737">
+			<cite>Chris</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-17737" title="">June 23rd, 2008 at 11:42 am</a> </small>
+
+			<p>You are the best!</p>
+<p>Thanks</p>
+
+		</li>
+
+	
+	
+		<li class="" id="comment-18222">
+			<cite>Peter</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-18222" title="">July 6th, 2008 at 2:23 am</a> </small>
+
+			<p>I get the meaasge "The file name was invalid or too long" when i am trying to download songs from CD's and when consolidating.Now unable to upload anything, Help</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-18241">
+			<cite>Michael L Perry</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-18241" title="">July 6th, 2008 at 5:33 pm</a> </small>
+
+			<p>Does the script reveal any problems? Is your iTunes root directory perhaps a long path to begin with? Have you ever successfully imported songs on this machine? If so, did something change between then and now?</p>
+
+		</li>
+
+	
+	
+		<li class="" id="comment-18484">
+			<cite>Stephen</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-18484" title="">July 15th, 2008 at 11:03 am</a> </small>
+
+			<p>Great program! On my machine, though, it missed several that were too long that I had to find and rename to a shorter name manually before my library would consolidate. I think this is because I was working with a second iTunes library which instead of in "My Music\iTunes" was in "My Music\iTunes 80 GB iPod Library (using)". So instead of 130 characters max I'm guessing my system would probably only be able to deal with names up to 105 characters or so in length. For a future version, I'd love to see a dialog box where the user can change the default 130 character cutoff to something shorter (like 105 in my case) if he/she needs to (or a command-line option). Thanks again for a great and useful program!</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-18669">
+			<cite>Audrey</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-18669" title="">July 22nd, 2008 at 10:34 am</a> </small>
+
+			<p>Thank God you put this up because I was trying to move my music to another computer and not having the ability to consolidate my library was making this really really difficult.  Thanks so much for your help!</p>
+
+		</li>
+
+	
+	
+		<li class="" id="comment-19197">
+			<cite>WW</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-19197" title="">August 10th, 2008 at 5:12 pm</a> </small>
+
+			<p>Thanks so much - this solved the problem in SECONDS and now am able to consolidate my library. THANK YOU!</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-19311">
+			<cite>Stephanie</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-19311" title="">August 14th, 2008 at 7:34 pm</a> </small>
+
+			<p>thank you so much you're a life saver</p>
+
+		</li>
+
+	
+	
+		<li class="" id="comment-20064">
+			<cite>kevin</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-20064" title="">September 4th, 2008 at 11:23 am</a> </small>
+
+			<p>What do you do when you run the program and it comes back with nothing to rename???  i STILL cannot consolidate my library, and i'm getting very frustrated.  Is there another reason that I wouldn't be able to consolidate?  Have you ran into the same problem?  HELP!</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-20131">
+			<cite>Audun</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-20131" title="">September 5th, 2008 at 6:54 pm</a> </small>
+
+			<p>Hey. Runned ure app and it seems to be working fine, it starts up itunes and scans. But says it doesnt detect any files that has too long filenames. You have any clue how to find out what the problem might be? What is an invalid filename?</p>
+
+		</li>
+
+	
+	
+		<li class="" id="comment-20232">
+			<cite>Robert</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-20232" title="">September 10th, 2008 at 10:15 pm</a> </small>
+
+			<p>Totally helped solved my problem.  Thanks a bunch</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-20389">
+			<cite>Brandon</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-20389" title="">September 20th, 2008 at 2:35 pm</a> </small>
+
+			<p>Thank you so much! I ran this app and it fixed all my consolidation issues!</p>
+
+		</li>
+
+	
+	
+		<li class="" id="comment-21479">
+			<cite>Marc</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-21479" title="">November 3rd, 2008 at 2:57 pm</a> </small>
+
+			<p>This didn't solve my problem... I get the very same problem when I consolidate my library, but the consolidatefix doesn't find anything.  Help?</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-21674">
+			<cite><a href='http://na/' rel='external nofollow'>Graham</a></cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-21674" title="">November 13th, 2008 at 12:43 am</a> </small>
+
+			<p>THANK YOU!  Worked perfectly, many many many thanks!</p>
+
+		</li>
+
+	
+	
+		<li class="" id="comment-21700">
+			<cite>Damian</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-21700" title="">November 13th, 2008 at 11:47 pm</a> </small>
+
+			<p>You're a lifesaver!  Thank you SO much!</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-23634">
+			<cite>joe</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-23634" title="">January 11th, 2009 at 2:29 pm</a> </small>
+
+			<p>Thanks for the fix.. I tunes really dropped the ball here ehh??</p>
+<p>maybe they should hire you. GJ!!! thnx for the fix.</p>
+
+		</li>
+
+	
+	
+		<li class="" id="comment-23827">
+			<cite>Shamrocker</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-23827" title="">January 16th, 2009 at 8:17 pm</a> </small>
+
+			<p>The fix found 4 files with long names which I've since fixed.  However, I must have some "bad" characters amidst my thousands of songs.  Is there a program to scan for this?  Until I can locate them and rid the file of the "bad" characters, I'm unable to consolidate <img src='wp-includes/images/smilies/icon_sad.gif' alt=':(' class='wp-smiley' /> </p>
+<p>&amp;%#$@ iTunes!</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-23909">
+			<cite>Fozzie</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-23909" title="">January 19th, 2009 at 9:49 am</a> </small>
+
+			<p>Brilliant. Fixed my problem.  I can't believe such a mature product as iTunes just bombs out without actually telling you where the problem is!<br />
+Thanks again.</p>
+
+		</li>
+
+	
+	
+		<li class="" id="comment-24510">
+			<cite>tamzcar</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-24510" title="">February 10th, 2009 at 4:06 am</a> </small>
+
+			<p>Thanks so much for this!! I searched all over the web, yours was the solution!!</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-24511">
+			<cite>sdf</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-24511" title="">February 10th, 2009 at 4:07 am</a> </small>
+
+			<p><a href="http://www.krojamsoft.com/filecleaner.php" rel="nofollow">http://www.krojamsoft.com/filecleaner.php</a></p>
+
+		</li>
+
+	
+	
+		<li class="" id="comment-29049">
+			<cite><a href='http://rootbear.info/' rel='external nofollow'>Adolf von Fidjestövel</a></cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-29049" title="">May 3rd, 2009 at 1:08 pm</a> </small>
+
+			<p>Thanks, it worked for me!</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-29368">
+			<cite>Lynn</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-29368" title="">May 7th, 2009 at 11:08 pm</a> </small>
+
+			<p>You are a GOD.  Thank you so much!!!!!</p>
+
+		</li>
+
+	
+	
+		<li class="" id="comment-30632">
+			<cite>Rocco</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-30632" title="">May 27th, 2009 at 8:39 pm</a> </small>
+
+			<p>thanks worked very well... hoping theres no evil file on it but i had no trouble with it!</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-31093">
+			<cite>James Edward Durie Farmer</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-31093" title="">June 5th, 2009 at 12:30 am</a> </small>
+
+			<p>Dear Mike,</p>
+<p>Thank-you very much for the info about this error. You are on the right track with 130 however I am now down to 120 and reducing. There must be some arbitrary number? Perhaps associated with the directory length? Have you further updates on this? I see the 1st was 2007. Very much appreciate your efforts with this.</p>
+<p>Very Best Regards,</p>
+<p>Jim</p>
+
+		</li>
+
+	
+	
+		<li class="" id="comment-31184">
+			<cite><a href='http://honeybrown.ca/' rel='external nofollow'>Anand Agarawala</a></cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-31184" title="">June 6th, 2009 at 5:40 pm</a> </small>
+
+			<p>Thanks for the script, although unfortunately it didn't work for me as it didn't isolate all the files with long names for some reason.  I was scratching my head and couldn't figure out why.  This approach did work for me though.  Manually Conslidating, and then inspecting the XML for any old links, truncating the filenames and repeating. </p>
+<p><a href="http://thanscorner.info/archives/2008/moving-and-organizing-itunes-music-files" rel="nofollow">http://thanscorner.info/archives/2008/moving-and-organizing-itunes-music-files</a></p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-32472">
+			<cite>Thien</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-32472" title="">June 29th, 2009 at 4:24 pm</a> </small>
+
+			<p>You are the best bro</p>
+
+		</li>
+
+	
+	
+		<li class="" id="comment-42466">
+			<cite>Kevin</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-42466" title="">August 25th, 2009 at 3:56 pm</a> </small>
+
+			<p>SO easy just open and run good stuff, took like no effort thanks bro</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-44517">
+			<cite>Marty</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-44517" title="">September 4th, 2009 at 1:29 am</a> </small>
+
+			<p>Thank you soooo much.<br />
+I was actually freaking out before i found this.<br />
+i thought i was gonig to have to put all of my songs<br />
+on to CD's and upload them one by one onto my new<br />
+computer.</p>
+<p>Marty</p>
+
+		</li>
+
+	
+	
+		<li class="" id="comment-44744">
+			<cite>Daney</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-44744" title="">September 4th, 2009 at 11:09 pm</a> </small>
+
+			<p>hi,<br />
+did you ever resolve the issue with martin? i too am experiencing the same problem. i deleted the file from itunes that was too long and yet i'm still unable to consolidate. any suggestions?</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-45132">
+			<cite>Michael L Perry</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-45132" title="">September 6th, 2009 at 12:28 pm</a> </small>
+
+			<p>Unfortunately, I haven't been able to determine what else might constitute a filename that is too long or invalid. If you happen find out which file is causing the trouble, then perhaps we can figure out what about it is invalid. Then I can update the script.</p>
+
+		</li>
+
+	
+	
+		<li class="" id="comment-51296">
+			<cite>Rudy Farmer</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-51296" title="">October 12th, 2009 at 12:55 pm</a> </small>
+
+			<p>Hi, The program worked great-- it found the same long names I found by manually looking at the itunes.xml file. I was not sure whether the long artist,title, album etc. name in itunes was the problem or the actual file name of the .mp3 file in the library  or all these combined, so I shortened all the names as follows.</p>
+<p>1.) Get the list of long names by running the itunesfix.com program. For each song in the list, do the following:<br />
+  a,) search for song in itunes and find it<br />
+  b.) shorten any long names in itunes<br />
+  c.) right click on song to get "info" and pointer to where .mp3 file is located<br />
+  d.) use windows explorer to rename the .mps file to a smaller name<br />
+  e.) Try to Play the song in itumes.  It will not find song so manually locate the new shorter .mp3 name</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-57429">
+			<cite>Mathilda</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-57429" title="">December 5th, 2009 at 3:33 pm</a> </small>
+
+			<p>Thanks so much!  I'm trying to consolidate music from two laptops and two desktops onto one music server and was getting to ready to pull my hair out; it's enough of a pain as is without having to go through 3,000 songs counting characters in file names.</p>
+
+		</li>
+
+	
+	
+		<li class="" id="comment-58776">
+			<cite>Jeremy</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-58776" title="">December 21st, 2009 at 11:55 am</a> </small>
+
+			<p>OMG man, when I saw that error, my heart dropped because I MUST consolidate in order to transfer music to my new computer. Then my head started spinning about whether I should try one of those ipod-to-computer programs. But I had already taken up ALOT of space on my already strained old computer by consolidating until it quit on me midway thru. I was at a loss until coming across this totally simple script thing. Whoever, wherever, you are, you're a lifesaver dude. May some kind of awesome thing happen to you this day!</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-63946">
+			<cite>Nate</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-63946" title="">February 13th, 2010 at 11:15 pm</a> </small>
+
+			<p>The download Consolidation Fix is a .js file... a javascript... I don't know how to open it? I thought it would be an executable... Please help me, Michael, I feel a bit dumb.</p>
+
+		</li>
+
+	
+	
+		<li class="" id="comment-64040">
+			<cite>Michael L Perry</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-64040" title="">February 15th, 2010 at 7:46 am</a> </small>
+
+			<p>It runs with the Windows Script Host. If it doesn't launch when you double-click the js file, then you can try extracting it, right-click, and select "Open With : Microsoft (R) Windows Based Script Host". If that option is not available to you, then you can try running "wscript ConsolidationFix.js" from the command line where you extracted the file.</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-67068">
+			<cite>Ryan</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-67068" title="">March 15th, 2010 at 10:13 pm</a> </small>
+
+			<p>Thank you so much.  I spent five hours trying to fix this issue before I found your website.</p>
+
+		</li>
+
+	
+	
+		<li class="" id="comment-68606">
+			<cite><a href='http://www.ulfwood.net/RenameFiles/FileRenamer.aspx' rel='external nofollow'>Kenneth Just</a></cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-68606" title="">April 15th, 2010 at 8:51 pm</a> </small>
+
+			<p>Hi</p>
+<p>Thanks for this but I am a bit of a novice computer user - how do I get the Zip file to work? I am running Win XP and haved saved it to my hard disc and extracted the ZIP file. When I try to run it I get an error message "application failed to initailise properly".</p>
+<p>Any ideas what I'm doing wrong please?</p>
+<p>Thank you!!</p>
+<p><a href="http://www.ulfwood.net/RenameFiles/FileRenamer.aspx" rel="nofollow">Rename Mp3</a></p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-70171">
+			<cite>Noah</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-70171" title="">May 11th, 2010 at 12:08 pm</a> </small>
+
+			<p>You are a GENIUS!!  Thank you!!</p>
+
+		</li>
+
+	
+	
+		<li class="" id="comment-72539">
+			<cite>Menauhant</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-72539" title="">June 16th, 2010 at 9:46 am</a> </small>
+
+			<p>I have a slightly different but similar problem so I tried the consolidator fix.  Unfortunately it did not help to fix my problem.  </p>
+<p>The problem that I have is that whenever I try to open iTunes Program I get an error message that says: The iTunes Application could not be opened.  The filename is invalid or too long.</p>
+<p>Microsoft told me to use a program called Revo Uninstaller Pro to remove all iTunes files and applications this included iTunes, Quicktime, Bonjour and at least three others.  Revo also takes care of cleaning up file entries that were left behind in the registry and throughout the computer.  After this I restarted and tghen reinstalled iTunes results same.</p>
+<p>Microsoft also did not hesitate to also tell me to contact the iTunes supplier to get them to fix their problem.</p>
+<p>I am running a PC with Vista Home 32bit.</p>
+<p>Please help I have a new iPhone that I would like to setup and need iTunes to get my mail and contacts installed.</p>
+<p>Thanks</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-72569">
+			<cite>Menauhant</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-72569" title="">June 16th, 2010 at 9:48 pm</a> </small>
+
+			<p>Update.  iTunes works when I log in as the administrator.  I thought I was all set so I switched users to my user name and even though I am supposed to have the same privileges as the administrator it did not work got the same error message.</p>
+
+		</li>
+
+	
+	
+		<li class="" id="comment-95469">
+			<cite>RTB</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-95469" title="">November 10th, 2010 at 1:49 pm</a> </small>
+
+			<p>excellent work, saved my sanity!</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-143654">
+			<cite>Verun</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-143654" title="">April 19th, 2011 at 8:47 pm</a> </small>
+
+			<p>Amazing. It works great. Run the script and you find out the songs which are corrupted or too long</p>
+
+		</li>
+
+	
+	
+		<li class="" id="comment-147855">
+			<cite>Alistair</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-147855" title="">April 30th, 2011 at 10:43 am</a> </small>
+
+			<p>my copying files failed message came up immediatly when i clicked consolidate. </p>
+<p>  The little download did not work for me.</p>
+<p> i read through loads of peoples posts (thank you all for your help) right clicked the top bar and sorted by date added. i then just tried to play the tracks from the start and the first six could not be played:-</p>
+<p>the Song "blah bah" could not be used because the original file could not be found. Would you like to locate it? </p>
+<p>it also had a liitle exclamation mark icon next to it i deleted these in itunes</p>
+<p>so i played through all the tracks (2100) quickly  cursor down and enter took about 50 mins and found a few more deleted these restarted itunes and.....</p>
+<p>it still does not work.... HELP!!!</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-147885">
+			<cite>Alistair</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-147885" title="">April 30th, 2011 at 1:04 pm</a> </small>
+
+			<p>i made a little progress..</p>
+<p> i copied the entire 11Gb folder to the c drive and called it c:\itunes music</p>
+<p> then in itunes  Edit-Preferences-advanced and changed the itunes media location to this.</p>
+<p>this has shortened all of the filenames by 5 directories or about 61 characters.</p>
+<p>it will now try and consolidate, but duhhhh it hasnt got enough hard drive space now:-    there is not enough room on 'C' to copy all of the requested files</p>
+<p>so am backing up the unconsolidated directory to external before deleting</p>
+
+		</li>
+
+	
+	
+		<li class="" id="comment-147895">
+			<cite>Alistair</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-147895" title="">April 30th, 2011 at 1:55 pm</a> </small>
+
+			<p>it worked:-)   took so long i have forgotten what i was trying to do in the first place,     now lets see......</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-152895">
+			<cite>TDog</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-152895" title="">May 15th, 2011 at 10:41 pm</a> </small>
+
+			<p>Totally worked.  Thanks!</p>
+
+		</li>
+
+	
+	
+		<li class="" id="comment-161961">
+			<cite>Keith</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-161961" title="">June 12th, 2011 at 4:14 pm</a> </small>
+
+			<p>Thanks so much for taking the time to create the iTunesFix file - after struggling for a bit, this was just what I needed - solved the problem in a matter of seconds.   Very much appreciated!</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-163583">
+			<cite>Jim</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-163583" title="">June 17th, 2011 at 7:23 pm</a> </small>
+
+			<p>This worked really well. Note to self - change the file names in the source, not the itunes names. Would have saved me some time.</p>
+
+		</li>
+
+	
+	
+		<li class="" id="comment-169248">
+			<cite>Jack</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-169248" title="">July 9th, 2011 at 9:36 am</a> </small>
+
+			<p>This was so much help! I have been sitting here for hours following steps about opening itunes library with notepad, finding first song etc. And none of them worked! However I downloaded this program and within 5 seconds it had found the faulty file and I fixed it!</p>
+<p>This program and its creator deserved massive credit, this should be on the itunes website!</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-169506">
+			<cite><a href='http://forums.ilounge.com/itunes-mac-pc/270272-trying-consolidate-library-filename-too-long.html#post1407963' rel='external nofollow'>Trying to consolidate library - filename too long - iLounge Forums</a></cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-169506" title="">July 10th, 2011 at 10:50 am</a> </small>
+
+			<p>[...] so I'm not exactly sure how you run it...it's a Javascript that uses the iTunes .COM interface. According to the author: &quot;It runs with the Windows Script Host. If it doesn't launch when you double-click the js [...]</p>
+
+		</li>
+
+	
+	
+		<li class="" id="comment-179807">
+			<cite>Robert</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-179807" title="">August 21st, 2011 at 8:36 am</a> </small>
+
+			<p>Thank you so much! I stumbled upon this website via a google search and it saved my day.</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-221865">
+			<cite>jesse</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-221865" title="">March 3rd, 2012 at 4:10 am</a> </small>
+
+			<p>thank you! was suspicious at first of this site but it worked great!!!</p>
+
+		</li>
+
+	
+	
+	</ol>
+
+ 
+
+
+<h3 id="respond">Leave a Reply</h3>
+
+<p>You must be <a href="wp-login494f.html?redirect_to=http://adventuresinsoftware.com/blog/?p=51">logged in</a> to post a comment.</p>
+
+
+	
+	</div>
+		</td>
+	</tr>
+</table>
+
+<hr />
+<div id="footer">
+<!-- If you'd like to support WordPress, having the "powered by" link someone on your blog is the best way, it's our only promotion or advertising. -->
+	<p>
+		Adventures in Software is proudly powered by 
+		<a href="http://wordpress.org/">WordPress</a>
+		<br /><a href="indexd784.html?feed=rss2">Entries (RSS)</a>
+		and <a href="indexa6da.html?feed=comments-rss2">Comments (RSS)</a>.
+		<!-- 21 queries. 0.428 seconds. -->
+	</p>
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-389401-3");
+pageTracker._trackPageview();
+} catch(err) {}</script></div>
+
+<!-- Gorgeous design by Michael Heilemann - http://binarybonsai.com/kubrick/ -->
+
+		<div id="sk2-footer" style="color:#FFF; background-color:#444; padding: 3px 2px 3px 2px; border-top: #888 solid 1px;">This blog is protected by <a href="http://unknowngenius.com/blog/" title="Dave">dr Dave</a>'s <strong><a href="http://unknowngenius.com/blog/wordpress/spam-karma/" title="SK2">Spam Karma 2</a></strong>: <strong>274531</strong>  Spams eaten and counting...</div><script type="text/javascript" src="replies.js"></script>
+<script type="text/javascript" src="blogger.js"></script>
+<script type="text/javascript" src="http://twitter.com/statuses/user_timeline/michaellperry.json?callback=twitterCallback2&amp;count=5"></script>
+<script type="text/javascript" src="http://search.twitter.com/search.json?q=@michaellperry&amp;callback=twitterCallbackReplies&amp;rpp=5"></script>
+</body>
+
+<!-- Mirrored from adventuresinsoftware.com/blog/?p=51 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 Jan 2017 13:09:46 GMT -->
+</html>

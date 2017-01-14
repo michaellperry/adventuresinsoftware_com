@@ -1,0 +1,679 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+
+
+<!-- Mirrored from adventuresinsoftware.com/blog/?m=201104 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 Jan 2017 12:32:25 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>Adventures in Software   &raquo; 2011&raquo; April</title>
+
+<meta name="generator" content="WordPress 2.3.3" /> <!-- leave this for stats -->
+
+<link rel="stylesheet" href="wp-content/themes/ais2/style.css" type="text/css" media="screen" />
+<link rel="alternate" type="application/rss+xml" title="Adventures in Software RSS Feed" href="indexd784.html?feed=rss2" />
+<link rel="pingback" href="xmlrpc.html" />
+    <script type="text/javascript">
+        function onSilverlightError(sender, args) {
+            var appSource = "";
+            if (sender != null && sender != 0) {
+              appSource = sender.getHost().Source;
+            }
+            
+            var errorType = args.ErrorType;
+            var iErrorCode = args.ErrorCode;
+
+            if (errorType == "ImageError" || errorType == "MediaError") {
+              return;
+            }
+
+            var errMsg = "Unhandled Error in Silverlight Application " +  appSource + "\n" ;
+
+            errMsg += "Code: "+ iErrorCode + "    \n";
+            errMsg += "Category: " + errorType + "       \n";
+            errMsg += "Message: " + args.ErrorMessage + "     \n";
+
+            if (errorType == "ParserError") {
+                errMsg += "File: " + args.xamlFile + "     \n";
+                errMsg += "Line: " + args.lineNumber + "     \n";
+                errMsg += "Position: " + args.charPosition + "     \n";
+            }
+            else if (errorType == "RuntimeError") {           
+                if (args.lineNumber != 0) {
+                    errMsg += "Line: " + args.lineNumber + "     \n";
+                    errMsg += "Position: " +  args.charPosition + "     \n";
+                }
+                errMsg += "MethodName: " + args.methodName + "     \n";
+            }
+
+            throw new Error(errMsg);
+        }
+    </script>
+
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc0db0.php?rsd" />
+ <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="wp-includes/wlwmanifest.xml" /> <style type='text/css'>
+<!--#header { background: url('wp-content/themes/ais2/images/header-imgae03.html?upper=A7A73F&amp;lower=77773F') no-repeat bottom center; }
+--></style>
+</head>
+<body>
+<div id="page">
+
+<div class="aisTopBar">
+	<form method="get" id="searchform" action="http://adventuresinsoftware.com/blog/">
+<div>
+<a href="indexd784.html?feed=rss2"><img src="../images/feed-icon-28x28.png" border="0"></a>
+<input type="text" value="" name="s" id="s" />
+<input type="submit" id="searchsubmit" value="Search" />
+</div>
+</form>
+</div>
+
+<div class="aisHeaderImageRight">
+	<div class="aisHeaderImage">
+	<div class="aisHeaderCornerRight">
+	<div class="aisHeaderCornerLeft">
+	<div class="aisImageBar">
+	<div class="aisSubSites">
+		<a href="index.html" class="aisSubSiteLink"><span class="aisSiteTabRight"><span class="aisSiteTabLeft"><span class="aisSiteTab">
+			home</span></span></span></a>
+		<a class="aisSubSiteLink" href="http://www.adventuresinsoftware.com/blog/?cat=27"><span class="aisSiteTabRight"><span class="aisSiteTabLeft"><span class="aisSiteTab">
+			historic modeling</span></span></span></a>
+		<a class="aisSubSiteLink" href="http://www.adventuresinsoftware.com/blog/?cat=36"><span class="aisSiteTabRight"><span class="aisSiteTabLeft"><span class="aisSiteTab">
+			update controls</span></span></span></a>
+		<a href="http://www.adventuresinsoftware.com/blog/?cat=26" class="aisSubSiteLink"><span class="aisSiteTabRight"><span class="aisSiteTabLeft"><span class="aisSiteTab">
+			degrees of freedom</span></span></span></a>
+		<a class="aisSubSiteLink" href="indexba53.html?page_id=2"><span class="aisSiteTabRight"><span class="aisSiteTabLeft"><span class="aisSiteTab">
+			about us</span></span></span></a>
+
+	</div>
+	</div>
+	</div>
+	</div>
+	</div>
+</div>
+
+<table style="width: 100%" cellspacing="0" cellpadding="0">
+	<tr valign="top">
+		<td width="210px">
+<div id="sidebar">
+<div class="aisLeftColumnFill">
+<div class="aisLeftColumnBottom">
+<div class="aisLeftColumnTop">
+<div id="twitter_div" class="aisLeftNav">
+<h2 class="sidebar-title">Twitter Updates</h2>
+<ul id="twitter_update_list"></ul>
+<a href="http://twitter.com/michaellperry" id="follow">Follow me</a>
+</div>
+<div id="twitter_reply_div" class="aisLeftNav">
+<h2 class="sidebar-title">Twitter Replies</h2>
+<ul id="twitter_reply_list"></ul>
+</div>
+
+<div class="aisLeftNav">
+<a href='http://ineta.org/Speakers/SearchCommunitySpeakers.aspx?SpeakerId=c5110e21-9243-461b-a464-a6548524e885'><img alt='INETA Community Speakers Program' border='0' src='../../www.ineta.org/images/OfficialLogos/InetaCommunitySpeakersRequestMe.html' /></a>
+</div>
+
+<div class="aisLeftNav">
+	<li class="pagenav"><h2>Pages</h2><ul><li class="page_item page-item-2"><a href="indexba53.html?page_id=2" title="About Us">About Us</a></li>
+<li class="page_item page-item-210"><a href="index6ae3.html?page_id=210" title="Templates">Templates</a></li>
+</ul></li></div>
+
+<div class="aisLeftNav">
+<h2>Archives</h2>
+<ul>
+	<li><a href='indexb4d5.html?m=201110' title='October 2011'>October 2011</a></li>
+	<li><a href='indexc61a.html?m=201106' title='June 2011'>June 2011</a></li>
+	<li><a href='indexa80d.html?m=201105' title='May 2011'>May 2011</a></li>
+	<li><a href='index512b.html?m=201104' title='April 2011'>April 2011</a></li>
+	<li><a href='index08fb.html?m=201103' title='March 2011'>March 2011</a></li>
+	<li><a href='index52f4.html?m=201102' title='February 2011'>February 2011</a></li>
+	<li><a href='index74f1.html?m=201101' title='January 2011'>January 2011</a></li>
+	<li><a href='index8956.html?m=201012' title='December 2010'>December 2010</a></li>
+	<li><a href='indexa1aa.html?m=201011' title='November 2010'>November 2010</a></li>
+	<li><a href='indexe3d5.html?m=201010' title='October 2010'>October 2010</a></li>
+	<li><a href='index9ab9.html?m=201009' title='September 2010'>September 2010</a></li>
+	<li><a href='index1ff0.html?m=201008' title='August 2010'>August 2010</a></li>
+	<li><a href='index9f11.html?m=201007' title='July 2010'>July 2010</a></li>
+	<li><a href='index31f0.html?m=201006' title='June 2010'>June 2010</a></li>
+	<li><a href='indexd189.html?m=201005' title='May 2010'>May 2010</a></li>
+	<li><a href='indexb5c0.html?m=201004' title='April 2010'>April 2010</a></li>
+	<li><a href='indexf258.html?m=201003' title='March 2010'>March 2010</a></li>
+	<li><a href='index6e30.html?m=201002' title='February 2010'>February 2010</a></li>
+	<li><a href='index6b19.html?m=201001' title='January 2010'>January 2010</a></li>
+	<li><a href='index5c0a.html?m=200912' title='December 2009'>December 2009</a></li>
+	<li><a href='index8f62.html?m=200911' title='November 2009'>November 2009</a></li>
+	<li><a href='index451d.html?m=200910' title='October 2009'>October 2009</a></li>
+	<li><a href='index3e04.html?m=200909' title='September 2009'>September 2009</a></li>
+	<li><a href='index425a.html?m=200908' title='August 2009'>August 2009</a></li>
+	<li><a href='index9907.html?m=200907' title='July 2009'>July 2009</a></li>
+	<li><a href='index3104.html?m=200906' title='June 2009'>June 2009</a></li>
+	<li><a href='indexc36d.html?m=200905' title='May 2009'>May 2009</a></li>
+	<li><a href='index17e8.html?m=200904' title='April 2009'>April 2009</a></li>
+	<li><a href='index10a5.html?m=200903' title='March 2009'>March 2009</a></li>
+	<li><a href='index8988.html?m=200902' title='February 2009'>February 2009</a></li>
+	<li><a href='index1419.html?m=200901' title='January 2009'>January 2009</a></li>
+	<li><a href='index7866.html?m=200812' title='December 2008'>December 2008</a></li>
+	<li><a href='index55f6.html?m=200811' title='November 2008'>November 2008</a></li>
+	<li><a href='indexa7bc.html?m=200810' title='October 2008'>October 2008</a></li>
+	<li><a href='indexe77c.html?m=200809' title='September 2008'>September 2008</a></li>
+	<li><a href='indexcffc.html?m=200808' title='August 2008'>August 2008</a></li>
+	<li><a href='index0e62.html?m=200807' title='July 2008'>July 2008</a></li>
+	<li><a href='indexfda7.html?m=200806' title='June 2008'>June 2008</a></li>
+	<li><a href='index7d64.html?m=200805' title='May 2008'>May 2008</a></li>
+	<li><a href='index94dd.html?m=200804' title='April 2008'>April 2008</a></li>
+	<li><a href='index9631.html?m=200803' title='March 2008'>March 2008</a></li>
+	<li><a href='indexdd52.html?m=200802' title='February 2008'>February 2008</a></li>
+	<li><a href='index21ee.html?m=200801' title='January 2008'>January 2008</a></li>
+	<li><a href='index363c.html?m=200712' title='December 2007'>December 2007</a></li>
+	<li><a href='index7493.html?m=200711' title='November 2007'>November 2007</a></li>
+	<li><a href='index93a7.html?m=200710' title='October 2007'>October 2007</a></li>
+	<li><a href='index4ca8.html?m=200709' title='September 2007'>September 2007</a></li>
+	<li><a href='index6124.html?m=200708' title='August 2007'>August 2007</a></li>
+	<li><a href='index6013.html?m=200707' title='July 2007'>July 2007</a></li>
+	<li><a href='index2ab6.html?m=200706' title='June 2007'>June 2007</a></li>
+	<li><a href='index44f0.html?m=200705' title='May 2007'>May 2007</a></li>
+	<li><a href='indexf0b4.html?m=200704' title='April 2007'>April 2007</a></li>
+	<li><a href='index481d.html?m=200703' title='March 2007'>March 2007</a></li>
+	<li><a href='indexcbea.html?m=200702' title='February 2007'>February 2007</a></li>
+	<li><a href='index9cdc.html?m=200701' title='January 2007'>January 2007</a></li>
+	<li><a href='index3ea4.html?m=200612' title='December 2006'>December 2006</a></li>
+	<li><a href='index67ca.html?m=200611' title='November 2006'>November 2006</a></li>
+	<li><a href='indexff49.html?m=200610' title='October 2006'>October 2006</a></li>
+	<li><a href='index611c.html?m=200609' title='September 2006'>September 2006</a></li>
+	<li><a href='index9a21.html?m=200608' title='August 2006'>August 2006</a></li>
+	<li><a href='index3ee9.html?m=200607' title='July 2006'>July 2006</a></li>
+	<li><a href='indexe13a.html?m=200606' title='June 2006'>June 2006</a></li>
+</ul>
+</div>
+
+<div class="aisLeftNav">
+	</div>
+
+<div class="aisLeftNav">
+<h2>Books</h2>
+<iframe src="http://rcm.amazon.com/e/cm?t=adventures0d2-20&amp;o=1&amp;p=8&amp;l=as1&amp;asins=0764526413&amp;fc1=000000&amp;IS2=1&amp;lt1=_blank&amp;lc1=0000ff&amp;bc1=000000&amp;bg1=ffffff&amp;f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" name="I5" id="I5"></iframe>
+<br/>
+<iframe src="http://rcm.amazon.com/e/cm?t=adventures0d2-20&amp;o=1&amp;p=8&amp;l=as1&amp;asins=0201633612&amp;fc1=000000&amp;IS2=1&amp;lt1=_blank&amp;lc1=0000ff&amp;bc1=000000&amp;bg1=ffffff&amp;f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" name="I6" id="I6"></iframe>
+<br/>
+<iframe src="http://rcm.amazon.com/e/cm?t=adventures0d2-20&amp;o=1&amp;p=8&amp;l=as1&amp;asins=0136291554&amp;fc1=000000&amp;IS2=1&amp;lt1=_blank&amp;lc1=0000ff&amp;bc1=000000&amp;bg1=ffffff&amp;f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" name="I7" id="I7"></iframe>
+<br/>
+<iframe src="http://rcm.amazon.com/e/cm?t=adventures0d2-20&amp;o=1&amp;p=8&amp;l=as1&amp;asins=1888009195&amp;fc1=000000&amp;IS2=1&amp;lt1=_blank&amp;lc1=0000ff&amp;bc1=000000&amp;bg1=ffffff&amp;f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" name="I8" id="I8"></iframe>
+</div>
+<div class="aisLeftNav">
+<h2>Meta</h2>
+<ul>
+		<li><a href="wp-login.html">Login</a></li>
+	<li><a href="http://validator.w3.org/check/referer" title="This page validates as XHTML 1.0 Transitional">Valid <abbr title="eXtensible HyperText Markup Language">XHTML</abbr></a></li>
+	<li><a href="http://gmpg.org/xfn/"><abbr title="XHTML Friends Network">XFN</abbr></a></li>
+	<li><a href="http://wordpress.org/" title="Powered by WordPress, state-of-the-art semantic personal publishing platform.">WordPress</a></li>
+	</ul>
+</div>
+<div class="aisLeftContent">
+<h2>Community</h2>
+<ul>
+	<script type="text/javascript" src="../../localhost/embed/92q2bbma.js"></script>
+</ul>
+</div>
+
+</div></div></div>
+</div>		</td>
+		<td>
+
+	<div id="content" class="narrowcolumn">
+
+		
+		 		<h2 class="pagetitle">Archive for April, 2011</h2>
+
+		
+
+		<div class="navigation">
+			<div class="alignleft"></div>
+			<div class="alignright"></div>
+		</div>
+
+				<div class="post">
+				<h3 id="post-643"><a href="indexb0f8.html?p=643" rel="bookmark" title="Permanent Link to Windows Phone navigation workarounds">Windows Phone navigation workarounds</a></h3>
+				<small>Tuesday, April 26th, 2011</small>
+
+				<div class="entry">
+					<p>Silverlight for Windows Phone has adopted a navigation mechanism reminiscent of a web browser. Each page is authored as a separate resource. The application issues commands to a NavigationService to move from one page to the next. The phone even has a hardware back button. This choice of web-like navigation causes no end of difficulties to application developers.</p>
+<p>Navigation in Windows Phone starts with a URI. But rather than identifying an HTML resource, this URI identifies a XAML resource. The application doesn’t create pages; it just identifies them. The runtime creates each page based on the given URI. This causes three problems.</p>
+<ul>
+<li>Parameters</li>
+<li>View model location</li>
+<li>Back-stack modification</li>
+</ul>
+<h3>Parameters</h3>
+<p>The URI must contain all of the information required to construct the page. For the main page of the application, this is usually fine. Just bring up the XAML representation of the main menu. But subsequent pages often drill down into detail. If the main page displays a list of articles, and we want to bring up a specific article when the user taps, then we have to identify the article in the URI. <em>All</em> of the article links target the same XAML resource. It’s the data that differs.</p>
+<p>To differentiate the links, many developers take the typical web-based approach. They add <strong>query string</strong> parameters to the URL. Chris Koenig gives <a href="http://chriskoenig.net/2010/05/16/wp7-part-3-navigation/">an excellent example of parameter-passing</a>. The Silverlight NavigationContext object exposes these parameters via the QueryString property, specifically for this purpose.</p>
+<p>The problem with query string parameters is that they requires an application to drop down to string-based identification, rather than rely upon direct object access. To generate the query string, an application has to extract an ID from an object. To consume the query string, it has to look that ID up in an object model. It usually ends up getting right back to the object that it started with. Wouldn’t it be easier to use that object reference directly?</p>
+<p>The web was designed for stateless operation. Each request is isolated from the ones that came before. No objects are assumed to be kept on the server for the user’s next request. Each request must contain enough information to reload those objects and generate the required page. This is what allows the web to scale.</p>
+<p>But the phone isn’t like a stateless web server. It has rich object state. It exists to serve just one user. It can afford to load objects into memory, and use references among those objects as that user navigates through the application. To drop down to a string only to come back to the same object is not taking full advantage of the platform. What’s good for the web is not necessarily good for the phone.</p>
+<h3>View model location</h3>
+<p>The second problem is pairing a view model with a view. Since navigation is based on identifying the view, Windows Phone forces you into a view-first approach. The view is left with the responsibility of finding its view model. To complicate matters, the view must sometimes pass its query string parameters to the view model. The view model uses the parameters to find a reference to the model object.</p>
+<p>A common solution to this problem is the view model locator pattern. A view model locator is a single-instance object registered as an application resource. Each view binds its DataContext to a property of this resource, which is an instance of a view model.</p>
+<pre class="code">    <span style="color: blue">&lt;</span><span style="color: #a31515">Application.Resources</span><span style="color: blue">&gt;
+        &lt;</span><span style="color: #a31515">vm</span><span style="color: blue">:</span><span style="color: #a31515">ViewModelLocator </span><span style="color: red">x</span><span style="color: blue">:</span><span style="color: red">Key</span><span style="color: blue">=&quot;Locator&quot;/&gt;
+    &lt;/</span><span style="color: #a31515">Application.Resources</span><span style="color: blue">&gt;
+
+</span></pre>
+<pre class="code"><span style="color: blue">public class </span><span style="color: #2b91af">ViewModelLocator
+</span>{
+    <span style="color: blue">private readonly </span><span style="color: #2b91af">MainViewModel </span>_main;
+
+    <span style="color: blue">public </span>ViewModelLocator()
+    {
+        _main = <span style="color: blue">new </span><span style="color: #2b91af">MainViewModel</span>();
+    }
+
+    <span style="color: blue">public </span><span style="color: #2b91af">MainViewModel </span>Main
+    {
+        <span style="color: blue">get </span>{ <span style="color: blue">return </span>_main; }
+    }
+}</pre>
+<pre class="code"><span style="color: blue">&lt;</span><span style="color: #a31515">UserControl </span><span style="color: red">x</span><span style="color: blue">:</span><span style="color: red">Class</span><span style="color: blue">=&quot;ToDoList.MainPage&quot;
+    ...</span><span style="color: blue">
+    </span><span style="color: red">DataContext</span><span style="color: blue">=&quot;{</span><span style="color: #a31515">Binding </span><span style="color: red">Main</span><span style="color: blue">, </span><span style="color: red">Source</span><span style="color: blue">={</span><span style="color: #a31515">StaticResource </span><span style="color: red">Locator</span><span style="color: blue">}}&quot;&gt;
+</span></pre>
+<p>The biggest problem with the view model locator pattern is that it treats view models as <strong>singletons</strong>. Since the view model locator is an application resource, there is only one instance serving all of the view models. And since each view data binds to a property, the view model locator can only have one instance of each view model. It is not a view model <em>factory</em>. There is no way to pass query string parameters to a method in order to <em>construct</em> an instance of a view model. You have to write code in the view to pass the parameters to the view model in its DataContext. That one and only instance of the view model must be able to change its behavior to point to a different model instance every time the user navigates.</p>
+<h3>Back-stack modification</h3>
+<p>The third problem is removing pages from the back-stack. Some interactions have intermediate steps: the user logs in before seeing content, or a wizard guides a user through a multi-page process to achieve a result. When the user has completed these intermediate steps, they don’t want to return to them. If they have completed the steps prior to reaching the main menu (as in the login example), then they want to exit the application when they hit back from the main menu. They don’t want to see the login screen again. Or if the intermediate steps occur after the main page (as in the wizard example), then they want to return to the main page when they are finished. These intermediate pages should be popped off the stack.</p>
+<p>Unfortunately, the Windows Phone OS is completely in charge of the back-stack. It keeps track of each URI that the user visits, and returns to past URIs when they hit the back button. There is no API for removing a URI from the stack. We are left with a couple of hacks. To skip intermediate pages at the beginning of the stack (login), we can <a href="http://blogs.msdn.com/b/ptorr/archive/2010/08/01/exiting-a-windows-phone-application.aspx">exit the application prematurely by throwing an unhandled exception</a>. To skip pages later in the stack (wizard), we can <a href="http://stackoverflow.com/questions/3809578/how-to-remove-a-page-from-the-navigation-history">bounce to each intermediate page in the main page’s OnNavigatedTo</a>. Neither solution is particularly appealing.</p>
+<h3>Conclusion</h3>
+<p>The Windows Phone navigation system is based on the web metaphor. Unfortunately, the web is the wrong model for a single-user device. The decision to model navigation in this way has caused phone applications to act like web pages. The intent was to bring a well-understood interaction language to the phone. But in practice, it just forced application developers to work around the shortcomings of a misappropriated model.</p>
+<p>This decision leads developers into a view-first approach, rather than beginning with the view model. It forces developers to convert object references to strings, only to convert them back into object references. And it requires ugly hacks to produce even the simplest of interactions. If you write Windows Phone apps, prepare to use these workarounds.</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="indexb0b4.html?cat=48" title="View all posts in Windows Phone 7" rel="category">Windows Phone 7</a> |   <a href="indexb0f8.html?p=643#comments" title="Comment on Windows Phone navigation workarounds">2 Comments &#187;</a></p>
+
+			</div>
+
+				<div class="post">
+				<h3 id="post-642"><a href="indexd1c3.html?p=642" rel="bookmark" title="Permanent Link to How to Make the MacBook Pro Trackpad Less Jumpy">How to Make the MacBook Pro Trackpad Less Jumpy</a></h3>
+				<small>Thursday, April 21st, 2011</small>
+
+				<div class="entry">
+					<p>To right-click on the MacBook Pro, you put two fingers on the trackpad, then click. To scroll, you put two fingers on the trackpad and move up or down. In Visual Studio, the scrolling is extremely sensitive. When you try to right-click something, it often scrolls out from underneath the mouse. You end up right-clicking on something else entirely.</p>
+<p>It seems that the problem is related to the horizontal motion rather than the vertical. If you reduce the number of lines that the mouse rocker moves left and right, the problem subsides. But the Mouse control panel applet won’t let you set this value to zero, so you can’t make it go away entirely.</p>
+<p>Unless you hack the registry.</p>
+<p>Download the attached file, <strong>examine it to make sure you understand what it does</strong>, then merge it into your registry. Reboot, and you will be able to right-click without the jumpiness.</p>
+<div style="padding-bottom: 0px; margin: 0px; padding-left: 0px; padding-right: 0px; display: inline; float: none; padding-top: 0px" id="scid:8eb9d37f-1541-4f29-b6f4-1eea890d4876:6617625d-0945-405c-a02c-4e0d5025ff04" class="wlWriterEditableSmartContent">
+<div><a href="../pictures/68e9b42d3c6f_13A2B/NoScroll.mp3" target="_self">NoScroll.reg</a></div>
+</p>
+</div>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="index97dc.html?cat=33" title="View all posts in Problems" rel="category">Problems</a> |   <a href="indexd1c3.html?p=642#respond" title="Comment on How to Make the MacBook Pro Trackpad Less Jumpy">No Comments &#187;</a></p>
+
+			</div>
+
+				<div class="post">
+				<h3 id="post-641"><a href="indexd2ad.html?p=641" rel="bookmark" title="Permanent Link to Building an occasionally connected Silverlight application with Correspondence">Building an occasionally connected Silverlight application with Correspondence</a></h3>
+				<small>Monday, April 18th, 2011</small>
+
+				<div class="entry">
+					<p>I posted a <a href="index55df.html?p=640">to-do list application built with Correspondence</a>. It holds the user’s data in isolated storage, and pushes it to a synchronization service. It took about 56 minutes and 41 seconds to build.</p>
+<p><iframe src="http://player.vimeo.com/video/22700086" width="600" frameborder="0" height="353"></iframe></p>
+<p><a href="http://vimeo.com/22700086">Building an occasionally connected Silverlight application with Correspondence</a> from <a href="http://vimeo.com/michaellperry">Michael L Perry</a> on <a href="http://vimeo.com/">Vimeo</a>.</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="index38d0.html?cat=46" title="View all posts in Correspondence" rel="category">Correspondence</a> |   <a href="indexd2ad.html?p=641#respond" title="Comment on Building an occasionally connected Silverlight application with Correspondence">No Comments &#187;</a></p>
+
+			</div>
+
+				<div class="post">
+				<h3 id="post-640"><a href="index55df.html?p=640" rel="bookmark" title="Permanent Link to Correspondence for Silverlight in NuGet">Correspondence for Silverlight in NuGet</a></h3>
+				<small>Saturday, April 16th, 2011</small>
+
+				<div class="entry">
+					<p>With Correspondence for Silverlight, you can create occasionally-connected client applications that run either in or out of the browser. They use isolated storage to save the user’s changes before pushing them up to the synchronization service. From there, they are pushed out to other Silverlight or Windows Phone clients. Create a Silverlight application and use NuGet to add a reference to:
+<p><font size="4"><strong>Correspondence.Silverlight.AllInOne</strong></font></p>
+<p>The package will add the following features to your application:</p>
+<ul>
+<li>Main view model </li>
+<li>View model locator </li>
+<li>Model </li>
+<li>Navigation model </li>
+<li>Synchronization service </li>
+</ul>
+<p>Open the Readme.txt file for instructions on adding the view model locator to App.xaml and MainPage.xaml.</p>
+<h3>To-do list</h3>
+<p>As an example, try out this to-do list application. Log in using any user name you like; this example app doesn’t authenticate. You can add tasks, update their name, and mark them completed.</p>
+<p><object data="data:application/x-silverlight-2," type="application/x-silverlight-2" width="540" height="300" autoupdate="true">
+<param name="source" value="../pictures/Correspondence_E090/ToDoList_3.xap" />
+<param name="minRuntimeVersion" value="3.0.40624.0" />
+<param name="background" value="White" />
+<param name="autoUpgrade" value="true" /> <a href="http://go.microsoft.com/fwlink/?LinkID=149156&amp;v=3.0.40624.0" style="text-decoration:none">          			  <img src="http://go.microsoft.com/fwlink/?LinkId=161376" alt="Get Microsoft Silverlight" style="border-style:none" /> </a> </object></p>
+<p>Some things to try. Log in using your name, enter some tasks, then switch to another user. Those tasks disappear. Switch back and they reappear.</p>
+<p>Close the browser, then come back to this page. Your data is still here. Disconnect from the network and this still works.</p>
+<p>Now go to a different machine and log in using your name again. At first the list will be empty, but you’ll see tasks come down as the app synchronizes.</p>
+<p>A web page that lets you share data between two browsers is nothing new. What makes this different is:</p>
+<ul>
+<li>Data is still accessible while off line. This is particularly important for out-of-browser applications. </li>
+<li>There is no application-specific server-side schema or code. The data model and all of your logic is in the client. </li>
+<li>Silverlight applications can synchronize with Windows Phone applications. </li>
+</ul>
+<p>Here’s how the to-do list example is built. Download the <a href="../pictures/Correspondence_E090/ToDoList.zip" target="_self">source code</a> and follow along. </p>
+<h3>Log on</h3>
+<p>A User is a fact identified by a user name. We represent the user in the Factual model:</p>
+<pre class="code">fact User {
+key:
+    string userName;
+}</pre>
+<p>Any time we create a User with a give user name, we get back the same instance. This allows the user to log in. Of course, a production system would authenticate the user, but it would still follow the same pattern. The user input is captured first in a transient navigation model: </p>
+<pre class="code"><span style="color: blue">public class </span><span style="color: #2b91af">NavigationModel
+</span>{
+    <span style="color: blue">private </span><span style="color: #2b91af">Independent</span>&lt;<span style="color: blue">string</span>&gt; _userName = <span style="color: blue">new </span><span style="color: #2b91af">Independent</span>&lt;<span style="color: blue">string</span>&gt;();
+
+    <span style="color: blue">public string </span>UserName
+    {
+        <span style="color: blue">get </span>{ <span style="color: blue">return </span>_userName; }
+        <span style="color: blue">set </span>{ _userName.Value = <span style="color: blue">value</span>; }
+    }
+}</pre>
+<p>This is where the user name is stored while the user is logging in. We expose this property and a login command through the view model. </p>
+<pre class="code"><span style="color: blue">public string </span>UserName
+{
+    <span style="color: blue">get </span>{ <span style="color: blue">return </span>_navigationModel.UserName; }
+    <span style="color: blue">set </span>{ _navigationModel.UserName = <span style="color: blue">value</span>; }
+}
+
+<span style="color: blue">public </span><span style="color: #2b91af">ICommand </span>LogIn
+{
+    <span style="color: blue">get
+    </span>{
+        <span style="color: blue">return </span><span style="color: #2b91af">MakeCommand
+            </span>.When(() =&gt; !<span style="color: #2b91af">String</span>.IsNullOrEmpty(_navigationModel.UserName))
+            .Do(() =&gt;
+            {
+                <span style="color: #2b91af">User </span>user = _community.AddFact(<span style="color: blue">new </span><span style="color: #2b91af">User</span>(_navigationModel.UserName));
+                _navigationModel.CurrentUser = user;
+                _navigationModel.UserName = <span style="color: blue">string</span>.Empty;
+            });
+    }
+}</pre>
+<p>The login command is only enabled when a user name has been entered. When the user clicks the button, a new User is created with the name that they entered. That User is then stored in the navigation model, and the entered name is cleared out. </p>
+<h3>List tasks</h3>
+<p>Once we have a User fact in our navigation model, we can list the tasks assigned to that user. A task is another fact, which references the User to which it is assigned.</p>
+<pre class="code">fact Task {
+key:
+    unique;
+    User assignedTo;
+}</pre>
+<p>Because the key doesn’t already contain enough information to distinguish one task from another, it is marked as “unique”. This causes Correspondence to generate a new Task every time one is created, rather than looking for an existing one. </p>
+<p>The User queries for related tasks.</p>
+<pre class="code">fact User {
+    ...
+
+query:
+    Task* openTasks {
+        Task t : t.assignedTo = this
+            where not t.isCompleted
+    }
+}</pre>
+<p>That query is exposed through the view model. The MainViewModel generates a list of TaskViewModels to wrap the Tasks.</p>
+<pre class="code"><span style="color: blue">public </span><span style="color: #2b91af">IEnumerable</span>&lt;<span style="color: #2b91af">TaskViewModel</span>&gt; OpenTasks
+{
+    <span style="color: blue">get
+    </span>{
+        <span style="color: blue">if </span>(_navigationModel.CurrentUser != <span style="color: blue">null</span>)
+            <span style="color: blue">return
+                from </span><span style="color: #2b91af">Task </span>t <span style="color: blue">in </span>_navigationModel.CurrentUser.OpenTasks
+                <span style="color: blue">select new </span><span style="color: #2b91af">TaskViewModel</span>(t);
+        <span style="color: blue">else
+            return </span><span style="color: #2b91af">Enumerable</span>.Empty&lt;<span style="color: #2b91af">TaskViewModel</span>&gt;();
+    }
+}</pre>
+<h3>Add a task</h3>
+<p>The user can enter the name of a task, then hit the Add button to add it to the list. Just like the user name, the task name is stored in the navigation model temporarily. When a user is logged on and a name has been entered, the button becomes enabled. When clicked, it adds a task assigned to the user, and sets the task name.</p>
+<pre class="code"><span style="color: blue">public </span><span style="color: #2b91af">ICommand </span>AddTask
+{
+    <span style="color: blue">get
+    </span>{
+        <span style="color: blue">return </span><span style="color: #2b91af">MakeCommand
+            </span>.When(() =&gt;
+                _navigationModel.CurrentUser != <span style="color: blue">null </span>&amp;&amp;
+                !<span style="color: #2b91af">String</span>.IsNullOrEmpty(_navigationModel.TaskName))
+            .Do(() =&gt;
+            {
+                <span style="color: #2b91af">Task </span>task = _community.AddFact(<span style="color: blue">new </span><span style="color: #2b91af">Task</span>(_navigationModel.CurrentUser));
+                task.Name = _navigationModel.TaskName;
+                _navigationModel.TaskName = <span style="color: #2b91af">String</span>.Empty;
+            });
+    }
+}</pre>
+<h3>Change a task name</h3>
+<p>Notice that the constructor above only takes the User to which the task is assigned. That’s because the User is part of the key. The task name is not. It is a mutable property.</p>
+<pre class="code">fact Task {
+    ...
+
+mutable:
+    string name;
+}</pre>
+<p>Because the property is mutable, the user can edit the name and hit the Update button. The button is only enabled when a task is selected and the name has been entered. </p>
+<pre class="code"><span style="color: blue">public </span><span style="color: #2b91af">ICommand </span>UpdateTask
+{
+    <span style="color: blue">get
+    </span>{
+        <span style="color: blue">return </span><span style="color: #2b91af">MakeCommand
+            </span>.When(() =&gt;
+                _navigationModel.SelectedTask != <span style="color: blue">null </span>&amp;&amp;
+                !<span style="color: #2b91af">String</span>.IsNullOrEmpty(_navigationModel.TaskName))
+            .Do(() =&gt;
+            {
+                _navigationModel.SelectedTask.Name = _navigationModel.TaskName;
+                _navigationModel.TaskName = <span style="color: #2b91af">String</span>.Empty;
+            });
+    }
+}</pre>
+<h3>Mark a task completed</h3>
+<p>Finally, the user can mark a task as completed. This is itself a new fact.</p>
+<pre class="code">fact TaskCompleted {
+key:
+    Task completedTask;
+}</pre>
+<p>The Task fact queries for related TaskCompleted facts to see if it is completed. </p>
+<pre class="code">fact Task {
+    ...
+
+query:
+    bool isCompleted {
+        exists TaskCompleted c : c.completedTask = this
+    }
+}</pre>
+<p>This query is then used in the User’s query so that he sees only the open tasks. </p>
+<pre class="code">fact User {
+    ...
+
+query:
+    Task* openTasks {
+        Task t : t.assignedTo = this
+            where not t.isCompleted
+    }
+}</pre>
+<p>When the user clicks the Complete button, it completes the task. We added this method to the Task itself using a partial class. </p>
+<pre class="code"><span style="color: blue">public </span><span style="color: #2b91af">ICommand </span>CompleteTask
+{
+    <span style="color: blue">get
+    </span>{
+        <span style="color: blue">return </span><span style="color: #2b91af">MakeCommand
+            </span>.When(() =&gt; _navigationModel.SelectedTask != <span style="color: blue">null</span>)
+            .Do(() =&gt;
+            {
+                _navigationModel.SelectedTask.Complete();
+            });
+    }
+}</pre>
+<pre class="code"><span style="color: blue">public partial class </span><span style="color: #2b91af">Task
+</span>{
+    <span style="color: blue">public void </span>Complete()
+    {
+        Community.AddFact(<span style="color: blue">new </span><span style="color: #2b91af">TaskCompleted</span>(<span style="color: blue">this</span>));
+    }
+}</pre>
+<p>Because this creates the TaskCompleted fact, it causes the list to refresh, and the task is removed. </p>
+<h3>Build your own apps</h3>
+<p>Please download Correspondence and try it out. If you have any questions about building your own models, please contact me by <a href="mailto:mperry@mallardsoft.com">email</a> or <a href="http://twitter.com/michaellperry">Twitter</a>. If you’d like to use my synchronization server, just send me a request for an API key. I’ll be glad to help you get set up.</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="index38d0.html?cat=46" title="View all posts in Correspondence" rel="category">Correspondence</a> |   <a href="index55df.html?p=640#respond" title="Comment on Correspondence for Silverlight in NuGet">No Comments &#187;</a></p>
+
+			</div>
+
+				<div class="post">
+				<h3 id="post-635"><a href="indexb753.html?p=635" rel="bookmark" title="Permanent Link to Correspondence in NuGet">Correspondence in NuGet</a></h3>
+				<small>Friday, April 1st, 2011</small>
+
+				<div class="entry">
+					<p>I have released Correspondence for Windows Phone 7 to NuGet. Correspondence is a NoSQL database for the phone and other occasionally connected clients. While offline, it queues all of your user’s changes. While online, it pushes those changes to a synchronization server, which in turn pushes it to other devices.Create a Windows Phone 7 application and install the following package:</p>
+<p><strong><font size="3">Correspondence.WindowsPhone.AllInOne</font></strong><strong></strong></p>
+<p>This will add models, view models, a view model locator, and a synchronization service to your application.</p>
+<h3>Models</h3>
+<p>Correspondence models are expressed in a language called <a href="http://historicalmodeling.com/book/factual">Factual</a>. The package adds a folder called Models that contains a Factual file and a T4 template to parse it. The first thing you’ll want to do after adding the package reference is to hit the “Transform All Templates” button to generate some code.The starter model contains concepts useful for any Windows Phone 7 application. First it has an Identity:</p>
+<pre>fact Identity {
+key:
+   string anonymousId;
+   ...
+}</pre>
+<p>The Identity fact is uniquely identified by the user’s anonymous Windows Live ID. If they move to a different device, they carry their Identity with them. This makes it really easy to collaborate between users.The model also has the ability to disable and reenable toast notifications:</p>
+<pre>fact DisableToastNotification {
+key:
+   unique;
+   Identity identity;
+query:
+   bool isReenabled {
+       exists EnableToastNotification e : e.disable = this
+   }
+}
+
+fact EnableToastNotification {
+key:
+   DisableToastNotification* disable;
+}</pre>
+<p>The Identity fact queries to see if there are any DisableToastNotification facts:<br />
+  </p>
+<pre>fact Identity {
+   ...
+query:
+   DisableToastNotification* isToastNotificationDisabled {
+       DisableToastNotification d : d.identity = this
+           where not d.isReenabled
+   }
+}</pre>
+<p>The Identity partial class adds a property that turns these successor facts into a simple boolean property:</p>
+<pre class="code"><span style="color: blue">public partial class </span><span style="color: #2b91af">Identity</span>
+{
+    <span style="color: blue">public bool </span>ToastNotificationEnabled
+    {
+        <span style="color: blue">get </span>{ <span style="color: blue">return </span>!IsToastNotificationDisabled.Any(); }
+        <span style="color: blue">set
+        </span>{
+            <span style="color: blue">if </span>(IsToastNotificationDisabled.Any() &amp;&amp; <span style="color: blue">value</span>)
+            {
+                Community.AddFact(<span style="color: blue">new </span><span style="color: #2b91af">EnableToastNotification</span>(IsToastNotificationDisabled));
+            }
+            <span style="color: blue">else if </span>(!IsToastNotificationDisabled.Any() &amp;&amp; !<span style="color: blue">value</span>)
+            {
+                Community.AddFact(<span style="color: blue">new </span><span style="color: #2b91af">DisableToastNotification</span>(<span style="color: blue">this</span>));
+            }
+        }
+    }
+}</pre>
+<p>Extend these facts and build your model in model.fact. Hit “Transform All Templates” after each change to regenerate the classes. Create partial classes to add your own business logic. ViewModelsThe package also adds a ViewModels folder, which contains two view models:</p>
+<ul>
+<li>MainViewModel </li>
+<li>SettingsViewModel </li>
+</ul>
+<p>The main view model is just an empty starting place. Add properties to this view model to data bind to controls on your main page.Settings view model has one property started for you. It exposes the ToastNotificationEnabled property in the Identity. This is just a simple pass-through. You don’t raise PropertyChanged events or inherit a base class. Correspondence will raise the PropertyChanged event for you. This works because Correspondence is built on <a href="http://updatecontrols.net/">Update Controls</a>.</p>
+<pre class="code"><span style="color: blue">public bool </span>ToastNotificationEnabled
+{
+    <span style="color: blue">get </span>{ <span style="color: blue">return </span>_identity.ToastNotificationEnabled; }
+    <span style="color: blue">set </span>{ _identity.ToastNotificationEnabled = <span style="color: blue">value</span>; }
+}</pre>
+<p>The ViewModels folder also contains a ViewModelLocator class. Open the Readme.txt file for instructions on adding this class to your application resources, and referencing it in your views. As you create your own view models, follow the pattern demonstrated with these two existing view models to add them to the locator.</p>
+<pre class="code"><span style="color: blue">public class </span><span style="color: #2b91af">ViewModelLocator</span>
+{
+    <span style="color: blue">private readonly </span><span style="color: #2b91af">MainViewModel </span>_main;
+    <span style="color: blue">public </span>ViewModelLocator()
+    {
+        ...
+        _main = <span style="color: blue">new </span><span style="color: #2b91af">MainViewModel</span>(_synchronizationService.Identity);
+        ...
+    }
+    <span style="color: blue">public object </span>Main
+    {
+        <span style="color: blue">get </span>{ <span style="color: blue">return </span><span style="color: #2b91af">ForView</span>.Wrap(_main); }
+    }
+}</pre>
+<h3>SynchronizationService</h3>
+<p>Correspondence would be just another isolated-storage-based NoSQL database if it weren’t for the synchronization service. For the most part, this class will be invisible to you. It is initialized in the view model locator, and it works automatically.Every time you store a published fact, the synchronization service wakes up and pushes it to the server. If the device is off-line at the time, the fact is queued. The synchronization service will wake up when the network becomes available and start pushing facts.</p>
+<p>When another device publishes a fact to which you have subscribed, the server will send a push notification. The synchronization service responds to these push notifications and adds the facts to the repository. Your app is notified via data binding, and the UI updates.The synchronization service is also watching the ToastNotificationEnabled property. When it is true, it subscribes for toast notifications. When it is false, it unsubscribes.</p>
+<p>There are two parts of the synchronization service that you are likely to change. The first is the POXConfigurationProvider. When you create an account with a synchronization server, you will be issued a URL, a user name, and a password. Put these into this class.</p>
+<pre class="code"><span style="color: blue">public </span><span style="color: #2b91af">POXConfiguration </span>Configuration
+{
+    <span style="color: blue">get
+    </span>{
+        <span style="color: blue">string </span>address = <span style="color: #a31515">&quot;https://historicalmodeling.com/correspondence_server_web/pox&quot;</span>;
+        <span style="color: blue">string </span>userName = <span style="color: #a31515">&quot;&lt;&lt;Your username&gt;&gt;&quot;</span>;
+        <span style="color: blue">string </span>password = <span style="color: #a31515">&quot;&lt;&lt;Your password&gt;&gt;&quot;</span>;
+        <span style="color: blue">return new </span><span style="color: #2b91af">POXConfiguration</span>(address, <span style="color: #a31515">&quot;MyCoolWindowsPhoneApplication&quot;</span>, userName, password);
+    }
+}</pre>
+<p>The second is the subscriptions. The synchronization service subscribes to the Identity. The device will receive any facts published to the user’s Identity. As you develop your own model, you will create other publications. Add linq expressions here to subscribe to those facts.</p>
+<pre class="code">_community = <span style="color: blue">new </span><span style="color: #2b91af">Community</span>(<span style="color: #2b91af">IsolatedStorageStorageStrategy</span>.Load())
+    .AddAsynchronousCommunicationStrategy(<span style="color: blue">new </span><span style="color: #2b91af">POXAsynchronousCommunicationStrategy</span>(configurationProvider))
+    .Register&lt;<span style="color: #2b91af">CorrespondenceModel</span>&gt;()
+    <strong>.Subscribe(() =&gt; _identity)</strong>
+    ;</pre>
+<h3>More to come</h3>
+<p>There is definitely a learning curve for historical modeling in general, and Correspondence in particular. Please review the body of articles <a href="index38d0.html?cat=46">here</a> and on <a href="http://historicalmodeling.com/book/">Historical Modeling</a>. I will also be posting videos and examples over the next few weeks.I am also opening my synchronization server for a private beta. Please email or mention me to reserve your place. mperry@mallardsoft.com or <a href="http://twitter.com/michaellperry">@michaellperry</a>.</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="index38d0.html?cat=46" title="View all posts in Correspondence" rel="category">Correspondence</a> |   <a href="indexb753.html?p=635#respond" title="Comment on Correspondence in NuGet">No Comments &#187;</a></p>
+
+			</div>
+
+		
+		<div class="navigation">
+			<div class="alignleft"></div>
+			<div class="alignright"></div>
+		</div>
+
+	
+	</div>
+		</td>
+	</tr>
+</table>
+
+<hr />
+<div id="footer">
+<!-- If you'd like to support WordPress, having the "powered by" link someone on your blog is the best way, it's our only promotion or advertising. -->
+	<p>
+		Adventures in Software is proudly powered by 
+		<a href="http://wordpress.org/">WordPress</a>
+		<br /><a href="indexd784.html?feed=rss2">Entries (RSS)</a>
+		and <a href="indexa6da.html?feed=comments-rss2">Comments (RSS)</a>.
+		<!-- 17 queries. 0.413 seconds. -->
+	</p>
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-389401-3");
+pageTracker._trackPageview();
+} catch(err) {}</script></div>
+
+<!-- Gorgeous design by Michael Heilemann - http://binarybonsai.com/kubrick/ -->
+
+		<div id="sk2-footer" style="color:#FFF; background-color:#444; padding: 3px 2px 3px 2px; border-top: #888 solid 1px;">This blog is protected by <a href="http://unknowngenius.com/blog/" title="Dave">dr Dave</a>'s <strong><a href="http://unknowngenius.com/blog/wordpress/spam-karma/" title="SK2">Spam Karma 2</a></strong>: <strong>274531</strong>  Spams eaten and counting...</div><script type="text/javascript" src="replies.js"></script>
+<script type="text/javascript" src="blogger.js"></script>
+<script type="text/javascript" src="http://twitter.com/statuses/user_timeline/michaellperry.json?callback=twitterCallback2&amp;count=5"></script>
+<script type="text/javascript" src="http://search.twitter.com/search.json?q=@michaellperry&amp;callback=twitterCallbackReplies&amp;rpp=5"></script>
+</body>
+
+<!-- Mirrored from adventuresinsoftware.com/blog/?m=201104 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 Jan 2017 12:32:31 GMT -->
+</html>

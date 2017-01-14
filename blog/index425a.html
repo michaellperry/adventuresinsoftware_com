@@ -1,0 +1,815 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+
+
+<!-- Mirrored from adventuresinsoftware.com/blog/?m=200908 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 Jan 2017 12:39:36 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>Adventures in Software   &raquo; 2009&raquo; August</title>
+
+<meta name="generator" content="WordPress 2.3.3" /> <!-- leave this for stats -->
+
+<link rel="stylesheet" href="wp-content/themes/ais2/style.css" type="text/css" media="screen" />
+<link rel="alternate" type="application/rss+xml" title="Adventures in Software RSS Feed" href="indexd784.html?feed=rss2" />
+<link rel="pingback" href="xmlrpc.html" />
+    <script type="text/javascript">
+        function onSilverlightError(sender, args) {
+            var appSource = "";
+            if (sender != null && sender != 0) {
+              appSource = sender.getHost().Source;
+            }
+            
+            var errorType = args.ErrorType;
+            var iErrorCode = args.ErrorCode;
+
+            if (errorType == "ImageError" || errorType == "MediaError") {
+              return;
+            }
+
+            var errMsg = "Unhandled Error in Silverlight Application " +  appSource + "\n" ;
+
+            errMsg += "Code: "+ iErrorCode + "    \n";
+            errMsg += "Category: " + errorType + "       \n";
+            errMsg += "Message: " + args.ErrorMessage + "     \n";
+
+            if (errorType == "ParserError") {
+                errMsg += "File: " + args.xamlFile + "     \n";
+                errMsg += "Line: " + args.lineNumber + "     \n";
+                errMsg += "Position: " + args.charPosition + "     \n";
+            }
+            else if (errorType == "RuntimeError") {           
+                if (args.lineNumber != 0) {
+                    errMsg += "Line: " + args.lineNumber + "     \n";
+                    errMsg += "Position: " +  args.charPosition + "     \n";
+                }
+                errMsg += "MethodName: " + args.methodName + "     \n";
+            }
+
+            throw new Error(errMsg);
+        }
+    </script>
+
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc0db0.php?rsd" />
+ <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="wp-includes/wlwmanifest.xml" /> <style type='text/css'>
+<!--#header { background: url('wp-content/themes/ais2/images/header-imgae03.html?upper=A7A73F&amp;lower=77773F') no-repeat bottom center; }
+--></style>
+</head>
+<body>
+<div id="page">
+
+<div class="aisTopBar">
+	<form method="get" id="searchform" action="http://adventuresinsoftware.com/blog/">
+<div>
+<a href="indexd784.html?feed=rss2"><img src="../images/feed-icon-28x28.png" border="0"></a>
+<input type="text" value="" name="s" id="s" />
+<input type="submit" id="searchsubmit" value="Search" />
+</div>
+</form>
+</div>
+
+<div class="aisHeaderImageRight">
+	<div class="aisHeaderImage">
+	<div class="aisHeaderCornerRight">
+	<div class="aisHeaderCornerLeft">
+	<div class="aisImageBar">
+	<div class="aisSubSites">
+		<a href="index.html" class="aisSubSiteLink"><span class="aisSiteTabRight"><span class="aisSiteTabLeft"><span class="aisSiteTab">
+			home</span></span></span></a>
+		<a class="aisSubSiteLink" href="indexb60a.html?cat=27"><span class="aisSiteTabRight"><span class="aisSiteTabLeft"><span class="aisSiteTab">
+			historic modeling</span></span></span></a>
+		<a class="aisSubSiteLink" href="indexa88f.html?cat=36"><span class="aisSiteTabRight"><span class="aisSiteTabLeft"><span class="aisSiteTab">
+			update controls</span></span></span></a>
+		<a href="index2d79.html?cat=26" class="aisSubSiteLink"><span class="aisSiteTabRight"><span class="aisSiteTabLeft"><span class="aisSiteTab">
+			degrees of freedom</span></span></span></a>
+		<a class="aisSubSiteLink" href="indexba53.html?page_id=2"><span class="aisSiteTabRight"><span class="aisSiteTabLeft"><span class="aisSiteTab">
+			about us</span></span></span></a>
+
+	</div>
+	</div>
+	</div>
+	</div>
+	</div>
+</div>
+
+<table style="width: 100%" cellspacing="0" cellpadding="0">
+	<tr valign="top">
+		<td width="210px">
+<div id="sidebar">
+<div class="aisLeftColumnFill">
+<div class="aisLeftColumnBottom">
+<div class="aisLeftColumnTop">
+<div id="twitter_div" class="aisLeftNav">
+<h2 class="sidebar-title">Twitter Updates</h2>
+<ul id="twitter_update_list"></ul>
+<a href="http://twitter.com/michaellperry" id="follow">Follow me</a>
+</div>
+<div id="twitter_reply_div" class="aisLeftNav">
+<h2 class="sidebar-title">Twitter Replies</h2>
+<ul id="twitter_reply_list"></ul>
+</div>
+
+<div class="aisLeftNav">
+<a href='http://ineta.org/Speakers/SearchCommunitySpeakers.aspx?SpeakerId=c5110e21-9243-461b-a464-a6548524e885'><img alt='INETA Community Speakers Program' border='0' src='../../www.ineta.org/images/OfficialLogos/InetaCommunitySpeakersRequestMe.html' /></a>
+</div>
+
+<div class="aisLeftNav">
+	<li class="pagenav"><h2>Pages</h2><ul><li class="page_item page-item-2"><a href="indexba53.html?page_id=2" title="About Us">About Us</a></li>
+<li class="page_item page-item-210"><a href="index6ae3.html?page_id=210" title="Templates">Templates</a></li>
+</ul></li></div>
+
+<div class="aisLeftNav">
+<h2>Archives</h2>
+<ul>
+	<li><a href='indexb4d5.html?m=201110' title='October 2011'>October 2011</a></li>
+	<li><a href='indexc61a.html?m=201106' title='June 2011'>June 2011</a></li>
+	<li><a href='indexa80d.html?m=201105' title='May 2011'>May 2011</a></li>
+	<li><a href='index512b.html?m=201104' title='April 2011'>April 2011</a></li>
+	<li><a href='index08fb.html?m=201103' title='March 2011'>March 2011</a></li>
+	<li><a href='index52f4.html?m=201102' title='February 2011'>February 2011</a></li>
+	<li><a href='index74f1.html?m=201101' title='January 2011'>January 2011</a></li>
+	<li><a href='index8956.html?m=201012' title='December 2010'>December 2010</a></li>
+	<li><a href='indexa1aa.html?m=201011' title='November 2010'>November 2010</a></li>
+	<li><a href='indexe3d5.html?m=201010' title='October 2010'>October 2010</a></li>
+	<li><a href='index9ab9.html?m=201009' title='September 2010'>September 2010</a></li>
+	<li><a href='index1ff0.html?m=201008' title='August 2010'>August 2010</a></li>
+	<li><a href='index9f11.html?m=201007' title='July 2010'>July 2010</a></li>
+	<li><a href='index31f0.html?m=201006' title='June 2010'>June 2010</a></li>
+	<li><a href='indexd189.html?m=201005' title='May 2010'>May 2010</a></li>
+	<li><a href='indexb5c0.html?m=201004' title='April 2010'>April 2010</a></li>
+	<li><a href='indexf258.html?m=201003' title='March 2010'>March 2010</a></li>
+	<li><a href='index6e30.html?m=201002' title='February 2010'>February 2010</a></li>
+	<li><a href='index6b19.html?m=201001' title='January 2010'>January 2010</a></li>
+	<li><a href='index5c0a.html?m=200912' title='December 2009'>December 2009</a></li>
+	<li><a href='index8f62.html?m=200911' title='November 2009'>November 2009</a></li>
+	<li><a href='index451d.html?m=200910' title='October 2009'>October 2009</a></li>
+	<li><a href='index3e04.html?m=200909' title='September 2009'>September 2009</a></li>
+	<li><a href='index425a.html?m=200908' title='August 2009'>August 2009</a></li>
+	<li><a href='index9907.html?m=200907' title='July 2009'>July 2009</a></li>
+	<li><a href='index3104.html?m=200906' title='June 2009'>June 2009</a></li>
+	<li><a href='indexc36d.html?m=200905' title='May 2009'>May 2009</a></li>
+	<li><a href='index17e8.html?m=200904' title='April 2009'>April 2009</a></li>
+	<li><a href='index10a5.html?m=200903' title='March 2009'>March 2009</a></li>
+	<li><a href='index8988.html?m=200902' title='February 2009'>February 2009</a></li>
+	<li><a href='index1419.html?m=200901' title='January 2009'>January 2009</a></li>
+	<li><a href='index7866.html?m=200812' title='December 2008'>December 2008</a></li>
+	<li><a href='index55f6.html?m=200811' title='November 2008'>November 2008</a></li>
+	<li><a href='indexa7bc.html?m=200810' title='October 2008'>October 2008</a></li>
+	<li><a href='indexe77c.html?m=200809' title='September 2008'>September 2008</a></li>
+	<li><a href='indexcffc.html?m=200808' title='August 2008'>August 2008</a></li>
+	<li><a href='index0e62.html?m=200807' title='July 2008'>July 2008</a></li>
+	<li><a href='indexfda7.html?m=200806' title='June 2008'>June 2008</a></li>
+	<li><a href='index7d64.html?m=200805' title='May 2008'>May 2008</a></li>
+	<li><a href='index94dd.html?m=200804' title='April 2008'>April 2008</a></li>
+	<li><a href='index9631.html?m=200803' title='March 2008'>March 2008</a></li>
+	<li><a href='indexdd52.html?m=200802' title='February 2008'>February 2008</a></li>
+	<li><a href='index21ee.html?m=200801' title='January 2008'>January 2008</a></li>
+	<li><a href='index363c.html?m=200712' title='December 2007'>December 2007</a></li>
+	<li><a href='index7493.html?m=200711' title='November 2007'>November 2007</a></li>
+	<li><a href='index93a7.html?m=200710' title='October 2007'>October 2007</a></li>
+	<li><a href='index4ca8.html?m=200709' title='September 2007'>September 2007</a></li>
+	<li><a href='index6124.html?m=200708' title='August 2007'>August 2007</a></li>
+	<li><a href='index6013.html?m=200707' title='July 2007'>July 2007</a></li>
+	<li><a href='index2ab6.html?m=200706' title='June 2007'>June 2007</a></li>
+	<li><a href='index44f0.html?m=200705' title='May 2007'>May 2007</a></li>
+	<li><a href='indexf0b4.html?m=200704' title='April 2007'>April 2007</a></li>
+	<li><a href='index481d.html?m=200703' title='March 2007'>March 2007</a></li>
+	<li><a href='indexcbea.html?m=200702' title='February 2007'>February 2007</a></li>
+	<li><a href='index9cdc.html?m=200701' title='January 2007'>January 2007</a></li>
+	<li><a href='index3ea4.html?m=200612' title='December 2006'>December 2006</a></li>
+	<li><a href='index67ca.html?m=200611' title='November 2006'>November 2006</a></li>
+	<li><a href='indexff49.html?m=200610' title='October 2006'>October 2006</a></li>
+	<li><a href='index611c.html?m=200609' title='September 2006'>September 2006</a></li>
+	<li><a href='index9a21.html?m=200608' title='August 2006'>August 2006</a></li>
+	<li><a href='index3ee9.html?m=200607' title='July 2006'>July 2006</a></li>
+	<li><a href='indexe13a.html?m=200606' title='June 2006'>June 2006</a></li>
+</ul>
+</div>
+
+<div class="aisLeftNav">
+	</div>
+
+<div class="aisLeftNav">
+<h2>Books</h2>
+<iframe src="http://rcm.amazon.com/e/cm?t=adventures0d2-20&amp;o=1&amp;p=8&amp;l=as1&amp;asins=0764526413&amp;fc1=000000&amp;IS2=1&amp;lt1=_blank&amp;lc1=0000ff&amp;bc1=000000&amp;bg1=ffffff&amp;f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" name="I5" id="I5"></iframe>
+<br/>
+<iframe src="http://rcm.amazon.com/e/cm?t=adventures0d2-20&amp;o=1&amp;p=8&amp;l=as1&amp;asins=0201633612&amp;fc1=000000&amp;IS2=1&amp;lt1=_blank&amp;lc1=0000ff&amp;bc1=000000&amp;bg1=ffffff&amp;f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" name="I6" id="I6"></iframe>
+<br/>
+<iframe src="http://rcm.amazon.com/e/cm?t=adventures0d2-20&amp;o=1&amp;p=8&amp;l=as1&amp;asins=0136291554&amp;fc1=000000&amp;IS2=1&amp;lt1=_blank&amp;lc1=0000ff&amp;bc1=000000&amp;bg1=ffffff&amp;f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" name="I7" id="I7"></iframe>
+<br/>
+<iframe src="http://rcm.amazon.com/e/cm?t=adventures0d2-20&amp;o=1&amp;p=8&amp;l=as1&amp;asins=1888009195&amp;fc1=000000&amp;IS2=1&amp;lt1=_blank&amp;lc1=0000ff&amp;bc1=000000&amp;bg1=ffffff&amp;f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" name="I8" id="I8"></iframe>
+</div>
+<div class="aisLeftNav">
+<h2>Meta</h2>
+<ul>
+		<li><a href="wp-login.html">Login</a></li>
+	<li><a href="http://validator.w3.org/check/referer" title="This page validates as XHTML 1.0 Transitional">Valid <abbr title="eXtensible HyperText Markup Language">XHTML</abbr></a></li>
+	<li><a href="http://gmpg.org/xfn/"><abbr title="XHTML Friends Network">XFN</abbr></a></li>
+	<li><a href="http://wordpress.org/" title="Powered by WordPress, state-of-the-art semantic personal publishing platform.">WordPress</a></li>
+	</ul>
+</div>
+<div class="aisLeftContent">
+<h2>Community</h2>
+<ul>
+	<script type="text/javascript" src="../../localhost/embed/92q2bbma.js"></script>
+</ul>
+</div>
+
+</div></div></div>
+</div>		</td>
+		<td>
+
+	<div id="content" class="narrowcolumn">
+
+		
+		 		<h2 class="pagetitle">Archive for August, 2009</h2>
+
+		
+
+		<div class="navigation">
+			<div class="alignleft"></div>
+			<div class="alignright"></div>
+		</div>
+
+				<div class="post">
+				<h3 id="post-422"><a href="index9d87.html?p=422" rel="bookmark" title="Permanent Link to Why does software rot?">Why does software rot?</a></h3>
+				<small>Monday, August 31st, 2009</small>
+
+				<div class="entry">
+					<p>In our first Q.E.D. Hour, we covered the first section of Robert C. Martin's <a href="http://www.objectmentor.com/resources/articles/Principles_and_Patterns.pdf">Design Principles and Design Patterns</a>. This first section talks about the symptoms of rotting design.</p>
+<p>When software is created, it is a pure rendition of the designer's intent. But over time, as the software changes, it begins to rot. The changes come from users of the system, but the rot comes from within. Robert C. Martin has identified these four symptoms of rotting design:</p>
+<ul>
+<li>Rigidity - The tendency for changes to ripple through the system, resulting in a resistance to change.</li>
+<li>Fragility - The tendency for seemingly unrelated components to break when you make a change.</li>
+<li>Immobility - The difficulty of isolating a component for reuse in a different system.</li>
+<li>Viscosity - The friction involved in making a change.</li>
+</ul>
+<p>Unlike physical goods, software doesn't rot while it's sitting idle. Software rot occurs only as the system changes. These symptoms only manifest when we try to change the software. So we can eliminate rot in one of two ways: prevent the software from changing, or control its root cause.</p>
+<p><strong><a href="http://www.flickr.com/photos/17258892@N05/2588347668/"><img src="wp-content/uploads/2009/08/dependencies.jpg" style="border: 0px none ; margin: 0px 0px 0px 5px" alt="Dependencies" width="244" align="right" border="0" height="191" /></a>Manage your dependencies</strong><br />
+The root cause of rot is dependencies. For example, we use a service oriented architecture at work. Many of our services depend upon our Catalog service. That makes Catalog rigid, because we can't change it without affecting the others. Our Shopping service depends upon many other services, which makes it fragile. Changing anything in the system runs the risk of breaking Shopping. This also makes Shopping immobile, because we cannot reuse it without all of its dependencies.</p>
+<p>Robert Martin's paper goes on to describe how to invert dependencies in order to manage them. But in our Q.E.D. discussion, we left that for another day. First, we need to learn how to measure our dependencies. Proof is only possible based on the things you can see.</p>
+<p>Right now, we are just interested in static dependencies. These are the dependencies between different pieces of code. Later, we'll talk about dynamic dependencies. Dynamic dependencies occur between different pieces of data. Static dependencies occur at compile-time, while dynamic dependencies occur at run-time.</p>
+<p>There are six static dependencies <strong>visible</strong> from the public interface of a class. These are the types of:</p>
+<ul>
+<li>The base class</li>
+<li>Implemented interfaces</li>
+<li>Constructor parameters</li>
+<li>Method parameters</li>
+<li>Method returns</li>
+<li>Properties</li>
+</ul>
+<p>If your class accepts returns or inherits a type, then it depends upon that type. These dependencies are visible dependencies, since consumers of your class can see them.</p>
+<p>There are several dependencies <strong>hidden</strong> from the public interface of a class. Four most common are:</p>
+<ul>
+<li>Internally created objects</li>
+<li>Static methods of other classes</li>
+<li>Extension methods</li>
+<li>Singletons</li>
+</ul>
+<p>If your class takes on any of these dependencies, consumers of your class cannot tell. You run the risk of making your code rigid, fragile, and immobile by having hidden dependencies.</p>
+<p><strong>Here's my solution</strong><br />
+Make dependencies more visible to reduce rot. Turn hidden dependencies into visible dependencies.</p>
+<p>Turn internal object creation into a factory. If you need to create a new object, don't just new one up. Delegate that function to a factory. <a href="index1a93.html?p=249">No "new"s is good news</a>.</p>
+<p>Turn static method calls into strategies. Calling static methods directly leads to procedural dependency. You are telling the compiler not just what to do, but also exactly which implementation should be used to do it. Instead, use a strategy. Then you can inject the right implementation for each situation without breaking the caller.</p>
+<p>Extension methods are a special case of static methods. It is extremely difficult to track dependencies on extension methods, especially since the name of the class declaring the extension method appears nowhere within the code. You have to study the "using" declarations to find them. Extension methods are best used to add behavior to an interface without requiring implementers to add code. Extension methods are worst used as <a href="http://www.extensionmethod.net/">stupid compiler tricks</a>. And don't even get me started on extension methods that check for null.</p>
+<p>Probably the worst hidden dependency is the singleton. The problem isn't that there is only one instance. The problem is that anybody can depend upon it. If your class uses a singleton, there is no way of seeing this dependency from the outside. Singletons tend to be very rigid, since so many other classes depend upon them. Avoid the singleton pattern. Instead, rely on an IoC container to inject a single implementation of an interface into all components that require it. This turns a hidden dependency into a visible one (a constructor parameter).</p>
+<p>Making all of your dependencies visible is the first step to managing them. Only then can you hope to fight software rot.</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="index51fa.html?cat=40" title="View all posts in qed" rel="category">qed</a> |   <a href="index9d87.html?p=422#respond" title="Comment on Why does software rot?">No Comments &#187;</a></p>
+
+			</div>
+
+				<div class="post">
+				<h3 id="post-420"><a href="index17d3.html?p=420" rel="bookmark" title="Permanent Link to Confidence through proof">Confidence through proof</a></h3>
+				<small>Sunday, August 30th, 2009</small>
+
+				<div class="entry">
+					<p>This week marked the inauguration of Q.E.D. Hour. This is a weekly lunch hour where we talk about techniques for writing provably correct software. The goal of Q.E.D. Hour is to gain confidence in our code.</p>
+<p><a href="wp-content/uploads/2009/08/confidence.jpg"><img style="border-bottom: 0px; border-left: 0px; border-top: 0px; border-right: 0px" border="0" alt="Confidence" align="right" src="wp-content/uploads/2009/08/confidence-thumb.jpg" width="374" height="251"></a>There are several ways to build confidence in your code. You can write specifications to record what the user wants or how you intend to build it. You can single-step through it in the debugger. Or you can write unit tests.</p>
+<p>The problem with all of these confidence builders is that they can only give you confidence in the situations that you've thought about. They can't tell you anything about the situations that you haven't considered.</p>
+<p>What if the user does something not in the use case or user story? Do you write another use case to cover that scenario? When does it stop? Can you ever write enough use cases?</p>
+<p>You can see what the code is doing when you single-step through it in the debugger, but what would it do if you passed in different parameters? Can you every do enough debugging?</p>
+<p>You can see that every unit test you've written passes. What about the unit tests you haven't written? How do you know that the code is correct for all situations? Can you ever write enough tests?</p>
+<p>Even 100% code coverage doesn't save you. The line that references "Customer.Name" is covered by tests, but what happens when Customer is null?</p>
+<p>Mathematical proof is the only way to know that code is correct under all possible conditions. All of the other techniques are empirical. They only verify the code in one situation. Proof, on the other hand, is deductive. It verifies code for an entire class of situations.</p>
+<p>Both empirical and deductive confidence builders are required. Without empirical evidence, you can't be sure that you wrote the code correctly. But without deductive proof, you can't be sure that you wrote the correct code.</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="index51fa.html?cat=40" title="View all posts in qed" rel="category">qed</a> |   <a href="index17d3.html?p=420#respond" title="Comment on Confidence through proof">No Comments &#187;</a></p>
+
+			</div>
+
+				<div class="post">
+				<h3 id="post-417"><a href="indexb8c6.html?p=417" rel="bookmark" title="Permanent Link to Linq and regular expressions: a perfect match">Linq and regular expressions: a perfect match</a></h3>
+				<small>Friday, August 21st, 2009</small>
+
+				<div class="entry">
+					<p>Both Linq and regular expressions are great ways to write declarative code. When you combine the two, the result is magic.</p>
+<p>Here's a utility class that returns a human readable name from a camel-case identifier.</p>
+<pre><span style="color: blue">public</span> <span style="color: blue">static</span> <span style="color: blue">class</span> NameUtilities
+{
+    <span style="color: blue">private</span> <span style="color: blue">static</span> Regex WORD = <span style="color: blue">new</span> Regex(
+        <span style="color: green">// Lower-case letters at the beginning of the word.</span>
+        <span style="color: maroon">"(^[a-z]+)|"</span> +
+        <span style="color: green">// At least two upper-case letters not followed by a lower case letter.</span>
+        <span style="color: maroon">"([A-Z]{2,}(?![a-z]))|"</span> +
+        <span style="color: green">// An upper-case letter followed by lower-case letters.</span>
+        <span style="color: maroon">"([A-Z][a-z]+)"</span>);
+
+    <span style="color: blue">public</span> <span style="color: blue">static</span> <span style="color: blue">string</span> HumanReadableName(<span style="color: blue">string</span> identifier)
+    {
+        <span style="color: green">// Split the identifier at capitals followed by lower case.</span>
+        <span style="color: blue">return</span> WORD.Matches(identifier).OfType&lt;Match&gt;()
+            .Select(m =&gt; InitialCaps(m.Value))
+            .Aggregate((name, part) =&gt; name + <span style="color: maroon">" "</span> + part);
+    }
+
+    <span style="color: blue">private</span> <span style="color: blue">static</span> <span style="color: blue">string</span> InitialCaps(<span style="color: blue">string</span> word)
+    {
+        <span style="color: blue">if</span> (word.Length &lt; <span style="color: maroon">2</span>)
+            <span style="color: blue">return</span> word.ToUpper();
+        <span style="color: blue">else</span>
+            <span style="color: blue">return</span> word.Substring(<span style="color: maroon">0</span>, <span style="color: maroon">1</span>).ToUpper() + word.Substring(<span style="color: maroon">1</span>);
+    }
+}</pre>
+<p>The Matches method returns a MatchCollection. Since this class predates .NET generics, it implements the untyped IEnumerable. OfType&lt;Match&gt;() is required to safely cast each member to a Match.</p>
+<p>Each of the Matches is converted into a capitalized word, and the words are concatenated with intervening spaces. The Aggregate() trick is thanks to <a href="http://msmvps.com/blogs/deborahk/archive/2009/07/03/lambdas-aggregating-strings.aspx">Deborah Kurata</a>. Sure, it might be less efficient than StringBuilder.Append(), but measure before you assume.</p>
+<p>The combination of two great declarative programming techniques creates a concise, readable piece of code. The same algorithm written imperatively would be much more complex.</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="index8e7f.html?cat=19" title="View all posts in C#" rel="category">C#</a> |   <a href="indexb8c6.html?p=417#respond" title="Comment on Linq and regular expressions: a perfect match">No Comments &#187;</a></p>
+
+			</div>
+
+				<div class="post">
+				<h3 id="post-416"><a href="index5750.html?p=416" rel="bookmark" title="Permanent Link to The constructor: the strongest of all methods">The constructor: the strongest of all methods</a></h3>
+				<small>Thursday, August 13th, 2009</small>
+
+				<div class="entry">
+					<p>The constructor has a very powerful contract, and one that the compiler proves. The constructor is called once and only once.</p>
+<p>We can use this promise to prove some very useful things. We can prove that required properties are set. We can prove that A happens before B (as we can with other <a href="indexd519.html?p=415">prerequisite techniques</a>). But more strongly, we can prove that A <em>does not</em> happen <em>after</em> B.</p>
+<p><strong>Required properties</strong><br />A constructor has to be called. There is no other way to get an instance of an object. If there are any required properties, they should be constructor parameters. Otherwise, there is no way to prove that they've been set.</p>
+<pre><span style="color: blue">class</span> ReportRequest
+{
+    <span style="color: green">// Required parameters.</span>
+    <span style="color: blue">private</span> User _requestedBy;
+    <span style="color: blue">private</span> Company _requestedFor;
+
+    <span style="color: green">// Optional parameters.</span>
+    <span style="color: blue">private</span> DateTime? _fromDate;
+    <span style="color: blue">private</span> DateTime? _toDate;
+
+    <span style="color: blue">public</span> ReportRequest(User requestedBy, Company requestedFor)
+    {
+        _requestedBy = requestedBy;
+        _requestedFor = requestedFor;
+    }
+
+    <span style="color: blue">public</span> User RequestedBy
+    {
+        <span style="color: blue">get</span> { <span style="color: blue">return</span> _requestedBy; }
+    }
+
+    <span style="color: blue">public</span> Company RequestedFor
+    {
+        <span style="color: blue">get</span> { <span style="color: blue">return</span> _requestedFor; }
+    }
+
+    <span style="color: blue">public</span> DateTime? FromDate
+    {
+        <span style="color: blue">get</span> { <span style="color: blue">return</span> _fromDate; }
+        <span style="color: blue">set</span> { _fromDate = value; }
+    }
+
+    <span style="color: blue">public</span> DateTime? ToDate
+    {
+        <span style="color: blue">get</span> { <span style="color: blue">return</span> _toDate; }
+        <span style="color: blue">set</span> { _toDate = value; }
+    }
+}</pre>
+<p>We can prove that the user requesting the report and the company for which the report is requested are specified. The filter parameters are optional.</p>
+<p><strong>Immutable properties</strong><br />Once a constructor is called, it cannot be called again. This is an extremely powerful contract, and can be used to prove that properties can't change. In the above example, the RequestedBy and RequestedFor properties are immutable. They can only be set by the constructor, which can only be called once.</p>
+<p>Immutability is an example of the statement A does not happen after B. A) the property changes. B) the property is set. The property does not change after it is set.</p>
+<p>There are other statements of this form that the constructor can prove. For example, a connection string cannot change after a database connection has been established. Here's a snippet of the ADO.NET SqlConnection class:</p>
+<pre><span style="color: blue">public</span> <span style="color: blue">class</span> SqlConnection
+{
+    <span style="color: blue">public</span> SqlConnection();
+    <span style="color: blue">public</span> SqlConnection(<span style="color: blue">string</span> connectionString);
+    <span style="color: blue">public</span> <span style="color: blue">string</span> ConnectionString { <span style="color: blue">get</span>; <span style="color: blue">set</span>; }
+}</pre>
+<p>Do you see the problem? You cannot prove that the connection string does not change. This class has guard code that throws an exception if you do so. It would be a simple change to make this contract provable:</p>
+<pre><span style="color: blue">public</span> <span style="color: blue">class</span> SqlConnection
+{
+    <span style="color: blue">public</span> SqlConnection(<span style="color: blue">string</span> connectionString);
+    <span style="color: blue">public</span> <span style="color: blue">string</span> ConnectionString { <span style="color: blue">get</span>; }
+}</pre>
+<p><strong>Don't waste the constructor</strong><br />Using a constructor to prove a contract is a powerful capability. It is weakened when the constructor is used for other things.</p>
+<pre><span style="color: blue">public</span> <span style="color: blue">class</span> User
+{
+    <span style="color: blue">private</span> <span style="color: blue">string</span> _userId;
+    <span style="color: blue">private</span> <span style="color: blue">string</span> _firstName;
+    <span style="color: blue">private</span> <span style="color: blue">string</span> _lastName;
+
+    <span style="color: blue">public</span> User(<span style="color: blue">string</span> userId) :
+        <span style="color: blue">this</span>(userId, <span style="color: blue">string</span>.Empty, <span style="color: blue">string</span>.Empty)
+    {
+    }
+
+    <span style="color: blue">public</span> User(<span style="color: blue">string</span> userId, <span style="color: blue">string</span> firstName, <span style="color: blue">string</span> lastName)
+    {
+        _userId = userId;
+        _firstName = firstName;
+        _lastName = lastName;
+    }
+
+    <span style="color: blue">public</span> <span style="color: blue">string</span> UserId
+    {
+        <span style="color: blue">get</span> { <span style="color: blue">return</span> _userId; }
+    }
+
+<span style="color: blue"><font color="#000000">    </font>public</span> <span style="color: blue">string</span> FirstName
+    {
+        <span style="color: blue">get</span> { <span style="color: blue">return</span> _firstName; }
+        <span style="color: blue">set</span> { _firstName = value; }
+    }
+
+    <span style="color: blue">public</span> <span style="color: blue">string</span> LastName
+    {
+        <span style="color: blue">get</span> { <span style="color: blue">return</span> _lastName; }
+        <span style="color: blue">set</span> { _lastName = value; }
+    }
+}</pre>
+<p>This class has a weak constructor. The name of a user can change, but the ID cannot. An overloaded constructor initializing the name is provided for convenience. But this convenience comes at a price. It is more difficult to see that the user ID is required and immutable. It's still provable, but that information is not called out.</p>
+<p>Don't overload the constructor. Don't use it for convenience. Don't initialize mutable properties. When a constructor is used only to set required and immutable properties, the intent is clear, and the proof is easy.</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="index51fa.html?cat=40" title="View all posts in qed" rel="category">qed</a> |   <a href="index5750.html?p=416#respond" title="Comment on The constructor: the strongest of all methods">No Comments &#187;</a></p>
+
+			</div>
+
+				<div class="post">
+				<h3 id="post-415"><a href="indexd519.html?p=415" rel="bookmark" title="Permanent Link to Proving prerequisites">Proving prerequisites</a></h3>
+				<small>Tuesday, August 11th, 2009</small>
+
+				<div class="entry">
+					<p>Every piece of code is a theorem. It is a sequence of logical conclusions, each based on the one before, leading up to desired behavior. To validate that behavior, you need to prove the theorem. Even though most compilers don't prove those theorems for you, they can still provide some assistance.</p>
+<p>We often have to call methods in a certain order. One method is a prerequisite, the other its successor. For example, we need to validate a shopping cart before we check out. Typically, this is hard to prove.</p>
+<pre><span style="color: blue">public</span> <span style="color: blue">class</span> ShoppingCart
+{
+    <span style="color: gray">/// &lt;summary&gt;</span>
+    <span style="color: gray">/// Validate the shopping cart. Throws</span>
+    <span style="color: gray">/// ShoppingCartException if there is a problem.</span>
+    <span style="color: gray">/// &lt;/summary&gt;</span>
+    <span style="color: blue">public</span> <span style="color: blue">void</span> Validate() { }
+
+    <span style="color: gray">/// &lt;summary&gt;</span>
+    <span style="color: gray">/// Checkout and provide payment for a shopping</span>
+    <span style="color: gray">/// cart. Requires that Validate() is called first.</span>
+    <span style="color: gray">/// &lt;/summary&gt;</span>
+    <span style="color: gray">/// &lt;param name="paymentMethod"&gt;Method used to pay</span>
+    <span style="color: gray">/// for the items in the car.&lt;/param&gt;</span>
+    <span style="color: blue">public</span> <span style="color: blue">void</span> Checkout(IPaymentMethod paymentMethod) { }
+}</pre>
+<p>The contract is clear, but how do we prove that the caller is following the rules? One way is to keep an internal flag. Set it in Validate(), and check it in Checkout(). If the flag is false, throw an exception.</p>
+<p>While this technique works, it is not ideal. It is really no different from a guard clause. It's just a different form of defensive programming. Besides, exceptions are for problems that occur even in well-written software. Calling Checkout() without calling Validate() is a defect, and should never happen at all.</p>
+<p><strong>Return from a prerequisite</strong><br />If we change the interface, we can prove the contract at compile time. It won't need to be verified at run time. One way to do this is to put the successor method into the return of its prerequisite.</p>
+<pre><span style="color: blue">public</span> <span style="color: blue">interface</span> IValidatedShoppingCart
+{
+    <span style="color: gray">/// &lt;summary&gt;</span>
+    <span style="color: gray">/// Checkout and provide payment for a shopping</span>
+    <span style="color: gray">/// cart.</span>
+    <span style="color: gray">/// &lt;/summary&gt;</span>
+    <span style="color: gray">/// &lt;param name="paymentMethod"&gt;Method used to pay</span>
+    <span style="color: gray">/// for the items in the car.&lt;/param&gt;</span>
+    <span style="color: blue">void</span> Checkout(IPaymentMethod paymentMethod);
+}
+
+<span style="color: blue">public</span> <span style="color: blue">class</span> ShoppingCart
+{
+    <span style="color: gray">/// &lt;summary&gt;</span>
+    <span style="color: gray">/// Validate the shopping cart. Throws</span>
+    <span style="color: gray">/// ShoppingCartException if there is a problem.</span>
+    <span style="color: gray">/// &lt;/summary&gt;</span>
+    <span style="color: blue">public</span> IValidatedShoppingCart Validate() { }
+}</pre>
+<p>The compile-time contract is strong enough that it could be removed from the comment. It's obvious to the caller that they have to call Validate() first.</p>
+<p><strong>Pass a parameter to the successor</strong><br />Another way to prove the contract as compile time is to pass the prerequisite as a parameter to the successor. We could, for example, prove that the caller needs to get a credit card approved before using it to make a purchase. Here's the hard way.</p>
+<pre><span style="color: blue">public</span> <span style="color: blue">class</span> CreditCard : IPaymentMethod
+{
+    <span style="color: gray">/// &lt;summary&gt;</span>
+    <span style="color: gray">/// Create a credit card for a customer.</span>
+    <span style="color: gray">/// &lt;/summary&gt;</span>
+    <span style="color: gray">/// &lt;param name="customerInfo"&gt;Information</span>
+    <span style="color: gray">/// about the card holder.&lt;/param&gt;</span>
+    <span style="color: blue">public</span> CreditCard(CustomerInfo customerInfo) { }
+
+    <span style="color: gray">/// &lt;summary&gt;</span>
+    <span style="color: gray">/// Request approval for a credit card. If</span>
+    <span style="color: gray">/// approved, return the payment. If not,</span>
+    <span style="color: gray">/// CreditCardException is thrown.</span>
+    <span style="color: gray">/// &lt;/summary&gt;</span>
+    <span style="color: blue">public</span> <span style="color: blue">void</span> Approve() { }
+}</pre>
+<p>We could set a flag when Approve() is called, and check it when the IPaymentMethod is used. But again, it is defensive. There is a better way.</p>
+<pre><span style="color: blue">public</span> <span style="color: blue">class</span> CustomerInfo
+{
+    <span style="color: gray">/// &lt;summary&gt;</span>
+    <span style="color: gray">/// Request approval for a credit card. If</span>
+    <span style="color: gray">/// approved, return the payment. If not,</span>
+    <span style="color: gray">/// CreditCardException is thrown.</span>
+    <span style="color: gray">/// &lt;/summary&gt;</span>
+    <span style="color: gray">/// &lt;returns&gt;Payment that can be used to</span>
+    <span style="color: gray">/// purchase items.&lt;/returns&gt;</span>
+    IPaymentMethod Approve() { }
+}</pre>
+<p>We've taken away the ability to create a CreditCard, and hidden it in Approve(). The result of Approve() is a parameter to Checkout(). We've proven that the caller must call the prerequisite before the successor.</p>
+<p>A simple rearrangement of interfaces can turn a difficult-to-enforce API into one that the compiler can prove. Just recognize which methods are prerequisites of others, and use their returns to call the successors.</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="index51fa.html?cat=40" title="View all posts in qed" rel="category">qed</a> |   <a href="indexd519.html?p=415#respond" title="Comment on Proving prerequisites">No Comments &#187;</a></p>
+
+			</div>
+
+				<div class="post">
+				<h3 id="post-413"><a href="index672e.html?p=413" rel="bookmark" title="Permanent Link to MVVM and Linq to SQL the easy way">MVVM and Linq to SQL the easy way</a></h3>
+				<small>Sunday, August 9th, 2009</small>
+
+				<div class="entry">
+					<p>Download the <a href="wp-content/uploads/2009/08/noteworthy.zip">source code</a> and follow along.</p>
+<p>The biggest challenge implementing the MVVM pattern is the View Model responding to changes in the Data Model. Usually, the View Model needs to subscribe to the PropertyChanged events fired by the Data Model, update its internal state, and then fire its own PropertyChanged events for the View. That's the hard way.</p>
+<p>The easy way is to use <a href="http://updatecontrols.net/">Update Controls</a>. With Update Controls, you just decorate the Data Model and wrap the View Model. The library takes care of everything in between.</p>
+<p><strong>Decorate a Linq to SQL data model</strong><br />
+You decorate the data model by adding <a href="http://updatecontrols.net/documentation/classDocumentation/vb/UpdateControls.Independent.do">Independent</a> sentries to every property. Whenever the property is accessed, call OnGet(). Whenever it is modified, call OnSet(). To decorate a Linq to SQL data model, we just need to inject these calls into the generated code. Unfortunately, the Linq to SQL code generator does not give you a way to easily tweak its output.</p>
+<p>Damien Guard has solved that problem. His open source project <a href="http://l2st4.codeplex.com/">LINQ to SQL templates for T4</a> is incredibly easy to set up and start using. It drops straight into Visual Studio and replaces the build-in code generator with one that you control. With just a few edits to his provided T4 template, I replaced INotifyPropertyChanged with Independent sentries.</p>
+<p>I added a sentry for each single-valued property, and called OnGet() inside of the getter and OnSet() in the setter. I also added a sentry for each collection. They require OnGet() in the getter, and OnSet() when something is added or removed. Finally, I added a sentry per table, to take care of the top-level queries. For these, I call OnSet() on any insert, update, and delete. The final T4 template is in the example source code.</p>
+<p><strong>Wrap the view model for WPF</strong><br />
+Wrapping the view model for the view is a one-liner.</p>
+<pre><span style="color: blue">public</span> Window1()
+{
+    InitializeComponent();
+
+    <span style="color: green">// Create a data model and a navigation model.</span>
+    _blog = <span style="color: blue">new</span> Blog();
+    BlogNavigationModel navigationModel = <span style="color: blue">new</span> BlogNavigationModel();
+
+    <span style="color: green">// Put them both in a view model, then wrap it for the view.</span>
+    <span style="color: blue">this</span>.DataContext = <strong>ForView.Wrap</strong>(<span style="color: blue">new</span> BlogViewModel(_blog, navigationModel));
+}</pre>
+<p>We create a view model based on the decorated data model and a similarly decorated navigation model (more on that later). Then we let Update Controls wrap it up before we give it to the view.</p>
+<p><strong>View model per scope</strong><br />
+<a href="wp-content/uploads/2009/08/noteworthy.png"><img src="wp-content/uploads/2009/08/noteworthy-thumb.png" style="border: 0px none " alt="Noteworthy" width="209" align="right" border="0" height="244" /></a>The example application -- Noteworthy -- is a blog editor. Different parts of the view focus on different granularities of data. The main view (shown in red) focuses on the blog as a whole. The article list items and detail pane (shown in blue) focus on a single article. And the tag list items (shown in green) focus on a single tag.</p>
+<p>We define one view model class for each of these three scopes. Each one takes constructor parameters to put itself in context. So the BlogViewModel takes a Blog, the ArticleViewModel takes a Blog and an Article, and the TagViewModel takes a Blog and a Tag.</p>
+<p>The DataContext property of a WPF control determines where it begins for data binding. If you don't set it, the control inherits it from its parent. If the control is an item in a list, then it is automatically set to an element of the ItemsSource. Finally, you can data bind to a property of its parent scope. Noteworthy uses all three techniques.</p>
+<p><strong>Property per control attribute</strong><br />
+WPF data binding connects control attributes to object properties. So within each view model, we define a property for each attribute of a control. The view model exists to serve of the view, so this one-to-one mapping is to be expected. The view model is an isolation layer designed to keep these view-specific concerns out of your data model.</p>
+<p><strong>Navigation model per user context</strong><br />
+The user of your application has a conceptual model of how controls should work together. Noteworthy is a single window program, so they expect all of the controls on that window to interact appropriately. If it had multiple child windows all within a parent, they would expect each window to be its own context, but participate within the context of the main window. And if it were a composite application, they would expect all of the components to work together.</p>
+<p>Where the user draws their conceptual boundary, we create a navigation model. A navigation model records the user's point-of-view as they navigate through the application. It keeps track of their selection and temporary input.</p>
+<p>All of the state in the navigation model is transient. Nothing is written to the database. Persistent state belongs in the data model. This keeps the view model completely stateless. The view model has only behavior, which depends upon the data model and the navigation model.</p>
+<p>Because the navigation model is transient, we just write fields, select them, and hit Ctrl+D, G to generate the properties. For example, here's the property that records the selected article. The part that I wrote by hand is highlighted:</p>
+<pre><span style="color: blue">public</span> <span style="color: blue">class</span> BlogNavigationModel
+{
+<strong>    <span style="color: blue">private</span> Article _selectedArticle;
+</strong>
+    <span style="color: blue">#region</span> Independent properties
+    <span style="color: green">// Generated by Update Controls --------------------------------</span>
+    <span style="color: blue">private</span> Independent _indSelectedArticle = <span style="color: blue">new</span> Independent();
+
+    <span style="color: gray">/// &lt;summary&gt;</span>
+    <span style="color: gray">/// The article for which to display details.</span>
+    <span style="color: gray">/// &lt;/summary&gt;</span>
+    <span style="color: blue">public</span> Article SelectedArticle
+    {
+        <span style="color: blue">get</span> { _indSelectedArticle.OnGet(); <span style="color: blue">return</span> _selectedArticle; }
+        <span style="color: blue">set</span> { _indSelectedArticle.OnSet(); _selectedArticle = value; }
+    }
+    <span style="color: green">// End generated code --------------------------------</span>
+    <span style="color: blue">#endregion</span>
+}</pre>
+<p>The properties of the navigation model are always data model types, never view model types. The view model depends upon the navigation model, not vice-versa.</p>
+<p><strong>Explore on your own</strong><br />
+That's just enough to get you started. There are many interesting patterns that came together in the making of Noteworthy. Here are some that you might want to examine on your own:</p>
+<ul>
+<li>The BlogViewModel.Articles property is filtered by the selected tag.</li>
+<li>The article detail pane is a Grid within a Grid. The outer grid binds IsEnabled, while the inner grid binds DataContext.</li>
+<li>The TagListBoxStyle resource binds the ListBoxItem.IsSelected attribute to the TagViewModel.TagIsSelected property to support multiple selection.</li>
+<li>The Blog data model class uses a Dependent sentry to cache Tags.</li>
+<li>Every view model setter and command that affects the data model calls SubmitChanges.</li>
+<li>The ArticleViewModel.AvailableTags property uses .Except() to get all tags not assigned to the article.</li>
+<li>The BlogViewModel.SelectedArticle property wraps the data object from the navigation model in a view model, and then unwraps it on the way back.</li>
+<li>The first tag in BlogViewModel.Filters is actually not a tag at all. It is a null to represent the lack of a filter.</li>
+</ul>
+<p>Expect future posts to return to this example and explore these points in more detail.</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="indexb0b7.html?cat=6" title="View all posts in Patterns" rel="category">Patterns</a>,  <a href="indexa88f.html?cat=36" title="View all posts in Update Controls" rel="category">Update Controls</a> |   <a href="index672e.html?p=413#comments" title="Comment on MVVM and Linq to SQL the easy way">1 Comment &#187;</a></p>
+
+			</div>
+
+				<div class="post">
+				<h3 id="post-410"><a href="index0ed6.html?p=410" rel="bookmark" title="Permanent Link to Math 101 for developers">Math 101 for developers</a></h3>
+				<small>Thursday, August 6th, 2009</small>
+
+				<div class="entry">
+					<p>My development process is deeply mathematical. It is based on the work of Bertrand Meyer and other computer scientists. Math is severely under represented among today's TDD/YAGNI/Agile/anti-BDUF digerati. I like to think through the problem before putting hands to keyboard, and I don't like being told I'm wrong for doing so. So to fill the void, I will be presenting my own mathematically-based process.</p>
+<p>When people hear "math", they get scared. They think about how they struggled through trig class, or how statistics kicked their butts. If your palms sweat when you think about geometry, please calm down and bear with me. The math that we are going to talk about is not hard. You just have to think things through logically.</p>
+<p><strong>Null reference exceptions</strong><br />Even though my process begins away from the keyboard, I'll begin this discussion with code. We can work backwards from there.</p>
+<p>Your first exercise is to prove that this code does not throw a null reference exception.</p>
+<pre><span style="color: blue">class</span> DogLover
+{
+	<span style="color: blue">public</span> <span style="color: blue">void</span> BuyAPet(Store store)
+	{
+		Pet pet = store.BuyDog();
+
+		<span style="color: blue">if</span> (pet == <span style="color: blue">null</span>)
+			<span style="color: blue">throw</span> <span style="color: blue">new</span> Exception(<span style="color: maroon">"No dogs were available."</span>);
+		<span style="color: blue">else</span>
+			pet.Feed();
+	}
+}</pre>
+<p>We don't know anything about the <strong>BuyDog()</strong> method. It may return null or it may not. We have to check the contract. Not many programming languages have a way to encode a contract (Eiffel and Spec# are the only two that come to mind), so we usually rely on comments if we write a contract at all. Here's the contract for <strong>BuyDog()</strong>:</p>
+<pre><span style="color: gray">/// &lt;summary&gt;</span>
+<span style="color: gray">/// Buy a dog from the pet store.</span>
+<span style="color: gray">/// &lt;/summary&gt;</span>
+<span style="color: gray">/// &lt;returns&gt;A dog if one is available, or null if they are out of stock.&lt;/returns&gt;</span>
+<span style="color: blue">public</span> Pet BuyDog()
+{
+	<span style="color: green">// ...</span>
+}</pre>
+<p>So the contract tells us that <strong>BuyDog()</strong> could return null. That is its postcondition: the part of the contract that promises what will be true. Based on this postcondition, we cannot prove that <strong>pet</strong> is not null right after the call.</p>
+<p>But we do have a check in the code. As you enter the "else", we know that the "if" condition is false. Therefore, <strong>pet != null</strong>. <strong>pet.Feed()</strong> does not throw a null reference exception.</p>
+<p>That is the complexity of proof that I'm talking about. It's really easy to do. Much easier than anything you'll see in Euclid's Elements.</p>
+<p><strong>Preconditions</strong><br />Go back and check the code again. There is a case that we did not consider. We proved that <strong>pet.Feed()</strong> will not throw, but we did not prove that <strong>store.BuyDog()</strong> is safe. There are two ways to do so: add a check, or add a precondition.</p>
+<p>If we add a check before <strong>store.BuyDog()</strong>, then the same proof as above applies. This is known as "defensive programming". I personally do not like defensive programming because of all the noise it adds to code. I much prefer preconditions.</p>
+<p>A precondition is part of the contract. It is a requirement that certain conditions must be true before you call a method. We add a precondition like so:</p>
+<pre><span style="color: gray">/// &lt;summary&gt;</span>
+<span style="color: gray">/// Buy a pet from a store.</span>
+<span style="color: gray">/// &lt;/summary&gt;</span>
+<span style="color: gray">/// &lt;param name="store"&gt;The store from which to buy the pet.</span>
+<span style="color: gray">/// Must not be null.&lt;/param&gt;</span>
+<span style="color: blue">public</span> <span style="color: blue">void</span> BuyAPet(Store store)
+{
+	<span style="color: green">// ...</span>
+}</pre>
+<p>Now the caller knows that he cannot pass null.</p>
+<p>But this comment did nothing to change the behavior of the code! How does this solve the problem?</p>
+<p>The problem is not what the code actually does. The problem is that you couldn't <em>prove</em> that the code worked. Now you can. The <strong>BuyAPet()</strong> method lives inside of a larger system. If there ever was a problem, you would know that the author of <strong>BuyAPet()</strong> proved his code; the caller did not. Therefore the bug is in the calling code.</p>
+<p>Most compilers do not do this proof for you. Eiffel verifies contracts at run time, not at compile time. Spec# can do some simple proofs at compile time (including this one), but is not yet adopted for commercial use. Still, if dynamic languages can get away with not checking <em>types</em> until run time, I'm fine with not checking <em>contracts</em> until run time. That's what unit tests are for.</p>
+<p><strong>Predicates</strong><br />Let's modify the code a bit.</p>
+<pre><span style="color: gray">/// &lt;summary&gt;</span>
+<span style="color: gray">/// Buy a pet from a store.</span>
+<span style="color: gray">/// &lt;/summary&gt;</span>
+<span style="color: gray">/// &lt;param name="store"&gt;The store from which to buy the pet.</span>
+<span style="color: gray">/// Must not be null.&lt;/param&gt;</span>
+<span style="color: blue">public</span> <span style="color: blue">void</span> BuyAPet(Store store)
+{
+<strong>	<span style="color: blue">if</span> (store.DogsInStock &lt; <span style="color: maroon">1</span>)
+		<span style="color: blue">throw</span> <span style="color: blue">new</span> Exception(<span style="color: maroon">"No dogs were available."</span>);
+</strong>
+	Pet pet = store.BuyDog();
+	pet.Feed();
+}</pre>
+<p>We've removed the check for <strong>pet == null</strong>. Can you prove that this code is safe?</p>
+<p>You still can if you define a predicate on Store.</p>
+<pre><span style="color: gray">/// &lt;summary&gt;</span>
+<span style="color: gray">/// The number of dogs available for sale.</span>
+<span style="color: gray">/// &lt;/summary&gt;</span>
+<span style="color: blue">public</span> <span style="color: blue">int</span> DogsInStock { <span style="color: blue">get</span>; <span style="color: blue">private</span> <span style="color: blue">set</span>; }
+
+<span style="color: gray">/// &lt;summary&gt;</span>
+<span style="color: gray">/// Buy a dog from the pet store.</span>
+<span style="color: gray">/// &lt;/summary&gt;</span>
+<span style="color: gray">/// &lt;returns&gt;A dog if DogsInStock &gt; 0, or null otherwise.&lt;/returns&gt;</span>
+<span style="color: blue">public</span> Pet BuyDog()
+{
+	<span style="color: green">// ...</span>
+	<span style="color: blue">return</span> <span style="color: blue">null</span>;
+}</pre>
+<p>The postcondition on <strong>BuyDog()</strong> now references the property <strong>DogsInStock</strong>. We can use that in our proof. Now the steps are:</p>
+<ol>
+<li>If we reached <strong>store.BuyDog()</strong>, then <strong>store.DogsInStock &lt; 1</strong> is false.</li>
+<li><strong>store.DogsInStock &lt; 1</strong> is false implies <strong>store.DogsInStock &gt;= 1</strong> is true.</li>
+<li><strong>store.DogsInStock &gt;= 1</strong> implies <strong>store.DogsInStock &gt; 0</strong> (since <strong>DogsInStock</strong> is an integer).</li>
+<li>By the precondition of <strong>BuyDog()</strong>, <strong>DogsInStock &gt; 0</strong> implies that a non-null dog is returned.</li>
+<li><strong>pet</strong> is not null.</li>
+<li><strong>pet.Feed()</strong> does not throw.</li>
+</ol>
+<p>I would usually not spell out these steps so explicitly, but these are the thoughts that go through my mind as I read and write code.</p>
+<p><strong>Concurrency</strong><br />There is one small detail that I conveniently ignored in the prior proof. If we allow for concurrent access of the <strong>Store</strong>, then the proof is invalid. We cannot rely on <strong>DogsInStock &gt; 0</strong> when we get to step 4, since that might be changed in a different thread.</p>
+<p>Concurrency is the devil for proofs. Functional languages lend themselves better to proof specifically because they disallow concurrent modification of an object; all objects are immutable, so there is no way that another thread could modify it. But hope is not lost.</p>
+<p>In my code, I explicitly call out the parts that could be used concurrently. If nothing is said, then the code is not assumed to be thread-safe. You are therefore not allowed to call it concurrently. Since <strong>BuyAPet()</strong> makes no promise of thread safety, it would be incorrect to call it on multiple threads without guaranteeing that no other thread is using the same <strong>DogLover</strong> or <strong>Store</strong>. It is an implied precondition, but it is still a precondition.</p>
+<p>I limit the amount of multi-threaded code in my applications. By the time I get to business logic, I've isolated the object and all of its parameters. They are either immutable or owned by that thread by the time the method is called. This allows me to use proof even in the face of concurency. And I can do so without adding noise to the business code in the form of locks or explicit preconditions.</p>
+<p>Proof is a valuable tool in software development. Take a look at the code you wrote today and see if you can prove that it does not reference null.</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="index51fa.html?cat=40" title="View all posts in qed" rel="category">qed</a> |   <a href="index0ed6.html?p=410#respond" title="Comment on Math 101 for developers">No Comments &#187;</a></p>
+
+			</div>
+
+				<div class="post">
+				<h3 id="post-409"><a href="indexe145.html?p=409" rel="bookmark" title="Permanent Link to How to not implement INotifyPropertyChanged">How to not implement INotifyPropertyChanged</a></h3>
+				<small>Tuesday, August 4th, 2009</small>
+
+				<div class="entry">
+					<p>A quick search reveals that many people have tackled the problem of implementing INotifyPropertyChanged. Here are just a few:</p>
+<ul>
+<li><a href="http://karlshifflett.wordpress.com/2009/08/02/inotifypropertychanged-how-to-remove-the-property-name-string-code-smell/" title="http://karlshifflett.wordpress.com/2009/08/02/inotifypropertychanged-how-to-remove-the-property-name-string-code-smell/">Karl on WPF using stack frames</a></li>
+<li><a href="http://mbrownchicago.spaces.live.com/blog/cns!2221DC39E0C749A4!1285.entry" title="http://mbrownchicago.spaces.live.com/blog/cns!2221DC39E0C749A4!1285.entry">Brownie Points using lambdas</a></li>
+<li><a href="http://www.nablasoft.com/alkampfer/index.php/2008/08/14/how-to-implement-inotifypropertychanged-with-codedom/" title="http://www.nablasoft.com/alkampfer/index.php/2008/08/14/how-to-implement-inotifypropertychanged-with-codedom/">Alkampfer using CodeDom</a></li>
+<li><a href="http://msdn.microsoft.com/en-us/library/ms743695.aspx" title="http://msdn.microsoft.com/en-us/library/ms743695.aspx">Microsoft's advice in MSDN</a></li>
+<li><a href="http://www.codeproject.com/KB/cs/BindBetterINotifyProperty.aspx" title="http://www.codeproject.com/KB/cs/BindBetterINotifyProperty.aspx">PConverse with a basic example on Code Project</a></li>
+<li><a href="http://compositeextensions.codeplex.com/Thread/View.aspx?ThreadId=53731" title="http://compositeextensions.codeplex.com/Thread/View.aspx?ThreadId=53731">Composite Extensions comparing techniques on Codeplex</a></li>
+<li><a href="http://thetreeknowseverything.net/2009/01/21/auto-implement-inotifypropertychanged-with-aspects/" title="http://thetreeknowseverything.net/2009/01/21/auto-implement-inotifypropertychanged-with-aspects/">Mike Saunders using aspects</a></li>
+<li><a href="http://danielvaughan.orpius.com/post/Property-Change-Notification-using-a-Weak-Referencing-Strategy.aspx" title="http://danielvaughan.orpius.com/post/Property-Change-Notification-using-a-Weak-Referencing-Strategy.aspx">Daniel Vaughan using a flow-through class for weak references</a></li>
+<li><a href="http://ayende.com/Blog/archive/2009/08/07/nhibernate-amp-inotifypropertychanged.aspx">Ayende using dynamic proxy</a></li>
+</ul>
+<p>Here's my solution: DON'T!</p>
+<p>You do not need to implement INotifyPropertyChanged in order to do data binding. <a href="http://updatecontrols.net/">Update Controls</a> will do it for you. It works in Winforms, in WPF, and in <a href="http://updatecontrolslight.codeplex.com/">Silverlight</a>.</p>
+<p><strong>What's the problem, anyway?</strong><br />
+The problem that most people see with this interface is the "magic string". You have to pass the name of the property in the event args. Many of these solutions use reflection to figure out the property name for you. That solves the magic string problem.</p>
+<p><strong>But that's not the real problem!</strong></p>
+<p>The real problem is that these techniques only work with independent properties. If one property depends upon another, then these techniques fail.</p>
+<p>Take a closer look at <a href="http://www.codeproject.com/KB/cs/BindBetterINotifyProperty.aspx">PConverse's solution published in Code Project</a>. In his RegularPerson class, DisplayName depends upon both FirstName and LastName. It has no backing field. It has no setter. It is a dependent property.</p>
+<p>Look at the extra work he has to do in NotifiablePerson to fire PropertyChanged for DisplayName. He has to explicitly write code in the setters of both FirstName and LastName. Both of these properties have to "know" that DisplayName depends upon them.</p>
+<p>That's a backwards dependency. FirstName and LastName should not know about DisplayName; DisplayName knows about FirstName and LastName.</p>
+<p>Compare that to the same code using Update Controls.</p>
+<pre><span style="color: blue">public</span> <span style="color: blue">class</span> Person
+{
+    <span style="color: blue">private</span> <span style="color: blue">string</span> _firstName;
+    <span style="color: blue">private</span> <span style="color: blue">string</span> _lastName;
+
+    <span style="color: blue">private</span> Independent _indFirstName = <span style="color: blue">new</span> Independent();
+    <span style="color: blue">private</span> Independent _indLastName = <span style="color: blue">new</span> Independent();
+
+    <span style="color: blue">public</span> <span style="color: blue">string</span> FirstName
+    {
+        <span style="color: blue">get</span> { _indFirstName.OnGet(); <span style="color: blue">return</span> _firstName; }
+        <span style="color: blue">set</span> { _indFirstName.OnSet(); _firstName = value; }
+    }
+
+    <span style="color: blue">public</span> <span style="color: blue">string</span> LastName
+    {
+        <span style="color: blue">get</span> { _indLastName.OnGet(); <span style="color: blue">return</span> _lastName; }
+        <span style="color: blue">set</span> { _indLastName.OnSet(); _lastName = value; }
+    }
+
+    <span style="color: blue">public</span> <span style="color: blue">string</span> DisplayName
+    {
+        <span style="color: blue">get</span> { <span style="color: blue">return</span> FirstName + <span style="color: maroon">" "</span> + LastName; }
+    }
+}</pre>
+<p>Niether FirstName nor LastName know about DisplayName. The dependencies are one-way and in the correct direction.</p>
+<p><strong>Maintainability is the problem</strong><br />
+The above example is small and manageable. But imagine what happens when this application grows. Backwards dependencies get out of hand. They cross class boundaries and cause tight coupling between objects. Pretty soon the application is nothing but dependency management.</p>
+<p>So please, stop inventing better ways to implement INotifyPropertyChanged. It's like inventing a better way to turn the the crank on the front of a Model T. There is no good way. Just don't do it.</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="indexa88f.html?cat=36" title="View all posts in Update Controls" rel="category">Update Controls</a> |   <a href="indexe145.html?p=409#respond" title="Comment on How to not implement INotifyPropertyChanged">No Comments &#187;</a></p>
+
+			</div>
+
+		
+		<div class="navigation">
+			<div class="alignleft"></div>
+			<div class="alignright"></div>
+		</div>
+
+	
+	</div>
+		</td>
+	</tr>
+</table>
+
+<hr />
+<div id="footer">
+<!-- If you'd like to support WordPress, having the "powered by" link someone on your blog is the best way, it's our only promotion or advertising. -->
+	<p>
+		Adventures in Software is proudly powered by 
+		<a href="http://wordpress.org/">WordPress</a>
+		<br /><a href="indexd784.html?feed=rss2">Entries (RSS)</a>
+		and <a href="indexa6da.html?feed=comments-rss2">Comments (RSS)</a>.
+		<!-- 17 queries. 0.429 seconds. -->
+	</p>
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-389401-3");
+pageTracker._trackPageview();
+} catch(err) {}</script></div>
+
+<!-- Gorgeous design by Michael Heilemann - http://binarybonsai.com/kubrick/ -->
+
+		<div id="sk2-footer" style="color:#FFF; background-color:#444; padding: 3px 2px 3px 2px; border-top: #888 solid 1px;">This blog is protected by <a href="http://unknowngenius.com/blog/" title="Dave">dr Dave</a>'s <strong><a href="http://unknowngenius.com/blog/wordpress/spam-karma/" title="SK2">Spam Karma 2</a></strong>: <strong>274531</strong>  Spams eaten and counting...</div><script type="text/javascript" src="replies.js"></script>
+<script type="text/javascript" src="blogger.js"></script>
+<script type="text/javascript" src="http://twitter.com/statuses/user_timeline/michaellperry.json?callback=twitterCallback2&amp;count=5"></script>
+<script type="text/javascript" src="http://search.twitter.com/search.json?q=@michaellperry&amp;callback=twitterCallbackReplies&amp;rpp=5"></script>
+</body>
+
+<!-- Mirrored from adventuresinsoftware.com/blog/?m=200908 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 Jan 2017 12:40:42 GMT -->
+</html>

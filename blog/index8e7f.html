@@ -1,0 +1,959 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+
+
+<!-- Mirrored from adventuresinsoftware.com/blog/?cat=19 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 Jan 2017 12:55:26 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>Adventures in Software   &raquo; C#</title>
+
+<meta name="generator" content="WordPress 2.3.3" /> <!-- leave this for stats -->
+
+<link rel="stylesheet" href="wp-content/themes/ais2/style.css" type="text/css" media="screen" />
+<link rel="alternate" type="application/rss+xml" title="Adventures in Software RSS Feed" href="indexd784.html?feed=rss2" />
+<link rel="pingback" href="xmlrpc.html" />
+    <script type="text/javascript">
+        function onSilverlightError(sender, args) {
+            var appSource = "";
+            if (sender != null && sender != 0) {
+              appSource = sender.getHost().Source;
+            }
+            
+            var errorType = args.ErrorType;
+            var iErrorCode = args.ErrorCode;
+
+            if (errorType == "ImageError" || errorType == "MediaError") {
+              return;
+            }
+
+            var errMsg = "Unhandled Error in Silverlight Application " +  appSource + "\n" ;
+
+            errMsg += "Code: "+ iErrorCode + "    \n";
+            errMsg += "Category: " + errorType + "       \n";
+            errMsg += "Message: " + args.ErrorMessage + "     \n";
+
+            if (errorType == "ParserError") {
+                errMsg += "File: " + args.xamlFile + "     \n";
+                errMsg += "Line: " + args.lineNumber + "     \n";
+                errMsg += "Position: " + args.charPosition + "     \n";
+            }
+            else if (errorType == "RuntimeError") {           
+                if (args.lineNumber != 0) {
+                    errMsg += "Line: " + args.lineNumber + "     \n";
+                    errMsg += "Position: " +  args.charPosition + "     \n";
+                }
+                errMsg += "MethodName: " + args.methodName + "     \n";
+            }
+
+            throw new Error(errMsg);
+        }
+    </script>
+
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc0db0.php?rsd" />
+ <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="wp-includes/wlwmanifest.xml" /> <style type='text/css'>
+<!--#header { background: url('wp-content/themes/ais2/images/header-imgae03.html?upper=A7A73F&amp;lower=77773F') no-repeat bottom center; }
+--></style>
+</head>
+<body>
+<div id="page">
+
+<div class="aisTopBar">
+	<form method="get" id="searchform" action="http://adventuresinsoftware.com/blog/">
+<div>
+<a href="indexd784.html?feed=rss2"><img src="../images/feed-icon-28x28.png" border="0"></a>
+<input type="text" value="" name="s" id="s" />
+<input type="submit" id="searchsubmit" value="Search" />
+</div>
+</form>
+</div>
+
+<div class="aisHeaderImageRight">
+	<div class="aisHeaderImage">
+	<div class="aisHeaderCornerRight">
+	<div class="aisHeaderCornerLeft">
+	<div class="aisImageBar">
+	<div class="aisSubSites">
+		<a href="index.html" class="aisSubSiteLink"><span class="aisSiteTabRight"><span class="aisSiteTabLeft"><span class="aisSiteTab">
+			home</span></span></span></a>
+		<a class="aisSubSiteLink" href="indexb60a.html?cat=27"><span class="aisSiteTabRight"><span class="aisSiteTabLeft"><span class="aisSiteTab">
+			historic modeling</span></span></span></a>
+		<a class="aisSubSiteLink" href="indexa88f.html?cat=36"><span class="aisSiteTabRight"><span class="aisSiteTabLeft"><span class="aisSiteTab">
+			update controls</span></span></span></a>
+		<a href="index2d79.html?cat=26" class="aisSubSiteLink"><span class="aisSiteTabRight"><span class="aisSiteTabLeft"><span class="aisSiteTab">
+			degrees of freedom</span></span></span></a>
+		<a class="aisSubSiteLink" href="indexba53.html?page_id=2"><span class="aisSiteTabRight"><span class="aisSiteTabLeft"><span class="aisSiteTab">
+			about us</span></span></span></a>
+
+	</div>
+	</div>
+	</div>
+	</div>
+	</div>
+</div>
+
+<table style="width: 100%" cellspacing="0" cellpadding="0">
+	<tr valign="top">
+		<td width="210px">
+<div id="sidebar">
+<div class="aisLeftColumnFill">
+<div class="aisLeftColumnBottom">
+<div class="aisLeftColumnTop">
+<div id="twitter_div" class="aisLeftNav">
+<h2 class="sidebar-title">Twitter Updates</h2>
+<ul id="twitter_update_list"></ul>
+<a href="http://twitter.com/michaellperry" id="follow">Follow me</a>
+</div>
+<div id="twitter_reply_div" class="aisLeftNav">
+<h2 class="sidebar-title">Twitter Replies</h2>
+<ul id="twitter_reply_list"></ul>
+</div>
+
+<div class="aisLeftNav">
+<a href='http://ineta.org/Speakers/SearchCommunitySpeakers.aspx?SpeakerId=c5110e21-9243-461b-a464-a6548524e885'><img alt='INETA Community Speakers Program' border='0' src='../../www.ineta.org/images/OfficialLogos/InetaCommunitySpeakersRequestMe.html' /></a>
+</div>
+
+<div class="aisLeftNav">
+	<li class="pagenav"><h2>Pages</h2><ul><li class="page_item page-item-2"><a href="indexba53.html?page_id=2" title="About Us">About Us</a></li>
+<li class="page_item page-item-210"><a href="index6ae3.html?page_id=210" title="Templates">Templates</a></li>
+</ul></li></div>
+
+<div class="aisLeftNav">
+<h2>Archives</h2>
+<ul>
+	<li><a href='indexb4d5.html?m=201110' title='October 2011'>October 2011</a></li>
+	<li><a href='indexc61a.html?m=201106' title='June 2011'>June 2011</a></li>
+	<li><a href='indexa80d.html?m=201105' title='May 2011'>May 2011</a></li>
+	<li><a href='index512b.html?m=201104' title='April 2011'>April 2011</a></li>
+	<li><a href='index08fb.html?m=201103' title='March 2011'>March 2011</a></li>
+	<li><a href='index52f4.html?m=201102' title='February 2011'>February 2011</a></li>
+	<li><a href='index74f1.html?m=201101' title='January 2011'>January 2011</a></li>
+	<li><a href='index8956.html?m=201012' title='December 2010'>December 2010</a></li>
+	<li><a href='indexa1aa.html?m=201011' title='November 2010'>November 2010</a></li>
+	<li><a href='indexe3d5.html?m=201010' title='October 2010'>October 2010</a></li>
+	<li><a href='index9ab9.html?m=201009' title='September 2010'>September 2010</a></li>
+	<li><a href='index1ff0.html?m=201008' title='August 2010'>August 2010</a></li>
+	<li><a href='index9f11.html?m=201007' title='July 2010'>July 2010</a></li>
+	<li><a href='index31f0.html?m=201006' title='June 2010'>June 2010</a></li>
+	<li><a href='indexd189.html?m=201005' title='May 2010'>May 2010</a></li>
+	<li><a href='indexb5c0.html?m=201004' title='April 2010'>April 2010</a></li>
+	<li><a href='indexf258.html?m=201003' title='March 2010'>March 2010</a></li>
+	<li><a href='index6e30.html?m=201002' title='February 2010'>February 2010</a></li>
+	<li><a href='index6b19.html?m=201001' title='January 2010'>January 2010</a></li>
+	<li><a href='index5c0a.html?m=200912' title='December 2009'>December 2009</a></li>
+	<li><a href='index8f62.html?m=200911' title='November 2009'>November 2009</a></li>
+	<li><a href='index451d.html?m=200910' title='October 2009'>October 2009</a></li>
+	<li><a href='index3e04.html?m=200909' title='September 2009'>September 2009</a></li>
+	<li><a href='index425a.html?m=200908' title='August 2009'>August 2009</a></li>
+	<li><a href='index9907.html?m=200907' title='July 2009'>July 2009</a></li>
+	<li><a href='index3104.html?m=200906' title='June 2009'>June 2009</a></li>
+	<li><a href='indexc36d.html?m=200905' title='May 2009'>May 2009</a></li>
+	<li><a href='index17e8.html?m=200904' title='April 2009'>April 2009</a></li>
+	<li><a href='index10a5.html?m=200903' title='March 2009'>March 2009</a></li>
+	<li><a href='index8988.html?m=200902' title='February 2009'>February 2009</a></li>
+	<li><a href='index1419.html?m=200901' title='January 2009'>January 2009</a></li>
+	<li><a href='index7866.html?m=200812' title='December 2008'>December 2008</a></li>
+	<li><a href='index55f6.html?m=200811' title='November 2008'>November 2008</a></li>
+	<li><a href='indexa7bc.html?m=200810' title='October 2008'>October 2008</a></li>
+	<li><a href='indexe77c.html?m=200809' title='September 2008'>September 2008</a></li>
+	<li><a href='indexcffc.html?m=200808' title='August 2008'>August 2008</a></li>
+	<li><a href='index0e62.html?m=200807' title='July 2008'>July 2008</a></li>
+	<li><a href='indexfda7.html?m=200806' title='June 2008'>June 2008</a></li>
+	<li><a href='index7d64.html?m=200805' title='May 2008'>May 2008</a></li>
+	<li><a href='index94dd.html?m=200804' title='April 2008'>April 2008</a></li>
+	<li><a href='index9631.html?m=200803' title='March 2008'>March 2008</a></li>
+	<li><a href='indexdd52.html?m=200802' title='February 2008'>February 2008</a></li>
+	<li><a href='index21ee.html?m=200801' title='January 2008'>January 2008</a></li>
+	<li><a href='index363c.html?m=200712' title='December 2007'>December 2007</a></li>
+	<li><a href='index7493.html?m=200711' title='November 2007'>November 2007</a></li>
+	<li><a href='index93a7.html?m=200710' title='October 2007'>October 2007</a></li>
+	<li><a href='index4ca8.html?m=200709' title='September 2007'>September 2007</a></li>
+	<li><a href='index6124.html?m=200708' title='August 2007'>August 2007</a></li>
+	<li><a href='index6013.html?m=200707' title='July 2007'>July 2007</a></li>
+	<li><a href='index2ab6.html?m=200706' title='June 2007'>June 2007</a></li>
+	<li><a href='index44f0.html?m=200705' title='May 2007'>May 2007</a></li>
+	<li><a href='indexf0b4.html?m=200704' title='April 2007'>April 2007</a></li>
+	<li><a href='index481d.html?m=200703' title='March 2007'>March 2007</a></li>
+	<li><a href='indexcbea.html?m=200702' title='February 2007'>February 2007</a></li>
+	<li><a href='index9cdc.html?m=200701' title='January 2007'>January 2007</a></li>
+	<li><a href='index3ea4.html?m=200612' title='December 2006'>December 2006</a></li>
+	<li><a href='index67ca.html?m=200611' title='November 2006'>November 2006</a></li>
+	<li><a href='indexff49.html?m=200610' title='October 2006'>October 2006</a></li>
+	<li><a href='index611c.html?m=200609' title='September 2006'>September 2006</a></li>
+	<li><a href='index9a21.html?m=200608' title='August 2006'>August 2006</a></li>
+	<li><a href='index3ee9.html?m=200607' title='July 2006'>July 2006</a></li>
+	<li><a href='indexe13a.html?m=200606' title='June 2006'>June 2006</a></li>
+</ul>
+</div>
+
+<div class="aisLeftNav">
+	</div>
+
+<div class="aisLeftNav">
+<h2>Books</h2>
+<iframe src="http://rcm.amazon.com/e/cm?t=adventures0d2-20&amp;o=1&amp;p=8&amp;l=as1&amp;asins=0764526413&amp;fc1=000000&amp;IS2=1&amp;lt1=_blank&amp;lc1=0000ff&amp;bc1=000000&amp;bg1=ffffff&amp;f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" name="I5" id="I5"></iframe>
+<br/>
+<iframe src="http://rcm.amazon.com/e/cm?t=adventures0d2-20&amp;o=1&amp;p=8&amp;l=as1&amp;asins=0201633612&amp;fc1=000000&amp;IS2=1&amp;lt1=_blank&amp;lc1=0000ff&amp;bc1=000000&amp;bg1=ffffff&amp;f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" name="I6" id="I6"></iframe>
+<br/>
+<iframe src="http://rcm.amazon.com/e/cm?t=adventures0d2-20&amp;o=1&amp;p=8&amp;l=as1&amp;asins=0136291554&amp;fc1=000000&amp;IS2=1&amp;lt1=_blank&amp;lc1=0000ff&amp;bc1=000000&amp;bg1=ffffff&amp;f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" name="I7" id="I7"></iframe>
+<br/>
+<iframe src="http://rcm.amazon.com/e/cm?t=adventures0d2-20&amp;o=1&amp;p=8&amp;l=as1&amp;asins=1888009195&amp;fc1=000000&amp;IS2=1&amp;lt1=_blank&amp;lc1=0000ff&amp;bc1=000000&amp;bg1=ffffff&amp;f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" name="I8" id="I8"></iframe>
+</div>
+<div class="aisLeftNav">
+<h2>Meta</h2>
+<ul>
+		<li><a href="wp-login.html">Login</a></li>
+	<li><a href="http://validator.w3.org/check/referer" title="This page validates as XHTML 1.0 Transitional">Valid <abbr title="eXtensible HyperText Markup Language">XHTML</abbr></a></li>
+	<li><a href="http://gmpg.org/xfn/"><abbr title="XHTML Friends Network">XFN</abbr></a></li>
+	<li><a href="http://wordpress.org/" title="Powered by WordPress, state-of-the-art semantic personal publishing platform.">WordPress</a></li>
+	</ul>
+</div>
+<div class="aisLeftContent">
+<h2>Community</h2>
+<ul>
+	<script type="text/javascript" src="../../localhost/embed/92q2bbma.js"></script>
+</ul>
+</div>
+
+</div></div></div>
+</div>		</td>
+		<td>
+
+	<div id="content" class="narrowcolumn">
+
+		
+		 		<h2 class="pagetitle">Archive for the &#8216;C#&#8217; Category</h2>
+
+ 	  
+
+		<div class="navigation">
+			<div class="alignleft"><a href="index4433.html?cat=19&amp;paged=2">&laquo; Previous Entries</a></div>
+			<div class="alignright"></div>
+		</div>
+
+				<div class="post">
+				<h3 id="post-553"><a href="indexa7b7.html?p=553" rel="bookmark" title="Permanent Link to Access resources within WMI commands in a Windows service">Access resources within WMI commands in a Windows service</a></h3>
+				<small>Friday, September 24th, 2010</small>
+
+				<div class="entry">
+					<p>This is a little obscure. I’m writing a Windows service that can be controlled via WMI. I use Log4Net to log all of the service’s activities. I can see logs from the service starting up and doing its regular processing, but I can’t see logs from WMI commands.</p>
+<p>In addition, when the WMI command tells the service to access a resource (eg. load a configuration file or walk a directory tree), the command fails. WMI error messages aren’t much help (“Not found” anybody? How about “The RPC server is unavailable.”) And with logging not working, I have to attach the debugger to see what’s happening.</p>
+<h3>Cancel impersonation</h3>
+<p>The reason for both of these problems is that the WMI user doesn’t have access to either the log file or the resource I’m trying to access. The solution, cancel impersonation:</p>
+<pre class="code"><span style="color: blue">public class </span><span style="color: #2b91af">CancelImpersonation </span>: <span style="color: #2b91af">IDisposable
+</span>{
+    <span style="color: blue">private </span><span style="color: #2b91af">WindowsImpersonationContext </span>_impersonationContext;
+
+    <span style="color: blue">public </span>CancelImpersonation()
+    {
+        _impersonationContext = <span style="color: #2b91af">WindowsIdentity</span>.Impersonate(<span style="color: #2b91af">IntPtr</span>.Zero);
+    }
+
+    <span style="color: blue">public void </span>Dispose()
+    {
+        _impersonationContext.Undo();
+    }
+}</pre>
+<p>Wrap one of these in a using statement, then anything you do in the brackets is running as local system (or whatever user the service is configured to run as).</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="index8e7f.html?cat=19" title="View all posts in C#" rel="category">C#</a> |   <a href="indexa7b7.html?p=553#respond" title="Comment on Access resources within WMI commands in a Windows service">No Comments &#187;</a></p>
+
+			</div>
+
+				<div class="post">
+				<h3 id="post-510"><a href="index912b.html?p=510" rel="bookmark" title="Permanent Link to Easy .NET directory helper">Easy .NET directory helper</a></h3>
+				<small>Wednesday, June 23rd, 2010</small>
+
+				<div class="entry">
+					<p>Add this class to your C# project:</p>
+<pre><span style="color: blue">public</span> <span style="color: blue">class</span> <span style="color: #2b91af">Directory</span>
+{
+    <span style="color: blue">private</span> <span style="color: blue">string</span> _path;
+
+    <span style="color: blue">private</span> Directory(<span style="color: blue">string</span> path)
+    {
+        _path = path;
+    }
+
+    <span style="color: blue">public</span> <span style="color: blue">static</span> <span style="color: #2b91af">Directory</span> ApplicationData
+    {
+        <span style="color: blue">get</span>
+        {
+            <span style="color: blue">return</span> <span style="color: blue">new</span> <span style="color: #2b91af">Directory</span>(<span style="color: #2b91af">Environment</span>.GetFolderPath(
+                <span style="color: #2b91af">Environment</span>.SpecialFolder.ApplicationData));
+        }
+    }
+
+    <span style="color: blue">public</span> <span style="color: blue">static</span> <span style="color: #2b91af">Directory</span> CommonApplicationData
+    {
+        <span style="color: blue">get</span>
+        {
+            <span style="color: blue">return</span> <span style="color: blue">new</span> <span style="color: #2b91af">Directory</span>(<span style="color: #2b91af">Environment</span>.GetFolderPath(
+                <span style="color: #2b91af">Environment</span>.SpecialFolder.CommonApplicationData));
+        }
+    }
+
+    <span style="color: blue">public</span> <span style="color: blue">static</span> <span style="color: #2b91af">Directory</span> <span style="color: blue">operator</span> /(<span style="color: #2b91af">Directory</span> root, <span style="color: blue">string</span> folder)
+    {
+        <span style="color: blue">return</span> <span style="color: blue">new</span> <span style="color: #2b91af">Directory</span>(<span style="color: #2b91af">Path</span>.Combine(root._path, folder));
+    }
+
+    <span style="color: blue">public</span> <span style="color: blue">static</span> <span style="color: blue">implicit</span> <span style="color: blue">operator</span> <span style="color: blue">string</span>(<span style="color: #2b91af">Directory</span> directory)
+    {
+        <span style="color: blue">return</span> directory._path;
+    }
+}</pre>
+<p>Now you can express directories naturally:</p>
+<pre><span style="color: blue">string</span> databaseFileName = <span style="color: #2b91af">Directory</span>.ApplicationData / <span style="color: maroon">&quot;MichaelLPerry&quot;</span> / <span style="color: maroon">&quot;CorrespondenceIM&quot;</span> / <span style="color: maroon">&quot;Correspondence.sdf&quot;</span>;</pre>
+<p>I don’t have a good place for code like this to live. What do you do with these kinds of utilities?</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="index8e7f.html?cat=19" title="View all posts in C#" rel="category">C#</a> |   <a href="index912b.html?p=510#respond" title="Comment on Easy .NET directory helper">No Comments &#187;</a></p>
+
+			</div>
+
+				<div class="post">
+				<h3 id="post-481"><a href="indexf705.html?p=481" rel="bookmark" title="Permanent Link to Java/WCF Interop">Java/WCF Interop</a></h3>
+				<small>Monday, February 8th, 2010</small>
+
+				<div class="entry">
+					<p>As of today (February 2010), the story of Java/WCF interoperability is fair. That wasn’t always the case. In the past, I’ve struggled to get Java and .NET to play nice. Today, I was able to make a .NET WCF client talk to a Java CXF web service with just a little coaxing. Here’s how I did it.</p>
+<p><strong>Contract first</strong>    <br />The first step to successful interoperability is to define the contract. Somehow you need to generate the WSDL, and you need to tightly control what it looks like. Use tools to help you, but keep a close eye on what those tools do.</p>
+<p>I started with a WCF service contract. This is a .NET interface that uses the [ServiceContract] and [OperationContract] attributes. Put this interface and all of the data types it uses into a class library project. Here’s an example:</p>
+<pre>[<span style="color: #2b91af">ServiceContract</span>(Namespace = <span style="color: maroon">&quot;http://correspondence.updatecontrols.com&quot;</span>)]
+<span style="color: blue">public</span> <span style="color: blue">interface</span> <span style="color: #2b91af">ISynchronizationService</span>
+{
+    [<span style="color: #2b91af">OperationContract</span>]
+    <span style="color: #2b91af">FactTree</span> Get(<span style="color: #2b91af">FactTree</span> pivotTree, <span style="color: blue">long</span> pivotId, <span style="color: blue">long</span> timestamp);
+
+    [<span style="color: #2b91af">OperationContract</span>]
+    <span style="color: blue">void</span> Post(<span style="color: #2b91af">FactTree</span> messageBody);
+}</pre>
+<p>The FactTree data type used by this interface is decorated with the [DataContract] and [DataMember] attributes.</p>
+<pre>[<span style="color: #2b91af">DataContract</span>(<span style="color: #2b91af">Namespace</span> = <span style="color: maroon">&quot;http://correspondence.updatecontrols.com&quot;</span>)]
+<span style="color: blue">public</span> <span style="color: blue">class</span> <span style="color: #2b91af">FactTree</span>
+{
+    [<span style="color: #2b91af">DataMember</span>]
+    <span style="color: blue">public</span> <span style="color: blue">long</span> <span style="color: #2b91af">DatabaseId</span> { <span style="color: blue">get</span>; <span style="color: blue">set</span>; }
+
+    [<span style="color: #2b91af">DataMember</span>]
+    <span style="color: blue">public</span> <span style="color: #2b91af">List</span>&lt;<span style="color: #2b91af">Fact</span>&gt; <span style="color: #2b91af">Facts</span> { <span style="color: blue">get</span>; <span style="color: blue">set</span>; }
+
+    [<span style="color: #2b91af">DataMember</span>]
+    <span style="color: blue">public</span> <span style="color: #2b91af">List</span>&lt;<span style="color: #2b91af">FactRole</span>&gt; <span style="color: #2b91af">Roles</span> { <span style="color: blue">get</span>; <span style="color: blue">set</span>; }
+
+    [<span style="color: #2b91af">DataMember</span>]
+    <span style="color: blue">public</span> <span style="color: #2b91af">List</span>&lt;<span style="color: #2b91af">FactType</span>&gt; <span style="color: #2b91af">Types</span> { <span style="color: blue">get</span>; <span style="color: blue">set</span>; }
+}</pre>
+<p><strong>Create a WCF service</strong></p>
+<p>Even though we want to end up with a Java web service, an intermediate step is to implement this service in WCF.</p>
+<ol>
+<li>Create a new project in Visual Studio using the template Visual C#: Web: WCF Service Application.</li>
+<li>Add a reference to the class library that defines the interface.</li>
+<li>Change the name of the generated service from Service1 to something meaningful.</li>
+<li>Delete the generated IService1 interface.</li>
+<li>Use your own interface instead.</li>
+<li>Add a [ServiceBehavior] attribute to set the Namespace.</li>
+</ol>
+<p>At this point, the service looks something like this:</p>
+<pre><span style="color: green">// NOTE: If you change the class name &quot;Service1&quot; here, you must also update the reference to &quot;Service1&quot; in Web.config and in the associated .svc file.</span>
+[<span style="color: #2b91af">ServiceBehavior</span>(<span style="color: #2b91af">Namespace</span> = <span style="color: maroon">&quot;http://correspondence.updatecontrols.com&quot;</span>)]
+<span style="color: blue">public</span> <span style="color: blue">class</span> <span style="color: #2b91af">SynchronizationService</span> : <span style="color: #2b91af">ISynchronizationService</span>
+{
+    <span style="color: blue">public</span> <span style="color: #2b91af">FactTree</span> <span style="color: #2b91af">Get</span>(<span style="color: #2b91af">FactTree</span> pivotTree, <span style="color: blue">long</span> pivotId, <span style="color: blue">long</span> timestamp)
+    {
+        <span style="color: blue">throw</span> <span style="color: blue">new</span> <span style="color: #2b91af">NotImplementedException</span>();
+    }
+
+    <span style="color: blue">public</span> <span style="color: blue">void</span> <span style="color: #2b91af">Post</span>(<span style="color: #2b91af">FactTree</span> messageBody)
+    {
+        <span style="color: blue">throw</span> <span style="color: blue">new</span> <span style="color: #2b91af">NotImplementedException</span>();
+    }
+}</pre>
+<p>Like the comment says, we need to edit the svc file and the web.config. Right-click the svc file in the project tree and select “View Markup”. Change the Service attribute to the fully qualified name of the service class.</p>
+<pre><span style="color: blue">&lt;</span><span style="color: maroon">%@</span> ServiceHost <span style="color: red">Language</span>=&quot;<span style="color: blue">C#</span>&quot; <span style="color: red">Debug</span>=&quot;<span style="color: blue">true</span>&quot;
+  <span style="color: red">Service</span>=&quot;<span style="color: blue">UpdateControls.Correspondence.WebService.SynchronizationService</span>&quot;
+  <span style="color: red">CodeBehind</span>=&quot;<span style="color: blue">SynchronizationService.svc.cs</span>&quot; %<span style="color: blue">&gt;</span></pre>
+<p>The web.config change is slightly more complicated. There’s a lot of junk in web.config that you don’t need to worry about. The section you want is all the way at the bottom. Look for the &lt;service&gt; tag. It has two attributes: name and behaviorConfiguration. Also look for the &lt;endpoint&gt; tag right below it. It has three attributes: address, binding, and contract.</p>
+<ol>
+<li>Change the service name to the fully qualified name of your service class.</li>
+<li>Change the endpoint binding from wsHttpBinding to basicHttpBinding.</li>
+<li>Change the endpoint contract from IService1 to the fully qualified name of your interface.</li>
+</ol>
+<p>Here’s a trick to getting the fully qualified names. Delete the text between the quotes of the attributes. Open the Class View by hitting Ctrl+Shift+C in Visual Studio. Expand the tree to find your service class and interface. Drag them onto the web.config file between the quotes.</p>
+<p>You can also change the name of the service behavior, but that’s not necessary for this intermediate step.</p>
+<p><strong>Examine the WSDL</strong></p>
+<p>These steps ensure that we have nice clean WSDL to work from. Take a look at it by running your WCF service application. A directory listing will open in the browser. Click on the svc file. If you get a yellow screen, please double-check your steps.</p>
+<p>Click on the link to see the WSDL you’ve created. Different browsers react differently to raw XML. IE and Firefox will show it to you, but Chrome will give you a blank screen. You’ll have to view source to see the WSDL in Chrome.</p>
+<p>On this first page, you’ll see all of the input and output messages, and the operations, and the service itself. Double-check that the service uses binding=&quot;i0:BasicHttpBinding_...&quot;.</p>
+<p>Hack the url to look at more detailed information. Change the query string to “?wsdl=wsdl0” to see the declaration for the binding. It uses “http://schemas.xmlsoap.org/soap/http” with the “document” style.</p>
+<p>Hack the url again with “?xsd=xsd0” to see the data types. You should recognize these data types as the ones you wrote in C#. Notice that it turns all of your List&lt;T&gt;s into ArrayOfTs. When we import these into Java, they will become classes containing List&lt;T&gt;.</p>
+<p><strong>Create the Java contract project</strong></p>
+<p>Create a Java project in your favorite IDE (mine is Eclipse). Open a command prompt and go to the source directory of that project (probably ends in “src”). Download <a href="http://cxf.apache.org/">Apache CXF</a> and unzip it to your hard drive (mine is in “c:\apache-cxf-2.2.6”).</p>
+<p>Go back to the first WSDL page, the one with the “?wsdl” query string. This is the URL that we are going to generate Java files from. Copy this URL and use it at the command line:</p>
+<pre>\apache-cxf-<span style="color: maroon">2</span><span style="color: maroon">.2</span><span style="color: maroon">.6</span>\bin\wsdl2java.bat http://localhost:<span style="color: maroon">3642</span>/SynchronizationService.svc<span style="color: #2b91af">?</span>wsdl</pre>
+<p>CXF will generate a bunch of class files. Most will be in a package derived from your namespace. One will be in “com.microsoft.schemas._2003._10.serialization”. If you find one in org.tempuri package, you forgot a Namespace setting in one of your attributes. These class files are decorated with enough annotations to make them compatible with the WCF service.</p>
+<p><strong>Create the Java service project</strong></p>
+<p>Although you could put your service implementation and contract in the same project, I prefer to keep them separate. You can use the contract project to write a different service implementation, or even to write a client.</p>
+<p>Create a new Dynamic Web Project. Add to the new project a reference to the contact project. You will also need to add this reference to the Java EE Module Dependencies in the project properties. Otherwise it won’t copy the contract jar file to the service lib directory, resulting in a NoClassDefFoundError at runtime. Then add a class that implements the service contract. Copy the @WebService annotation from the interface to the class. The service looks something like this:</p>
+<pre>@WebService(targetNamespace = <span style="color: maroon">&quot;http://correspondence.updatecontrols.com&quot;</span>, name = <span style="color: maroon">&quot;ISynchronizationService&quot;</span>)
+<span style="color: blue">public</span> <span style="color: blue">class</span> SynchronizationService <span style="color: blue">implements</span> ISynchronizationService {
+
+    @Override
+    <span style="color: blue">public</span> FactTree get(FactTree pivotTree, Long pivotId, Long timestamp) {
+        <span style="color: green">// TODO Auto-generated method stub</span>
+        <span style="color: blue">return</span> <span style="color: blue">null</span>;
+    }
+
+    @Override
+    <span style="color: blue">public</span> <span style="color: blue">void</span> post(FactTree messageBody) {
+        <span style="color: green">// TODO Auto-generated method stub</span>
+
+    }
+
+}</pre>
+<p>The service project needs the CXF jar files. Copy them from the CXF install folder (C:\apache-cxf-2.2.6\lib) into the project’s library folder (WebContent\WEB-INF\lib). This is the minimal set that you will need:</p>
+<ul>
+<li>jaxb-api-2.1.jar</li>
+<li>jaxb-impl-2.1.12.jar</li>
+<li>wsdl4j-1.6.2.jar</li>
+<li>XmlSchema-1.4.5.jar</li>
+<li>cxf-2.2.6.jar</li>
+</ul>
+<p>Now we need to publish this web service as a servlet. The quickest way to do that is to derive a class from CXFNonSpringServlet. Right-click the project and select &quot;New: Servlet”. Change the servlet base class to “org.apache.cxf.transport.servlet.CXFNonSpringServlet”. Uncheck the boxes to implement doGet and doPost. The base class handles those for you. Once the class is created, override the loadBus method.</p>
+<pre><span style="color: blue">package</span> com.updatecontrols.correspondence.service;
+
+<span style="color: blue">import</span> javax.servlet.ServletConfig;
+<span style="color: blue">import</span> javax.servlet.ServletException;
+<span style="color: blue">import</span> javax.xml.ws.Endpoint;
+
+<span style="color: blue">import</span> org.apache.cxf.transport.servlet.CXFNonSpringServlet;
+
+<span style="color: blue">public</span> <span style="color: blue">class</span> SynchronizationServlet <span style="color: blue">extends</span> CXFNonSpringServlet {
+    @Override
+    <span style="color: blue">public</span> <span style="color: blue">void</span> loadBus(ServletConfig servletConfig) <span style="color: blue">throws</span> ServletException {
+        <span style="color: blue">super</span>.loadBus(servletConfig);        
+
+        Endpoint.publish(<span style="color: maroon">&quot;/SynchronizationService&quot;</span>, <span style="color: blue">new</span> SynchronizationService());
+    }
+}</pre>
+<p>Open the web.xml file. You will notice that a servlet mapping was created for you. This mapping is set up to handle URLs that directly address the servlet, but the CXF servlet adds the service name to the URL. Add a “/*” to the end of the URL pattern to direct all such addresses to the servlet.</p>
+<pre><span style="color: blue">&lt;?</span><span style="color: maroon">xml</span> <span style="color: red">version</span>=&quot;<span style="color: blue">1.0</span>&quot; <span style="color: red">encoding</span>=&quot;<span style="color: blue">UTF-8</span>&quot;<span style="color: blue">?&gt;</span>
+<span style="color: blue">&lt;</span><span style="color: maroon">web-app</span> <span style="color: red">id</span>=&quot;<span style="color: blue">WebApp_ID</span>&quot; <span style="color: red">version</span>=&quot;<span style="color: blue">2.4</span>&quot; <span style="color: red">xmlns</span>=&quot;<span style="color: blue">http://java.sun.com/xml/ns/j2ee</span>&quot; <span style="color: red">xmlns:xsi</span>=&quot;<span style="color: blue">http://www.w3.org/2001/XMLSchema-instance</span>&quot; <span style="color: red">xsi:schemaLocation</span>=&quot;<span style="color: blue">http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd</span>&quot;<span style="color: blue">&gt;</span>
+    <span style="color: blue">&lt;</span><span style="color: maroon">display-name</span><span style="color: blue">&gt;</span>correspondence_sync_service<span style="color: blue">&lt;</span>/<span style="color: maroon">display-name</span><span style="color: blue">&gt;</span>
+    <span style="color: blue">&lt;</span><span style="color: maroon">servlet</span><span style="color: blue">&gt;</span>
+        <span style="color: blue">&lt;</span><span style="color: maroon">description</span><span style="color: blue">&gt;</span>
+        <span style="color: blue">&lt;</span>/<span style="color: maroon">description</span><span style="color: blue">&gt;</span>
+        <span style="color: blue">&lt;</span><span style="color: maroon">display-name</span><span style="color: blue">&gt;</span>SynchronizationServlet<span style="color: blue">&lt;</span>/<span style="color: maroon">display-name</span><span style="color: blue">&gt;</span>
+        <span style="color: blue">&lt;</span><span style="color: maroon">servlet-name</span><span style="color: blue">&gt;</span>SynchronizationServlet<span style="color: blue">&lt;</span>/<span style="color: maroon">servlet-name</span><span style="color: blue">&gt;</span>
+        <span style="color: blue">&lt;</span><span style="color: maroon">servlet-class</span><span style="color: blue">&gt;</span>
+        com.updatecontrols.correspondence.service.SynchronizationServlet<span style="color: blue">&lt;</span>/<span style="color: maroon">servlet-class</span><span style="color: blue">&gt;</span>
+    <span style="color: blue">&lt;</span>/<span style="color: maroon">servlet</span><span style="color: blue">&gt;</span>
+    <span style="color: blue">&lt;</span><span style="color: maroon">servlet-mapping</span><span style="color: blue">&gt;</span>
+        <span style="color: blue">&lt;</span><span style="color: maroon">servlet-name</span><span style="color: blue">&gt;</span>SynchronizationServlet<span style="color: blue">&lt;</span>/<span style="color: maroon">servlet-name</span><span style="color: blue">&gt;</span>
+        <span style="color: blue">&lt;</span><span style="color: maroon">url-pattern</span><span style="color: blue">&gt;</span>/SynchronizationServlet<strong>/*</strong><span style="color: blue">&lt;</span>/<span style="color: maroon">url-pattern</span><span style="color: blue">&gt;</span>
+    <span style="color: blue">&lt;</span>/<span style="color: maroon">servlet-mapping</span><span style="color: blue">&gt;</span>
+<span style="color: blue">&lt;</span>/<span style="color: maroon">web-app</span><span style="color: blue">&gt;</span></pre>
+<p>Run the project in Tomcat to make sure the servlet is published correctly. Point a browser at the servlet (in my case http://localhost:8080/correspondence_sync_service/SynchronizationServlet) and you should see a listing of available SOAP services. Append the service name to the URL (http://localhost:8080/correspondence_sync_service/SynchronizationServlet/SynchronizationService) and you will get a 500 error. If you get a 404, you haven’t modified the web.xml file correctly.</p>
+<p><strong>Create a WCF client</strong></p>
+<p>The last step is the easiest. Since we started by creating a WCF service contract, we can ask WCF to create a client proxy. I documented this technique in <a href="indexbcd6.html?p=338">.NET to .NET web services without WSDL</a>. It turns out that this trick works equally well for .NET to Java web services.</p>
+<p>Add an endpoint to the app.config of your client. The URL should be the servlet name followed by the service name. For example:</p>
+<pre><span style="color: blue">&lt;?</span><span style="color: maroon">xml</span> <span style="color: red">version</span>=&quot;<span style="color: blue">1.0</span>&quot; <span style="color: red">encoding</span>=&quot;<span style="color: blue">utf-8</span>&quot; <span style="color: blue">?&gt;</span>
+<span style="color: blue">&lt;</span><span style="color: maroon">configuration</span><span style="color: blue">&gt;</span>
+  <span style="color: blue">&lt;</span><span style="color: maroon">system.serviceModel</span><span style="color: blue">&gt;</span>
+    <span style="color: blue">&lt;</span><span style="color: maroon">bindings</span><span style="color: blue">&gt;</span>
+      <span style="color: blue">&lt;</span><span style="color: maroon">basicHttpBinding</span><span style="color: blue">&gt;</span>
+        <span style="color: blue">&lt;</span><span style="color: maroon">binding</span> <span style="color: red">name</span>=&quot;<span style="color: blue">SynchronizationServiceSoapBinding</span>&quot; <span style="color: red">closeTimeout</span>=&quot;<span style="color: blue">00:01:00</span>&quot;
+            <span style="color: red">openTimeout</span>=&quot;<span style="color: blue">00:01:00</span>&quot; <span style="color: red">receiveTimeout</span>=&quot;<span style="color: blue">00:10:00</span>&quot; <span style="color: red">sendTimeout</span>=&quot;<span style="color: blue">00:01:00</span>&quot;
+            <span style="color: red">allowCookies</span>=&quot;<span style="color: blue">false</span>&quot; <span style="color: red">bypassProxyOnLocal</span>=&quot;<span style="color: blue">false</span>&quot; <span style="color: red">hostNameComparisonMode</span>=&quot;<span style="color: blue">StrongWildcard</span>&quot;
+            <span style="color: red">maxBufferSize</span>=&quot;<span style="color: blue">65536</span>&quot; <span style="color: red">maxBufferPoolSize</span>=&quot;<span style="color: blue">524288</span>&quot; <span style="color: red">maxReceivedMessageSize</span>=&quot;<span style="color: blue">65536</span>&quot;
+            <span style="color: red">messageEncoding</span>=&quot;<span style="color: blue">Text</span>&quot; <span style="color: red">textEncoding</span>=&quot;<span style="color: blue">utf-8</span>&quot; <span style="color: red">transferMode</span>=&quot;<span style="color: blue">Buffered</span>&quot;
+            <span style="color: red">useDefaultWebProxy</span>=&quot;<span style="color: blue">true</span>&quot;<span style="color: blue">&gt;</span>
+          <span style="color: blue">&lt;</span><span style="color: maroon">readerQuotas</span> <span style="color: red">maxDepth</span>=&quot;<span style="color: blue">32</span>&quot; <span style="color: red">maxStringContentLength</span>=&quot;<span style="color: blue">8192</span>&quot; <span style="color: red">maxArrayLength</span>=&quot;<span style="color: blue">16384</span>&quot;
+              <span style="color: red">maxBytesPerRead</span>=&quot;<span style="color: blue">4096</span>&quot; <span style="color: red">maxNameTableCharCount</span>=&quot;<span style="color: blue">16384</span>&quot; /<span style="color: blue">&gt;</span>
+          <span style="color: blue">&lt;</span><span style="color: maroon">security</span> <span style="color: red">mode</span>=&quot;<span style="color: blue">None</span>&quot;<span style="color: blue">&gt;</span>
+            <span style="color: blue">&lt;</span><span style="color: maroon">transport</span> <span style="color: red">clientCredentialType</span>=&quot;<span style="color: blue">None</span>&quot; <span style="color: red">proxyCredentialType</span>=&quot;<span style="color: blue">None</span>&quot; <span style="color: red">realm</span>=&quot;<span style="color: blue"></span>&quot;/<span style="color: blue">&gt;</span>
+            <span style="color: blue">&lt;</span><span style="color: maroon">message</span> <span style="color: red">clientCredentialType</span>=&quot;<span style="color: blue">UserName</span>&quot; <span style="color: red">algorithmSuite</span>=&quot;<span style="color: blue">Default</span>&quot; /<span style="color: blue">&gt;</span>
+          <span style="color: blue">&lt;</span>/<span style="color: maroon">security</span><span style="color: blue">&gt;</span>
+        <span style="color: blue">&lt;</span>/<span style="color: maroon">binding</span><span style="color: blue">&gt;</span>
+      <span style="color: blue">&lt;</span>/<span style="color: maroon">basicHttpBinding</span><span style="color: blue">&gt;</span>
+    <span style="color: blue">&lt;</span>/<span style="color: maroon">bindings</span><span style="color: blue">&gt;</span>
+    <span style="color: blue">&lt;</span><span style="color: maroon">client</span><span style="color: blue">&gt;</span>
+      <span style="color: blue">&lt;</span><span style="color: maroon">endpoint</span> <span style="color: red">address</span>=&quot;<span style="color: blue"><strong>http://localhost:8080/correspondence_sync_service/SynchronizationServlet/SynchronizationService</strong></span>&quot;
+          <span style="color: red">binding</span>=&quot;<span style="color: blue">basicHttpBinding</span>&quot; <span style="color: red">bindingConfiguration</span>=&quot;<span style="color: blue">SynchronizationServiceSoapBinding</span>&quot;
+          <span style="color: red">contract</span>=&quot;<span style="color: blue">UpdateControls.Correspondence.WebService.Contract.ISynchronizationService</span>&quot; <span style="color: red">name</span>=&quot;<span style="color: blue">SynchronizationService</span>&quot; /<span style="color: blue">&gt;</span>
+    <span style="color: blue">&lt;</span>/<span style="color: maroon">client</span><span style="color: blue">&gt;</span>
+  <span style="color: blue">&lt;</span>/<span style="color: maroon">system.serviceModel</span><span style="color: blue">&gt;</span>
+<span style="color: blue">&lt;</span>/<span style="color: maroon">configuration</span><span style="color: blue">&gt;</span></pre>
+<p>And with that you have a .NET WCF client communicating with a Java CXF server. I expect that similar strategies could be used to go the other direction, although I haven’t tried yet.</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="index8e7f.html?cat=19" title="View all posts in C#" rel="category">C#</a>,  <a href="index5b0d.html?cat=12" title="View all posts in Java" rel="category">Java</a> |   <a href="indexf705.html?p=481#respond" title="Comment on Java/WCF Interop">No Comments &#187;</a></p>
+
+			</div>
+
+				<div class="post">
+				<h3 id="post-431"><a href="index88c3.html?p=431" rel="bookmark" title="Permanent Link to My wish for C#: class parameters">My wish for C#: class parameters</a></h3>
+				<small>Friday, September 11th, 2009</small>
+
+				<div class="entry">
+					<p>How C# works today:</p>
+<pre><span style="color: blue">public</span> <span style="color: blue">class</span> Order
+{
+    <span style="color: blue">private</span> Customer _customer;
+
+    <span style="color: blue">public</span> Order(Customer customer)
+    {
+        _customer = customer;
+    }
+
+    <span style="color: blue">public</span> Customer Customer
+    {
+        <span style="color: blue">get</span> { <span style="color: blue">return</span> _customer; }
+    }
+
+    <span style="color: blue">public</span> <span style="color: blue">void</span> Fulfill()
+    {
+        Package.ShipTo(_customer.ShippingAddress);
+    }
+}</pre>
+<p>How I wish it worked:</p>
+<pre><span style="color: blue">public</span> <span style="color: blue">class</span> Order(Customer _customer)
+{
+    <span style="color: blue">public</span> Customer Customer
+    {
+        <span style="color: blue">get</span> { <span style="color: blue">return</span> _customer; }
+    }
+
+    <span style="color: blue">public</span> <span style="color: blue">void</span> Fulfill()
+    {
+        Package.ShipTo(_customer.ShippingAddress);
+    }
+}</pre>
+<p>Advantages:</p>
+<ul>
+<li>Class parameters would be immutable.</li>
+<li>Classes could only have one constructor.</li>
+<li>Constructors could not have side effects.</li>
+<li>Constructors could not throw exceptions.</li>
+<li>Class parameters would only have to be declared once instead of 3 times (counting the assignment).</li>
+</ul>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="index8e7f.html?cat=19" title="View all posts in C#" rel="category">C#</a>,  <a href="index51fa.html?cat=40" title="View all posts in qed" rel="category">qed</a> |   <a href="index88c3.html?p=431#respond" title="Comment on My wish for C#: class parameters">No Comments &#187;</a></p>
+
+			</div>
+
+				<div class="post">
+				<h3 id="post-430"><a href="indexbdc5.html?p=430" rel="bookmark" title="Permanent Link to Anonymous delegates vs. lambdas">Anonymous delegates vs. lambdas</a></h3>
+				<small>Thursday, September 10th, 2009</small>
+
+				<div class="entry">
+					<p>An interesting question came up during last week's Q.E.D. discussion on closure. Why are there two language features in C# that do the same thing?</p>
+<p>Lambdas:</p>
+<pre><span style="color: blue">public</span> Order GetOrder(<span style="color: blue">string</span> orderId)
+{
+    <span style="color: blue">return</span> GetOrderRepository()
+        .GetSatisfying(o =&gt; o.OrderId == orderId)
+        .Query()
+        .FirstOrDefault();
+}</pre>
+<p>Anonymous delegates:</p>
+<pre><span style="color: blue">public</span> Order GetOrder(<span style="color: blue">string</span> orderId)
+{
+    <span style="color: blue">return</span> GetOrderRepository()
+        .GetSatisfying(<span style="color: blue">delegate</span>(Order o)
+            { <span style="color: blue">return</span> o.OrderId == orderId; })
+        .Query()
+        .FirstOrDefault();
+}</pre>
+<p>Do you see the difference? Let me give you a clue. Here's another way to write the anonymous delegate:</p>
+<pre><span style="color: blue">public</span> Order GetOrder(<span style="color: blue">string</span> orderId)
+{
+    <span style="color: blue">return</span> GetOrderRepository()
+        .GetSatisfying(o =&gt;
+           { <span style="color: blue">return</span> o.OrderId == orderId; })
+        .Query()
+        .FirstOrDefault();
+}</pre>
+<p>Even though this syntax uses the lambda operator "=&gt;", it still behaves more like an anonymous delegate. The important difference is not the "=&gt;" or the "delegate", its the "return" and the semicolon.</p>
+<p>A lambda contains an expression. An anonymous delegate contains statements. Sure, that <em>could</em> be a single return statement, but it doesn't have to be.</p>
+<p>It should be stated that only the first block of code compiles in this instance. That's because GetSatisfying takes "Expression&lt;Func&lt;Order, bool&gt;&gt;", and not just "Func&lt;Order, bool&gt;". A function is just a block of code that you can call which happens to return a value. An expression, on the other hand, exists only to produce that value.</p>
+<p>Lambdas are expressions. Anonymous delegates are functions.</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="index8e7f.html?cat=19" title="View all posts in C#" rel="category">C#</a>,  <a href="index51fa.html?cat=40" title="View all posts in qed" rel="category">qed</a> |   <a href="indexbdc5.html?p=430#respond" title="Comment on Anonymous delegates vs. lambdas">No Comments &#187;</a></p>
+
+			</div>
+
+				<div class="post">
+				<h3 id="post-417"><a href="indexb8c6.html?p=417" rel="bookmark" title="Permanent Link to Linq and regular expressions: a perfect match">Linq and regular expressions: a perfect match</a></h3>
+				<small>Friday, August 21st, 2009</small>
+
+				<div class="entry">
+					<p>Both Linq and regular expressions are great ways to write declarative code. When you combine the two, the result is magic.</p>
+<p>Here's a utility class that returns a human readable name from a camel-case identifier.</p>
+<pre><span style="color: blue">public</span> <span style="color: blue">static</span> <span style="color: blue">class</span> NameUtilities
+{
+    <span style="color: blue">private</span> <span style="color: blue">static</span> Regex WORD = <span style="color: blue">new</span> Regex(
+        <span style="color: green">// Lower-case letters at the beginning of the word.</span>
+        <span style="color: maroon">"(^[a-z]+)|"</span> +
+        <span style="color: green">// At least two upper-case letters not followed by a lower case letter.</span>
+        <span style="color: maroon">"([A-Z]{2,}(?![a-z]))|"</span> +
+        <span style="color: green">// An upper-case letter followed by lower-case letters.</span>
+        <span style="color: maroon">"([A-Z][a-z]+)"</span>);
+
+    <span style="color: blue">public</span> <span style="color: blue">static</span> <span style="color: blue">string</span> HumanReadableName(<span style="color: blue">string</span> identifier)
+    {
+        <span style="color: green">// Split the identifier at capitals followed by lower case.</span>
+        <span style="color: blue">return</span> WORD.Matches(identifier).OfType&lt;Match&gt;()
+            .Select(m =&gt; InitialCaps(m.Value))
+            .Aggregate((name, part) =&gt; name + <span style="color: maroon">" "</span> + part);
+    }
+
+    <span style="color: blue">private</span> <span style="color: blue">static</span> <span style="color: blue">string</span> InitialCaps(<span style="color: blue">string</span> word)
+    {
+        <span style="color: blue">if</span> (word.Length &lt; <span style="color: maroon">2</span>)
+            <span style="color: blue">return</span> word.ToUpper();
+        <span style="color: blue">else</span>
+            <span style="color: blue">return</span> word.Substring(<span style="color: maroon">0</span>, <span style="color: maroon">1</span>).ToUpper() + word.Substring(<span style="color: maroon">1</span>);
+    }
+}</pre>
+<p>The Matches method returns a MatchCollection. Since this class predates .NET generics, it implements the untyped IEnumerable. OfType&lt;Match&gt;() is required to safely cast each member to a Match.</p>
+<p>Each of the Matches is converted into a capitalized word, and the words are concatenated with intervening spaces. The Aggregate() trick is thanks to <a href="http://msmvps.com/blogs/deborahk/archive/2009/07/03/lambdas-aggregating-strings.aspx">Deborah Kurata</a>. Sure, it might be less efficient than StringBuilder.Append(), but measure before you assume.</p>
+<p>The combination of two great declarative programming techniques creates a concise, readable piece of code. The same algorithm written imperatively would be much more complex.</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="index8e7f.html?cat=19" title="View all posts in C#" rel="category">C#</a> |   <a href="indexb8c6.html?p=417#respond" title="Comment on Linq and regular expressions: a perfect match">No Comments &#187;</a></p>
+
+			</div>
+
+				<div class="post">
+				<h3 id="post-339"><a href="indexb247.html?p=339" rel="bookmark" title="Permanent Link to Avoid mutable variables in linq expressions">Avoid mutable variables in linq expressions</a></h3>
+				<small>Wednesday, April 29th, 2009</small>
+
+				<div class="entry">
+					<p>Please take a moment to determine whether this unit test (in C#) passes.</p>
+<pre><font color="#0000ff">var</font> collection = <span style="color: blue">new</span> <font color="#008080">NamedNumber</font>[]
+{
+    <span style="color: blue">new</span> <font color="#008080">NamedNumber</font>() { Name = <span style="color: maroon">"One"</span>, Number = <span style="color: maroon">1</span> },
+    <span style="color: blue">new</span> <font color="#008080">NamedNumber</font>() { Name = <span style="color: maroon">"Two"</span>, Number = <span style="color: maroon">2</span> },
+    <span style="color: blue">new</span> <font color="#008080">NamedNumber</font>() { Name = <span style="color: maroon">"Three"</span>, Number = <span style="color: maroon">3</span> }
+};
+<font color="#008080">IEnumerable</font>&lt;<font color="#0000ff">string</font>&gt; names = <span style="color: blue">null</span>;
+<span style="color: blue">for</span> (<span style="color: blue">int</span> i = <span style="color: maroon">1</span>; i &lt; <span style="color: maroon">3</span>; ++i)
+{
+    <span style="color: blue">if</span> (i == <span style="color: maroon">1</span>)
+        names = <font color="#0000ff">from</font> n <font color="#0000ff">in</font> collection <font color="#0000ff">where</font> n.Number == i <font color="#0000ff">select</font> n.Name;
+}
+
+<font color="#0000ff">string</font> name = names.Single();
+<font color="#008080">Assert</font>.AreEqual(<span style="color: maroon">"One"</span>, name);
+</pre>
+<p>We are producing an enumerator over named numbers using linq syntax. Only when i is equal to 1 do we produce this enumerator. You would therefore assume that it would enumerate only the numbers equal to 1.</p>
+<p>If that were the case, I wouldn't bother to write this post. Indeed, I wouldn't have even written this unit test. Nope, this test fails:</p>
+<blockquote>
+<p>Assert.AreEqual failed. Expected:&lt;One&gt;. Actual:&lt;Three&gt;.</p>
+</blockquote>
+<p>As you may already know, a linq expression is not evaluated until it is realized. The IEnumerable holds the instructions to perform the query, but does not actually do so until the enumeration is traversed. In this case, we traverse the query with the call to "Single".</p>
+<p>By the time we get to "Single", the for loop has terminated. At that point i will be equal to 3. (Notice I didn't use &lt;= 3, which would have terminated with i = 4). Only then was the expression evaluated, finding all of the numbers equal to three.</p>
+<p><strong>Closures</strong><br />Many functional languages have a concept called a closure. A closure is a block of code (a.k.a. a function) that refers to a variable from the outside. This function can be passed around and executed at any time, but it carries with it that variable. Here's a very simple example in F#:</p>
+<pre><font color="#0000ff">let</font> x = <span style="color: maroon">1</span>
+<font color="#0000ff">let</font> xplus y = x + y</pre>
+<p>The function xplus carries with it the variable x. The word "variable" can be misleading. The "variable" cannot actually vary at all. It is immutable. At least in a functional language.</p>
+<p><strong>Java</strong><br />The closest thing to a closure in Java is an anonymous inner class (at least for now). Here's the same test in Java (using my <a href="index4978.html?p=244">Java Query</a> library to approximate linq):</p>
+<pre>List&lt;NamedNumber&gt; numbers = <span style="color: blue">new</span> ArrayList&lt;NamedNumber&gt;();
+numbers.add(<span style="color: blue">new</span> NamedNumber(<span style="color: maroon">"One"</span>, <span style="color: maroon">1</span>));
+numbers.add(<span style="color: blue">new</span> NamedNumber(<span style="color: maroon">"Two"</span>, <span style="color: maroon">2</span>));
+numbers.add(<span style="color: blue">new</span> NamedNumber(<span style="color: maroon">"Three"</span>, <span style="color: maroon">3</span>));
+
+Iterable&lt;String&gt; names = <span style="color: blue">null</span>;
+<span style="color: blue">for</span> (<span style="color: blue">int</span> i = <span style="color: maroon">1</span>; i &lt; <span style="color: maroon">3</span>; ++i) {
+<span style="color: blue">    <strong>final</strong></span><strong> <span style="color: blue">int</span> fi = i;</strong>
+    <span style="color: blue">if</span> (fi == <span style="color: maroon">1</span>) {
+        names = Query
+            .from(numbers)
+            .where(<span style="color: blue">new</span> Predicate&lt;NamedNumber&gt;() {
+                <span style="color: blue">public</span> <span style="color: blue">boolean</span> where(NamedNumber row) {
+                    <span style="color: blue">return</span> row.getNumber() == fi;
+                }
+            })
+            .select(<span style="color: blue">new</span> Selector&lt;NamedNumber, String&gt;() {
+                <span style="color: blue">public</span> String select(NamedNumber row) {
+                    <span style="color: blue">return</span> row.getName();
+                }
+            });
+    }
+}
+String name = Query.from(names).selectOne();
+assertEquals(<span style="color: maroon">"One"</span>, name);
+</pre>
+<p>Notice the extra step I had to include. I had to create a "final" variable. A final variable must be initialized, and cannot change. It is immutable. Java requires that any variable used inside of an anonymous inner class be declared final.</p>
+<p>You may be thinking at this point that the value of fi <em>does</em> change during the course of this method. It is assigned a new value for each iteration of the loop. Not true. In fact, a new fi is created each time the loop is entered. Each instance of fi is initialized to a different value. While there is only one i, there are two fi's (1 and 2). The instance of the anonymous inner class is a closure that carries that instance of fi with it wherever it goes.</p>
+<p><strong>Here's my solution</strong><br />Seeing how Java forces you to solve the problem, let's try the same technique in C#.</p>
+<pre><span style="color: blue">var</span> collection = <span style="color: blue">new</span> <font color="#008080">NamedNumber</font>[]
+{
+    <span style="color: blue">new</span> <font color="#008080">NamedNumber</font>() { Name = <span style="color: maroon">"One"</span>, Number = <span style="color: maroon">1</span> },
+    <span style="color: blue">new</span> <font color="#008080">NamedNumber</font>() { Name = <span style="color: maroon">"Two"</span>, Number = <span style="color: maroon">2</span> },
+    <span style="color: blue">new</span> <font color="#008080">NamedNumber</font>() { Name = <span style="color: maroon">"Three"</span>, Number = <span style="color: maroon">3</span> }
+};
+<font color="#008080">IEnumerable</font>&lt;<span style="color: blue">string</span>&gt; names = <span style="color: blue">null</span>;
+<span style="color: blue">for</span> (<span style="color: blue">int</span> i = <span style="color: maroon">1</span>; i &lt; <span style="color: maroon">3</span>; ++i)
+{
+    <strong><span style="color: blue">int</span> fi = i;
+</strong>    <span style="color: blue">if</span> (fi == <span style="color: maroon">1</span>)
+        names = <span style="color: blue">from</span> n <span style="color: blue">in</span> collection <span style="color: blue">where</span> n.Number == <strong>fi</strong> <span style="color: blue">select</span> n.Name;
+}
+
+<span style="color: blue">string</span> name = names.Single();
+<font color="#008080">Assert</font>.AreEqual(<span style="color: maroon">"One"</span>, name);
+</pre>
+<p>Now if you run this unit test, it passes. The linq query captures the instance of fi that was created during that loop (1). It doesn't matter that a new instance of fi (2) was created before the query had a chance to execute. The query carries around the first instance (1), and uses it to select the name.</p>
+<p>While C# has its own equivalent of closures (lambdas and linq), it does not force you to use immutable variables inside of them. It's up to you to be careful never to change a variable referenced inside of a linq expression. Initialize a new variable that never changes, and use it exclusively.</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="index8e7f.html?cat=19" title="View all posts in C#" rel="category">C#</a> |   <a href="indexb247.html?p=339#respond" title="Comment on Avoid mutable variables in linq expressions">No Comments &#187;</a></p>
+
+			</div>
+
+				<div class="post">
+				<h3 id="post-338"><a href="indexbcd6.html?p=338" rel="bookmark" title="Permanent Link to .NET to .NET web services without WSDL">.NET to .NET web services without WSDL</a></h3>
+				<small>Thursday, April 23rd, 2009</small>
+
+				<div class="entry">
+					<p>We are using web services internally as an RPC mechanism. Our web tier calls our application tier via service interfaces. We are both exposing these interfaces and consuming them. They are not intended for external consumption.</p>
+<p>Since we control both ends of the conversation, WSDL is overkill. WSDL is generated by .NET when you publish a web service. Any compliant consumer can import that WSDL and generate a service proxy. When the consumer is another .NET application, you can use either "Import Service Reference" or "svcutil.exe". Publish the service, generate the proxy, and start calling it.</p>
+<p>This publish/import workflow causes problems in a homogeneous .NET/.NET environment. The generated proxy classes are all imported into one namespace, even if the published classes come from different namespaces. While this alone is confusing, it can cause real problems if you pass messages among through one service to another, or from multiple clients. Every client defines types of exactly the same shape, but since they are in different namespaces and assemblies, they are not the same type.</p>
+<p>Another problem that this causes is version inconsistencies between clients and servers. We use TFS automated builds for continuous integration. After the build, the server is published to the development environment. If we generated client proxies from that development environment, we would have an old version of the client proxy checked in at the same time as a newer version of the service.</p>
+<p><strong>Here's my solution</strong><br />Instead of going through WSDL and generating a proxy, the client can use exactly the same data types that the server publishes. If you look at the code that is generated for you, you can see how. All of the magic is in System.ServiceModel.ClientBase&lt;T&gt;. This class generates a proxy on the fly based on the interface you specify. Rather than importing that interface from WSDL, you can include it from the source.</p>
+<p>Put all of your web service contracts into a single project. This includes all of the ServiceContract interfaces that define the service methods, and the DataContract classes that define their parameters and return values. This project will need to reference System.Runtime.Serialization and System.ServiceModel. None of the implementation goes in this project. In the spirit of the <a href="http://www.objectmentor.com/resources/articles/dip.pdf">Dependency Inversion Principle</a>, it is completely abstract. I like to call it &lt;MySolution&gt;.Contracts.</p>
+<p>Next, add a reference from your web service project to &lt;MySolution&gt;.Contracts. Implement the service contract interface, and do the work of the web service here.</p>
+<p>Finally, add a reference from your client project to &lt;MySolution&gt;.Contracts. Don't add a service reference. Don't run svcutil.exe. Instead, add this little interface/class pair to your arsenal:</p>
+<pre><span style="color: blue">public</span> <span style="color: blue">interface</span> IServiceClientFactory&lt;TServiceInterface&gt;
+{
+	<span style="color: blue">void</span> CallService(Action&lt;TServiceInterface&gt; action);
+	TResult CallService&lt;TResult&gt;(Func&lt;TServiceInterface, TResult&gt; function);
+}
+
+<span style="color: blue">public</span> <span style="color: blue">class</span> ServiceClientFactory&lt;TServiceInterface&gt; :
+	IServiceClientFactory&lt;TServiceInterface&gt;
+	where TServiceInterface : <span style="color: blue">class</span>
+{
+	<span style="color: blue">class</span> Client : System.ServiceModel.ClientBase&lt;TServiceInterface&gt;
+	{
+		<span style="color: blue">public</span> TServiceInterface Service
+		{
+			get { <span style="color: blue">return</span> base.Channel; }
+		}
+	}
+
+	<span style="color: blue">public</span> <span style="color: blue">void</span> CallService(Action&lt;TServiceInterface&gt; action)
+	{
+		Client client = <span style="color: blue">new</span> Client();
+
+		<span style="color: blue">try</span>
+		{
+			action(client.Service);
+			client.Close();
+		}
+		<span style="color: blue">catch</span> (Exception)
+		{
+			client.Abort();
+			<span style="color: blue">throw</span>;
+		}
+	}
+
+	<span style="color: blue">public</span> TResult CallService&lt;TResult&gt;(Func&lt;TServiceInterface, TResult&gt; function)
+	{
+		Client client = <span style="color: blue">new</span> Client();
+
+		<span style="color: blue">try</span>
+		{
+			TResult result = function(client.Service);
+			client.Close();
+			<span style="color: blue">return</span> result;
+		}
+		<span style="color: blue">catch</span> (Exception)
+		{
+			client.Abort();
+			<span style="color: blue">throw</span>;
+		}
+	}
+}
+</pre>
+<p>With this, you can call a web service in one of two ways. Either you can invoke a method that returns nothing:</p>
+<pre>_serviceClientFactory.CallService(client =&gt;
+{
+	client.DoAction(parameters);
+})
+</pre>
+<p>Or, you can invoke a method with a return:</p>
+<pre>var something = _serviceClientFactory.CallService(client =&gt; client.GetSomething(parameters));
+</pre>
+<p>The client calls the service without ever importing the WSDL. The ServiceClientFactory does the proper Close() or Abort() pattern on the service reference. And the interface makes it suitable for IoC and unit testing.</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="index8e7f.html?cat=19" title="View all posts in C#" rel="category">C#</a> |   <a href="indexbcd6.html?p=338#respond" title="Comment on .NET to .NET web services without WSDL">No Comments &#187;</a></p>
+
+			</div>
+
+				<div class="post">
+				<h3 id="post-333"><a href="indexf604.html?p=333" rel="bookmark" title="Permanent Link to Returning the autoincrement ID of the last row inserted">Returning the autoincrement ID of the last row inserted</a></h3>
+				<small>Friday, April 17th, 2009</small>
+
+				<div class="entry">
+					<p>It's a common scenario. You've defined an autoincrement primary key on a table. After you insert a row into this table, you need the ID. Maybe you need to insert related rows into a child table. Maybe you need to redirect the user to a page displaying the new data. It's easy to imagine reasons for needing this ID. In fact, it's hard to imagine <em>not</em> needing it.</p>
+<p>Why, then, is it so hard to get it?</p>
+<p>Well, now it's easy add this class to your project:</p>
+<pre>using System;
+using System.Data;
+
+namespace AdventuresInSoftware.Data
+{
+    <span style="color: green">/// &lt;summary&gt;</span>
+    <span style="color: green">/// Create a ConnectionScope inside of a using to open and close a</span>
+    <span style="color: green">/// database connection. Also offers a convenient LastId method.</span>
+    <span style="color: green">/// &lt;/summary&gt;</span>
+    <span style="color: blue">public</span> <span style="color: blue">class</span> ConnectionScope : IDisposable
+    {
+        <span style="color: blue">private</span> IDbConnection _connection;
+
+        <span style="color: green">/// &lt;summary&gt;</span>
+        <span style="color: green">/// Wrap a database connection inside of a ConnectionScope in</span>
+        <span style="color: green">/// a using statement.</span>
+        <span style="color: green">/// &lt;/summary&gt;</span>
+        <span style="color: green">/// &lt;param name="connection"&gt;The connection to open and close.&lt;/param&gt;</span>
+        <span style="color: blue">public</span> ConnectionScope(IDbConnection connection)
+        {
+            _connection = connection;
+            connection.Open();
+        }
+
+        <span style="color: green">/// &lt;summary&gt;</span>
+        <span style="color: green">/// Get the autoincrement key generated by the last insert.</span>
+        <span style="color: green">/// &lt;/summary&gt;</span>
+        <span style="color: green">/// &lt;returns&gt;The ID of the last row inserted.&lt;/returns&gt;</span>
+        <span style="color: blue">public</span> <span style="color: blue">int</span> LastId()
+        {
+            using (IDbCommand command = _connection.CreateCommand())
+            {
+                command.CommandText = <span style="color: maroon">"SELECT @@IDENTITY"</span>;
+                command.CommandType = CommandType.Text;
+                <span style="color: blue">return</span> (<span style="color: blue">int</span>)(decimal)command.ExecuteScalar();
+            }
+        }
+
+        <span style="color: green">/// &lt;summary&gt;</span>
+        <span style="color: green">/// Closes the connection. Intended to be called automatically</span>
+        <span style="color: green">/// by the using statement.</span>
+        <span style="color: green">/// &lt;/summary&gt;</span>
+        <span style="color: blue">public</span> <span style="color: blue">void</span> Dispose()
+        {
+            _connection.Close();
+        }
+    }
+}</pre>
+<p>Then write code like this:</p>
+<pre><span style="color: blue">public</span> <span style="color: blue">int</span> SaveVendor(string vendorName)
+{
+    VendorTableAdapter vendorTableAdapter = <span style="color: blue">new</span> VendorTableAdapter();
+    using (var scope = <span style="color: blue">new</span> ConnectionScope(vendorTableAdapter.Connection))
+    {
+        <span style="color: green">// Insert the vendor and return the new ID.</span>
+        vendorTableAdapter.Insert(vendorName);
+        <span style="color: blue">return</span> scope.LastId();
+    }
+}</pre>
+<p>As you can see, the above code uses a typed TableAdapter. This is a convenient class generated by ADO .NET to give you strongly typed objects and methods for accessing tables. TableAdapters have been largely obsoleted by ORMs and Entity Framework, but they are still handy for smaller client-side projects. This code is from a smart-client project built on SQL CE.</p>
+<p>A typed TableAdapter has a method called Insert which returns an integer. Oh boy! It must be returning the ID of the new row! After all, what else could I possibly want out of an Insert?</p>
+<p>No, sorry. Insert returns a row count. That's right. The Insert method, which inserts a row, returns a row count.</p>
+<p>Let me say that again. This method who's only reason for existing is to <strong>insert <em>one</em> row</strong> returns the number of rows it inserted. Did you get that? It always returns the number 1! By design!</p>
+<p>Inane, yes, I know. But there it is. Enjoy.</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="index8e7f.html?cat=19" title="View all posts in C#" rel="category">C#</a>,  <a href="indexc728.html?cat=7" title="View all posts in Databases" rel="category">Databases</a> |   <a href="indexf604.html?p=333#respond" title="Comment on Returning the autoincrement ID of the last row inserted">No Comments &#187;</a></p>
+
+			</div>
+
+				<div class="post">
+				<h3 id="post-298"><a href="indexba86.html?p=298" rel="bookmark" title="Permanent Link to Entity Framework query based on properties of related objects">Entity Framework query based on properties of related objects</a></h3>
+				<small>Thursday, March 5th, 2009</small>
+
+				<div class="entry">
+					<p>We're using Entity Framework for data access on an enterprise system. It has been painful, but we've gradually learned how to use the product. This last problem was our fault, but we blamed the tool.</p>
+<p>The situation is that we have Orders with OrderLines. We want to find all orders that include a particular item. From those orders, we want to get information from a related entity called OrderSummary.</p>
+<p>We tried several approaches until we found a syntax that would compile and give us the right set of orders. What we ended up with was a linq query using two "from" clauses:</p>
+<pre><font color="#2c92af">OrderContainer</font> container = <span style="color: blue">new</span> <font color="#2c92af">OrderContainer</font>();
+<font color="#0000ff">var</font> source = container.Orders.Include(<span style="color: maroon">"OrderSummary"</span>);
+
+<font color="#0000ff">var</font> orders =
+	<font color="#0000ff">from</font> o <font color="#0000ff">in</font> source
+	<font color="#0000ff">from</font> ol <font color="#0000ff">in</font> o.OrderLines
+	<font color="#0000ff">where</font> ol.ItemId == <span style="color: maroon">"32180"</span>
+	<font color="#0000ff">select</font> o;</pre>
+<p>This query returns the correct set of orders, but the OrderSummary navigation property is not loaded. We called it a bug in EF and worked around it. The workaround involved multiple queries, and was generally a bad idea.</p>
+<p>Fortunately, we took the time to revisit the problem. The first thing I did was to use Reflector to find out what that query was actually doing. Here's the equivalent:</p>
+<pre><font color="#0000ff">var</font> orders = source
+	.SelectMany(o =&gt; o.OrderLines, (o, ol) =&gt; <span style="color: blue">new</span> { order = o, orderLine = ol })
+	.Where(result =&gt; result.orderLine.ItemId == <span style="color: maroon">"32180"</span>)
+	.Select(result =&gt; result.order);</pre>
+<p>It's a round-about way of saying it, but it looks OK. It creates a tuple of orders and order lines, filters that tuple based on the item ID, then selects just the order part of the tuple. If you think about it relationally, this is pretty close to an old-fashioned WHERE join.</p>
+<p>Keeping with the explicit syntax, I wrote the query exactly as I wanted it. This is the result:</p>
+<pre><font color="#0000ff">var</font> orders = source
+	.Where(o =&gt; o.OrderLines
+		.Any(ol =&gt; ol.ItemId == <span style="color: maroon">"32180"</span>));</pre>
+<p>This reads like the specification. It gets all orders where any order line has the desired item ID.</p>
+<p>This version of the code not only selects exactly the orders I want, it also includes the OrderSummary. No longer do I have to do additional queries to fill in the missing details.</p>
+<p><strong>Here's my solution</strong><br />
+My advice after working through this problem is to skip the linq syntax. Get used to the more explicit extension method syntax. Understand .Where(), .Select(), and .Any(). When you are more explicit with your tools (and I'm not talking profanity here), you have a better chance of getting the behavior you want out of them.</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="index8e7f.html?cat=19" title="View all posts in C#" rel="category">C#</a>,  <a href="indexe8fb.html?cat=39" title="View all posts in Entity Framework" rel="category">Entity Framework</a> |   <a href="indexba86.html?p=298#respond" title="Comment on Entity Framework query based on properties of related objects">No Comments &#187;</a></p>
+
+			</div>
+
+		
+		<div class="navigation">
+			<div class="alignleft"><a href="index4433.html?cat=19&amp;paged=2">&laquo; Previous Entries</a></div>
+			<div class="alignright"></div>
+		</div>
+
+	
+	</div>
+		</td>
+	</tr>
+</table>
+
+<hr />
+<div id="footer">
+<!-- If you'd like to support WordPress, having the "powered by" link someone on your blog is the best way, it's our only promotion or advertising. -->
+	<p>
+		Adventures in Software is proudly powered by 
+		<a href="http://wordpress.org/">WordPress</a>
+		<br /><a href="indexd784.html?feed=rss2">Entries (RSS)</a>
+		and <a href="indexa6da.html?feed=comments-rss2">Comments (RSS)</a>.
+		<!-- 17 queries. 0.521 seconds. -->
+	</p>
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-389401-3");
+pageTracker._trackPageview();
+} catch(err) {}</script></div>
+
+<!-- Gorgeous design by Michael Heilemann - http://binarybonsai.com/kubrick/ -->
+
+		<div id="sk2-footer" style="color:#FFF; background-color:#444; padding: 3px 2px 3px 2px; border-top: #888 solid 1px;">This blog is protected by <a href="http://unknowngenius.com/blog/" title="Dave">dr Dave</a>'s <strong><a href="http://unknowngenius.com/blog/wordpress/spam-karma/" title="SK2">Spam Karma 2</a></strong>: <strong>274531</strong>  Spams eaten and counting...</div><script type="text/javascript" src="replies.js"></script>
+<script type="text/javascript" src="blogger.js"></script>
+<script type="text/javascript" src="http://twitter.com/statuses/user_timeline/michaellperry.json?callback=twitterCallback2&amp;count=5"></script>
+<script type="text/javascript" src="http://search.twitter.com/search.json?q=@michaellperry&amp;callback=twitterCallbackReplies&amp;rpp=5"></script>
+</body>
+
+<!-- Mirrored from adventuresinsoftware.com/blog/?cat=19 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 Jan 2017 12:55:26 GMT -->
+</html>

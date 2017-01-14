@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?><!-- generator="wordpress/2.3.3" -->
+<rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	>
+<channel>
+	<title>Comments on: Navigate SSRS reports from a web application</title>
+	<link>http://adventuresinsoftware.com/blog/?p=542</link>
+	<description>Lessons learned on the road to quality computing</description>
+	<pubDate>Fri, 13 Jan 2017 12:55:33 +0000</pubDate>
+	<generator>http://wordpress.org/?v=2.3.3</generator>
+		<item>
+		<title>By: RB Cohen</title>
+		<link>http://adventuresinsoftware.com/blog/?p=542#comment-128069</link>
+		<dc:creator>RB Cohen</dc:creator>
+		<pubDate>Fri, 04 Mar 2011 13:25:56 +0000</pubDate>
+		<guid>http://adventuresinsoftware.com/blog/?p=542#comment-128069</guid>
+		<description>We're writing an SDK in PHP for the 2010 SOAP API. We are able to call ListChildren, etc. Does anybody know what method to call to get an actual report? In the 2005 version it was "Render", but this no longer exists in 2010?</description>
+		<content:encoded><![CDATA[<p>We're writing an SDK in PHP for the 2010 SOAP API. We are able to call ListChildren, etc. Does anybody know what method to call to get an actual report? In the 2005 version it was "Render", but this no longer exists in 2010?</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Michael L Perry</title>
+		<link>http://adventuresinsoftware.com/blog/?p=542#comment-80927</link>
+		<dc:creator>Michael L Perry</dc:creator>
+		<pubDate>Fri, 27 Aug 2010 14:30:31 +0000</pubDate>
+		<guid>http://adventuresinsoftware.com/blog/?p=542#comment-80927</guid>
+		<description>If ReportService2010.asmx isn't working for you, try ReportService2005.asmx instead. You might not be on R2.</description>
+		<content:encoded><![CDATA[<p>If ReportService2010.asmx isn't working for you, try ReportService2005.asmx instead. You might not be on R2.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Matt</title>
+		<link>http://adventuresinsoftware.com/blog/?p=542#comment-80514</link>
+		<dc:creator>Matt</dc:creator>
+		<pubDate>Tue, 24 Aug 2010 00:26:11 +0000</pubDate>
+		<guid>http://adventuresinsoftware.com/blog/?p=542#comment-80514</guid>
+		<description>Looks like you might be missing ReportServer in your url ... /ReportServer/ReportService2010.asmx</description>
+		<content:encoded><![CDATA[<p>Looks like you might be missing ReportServer in your url ... /ReportServer/ReportService2010.asmx</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Andrew</title>
+		<link>http://adventuresinsoftware.com/blog/?p=542#comment-77788</link>
+		<dc:creator>Andrew</dc:creator>
+		<pubDate>Thu, 05 Aug 2010 14:47:45 +0000</pubDate>
+		<guid>http://adventuresinsoftware.com/blog/?p=542#comment-77788</guid>
+		<description>Thank you Michael for the response.
+
+Dut in my case it looks different for some reason:
+
+These get me the Report Server content:
+http://:/
+http://://ReportService2010.asmx
+
+And this gets me the "The path of the item 'wsdl' is not valid" error:
+http://:/ReportService2010.asmx?wsdl
+
+But in the same time I can get ReportService2006.asmx web service....</description>
+		<content:encoded><![CDATA[<p>Thank you Michael for the response.</p>
+<p>Dut in my case it looks different for some reason:</p>
+<p>These get me the Report Server content:<br />
+<a href="http://:/" rel="nofollow">http://:/</a><br />
+<a href="http://://ReportService2010.asmx" rel="nofollow">http://://ReportService2010.asmx</a></p>
+<p>And this gets me the "The path of the item 'wsdl' is not valid" error:<br />
+<a href="http://:/ReportService2010.asmx?wsdl" rel="nofollow">http://:/ReportService2010.asmx?wsdl</a></p>
+<p>But in the same time I can get ReportService2006.asmx web service....</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Michael L Perry</title>
+		<link>http://adventuresinsoftware.com/blog/?p=542#comment-77679</link>
+		<dc:creator>Michael L Perry</dc:creator>
+		<pubDate>Wed, 04 Aug 2010 13:42:55 +0000</pubDate>
+		<guid>http://adventuresinsoftware.com/blog/?p=542#comment-77679</guid>
+		<description>Andrew,
+
+I can reproduce that problem if I leave off the ReportService2010.asmx part of the URL. Please make sure that you didn't drop that.
+
+Here's how I get to the Report Server content:
+http://dit3074lt2:8080/ReportServer_SQL2008R2
+
+This gets me to the wsdl:
+http://dit3074lt2:8080/ReportServer_SQL2008R2/ReportService2010.asmx?wsdl
+
+As does this:
+http://dit3074lt2:8080/ReportServer_SQL2008R2/ReportService2010.asmx
+
+This gets me the "The path of the item 'wsdl' is not valid" error:
+http://dit3074lt2:8080/ReportServer_SQL2008R2?wsdl</description>
+		<content:encoded><![CDATA[<p>Andrew,</p>
+<p>I can reproduce that problem if I leave off the ReportService2010.asmx part of the URL. Please make sure that you didn't drop that.</p>
+<p>Here's how I get to the Report Server content:<br />
+<a href="http://dit3074lt2:8080/ReportServer_SQL2008R2" rel="nofollow">http://dit3074lt2:8080/ReportServer_SQL2008R2</a></p>
+<p>This gets me to the wsdl:<br />
+<a href="http://dit3074lt2:8080/ReportServer_SQL2008R2/ReportService2010.asmx?wsdl" rel="nofollow">http://dit3074lt2:8080/ReportServer_SQL2008R2/ReportService2010.asmx?wsdl</a></p>
+<p>As does this:<br />
+<a href="http://dit3074lt2:8080/ReportServer_SQL2008R2/ReportService2010.asmx" rel="nofollow">http://dit3074lt2:8080/ReportServer_SQL2008R2/ReportService2010.asmx</a></p>
+<p>This gets me the "The path of the item 'wsdl' is not valid" error:<br />
+<a href="http://dit3074lt2:8080/ReportServer_SQL2008R2?wsdl" rel="nofollow">http://dit3074lt2:8080/ReportServer_SQL2008R2?wsdl</a></p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Andrew</title>
+		<link>http://adventuresinsoftware.com/blog/?p=542#comment-77508</link>
+		<dc:creator>Andrew</dc:creator>
+		<pubDate>Tue, 03 Aug 2010 10:02:57 +0000</pubDate>
+		<guid>http://adventuresinsoftware.com/blog/?p=542#comment-77508</guid>
+		<description>Hi
+
+I'm trying to add web reference to ReportSerive2010.asmx web service with VS2010, but receive the following error message:
+
+"Reporting Services Error    The path of the item 'wsdl' is not valid." If I remove "?wsdl" from the end of url, I receive the html page which displays the  ReportServer content, and "Add Reference" button is disabled. Can you help with it? I use SSRS in SharePoint Integrated mode, SSRS 2008 R2, SharePoint 2010.
+
+Thanks, Andrew</description>
+		<content:encoded><![CDATA[<p>Hi</p>
+<p>I'm trying to add web reference to ReportSerive2010.asmx web service with VS2010, but receive the following error message:</p>
+<p>"Reporting Services Error    The path of the item 'wsdl' is not valid." If I remove "?wsdl" from the end of url, I receive the html page which displays the  ReportServer content, and "Add Reference" button is disabled. Can you help with it? I use SSRS in SharePoint Integrated mode, SSRS 2008 R2, SharePoint 2010.</p>
+<p>Thanks, Andrew</p>
+]]></content:encoded>
+	</item>
+</channel>
+</rss>

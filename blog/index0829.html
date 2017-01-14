@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="UTF-8"?><!-- generator="wordpress/2.3.3" -->
+<rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	>
+<channel>
+	<title>Comments on: Java Tuple</title>
+	<link>http://adventuresinsoftware.com/blog/?p=43</link>
+	<description>Lessons learned on the road to quality computing</description>
+	<pubDate>Fri, 13 Jan 2017 12:55:36 +0000</pubDate>
+	<generator>http://wordpress.org/?v=2.3.3</generator>
+		<item>
+		<title>By: Adventures in Software &#187; Blog Archive &#187; Java Tuple update</title>
+		<link>http://adventuresinsoftware.com/blog/?p=43#comment-80094</link>
+		<dc:creator>Adventures in Software &#187; Blog Archive &#187; Java Tuple update</dc:creator>
+		<pubDate>Fri, 20 Aug 2010 19:15:57 +0000</pubDate>
+		<guid>http://adventuresinsoftware.com/blog/?p=43#comment-80094</guid>
+		<description>[...] findCharacter returns Pair&#60;Boolean, Integer&#62;. I published the source and got a few [...]</description>
+		<content:encoded><![CDATA[<p>[...] findCharacter returns Pair&lt;Boolean, Integer&gt;. I published the source and got a few [...]</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Aron</title>
+		<link>http://adventuresinsoftware.com/blog/?p=43#comment-73535</link>
+		<dc:creator>Aron</dc:creator>
+		<pubDate>Mon, 28 Jun 2010 22:13:09 +0000</pubDate>
+		<guid>http://adventuresinsoftware.com/blog/?p=43#comment-73535</guid>
+		<description>Hello, thanks for the library.
+I found it odd though, that there were no methods to update tuples, so I added them. I can email you Tuple.java if you wish. The methods are insert (opposite of extract), and setn (opposite of getn):
+
+	/**
+	 * Change the first element in the tuple and return the rest.
+	 * To insert all elements from the tuple, chain insert calls.
+	 *
+	 * @param value
+	 * @return
+	 */
+	public Rest insert(First value) {
+		first = value;
+		return rest;
+	}
+
+	public static &#60;T1 extends Comparable, Rest extends Comparable&#62; T1 set1(Tuple tuple, T1 value) {
+		T1 result = Tuple.get1(tuple);
+		tuple.first = value;
+		return result;
+	}
+
+	public static &#60;T1 extends Comparable, T2 extends Comparable, Rest extends Comparable&#62; T2 set2(Tuple&#60;T1, Tuple&#62; tuple, T2 value) {
+		T2 result = Tuple.get2(tuple);
+		tuple.rest.first = value;
+		return result;
+	}
+
+	public static &#60;T1 extends Comparable, T2 extends Comparable, T3 extends Comparable, Rest extends Comparable&#62; T3 set3(Tuple&#60;T1, Tuple&#60;T2, Tuple&#62;&#62; tuple, T3 value) {
+		T3 result = Tuple.get3(tuple);
+		tuple.rest.rest.first = value;
+		return result;
+	}
+
+	public static &#60;T1 extends Comparable, T2 extends Comparable, T3 extends Comparable, T4 extends Comparable, Rest extends Comparable&#62; T4 set4(Tuple&#60;T1, Tuple&#60;T2, Tuple&#60;T3, Tuple&#62;&#62;&#62; tuple, T4 value) {
+		T4 result = Tuple.get4(tuple);
+		tuple.rest.rest.rest.first = value;
+		return result;
+	}
+
+	public static &#60;T1 extends Comparable, T2 extends Comparable, T3 extends Comparable, T4 extends Comparable, T5 extends Comparable, Rest extends Comparable&#62; T5 set5(Tuple&#60;T1, Tuple&#60;T2, Tuple&#60;T3, Tuple&#60;T4, Tuple&#62;&#62;&#62;&#62; tuple, T5 value) {
+		T5 result = Tuple.get5(tuple);
+		tuple.rest.rest.rest.rest.first = value;
+		return result;
+	}
+
+	public static &#60;T1 extends Comparable, T2 extends Comparable, T3 extends Comparable, T4 extends Comparable, T5 extends Comparable, T6 extends Comparable, Rest extends Comparable&#62; T6 set6(Tuple&#60;T1, Tuple&#60;T2, Tuple&#60;T3, Tuple&#60;T4, Tuple&#60;T5, Tuple&#62;&#62;&#62;&#62;&#62; tuple, T6 value) {
+		T6 result = Tuple.get6(tuple);
+		tuple.rest.rest.rest.rest.rest.first = value;
+		return result;
+	}
+
+	public static &#60;T1 extends Comparable, T2 extends Comparable, T3 extends Comparable, T4 extends Comparable, T5 extends Comparable, T6 extends Comparable, T7 extends Comparable, Rest extends Comparable&#62; T7 set7(Tuple&#60;T1, Tuple&#60;T2, Tuple&#60;T3, Tuple&#60;T4, Tuple&#60;T5, Tuple&#60;T6, Tuple&#62;&#62;&#62;&#62;&#62;&#62; tuple, T7 value) {
+		T7 result = Tuple.get7(tuple);
+		tuple.rest.rest.rest.rest.rest.rest.first = value;
+		return result;
+	}
+
+	public static &#60;T1 extends Comparable, T2 extends Comparable, T3 extends Comparable, T4 extends Comparable, T5 extends Comparable, T6 extends Comparable, T7 extends Comparable, T8 extends Comparable, Rest extends Comparable&#62; T8 set8(Tuple&#60;T1, Tuple&#60;T2, Tuple&#60;T3, Tuple&#60;T4, Tuple&#60;T5, Tuple&#60;T6, Tuple&#60;T7, Tuple&#62;&#62;&#62;&#62;&#62;&#62;&#62; tuple, T8 value) {
+		T8 result = Tuple.get8(tuple);
+		tuple.rest.rest.rest.rest.rest.rest.rest.first = value;
+		return result;
+	}
+
+	public static &#60;T1 extends Comparable, T2 extends Comparable, T3 extends Comparable, T4 extends Comparable, T5 extends Comparable, T6 extends Comparable, T7 extends Comparable, T8 extends Comparable, T9 extends Comparable, Rest extends Comparable&#62; T9 set9(Tuple&#60;T1, Tuple&#60;T2, Tuple&#60;T3, Tuple&#60;T4, Tuple&#60;T5, Tuple&#60;T6, Tuple&#60;T7, Tuple&#60;T8, Tuple&#62;&#62;&#62;&#62;&#62;&#62;&#62;&#62; tuple, T9 value) {
+		T9 result = Tuple.get9(tuple);
+		tuple.rest.rest.rest.rest.rest.rest.rest.rest.first = value;
+		return result;
+	}
+
+	public static &#60;T1 extends Comparable, T2 extends Comparable, T3 extends Comparable, T4 extends Comparable, T5 extends Comparable, T6 extends Comparable, T7 extends Comparable, T8 extends Comparable, T9 extends Comparable, T10 extends Comparable, Rest extends Comparable&#62; T10 set10(Tuple&#60;T1, Tuple&#60;T2, Tuple&#60;T3, Tuple&#60;T4, Tuple&#60;T5, Tuple&#60;T6, Tuple&#60;T7, Tuple&#60;T8, Tuple&#60;T9, Tuple&#62;&#62;&#62;&#62;&#62;&#62;&#62;&#62;&#62; tuple, T10 value) {
+		T10 result = Tuple.get10(tuple);
+		tuple.rest.rest.rest.rest.rest.rest.rest.rest.rest.first = value;
+		return result;
+	}</description>
+		<content:encoded><![CDATA[<p>Hello, thanks for the library.<br />
+I found it odd though, that there were no methods to update tuples, so I added them. I can email you Tuple.java if you wish. The methods are insert (opposite of extract), and setn (opposite of getn):</p>
+<p>	/**<br />
+	 * Change the first element in the tuple and return the rest.<br />
+	 * To insert all elements from the tuple, chain insert calls.<br />
+	 *<br />
+	 * @param value<br />
+	 * @return<br />
+	 */<br />
+	public Rest insert(First value) {<br />
+		first = value;<br />
+		return rest;<br />
+	}</p>
+<p>	public static &lt;T1 extends Comparable, Rest extends Comparable&gt; T1 set1(Tuple tuple, T1 value) {<br />
+		T1 result = Tuple.get1(tuple);<br />
+		tuple.first = value;<br />
+		return result;<br />
+	}</p>
+<p>	public static &lt;T1 extends Comparable, T2 extends Comparable, Rest extends Comparable&gt; T2 set2(Tuple&lt;T1, Tuple&gt; tuple, T2 value) {<br />
+		T2 result = Tuple.get2(tuple);<br />
+		tuple.rest.first = value;<br />
+		return result;<br />
+	}</p>
+<p>	public static &lt;T1 extends Comparable, T2 extends Comparable, T3 extends Comparable, Rest extends Comparable&gt; T3 set3(Tuple&lt;T1, Tuple&lt;T2, Tuple&gt;&gt; tuple, T3 value) {<br />
+		T3 result = Tuple.get3(tuple);<br />
+		tuple.rest.rest.first = value;<br />
+		return result;<br />
+	}</p>
+<p>	public static &lt;T1 extends Comparable, T2 extends Comparable, T3 extends Comparable, T4 extends Comparable, Rest extends Comparable&gt; T4 set4(Tuple&lt;T1, Tuple&lt;T2, Tuple&lt;T3, Tuple&gt;&gt;&gt; tuple, T4 value) {<br />
+		T4 result = Tuple.get4(tuple);<br />
+		tuple.rest.rest.rest.first = value;<br />
+		return result;<br />
+	}</p>
+<p>	public static &lt;T1 extends Comparable, T2 extends Comparable, T3 extends Comparable, T4 extends Comparable, T5 extends Comparable, Rest extends Comparable&gt; T5 set5(Tuple&lt;T1, Tuple&lt;T2, Tuple&lt;T3, Tuple&lt;T4, Tuple&gt;&gt;&gt;&gt; tuple, T5 value) {<br />
+		T5 result = Tuple.get5(tuple);<br />
+		tuple.rest.rest.rest.rest.first = value;<br />
+		return result;<br />
+	}</p>
+<p>	public static &lt;T1 extends Comparable, T2 extends Comparable, T3 extends Comparable, T4 extends Comparable, T5 extends Comparable, T6 extends Comparable, Rest extends Comparable&gt; T6 set6(Tuple&lt;T1, Tuple&lt;T2, Tuple&lt;T3, Tuple&lt;T4, Tuple&lt;T5, Tuple&gt;&gt;&gt;&gt;&gt; tuple, T6 value) {<br />
+		T6 result = Tuple.get6(tuple);<br />
+		tuple.rest.rest.rest.rest.rest.first = value;<br />
+		return result;<br />
+	}</p>
+<p>	public static &lt;T1 extends Comparable, T2 extends Comparable, T3 extends Comparable, T4 extends Comparable, T5 extends Comparable, T6 extends Comparable, T7 extends Comparable, Rest extends Comparable&gt; T7 set7(Tuple&lt;T1, Tuple&lt;T2, Tuple&lt;T3, Tuple&lt;T4, Tuple&lt;T5, Tuple&lt;T6, Tuple&gt;&gt;&gt;&gt;&gt;&gt; tuple, T7 value) {<br />
+		T7 result = Tuple.get7(tuple);<br />
+		tuple.rest.rest.rest.rest.rest.rest.first = value;<br />
+		return result;<br />
+	}</p>
+<p>	public static &lt;T1 extends Comparable, T2 extends Comparable, T3 extends Comparable, T4 extends Comparable, T5 extends Comparable, T6 extends Comparable, T7 extends Comparable, T8 extends Comparable, Rest extends Comparable&gt; T8 set8(Tuple&lt;T1, Tuple&lt;T2, Tuple&lt;T3, Tuple&lt;T4, Tuple&lt;T5, Tuple&lt;T6, Tuple&lt;T7, Tuple&gt;&gt;&gt;&gt;&gt;&gt;&gt; tuple, T8 value) {<br />
+		T8 result = Tuple.get8(tuple);<br />
+		tuple.rest.rest.rest.rest.rest.rest.rest.first = value;<br />
+		return result;<br />
+	}</p>
+<p>	public static &lt;T1 extends Comparable, T2 extends Comparable, T3 extends Comparable, T4 extends Comparable, T5 extends Comparable, T6 extends Comparable, T7 extends Comparable, T8 extends Comparable, T9 extends Comparable, Rest extends Comparable&gt; T9 set9(Tuple&lt;T1, Tuple&lt;T2, Tuple&lt;T3, Tuple&lt;T4, Tuple&lt;T5, Tuple&lt;T6, Tuple&lt;T7, Tuple&lt;T8, Tuple&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; tuple, T9 value) {<br />
+		T9 result = Tuple.get9(tuple);<br />
+		tuple.rest.rest.rest.rest.rest.rest.rest.rest.first = value;<br />
+		return result;<br />
+	}</p>
+<p>	public static &lt;T1 extends Comparable, T2 extends Comparable, T3 extends Comparable, T4 extends Comparable, T5 extends Comparable, T6 extends Comparable, T7 extends Comparable, T8 extends Comparable, T9 extends Comparable, T10 extends Comparable, Rest extends Comparable&gt; T10 set10(Tuple&lt;T1, Tuple&lt;T2, Tuple&lt;T3, Tuple&lt;T4, Tuple&lt;T5, Tuple&lt;T6, Tuple&lt;T7, Tuple&lt;T8, Tuple&lt;T9, Tuple&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; tuple, T10 value) {<br />
+		T10 result = Tuple.get10(tuple);<br />
+		tuple.rest.rest.rest.rest.rest.rest.rest.rest.rest.first = value;<br />
+		return result;<br />
+	}</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: victor</title>
+		<link>http://adventuresinsoftware.com/blog/?p=43#comment-71502</link>
+		<dc:creator>victor</dc:creator>
+		<pubDate>Mon, 31 May 2010 13:08:17 +0000</pubDate>
+		<guid>http://adventuresinsoftware.com/blog/?p=43#comment-71502</guid>
+		<description>Hi, great library,
+
+But I found strange that the empty tuple does not exists. There is End but it is not a Tuple, so I can't use it where a Tuple is needed…
+
+Would be cool to have it (and maybe not really hard…)</description>
+		<content:encoded><![CDATA[<p>Hi, great library,</p>
+<p>But I found strange that the empty tuple does not exists. There is End but it is not a Tuple, so I can't use it where a Tuple is needed…</p>
+<p>Would be cool to have it (and maybe not really hard…)</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Erich Herz</title>
+		<link>http://adventuresinsoftware.com/blog/?p=43#comment-67319</link>
+		<dc:creator>Erich Herz</dc:creator>
+		<pubDate>Fri, 19 Mar 2010 19:14:34 +0000</pubDate>
+		<guid>http://adventuresinsoftware.com/blog/?p=43#comment-67319</guid>
+		<description>One more vote for not requiring the Tuple types to implement Comparable.  In my opinion Tuple comparison should default to using object hashCode().</description>
+		<content:encoded><![CDATA[<p>One more vote for not requiring the Tuple types to implement Comparable.  In my opinion Tuple comparison should default to using object hashCode().</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Christoph Schulz</title>
+		<link>http://adventuresinsoftware.com/blog/?p=43#comment-60635</link>
+		<dc:creator>Christoph Schulz</dc:creator>
+		<pubDate>Tue, 12 Jan 2010 21:34:13 +0000</pubDate>
+		<guid>http://adventuresinsoftware.com/blog/?p=43#comment-60635</guid>
+		<description>Hello,
+
+wrt. to the NetBeans compiler problem: What about specifying all arguments of the Tuple template explicitly (sorry for my C++ jargon), i.e.:
+
+public  Tuple&#60;T, Tuple &#62; prepend(T m) {
+return new Tuple&#60;T, Tuple &#62;(m, this);
+}
+
+Does this work?</description>
+		<content:encoded><![CDATA[<p>Hello,</p>
+<p>wrt. to the NetBeans compiler problem: What about specifying all arguments of the Tuple template explicitly (sorry for my C++ jargon), i.e.:</p>
+<p>public  Tuple&lt;T, Tuple &gt; prepend(T m) {<br />
+return new Tuple&lt;T, Tuple &gt;(m, this);<br />
+}</p>
+<p>Does this work?</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Christian W.</title>
+		<link>http://adventuresinsoftware.com/blog/?p=43#comment-60014</link>
+		<dc:creator>Christian W.</dc:creator>
+		<pubDate>Tue, 05 Jan 2010 16:35:54 +0000</pubDate>
+		<guid>http://adventuresinsoftware.com/blog/?p=43#comment-60014</guid>
+		<description>I used the tuple-class in NetBeans 6.5 without any problems. Since NB 6.8 I get the 
+error: "type parameter * is not within its bound" as mentioned twice before.
+
+
+As Jason Frank says, one can delete all comparation-possibilities. I substituted:
+1.
+"public class Tuple&#60;First extends Comparable, Rest extends Comparable&#62; implements SeparatedAppender, Comparable&#60;Tuple&#62; {"
+by
+"public class Tuple implements SeparatedAppender {"
+
+2.
+"public &#60;T extends Comparable&#62; Tuple&#60;T, Tuple&#62; prepend(T m) {
+		return new Tuple&#60;T, Tuple&#62;(m, this);
+	}"
+by
+"public  Tuple&#60;T, Tuple&#62; prepend(T m) {
+		return new Tuple&#60;T, Tuple&#62;(m, this);
+	}"
+and deleted
+3.
+/*	public int compareTo(Tuple that) {
+        int compare = this.first.compareTo(that.first);
+        if (compare != 0)
+        	return compare;
+        else
+        	return this.rest.compareTo(that.rest);
+    }*/
+
+NB now compiles my project.
+
+But in order to stay compatible to all new NB versions and the original tuple-class, I need some hint how to get my project compiling without this ugly workaround. Isn't there any?</description>
+		<content:encoded><![CDATA[<p>I used the tuple-class in NetBeans 6.5 without any problems. Since NB 6.8 I get the<br />
+error: "type parameter * is not within its bound" as mentioned twice before.</p>
+<p>As Jason Frank says, one can delete all comparation-possibilities. I substituted:<br />
+1.<br />
+"public class Tuple&lt;First extends Comparable, Rest extends Comparable&gt; implements SeparatedAppender, Comparable&lt;Tuple&gt; {"<br />
+by<br />
+"public class Tuple implements SeparatedAppender {"</p>
+<p>2.<br />
+"public &lt;T extends Comparable&gt; Tuple&lt;T, Tuple&gt; prepend(T m) {<br />
+		return new Tuple&lt;T, Tuple&gt;(m, this);<br />
+	}"<br />
+by<br />
+"public  Tuple&lt;T, Tuple&gt; prepend(T m) {<br />
+		return new Tuple&lt;T, Tuple&gt;(m, this);<br />
+	}"<br />
+and deleted<br />
+3.<br />
+/*	public int compareTo(Tuple that) {<br />
+        int compare = this.first.compareTo(that.first);<br />
+        if (compare != 0)<br />
+        	return compare;<br />
+        else<br />
+        	return this.rest.compareTo(that.rest);<br />
+    }*/</p>
+<p>NB now compiles my project.</p>
+<p>But in order to stay compatible to all new NB versions and the original tuple-class, I need some hint how to get my project compiling without this ugly workaround. Isn't there any?</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Blu ray software</title>
+		<link>http://adventuresinsoftware.com/blog/?p=43#comment-57174</link>
+		<dc:creator>Blu ray software</dc:creator>
+		<pubDate>Thu, 03 Dec 2009 01:36:01 +0000</pubDate>
+		<guid>http://adventuresinsoftware.com/blog/?p=43#comment-57174</guid>
+		<description>Thx for sharing!</description>
+		<content:encoded><![CDATA[<p>Thx for sharing!</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: pangea</title>
+		<link>http://adventuresinsoftware.com/blog/?p=43#comment-56964</link>
+		<dc:creator>pangea</dc:creator>
+		<pubDate>Mon, 30 Nov 2009 20:21:03 +0000</pubDate>
+		<guid>http://adventuresinsoftware.com/blog/?p=43#comment-56964</guid>
+		<description>great work...can i copy the code and change the package names...leaving the confidential info as is? problem is that i cant have too many jars in my webapp ...so want to bundle these with others...1 more suggestion....why dont u donate (or whatever is more appropriate) this to google-guvava project...i think this is a perfect addition there...tx again</description>
+		<content:encoded><![CDATA[<p>great work...can i copy the code and change the package names...leaving the confidential info as is? problem is that i cant have too many jars in my webapp ...so want to bundle these with others...1 more suggestion....why dont u donate (or whatever is more appropriate) this to google-guvava project...i think this is a perfect addition there...tx again</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Casey</title>
+		<link>http://adventuresinsoftware.com/blog/?p=43#comment-55847</link>
+		<dc:creator>Casey</dc:creator>
+		<pubDate>Sun, 22 Nov 2009 10:58:43 +0000</pubDate>
+		<guid>http://adventuresinsoftware.com/blog/?p=43#comment-55847</guid>
+		<description>And yet another vote for not requiring Comparable. Similar to Jason Frank I want to have Tuples with Collections inside them (Lists, Maps, etc). Any chance the library will get that update?</description>
+		<content:encoded><![CDATA[<p>And yet another vote for not requiring Comparable. Similar to Jason Frank I want to have Tuples with Collections inside them (Lists, Maps, etc). Any chance the library will get that update?</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Norman Shelley</title>
+		<link>http://adventuresinsoftware.com/blog/?p=43#comment-55780</link>
+		<dc:creator>Norman Shelley</dc:creator>
+		<pubDate>Fri, 20 Nov 2009 20:09:41 +0000</pubDate>
+		<guid>http://adventuresinsoftware.com/blog/?p=43#comment-55780</guid>
+		<description>Any feedback on the problem mentioned in July 24, 2009?
+
+I too am having this problem 
+Product Version: NetBeans IDE 6.7.1 (Build 200907230233)
+Java: 1.6.0_16; Java HotSpot(TM) Client VM 14.2-b01
+System: Windows XP version 5.1 running on x86; Cp1252; en_US (nb)
+Userdir: C:\Documents and Settings\shellnk1\.netbeans\6.7
+
+
+
+MC Murphy Says: 
+
+July 24th, 2009 at 8:08 am 
+The netbeans 6.7 IDE compiler doesn't seem to like:
+
+public  Tuple prepend(T m) {
+return new Tuple(m, this);
+}
+
+inside the Tuple class. The tuple class is defined as:
+
+public class Tuple implements SeparatedAppender, Comparable {...}
+
+The compiler error is:
+
+"type parameter com.mallardsoft.tuple.Tuple is not within its bound"</description>
+		<content:encoded><![CDATA[<p>Any feedback on the problem mentioned in July 24, 2009?</p>
+<p>I too am having this problem<br />
+Product Version: NetBeans IDE 6.7.1 (Build 200907230233)<br />
+Java: 1.6.0_16; Java HotSpot(TM) Client VM 14.2-b01<br />
+System: Windows XP version 5.1 running on x86; Cp1252; en_US (nb)<br />
+Userdir: C:\Documents and Settings\shellnk1\.netbeans\6.7</p>
+<p>MC Murphy Says: </p>
+<p>July 24th, 2009 at 8:08 am<br />
+The netbeans 6.7 IDE compiler doesn't seem to like:</p>
+<p>public  Tuple prepend(T m) {<br />
+return new Tuple(m, this);<br />
+}</p>
+<p>inside the Tuple class. The tuple class is defined as:</p>
+<p>public class Tuple implements SeparatedAppender, Comparable {...}</p>
+<p>The compiler error is:</p>
+<p>"type parameter com.mallardsoft.tuple.Tuple is not within its bound"</p>
+]]></content:encoded>
+	</item>
+</channel>
+</rss>

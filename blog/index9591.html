@@ -1,0 +1,715 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+
+
+<!-- Mirrored from adventuresinsoftware.com/blog/?cat=37 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 Jan 2017 12:55:25 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>Adventures in Software   &raquo; DDD</title>
+
+<meta name="generator" content="WordPress 2.3.3" /> <!-- leave this for stats -->
+
+<link rel="stylesheet" href="wp-content/themes/ais2/style.css" type="text/css" media="screen" />
+<link rel="alternate" type="application/rss+xml" title="Adventures in Software RSS Feed" href="indexd784.html?feed=rss2" />
+<link rel="pingback" href="xmlrpc.html" />
+    <script type="text/javascript">
+        function onSilverlightError(sender, args) {
+            var appSource = "";
+            if (sender != null && sender != 0) {
+              appSource = sender.getHost().Source;
+            }
+            
+            var errorType = args.ErrorType;
+            var iErrorCode = args.ErrorCode;
+
+            if (errorType == "ImageError" || errorType == "MediaError") {
+              return;
+            }
+
+            var errMsg = "Unhandled Error in Silverlight Application " +  appSource + "\n" ;
+
+            errMsg += "Code: "+ iErrorCode + "    \n";
+            errMsg += "Category: " + errorType + "       \n";
+            errMsg += "Message: " + args.ErrorMessage + "     \n";
+
+            if (errorType == "ParserError") {
+                errMsg += "File: " + args.xamlFile + "     \n";
+                errMsg += "Line: " + args.lineNumber + "     \n";
+                errMsg += "Position: " + args.charPosition + "     \n";
+            }
+            else if (errorType == "RuntimeError") {           
+                if (args.lineNumber != 0) {
+                    errMsg += "Line: " + args.lineNumber + "     \n";
+                    errMsg += "Position: " +  args.charPosition + "     \n";
+                }
+                errMsg += "MethodName: " + args.methodName + "     \n";
+            }
+
+            throw new Error(errMsg);
+        }
+    </script>
+
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc0db0.php?rsd" />
+ <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="wp-includes/wlwmanifest.xml" /> <style type='text/css'>
+<!--#header { background: url('wp-content/themes/ais2/images/header-imgae03.html?upper=A7A73F&amp;lower=77773F') no-repeat bottom center; }
+--></style>
+</head>
+<body>
+<div id="page">
+
+<div class="aisTopBar">
+	<form method="get" id="searchform" action="http://adventuresinsoftware.com/blog/">
+<div>
+<a href="indexd784.html?feed=rss2"><img src="../images/feed-icon-28x28.png" border="0"></a>
+<input type="text" value="" name="s" id="s" />
+<input type="submit" id="searchsubmit" value="Search" />
+</div>
+</form>
+</div>
+
+<div class="aisHeaderImageRight">
+	<div class="aisHeaderImage">
+	<div class="aisHeaderCornerRight">
+	<div class="aisHeaderCornerLeft">
+	<div class="aisImageBar">
+	<div class="aisSubSites">
+		<a href="index.html" class="aisSubSiteLink"><span class="aisSiteTabRight"><span class="aisSiteTabLeft"><span class="aisSiteTab">
+			home</span></span></span></a>
+		<a class="aisSubSiteLink" href="indexb60a.html?cat=27"><span class="aisSiteTabRight"><span class="aisSiteTabLeft"><span class="aisSiteTab">
+			historic modeling</span></span></span></a>
+		<a class="aisSubSiteLink" href="indexa88f.html?cat=36"><span class="aisSiteTabRight"><span class="aisSiteTabLeft"><span class="aisSiteTab">
+			update controls</span></span></span></a>
+		<a href="index2d79.html?cat=26" class="aisSubSiteLink"><span class="aisSiteTabRight"><span class="aisSiteTabLeft"><span class="aisSiteTab">
+			degrees of freedom</span></span></span></a>
+		<a class="aisSubSiteLink" href="indexba53.html?page_id=2"><span class="aisSiteTabRight"><span class="aisSiteTabLeft"><span class="aisSiteTab">
+			about us</span></span></span></a>
+
+	</div>
+	</div>
+	</div>
+	</div>
+	</div>
+</div>
+
+<table style="width: 100%" cellspacing="0" cellpadding="0">
+	<tr valign="top">
+		<td width="210px">
+<div id="sidebar">
+<div class="aisLeftColumnFill">
+<div class="aisLeftColumnBottom">
+<div class="aisLeftColumnTop">
+<div id="twitter_div" class="aisLeftNav">
+<h2 class="sidebar-title">Twitter Updates</h2>
+<ul id="twitter_update_list"></ul>
+<a href="http://twitter.com/michaellperry" id="follow">Follow me</a>
+</div>
+<div id="twitter_reply_div" class="aisLeftNav">
+<h2 class="sidebar-title">Twitter Replies</h2>
+<ul id="twitter_reply_list"></ul>
+</div>
+
+<div class="aisLeftNav">
+<a href='http://ineta.org/Speakers/SearchCommunitySpeakers.aspx?SpeakerId=c5110e21-9243-461b-a464-a6548524e885'><img alt='INETA Community Speakers Program' border='0' src='../../www.ineta.org/images/OfficialLogos/InetaCommunitySpeakersRequestMe.html' /></a>
+</div>
+
+<div class="aisLeftNav">
+	<li class="pagenav"><h2>Pages</h2><ul><li class="page_item page-item-2"><a href="indexba53.html?page_id=2" title="About Us">About Us</a></li>
+<li class="page_item page-item-210"><a href="index6ae3.html?page_id=210" title="Templates">Templates</a></li>
+</ul></li></div>
+
+<div class="aisLeftNav">
+<h2>Archives</h2>
+<ul>
+	<li><a href='indexb4d5.html?m=201110' title='October 2011'>October 2011</a></li>
+	<li><a href='indexc61a.html?m=201106' title='June 2011'>June 2011</a></li>
+	<li><a href='indexa80d.html?m=201105' title='May 2011'>May 2011</a></li>
+	<li><a href='index512b.html?m=201104' title='April 2011'>April 2011</a></li>
+	<li><a href='index08fb.html?m=201103' title='March 2011'>March 2011</a></li>
+	<li><a href='index52f4.html?m=201102' title='February 2011'>February 2011</a></li>
+	<li><a href='index74f1.html?m=201101' title='January 2011'>January 2011</a></li>
+	<li><a href='index8956.html?m=201012' title='December 2010'>December 2010</a></li>
+	<li><a href='indexa1aa.html?m=201011' title='November 2010'>November 2010</a></li>
+	<li><a href='indexe3d5.html?m=201010' title='October 2010'>October 2010</a></li>
+	<li><a href='index9ab9.html?m=201009' title='September 2010'>September 2010</a></li>
+	<li><a href='index1ff0.html?m=201008' title='August 2010'>August 2010</a></li>
+	<li><a href='index9f11.html?m=201007' title='July 2010'>July 2010</a></li>
+	<li><a href='index31f0.html?m=201006' title='June 2010'>June 2010</a></li>
+	<li><a href='indexd189.html?m=201005' title='May 2010'>May 2010</a></li>
+	<li><a href='indexb5c0.html?m=201004' title='April 2010'>April 2010</a></li>
+	<li><a href='indexf258.html?m=201003' title='March 2010'>March 2010</a></li>
+	<li><a href='index6e30.html?m=201002' title='February 2010'>February 2010</a></li>
+	<li><a href='index6b19.html?m=201001' title='January 2010'>January 2010</a></li>
+	<li><a href='index5c0a.html?m=200912' title='December 2009'>December 2009</a></li>
+	<li><a href='index8f62.html?m=200911' title='November 2009'>November 2009</a></li>
+	<li><a href='index451d.html?m=200910' title='October 2009'>October 2009</a></li>
+	<li><a href='index3e04.html?m=200909' title='September 2009'>September 2009</a></li>
+	<li><a href='index425a.html?m=200908' title='August 2009'>August 2009</a></li>
+	<li><a href='index9907.html?m=200907' title='July 2009'>July 2009</a></li>
+	<li><a href='index3104.html?m=200906' title='June 2009'>June 2009</a></li>
+	<li><a href='indexc36d.html?m=200905' title='May 2009'>May 2009</a></li>
+	<li><a href='index17e8.html?m=200904' title='April 2009'>April 2009</a></li>
+	<li><a href='index10a5.html?m=200903' title='March 2009'>March 2009</a></li>
+	<li><a href='index8988.html?m=200902' title='February 2009'>February 2009</a></li>
+	<li><a href='index1419.html?m=200901' title='January 2009'>January 2009</a></li>
+	<li><a href='index7866.html?m=200812' title='December 2008'>December 2008</a></li>
+	<li><a href='index55f6.html?m=200811' title='November 2008'>November 2008</a></li>
+	<li><a href='indexa7bc.html?m=200810' title='October 2008'>October 2008</a></li>
+	<li><a href='indexe77c.html?m=200809' title='September 2008'>September 2008</a></li>
+	<li><a href='indexcffc.html?m=200808' title='August 2008'>August 2008</a></li>
+	<li><a href='index0e62.html?m=200807' title='July 2008'>July 2008</a></li>
+	<li><a href='indexfda7.html?m=200806' title='June 2008'>June 2008</a></li>
+	<li><a href='index7d64.html?m=200805' title='May 2008'>May 2008</a></li>
+	<li><a href='index94dd.html?m=200804' title='April 2008'>April 2008</a></li>
+	<li><a href='index9631.html?m=200803' title='March 2008'>March 2008</a></li>
+	<li><a href='indexdd52.html?m=200802' title='February 2008'>February 2008</a></li>
+	<li><a href='index21ee.html?m=200801' title='January 2008'>January 2008</a></li>
+	<li><a href='index363c.html?m=200712' title='December 2007'>December 2007</a></li>
+	<li><a href='index7493.html?m=200711' title='November 2007'>November 2007</a></li>
+	<li><a href='index93a7.html?m=200710' title='October 2007'>October 2007</a></li>
+	<li><a href='index4ca8.html?m=200709' title='September 2007'>September 2007</a></li>
+	<li><a href='index6124.html?m=200708' title='August 2007'>August 2007</a></li>
+	<li><a href='index6013.html?m=200707' title='July 2007'>July 2007</a></li>
+	<li><a href='index2ab6.html?m=200706' title='June 2007'>June 2007</a></li>
+	<li><a href='index44f0.html?m=200705' title='May 2007'>May 2007</a></li>
+	<li><a href='indexf0b4.html?m=200704' title='April 2007'>April 2007</a></li>
+	<li><a href='index481d.html?m=200703' title='March 2007'>March 2007</a></li>
+	<li><a href='indexcbea.html?m=200702' title='February 2007'>February 2007</a></li>
+	<li><a href='index9cdc.html?m=200701' title='January 2007'>January 2007</a></li>
+	<li><a href='index3ea4.html?m=200612' title='December 2006'>December 2006</a></li>
+	<li><a href='index67ca.html?m=200611' title='November 2006'>November 2006</a></li>
+	<li><a href='indexff49.html?m=200610' title='October 2006'>October 2006</a></li>
+	<li><a href='index611c.html?m=200609' title='September 2006'>September 2006</a></li>
+	<li><a href='index9a21.html?m=200608' title='August 2006'>August 2006</a></li>
+	<li><a href='index3ee9.html?m=200607' title='July 2006'>July 2006</a></li>
+	<li><a href='indexe13a.html?m=200606' title='June 2006'>June 2006</a></li>
+</ul>
+</div>
+
+<div class="aisLeftNav">
+	</div>
+
+<div class="aisLeftNav">
+<h2>Books</h2>
+<iframe src="http://rcm.amazon.com/e/cm?t=adventures0d2-20&amp;o=1&amp;p=8&amp;l=as1&amp;asins=0764526413&amp;fc1=000000&amp;IS2=1&amp;lt1=_blank&amp;lc1=0000ff&amp;bc1=000000&amp;bg1=ffffff&amp;f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" name="I5" id="I5"></iframe>
+<br/>
+<iframe src="http://rcm.amazon.com/e/cm?t=adventures0d2-20&amp;o=1&amp;p=8&amp;l=as1&amp;asins=0201633612&amp;fc1=000000&amp;IS2=1&amp;lt1=_blank&amp;lc1=0000ff&amp;bc1=000000&amp;bg1=ffffff&amp;f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" name="I6" id="I6"></iframe>
+<br/>
+<iframe src="http://rcm.amazon.com/e/cm?t=adventures0d2-20&amp;o=1&amp;p=8&amp;l=as1&amp;asins=0136291554&amp;fc1=000000&amp;IS2=1&amp;lt1=_blank&amp;lc1=0000ff&amp;bc1=000000&amp;bg1=ffffff&amp;f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" name="I7" id="I7"></iframe>
+<br/>
+<iframe src="http://rcm.amazon.com/e/cm?t=adventures0d2-20&amp;o=1&amp;p=8&amp;l=as1&amp;asins=1888009195&amp;fc1=000000&amp;IS2=1&amp;lt1=_blank&amp;lc1=0000ff&amp;bc1=000000&amp;bg1=ffffff&amp;f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" name="I8" id="I8"></iframe>
+</div>
+<div class="aisLeftNav">
+<h2>Meta</h2>
+<ul>
+		<li><a href="wp-login.html">Login</a></li>
+	<li><a href="http://validator.w3.org/check/referer" title="This page validates as XHTML 1.0 Transitional">Valid <abbr title="eXtensible HyperText Markup Language">XHTML</abbr></a></li>
+	<li><a href="http://gmpg.org/xfn/"><abbr title="XHTML Friends Network">XFN</abbr></a></li>
+	<li><a href="http://wordpress.org/" title="Powered by WordPress, state-of-the-art semantic personal publishing platform.">WordPress</a></li>
+	</ul>
+</div>
+<div class="aisLeftContent">
+<h2>Community</h2>
+<ul>
+	<script type="text/javascript" src="../../localhost/embed/92q2bbma.js"></script>
+</ul>
+</div>
+
+</div></div></div>
+</div>		</td>
+		<td>
+
+	<div id="content" class="narrowcolumn">
+
+		
+		 		<h2 class="pagetitle">Archive for the &#8216;DDD&#8217; Category</h2>
+
+ 	  
+
+		<div class="navigation">
+			<div class="alignleft"></div>
+			<div class="alignright"></div>
+		</div>
+
+				<div class="post">
+				<h3 id="post-558"><a href="index193e.html?p=558" rel="bookmark" title="Permanent Link to Linq to SQL and the Repository Pattern">Linq to SQL and the Repository Pattern</a></h3>
+				<small>Monday, September 27th, 2010</small>
+
+				<div class="entry">
+					<p>Earlier this month, I posted <a href="indexa165.html?p=550">Entity Framework and the Repository Pattern</a>. Mickey <a href="http://github.com/mickeyvip/RepositoryPattern">posted</a> that code on GitHub, along with his own Linq to SQL implementation.</p>
+<p>For those new to Git, here’s how you can get Mickey’s repository:</p>
+<ul>
+<li>Install <a href="http://code.google.com/p/msysgit/">msysgit</a> (if you are on Windows).</li>
+<li>Create a folder for the project.</li>
+<li>Right-click and choose “Git Bash Here”.</li>
+<li>git init</li>
+<li>git remote add origin <a href="http://github.com/mickeyvip/RepositoryPattern.git">http://github.com/mickeyvip/RepositoryPattern.git</a></li>
+<li>git pull origin master</li>
+<li>Open RepositoryPattern.sln.</li>
+</ul>
+<p>Mickey took the time to complete the story for me. I posted only enough code to make my point (which was, BTW, that the Repository Pattern takes more work than you might expect). Mikey reverse engineered the database that I used for my example, and even populated it with data from this blog. Wow!</p>
+<p>Now let’s review his work.</p>
+<h3>Tests</h3>
+<p><a href="wp-content/uploads/2010/09/image.png"><img style="border-bottom: 0px; border-left: 0px; display: inline; margin-left: 0px; border-top: 0px; margin-right: 0px; border-right: 0px" title="image" border="0" alt="image" align="right" src="wp-content/uploads/2010/09/image-thumb.png" width="244" height="184" /></a> Mickey not only includes unit test (the motivation for my original post), but also integration tests. Just open the solution and hit Ctrl+R, A to run all tests. If you find that the tests don’t deploy the database file, double-click the Local.testsettings file and add the dbf to the Deployment section. I found that the tests passed before I turned on code coverage, but then I had to make this change.</p>
+<p>I enabled code coverage and found that he achieves 92%-100% in all modules except for the generated code. The reason that it is not 100% is mostly due to the fact that my original tests didn’t add anything to the repository.</p>
+<h3>Two sets of data types</h3>
+<p>The goal of the original post was not persistence ignorance, it was testing. But persistence ignorance is often a reason for using the Repository Pattern. Mickey’s solution is not persistence ignorant, either.</p>
+<p>If you look in the Data project, you will see NoteworthyEntitiesL2SModel.dbml <em>and</em> NoteworthyEntitiesEFModel.edmx. That is, he used both EF and L2S to generate models from the database. This created two separate sets of data types.</p>
+<p>This division necessarily permeates the solution, since those generated data types are exposed from the repository. As a result, he has a separate memory provider for each data access technology. The EF memory provider expects ObjectContext and ObjectQuery. The L2S memory provider replaces those with DataContext and Table.</p>
+<p>Both of the memory providers have unit tests. They distinguish between the two by namespace. EF and L2S use different strategies for naming associative tables, but other than that the code looks the same.</p>
+<p>In practice, you will typically choose one data access technology, so this lack of persistence ignorance is not a problem. But if it bothers you, please look into POCO support for EF and L2S to see if there’s a way to remove the dependency upon the data access technology.</p>
+<h3>Thank you, Mickey</h3>
+<p>I am quite impressed with the effort that Mickey put into packaging this example and making it available to us. He took code that only worked on my machine and filled in the missing components so that we can all run the tests. And he took what was working for Entity Framework and ported it to Linq to SQL so that you have the choice. Now, either way you go, you can test your data services.</p>
+<p>Thanks, man.</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="index9591.html?cat=37" title="View all posts in DDD" rel="category">DDD</a>,  <a href="indexe8fb.html?cat=39" title="View all posts in Entity Framework" rel="category">Entity Framework</a>,  <a href="index3f7b.html?cat=2" title="View all posts in Unit testing" rel="category">Unit testing</a> |   <a href="index193e.html?p=558#respond" title="Comment on Linq to SQL and the Repository Pattern">No Comments &#187;</a></p>
+
+			</div>
+
+				<div class="post">
+				<h3 id="post-550"><a href="indexa165.html?p=550" rel="bookmark" title="Permanent Link to Entity Framework and the Repository Pattern">Entity Framework and the Repository Pattern</a></h3>
+				<small>Thursday, September 9th, 2010</small>
+
+				<div class="entry">
+					<p>When I’ve asked <a href="http://stackoverflow.com/questions/575190/is-there-an-in-memory-provider-for-entity-framework">how to unit test Entity Framework</a>, the best answer was “use the Repository pattern to encapsulate your EF code” (thanks <a href="http://andrewpeters.net/">Andrew Peters</a>). I recently asked the same thing about RIA Services. <a href="http://azurecoding.net/blogs/brownie/">Mike Brown</a> responded with the same advice, even going so far as to spend a couple of hours with me on Live Meeting.</p>
+<p>Since <strong>all you gotta do is</strong> implement the Repository Pattern, it should be easy, right? Let’s take a look at a minimalist implementation.</p>
+<h3>Inject the implementation</h3>
+<p>To support unit testing, we need to be able to swap out our implementation. At the top level, the consumer of a repository begins a unit of work. So we’ll inject a unit of work factory.</p>
+<pre class="code"><span style="color: blue">public interface </span><span style="color: #2b91af">IUnitOfWorkFactory
+</span>{
+    <span style="color: #2b91af">IUnitOfWork </span>Begin();
+}</pre>
+<pre class="code"><span style="color: blue">public class </span><span style="color: #2b91af">NoteworthyService
+</span>{
+    <span style="color: blue">private </span><span style="color: #2b91af">IUnitOfWorkFactory </span>_unitOfWorkFactory;
+
+    <span style="color: blue">public </span>NoteworthyService(<span style="color: #2b91af">IUnitOfWorkFactory </span>unitOfWorkFactory)
+    {
+        _unitOfWorkFactory = unitOfWorkFactory;
+    }
+}</pre>
+<h3>Identify the repository</h3>
+<p>In DDD we create one repository per aggregate root, which is the entity from which you begin the query. In EF, entities exist in a container. So we’ll take two steps to get the repository via the container.</p>
+<pre class="code"><span style="color: blue">public interface </span><span style="color: #2b91af">IUnitOfWork </span>: <span style="color: #2b91af">IDisposable
+</span>{
+    <span style="color: #2b91af">IContainer</span>&lt;TContainer&gt; UsingContainer&lt;TContainer&gt;()
+        <span style="color: blue">where </span>TContainer : <span style="color: #2b91af">ObjectContext</span>, <span style="color: blue">new</span>();
+}
+
+<span style="color: blue">public interface </span><span style="color: #2b91af">IContainer</span>&lt;TContainer&gt; : <span style="color: #2b91af">IDisposable
+</span>{
+    <span style="color: #2b91af">IRepository</span>&lt;TEntity&gt; GetRepository&lt;TEntity&gt;(<span style="color: #2b91af">Func</span>&lt;TContainer, <span style="color: #2b91af">ObjectQuery</span>&lt;TEntity&gt;&gt; repositorySelector)
+        <span style="color: blue">where </span>TEntity : <span style="color: #2b91af">EntityObject</span>;
+}</pre>
+<h3>Provide a specification</h3>
+<p>The second half of the Repository Pattern is the Specification. A specification identifies which entities to pull from the repository. In Linq, we use lambdas for that. So a repository should be able to give you back some entities when given a lambda.</p>
+<pre class="code"><span style="color: blue">public interface </span><span style="color: #2b91af">IRepository</span>&lt;TEntity&gt;
+{
+    <span style="color: #2b91af">IQueryable</span>&lt;TEntity&gt; GetSatisfying(<span style="color: #2b91af">Expression</span>&lt;<span style="color: #2b91af">Func</span>&lt;TEntity, <span style="color: blue">bool</span>&gt;&gt; specification);
+    <span style="color: blue">void </span>Add(TEntity entity);
+}</pre>
+<h3>Query the repository</h3>
+<p>With those interfaces in place, here’s what a query looks like.</p>
+<pre class="code"><span style="color: blue">public </span><span style="color: #2b91af">List</span>&lt;<span style="color: #2b91af">Article</span>&gt; GetArticlesByTopic(<span style="color: blue">string </span>topicName)
+{
+    <span style="color: blue">using </span>(<span style="color: blue">var </span>unitOfWork = _unitOfWorkFactory.Begin())
+    {
+        <span style="color: blue">return </span>unitOfWork.UsingContainer&lt;<span style="color: #2b91af">NoteworthyEntities</span>&gt;().GetRepository(container =&gt; container.Articles)
+            .GetSatisfying(article =&gt; article.Topics.Any(topic =&gt; topic.TopicName == topicName))
+            .ToList();
+    }
+}</pre>
+<h3>Implement in memory</h3>
+<p>For unit testing, we implement the repository interfaces using in-memory lists.</p>
+<pre class="code"><span style="color: blue">public class </span><span style="color: #2b91af">MemoryUnitOfWorkFactory </span>: <span style="color: #2b91af">IUnitOfWorkFactory
+</span>{
+    <span style="color: blue">private </span><span style="color: #2b91af">MemoryUnitOfWork </span>_unitOfWork = <span style="color: blue">new </span><span style="color: #2b91af">MemoryUnitOfWork</span>();
+
+    <span style="color: blue">public </span><span style="color: #2b91af">IUnitOfWork </span>Begin()
+    {
+        <span style="color: blue">return </span>_unitOfWork;
+    }
+}
+
+<span style="color: blue">public class </span><span style="color: #2b91af">MemoryUnitOfWork </span>: <span style="color: #2b91af">IUnitOfWork
+</span>{
+    <span style="color: blue">private </span><span style="color: #2b91af">Dictionary</span>&lt;<span style="color: #2b91af">Type</span>, <span style="color: blue">object</span>&gt; _containerByType = <span style="color: blue">new </span><span style="color: #2b91af">Dictionary</span>&lt;<span style="color: #2b91af">Type</span>, <span style="color: blue">object</span>&gt;();
+
+    <span style="color: blue">public </span><span style="color: #2b91af">IContainer</span>&lt;TContainer&gt; UsingContainer&lt;TContainer&gt;()
+        <span style="color: blue">where </span>TContainer : <span style="color: #2b91af">ObjectContext</span>, <span style="color: blue">new</span>()
+    {
+        <span style="color: blue">object </span>container;
+        <span style="color: blue">if </span>(!_containerByType.TryGetValue(<span style="color: blue">typeof</span>(TContainer), <span style="color: blue">out </span>container))
+        {
+            container = <span style="color: blue">new </span><span style="color: #2b91af">MemoryContainer</span>&lt;TContainer&gt;();
+            _containerByType.Add(<span style="color: blue">typeof</span>(TContainer), container);
+        }
+        <span style="color: blue">return </span>(<span style="color: #2b91af">IContainer</span>&lt;TContainer&gt;)container;
+    }
+
+    <span style="color: blue">public void </span>Dispose()
+    {
+    }
+}
+
+<span style="color: blue">public class </span><span style="color: #2b91af">MemoryContainer</span>&lt;TContainer&gt; : <span style="color: #2b91af">IContainer</span>&lt;TContainer&gt;
+    <span style="color: blue">where </span>TContainer : <span style="color: #2b91af">ObjectContext</span>, <span style="color: blue">new</span>()
+{
+    <span style="color: blue">private </span><span style="color: #2b91af">Dictionary</span>&lt;<span style="color: #2b91af">Type</span>, <span style="color: blue">object</span>&gt; _containerByType = <span style="color: blue">new </span><span style="color: #2b91af">Dictionary</span>&lt;<span style="color: #2b91af">Type</span>, <span style="color: blue">object</span>&gt;();
+
+    <span style="color: blue">public </span><span style="color: #2b91af">IRepository</span>&lt;TEntity&gt; GetRepository&lt;TEntity&gt;(<span style="color: #2b91af">Func</span>&lt;TContainer, <span style="color: #2b91af">ObjectQuery</span>&lt;TEntity&gt;&gt; repositorySelector)
+        <span style="color: blue">where </span>TEntity : <span style="color: #2b91af">EntityObject
+    </span>{
+        <span style="color: blue">object </span>container;
+        <span style="color: blue">if </span>(!_containerByType.TryGetValue(<span style="color: blue">typeof</span>(TEntity), <span style="color: blue">out </span>container))
+        {
+            container = <span style="color: blue">new </span><span style="color: #2b91af">MemoryRepository</span>&lt;TEntity&gt;();
+            _containerByType.Add(<span style="color: blue">typeof</span>(TEntity), container);
+        }
+        <span style="color: blue">return </span>(<span style="color: #2b91af">IRepository</span>&lt;TEntity&gt;)container;
+    }
+
+    <span style="color: blue">public void </span>Dispose()
+    {
+    }
+}
+
+<span style="color: blue">public class </span><span style="color: #2b91af">MemoryRepository</span>&lt;TEntity&gt; : <span style="color: #2b91af">IRepository</span>&lt;TEntity&gt;
+    <span style="color: blue">where </span>TEntity : <span style="color: #2b91af">EntityObject
+</span>{
+    <span style="color: blue">private </span><span style="color: #2b91af">List</span>&lt;TEntity&gt; _entities = <span style="color: blue">new </span><span style="color: #2b91af">List</span>&lt;TEntity&gt;();
+
+    <span style="color: blue">public </span><span style="color: #2b91af">IQueryable</span>&lt;TEntity&gt; GetSatisfying(<span style="color: #2b91af">Expression</span>&lt;<span style="color: #2b91af">Func</span>&lt;TEntity, <span style="color: blue">bool</span>&gt;&gt; specification)
+    {
+        <span style="color: blue">return </span>_entities.Where(specification.Compile()).AsQueryable();
+    }
+
+    <span style="color: blue">public void </span>Add(TEntity entity)
+    {
+        _entities.Add(entity);
+    }
+}</pre>
+<p>And here’s what a unit test looks like.</p>
+<pre class="code">[<span style="color: #2b91af">TestClass</span>]
+<span style="color: blue">public class </span><span style="color: #2b91af">NoteworthyServiceTest
+</span>{
+    <span style="color: blue">private </span><span style="color: #2b91af">NoteworthyService </span>_noteworthyService;
+
+    [<span style="color: #2b91af">TestInitialize</span>]
+    <span style="color: blue">public void </span>Initialize()
+    {
+        <span style="color: #2b91af">IUnitOfWorkFactory </span>memory = <span style="color: blue">new </span><span style="color: #2b91af">MemoryUnitOfWorkFactory</span>();
+
+        <span style="color: #2b91af">IRepository</span>&lt;<span style="color: #2b91af">Article</span>&gt; articlesRepository = memory.Begin()
+            .UsingContainer&lt;<span style="color: #2b91af">NoteworthyEntities</span>&gt;()
+            .GetRepository(container =&gt; container.Articles);
+        <span style="color: #2b91af">Topic </span>ddd = <span style="color: blue">new </span><span style="color: #2b91af">Topic</span>()
+        {
+            TopicName = <span style="color: #a31515">&quot;ddd&quot;
+        </span>};
+        <span style="color: #2b91af">Topic </span>corresopndence = <span style="color: blue">new </span><span style="color: #2b91af">Topic</span>()
+        {
+            TopicName = <span style="color: #a31515">&quot;correspondence&quot;
+        </span>};
+        <span style="color: #2b91af">Article </span>efRepository = <span style="color: blue">new </span><span style="color: #2b91af">Article</span>()
+        {
+            Title = <span style="color: #a31515">&quot;Entity Framework and the Repository Pattern&quot;
+        </span>};
+        efRepository.Topics.Add(ddd);
+        <span style="color: #2b91af">Article </span>correspondenceLaunch = <span style="color: blue">new </span><span style="color: #2b91af">Article</span>()
+        {
+            Title = <span style="color: #a31515">&quot;Correspondence Launch&quot;
+        </span>};
+        correspondenceLaunch.Topics.Add(corresopndence);
+        <span style="color: #2b91af">Article </span>correspondenceDDD = <span style="color: blue">new </span><span style="color: #2b91af">Article</span>()
+        {
+            Title = <span style="color: #a31515">&quot;Correspondence and DDD&quot;
+        </span>};
+        correspondenceDDD.Topics.Add(ddd);
+        correspondenceDDD.Topics.Add(corresopndence);
+
+        articlesRepository.Add(efRepository);
+        articlesRepository.Add(correspondenceLaunch);
+        articlesRepository.Add(correspondenceDDD);
+
+        _noteworthyService = <span style="color: blue">new </span><span style="color: #2b91af">NoteworthyService</span>(memory);
+    }
+
+    [<span style="color: #2b91af">TestMethod</span>]
+    <span style="color: blue">public void </span>QueryReturnsArticles()
+    {
+        <span style="color: blue">var </span>articles = _noteworthyService.GetArticlesByTopic(<span style="color: #a31515">&quot;ddd&quot;</span>).ToArray();
+
+        <span style="color: #2b91af">Assert</span>.AreEqual(<span style="color: #a31515">&quot;Entity Framework and the Repository Pattern&quot;</span>, articles[0].Title);
+        <span style="color: #2b91af">Assert</span>.AreEqual(<span style="color: #a31515">&quot;Correspondence and DDD&quot;</span>, articles[1].Title);
+    }
+}</pre>
+<h3>Implement with Entity Framework</h3>
+<p>Finally, we implement the real thing using Entity Framework.</p>
+<pre class="code"><span style="color: blue">public class </span><span style="color: #2b91af">EntityFrameworkUnitOfWorkFactory </span>: <span style="color: #2b91af">IUnitOfWorkFactory
+</span>{
+    <span style="color: blue">public </span><span style="color: #2b91af">IUnitOfWork </span>Begin()
+    {
+        <span style="color: blue">return new </span><span style="color: #2b91af">EntityFrameworkUnitOfWork</span>();
+    }
+}
+
+<span style="color: blue">public class </span><span style="color: #2b91af">EntityFrameworkUnitOfWork </span>: <span style="color: #2b91af">IUnitOfWork
+</span>{
+    <span style="color: blue">private </span><span style="color: #2b91af">Dictionary</span>&lt;<span style="color: #2b91af">Type</span>, <span style="color: #2b91af">IDisposable</span>&gt; _containerByType = <span style="color: blue">new </span><span style="color: #2b91af">Dictionary</span>&lt;<span style="color: #2b91af">Type</span>, <span style="color: #2b91af">IDisposable</span>&gt;();
+
+    <span style="color: blue">public </span><span style="color: #2b91af">IContainer</span>&lt;TContainer&gt; UsingContainer&lt;TContainer&gt;()
+        <span style="color: blue">where </span>TContainer : <span style="color: #2b91af">ObjectContext</span>, <span style="color: blue">new</span>()
+    {
+        <span style="color: #2b91af">IDisposable </span>container;
+        <span style="color: blue">if </span>(!_containerByType.TryGetValue(<span style="color: blue">typeof</span>(TContainer), <span style="color: blue">out </span>container))
+        {
+            container = <span style="color: blue">new </span><span style="color: #2b91af">EntityFrameworkContainer</span>&lt;TContainer&gt;();
+            _containerByType.Add(<span style="color: blue">typeof</span>(TContainer), container);
+        }
+        <span style="color: blue">return </span>(<span style="color: #2b91af">IContainer</span>&lt;TContainer&gt;)container;
+    }
+
+    <span style="color: blue">public void </span>Dispose()
+    {
+        <span style="color: blue">foreach </span>(<span style="color: blue">var </span>container <span style="color: blue">in </span>_containerByType.Values)
+            container.Dispose();
+    }
+}
+
+<span style="color: blue">public class </span><span style="color: #2b91af">EntityFrameworkContainer</span>&lt;TContainer&gt; : <span style="color: #2b91af">IContainer</span>&lt;TContainer&gt;
+    <span style="color: blue">where </span>TContainer : <span style="color: #2b91af">ObjectContext</span>, <span style="color: blue">new</span>()
+{
+    <span style="color: blue">private </span>TContainer _container;
+
+    <span style="color: blue">public </span>EntityFrameworkContainer()
+    {
+        _container = <span style="color: blue">new </span>TContainer();
+    }
+
+    <span style="color: blue">public </span><span style="color: #2b91af">IRepository</span>&lt;TEntity&gt; GetRepository&lt;TEntity&gt;(<span style="color: #2b91af">Func</span>&lt;TContainer, <span style="color: #2b91af">ObjectQuery</span>&lt;TEntity&gt;&gt; repositorySelector)
+        <span style="color: blue">where </span>TEntity : <span style="color: #2b91af">EntityObject
+    </span>{
+        <span style="color: blue">return new </span><span style="color: #2b91af">EntityFrameworkRepository</span>&lt;TContainer, TEntity&gt;(_container, repositorySelector(_container));
+    }
+
+    <span style="color: blue">public void </span>Dispose()
+    {
+        _container.Dispose();
+    }
+}
+
+<span style="color: blue">public class </span><span style="color: #2b91af">EntityFrameworkRepository</span>&lt;TContainer, TEntity&gt; : <span style="color: #2b91af">IRepository</span>&lt;TEntity&gt;
+    <span style="color: blue">where </span>TContainer : <span style="color: #2b91af">ObjectContext</span>, <span style="color: blue">new</span>()
+    <span style="color: blue">where </span>TEntity : <span style="color: #2b91af">EntityObject
+</span>{
+    <span style="color: blue">private </span>TContainer _container;
+    <span style="color: blue">private </span><span style="color: #2b91af">ObjectQuery</span>&lt;TEntity&gt; _objectQuery;
+
+    <span style="color: blue">public </span>EntityFrameworkRepository(TContainer container, <span style="color: #2b91af">ObjectQuery</span>&lt;TEntity&gt; objectQuery)
+    {
+        _container = container;
+        _objectQuery = objectQuery;
+    }
+
+    <span style="color: blue">public </span><span style="color: #2b91af">IQueryable</span>&lt;TEntity&gt; GetSatisfying(<span style="color: #2b91af">Expression</span>&lt;<span style="color: #2b91af">Func</span>&lt;TEntity, <span style="color: blue">bool</span>&gt;&gt; specification)
+    {
+        <span style="color: blue">return </span>_objectQuery.Where(specification);
+    }
+
+    <span style="color: blue">public void </span>Add(TEntity entity)
+    {
+        _container.AddObject(_objectQuery.Name, entity);
+    }
+}</pre>
+<h3>Analysis</h3>
+<p>This is the smallest implementation of the Repository pattern that I could come up with. It is obviously not feature complete. For example, it does not implement Delete, nor does it allow you to specify eager loading with Include. There are <a href="http://www.codeproject.com/KB/database/ImplRepositoryPatternEF.aspx">other implementations that are bigger</a>, but I doubt that there could be one smaller. Even at this size, this doesn’t qualify as “all you need to do is”.</p>
+<p>One benefit of the Repository pattern is supposed to be that it abstracts the persistence mechanism. But this implementation returns EntityObjects, which are a distinctly Entity Framework-ish data type. I could try for a POCO compliant implementation to solve that problem.</p>
+<p>Because this implementation requires EntityObjects, it could never work with RIA Services. I would have to write a different Repository implementation to unit test my client code.</p>
+<p>And finally, Entity Framework does some things that the in-memory repository does not. My unit tests can’t verify that I’m using EF correctly. For example, Entity Framework does eager loading if I explicitly request it. The in-memory implementation always has all navigation properties populated. Because of this difference, I can’t verify with a unit test that I have included all of the required navigations.</p>
+<h3>Conclusion</h3>
+<p>All of this leads me to conclude that the Repository pattern is not the best way to add testability to an untestable framework. The framework needs to be testable from the beginning. If Entity Framework had provided an in-memory implementation for testing, then I could test <em>my use of</em> EF, including eager loading.</p>
+<p>By the way, <a href="http://correspondence.codeplex.com/">Correspondence</a> does in fact provide an in-memory implementation for unit testing. Please go through the lessons to see what I think a testable framework should look like.</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="index9591.html?cat=37" title="View all posts in DDD" rel="category">DDD</a>,  <a href="indexe8fb.html?cat=39" title="View all posts in Entity Framework" rel="category">Entity Framework</a>,  <a href="index3f7b.html?cat=2" title="View all posts in Unit testing" rel="category">Unit testing</a> |   <a href="indexa165.html?p=550#comments" title="Comment on Entity Framework and the Repository Pattern">6 Comments &#187;</a></p>
+
+			</div>
+
+				<div class="post">
+				<h3 id="post-454"><a href="index6353.html?p=454" rel="bookmark" title="Permanent Link to Don&#8217;t abdicate the ubiquitous language">Don&#8217;t abdicate the ubiquitous language</a></h3>
+				<small>Friday, October 16th, 2009</small>
+
+				<div class="entry">
+					<p>The Ubiquitous Language of Domain Driven Design is a call for developers and domain experts to communicate openly, instead of erecting false barriers of obfuscation. It admonishes developers not to put pattern names or technical terms into the domain model.</p>
+<p>Yet it also does not suggest that developers should abdicate the language to the domain experts. Imprecise language cannot be tolerated. When a domain expert uses it, it is the developers' duty to correct it.</p>
+<p>The following four-letter words are indicators of imprecise language:</p>
+<ul>
+<li>Type</li>
+<li>State/Status</li>
+<li>Code</li>
+<li>Text</li>
+</ul>
+<p><strong>Type</strong><br />When a domain expert uses the term "type", they are trying to classify objects in a meaningful way. Work items, for example, can either be bugs or enhancements. Orders can be purchase orders, quotes, or returns.</p>
+<p>Domain experts will often model type as an attribute of a single entity. The behavior of that entity is sometimes dependent upon this "type" attribute. Entities of one type are treated differently than entities of another type, but only in certain situations. Pricing is run on purchase orders and quotes, for example, but not on returns.</p>
+<p>When a developer sees the word "type", they immediately attach some assumptions to it. An entity can only be an instance of one concrete type. Its type is determined at the time of creation and cannot change during its lifetime. Type determines the attributes and behaviors of the object. These are not the assumptions that the domain expert means to imply. A work item may be entered as a bug, but later determined to be an enhancement. The work item type can change. If we modeled this domain using a static type system, such a change would be impossible.</p>
+<p>It would be more useful to identify the reason that objects have different "types". A work item is either a bug or an enhancement because of the feature set it affects: existing features or new features. Orders are purchase orders, quotes, or returns because of their intent. Let's use the more precise terms "feature set" and "intent", and not the overloaded term "type" to represent these attributes of an entity.</p>
+<p><strong>State and Status</strong><br />When a domain expert uses the term "state" or "status", they are trying to express a workflow. A work item is in the "new", "fixed", or "closed" state. An order status can be "received", "processed", or "shipped".</p>
+<p>State and status are modeled as attributes of an entity. But they are in truth events in the workflow. As an entity moves through a workflow, the intent is not so much to modify that entity. Rather, it is to gather information <em>about</em> the entity. This is a concept discussed by Greg Young in <a href="http://www.infoq.com/presentations/greg-young-unshackle-qcon08">Unshackle Your Domain</a>. The events should themselves be part of the domain model.</p>
+<p>States are only meaningful within a context. But entities are often found at the intersection of several contexts. An entity can be in several states simultaneously, depending upon what question is being asked. But if "state" is an attribute of an entity, it can have only one value. This can lead to a combinatorial explosion of states that attempt to simultaneously represent two or more contexts.</p>
+<p>It would be more useful to identify the events that can occur within a workflow, and ask questions in terms of that history.</p>
+<p><strong>Code</strong><br />When a domain expert uses the term "code", they are usually calling out an implementation detail about how a problem is currently solved. Our ordering system currently has a "signal code" attached to a product. This three-letter code is used to signal the system that special processing needs to take place.</p>
+<p>For example, one signal code indicates that the product is a controlled substance, and therefore requires DEA license validation. Another signal code indicates that the product is drop shipped, so different inventory behavior is applied.</p>
+<p>The problem with codes is that they are already entrenched. It is hard to convince a domain expert that there is a problem. Telling them that codes represent different dimensions is too abstract. But if you give them a concrete example, they already have an answer for it.</p>
+<p>"What if a product is both a controlled substance and drop shipped?"</p>
+<p>"Are you crazy! We don't drop ship controlled substances!"</p>
+<p>It would be more useful to identify the dimensions along which entities vary and make those independent attributes. A product has licensing requirements, and also has an inventory strategy. Interactions among those various dimensions can be captured as business rules.</p>
+<p><strong>Text</strong><br />Unless the domain is specifically about books, the term "text" is often used to represent a note to be displayed in a specific place. A customer service representative can enter "footer text" when placing an order, which appears on the footer of the invoice.</p>
+<p>These notes are important to capture, as the primary purpose of any system is to facilitate communication among its users. But the notes should be named according to their purpose, not according to where they appear. Formats change over time, and are not an appropriate concept for the domain model. Our "footer text" for example no longer appears on the footer of the invoice. It would be more useful to call it "invoice instructions".</p>
+<p>The four-letter words listed here are just the most egregious examples of imprecise language. There are many other examples that could be cited. As a developer, it is your job to ask questions when you see them. You need more information about what these terms mean in context. If you have to ask a domain expert to elaborate, then they have not chosen a precise term. Once they do elaborate, suggest that they use that term instead.</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="index9591.html?cat=37" title="View all posts in DDD" rel="category">DDD</a> |   <a href="index6353.html?p=454#respond" title="Comment on Don&#8217;t abdicate the ubiquitous language">No Comments &#187;</a></p>
+
+			</div>
+
+				<div class="post">
+				<h3 id="post-453"><a href="index06d3.html?p=453" rel="bookmark" title="Permanent Link to Merit vs. Credit">Merit vs. Credit</a></h3>
+				<small>Thursday, October 15th, 2009</small>
+
+				<div class="entry">
+					<p>Domain Driven Design (DDD) advocates for a ubiquitous language. This is more than just a fancy way of saying that developers and domain experts should use the same words. It's more than a glossary or a dictionary.</p>
+<p>I've fallen victim to the hubris of making up my own language that is "better" than the business'. It's a personality flaw that I fight constantly. The worst example occurred when I designed a frequent diner program for a prior employer. The business called points earned "credit". I insisted that the correct term was "merit". "Credit" is for accounting systems (like our gift card program). "Merit" is something you accrue for which you are eventually rewarded.</p>
+<p>I debated the issue at length with the business analyst. She understood my position, but informed me that our users use the term "credit". She performed an experiment in which some potential customers were shown specs with "credit" and others with "merit". The "credit" group had fewer misunderstandings than the "merit" group. Even in the face of scientific evidence, I stood my ground. "Merit" was right, and they just needed to be educated.</p>
+<p>The debate continued. People lined up behind The Architect claiming that "merit" was technically correct and semantically concise. Other people lined up behind The Business Analyst claiming that "credit" made more sense and did not conflict with other definitions in other contexts.</p>
+<p>In the end, we resolved that all of the functional specifications and end user documentation would use the term "credit", while all of the technical documentation and code would use "merit". The user interface code was a mess, since it had to display "credit" but read the value from the "merit" property. For years afterward, I received questions from new developers about what was "merit" and what was "credit" and what they had to do with each other.</p>
+<p>In this, I was wrong. My continued insistence on imposing my own language added no value. I created a situation which only bred confusion. I was correct only in proposing a new term and in soliciting additional feedback. But once the term "credit" was corroborated by our customers, I should have ended my crusade for the sake of ubiquitous language.</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="index9591.html?cat=37" title="View all posts in DDD" rel="category">DDD</a> |   <a href="index06d3.html?p=453#respond" title="Comment on Merit vs. Credit">No Comments &#187;</a></p>
+
+			</div>
+
+				<div class="post">
+				<h3 id="post-292"><a href="index2af5.html?p=292" rel="bookmark" title="Permanent Link to DDD to English dictionary">DDD to English dictionary</a></h3>
+				<small>Thursday, February 5th, 2009</small>
+
+				<div class="entry">
+					<p>With apologies to Eric Evans.</p>
+<p>What it means</p>
+<ul>
+<li>Ubiquitous Language - Glossary</li>
+<li>Unit of Work - Transaction</li>
+<li>Repository - Data access component</li>
+<li>Specification - Where clause</li>
+<li>Service - Static method</li>
+<li>Aggregate - Hierarchy</li>
+<li>Intention-Revealing Interfaces - Good names</li>
+<li>Anticorruption Layer - Contract</li>
+</ul>
+<p>What it could mean, but doesn't</p>
+<ul>
+<li>Ubiquitous Language - The phenomenon that development teams pick one programming language and stick with it</li>
+<li>Unit of Work - The detail of your estimates: to the hour, day, or week</li>
+<li>Repository - Source control</li>
+<li>Specification - Requirements document</li>
+<li>Service - RPC over HTTP</li>
+<li>Aggregate - A filled-in diamond on a UML diagram</li>
+<li>Intention-Revealing Interfaces - Ports 80 and 25</li>
+<li>Anticorruption Layer - CRC</li>
+</ul>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="index9591.html?cat=37" title="View all posts in DDD" rel="category">DDD</a> |   <a href="index2af5.html?p=292#respond" title="Comment on DDD to English dictionary">No Comments &#187;</a></p>
+
+			</div>
+
+				<div class="post">
+				<h3 id="post-291"><a href="index820e.html?p=291" rel="bookmark" title="Permanent Link to Domain Driven Design: we&#8217;re doing it wrong">Domain Driven Design: we&#8217;re doing it wrong</a></h3>
+				<small>Wednesday, February 4th, 2009</small>
+
+				<div class="entry">
+					<p>Several people have recommended the book Domain Driven Design by Eric Evans. I've heard it referenced on podcasts and in blogs. My technical manager informed me when I first started on my current project that the architecture was partially based on this book. It takes a while for a message to seep in, but I finally decided it was time to pick up this book.</p>
+<p>When I saw the book cover, I was surprised. No, not by the retro cheesiness of the graphics, colors, and fonts. I was surprised because I recognized it. I had had this book on my shelf for over two years.</p>
+<p>I bought this book from Amazon because it was paired with Software Factories. I started reading DDD shortly after finishing SF, but gave up before even getting through the preface. I found Evan's style unnecessarily verbose and obfuscated.</p>
+<p>So the book languished on my shelf for over two years before I made the discovery that an important sub-discipline within my industry was passing me by, simply because of my disdain for one man's writing style. So I forced myself to wade through his awkward word choice, parabolic explanations, and prolonged narratives to extract the meat of the subject. And I'm glad I did.</p>
+<p>It turns out, we're doing DDD wrong.</p>
+<p><strong>What is Domain Driven Design</strong><br />The point of Domain Driven Design is to put all of the domain knowledge into a rich object layer. This layer captures the essential information about the problem domain, the relationships among those objects, and the responsibilities of those objects. If the domain is commerce, as it is in our system, then you have domain objects for products, orders, and shopping carts. The methods of these objects capture business knowledge, like inventory rules and regulatory restrictions.</p>
+<p>This is very similar to the old Rumbaugh OOA&amp;D thinking that my career started out with. We as an industry have come to think of that "look for the nouns" guidance as naive. Programs that run on computers need objects that represent computer ideas. So we have objects for windows, database connections, proxies, and sockets. If you follow the Gang of Four as I do, you'll write objects like factories, visitors, and strategies. Nouns from the real world have a hard time coexisting with these technical concepts in today's object oriented programs.</p>
+<p>But Evans provides some guidance that allows us to draw from both of these views of objects. The domain objects are isolated from the technical objects. Patterns like Repository/Specification and Unit of Work hydrate domain objects without coupling them to persistence technology. Evans shows us how to take a set of objects that a domain expert would understand, and use them in a modern software application.</p>
+<p>The advantage of Domain Driven Design is that domain objects become a medium of communication. Programmers and experts can talk about the domain by using the source code. Or at least, the classes and methods in the source code. If the source code does not accurately reflect the knowledge of the domain expert, then the source code is wrong. Using Evans' guidance and patterns, the domain model can be quickly refactored as developers learn more about the problem domain.</p>
+<p>Unfortunately, the way that we have been applying Evans' guidance and patterns on our eCommerce system has made it more difficult to refactor the domain, and left us with a fairly rigid system. Here are some of the big mistakes we made.</p>
+<p><strong>Layered architecture does not mean tiered architecture</strong><br />Evans recommends a layered architecture:</p>
+<ul>
+<li>presentation</li>
+<li>application</li>
+<li>domain</li>
+<li>infrastructure</li>
+</ul>
+<p>The presentation layer handles UI, the application layer implements features, the domain layer captures business knowledge, and the infrastructure layer lends low-level support. This approach isolates the domain objects from technical concerns like storage and presentation. It allows the solution to be implemented in the language of the domain, instead of forcing the domain to implement those features.</p>
+<p>Our approach was to separate these concerns into physical tiers. These tiers could be deployed to different servers in the datacenter for the benefits of security and scalability. Imagine my surprise when I get to page 114, where Evans says, "This could be a strong argument if the code actually got deployed on different servers. Usually it does not." I wasn't surprised because he told me something I didn't know; I was surprised because I knew and hadn't objected.</p>
+<p>The fact is, we aren't going to need quite so many tiers. Yes, we are separating the presentation tier because it is hosted in SharePoint and resides in the DMZ. But besides that, the other layers -- not tiers -- can benefit from being in the same process and not being forced across machine boundaries.</p>
+<p><strong>SOA's "services" are not DDD's "services"</strong><br />We architected our eCommerce application to be service oriented. The benefits are that isolated services are reusable and independently versionable. These are significant goals of this project, as we are building not just an eCommerce application, but a platform for all commerce in the company.</p>
+<p>Domain Driven Design also talks about services. But a DDD service is an operation that doesn't belong to just one object. A service is still a domain concept, in that it captures domain knowledge, but it isn't an instance method on a domain object. We've exposed our services as WCF web services, when it may have been more appropriate to simply expose them as static methods in the domain layer. Only those services that external systems would want to consume should be published through WCF.</p>
+<p><strong>Entity Framework's "entities" are not DDD's "entities"</strong><br />Evans' guidance is strongly informed by the difference between entities -- objects whose identity is important -- and value objects -- whose identity is not. His patterns talk about how to carefully rehydrate entities such that their in-memory identity matches their persistent identity (where it is important to do so). Above all, entities are first-class domain objects.</p>
+<p>Before I joined the project, linq to SQL was rejected because it does not play well with rich domain objects. Certainly, a linq query pulls data from a record set and puts it into objects, but it does nothing to respect the identity of those objects. If you run two queries, it will happily construct two objects to represent the same ID.</p>
+<p>The decision was made to use the Entity Framework, then in beta. The idea was that EF entities were partial classes, so domain logic could be added. The framework would handle persistence, and our code could take over from there.</p>
+<p>As it turned out, Entity Framework is no better than linq to SQL for our purpose. The primary concern of the entity model is the mapping between record sets and objects. The entity model exists in a limbo between a good object model and a good relational model. Domain objects are, first and foremost, objects. If they have to compromise to conform to good relational design, then they fail to be good domain objects.</p>
+<p>On the other hand, either EF or linq to SQL would make a good memento. Linq to SQL favors anonymous types, while EF favors its flavor of entity. If the persistence of domain objects handled the translation of domain objects to mementos, then either one could take it the rest of the way to the relational database.</p>
+<p><strong>We already had a repository and specification</strong><br />The piece of advice from DDD that people most often cite is to use a pattern of Repositories and Specifications. A repository is a place to store objects when they are not in memory. A specification is a condition -- separate from the repository -- that you can use to fetch the objects you are interested in. The advantage of this pattern is that the application layer can provide the specification, the infrastructure layer the repository, and the domain objects remain blissfully unconcerned with these non-domain details.</p>
+<p>The piece of advice that is <em>not</em> often cited, however, is "don't fight your frameworks" (page 157). If your framework already has a good implementation of the pattern, just use it. This is advice that we ignored to our peril.</p>
+<p>.NET 3.5 introduced linq. Besides the language features that support linq, the core framework component is the IQueryable interface. As it happens, IQueryable <em>is</em> the repository/specification pattern. Any object that implements this interface is a repository. Any boolean delegate (or lambda expression) is a specification. Combine the two using the Where extension method, and you have implemented the pattern.</p>
+<p>What we did, however, was to create generic interfaces with names like IAggregateRootRepository, ISpecification, and IUnitOfWork. In order to use these interfaces, you have to define entire classes that differ in no more than a class name and a where clause. The result is a common base class library that is difficult to learn and encumbered with Evans' poor choice of words. Our application is full of extra classes that could have been inlined as lambda expressions. We have an entire suite of unit tests dedicated to ensuring that these specification classes contain the right boolean expression.</p>
+<p><strong>Here's my solution</strong><br />Although we are too far along in the process to make radical architectural changes, I like to keep an ideal in mind for new development and refactoring. The ideal is a simple one: encode business knowledge in rich domain objects, use mementos to persist them, build application and domain layers into a single process, and publish WCF web services only where needed.</p>
+<p>I am not a born-again DDD convert. I apply Evens' advice only with an open and skeptical mind. But where I see his book brandished as justification for poor decisions, I dig deeper to find what he <em>really</em> meant. Yes, it takes a <em>lot</em> of digging, given his choice of obscure terms for otherwise well-known concepts, but there is value to be found.</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="index9591.html?cat=37" title="View all posts in DDD" rel="category">DDD</a> |   <a href="index820e.html?p=291#comments" title="Comment on Domain Driven Design: we&#8217;re doing it wrong">4 Comments &#187;</a></p>
+
+			</div>
+
+		
+		<div class="navigation">
+			<div class="alignleft"></div>
+			<div class="alignright"></div>
+		</div>
+
+	
+	</div>
+		</td>
+	</tr>
+</table>
+
+<hr />
+<div id="footer">
+<!-- If you'd like to support WordPress, having the "powered by" link someone on your blog is the best way, it's our only promotion or advertising. -->
+	<p>
+		Adventures in Software is proudly powered by 
+		<a href="http://wordpress.org/">WordPress</a>
+		<br /><a href="indexd784.html?feed=rss2">Entries (RSS)</a>
+		and <a href="indexa6da.html?feed=comments-rss2">Comments (RSS)</a>.
+		<!-- 17 queries. 0.395 seconds. -->
+	</p>
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-389401-3");
+pageTracker._trackPageview();
+} catch(err) {}</script></div>
+
+<!-- Gorgeous design by Michael Heilemann - http://binarybonsai.com/kubrick/ -->
+
+		<div id="sk2-footer" style="color:#FFF; background-color:#444; padding: 3px 2px 3px 2px; border-top: #888 solid 1px;">This blog is protected by <a href="http://unknowngenius.com/blog/" title="Dave">dr Dave</a>'s <strong><a href="http://unknowngenius.com/blog/wordpress/spam-karma/" title="SK2">Spam Karma 2</a></strong>: <strong>274531</strong>  Spams eaten and counting...</div><script type="text/javascript" src="replies.js"></script>
+<script type="text/javascript" src="blogger.js"></script>
+<script type="text/javascript" src="http://twitter.com/statuses/user_timeline/michaellperry.json?callback=twitterCallback2&amp;count=5"></script>
+<script type="text/javascript" src="http://search.twitter.com/search.json?q=@michaellperry&amp;callback=twitterCallbackReplies&amp;rpp=5"></script>
+</body>
+
+<!-- Mirrored from adventuresinsoftware.com/blog/?cat=37 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 Jan 2017 12:55:25 GMT -->
+</html>

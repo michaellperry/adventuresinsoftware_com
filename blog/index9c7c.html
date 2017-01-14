@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?><!-- generator="wordpress/2.3.3" -->
+<rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	>
+<channel>
+	<title>Comments on: Entity Framework and the Repository Pattern</title>
+	<link>http://adventuresinsoftware.com/blog/?p=550</link>
+	<description>Lessons learned on the road to quality computing</description>
+	<pubDate>Fri, 13 Jan 2017 12:55:24 +0000</pubDate>
+	<generator>http://wordpress.org/?v=2.3.3</generator>
+		<item>
+		<title>By: Michael L Perry</title>
+		<link>http://adventuresinsoftware.com/blog/?p=550#comment-87162</link>
+		<dc:creator>Michael L Perry</dc:creator>
+		<pubDate>Mon, 27 Sep 2010 17:19:45 +0000</pubDate>
+		<guid>http://adventuresinsoftware.com/blog/?p=550#comment-87162</guid>
+		<description>Excellent work. Thanks for filling in the holes that I left in the original post. I've posted a follow up:
+http://adventuresinsoftware.com/blog/?p=558
+
+I just realized that I neglected to answer your question about caching the repositories. The reason that I cache the memory repository is that it maintains state; it holds the list of entities that were added. The EF version maintains state in the ObjectContext, so I don't need to cache its repository.
+
+Thanks again for the L2S implementation.</description>
+		<content:encoded><![CDATA[<p>Excellent work. Thanks for filling in the holes that I left in the original post. I've posted a follow up:<br />
+<a href="http://adventuresinsoftware.com/blog/?p=558" rel="nofollow">http://adventuresinsoftware.com/blog/?p=558</a></p>
+<p>I just realized that I neglected to answer your question about caching the repositories. The reason that I cache the memory repository is that it maintains state; it holds the list of entities that were added. The EF version maintains state in the ObjectContext, so I don't need to cache its repository.</p>
+<p>Thanks again for the L2S implementation.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Mickey</title>
+		<link>http://adventuresinsoftware.com/blog/?p=550#comment-86908</link>
+		<dc:creator>Mickey</dc:creator>
+		<pubDate>Sat, 25 Sep 2010 23:49:38 +0000</pubDate>
+		<guid>http://adventuresinsoftware.com/blog/?p=550#comment-86908</guid>
+		<description>Hi, Michael
+
+I have uploaded my solution to GitHub (hopefully correctly as it's my first experience with GetHub), here is the link: http://github.com/mickeyvip/RepositoryPattern
+
+The solution contains:
+
+Data.dll:
+SQL Server Express file with some sample data
+Entity Framework model
+LINQ to SQL model
+
+IEFRepository.dll: one file with interfaces - your code for Entity Framework
+MemoryEFRepository.dll: one file with implementation - your code for Entity Framework
+EFRepository.dll: one file with implementation - your code for Entity Framework
+
+L2SFRepository.dll: one file with interfaces - for LINQ-to-SQL (almost your code)
+MemoryL2SRepository.dll: one file with implementation - for LINQ-to-SQL (almost your code)
+L2SRepository.dll: one file with implementation - for LINQ-to-SQL (almost your code)
+
+DataServices.dll:
+EFNoteworthyService.cs - your code for Entity Framework
+L2SNoteworthyService.cs - LINQ-to-SQL (almost your code)
+
+Repository.Tests.dll:
+EFMemoryTest.cs - tests for Entity Framework, Memory Repository
+EFRepository.cs - tests for Entity Framework, EF Repository
+L2SMemoryTest.cs - tests for LINQ-to-SQL, Memory Repository
+L2SRepository.cs - tests for LINQ-to-SQL, L2S Repository
+
+Tell me what you think.</description>
+		<content:encoded><![CDATA[<p>Hi, Michael</p>
+<p>I have uploaded my solution to GitHub (hopefully correctly as it's my first experience with GetHub), here is the link: <a href="http://github.com/mickeyvip/RepositoryPattern" rel="nofollow">http://github.com/mickeyvip/RepositoryPattern</a></p>
+<p>The solution contains:</p>
+<p>Data.dll:<br />
+SQL Server Express file with some sample data<br />
+Entity Framework model<br />
+LINQ to SQL model</p>
+<p>IEFRepository.dll: one file with interfaces - your code for Entity Framework<br />
+MemoryEFRepository.dll: one file with implementation - your code for Entity Framework<br />
+EFRepository.dll: one file with implementation - your code for Entity Framework</p>
+<p>L2SFRepository.dll: one file with interfaces - for LINQ-to-SQL (almost your code)<br />
+MemoryL2SRepository.dll: one file with implementation - for LINQ-to-SQL (almost your code)<br />
+L2SRepository.dll: one file with implementation - for LINQ-to-SQL (almost your code)</p>
+<p>DataServices.dll:<br />
+EFNoteworthyService.cs - your code for Entity Framework<br />
+L2SNoteworthyService.cs - LINQ-to-SQL (almost your code)</p>
+<p>Repository.Tests.dll:<br />
+EFMemoryTest.cs - tests for Entity Framework, Memory Repository<br />
+EFRepository.cs - tests for Entity Framework, EF Repository<br />
+L2SMemoryTest.cs - tests for LINQ-to-SQL, Memory Repository<br />
+L2SRepository.cs - tests for LINQ-to-SQL, L2S Repository</p>
+<p>Tell me what you think.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Michael L Perry</title>
+		<link>http://adventuresinsoftware.com/blog/?p=550#comment-86537</link>
+		<dc:creator>Michael L Perry</dc:creator>
+		<pubDate>Fri, 24 Sep 2010 01:07:31 +0000</pubDate>
+		<guid>http://adventuresinsoftware.com/blog/?p=550#comment-86537</guid>
+		<description>Ok, that makes more sense. I suggest you check your code into GitHub to share it. Either that or put a zip file on DropBox.
+
+I look forward to seeing the complete solution.</description>
+		<content:encoded><![CDATA[<p>Ok, that makes more sense. I suggest you check your code into GitHub to share it. Either that or put a zip file on DropBox.</p>
+<p>I look forward to seeing the complete solution.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Mickey</title>
+		<link>http://adventuresinsoftware.com/blog/?p=550#comment-86429</link>
+		<dc:creator>Mickey</dc:creator>
+		<pubDate>Thu, 23 Sep 2010 00:12:16 +0000</pubDate>
+		<guid>http://adventuresinsoftware.com/blog/?p=550#comment-86429</guid>
+		<description>Hi, Michael.
+
+It seems that all the &#60;...&#62; got cleared from my message, so all the generics declaration got lost... I'll try to reconstruct:
+
+1. ObjectContext - was replaced with DataContext
+2. EntityObject - was replaced with class (maybe here I have to validate that DataContext has Table for that class?)
+3. ObjectQuery - was removed (Is there an equivalent for this in Linq-To-SQL?), so IContainer.GetRepository&#60;TEntity&#62;() is now parameterless method.
+4. Repository implementation takes only TContainer as a constructor parameter, and private ObjectQuery&#60;TEntity&#62; _objectQuery; is now private Table&#60;TEntity&#62; _table; that is set in constructor body like this: _table = _container.GetTable&#60;TEntity&#62;();
+5. L2SRepository.GetSatisfying(Expression&#60;Func&#60;TEntity, bool&#62;&#62; specification) - returns _table.Where(specification.Compile()).AsQueryable();
+6. L2SRepository.Add(TEntity entity) - now does: _table.InsertOnSubmit(entity);
+
+In L2S the repository is Table&#60;T&#62;, so in GetRepository&#60;TEntity&#62;() there is _context.GetTable&#60;T&#62; - and this is the table (instead of IContainer.GetRepository() I originally wrote IContainer.GetRepository&#60;TEntity&#62;() )
+
+I revised my code and I changed it a little, so it is now resembles yours for EF very much.
+
+I can post it (where can I post it so you can download it?)
+
+I have another question: in implementation of MemoryContainer class you are caching MemoryRepositories, but in EF implementation there are no such caching, why is that?</description>
+		<content:encoded><![CDATA[<p>Hi, Michael.</p>
+<p>It seems that all the &lt;...&gt; got cleared from my message, so all the generics declaration got lost... I'll try to reconstruct:</p>
+<p>1. ObjectContext - was replaced with DataContext<br />
+2. EntityObject - was replaced with class (maybe here I have to validate that DataContext has Table for that class?)<br />
+3. ObjectQuery - was removed (Is there an equivalent for this in Linq-To-SQL?), so IContainer.GetRepository&lt;TEntity&gt;() is now parameterless method.<br />
+4. Repository implementation takes only TContainer as a constructor parameter, and private ObjectQuery&lt;TEntity&gt; _objectQuery; is now private Table&lt;TEntity&gt; _table; that is set in constructor body like this: _table = _container.GetTable&lt;TEntity&gt;();<br />
+5. L2SRepository.GetSatisfying(Expression&lt;Func&lt;TEntity, bool&gt;&gt; specification) - returns _table.Where(specification.Compile()).AsQueryable();<br />
+6. L2SRepository.Add(TEntity entity) - now does: _table.InsertOnSubmit(entity);</p>
+<p>In L2S the repository is Table&lt;T&gt;, so in GetRepository&lt;TEntity&gt;() there is _context.GetTable&lt;T&gt; - and this is the table (instead of IContainer.GetRepository() I originally wrote IContainer.GetRepository&lt;TEntity&gt;() )</p>
+<p>I revised my code and I changed it a little, so it is now resembles yours for EF very much.</p>
+<p>I can post it (where can I post it so you can download it?)</p>
+<p>I have another question: in implementation of MemoryContainer class you are caching MemoryRepositories, but in EF implementation there are no such caching, why is that?</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Michael L Perry</title>
+		<link>http://adventuresinsoftware.com/blog/?p=550#comment-86214</link>
+		<dc:creator>Michael L Perry</dc:creator>
+		<pubDate>Tue, 21 Sep 2010 17:07:43 +0000</pubDate>
+		<guid>http://adventuresinsoftware.com/blog/?p=550#comment-86214</guid>
+		<description>I'm confused about the removal of the parameter from GetRepository(). How do you identify which table to use?
+
+Other than that, I get it. It looks like a good port. If you think your changes will help other people test their L2S code, please post it. Send me a link and I'll share it.</description>
+		<content:encoded><![CDATA[<p>I'm confused about the removal of the parameter from GetRepository(). How do you identify which table to use?</p>
+<p>Other than that, I get it. It looks like a good port. If you think your changes will help other people test their L2S code, please post it. Send me a link and I'll share it.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Mickey</title>
+		<link>http://adventuresinsoftware.com/blog/?p=550#comment-86156</link>
+		<dc:creator>Mickey</dc:creator>
+		<pubDate>Tue, 21 Sep 2010 08:57:50 +0000</pubDate>
+		<guid>http://adventuresinsoftware.com/blog/?p=550#comment-86156</guid>
+		<description>Hello!
+
+Thank you for your wonderful post!
+
+I tried it and I loved it!
+
+My question is: how to migrate this code to Linq-To-SQL correctly?
+
+I got things working, but I was wondering if I was doing it right.
+
+1. ObjectContext - was replaced with DataContext
+2. EntityObject - was replaced with class (maybe here I have to validate that DataContext has Table for that class?)
+3. ObjectQuery - was removed (Is there an equivalent for this in Linq-To-SQL?), so IContainer.GetRepository() is now parameterless method.
+4. Repository implementation takes only TContainer as a constructor parameter, and private ObjectQuery _objectQuery; is now private Table _table; that is set in constructor body like this: _table = _container.GetTable();
+5. L2SRepository.GetSatisfying(Expression&#60;Func&#62; specification) - returns _table.Where(specification.Compile()).AsQueryable();
+6. L2SRepository.Add(TEntity entity) - now does: _table.InsertOnSubmit(entity);
+
+(I hope i didn't miss any changes)
+
+The code works for me, but I wanted to be shure.
+
+Thank you!</description>
+		<content:encoded><![CDATA[<p>Hello!</p>
+<p>Thank you for your wonderful post!</p>
+<p>I tried it and I loved it!</p>
+<p>My question is: how to migrate this code to Linq-To-SQL correctly?</p>
+<p>I got things working, but I was wondering if I was doing it right.</p>
+<p>1. ObjectContext - was replaced with DataContext<br />
+2. EntityObject - was replaced with class (maybe here I have to validate that DataContext has Table for that class?)<br />
+3. ObjectQuery - was removed (Is there an equivalent for this in Linq-To-SQL?), so IContainer.GetRepository() is now parameterless method.<br />
+4. Repository implementation takes only TContainer as a constructor parameter, and private ObjectQuery _objectQuery; is now private Table _table; that is set in constructor body like this: _table = _container.GetTable();<br />
+5. L2SRepository.GetSatisfying(Expression&lt;Func&gt; specification) - returns _table.Where(specification.Compile()).AsQueryable();<br />
+6. L2SRepository.Add(TEntity entity) - now does: _table.InsertOnSubmit(entity);</p>
+<p>(I hope i didn't miss any changes)</p>
+<p>The code works for me, but I wanted to be shure.</p>
+<p>Thank you!</p>
+]]></content:encoded>
+	</item>
+</channel>
+</rss>

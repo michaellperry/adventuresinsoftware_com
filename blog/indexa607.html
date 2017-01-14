@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?><!-- generator="wordpress/2.3.3" -->
+<rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	>
+<channel>
+	<title>Comments on: Domain Driven Design: we&#8217;re doing it wrong</title>
+	<link>http://adventuresinsoftware.com/blog/?p=291</link>
+	<description>Lessons learned on the road to quality computing</description>
+	<pubDate>Fri, 13 Jan 2017 12:57:19 +0000</pubDate>
+	<generator>http://wordpress.org/?v=2.3.3</generator>
+		<item>
+		<title>By: Michael L Perry</title>
+		<link>http://adventuresinsoftware.com/blog/?p=291#comment-130874</link>
+		<dc:creator>Michael L Perry</dc:creator>
+		<pubDate>Fri, 11 Mar 2011 14:52:39 +0000</pubDate>
+		<guid>http://adventuresinsoftware.com/blog/?p=291#comment-130874</guid>
+		<description>Looks like it's time for the annual comment on the DDD post. :)
+
+If I may paraphrase, your question is this: Given that EF "entities" are not DDD "entities", how can a lambda expression be a DDD "specification"?
+
+A very good point, and one that I missed when writing the article originally. I recommend using EF entities as mementos for the actual domain entities. This puts the domain entity in the domain layer, but the EF entity in the persistence layer. They have two different concerns.
+
+Yet in the next breath, I recommend using lambda expressions to represent specifications. EF requires a lambda written in the persistence layer, but a specification should be in the domain layer. I'm mixing concerns.
+
+Looking back at the code I've written in the 2 years since writing this post, I can see now that I haven't really been writing DDD specifications. I've just been using lambda expressions within my domain model to query the persistence layer. The most surprising thing about this -- besides the fact that I hadn't noticed the problem before -- is that it has worked just fine. The consumers of my domain layer have never actually provided a specification, but yet they have always had the methods they need to get their work done.
+
+So it turns out I'm still doing DDD wrong. But it hasn't mattered.</description>
+		<content:encoded><![CDATA[<p>Looks like it's time for the annual comment on the DDD post. <img src='http://adventuresinsoftware.com/blog/wp-includes/images/smilies/icon_smile.gif' alt=':)' class='wp-smiley' /> </p>
+<p>If I may paraphrase, your question is this: Given that EF "entities" are not DDD "entities", how can a lambda expression be a DDD "specification"?</p>
+<p>A very good point, and one that I missed when writing the article originally. I recommend using EF entities as mementos for the actual domain entities. This puts the domain entity in the domain layer, but the EF entity in the persistence layer. They have two different concerns.</p>
+<p>Yet in the next breath, I recommend using lambda expressions to represent specifications. EF requires a lambda written in the persistence layer, but a specification should be in the domain layer. I'm mixing concerns.</p>
+<p>Looking back at the code I've written in the 2 years since writing this post, I can see now that I haven't really been writing DDD specifications. I've just been using lambda expressions within my domain model to query the persistence layer. The most surprising thing about this -- besides the fact that I hadn't noticed the problem before -- is that it has worked just fine. The consumers of my domain layer have never actually provided a specification, but yet they have always had the methods they need to get their work done.</p>
+<p>So it turns out I'm still doing DDD wrong. But it hasn't mattered.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Morgan A</title>
+		<link>http://adventuresinsoftware.com/blog/?p=291#comment-130521</link>
+		<dc:creator>Morgan A</dc:creator>
+		<pubDate>Wed, 09 Mar 2011 22:42:00 +0000</pubDate>
+		<guid>http://adventuresinsoftware.com/blog/?p=291#comment-130521</guid>
+		<description>It seems this is an old post but I need to ask a question anyway. I try to do my projects the DDD-way, I think that it's a good way to implement layered application with good architecture and support for unit tests. However, I always have the feeling of "crossing the river for the water". I see that most people don't focus on maintaining the domain as it should be but are instead using the database entities as the business entities. In most cases, this is totally valid but not always. I like to think that I am programming against the reality - the domain, and not against a relational database, even if these often are connected as 1-1. 
+
+I have seen several blogs about implementations for linq-queries against the repositories, IQueryable or not. All of these implementaions means that you are in fact writing lambda-expression against a database context and database entities (partial classes or not). The repositories are interfaces, as should be, but they will not really be exchangeable. With linq-queries in the domain that uses data entities you are kind of stuck with that data layer. Is this still DDD or is this an acceptable trade off?</description>
+		<content:encoded><![CDATA[<p>It seems this is an old post but I need to ask a question anyway. I try to do my projects the DDD-way, I think that it's a good way to implement layered application with good architecture and support for unit tests. However, I always have the feeling of "crossing the river for the water". I see that most people don't focus on maintaining the domain as it should be but are instead using the database entities as the business entities. In most cases, this is totally valid but not always. I like to think that I am programming against the reality - the domain, and not against a relational database, even if these often are connected as 1-1. </p>
+<p>I have seen several blogs about implementations for linq-queries against the repositories, IQueryable or not. All of these implementaions means that you are in fact writing lambda-expression against a database context and database entities (partial classes or not). The repositories are interfaces, as should be, but they will not really be exchangeable. With linq-queries in the domain that uses data entities you are kind of stuck with that data layer. Is this still DDD or is this an acceptable trade off?</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: BrianP</title>
+		<link>http://adventuresinsoftware.com/blog/?p=291#comment-67354</link>
+		<dc:creator>BrianP</dc:creator>
+		<pubDate>Sat, 20 Mar 2010 15:13:49 +0000</pubDate>
+		<guid>http://adventuresinsoftware.com/blog/?p=291#comment-67354</guid>
+		<description>Hi, what a breath of fresh air!!  I see so many people blindly following the "blue bible", I was starting to think I was the only one thinking some of these things.  DDD is a great book and has alot of good wisdom, but it is a bit dated compared to current .net technology (linq), and people are missing the intent.
+
+I disagree with your "Entity Framework's "entities" are not DDD's "entities"".  L2S and EF do implement the identity map pattern.  I think these entities can and should be used as the domain entities.  Although, the current EF is pretty crappy.
+
+"IQueryable is the repository/specification pattern" Yes!!  Why do people jump through so many hoops with this...
+
+Good stuff, keep it coming.</description>
+		<content:encoded><![CDATA[<p>Hi, what a breath of fresh air!!  I see so many people blindly following the "blue bible", I was starting to think I was the only one thinking some of these things.  DDD is a great book and has alot of good wisdom, but it is a bit dated compared to current .net technology (linq), and people are missing the intent.</p>
+<p>I disagree with your "Entity Framework's "entities" are not DDD's "entities"".  L2S and EF do implement the identity map pattern.  I think these entities can and should be used as the domain entities.  Although, the current EF is pretty crappy.</p>
+<p>"IQueryable is the repository/specification pattern" Yes!!  Why do people jump through so many hoops with this...</p>
+<p>Good stuff, keep it coming.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Raoul Duke</title>
+		<link>http://adventuresinsoftware.com/blog/?p=291#comment-26133</link>
+		<dc:creator>Raoul Duke</dc:creator>
+		<pubDate>Mon, 30 Mar 2009 21:16:33 +0000</pubDate>
+		<guid>http://adventuresinsoftware.com/blog/?p=291#comment-26133</guid>
+		<description>nice post, thanks for helping see what is really meant.</description>
+		<content:encoded><![CDATA[<p>nice post, thanks for helping see what is really meant.</p>
+]]></content:encoded>
+	</item>
+</channel>
+</rss>

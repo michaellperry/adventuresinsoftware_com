@@ -1,0 +1,923 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+
+
+<!-- Mirrored from adventuresinsoftware.com/blog/?cat=45 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 Jan 2017 12:55:34 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>Adventures in Software   &raquo; Reports</title>
+
+<meta name="generator" content="WordPress 2.3.3" /> <!-- leave this for stats -->
+
+<link rel="stylesheet" href="wp-content/themes/ais2/style.css" type="text/css" media="screen" />
+<link rel="alternate" type="application/rss+xml" title="Adventures in Software RSS Feed" href="indexd784.html?feed=rss2" />
+<link rel="pingback" href="xmlrpc.html" />
+    <script type="text/javascript">
+        function onSilverlightError(sender, args) {
+            var appSource = "";
+            if (sender != null && sender != 0) {
+              appSource = sender.getHost().Source;
+            }
+            
+            var errorType = args.ErrorType;
+            var iErrorCode = args.ErrorCode;
+
+            if (errorType == "ImageError" || errorType == "MediaError") {
+              return;
+            }
+
+            var errMsg = "Unhandled Error in Silverlight Application " +  appSource + "\n" ;
+
+            errMsg += "Code: "+ iErrorCode + "    \n";
+            errMsg += "Category: " + errorType + "       \n";
+            errMsg += "Message: " + args.ErrorMessage + "     \n";
+
+            if (errorType == "ParserError") {
+                errMsg += "File: " + args.xamlFile + "     \n";
+                errMsg += "Line: " + args.lineNumber + "     \n";
+                errMsg += "Position: " + args.charPosition + "     \n";
+            }
+            else if (errorType == "RuntimeError") {           
+                if (args.lineNumber != 0) {
+                    errMsg += "Line: " + args.lineNumber + "     \n";
+                    errMsg += "Position: " +  args.charPosition + "     \n";
+                }
+                errMsg += "MethodName: " + args.methodName + "     \n";
+            }
+
+            throw new Error(errMsg);
+        }
+    </script>
+
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc0db0.php?rsd" />
+ <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="wp-includes/wlwmanifest.xml" /> <style type='text/css'>
+<!--#header { background: url('wp-content/themes/ais2/images/header-imgae03.html?upper=A7A73F&amp;lower=77773F') no-repeat bottom center; }
+--></style>
+</head>
+<body>
+<div id="page">
+
+<div class="aisTopBar">
+	<form method="get" id="searchform" action="http://adventuresinsoftware.com/blog/">
+<div>
+<a href="indexd784.html?feed=rss2"><img src="../images/feed-icon-28x28.png" border="0"></a>
+<input type="text" value="" name="s" id="s" />
+<input type="submit" id="searchsubmit" value="Search" />
+</div>
+</form>
+</div>
+
+<div class="aisHeaderImageRight">
+	<div class="aisHeaderImage">
+	<div class="aisHeaderCornerRight">
+	<div class="aisHeaderCornerLeft">
+	<div class="aisImageBar">
+	<div class="aisSubSites">
+		<a href="index.html" class="aisSubSiteLink"><span class="aisSiteTabRight"><span class="aisSiteTabLeft"><span class="aisSiteTab">
+			home</span></span></span></a>
+		<a class="aisSubSiteLink" href="indexb60a.html?cat=27"><span class="aisSiteTabRight"><span class="aisSiteTabLeft"><span class="aisSiteTab">
+			historic modeling</span></span></span></a>
+		<a class="aisSubSiteLink" href="indexa88f.html?cat=36"><span class="aisSiteTabRight"><span class="aisSiteTabLeft"><span class="aisSiteTab">
+			update controls</span></span></span></a>
+		<a href="index2d79.html?cat=26" class="aisSubSiteLink"><span class="aisSiteTabRight"><span class="aisSiteTabLeft"><span class="aisSiteTab">
+			degrees of freedom</span></span></span></a>
+		<a class="aisSubSiteLink" href="indexba53.html?page_id=2"><span class="aisSiteTabRight"><span class="aisSiteTabLeft"><span class="aisSiteTab">
+			about us</span></span></span></a>
+
+	</div>
+	</div>
+	</div>
+	</div>
+	</div>
+</div>
+
+<table style="width: 100%" cellspacing="0" cellpadding="0">
+	<tr valign="top">
+		<td width="210px">
+<div id="sidebar">
+<div class="aisLeftColumnFill">
+<div class="aisLeftColumnBottom">
+<div class="aisLeftColumnTop">
+<div id="twitter_div" class="aisLeftNav">
+<h2 class="sidebar-title">Twitter Updates</h2>
+<ul id="twitter_update_list"></ul>
+<a href="http://twitter.com/michaellperry" id="follow">Follow me</a>
+</div>
+<div id="twitter_reply_div" class="aisLeftNav">
+<h2 class="sidebar-title">Twitter Replies</h2>
+<ul id="twitter_reply_list"></ul>
+</div>
+
+<div class="aisLeftNav">
+<a href='http://ineta.org/Speakers/SearchCommunitySpeakers.aspx?SpeakerId=c5110e21-9243-461b-a464-a6548524e885'><img alt='INETA Community Speakers Program' border='0' src='../../www.ineta.org/images/OfficialLogos/InetaCommunitySpeakersRequestMe.html' /></a>
+</div>
+
+<div class="aisLeftNav">
+	<li class="pagenav"><h2>Pages</h2><ul><li class="page_item page-item-2"><a href="indexba53.html?page_id=2" title="About Us">About Us</a></li>
+<li class="page_item page-item-210"><a href="index6ae3.html?page_id=210" title="Templates">Templates</a></li>
+</ul></li></div>
+
+<div class="aisLeftNav">
+<h2>Archives</h2>
+<ul>
+	<li><a href='indexb4d5.html?m=201110' title='October 2011'>October 2011</a></li>
+	<li><a href='indexc61a.html?m=201106' title='June 2011'>June 2011</a></li>
+	<li><a href='indexa80d.html?m=201105' title='May 2011'>May 2011</a></li>
+	<li><a href='index512b.html?m=201104' title='April 2011'>April 2011</a></li>
+	<li><a href='index08fb.html?m=201103' title='March 2011'>March 2011</a></li>
+	<li><a href='index52f4.html?m=201102' title='February 2011'>February 2011</a></li>
+	<li><a href='index74f1.html?m=201101' title='January 2011'>January 2011</a></li>
+	<li><a href='index8956.html?m=201012' title='December 2010'>December 2010</a></li>
+	<li><a href='indexa1aa.html?m=201011' title='November 2010'>November 2010</a></li>
+	<li><a href='indexe3d5.html?m=201010' title='October 2010'>October 2010</a></li>
+	<li><a href='index9ab9.html?m=201009' title='September 2010'>September 2010</a></li>
+	<li><a href='index1ff0.html?m=201008' title='August 2010'>August 2010</a></li>
+	<li><a href='index9f11.html?m=201007' title='July 2010'>July 2010</a></li>
+	<li><a href='index31f0.html?m=201006' title='June 2010'>June 2010</a></li>
+	<li><a href='indexd189.html?m=201005' title='May 2010'>May 2010</a></li>
+	<li><a href='indexb5c0.html?m=201004' title='April 2010'>April 2010</a></li>
+	<li><a href='indexf258.html?m=201003' title='March 2010'>March 2010</a></li>
+	<li><a href='index6e30.html?m=201002' title='February 2010'>February 2010</a></li>
+	<li><a href='index6b19.html?m=201001' title='January 2010'>January 2010</a></li>
+	<li><a href='index5c0a.html?m=200912' title='December 2009'>December 2009</a></li>
+	<li><a href='index8f62.html?m=200911' title='November 2009'>November 2009</a></li>
+	<li><a href='index451d.html?m=200910' title='October 2009'>October 2009</a></li>
+	<li><a href='index3e04.html?m=200909' title='September 2009'>September 2009</a></li>
+	<li><a href='index425a.html?m=200908' title='August 2009'>August 2009</a></li>
+	<li><a href='index9907.html?m=200907' title='July 2009'>July 2009</a></li>
+	<li><a href='index3104.html?m=200906' title='June 2009'>June 2009</a></li>
+	<li><a href='indexc36d.html?m=200905' title='May 2009'>May 2009</a></li>
+	<li><a href='index17e8.html?m=200904' title='April 2009'>April 2009</a></li>
+	<li><a href='index10a5.html?m=200903' title='March 2009'>March 2009</a></li>
+	<li><a href='index8988.html?m=200902' title='February 2009'>February 2009</a></li>
+	<li><a href='index1419.html?m=200901' title='January 2009'>January 2009</a></li>
+	<li><a href='index7866.html?m=200812' title='December 2008'>December 2008</a></li>
+	<li><a href='index55f6.html?m=200811' title='November 2008'>November 2008</a></li>
+	<li><a href='indexa7bc.html?m=200810' title='October 2008'>October 2008</a></li>
+	<li><a href='indexe77c.html?m=200809' title='September 2008'>September 2008</a></li>
+	<li><a href='indexcffc.html?m=200808' title='August 2008'>August 2008</a></li>
+	<li><a href='index0e62.html?m=200807' title='July 2008'>July 2008</a></li>
+	<li><a href='indexfda7.html?m=200806' title='June 2008'>June 2008</a></li>
+	<li><a href='index7d64.html?m=200805' title='May 2008'>May 2008</a></li>
+	<li><a href='index94dd.html?m=200804' title='April 2008'>April 2008</a></li>
+	<li><a href='index9631.html?m=200803' title='March 2008'>March 2008</a></li>
+	<li><a href='indexdd52.html?m=200802' title='February 2008'>February 2008</a></li>
+	<li><a href='index21ee.html?m=200801' title='January 2008'>January 2008</a></li>
+	<li><a href='index363c.html?m=200712' title='December 2007'>December 2007</a></li>
+	<li><a href='index7493.html?m=200711' title='November 2007'>November 2007</a></li>
+	<li><a href='index93a7.html?m=200710' title='October 2007'>October 2007</a></li>
+	<li><a href='index4ca8.html?m=200709' title='September 2007'>September 2007</a></li>
+	<li><a href='index6124.html?m=200708' title='August 2007'>August 2007</a></li>
+	<li><a href='index6013.html?m=200707' title='July 2007'>July 2007</a></li>
+	<li><a href='index2ab6.html?m=200706' title='June 2007'>June 2007</a></li>
+	<li><a href='index44f0.html?m=200705' title='May 2007'>May 2007</a></li>
+	<li><a href='indexf0b4.html?m=200704' title='April 2007'>April 2007</a></li>
+	<li><a href='index481d.html?m=200703' title='March 2007'>March 2007</a></li>
+	<li><a href='indexcbea.html?m=200702' title='February 2007'>February 2007</a></li>
+	<li><a href='index9cdc.html?m=200701' title='January 2007'>January 2007</a></li>
+	<li><a href='index3ea4.html?m=200612' title='December 2006'>December 2006</a></li>
+	<li><a href='index67ca.html?m=200611' title='November 2006'>November 2006</a></li>
+	<li><a href='indexff49.html?m=200610' title='October 2006'>October 2006</a></li>
+	<li><a href='index611c.html?m=200609' title='September 2006'>September 2006</a></li>
+	<li><a href='index9a21.html?m=200608' title='August 2006'>August 2006</a></li>
+	<li><a href='index3ee9.html?m=200607' title='July 2006'>July 2006</a></li>
+	<li><a href='indexe13a.html?m=200606' title='June 2006'>June 2006</a></li>
+</ul>
+</div>
+
+<div class="aisLeftNav">
+	</div>
+
+<div class="aisLeftNav">
+<h2>Books</h2>
+<iframe src="http://rcm.amazon.com/e/cm?t=adventures0d2-20&amp;o=1&amp;p=8&amp;l=as1&amp;asins=0764526413&amp;fc1=000000&amp;IS2=1&amp;lt1=_blank&amp;lc1=0000ff&amp;bc1=000000&amp;bg1=ffffff&amp;f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" name="I5" id="I5"></iframe>
+<br/>
+<iframe src="http://rcm.amazon.com/e/cm?t=adventures0d2-20&amp;o=1&amp;p=8&amp;l=as1&amp;asins=0201633612&amp;fc1=000000&amp;IS2=1&amp;lt1=_blank&amp;lc1=0000ff&amp;bc1=000000&amp;bg1=ffffff&amp;f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" name="I6" id="I6"></iframe>
+<br/>
+<iframe src="http://rcm.amazon.com/e/cm?t=adventures0d2-20&amp;o=1&amp;p=8&amp;l=as1&amp;asins=0136291554&amp;fc1=000000&amp;IS2=1&amp;lt1=_blank&amp;lc1=0000ff&amp;bc1=000000&amp;bg1=ffffff&amp;f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" name="I7" id="I7"></iframe>
+<br/>
+<iframe src="http://rcm.amazon.com/e/cm?t=adventures0d2-20&amp;o=1&amp;p=8&amp;l=as1&amp;asins=1888009195&amp;fc1=000000&amp;IS2=1&amp;lt1=_blank&amp;lc1=0000ff&amp;bc1=000000&amp;bg1=ffffff&amp;f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" name="I8" id="I8"></iframe>
+</div>
+<div class="aisLeftNav">
+<h2>Meta</h2>
+<ul>
+		<li><a href="wp-login.html">Login</a></li>
+	<li><a href="http://validator.w3.org/check/referer" title="This page validates as XHTML 1.0 Transitional">Valid <abbr title="eXtensible HyperText Markup Language">XHTML</abbr></a></li>
+	<li><a href="http://gmpg.org/xfn/"><abbr title="XHTML Friends Network">XFN</abbr></a></li>
+	<li><a href="http://wordpress.org/" title="Powered by WordPress, state-of-the-art semantic personal publishing platform.">WordPress</a></li>
+	</ul>
+</div>
+<div class="aisLeftContent">
+<h2>Community</h2>
+<ul>
+	<script type="text/javascript" src="../../localhost/embed/92q2bbma.js"></script>
+</ul>
+</div>
+
+</div></div></div>
+</div>		</td>
+		<td>
+
+	<div id="content" class="narrowcolumn">
+
+		
+		 		<h2 class="pagetitle">Archive for the &#8216;Reports&#8217; Category</h2>
+
+ 	  
+
+		<div class="navigation">
+			<div class="alignleft"></div>
+			<div class="alignright"></div>
+		</div>
+
+				<div class="post">
+				<h3 id="post-549"><a href="indexbcc1.html?p=549" rel="bookmark" title="Permanent Link to Pass context parameters to SSRS reports in a web application">Pass context parameters to SSRS reports in a web application</a></h3>
+				<small>Tuesday, September 7th, 2010</small>
+
+				<div class="entry">
+					<p>When <a href="index7cc7.html?p=547">viewing reports within an application</a>, the application can provide context that SSRS otherwise would not have. With this context the experience of using the application can be better than the report manager. Parameters that the user would otherwise have to set for every report can be assigned programmatically.</p>
+<p>In my case, the logged-in user belongs to a medical practice. Every report takes the practice ID as a parameter, called “Domain”. I want to pass that parameter without the user ever seeing it.</p>
+<h3>Render the menu</h3>
+<p>Earlier, we wrote code to <a href="index0d79.html?p=542">navigate the reports</a>. Let’s display this structure in a hierarchy.</p>
+<pre class="code"><span style="color: blue">public string </span>GetMenu()
+{
+    <span style="color: #2b91af">StringBuilder </span>result = <span style="color: blue">new </span><span style="color: #2b91af">StringBuilder</span>();
+    WriteItems(result, <span style="color: #2b91af">ReportNavigator</span>.GetRootFolder(_credentials).Items);
+    <span style="color: blue">return </span>result.ToString();
+}
+
+<span style="color: blue">private static void </span>WriteItems(<span style="color: #2b91af">StringBuilder </span>result, <span style="color: #2b91af">IEnumerable</span>&lt;<span style="color: #2b91af">Item</span>&gt; items)
+{
+    <span style="color: blue">foreach </span>(<span style="color: #2b91af">Item </span>item <span style="color: blue">in </span>items)
+    {
+        <span style="color: #2b91af">Folder </span>subFolder = item <span style="color: blue">as </span><span style="color: #2b91af">Folder</span>;
+        <span style="color: blue">if </span>(subFolder != <span style="color: blue">null</span>)
+        {
+            WriteFolder(result, subFolder);
+            <span style="color: blue">continue</span>;
+        }
+
+        <span style="color: #2b91af">Report </span>report = item <span style="color: blue">as </span><span style="color: #2b91af">Report</span>;
+        <span style="color: blue">if </span>(report != <span style="color: blue">null</span>)
+        {
+            WriteReport(result, report);
+            <span style="color: blue">continue</span>;
+        }
+    }
+}
+
+<span style="color: blue">private static void </span>WriteFolder(<span style="color: #2b91af">StringBuilder </span>result, <span style="color: #2b91af">Folder </span>folder)
+{
+    <span style="color: blue">if </span>(folder.ContainsAnyReport)
+    {
+        result.Append(<span style="color: #2b91af">String</span>.Format(<span style="color: #a31515">&quot;&lt;li class=\&quot;folder\&quot;&gt;{0}: {1}&lt;ul&gt;&quot;</span>,
+            <span style="color: #2b91af">HttpUtility</span>.HtmlEncode(folder.Name),
+            <span style="color: #2b91af">HttpUtility</span>.HtmlEncode(folder.Description)));
+        WriteItems(result, folder.Items);
+        result.Append(<span style="color: #a31515">&quot;&lt;/ul&gt;&lt;/li&gt;&quot;</span>);
+    }
+}
+
+<span style="color: blue">private static void </span>WriteReport(<span style="color: #2b91af">StringBuilder </span>result, <span style="color: #2b91af">Report </span>report)
+{
+    result.Append(<span style="color: #2b91af">String</span>.Format(<span style="color: #a31515">&quot;&lt;li class=\&quot;report\&quot;&gt;&lt;a href=\&quot;ViewReport.aspx?Path={1}\&quot;&gt;{0}: {2}&lt;/a&gt;&lt;/li&gt;&quot;</span>,
+        <span style="color: #2b91af">HttpUtility</span>.HtmlEncode(report.Name),
+        <span style="color: #2b91af">HttpUtility</span>.UrlEncode(report.Path),
+        <span style="color: #2b91af">HttpUtility</span>.HtmlEncode(report.Description)));
+}</pre>
+<p>This mutually-recursive set of methods renders a tree of unordered lists. It shows only the folders that contain a report. When it gets down to a report, it renders a link to the ViewReport page. This is our page containing a report viewer control.</p>
+<h3>Display the report</h3>
+<p>The ViewReport page simply contains a report viewer control. Page_Load sets the path, the <a href="indexfded.html?p=539">credentials</a>, and the Domain parameter.</p>
+<pre class="code"><span style="color: blue">protected void </span>Page_Load(<span style="color: blue">object </span>sender, <span style="color: #2b91af">EventArgs </span>e)
+{
+    _path = Request[<span style="color: #a31515">&quot;Path&quot;</span>];
+
+    <span style="color: blue">if </span>(Request.HttpMethod == <span style="color: #a31515">&quot;GET&quot; </span>&amp;&amp; !<span style="color: blue">string</span>.IsNullOrEmpty(_path))
+    {
+        ReportViewer1.ServerReport.ReportPath = _path;
+        _reportTitle = _path.Split(<span style="color: #a31515">'/'</span>).LastOrDefault();
+
+        <span style="color: green">// MLP: Get the user's credentials from forms auth.
+        </span><span style="color: #2b91af">IIdentity </span>identity = <span style="color: #2b91af">HttpContext</span>.Current.User.Identity;
+        <span style="color: #2b91af">FormsIdentity </span>formsIdentity = (<span style="color: #2b91af">FormsIdentity</span>)identity;
+        <span style="color: blue">string </span>username = formsIdentity.Name;
+        <span style="color: blue">string </span>encryptedPassword = formsIdentity.Ticket.UserData;
+
+        <span style="color: green">// MLP: Decrypt the password.
+        </span><span style="color: blue">byte</span>[] usernameHash = <span style="color: #2b91af">Crypto</span>.ComputeStringHash(username, _hashAlgorith);
+        <span style="color: blue">byte</span>[] encryptedMessage = <span style="color: #2b91af">Convert</span>.FromBase64String(encryptedPassword);
+        <span style="color: blue">string </span>password = <span style="color: #2b91af">Crypto</span>.DecryptMessage(encryptedMessage, _symmetricAlgorithm, _key, usernameHash);
+
+        <span style="color: #2b91af">NetworkReportServerCredentials </span>credentials = <span style="color: blue">new </span><span style="color: #2b91af">NetworkReportServerCredentials</span>(username, password, <span style="color: #a31515">&quot;ABSG&quot;</span>);
+        ReportViewer1.ServerReport.ReportServerCredentials = credentials;
+
+        <span style="color: blue">string </span>domain = GetDomainOfUser(username);
+        <span style="color: #2b91af">ReportParameterInfoCollection </span>parameters = ReportViewer1.ServerReport.GetParameters();
+        <span style="color: blue">if </span>(parameters.Any(p =&gt; p.Name == <span style="color: #a31515">&quot;Domain&quot; </span>&amp;&amp; p.DataType == <span style="color: #2b91af">ParameterDataType</span>.String))
+            ReportViewer1.ServerReport.SetParameters(<span style="color: blue">new </span><span style="color: #2b91af">ReportParameter</span>(<span style="color: #a31515">&quot;Domain&quot;</span>, domain, <span style="color: blue"><strong>false</strong></span>));
+    }
+}</pre>
+<p>The app looks up the domain based on the user name. Then it checks the parameters to see if this report accepts “Domain”. If so, it sets it.</p>
+<p>The “false” in the ReportParameter tells the report viewer to hide the parameter from the user. If it were “true”, the user would still see the parameter, even though it was set to a default value.</p>
+<p>Now my business administrators can create any report they need in SSRS report manager. Their report will appear on the menu automatically. If they follow the convention and specify a “Domain” parameter, the report will be context sensitive. This gives the end user of my application be best experience possible.</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="index363a.html?cat=45" title="View all posts in Reports" rel="category">Reports</a> |   <a href="indexbcc1.html?p=549#respond" title="Comment on Pass context parameters to SSRS reports in a web application">No Comments &#187;</a></p>
+
+			</div>
+
+				<div class="post">
+				<h3 id="post-547"><a href="index7cc7.html?p=547" rel="bookmark" title="Permanent Link to Navigating SSRS reports in prior versions of SQL Server">Navigating SSRS reports in prior versions of SQL Server</a></h3>
+				<small>Friday, August 27th, 2010</small>
+
+				<div class="entry">
+					<p>Recently, I created an application that <a href="index0d79.html?p=542">navigates SSRS reports</a>. I’m developing against SQL 2008 R2, so my instructions were specific to that platform.</p>
+<p>If you are not yet on R2, you can still develop such an application. Here’s what you’ll need to do differently.</p>
+<p><strong>Use the ReportService2005.asmx endpoint</strong>    <br />In my example, I used the ReportService2010.asmx endpoint to access report service methods. If you are not on R2, that will give you the error:</p>
+<blockquote><p>The path of the item 'wsdl' is not valid.</p>
+</blockquote>
+<p>You might try ReportService2006.asmx. But if you do, you will probably run up against this:</p>
+<blockquote><p>This operation is not supported on a report server that runs in native mode</p>
+</blockquote>
+<p>The answer (thank you <a href="http://social.msdn.microsoft.com/Forums/en-US/sqlreportingservices/thread/8a40f90f-60e5-4130-984f-dc42032376d4">Tristan Fernando</a>) is to use ReportService2005.asmx. Follow the instructions in my previous post, but replace the endpoint.</p>
+<p><strong>Use the Type enum to identify catalog items     <br /></strong>My previous example used the TypeName string property to differentiate between folders and reports. ReportService2005.asmx uses an enum property called Type instead. Enums are safer than magic strings anyway.</p>
+<p><strong>Don’t use DefaultCredentials</strong>    <br />This change is not related to R2. It’s just something I got wrong at first. If you are using Forms authentication, like I am, then DefaultCredentials won’t work for you. I set ReportingService2010.Credentials to CredentialCache.DefaultCredentials in my last example. It worked for me only because the app happened to be running under my own account.</p>
+<p>Instead, create a NetworkCredential using the password that you captured during login. Use the code from <a href="indexfded.html?p=539">Forward network credentials to Report Server</a> to capture and encrypt the password.</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="index363a.html?cat=45" title="View all posts in Reports" rel="category">Reports</a> |   <a href="index7cc7.html?p=547#respond" title="Comment on Navigating SSRS reports in prior versions of SQL Server">No Comments &#187;</a></p>
+
+			</div>
+
+				<div class="post">
+				<h3 id="post-542"><a href="index0d79.html?p=542" rel="bookmark" title="Permanent Link to Navigate SSRS reports from a web application">Navigate SSRS reports from a web application</a></h3>
+				<small>Friday, July 30th, 2010</small>
+
+				<div class="entry">
+					<p>I’m on a <a href="index7398.html?p=531">continuing quest to deliver SSRS reports through a public-facing web application</a>. My user can <a href="index0745.html?p=532">authenticate</a>, and I can <a href="indexfded.html?p=539">forward their credentials to Report Server</a>. Now I need a branded menu of reports.</p>
+<p><a href="wp-content/uploads/2010/07/image11.png"><img style="border-right-width: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; margin-left: 0px; border-left-width: 0px; margin-right: 0px" title="image" border="0" alt="image" align="right" src="wp-content/uploads/2010/07/image-thumb11.png" width="244" height="232" /></a><strong>Generate a proxy</strong>     <br />We’re going to get the list of reports from the <a href="http://msdn.microsoft.com/en-us/library/ms154052.aspx">Report Server SOAP API</a>. So first, generate a proxy to call this API. The API is an old-fashioned asmx web service, so you can’t use WCF. Instead, we have to generate a web reference.</p>
+<p>Create a new class library called “SQLServerReportingServices”. Right-click and select “Add Service Reference…”. Hit the “Advanced..” button, and then hit the “Add Web Reference” button.</p>
+<p>Enter the URL of your report service, followed by “ReportService2010.asmx?wsdl”. You can get this URL by opening Reporting Services Configuration Manager and clicking Web Service URL. I entered “http://dit3074lt2:8080/ReportServer_SQL2008R2/ReportService2010.asmx?wsdl”. Click “Go”.</p>
+<p>Enter a meaningful web reference name, like “ReportServer”. This is appended to the class library name to give the namespace of the proxy. So the proxy class is “SQLServerReportingServices.ReportServer.ReportingService2010”. Redundant, I know.</p>
+<p><strong>Experiment with the proxy</strong>     <br />Now create a new unit test project. Not because calling an external system like SSRS is a good unit test, but because it’s more convenient than experimenting in a web project. Add a reference to the SQLServerReportingServices class library that you just created. Also, copy the app.config file from SQLServerReportingServices . Finally, add a reference to “System.Web.Services”. Now we can experiment.</p>
+<p>Let’s begin by calling the <a href="http://msdn.microsoft.com/en-us/library/reportservice2010.reportingservice2010.listchildren.aspx">ListChildren</a> method. This method gives you a list of CatalogItem objects in a report folder. <a href="http://msdn.microsoft.com/en-us/library/reportservice2010.catalogitem_members.aspx">CatalogItem’s properties</a> give you information about each item, including a Path that you can use in another call to ListChildren. You’re actual number of items will vary, but you should get back an array.</p>
+<pre class="code">[<span style="color: #2b91af">TestClass</span>]
+<span style="color: blue">public class </span><span style="color: #2b91af">ReportNavigationTest
+</span>{
+    <span style="color: blue">public </span><span style="color: #2b91af">TestContext </span>TestContext { <span style="color: blue">get</span>; <span style="color: blue">set</span>; }
+
+    <span style="color: blue">private </span><span style="color: #2b91af">ReportingService2010 </span>_client;
+
+    [<span style="color: #2b91af">TestInitialize</span>]
+    <span style="color: blue">public void </span>Initialize()
+    {
+        _client = <span style="color: blue">new </span><span style="color: #2b91af">ReportingService2010</span>();
+        _client.Credentials = <span style="color: #2b91af">CredentialCache</span>.DefaultCredentials;
+    }
+
+    [<span style="color: #2b91af">TestCleanup</span>]
+    <span style="color: blue">public void </span>Cleanup()
+    {
+        _client.Dispose();
+    }
+
+    [<span style="color: #2b91af">TestMethod</span>]
+    <span style="color: blue">public void </span>GetTopLevelItems()
+    {
+        <span style="color: #2b91af">CatalogItem</span>[] children = _client.ListChildren(<span style="color: #a31515">&quot;/&quot;</span>, <span style="color: blue">false</span>);
+
+        <span style="color: #2b91af">Assert</span>.AreEqual(6, children.Length);
+    }
+}</pre>
+<p>If you get the exception “The request failed with HTTP status 401: Unauthorized”, be sure to initialize Credentials. Since you are running the unit test under your own account, the default credentials will be your own. Within the web application, we’ll need to forward the credentials of the logged-in user just like we did in the last post.</p>
+<p>After experimenting in the unit test for a bit, we can move to the actual web application.</p>
+<p><strong>Walk the folder structure</strong> </p>
+<p>In a modern web application, user’s don’t want to click on a folder and wait for a postback to show its contents. If the folder structure is not too deep or too populated, we can display the entire contents on one page. If it is a bit much for one page, then users expect drop-down menus. In either scenario, we need to get the entire folder structure from a single call.</p>
+<p>Fortunately, the reporting service lets us get all of the items in one call. Unfortunately, it returns these as a flat array. We have to render it as the folder structure that it truly is. To help with that, we’ll transform the array into a set of classes. See the Composite pattern in your handy Gang of Four book.</p>
+<pre class="code"><span style="color: blue">public abstract class </span><span style="color: #2b91af">Item
+</span>{
+    <span style="color: blue">private string </span>_name;
+
+    <span style="color: blue">public </span>Item(<span style="color: blue">string </span>name)
+    {
+        _name = name;
+    }
+
+    <span style="color: blue">public string </span>Name
+    {
+        <span style="color: blue">get </span>{ <span style="color: blue">return </span>_name; }
+    }
+
+    <span style="color: blue">public abstract void </span>Update();
+}
+
+<span style="color: blue">public class </span><span style="color: #2b91af">Folder </span>: <span style="color: #2b91af">Item
+</span>{
+    <span style="color: blue">private </span><span style="color: #2b91af">List</span>&lt;<span style="color: #2b91af">Item</span>&gt; _items = <span style="color: blue">new </span><span style="color: #2b91af">List</span>&lt;<span style="color: #2b91af">Item</span>&gt;();
+    <span style="color: blue">private bool </span>_containsAnyReport;
+
+    <span style="color: blue">public </span>Folder(<span style="color: blue">string </span>name)
+        : <span style="color: blue">base</span>(name)
+    {
+    }
+
+    <span style="color: blue">public void </span>AddItem(<span style="color: #2b91af">Item </span>item)
+    {
+        _items.Add(item);
+    }
+
+    <span style="color: blue">public override void </span>Update()
+    {
+        <span style="color: green">// Recursively update the items.
+        </span><span style="color: blue">foreach </span>(<span style="color: #2b91af">Item </span>item <span style="color: blue">in </span>_items)
+            item.Update();
+
+        <span style="color: green">// This folder contains a report if any of its items is a report,
+        // or if any of its sub folders contain a report.
+        </span>_containsAnyReport =
+            _items
+                .OfType&lt;<span style="color: #2b91af">Report</span>&gt;()
+                .Any() ||
+            _items
+                .OfType&lt;<span style="color: #2b91af">Folder</span>&gt;()
+                .Any(folder =&gt; folder.ContainsAnyReport);
+    }
+
+    <span style="color: blue">public bool </span>ContainsAnyReport
+    {
+        <span style="color: blue">get </span>{ <span style="color: blue">return </span>_containsAnyReport; }
+    }
+
+    <span style="color: blue">public </span><span style="color: #2b91af">IEnumerable</span>&lt;<span style="color: #2b91af">Item</span>&gt; Items
+    {
+        <span style="color: blue">get </span>{ <span style="color: blue">return </span>_items; }
+    }
+}
+
+<span style="color: blue">public class </span><span style="color: #2b91af">Report </span>: <span style="color: #2b91af">Item
+</span>{
+    <span style="color: blue">private string </span>_path;
+
+    <span style="color: blue">public </span>Report(<span style="color: blue">string </span>name, <span style="color: blue">string </span>path)
+        : <span style="color: blue">base</span>(name)
+    {
+        _path = path;
+    }
+
+    <span style="color: blue">public override void </span>Update()
+    {
+    }
+}</pre>
+<p>The Update method walks the structure and updates the ContainsAnyReport property. We can later use this property while rendering the HTML. If the folder does not contain any report, we don’t need to render it. This will hide any folders that the admin created just for data sources or some other resource.</p>
+<p>Next we need to turn the flat array into a hierarchy. For this, we use a stack.</p>
+<pre class="code"><span style="color: #2b91af">CatalogItem</span>[] children = _client.ListChildren(<span style="color: #a31515">&quot;/&quot;</span>, <span style="color: blue">true</span>);
+
+<span style="color: green">// Keep the current folders on a stack.
+</span><span style="color: #2b91af">Folder </span>root = <span style="color: blue">new </span><span style="color: #2b91af">Folder</span>(<span style="color: #a31515">&quot;&quot;</span>);
+<span style="color: #2b91af">Stack</span>&lt;<span style="color: #2b91af">Folder</span>&gt; folderStack = <span style="color: blue">new </span><span style="color: #2b91af">Stack</span>&lt;<span style="color: #2b91af">Folder</span>&gt;();
+folderStack.Push(root);
+
+<span style="color: green">// Convert the flat array into a folder structure.
+</span><span style="color: blue">string </span>currentPath = <span style="color: #a31515">&quot;/&quot;</span>;
+<span style="color: #2b91af">Array</span>.Sort(children, (a, b) =&gt; a.Path.CompareTo(b.Path));
+<span style="color: blue">foreach </span>(<span style="color: #2b91af">CatalogItem </span>item <span style="color: blue">in </span>children)
+{
+    <span style="color: green">// Get the path up to and including the final slash.
+    </span><span style="color: blue">string </span>parentPath = item.Path.Substring(0, item.Path.LastIndexOf(<span style="color: #a31515">&quot;/&quot;</span>) + 1);
+    <span style="color: blue">while </span>(parentPath != currentPath)
+    {
+        <span style="color: green">// Unwind the stack to get back to the parent folder.
+        </span>folderStack.Pop();
+        currentPath = currentPath.Substring(0, currentPath.LastIndexOf(<span style="color: #a31515">&quot;/&quot;</span>, currentPath.Length - 2) + 1);
+    }
+
+    <span style="color: blue">if </span>(item.TypeName == <span style="color: #a31515">&quot;Folder&quot;</span>)
+    {
+        <span style="color: green">// Push the new folder to the stack.
+        </span><span style="color: #2b91af">Folder </span>folder = <span style="color: blue">new </span><span style="color: #2b91af">Folder</span>(item.Name);
+        folderStack.Peek().AddItem(folder);
+        folderStack.Push(folder);
+        currentPath = item.Path + <span style="color: #a31515">&quot;/&quot;</span>;
+    }
+    <span style="color: blue">else if </span>(item.TypeName == <span style="color: #a31515">&quot;Report&quot;</span>)
+    {
+        <span style="color: green">// Add the report to the current folder.
+        </span>folderStack.Peek().AddItem(<span style="color: blue">new </span><span style="color: #2b91af">Report</span>(item.Name, item.Path));
+    }
+}
+
+<span style="color: green">// Figure out which folders contain reports.
+</span>root.Update();</pre>
+<p>We have to sort the array by the path to ensure that everything in a folder is clumped together. Then we add folders and reports to the current folder. If the path deviates, we pop the stack until we get back on track.</p>
+<p>Now you can recursively walk the folder structure to output &lt;div&gt; tags or &lt;ul&gt; lists. That’s an exercise left to the reader, since it will depend upon how you want to render your menu.</p>
+<p><strong>Next steps</strong> </p>
+<p>As it turns out, we have some applications that don’t authenticate against Active Directory. We would like to use SSRS for those applications as well. For that, we will have to set up a shadow user, which has access to SSRS. Our next step is to implement authentication and authorization for a logged-in user, even though the application accesses SSRS via the shadow user.</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="index363a.html?cat=45" title="View all posts in Reports" rel="category">Reports</a> |   <a href="index0d79.html?p=542#comments" title="Comment on Navigate SSRS reports from a web application">6 Comments &#187;</a></p>
+
+			</div>
+
+				<div class="post">
+				<h3 id="post-539"><a href="indexfded.html?p=539" rel="bookmark" title="Permanent Link to Forward network credentials to Report Server">Forward network credentials to Report Server</a></h3>
+				<small>Tuesday, July 27th, 2010</small>
+
+				<div class="entry">
+					<p>I am on a quest to <a href="index7398.html?p=531">deliver SSRS reports within a web application</a>. So far we have <a href="index0745.html?p=532">authenticated against Active Directory using Forms Auth</a>. Now we need to embed a report in our app. Then, we’ll need to forward the logged-on user’s AD credentials to the report server so he can access the report.</p>
+<p><a href="wp-content/uploads/2010/07/image8.png"><img style="border-right-width: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px" title="image" border="0" alt="image" src="wp-content/uploads/2010/07/image-thumb8.png" width="244" height="117" /></a> <a href="wp-content/uploads/2010/07/image9.png"><img style="border-right-width: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px" title="image" border="0" alt="image" src="wp-content/uploads/2010/07/image-thumb9.png" width="244" height="86" /></a> <a href="wp-content/uploads/2010/07/image10.png"><img style="border-right-width: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px" title="image" border="0" alt="image" src="wp-content/uploads/2010/07/image-thumb10.png" width="244" height="120" /></a> </p>
+<p>For now, I’m just going to add a report to Default.aspx. Later on, we’ll provide a menu to navigate the user’s reports. First, drag a “MicrosoftreportViewer” control from the Toolbox onto the designer. Then, click the task button, open “Choose Report”, and select “&lt;Server Report&gt;”. Fill in your Report Server URL, which you can get by launching “Reporting Services Configuration Manager” and selecting the Web Service URL. Enter the path to the report that you created earlier. Your page source should look like this.</p>
+<pre class="code"><span style="background: #ffee62">&lt;%</span><span style="color: blue">@ </span><span style="color: #a31515">Page </span><span style="color: red">Language</span><span style="color: blue">=&quot;C#&quot; </span><span style="color: red">AutoEventWireup</span><span style="color: blue">=&quot;true&quot; </span><span style="color: red">CodeBehind</span><span style="color: blue">=&quot;Default.aspx.cs&quot; </span><span style="color: red">Inherits</span><span style="color: blue">=&quot;WebApplication1._Default&quot; </span><span style="background: #ffee62">%&gt;
+
+&lt;%</span><span style="color: blue">@ </span><span style="color: #a31515">Register </span><span style="color: red">assembly</span><span style="color: blue">=&quot;Microsoft.ReportViewer.WebForms, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a&quot; </span><span style="color: red">namespace</span><span style="color: blue">=&quot;Microsoft.Reporting.WebForms&quot; </span><span style="color: red">tagprefix</span><span style="color: blue">=&quot;rsweb&quot; </span><span style="background: #ffee62">%&gt;
+
+</span><span style="color: blue">&lt;!</span><span style="color: #a31515">DOCTYPE </span><span style="color: red">html PUBLIC </span><span style="color: blue">&quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;
+
+&lt;</span><span style="color: #a31515">html </span><span style="color: red">xmlns</span><span style="color: blue">=&quot;http://www.w3.org/1999/xhtml&quot; &gt;
+&lt;</span><span style="color: #a31515">head </span><span style="color: red">runat</span><span style="color: blue">=&quot;server&quot;&gt;
+    &lt;</span><span style="color: #a31515">title</span><span style="color: blue">&gt;&lt;/</span><span style="color: #a31515">title</span><span style="color: blue">&gt;
+&lt;/</span><span style="color: #a31515">head</span><span style="color: blue">&gt;
+&lt;</span><span style="color: #a31515">body</span><span style="color: blue">&gt;
+    &lt;</span><span style="color: #a31515">form </span><span style="color: red">id</span><span style="color: blue">=&quot;form1&quot; </span><span style="color: red">runat</span><span style="color: blue">=&quot;server&quot;&gt;
+    &lt;</span><span style="color: #a31515">div</span><span style="color: blue">&gt;
+
+        &lt;</span><span style="color: #a31515">rsweb</span><span style="color: blue">:</span><span style="color: #a31515">ReportViewer </span><span style="color: red">ID</span><span style="color: blue">=&quot;ReportViewer1&quot; </span><span style="color: red">runat</span><span style="color: blue">=&quot;server&quot; </span><span style="color: red">Font-Names</span><span style="color: blue">=&quot;Verdana&quot;
+            </span><span style="color: red">Font-Size</span><span style="color: blue">=&quot;8pt&quot; </span><span style="color: red">Height</span><span style="color: blue">=&quot;400px&quot; </span><span style="color: red">Width</span><span style="color: blue">=&quot;100%&quot; </span><span style="color: red">ProcessingMode</span><span style="color: blue">=&quot;Remote&quot;&gt;
+            &lt;</span><span style="color: #a31515">ServerReport </span><span style="color: red">ReportPath</span><span style="color: blue">=&quot;/Admin Report&quot;
+                </span><span style="color: red">ReportServerUrl</span><span style="color: blue">=&quot;http://dit3074lt2:8080/ReportServer_SQL2008R2&quot; /&gt;
+        &lt;/</span><span style="color: #a31515">rsweb</span><span style="color: blue">:</span><span style="color: #a31515">ReportViewer</span><span style="color: blue">&gt;
+
+    &lt;/</span><span style="color: #a31515">div</span><span style="color: blue">&gt;
+    &lt;/</span><span style="color: #a31515">form</span><span style="color: blue">&gt;
+&lt;/</span><span style="color: #a31515">body</span><span style="color: blue">&gt;
+&lt;/</span><span style="color: #a31515">html</span><span style="color: blue">&gt;
+</span></pre>
+<p>If you run the application right now, it looks like it all works! That’s because you are running a local web server under your own account. Your credentials are passed to the report server. We want to pass the logged-in user’s credentials to Report Server, so he can only access the reports to which he has been given permission.</p>
+<p><strong>Provide credentials to report Server</strong></p>
+<p>To pass credentials to Report Server, we set the ReportViewer.ServerReport.ReportServerCredentials property to an IReportServerCredentials. There are many ways to implement this interface. The simplest way is to provide a NetworkCredentials object.</p>
+</p>
+<pre class="code"><span style="color: blue">public class </span><span style="color: #2b91af">NetworkReportServerCredentials </span>: <span style="color: #2b91af">IReportServerCredentials
+</span>{
+    <span style="color: blue">private string </span>_userName;
+    <span style="color: blue">private string </span>_password;
+    <span style="color: blue">private string </span>_domain;
+
+    <span style="color: blue">public </span>NetworkReportServerCredentials(<span style="color: blue">string </span>userName, <span style="color: blue">string </span>password, <span style="color: blue">string </span>domain)
+    {
+        _userName = userName;
+        _password = password;
+        _domain = domain;
+    }
+
+    <span style="color: blue">public bool </span>GetFormsCredentials(<span style="color: blue">out </span><span style="color: #2b91af">Cookie </span>authCookie, <span style="color: blue">out string </span>userName, <span style="color: blue">out string </span>password, <span style="color: blue">out string </span>authority)
+    {
+        authCookie = <span style="color: blue">null</span>;
+        userName = <span style="color: blue">null</span>;
+        password = <span style="color: blue">null</span>;
+        authority = <span style="color: blue">null</span>;
+        <span style="color: blue">return false</span>;
+    }
+
+    <span style="color: blue">public </span><span style="color: #2b91af">WindowsIdentity </span>ImpersonationUser
+    {
+        <span style="color: blue">get </span>{ <span style="color: blue">return null</span>; }
+    }
+
+    <span style="color: blue">public </span><span style="color: #2b91af">ICredentials </span>NetworkCredentials
+    {
+        <span style="color: blue">get </span>{ <span style="color: blue">return new </span><span style="color: #2b91af">NetworkCredential</span>(_userName, _password, _domain); }
+    }
+}</pre>
+<p>This implementation only provides a meaningful implementation to the NetworkCredentials property. It just returns the credentials that it was given. We have to get the user’s credentials into this object when we access the report. We captured the user’s credentials when he logged in, but we didn’t save them anywhere. We need to save them during login so we can access them while viewing the report.</p>
+<p>During login, we have the opportunity to populate a FormsAuthenticationTicket. This is the object that gets stored in the user’s Forms Authorization cookie. This class holds the user’s name, but not their password. However, it does have a UserData property that we can use however we want.</p>
+<p><strong>Cryptography required</strong></p>
+<p>Now, we could just put the plaintext password into UserData. But we aren’t going to do that. This object is cached as a cookie in the user’s browser. Storing their plaintext password in a cookie would reveal it to anyone who had access to their machine. Even without direct access to the machine, a cross-site scripting attack could compel the browser to give up its cookie. We will not expose the user to that kind of vulnerability.</p>
+<p>Instead, we are going to encrypt the password using a secret key that we store on the server. An attacker would need access to this key if they were going to pull the user’s password from their cookie. First, we create some useful crypto helpers:</p>
+<pre class="code"><span style="color: blue">public class </span><span style="color: #2b91af">Crypto
+</span>{
+    <span style="color: blue">public static byte</span>[] EncryptMessage(
+        <span style="color: blue">string </span>messageIn,
+        <span style="color: #2b91af">SymmetricAlgorithm </span>symmetricAlgorithm,
+        <span style="color: blue">byte</span>[] key,
+        <span style="color: blue">byte</span>[] initializationVector)
+    {
+        <span style="color: #2b91af">MemoryStream </span>memoryStream = <span style="color: blue">new </span><span style="color: #2b91af">MemoryStream</span>();
+        <span style="color: blue">using </span>(<span style="color: #2b91af">StreamWriter </span>cryptoWriter = <span style="color: blue">new </span><span style="color: #2b91af">StreamWriter</span>(
+            <span style="color: blue">new </span><span style="color: #2b91af">CryptoStream</span>(
+                memoryStream,
+                symmetricAlgorithm.CreateEncryptor(key, initializationVector),
+                <span style="color: #2b91af">CryptoStreamMode</span>.Write)))
+        {
+            cryptoWriter.Write(messageIn);
+        }
+
+        <span style="color: blue">return </span>memoryStream.ToArray();
+    }
+
+    <span style="color: blue">public static string </span>DecryptMessage(
+        <span style="color: blue">byte</span>[] encryptedMessage,
+        <span style="color: #2b91af">SymmetricAlgorithm </span>symmetricAlgorithm,
+        <span style="color: blue">byte</span>[] key,
+        <span style="color: blue">byte</span>[] initializationVector)
+    {
+        <span style="color: #2b91af">MemoryStream </span>memoryStream = <span style="color: blue">new </span><span style="color: #2b91af">MemoryStream</span>(encryptedMessage);
+        <span style="color: blue">using </span>(<span style="color: #2b91af">StreamReader </span>cryptoReader = <span style="color: blue">new </span><span style="color: #2b91af">StreamReader</span>(
+            <span style="color: blue">new </span><span style="color: #2b91af">CryptoStream</span>(
+                memoryStream,
+                symmetricAlgorithm.CreateDecryptor(key, initializationVector),
+                <span style="color: #2b91af">CryptoStreamMode</span>.Read)))
+        {
+            <span style="color: blue">return </span>cryptoReader.ReadToEnd();
+        }
+    }
+
+    <span style="color: blue">public static byte</span>[] ComputeStringHash(<span style="color: blue">string </span>message, <span style="color: #2b91af">HashAlgorithm </span>hashAlgorith)
+    {
+        <span style="color: blue">byte</span>[] messageBytes = <span style="color: #2b91af">ASCIIEncoding</span>.ASCII.GetBytes(message);
+        <span style="color: blue">return </span>hashAlgorith.ComputeHash(messageBytes);
+    }
+}</pre>
+<p>The first two methods encrypt and decrypt a string using a symmetrical algorithm. The encrypted message is binary, so it is represented as a byte array. I found it exceedingly difficult to get these steps right, even though the code turned out to be almost trivial. The third method hardly deserves to be included with the others, but it comes in handy.</p>
+<p>Let’s see how these methods are used.</p>
+<pre class="code">[<span style="color: #2b91af">TestClass</span>]
+<span style="color: blue">public class </span><span style="color: #2b91af">CryptoStreamTest
+</span>{
+    <span style="color: blue">private const string </span>PreGeneratedKey = <span style="color: #a31515">@&quot;s03UsP/dHD0=&quot;</span>;
+    <span style="color: blue">private </span><span style="color: #2b91af">SymmetricAlgorithm </span>_symmetricAlgorithm = <span style="color: blue">new </span><span style="color: #2b91af">DESCryptoServiceProvider</span>();
+    <span style="color: blue">private </span><span style="color: #2b91af">HashAlgorithm </span>_hashAlgorith = <span style="color: blue">new </span><span style="color: #2b91af">MD5CryptoServiceProvider</span>();
+    <span style="color: blue">private </span><span style="color: #2b91af">RandomNumberGenerator </span>_randomNumberGenerator = <span style="color: blue">new </span><span style="color: #2b91af">RNGCryptoServiceProvider</span>();
+    <span style="color: blue">private static byte</span>[] _key = <span style="color: #2b91af">Convert</span>.FromBase64String(PreGeneratedKey);
+
+    <span style="color: blue">public </span><span style="color: #2b91af">TestContext </span>TestContext { <span style="color: blue">get</span>; <span style="color: blue">set</span>; }
+
+    [<span style="color: #2b91af">TestMethod</span>]
+    <span style="color: blue">public void </span>GenerateKey()
+    {
+        <span style="color: blue">byte</span>[] key = <span style="color: blue">new byte</span>[_symmetricAlgorithm.KeySize / 8];
+        _randomNumberGenerator.GetBytes(key);
+        <span style="color: blue">string </span>encodedKey = <span style="color: #2b91af">Convert</span>.ToBase64String(key);
+        <span style="color: #2b91af">Assert</span>.AreNotEqual(PreGeneratedKey, encodedKey);
+        <span style="color: #2b91af">Console</span>.WriteLine(encodedKey);
+    }
+
+    [<span style="color: #2b91af">TestMethod</span>]
+    <span style="color: blue">public void </span>EncryptAndDecryptStream()
+    {
+        <span style="color: blue">byte</span>[] initializationVector = <span style="color: blue">new byte</span>[_symmetricAlgorithm.KeySize / 8];
+        _randomNumberGenerator.GetBytes(initializationVector);
+        <span style="color: blue">byte</span>[] encryptedMessage = <span style="color: #2b91af">Crypto</span>.EncryptMessage(<span style="color: #a31515">&quot;plaintext&quot;</span>, _symmetricAlgorithm, _key, initializationVector);
+        <span style="color: blue">string </span>messageOut = <span style="color: #2b91af">Crypto</span>.DecryptMessage(encryptedMessage, _symmetricAlgorithm, _key, initializationVector);
+
+        <span style="color: #2b91af">Assert</span>.AreEqual(<span style="color: #a31515">&quot;plaintext&quot;</span>, messageOut);
+    }
+
+    [<span style="color: #2b91af">TestMethod</span>]
+    <span style="color: blue">public void </span>InitializationVectorIsImportant()
+    {
+        <span style="color: blue">byte</span>[] initializationVector1 = <span style="color: blue">new byte</span>[_symmetricAlgorithm.KeySize / 8];
+        _randomNumberGenerator.GetBytes(initializationVector1);
+        <span style="color: blue">byte</span>[] initializationVector2 = <span style="color: blue">new byte</span>[_symmetricAlgorithm.KeySize / 8];
+        _randomNumberGenerator.GetBytes(initializationVector2);
+        <span style="color: blue">byte</span>[] encryptedMessage = <span style="color: #2b91af">Crypto</span>.EncryptMessage(<span style="color: #a31515">&quot;plaintext&quot;</span>, _symmetricAlgorithm, _key, initializationVector1);
+        <span style="color: blue">string </span>messageOut = <span style="color: #2b91af">Crypto</span>.DecryptMessage(encryptedMessage, _symmetricAlgorithm, _key, initializationVector2);
+
+        <span style="color: #2b91af">Assert</span>.AreNotEqual(<span style="color: #a31515">&quot;plaintext&quot;</span>, messageOut);
+    }
+
+    [<span style="color: #2b91af">TestMethod</span>]
+    <span style="color: blue">public void </span>HashMessage()
+    {
+        <span style="color: blue">byte</span>[] hash = <span style="color: #2b91af">Crypto</span>.ComputeStringHash(<span style="color: #a31515">&quot;This is the string that we intend to sign.&quot;</span>, _hashAlgorith);
+        <span style="color: blue">string </span>encodedHash = <span style="color: #2b91af">Convert</span>.ToBase64String(hash);
+        <span style="color: #2b91af">Assert</span>.AreEqual(<span style="color: #a31515">@&quot;04fj0UWULE9imGTrHRUw5g==&quot;</span>, encodedHash);
+    }
+}</pre>
+<p>To generate a key, we use the cryptographic random number generator RNGCryptoServiceProvider. This produces a binary array of the key length required by our symmetrical encryption algorithm. Convert the binary array to a base 64 string for easy portability. I generated one ahead of time for use with the remaining tests.</p>
+<p>To encrypt and decrypt a string, we must provide not only a key but also an initialization vector. The initialization vector is a starting point for the symmetrical algorithm. Encryption and decryption must both start at the same point. The trick is that we don’t want to use the same initialization vector every time, because that would mean we always produce the same cyphertext for a given plaintext. An attacker could simply create an account with a common password (say, “password”), and then look for other users with the same cyphertext as he has. Bingo! He knows that their password is “password”!</p>
+<p>Finally, we test computing the hash of a string. This is usually used to digitally sign a message, but we have another use for it.</p>
+<p><strong>Encrypt the user’s password</strong></p>
+<p>We want to encrypt the user’s password. For that we’ll need a key; you can generate one with the first unit test above. But we will also need an initialization vector. Remember, we need to use the same initialization vector for encrypting as well as decrypting. And we’ll also need it to be different for each user. The simple solution: use the hash of the username.</p>
+<pre class="code"><span style="color: blue">protected void </span>Login1_Authenticate(<span style="color: blue">object </span>sender, <span style="color: #2b91af">AuthenticateEventArgs </span>e)
+{
+    <span style="color: blue">string </span>username = Login1.UserName;
+    <span style="color: blue">string </span>password = Login1.Password;
+
+    <span style="color: green">// MLP: Encrypt the password.
+    </span><span style="color: blue">byte</span>[] usernameHash = <span style="color: #2b91af">Crypto</span>.ComputeStringHash(username, _hashAlgorith);
+    <span style="color: blue">byte</span>[] encryptedMessage = <span style="color: #2b91af">Crypto</span>.EncryptMessage(password, _symmetricAlgorithm, _key, usernameHash);
+    <span style="color: blue">string </span>encryptedPassword = <span style="color: #2b91af">Convert</span>.ToBase64String(encryptedMessage);
+
+    <span style="color: blue">if </span>(<span style="color: #2b91af">Membership</span>.ValidateUser(username, password))
+    {
+        e.Authenticated = <span style="color: blue">true</span>;
+
+        <span style="color: #2b91af">FormsAuthenticationTicket </span>ticket = <span style="color: blue">new </span><span style="color: #2b91af">FormsAuthenticationTicket</span>(
+            1,
+            username,
+            <span style="color: #2b91af">DateTime</span>.Now,
+            <span style="color: #2b91af">DateTime</span>.Now.AddMinutes(30),
+            <span style="color: blue">false</span>,
+            encryptedPassword,
+            <span style="color: #2b91af">FormsAuthentication</span>.FormsCookiePath);
+
+        <span style="color: green">// MLP: This method should be called &quot;Encode&quot;, not &quot;Encrypt&quot;.
+        </span><span style="color: blue">string </span>encTicket = <span style="color: #2b91af">FormsAuthentication</span>.Encrypt(ticket);
+
+        <span style="color: green">// Create the cookie.
+        </span>Response.Cookies.Add(<span style="color: blue">new </span><span style="color: #2b91af">HttpCookie</span>(<span style="color: #2b91af">FormsAuthentication</span>.FormsCookieName, encTicket));
+
+        <span style="color: green">// Redirect back to original URL.
+        </span>Response.Redirect(<span style="color: #2b91af">FormsAuthentication</span>.GetRedirectUrl(username, <span style="color: blue">false</span>));
+    }
+    <span style="color: blue">else
+    </span>{
+        e.Authenticated = <span style="color: blue">false</span>;
+    }
+}</pre>
+<p>Hold on a second. If we are calling FormsAuthentication.Encrypt(), why are we bothering to encrypt the password first? Unfortunately, Encrypt() is not secure. It doesn’t take a key. That means that anyone with access to the .NET Framework can simply call Decrypt() to get back the ticket. I would prefer if the method was called Encode().</p>
+<p><strong>Decrypt the user’s password</strong></p>
+<p>The last step is to access the encrypted password, decrypt it, and pass the credentials to Report Server. We accomplish this with a minimum of code:</p>
+<pre class="code"><span style="color: blue">protected void </span>Page_Load(<span style="color: blue">object </span>sender, <span style="color: #2b91af">EventArgs </span>e)
+{
+    <span style="color: green">// MLP: Get the user's credentials from forms auth.
+    </span><span style="color: #2b91af">IIdentity </span>identity = <span style="color: #2b91af">HttpContext</span>.Current.User.Identity;
+    <span style="color: #2b91af">FormsIdentity </span>formsIdentity = (<span style="color: #2b91af">FormsIdentity</span>)identity;
+    <span style="color: blue">string </span>username = formsIdentity.Name;
+    <span style="color: blue">string </span>encryptedPassword = formsIdentity.Ticket.UserData;
+
+    <span style="color: green">// MLP: Decrypt the password.
+    </span><span style="color: blue">byte</span>[] usernameHash = <span style="color: #2b91af">Crypto</span>.ComputeStringHash(username, _hashAlgorith);
+    <span style="color: blue">byte</span>[] encryptedMessage = <span style="color: #2b91af">Convert</span>.FromBase64String(encryptedPassword);
+    <span style="color: blue">string </span>password = <span style="color: #2b91af">Crypto</span>.DecryptMessage(encryptedMessage, _symmetricAlgorithm, _key, usernameHash);
+
+    <span style="color: #2b91af">IReportServerCredentials </span>credentials = <span style="color: blue">new </span><span style="color: #2b91af">NetworkReportServerCredentials</span>(username, password, <span style="color: #a31515">&quot;ABSG&quot;</span>);
+    ReportViewer1.ServerReport.ReportServerCredentials = credentials;
+}</pre>
+<p>And so we have passed the user’s network credentials on to Report Server. They were authenticated against Active Directory, which is the identity provider that SSRS prefers. However, we did all this in forms authentication so that our web application works better with users on the Internet.</p>
+<p><strong>Next steps</strong></p>
+<p>Next we are going to provide a menu of reports to the user. The business administrator should be able to define new reports without requiring any change to our application.</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="index363a.html?cat=45" title="View all posts in Reports" rel="category">Reports</a> |   <a href="indexfded.html?p=539#comments" title="Comment on Forward network credentials to Report Server">4 Comments &#187;</a></p>
+
+			</div>
+
+				<div class="post">
+				<h3 id="post-532"><a href="index0745.html?p=532" rel="bookmark" title="Permanent Link to Forms Authentication and the Active Directory membership provider">Forms Authentication and the Active Directory membership provider</a></h3>
+				<small>Monday, July 26th, 2010</small>
+
+				<div class="entry">
+					<p>We have reports published to SQL Server Reporting Services, and we want users to access those reports from a web application. We could give them direct access to Report Manager, but we choose not to. The Report Manager UI displays concepts in the reporting domain, not concepts in our problem domain (healthcare). We want to give the users a simpler, branded experience, while still giving them access to reports created by a business administrator, not a developer.</p>
+<p>SSRS uses Active Directory for authentication. While it is theoretically possible to change the authentication provider, this is exceedingly difficult. In prior releases, SSRS ran both the Report Manager and the Web Service in IIS, which lets you to choose to allow anonymous access. As of SQL Server 2008, SSRS hosts these services itself. It does not expose the anonymous access option. So even if you change the authentication provider for the reports, you must first get past the web server security. The net effect is that your users need to be in Active Directory.</p>
+<p>Fortunately for us, we use Active Directory for authentication. We just don’t use Windows Authentication for the web application. That makes this design feasible.</p>
+<p><strong>Use Forms Authentication</strong>     <br />When you create a new ASP .NET web application, it is initially configured to use Windows Authentication. This allows a user within the domain to use their credentials to access the application without re-authenticating. Since they are logged in to Windows, those credentials get passed through to the app.</p>
+<p>In our case, however, our users are not logged in to our domain. They access the application over the Internet. They may not even be running Windows. So we have to use Forms Authentication.</p>
+<p>Even though our users aren’t on our domain, we still use Active Directory as an identity store. Fortunately, it’s possible to <a href="http://msdn.microsoft.com/en-us/library/ff650308.aspx">use Forms Authentication with Active Directory</a>.</p>
+<p>Create a new ASP.NET Web Application project. This can also be done with MVC, but our existing application was written prior to its release. Add a new Web Form to the project called “Login.aspx”. Add an asp:Login control to the page. You can just drag one from the toolbox.</p>
+<p>Double-click the login control to handle the Authenticate event. This event will be called when the user presses the Login button. For now, we’ll use FormsAuthentication.Authenticate. We’ll change that in a little bit.</p>
+<pre class="code"><span style="color: blue">&lt;</span><span style="color: #a31515">body</span><span style="color: blue">&gt;
+    &lt;</span><span style="color: #a31515">form </span><span style="color: red">id</span><span style="color: blue">=&quot;form1&quot; </span><span style="color: red">runat</span><span style="color: blue">=&quot;server&quot;&gt;
+    &lt;</span><span style="color: #a31515">div</span><span style="color: blue">&gt;
+    <strong>&lt;</strong></span><strong><span style="color: #a31515">asp</span><span style="color: blue">:</span><span style="color: #a31515">Login </span><span style="color: red">ID</span><span style="color: blue">=&quot;Login1&quot; </span><span style="color: red">runat</span><span style="color: blue">=&quot;server&quot; </span><span style="color: red">onauthenticate</span></strong><span style="color: blue"><strong>=&quot;Login1_Authenticate&quot;&gt;
+</strong>    <strong>&lt;/</strong></span><strong><span style="color: #a31515">asp</span><span style="color: blue">:</span><span style="color: #a31515">Login</span></strong><span style="color: blue"><strong>&gt;</strong>
+    &lt;/</span><span style="color: #a31515">div</span><span style="color: blue">&gt;
+    &lt;/</span><span style="color: #a31515">form</span><span style="color: blue">&gt;
+&lt;/</span><span style="color: #a31515">body</span><span style="color: blue">&gt;
+</span></pre>
+<pre class="code"><span style="color: blue">protected void </span>Login1_Authenticate(<span style="color: blue">object </span>sender, <span style="color: #2b91af">AuthenticateEventArgs </span>e)
+{
+    e.Authenticated = <span style="color: #2b91af">FormsAuthentication</span>.Authenticate(Login1.UserName, Login1.Password);
+}</pre>
+<p>Edit the web.config file to use forms authentication. Create a user credential to make sure everything is working so far.</p>
+<pre class="code">    <span style="color: blue">&lt;!-- </span><span style="color: green">MLP: Changed this from &quot;Windows&quot; to &quot;Forms&quot;. </span><span style="color: blue">--&gt;
+    &lt;</span><span style="color: #a31515">authentication </span><span style="color: red">mode</span><span style="color: blue">=</span>&quot;<span style="color: blue"><strong>Forms</strong></span>&quot;<span style="color: blue">&gt;
+      &lt;!-- </span><span style="color: green">MLP: Added Login.aspx and .ASPXFORMSAUTH settings. </span><span style="color: blue">--&gt;
+      &lt;</span><span style="color: #a31515">forms </span><span style="color: red">loginUrl</span><span style="color: blue">=</span>&quot;<span style="color: blue">Login.aspx</span>&quot; <span style="color: red">name</span><span style="color: blue">=</span>&quot;<span style="color: blue">.ASPXFORMSAUTH</span>&quot;<span style="color: blue">&gt;
+        &lt;</span><span style="color: #a31515">credentials </span><span style="color: red">passwordFormat</span><span style="color: blue">=</span>&quot;<span style="color: blue">Clear</span>&quot;<span style="color: blue">&gt;
+          &lt;</span><span style="color: #a31515">user </span><span style="color: red">name</span><span style="color: blue">=</span>&quot;<span style="color: blue">test</span>&quot; <span style="color: red">password</span><span style="color: blue">=</span>&quot;<span style="color: blue">pass</span>&quot;<span style="color: blue">/&gt;
+        &lt;/</span><span style="color: #a31515">credentials</span><span style="color: blue">&gt;
+      &lt;/</span><span style="color: #a31515">forms</span><span style="color: blue">&gt;
+    &lt;/</span><span style="color: #a31515">authentication</span><span style="color: blue">&gt;
+    &lt;!-- </span><span style="color: green">MLP: Deny unauthenticated users access to other pages. </span><span style="color: blue">--&gt;
+    &lt;</span><span style="color: #a31515">authorization</span><span style="color: blue">&gt;
+      &lt;</span><span style="color: #a31515">deny </span><span style="color: red">users</span><span style="color: blue">=</span>&quot;<span style="color: blue">?</span>&quot; <span style="color: blue">/&gt;
+    &lt;/</span><span style="color: #a31515">authorization</span><span style="color: blue">&gt;
+</span></pre>
+<p>Hit F5 and test your site. You should be redirected from your default page to the login page. If you enter the wrong credentials, you’ll get an error. If you enter user “test” and password “pass”, you’ll get to your default page.</p>
+<p><strong>Set up the Active Directory membership provider</strong> </p>
+<p>Now that we have forms authentication working, let’s switch to using membership. “Membership” is a provider-based system for managing identity and role-based security. By default, membership uses a SQL database to store credentials. You can switch to the Active Directory provider instead.</p>
+<p>Active Directory is very similar to a relational database. You access it via a connection string. Access is restricted to specific users. The main difference is that AD is a hierarchical store, while a database is a relational store. AD is typically used to store information about users, groups, and machines within a domain. That’s what the Active Directory membership provider expects.</p>
+<p>If you didn’t set up AD yourself, you will need to talk to the person who did. Get a connection string, username, and password that gives you read-only access to the server. If you would like to try this yourself before involving your network operator, you can set up a <a href="indexe539.html?p=151">virtual network in Microsoft Virtual PC</a>.</p>
+<p>To configure the Active Directory membership provider, add this to web.config after the &lt;authorization&gt; tag you added earlier. Pay close attention to the enablePasswordReset and attributeMapUsername settings. These are not mentioned in the Patterns and Practices guidance, but I found them to be necessary while working in my environment. The AD account that I have does not have permission to reset passwords. And my company’s directory does not set the userPrincipleName, which is the default.</p>
+<pre class="code">    <span style="color: blue">&lt;!-- </span><span style="color: green">MLP: Use the Active Directory membership provider. </span><span style="color: blue">--&gt;
+    &lt;</span><span style="color: #a31515">membership </span><span style="color: red">defaultProvider</span><span style="color: blue">=</span>&quot;<span style="color: blue">ADMembershipProvider</span>&quot;<span style="color: blue">&gt;
+      &lt;</span><span style="color: #a31515">providers</span><span style="color: blue">&gt;
+        &lt;</span><span style="color: #a31515">add
+           </span><span style="color: red">name</span><span style="color: blue">=</span>&quot;<span style="color: blue">ADMembershipProvider</span>&quot;
+           <span style="color: red">type</span><span style="color: blue">=</span>&quot;<span style="color: blue">System.Web.Security.ActiveDirectoryMembershipProvider, System.Web, Version=2.0.0.0,
+             Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</span>&quot;
+           <span style="color: red">connectionStringName</span><span style="color: blue">=</span>&quot;<span style="color: blue">ADConnectionString</span>&quot;
+           <span style="color: red">connectionUsername</span><span style="color: blue">=</span>&quot;<span style="color: blue">MyDomain\MyADUserName</span>&quot;
+           <span style="color: red">connectionPassword</span><span style="color: blue">=</span>&quot;<span style="color: blue">MyADPassword</span>&quot;
+           <strong><span style="color: red">enablePasswordReset</span><span style="color: blue">=</span>&quot;<span style="color: blue">false</span>&quot;</strong>
+           <strong><span style="color: red">attributeMapUsername</span><span style="color: blue">=</span>&quot;<span style="color: blue">sAMAccountName</span>&quot;</strong><span style="color: blue">/&gt;
+      &lt;/</span><span style="color: #a31515">providers</span><span style="color: blue">&gt;
+    &lt;/</span><span style="color: #a31515">membership</span><span style="color: blue">&gt;
+</span></pre>
+<p>Replace MyDomain and MyADUserName with the correct values. Remove the &lt;credentials&gt; element from &lt;forms&gt;. You won’t need the hard-coded credentials any more. Add the connection string to the top of the file: </p>
+<pre class="code">  <span style="color: blue">&lt;</span><span style="color: #a31515">connectionStrings</span><span style="color: blue">&gt;
+</span><span style="color: blue">    &lt;!-- </span><span style="color: green">MLP: Added connection string for Active Directory authentication. –</span><span style="color: blue">&gt;
+    &lt;</span><span style="color: #a31515">add </span><span style="color: red">name</span><span style="color: blue">=</span>&quot;<span style="color: blue">ADConnectionString</span>&quot; <span style="color: red">connectionString</span><span style="color: blue">=</span>&quot;<span style="color: blue">LDAP://MyADMachine/DC=MyDomain,DC=MyTLD</span>&quot; <span style="color: blue">/&gt;
+  &lt;/</span><span style="color: #a31515">connectionStrings</span><span style="color: blue">&gt;
+</span></pre>
+<p>Again, replace MyADMachine, MyDomain, and MyTLD with the values you get from your network admin. You might already have a &lt;connectionStrings&gt; section at the top. Just make sure you have a closing tag and insert the &lt;add …&gt; line. </p>
+<p>Finally, we need to change the code to use Membership instead of FormsAuthentication. Change the code that you added before to Login1_Authenticate.</p>
+<pre class="code"><span style="color: blue">protected void </span>Login1_Authenticate(<span style="color: blue">object </span>sender, <span style="color: #2b91af">AuthenticateEventArgs </span>e)
+{
+    e.Authenticated = <span style="color: #2b91af">Membership</span>.ValidateUser(Login1.UserName, Login1.Password);
+}</pre>
+<p>Now run the program again and try to log in with your network credentials. In fact, you can delete your onauthenticate handler altogether. The line of code above is exactly what the login control does by default.</p>
+<p><strong>Next steps</strong> </p>
+<p>Now that we are logged in using an Active Directory account, we’ll access an SSMS report using those credentials.</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="index363a.html?cat=45" title="View all posts in Reports" rel="category">Reports</a> |   <a href="index0745.html?p=532#comments" title="Comment on Forms Authentication and the Active Directory membership provider">5 Comments &#187;</a></p>
+
+			</div>
+
+				<div class="post">
+				<h3 id="post-531"><a href="index7398.html?p=531" rel="bookmark" title="Permanent Link to Application reports in SSRS">Application reports in SSRS</a></h3>
+				<small>Friday, July 23rd, 2010</small>
+
+				<div class="entry">
+					<p>I’ve been researching SQL Server Reporting Services. Our goal is to let users of our application view reports created by a business administrator. The application uses Active Directory via forms authentication. It has its own custom authorization.</p>
+<p>There are two ways to create a report in SSRS. One way is to use Visual Studio. The second is to use the Report Builder on line in the Report Manger site. I’ll use Visual Studio to get started. I’m using SQL Server 2008 R2 and Visual Studio 2008.</p>
+<p><strong>Create a Report Server Project</strong>    <br /><a href="wp-content/uploads/2010/07/image1.png"><img style="border-bottom: 0px; border-left: 0px; margin: 0px 5px 0px 0px; display: inline; border-top: 0px; border-right: 0px" title="image" border="0" alt="image" align="left" src="wp-content/uploads/2010/07/image-thumb1.png" width="244" height="161" /></a>First create a Report Server project. I’m using the Report Server Project Wizard in the Business Intelligence Projects section. If you don’t see Business Intelligence Projects, please be sure to <a href="http://msdn.microsoft.com/en-us/library/ms143736.aspx">install SQL Server Reporting Services</a> on your development box.</p>
+</p>
+<p>Create a new data source by setting up a connection string. Since we are creating application reports, we connect to the development application database. You can hit the “Edit” button to help you out, or just copy the connection string from the web.config file of your application.</p>
+<p><a href="wp-content/uploads/2010/07/image2.png"><img style="border-bottom: 0px; border-left: 0px; margin: 0px 0px 0px 5px; display: inline; border-top: 0px; border-right: 0px" title="image" border="0" alt="image" align="right" src="wp-content/uploads/2010/07/image-thumb2.png" width="244" height="225" /></a> My application uses a specific SQL account to access the database. This is not the end-user’s account. I entered these credentials while creating the connection string. The username and password are not visible in the generated connection string, but I can see that they’ve been stored if I hit the “Credentials” button.</p>
+<p> Next the wizard prompts you to create a query. Define a query that selects and groups the data the way that it will be displayed on the report. The report can do little more than place the data in the right boxes. You’ll need the query to do the heavy lifting.<a href="wp-content/uploads/2010/07/image3.png"><img style="border-bottom: 0px; border-left: 0px; margin: 0px 5px 0px 0px; display: inline; border-top: 0px; border-right: 0px" title="image" border="0" alt="image" align="left" src="wp-content/uploads/2010/07/image-thumb3.png" width="244" height="128" /></a></p>
+<p>Then, you create your report. I selected a “Matrix” report, which allows me put data on both rows and columns. You might also know this as a “crosstab” report. My query has four columns, which is the ideal number for a matrix report. I added the highest-level concept to the “Page” box, the grouping concepts to “Rows” and “Columns”, and the lowest-level value to “Details”. Avoid putting more than one column in these boxes, because that will turn a simple matrix report into a complex tree.</p>
+<p>Finally, give the URL of your reporting server. You can find this URL by running “Microsoft SQL Server 2008 R2”, “Configuration Tools”, “Reporting Services Configuration Manager”. Click on “Web Service URL” and select the hyperlink.</p>
+</p>
+<p><strong>Deploy the report</strong>    <br />You now have a project containing a single .rdl file. This is a report definition that SSRS can run. You can run the report now by pressing F5. For others to run the report, it will need to reside on the report server.</p>
+<p><a href="wp-content/uploads/2010/07/image4.png"><img style="border-bottom: 0px; border-left: 0px; margin: 0px 5px 0px 0px; display: inline; border-top: 0px; border-right: 0px" title="image" border="0" alt="image" align="left" src="wp-content/uploads/2010/07/image-thumb4.png" width="244" height="158" /></a> By default, the project is not deployable. Select “Build”, “Configuration Manager” to change this. Check the box under “Deploy” for your report project.</p>
+<p><a href="wp-content/uploads/2010/07/image5.png"><img style="border-bottom: 0px; border-left: 0px; margin: 0px 0px 0px 5px; display: inline; border-top: 0px; border-right: 0px" title="image" border="0" alt="image" align="right" src="wp-content/uploads/2010/07/image-thumb5.png" width="244" height="160" /></a> To deploy the project, select “Build”, “Deploy Solution”. The .rdl file will be copied to the reporting server. You can now see the report on line. Go back to the Reporting Services Configuration Manager, but this time choose the “Report Manager URL” section. Click the hyperlink to open the report manager in the browser.</p>
+<p>The report was deployed to a folder that you named in the wizard. Mine is in IONReports. Click on the folder, and then click on the report to view it.</p>
+<p>&#160;</p>
+</p>
+<p>You probably want other people to be able to access the report. Right now, it is probably deployed to SSRS running on localhost. To deploy it to a remote server, first ensure that SSRS is installed on the target machine. Then you can run the Reporting Services Configuration Manager on that server to find the Web Service URL.<a href="wp-content/uploads/2010/07/image6.png"><img style="border-bottom: 0px; border-left: 0px; margin: 0px 5px 0px 0px; display: inline; border-top: 0px; border-right: 0px" title="image" border="0" alt="image" align="left" src="wp-content/uploads/2010/07/image-thumb6.png" width="244" height="164" /></a></p>
+<p>Right click on the report server project in Visual Studio and choose “Properties”. This brings up a property page where you can edit the settings that you configured using the wizard. Enter the remote server’s Web Service URL in the TargetServerURL. You can now deploy the report to a server where others can run it.</p>
+<p><a href="wp-content/uploads/2010/07/image7.png"><img style="border-bottom: 0px; border-left: 0px; margin: 0px 0px 0px 5px; display: inline; border-top: 0px; border-right: 0px" title="image" border="0" alt="image" align="right" src="wp-content/uploads/2010/07/image-thumb7.png" width="244" height="160" /></a> Once the report is deployed, others can edit it on line using the Report Manager. Instead of clicking to run the report, pull down the menu. Choose “Edit in Report Builder”. The report builder is not quite as slick as the Visual Studio wizard, but it gets the job done. The connection, query, and report layout that you created in Visual Studio are all editable from within the report builder. You just might have to use text instead of a visual interface.</p>
+<p>A business admin can edit and create reports using this interface. It may be easier for everyone if a developer or DBA designs the queries to start with. A developer would most likely be using a Visual Studio report server project, whereas the DBA would probably create a view. But once they have help getting started, the business admin can take over.</p>
+<p><strong>Next steps</strong>    <br />Remember, the goal is to access reports from within an application. The admin uses the Report Manager, but the end user needs a simpler, branded interface. We’ll tackle that in the next article.</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="index363a.html?cat=45" title="View all posts in Reports" rel="category">Reports</a> |   <a href="index7398.html?p=531#respond" title="Comment on Application reports in SSRS">No Comments &#187;</a></p>
+
+			</div>
+
+		
+		<div class="navigation">
+			<div class="alignleft"></div>
+			<div class="alignright"></div>
+		</div>
+
+	
+	</div>
+		</td>
+	</tr>
+</table>
+
+<hr />
+<div id="footer">
+<!-- If you'd like to support WordPress, having the "powered by" link someone on your blog is the best way, it's our only promotion or advertising. -->
+	<p>
+		Adventures in Software is proudly powered by 
+		<a href="http://wordpress.org/">WordPress</a>
+		<br /><a href="indexd784.html?feed=rss2">Entries (RSS)</a>
+		and <a href="indexa6da.html?feed=comments-rss2">Comments (RSS)</a>.
+		<!-- 17 queries. 0.486 seconds. -->
+	</p>
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-389401-3");
+pageTracker._trackPageview();
+} catch(err) {}</script></div>
+
+<!-- Gorgeous design by Michael Heilemann - http://binarybonsai.com/kubrick/ -->
+
+		<div id="sk2-footer" style="color:#FFF; background-color:#444; padding: 3px 2px 3px 2px; border-top: #888 solid 1px;">This blog is protected by <a href="http://unknowngenius.com/blog/" title="Dave">dr Dave</a>'s <strong><a href="http://unknowngenius.com/blog/wordpress/spam-karma/" title="SK2">Spam Karma 2</a></strong>: <strong>274531</strong>  Spams eaten and counting...</div><script type="text/javascript" src="replies.js"></script>
+<script type="text/javascript" src="blogger.js"></script>
+<script type="text/javascript" src="http://twitter.com/statuses/user_timeline/michaellperry.json?callback=twitterCallback2&amp;count=5"></script>
+<script type="text/javascript" src="http://search.twitter.com/search.json?q=@michaellperry&amp;callback=twitterCallbackReplies&amp;rpp=5"></script>
+</body>
+
+<!-- Mirrored from adventuresinsoftware.com/blog/?cat=45 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 Jan 2017 12:55:34 GMT -->
+</html>

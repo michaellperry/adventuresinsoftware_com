@@ -1,0 +1,1525 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+
+
+<!-- Mirrored from adventuresinsoftware.com/blog/?p=104 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 Jan 2017 13:01:38 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>Adventures in Software  &raquo; Blog Archive   &raquo; Cover flow in Javascript</title>
+
+<meta name="generator" content="WordPress 2.3.3" /> <!-- leave this for stats -->
+
+<link rel="stylesheet" href="wp-content/themes/ais2/style.css" type="text/css" media="screen" />
+<link rel="alternate" type="application/rss+xml" title="Adventures in Software RSS Feed" href="indexd784.html?feed=rss2" />
+<link rel="pingback" href="xmlrpc.html" />
+    <script type="text/javascript">
+        function onSilverlightError(sender, args) {
+            var appSource = "";
+            if (sender != null && sender != 0) {
+              appSource = sender.getHost().Source;
+            }
+            
+            var errorType = args.ErrorType;
+            var iErrorCode = args.ErrorCode;
+
+            if (errorType == "ImageError" || errorType == "MediaError") {
+              return;
+            }
+
+            var errMsg = "Unhandled Error in Silverlight Application " +  appSource + "\n" ;
+
+            errMsg += "Code: "+ iErrorCode + "    \n";
+            errMsg += "Category: " + errorType + "       \n";
+            errMsg += "Message: " + args.ErrorMessage + "     \n";
+
+            if (errorType == "ParserError") {
+                errMsg += "File: " + args.xamlFile + "     \n";
+                errMsg += "Line: " + args.lineNumber + "     \n";
+                errMsg += "Position: " + args.charPosition + "     \n";
+            }
+            else if (errorType == "RuntimeError") {           
+                if (args.lineNumber != 0) {
+                    errMsg += "Line: " + args.lineNumber + "     \n";
+                    errMsg += "Position: " +  args.charPosition + "     \n";
+                }
+                errMsg += "MethodName: " + args.methodName + "     \n";
+            }
+
+            throw new Error(errMsg);
+        }
+    </script>
+
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc0db0.php?rsd" />
+ <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="wp-includes/wlwmanifest.xml" /> <style type='text/css'>
+<!--#header { background: url('wp-content/themes/ais2/images/header-imgae03.html?upper=A7A73F&amp;lower=77773F') no-repeat bottom center; }
+--></style>
+</head>
+<body>
+<div id="page">
+
+<div class="aisTopBar">
+	<form method="get" id="searchform" action="http://adventuresinsoftware.com/blog/">
+<div>
+<a href="indexd784.html?feed=rss2"><img src="../images/feed-icon-28x28.png" border="0"></a>
+<input type="text" value="" name="s" id="s" />
+<input type="submit" id="searchsubmit" value="Search" />
+</div>
+</form>
+</div>
+
+<div class="aisHeaderImageRight">
+	<div class="aisHeaderImage">
+	<div class="aisHeaderCornerRight">
+	<div class="aisHeaderCornerLeft">
+	<div class="aisImageBar">
+	<div class="aisSubSites">
+		<a href="index.html" class="aisSubSiteLink"><span class="aisSiteTabRight"><span class="aisSiteTabLeft"><span class="aisSiteTab">
+			home</span></span></span></a>
+		<a class="aisSubSiteLink" href="indexb60a.html?cat=27"><span class="aisSiteTabRight"><span class="aisSiteTabLeft"><span class="aisSiteTab">
+			historic modeling</span></span></span></a>
+		<a class="aisSubSiteLink" href="indexa88f.html?cat=36"><span class="aisSiteTabRight"><span class="aisSiteTabLeft"><span class="aisSiteTab">
+			update controls</span></span></span></a>
+		<a href="index2d79.html?cat=26" class="aisSubSiteLink"><span class="aisSiteTabRight"><span class="aisSiteTabLeft"><span class="aisSiteTab">
+			degrees of freedom</span></span></span></a>
+		<a class="aisSubSiteLink" href="indexba53.html?page_id=2"><span class="aisSiteTabRight"><span class="aisSiteTabLeft"><span class="aisSiteTab">
+			about us</span></span></span></a>
+
+	</div>
+	</div>
+	</div>
+	</div>
+	</div>
+</div>
+
+<table style="width: 100%" cellspacing="0" cellpadding="0">
+	<tr valign="top">
+		<td width="210px">
+<div id="sidebar">
+<div class="aisLeftColumnFill">
+<div class="aisLeftColumnBottom">
+<div class="aisLeftColumnTop">
+<div id="twitter_div" class="aisLeftNav">
+<h2 class="sidebar-title">Twitter Updates</h2>
+<ul id="twitter_update_list"></ul>
+<a href="http://twitter.com/michaellperry" id="follow">Follow me</a>
+</div>
+<div id="twitter_reply_div" class="aisLeftNav">
+<h2 class="sidebar-title">Twitter Replies</h2>
+<ul id="twitter_reply_list"></ul>
+</div>
+
+<div class="aisLeftNav">
+<a href='http://ineta.org/Speakers/SearchCommunitySpeakers.aspx?SpeakerId=c5110e21-9243-461b-a464-a6548524e885'><img alt='INETA Community Speakers Program' border='0' src='../../www.ineta.org/images/OfficialLogos/InetaCommunitySpeakersRequestMe.html' /></a>
+</div>
+
+<div class="aisLeftNav">
+	<li class="pagenav"><h2>Pages</h2><ul><li class="page_item page-item-2"><a href="indexba53.html?page_id=2" title="About Us">About Us</a></li>
+<li class="page_item page-item-210"><a href="index6ae3.html?page_id=210" title="Templates">Templates</a></li>
+</ul></li></div>
+
+<div class="aisLeftNav">
+<h2>Archives</h2>
+<ul>
+	<li><a href='indexb4d5.html?m=201110' title='October 2011'>October 2011</a></li>
+	<li><a href='indexc61a.html?m=201106' title='June 2011'>June 2011</a></li>
+	<li><a href='indexa80d.html?m=201105' title='May 2011'>May 2011</a></li>
+	<li><a href='index512b.html?m=201104' title='April 2011'>April 2011</a></li>
+	<li><a href='index08fb.html?m=201103' title='March 2011'>March 2011</a></li>
+	<li><a href='index52f4.html?m=201102' title='February 2011'>February 2011</a></li>
+	<li><a href='index74f1.html?m=201101' title='January 2011'>January 2011</a></li>
+	<li><a href='index8956.html?m=201012' title='December 2010'>December 2010</a></li>
+	<li><a href='indexa1aa.html?m=201011' title='November 2010'>November 2010</a></li>
+	<li><a href='indexe3d5.html?m=201010' title='October 2010'>October 2010</a></li>
+	<li><a href='index9ab9.html?m=201009' title='September 2010'>September 2010</a></li>
+	<li><a href='index1ff0.html?m=201008' title='August 2010'>August 2010</a></li>
+	<li><a href='index9f11.html?m=201007' title='July 2010'>July 2010</a></li>
+	<li><a href='index31f0.html?m=201006' title='June 2010'>June 2010</a></li>
+	<li><a href='indexd189.html?m=201005' title='May 2010'>May 2010</a></li>
+	<li><a href='indexb5c0.html?m=201004' title='April 2010'>April 2010</a></li>
+	<li><a href='indexf258.html?m=201003' title='March 2010'>March 2010</a></li>
+	<li><a href='index6e30.html?m=201002' title='February 2010'>February 2010</a></li>
+	<li><a href='index6b19.html?m=201001' title='January 2010'>January 2010</a></li>
+	<li><a href='index5c0a.html?m=200912' title='December 2009'>December 2009</a></li>
+	<li><a href='index8f62.html?m=200911' title='November 2009'>November 2009</a></li>
+	<li><a href='index451d.html?m=200910' title='October 2009'>October 2009</a></li>
+	<li><a href='index3e04.html?m=200909' title='September 2009'>September 2009</a></li>
+	<li><a href='index425a.html?m=200908' title='August 2009'>August 2009</a></li>
+	<li><a href='index9907.html?m=200907' title='July 2009'>July 2009</a></li>
+	<li><a href='index3104.html?m=200906' title='June 2009'>June 2009</a></li>
+	<li><a href='indexc36d.html?m=200905' title='May 2009'>May 2009</a></li>
+	<li><a href='index17e8.html?m=200904' title='April 2009'>April 2009</a></li>
+	<li><a href='index10a5.html?m=200903' title='March 2009'>March 2009</a></li>
+	<li><a href='index8988.html?m=200902' title='February 2009'>February 2009</a></li>
+	<li><a href='index1419.html?m=200901' title='January 2009'>January 2009</a></li>
+	<li><a href='index7866.html?m=200812' title='December 2008'>December 2008</a></li>
+	<li><a href='index55f6.html?m=200811' title='November 2008'>November 2008</a></li>
+	<li><a href='indexa7bc.html?m=200810' title='October 2008'>October 2008</a></li>
+	<li><a href='indexe77c.html?m=200809' title='September 2008'>September 2008</a></li>
+	<li><a href='indexcffc.html?m=200808' title='August 2008'>August 2008</a></li>
+	<li><a href='index0e62.html?m=200807' title='July 2008'>July 2008</a></li>
+	<li><a href='indexfda7.html?m=200806' title='June 2008'>June 2008</a></li>
+	<li><a href='index7d64.html?m=200805' title='May 2008'>May 2008</a></li>
+	<li><a href='index94dd.html?m=200804' title='April 2008'>April 2008</a></li>
+	<li><a href='index9631.html?m=200803' title='March 2008'>March 2008</a></li>
+	<li><a href='indexdd52.html?m=200802' title='February 2008'>February 2008</a></li>
+	<li><a href='index21ee.html?m=200801' title='January 2008'>January 2008</a></li>
+	<li><a href='index363c.html?m=200712' title='December 2007'>December 2007</a></li>
+	<li><a href='index7493.html?m=200711' title='November 2007'>November 2007</a></li>
+	<li><a href='index93a7.html?m=200710' title='October 2007'>October 2007</a></li>
+	<li><a href='index4ca8.html?m=200709' title='September 2007'>September 2007</a></li>
+	<li><a href='index6124.html?m=200708' title='August 2007'>August 2007</a></li>
+	<li><a href='index6013.html?m=200707' title='July 2007'>July 2007</a></li>
+	<li><a href='index2ab6.html?m=200706' title='June 2007'>June 2007</a></li>
+	<li><a href='index44f0.html?m=200705' title='May 2007'>May 2007</a></li>
+	<li><a href='indexf0b4.html?m=200704' title='April 2007'>April 2007</a></li>
+	<li><a href='index481d.html?m=200703' title='March 2007'>March 2007</a></li>
+	<li><a href='indexcbea.html?m=200702' title='February 2007'>February 2007</a></li>
+	<li><a href='index9cdc.html?m=200701' title='January 2007'>January 2007</a></li>
+	<li><a href='index3ea4.html?m=200612' title='December 2006'>December 2006</a></li>
+	<li><a href='index67ca.html?m=200611' title='November 2006'>November 2006</a></li>
+	<li><a href='indexff49.html?m=200610' title='October 2006'>October 2006</a></li>
+	<li><a href='index611c.html?m=200609' title='September 2006'>September 2006</a></li>
+	<li><a href='index9a21.html?m=200608' title='August 2006'>August 2006</a></li>
+	<li><a href='index3ee9.html?m=200607' title='July 2006'>July 2006</a></li>
+	<li><a href='indexe13a.html?m=200606' title='June 2006'>June 2006</a></li>
+</ul>
+</div>
+
+<div class="aisLeftNav">
+	</div>
+
+<div class="aisLeftNav">
+<h2>Books</h2>
+<iframe src="http://rcm.amazon.com/e/cm?t=adventures0d2-20&amp;o=1&amp;p=8&amp;l=as1&amp;asins=0764526413&amp;fc1=000000&amp;IS2=1&amp;lt1=_blank&amp;lc1=0000ff&amp;bc1=000000&amp;bg1=ffffff&amp;f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" name="I5" id="I5"></iframe>
+<br/>
+<iframe src="http://rcm.amazon.com/e/cm?t=adventures0d2-20&amp;o=1&amp;p=8&amp;l=as1&amp;asins=0201633612&amp;fc1=000000&amp;IS2=1&amp;lt1=_blank&amp;lc1=0000ff&amp;bc1=000000&amp;bg1=ffffff&amp;f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" name="I6" id="I6"></iframe>
+<br/>
+<iframe src="http://rcm.amazon.com/e/cm?t=adventures0d2-20&amp;o=1&amp;p=8&amp;l=as1&amp;asins=0136291554&amp;fc1=000000&amp;IS2=1&amp;lt1=_blank&amp;lc1=0000ff&amp;bc1=000000&amp;bg1=ffffff&amp;f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" name="I7" id="I7"></iframe>
+<br/>
+<iframe src="http://rcm.amazon.com/e/cm?t=adventures0d2-20&amp;o=1&amp;p=8&amp;l=as1&amp;asins=1888009195&amp;fc1=000000&amp;IS2=1&amp;lt1=_blank&amp;lc1=0000ff&amp;bc1=000000&amp;bg1=ffffff&amp;f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" name="I8" id="I8"></iframe>
+</div>
+<div class="aisLeftNav">
+<h2>Meta</h2>
+<ul>
+		<li><a href="wp-login.html">Login</a></li>
+	<li><a href="http://validator.w3.org/check/referer" title="This page validates as XHTML 1.0 Transitional">Valid <abbr title="eXtensible HyperText Markup Language">XHTML</abbr></a></li>
+	<li><a href="http://gmpg.org/xfn/"><abbr title="XHTML Friends Network">XFN</abbr></a></li>
+	<li><a href="http://wordpress.org/" title="Powered by WordPress, state-of-the-art semantic personal publishing platform.">WordPress</a></li>
+	</ul>
+</div>
+<div class="aisLeftContent">
+<h2>Community</h2>
+<ul>
+	<script type="text/javascript" src="../../localhost/embed/92q2bbma.js"></script>
+</ul>
+</div>
+
+</div></div></div>
+</div>		</td>
+		<td>
+
+	<div id="content" class="widecolumn">
+
+	
+		<div class="navigation">
+			<div class="alignleft">&laquo; <a href="indexc5eb.html?p=102">Speaking at the Dallas Code Camp (4/21)</a></div>
+			<div class="alignright"><a href="indexea0f.html?p=105">AiS 21: Getting Started</a> &raquo;</div>
+		</div>
+		<br/>
+
+		<div class="post" id="post-104">
+			<h1>Cover flow in Javascript</h1>
+
+			<div class="entry">
+				<p><script type="text/javascript">  <!--  google_ad_client = "pub-1777145505901530";  //728x90, created 12/2/07  google_ad_slot = "6667212455";  google_ad_width = 728;  google_ad_height = 90;  //--></script><br />
+<script type="text/javascript" src="../../pagead2.googlesyndication.com/pagead/f.txt">   </script></p>
+<p>My wife is a scrapbook consultant. She was looking for a way to showcase her artwork on her web page. Instead of your typical list of thumbnails, I thought it would be more interesting to put her scrapbook pages in iTunes cover flow. So after a weekend of messing with javascript, this is the result:</p>
+<p><a href="http://myscraproom.net/pageflow.html">http://myscraproom.net/pageflow.html</a></p>
+<p>It doesn't have the oblique angles, but I think I know how to achieve that effect. There is also a Safari compatibility issue, and a performance improvement I can make. More to come.</p>
+<p><strong>Update</strong><br />
+Finn Rudolph has added many enhancements to the original script. I highly recommend using his <a href="http://imageflow.finnrudolph.de/">Image Flow</a>.</p>
+
+				
+				<p class="postmetadata alt">
+					<small>
+						This entry was posted
+												on Monday, April 9th, 2007 at 9:48 am						and is filed under <a href="indexb97c.html?cat=30" title="View all posts in CSS" rel="category">CSS</a>,  <a href="indexd65e.html?cat=8" title="View all posts in User Interface" rel="category">User Interface</a>.
+						You can follow any responses to this entry through the <a href='indexbed4.html?feed=rss2&amp;p=104'>RSS 2.0</a> feed.
+
+													Both comments and pings are currently closed.
+
+						
+					</small>
+				</p>
+
+			</div>
+		</div>
+
+	
+<!-- You can start editing here. -->
+
+	<h3 id="comments">90 Responses to &#8220;Cover flow in Javascript&#8221;</h3>
+
+	<ol class="commentlist">
+
+	
+		<li class="alt" id="comment-1830">
+			<cite><a href='http://briteideaphotography.com/' rel='external nofollow'>Douglas Boyce</a></cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-1830" title="">April 18th, 2007 at 2:57 pm</a> </small>
+
+			<p>Totally Cool ! Thanks for Sharing. It gives me ideas for my photography.</p>
+
+		</li>
+
+	
+	
+		<li class="" id="comment-1961">
+			<cite>Aleks</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-1961" title="">April 27th, 2007 at 10:29 am</a> </small>
+
+			<p>Its a great cover flow. Congratulations.<br />
+Are you thinking of explaining how to achive that result?</p>
+<p>Have a nice day.<br />
+A</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-1981">
+			<cite>Michael L Perry</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-1981" title="">April 28th, 2007 at 9:50 am</a> </small>
+
+			<p>All of the code is available directly in the page. (Yes, I know it should be broken out, but this was an experiment.) You can take this code and use it as your own.</p>
+<p>There are three ideas in the code.</p>
+<p>First, the use of setTimeout to perform animation. setTimeout schedules a function call to occur at some time in the future. If the animation is not yet finished, this function should again call setTimeout.</p>
+<p>Second, the math behind the manipulation of the images. The path is a 100-unit hyperbola, where the observer is standing 100 diagonal units away from the origin. Divide the image height by the perpendicular distance from the observer to simulate vanishing. Change the zIndex to simulate occlusion.</p>
+<p>Third, the use of hidden div tags to hold data. Set the inner text of a visible div tag to the inner text of a hidden one in order to place the data on the screen.</p>
+<p>Enjoy!</p>
+
+		</li>
+
+	
+	
+		<li class="" id="comment-3841">
+			<cite>Francois</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-3841" title="">June 13th, 2007 at 11:33 am</a> </small>
+
+			<p>Great job !<br />
+I really would like to understand how it works. I've passed 2 days on it but I can't figure out.<br />
+Would it be possible for you (or someone that did understand how it works) to email me some detailed explanations ? Thanks in advance, and again, congrats for the work !</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-4376">
+			<cite><a href='http://www.isazig.com/' rel='external nofollow'>Quan</a></cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-4376" title="">July 2nd, 2007 at 9:36 pm</a> </small>
+
+			<p>Thanks for your work!  It looks fantastic!</p>
+
+		</li>
+
+	
+	
+		<li class="" id="comment-4806">
+			<cite>Stanley</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-4806" title="">July 16th, 2007 at 10:56 pm</a> </small>
+
+			<p>I've just had a quick look at it and was able to substitute on of my pics for cocoa1.jpg but couldn't get the reflection. Which bit of the code governs the reflections? 'Scuse my ignorance and thanks for any help.</p>
+<p>I'd like to use it as a portfolio.</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-4855">
+			<cite>Michael L Perry</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-4855" title="">July 18th, 2007 at 11:33 am</a> </small>
+
+			<p>The reflections are part of the raw images. I generated the images using the code at this location:</p>
+<p><a href="http://cow.neondragon.net/stuff/reflection/" rel="nofollow">http://cow.neondragon.net/stuff/reflection/</a></p>
+<p>I was unable to integrate the reflection code into the coverflow directly. If you are able to do so, please post a link.</p>
+
+		</li>
+
+	
+	
+		<li class="" id="comment-5046">
+			<cite><a href='http://www.blakestar.net/' rel='external nofollow'>Blake</a></cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-5046" title="">July 25th, 2007 at 11:42 am</a> </small>
+
+			<p>I too am trying to implement a Coverflow effect - for browsing podcast album art.</p>
+<p>One of the pages I turned up looking for javascript offers the code for doing reflections: <a href="http://cow.neondragon.net/stuff/reflection/" rel="nofollow">http://cow.neondragon.net/stuff/reflection/</a></p>
+<p>Thanks for posting your work.</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-7583">
+			<cite><a href='http://www.buddystumbler.com/' rel='external nofollow'>Yim Lee</a></cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-7583" title="">October 4th, 2007 at 12:21 pm</a> </small>
+
+			<p>Hi Michael,</p>
+<p>Thanks so much for sharing your work! I was able to use you code on the latest launch of <a href="http://www.buddystumbler.com./" rel="nofollow">http://www.buddystumbler.com.</a> Your code was very easy to integrate and it works beautifully!</p>
+
+		</li>
+
+	
+	
+		<li class="" id="comment-7585">
+			<cite><a href='http://i-wannebe.com/blog/?p=5' rel='external nofollow'>i-wannebe &raquo; Achieving the Cover Flow effect</a></cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-7585" title="">October 4th, 2007 at 1:13 pm</a> </small>
+
+			<p>[...] scrapbook work, so he wrote some JavaScript code to mimic the Cover Flow effect and shared his results in one of his blog posts. Here is the URL to Perry&#8217;s [...]</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-7820">
+			<cite><a href='http://craighawkinsart.com/' rel='external nofollow'>Craigh</a></cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-7820" title="">October 9th, 2007 at 4:33 pm</a> </small>
+
+			<p>I'm trying to use this code to present my artwork on my website but when I substitute your images with the web address for mine the size ratio is wrong and I can't seem to find where I can change that.  Please help.</p>
+
+		</li>
+
+	
+	
+		<li class="" id="comment-7860">
+			<cite>Michael L Perry</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-7860" title="">October 11th, 2007 at 12:19 am</a> </small>
+
+			<p>Craigh,</p>
+<p>The magic is in this line:<br />
+			image.style.height = 110.25 / z * biggest;</p>
+<p>The number 110.25 is the percentage of height to width of my images. Just divide height by width and multiply by 100 to get the exact ratio to plug in.</p>
+<p>Enjoy!</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-7894">
+			<cite><a href='http://www.finnrudolph.de/' rel='external nofollow'>Finn</a></cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-7894" title="">October 12th, 2007 at 7:21 am</a> </small>
+
+			<p>Hi Michael,</p>
+<p>thanks for the nice Javascript Code. I made some "improvements" on it. Now it scales the Images in other formats than square and aligns at the bottom. At this time I'm working on (hopefully) massive performance improvements by implementing the scriptaculous framework (http://script.aculo.us/). See the following link for my version. You can drop a comment in the shoutbox.</p>
+<p><a href="http://194.95.111.244/~countzero/myCMS/index.php?c_id=1&amp;s_id=4&amp;tag=ImageFlow" rel="nofollow">http://194.95.111.244/~countzero/myCMS/index.php?c_id=1&amp;s_id=4&amp;tag=ImageFlow</a></p>
+<p>Have a nice day.<br />
+Finn</p>
+
+		</li>
+
+	
+	
+		<li class="" id="comment-7928">
+			<cite>Ray</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-7928" title="">October 13th, 2007 at 12:19 am</a> </small>
+
+			<p>Hi Mike,</p>
+<p>Is there a way to add code so that when a page is selected as desired and user cliks on it it follows that link?<br />
+I could do it modifing the code at the bottom, but not through direct click (or double click) in the image itself.</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-7948">
+			<cite><a href='http://www.finnrudolph.de/' rel='external nofollow'>Finn</a></cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-7948" title="">October 13th, 2007 at 4:11 pm</a> </small>
+
+			<p>@Ray: Try adding the following code inside the  tag: </p>
+<p>ondblclick="document.location='http://www.adventuresinsoftware.com/blog/?p=104'"</p>
+<p>That should redirect the user to this page by simply doubleclicking on the image... for single click action use onclick=""</p>
+<p>Hope it works ;D<br />
+Finn</p>
+
+		</li>
+
+	
+	
+		<li class="" id="comment-8221">
+			<cite>nev</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-8221" title="">October 21st, 2007 at 2:39 pm</a> </small>
+
+			<p>Nice looking effect! - sure this will become popular.</p>
+<p>Can someone give tips* as to best way of inserting this display inside a fixed-width div?  I tried modifying it but I keep getting small images!  Unh!</p>
+<p>(*read: 'instructions' !!)</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-8235">
+			<cite><a href='http://www.finnrudolph.de/' rel='external nofollow'>Finn</a></cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-8235" title="">October 22nd, 2007 at 3:16 am</a> </small>
+
+			<p>Jepp, I had some ideas on this one. Check out Version 0.2 of my ImageFlow build on the code of Michael Perry. It now scales dynamically in relation to the div container called "images". I also added a changelog to the previous demo: </p>
+<p><a href="http://imageflow.finnrudolph.de/" rel="nofollow">http://imageflow.finnrudolph.de</a></p>
+<p>I would like to see what you build with it!</p>
+
+		</li>
+
+	
+	
+		<li class="" id="comment-8241">
+			<cite>nev</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-8241" title="">October 22nd, 2007 at 9:16 am</a> </small>
+
+			<p>Finn - I think that's another great effect, and I see you've placed the images successfully inside a containing div.</p>
+<p>However I do like the way the images on <a href="http://myscraproom.net/" rel="nofollow">http://myscraproom.net/</a> change size as they skip to the front, as if they are "coming forward" in a "presentation" style.</p>
+<p>That's the effect I'd like to reproduce, but inside a fixed-width div.</p>
+<p>Basically I'm trying to put this effect in a page which has a wide but fixed-width central area (a centred layout).</p>
+<p>I feel sure it must be possible!</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-8250">
+			<cite><a href='http://www.finnrudolph.de/' rel='external nofollow'>Finn</a></cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-8250" title="">October 22nd, 2007 at 12:58 pm</a> </small>
+
+			<p>@nev: You don't get it. If something can be described in a dynamic div it always can be described in a STATIC div too.</p>
+<p>Simply check my sourcecode and replace all dynamic style definitions like width:70% with a static width:750px. And you have the images in a static div. Now delete the div containing the changelog completely and the images and the effect should be in a aligned STATIC div container...</p>
+<p>so long...<br />
+Finn</p>
+
+		</li>
+
+	
+	
+		<li class="" id="comment-8255">
+			<cite>nev</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-8255" title="">October 22nd, 2007 at 2:06 pm</a> </small>
+
+			<p>Hey sorry - I was looking in Safari/Mac and forgot about the bug!  The effect is lost in Safari and I thought that what I saw was what you intended!  That's what got me confused.    I see however it works very nicely in every other browser/os.</p>
+<p>The <a href="http://myscraproom.net/" rel="nofollow">http://myscraproom.net/</a> version however DOES work in Safari.</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-8259">
+			<cite><a href='http://www.finnrudolph.de/' rel='external nofollow'>Finn</a></cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-8259" title="">October 22nd, 2007 at 4:45 pm</a> </small>
+
+			<p>@nev... hmmm... I develop on a Machine running Windows XP and tested the Stuff on Opera 9.x IE6 to IE7 and Firefox 1.5 to Firefox 2. But I saw the script on Safari running on a mac today... seems to screw up the image-height. Any Idea on a workaround? The <a href="http://myscraproom.net/" rel="nofollow">http://myscraproom.net/</a> version does not read out the image height, but scales everything to a square format in relation to the total window-width... That's why it works on Safari.</p>
+<p>So long...<br />
+Finn</p>
+
+		</li>
+
+	
+	
+		<li class="" id="comment-8261">
+			<cite><a href='http://www.finnrudolph.de/' rel='external nofollow'>Finn</a></cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-8261" title="">October 22nd, 2007 at 5:00 pm</a> </small>
+
+			<p>@nev: I tested ImageFlow 0.2 on Safari 3.0.3/Windows XP and found no problems: <a href="../../194.95.111.244/_countzero/tmp/ImageFlow_0.2_on_Safari_3.0.3.html" rel="nofollow">http://194.95.111.244/~countzero/tmp/ImageFlow_0.2_on_Safari_3.0.3.jpg</a></p>
+<p>I don't have a Mac, but it seems to run on Safari for Windows ;D</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-8293">
+			<cite>nev</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-8293" title="">October 23rd, 2007 at 12:49 pm</a> </small>
+
+			<p>Seems like it's only Safari/Mac that throws it.  As you say, the images stretch to the full height of the div.</p>
+
+		</li>
+
+	
+	
+		<li class="" id="comment-8321">
+			<cite>jenny</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-8321" title="">October 24th, 2007 at 10:09 am</a> </small>
+
+			<p>cool. is there a way to make this start on say the 3rd or 4th etc image?</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-8336">
+			<cite><a href='http://www.finnrudolph.de/' rel='external nofollow'>Finn Rudolph</a></cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-8336" title="">October 24th, 2007 at 6:06 pm</a> </small>
+
+			<p>@jenny: Sure, just add the following code to the body tag: </p>
+<p>onload="refresh(); glideTo( -450, 'i4')"</p>
+<p>That calls the refresh and the glideTo function. In this case ImageFlow glides to the 4th image. This code refers to my version of Michael Perrys scraproom: <a href="http://imageflow.finnrudolph.de/" rel="nofollow">http://imageflow.finnrudolph.de</a></p>
+
+		</li>
+
+	
+	
+		<li class="" id="comment-8361">
+			<cite>jenny</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-8361" title="">October 25th, 2007 at 4:18 pm</a> </small>
+
+			<p>that works well. thanks <img src='wp-includes/images/smilies/icon_wink.gif' alt=';)' class='wp-smiley' /></p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-8501">
+			<cite><a href='http://www.qclocalhomes.com/' rel='external nofollow'>Bob Strupp</a></cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-8501" title="">October 29th, 2007 at 9:02 pm</a> </small>
+
+			<p>I love the script. How do i get it to fit inside of a table? right now it spans across the whole browser. Please advise.</p>
+
+		</li>
+
+	
+	
+		<li class="" id="comment-8554">
+			<cite>Michael</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-8554" title="">October 31st, 2007 at 11:38 am</a> </small>
+
+			<p>I'm trying to implement this function on my site, but was wondering how I go about changing the size of the function from the span of the entire page, to something in a more controlled environment- like something in pixels?</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-8565">
+			<cite>rico</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-8565" title="">October 31st, 2007 at 4:07 pm</a> </small>
+
+			<p>Has anyone tried viewing it on an iphone/ipod touch?</p>
+
+		</li>
+
+	
+	
+		<li class="" id="comment-8570">
+			<cite>Michael L Perry</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-8570" title="">October 31st, 2007 at 11:01 pm</a> </small>
+
+			<p>Bob and Michael,</p>
+<p>Finn embedded the effect within a div tag. He achieved this by changing the windowWidth function to return only the width of the tag:</p>
+<pre>
+/* Get width of the images div container in px */
+function windowWidth()
+{
+	var width = document.getElementById("images").offsetWidth;
+	return width;
+}
+</pre>
+<p>Rico,</p>
+<p>I just got my iPod Touch, and I love it. I've installed a Wordpress plugin to render the blog correctly on the screen. And, yes, the Javascript coverflow effect works on the small screen, albeit a little slowly.</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-8579">
+			<cite>rico</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-8579" title="">November 1st, 2007 at 6:36 am</a> </small>
+
+			<p>Michael L,</p>
+<p>Thanks for this neat script. I haven't tried getting it to do real work yet, but have the start of an ipod touch/iphone launchpad for my iphone apps...</p>
+<p>What I need for the script to do is... when the user clicks the image displayed in the center, to open a new page. I could bury the link in the caption tag, but thats not as sexy.</p>
+<p>I don't believe that iphone safari supports ondblclick.... any hint?</p>
+<p>here's the mockup...</p>
+<p><a href="http://www.myhip.com/flow.html" rel="nofollow">http://www.myhip.com/flow.html</a></p>
+<p>if you want to play some of my games...</p>
+<p><a href="http://www.myhip.com/iphone.html" rel="nofollow">http://www.myhip.com/iphone.html</a></p>
+
+		</li>
+
+	
+	
+		<li class="" id="comment-8600">
+			<cite>Michael L Perry</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-8600" title="">November 1st, 2007 at 8:53 pm</a> </small>
+
+			<p>Cool mockup! Yours is a bit smoother on the Touch, since it uses smaller images.</p>
+<p>One thing that would work is to compare the captionId to the newCaptionId in glideTo. If they are the same, then the user has tapped the front-most image. This works better than double-clicking anyway, since the second click can be delayed.</p>
+<p>You can probably make the target an attribute of the div tag so that you can retrieve it from the captionId. Then you can just navigate to it.</p>
+<p>Good luck! Can't wait to see the finished product.</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-8601">
+			<cite>rico</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-8601" title="">November 1st, 2007 at 10:15 pm</a> </small>
+
+			<p>Michael,</p>
+<p>Thanks for the tip... I added your suggestion of comparing the captionID... and it works</p>
+<p><a href="http://www.myhip.com/flow3.html" rel="nofollow">http://www.myhip.com/flow3.html</a></p>
+
+		</li>
+
+	
+	
+		<li class="" id="comment-8603">
+			<cite>Kevin</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-8603" title="">November 1st, 2007 at 10:57 pm</a> </small>
+
+			<p>This is so cool! I have added dbl click goto url to images, and adjusted  onload to go to whatever slide I want it to start on. I am working on the reflection part on the images and a now I am going to work on image and links from a database on Cold Fusion. Has anyone worked on a slider control?<br />
+Thanks for sharing !</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-8689">
+			<cite><a href='http://finnrudolph.de/' rel='external nofollow'>Finn</a></cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-8689" title="">November 4th, 2007 at 3:04 pm</a> </small>
+
+			<p>Dynamically generated reflections anyone? Those are NOT Javascript, but server sided PHP generated reflections. I hacked Richard Daveys Easy Reflections v2 a bit and this is what it looks like:</p>
+<p><a href="http://imageflow.finnrudolph.de/" rel="nofollow">http://imageflow.finnrudolph.de</a></p>
+<p>I also improved some of the code . o O ( I think... )  ;D</p>
+
+		</li>
+
+	
+	
+		<li class="" id="comment-8729">
+			<cite><a href='http://finnrudolph.de/' rel='external nofollow'>Finn</a></cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-8729" title="">November 5th, 2007 at 7:55 pm</a> </small>
+
+			<p>*phew* I implemented a improved JavaScript Implementation of a Duff's Device Loop. That was kind of tricky... At this moment i couldn't think of anything else to improve. Now the main limiting factor should be the rendering engine of the browser. The speed scales in relation to the image quality of resized images: IE is fast, but the resized images look messy, Opera and Safari do a way better job, but are therefore somewhat slower... This version is testing only at the moment, you can check it out here: <a href="http://tinyurl.com/2ywabh" rel="nofollow">http://tinyurl.com/2ywabh</a></p>
+<p>@ Michael L Perry: Could you take a short look on what i did to your code. Do you have any ideas how to improve a thing, or do you agree with me, that the browser engine is the limiting factor? Code: <a href="http://refactormycode.com/codes/108-test#refactor_749" rel="nofollow">http://refactormycode.com/codes/108-test#refactor_749</a></p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-8744">
+			<cite>Michael L Perry</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-8744" title="">November 6th, 2007 at 7:20 am</a> </small>
+
+			<p>Finn,</p>
+<p>I think that image resizing will always be the bottleneck. Have you measured the performance improvement that you achieved? Seems like it would get lost in all the high-cost image processing. But, yes, there is one minor improvement you can make to the Duff Device Loop. You can use a switch/case with fall-through to avoid the initial remainder loop.</p>
+<p>I love the server-side reflections in PHP. You'd better believe I'm incorporating that. It was a pain manually applying the reflection to each image in Paint Shop Pro.</p>
+
+		</li>
+
+	
+	
+		<li class="" id="comment-8789">
+			<cite><a href='http://www.finnrudolph.de/' rel='external nofollow'>Finn</a></cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-8789" title="">November 7th, 2007 at 11:53 am</a> </small>
+
+			<p>Mouse wheel support and loading bar anyone? Okay this should be the last one... now I like it ;D </p>
+<p><a href="http://imageflow.finnrudolph.de/" rel="nofollow">http://imageflow.finnrudolph.de/</a></p>
+<p>@ Michael L Perry: Thanks, I measured the stuff I did and found it slower than the previous desing. Perhaps because there are function calls within the loop? Anyway, I tried another way and cached all I could. I also made only those variables global, that must be global. See the final code here: <a href="http://refactormycode.com/codes/108-test#refactor_787" rel="nofollow">http://refactormycode.com/codes/108-test#refactor_787</a></p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-8931">
+			<cite><a href='http://www.finnrudolph.de/' rel='external nofollow'>Finn</a></cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-8931" title="">November 10th, 2007 at 4:53 pm</a> </small>
+
+			<p>I did some JavaScript performance benchmarking and Opera is by far the slowest browser! I started a thread including my benchmark results:</p>
+<p><a href="http://my.opera.com/community/forums/topic.dml?id=212488" rel="nofollow">http://my.opera.com/community/forums/topic.dml?id=212488</a></p>
+<p>In general Michael is right: The main performance drops are induced by the browsers high-cost image processing! This leads to only one feasible solution: Rewrite the code, that it can handle &gt;100 images, but only displays a maximum of 10 at a time. Perhaps by hiding them width CSS when they are not focussed?!</p>
+
+		</li>
+
+	
+	
+		<li class="" id="comment-9177">
+			<cite><a href='http://mediaeventservices.com/blog/2007/11/15/ajax-image-gallery-powered-by-slideflow-like-cover-flow/' rel='external nofollow'>MediaEvent Services Blog &raquo; Blog Archive &raquo; AJAX Image Gallery powered by Slideflow (like Cover Flow)</a></cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-9177" title="">November 15th, 2007 at 7:32 am</a> </small>
+
+			<p>[...] Based on code by Michael L Perry [...]</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-9179">
+			<cite><a href='http://mediaeventservices.com/blog/2007/11/15/ajax-image-gallery-powered-by-slideflow-like-cover-flow/' rel='external nofollow'>Christian Becker</a></cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-9179" title="">November 15th, 2007 at 7:35 am</a> </small>
+
+			<p>Hey, awesome code! We used it as a starting point for our CC-licensed project and added Photoshop-generated perspectives, dragging and mouse wheel navigation!</p>
+
+		</li>
+
+	
+	
+		<li class="" id="comment-9319">
+			<cite><a href='http://www.finnrudolph.de/' rel='external nofollow'>Finn</a></cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-9319" title="">November 19th, 2007 at 7:07 pm</a> </small>
+
+			<p>As I posted above: I rewrote the code to avoid performance drops by hiding all images (display:none) that are not in the viewing focus. Now it can handle large amounts of images (&gt;100)... To keep the usability I also added a scrollbar. Which is a handy thing when there are hundreds of images to scroll ;D</p>
+<p><a href="http://imageflow.finnrudolph.de/" rel="nofollow">http://imageflow.finnrudolph.de/</a></p>
+<p>BTW: If anyone uses Opera - try switching the InterpolateImages feature OFF (opera:config#Multimedia|InterpolateImages) the quality of resized images drops, but there is a massive speed increase!</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-9373">
+			<cite><a href='http://simplyfsbo.com/' rel='external nofollow'>Bob</a></cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-9373" title="">November 20th, 2007 at 10:16 pm</a> </small>
+
+			<p>Please help! I have been trying to get this cover flow to fit into my table for the longest time. I am not very good at this stuff. I tried everything that was stated above but I can not figure it out. Can someone please look at my link and show me how to get this cover flow into the table?</p>
+<p><a href="http://www.qclocalhomes.com/help.html" rel="nofollow">http://www.qclocalhomes.com/help.html</a></p>
+<p>Bob</p>
+
+		</li>
+
+	
+	
+		<li class="" id="comment-9375">
+			<cite>Michael L Perry</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-9375" title="">November 20th, 2007 at 11:48 pm</a> </small>
+
+			<p>Bob,</p>
+<p>At this point, I'd recommend starting with Finn's ImageFlow code. In addition to the features he added, he has refactored the code in such a way that it is easier to place within a smaller space. He defines that container with another div tag, not a table cell. Maybe that is significant.</p>
+<p>I spent a few minutes trying to reproduce the changes he made. He has changed the windowWidth function to get the width of the div tag itself, rather than the entire window. And he has changed the moveTo function to offset the image positions relative to the container. But there is something else that is eluding me. Again, perhaps it has to do with the table cell vs. the div tag.</p>
+<p>So download ImageFlow. Finn has taken this farther than I could have, and he seems prepared to support it. When I redesign MyScrapRoom, I'm going to adopt his code.</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-9423">
+			<cite>Steven</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-9423" title="">November 22nd, 2007 at 12:58 pm</a> </small>
+
+			<p>Excellent cover flow, one of the best I've seen ^^<br />
+I guess it would be easy to make a PHP script to give the images a perspective like cover flow and then request it with AJAX...<br />
+But I'm not sure, haven't really worked with image manipulation in PHP.</p>
+
+		</li>
+
+	
+	
+		<li class="" id="comment-9552">
+			<cite>Bob</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-9552" title="">November 26th, 2007 at 11:13 pm</a> </small>
+
+			<p>Hi, I was wondering about what the author says:</p>
+<p>"There is also a Safari compatibility issue, and a performance improvement I can make."</p>
+<p>Does it means, it'll not work or iPhone? bec as far as i know, iPhone uses safari web browser for internet applications...</p>
+<p>I test <a href="http://imageflow.finnrudolph.de/" rel="nofollow">http://imageflow.finnrudolph.de/</a> on safari browser with Max OS X, and it didn't work well... I am asking because i don't have an iPhone... any help or info please?</p>
+<p>Thanks...</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-9554">
+			<cite>Bryne</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-9554" title="">November 27th, 2007 at 12:46 am</a> </small>
+
+			<p>Can this script work or interact with iPhone's photo album feature?<br />
+e.g. I have a web application, and i'd love to open it or browse it with the iPhone's Photo album feature (not by Safari browser). help?</p>
+
+		</li>
+
+	
+	
+		<li class="" id="comment-9597">
+			<cite>Michael L Perry</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-9597" title="">November 27th, 2007 at 11:28 pm</a> </small>
+
+			<p>Bob,</p>
+<p>The Safari compatibility issue I originally talked about has been fixed. It was that Safari does not automatically scale images in both dimensions when you change just one dimension. I fixed this by changing both the width and the height proportionally. Finn improved on this by making that proportion variable, so that both portrait and landscape images are supported.</p>
+<p>So it works on the iPhone and iPod touch. It's just slow because those devices can't scale images very quickly. And you can't drag the slider; you have to tap the images themselves.</p>
+<p>Bryne,</p>
+<p>Sorry, but this script does not work with the iPhone photo album. Sliding your finger across a web page always scrolls it. You have no opportunity to capture that event and do something else with it. So you can't flick the images the same way you can in photos.</p>
+<p>You have to sync photos to the device before the photo app will work. It can't pull photos directly from the web. Perhaps there will be a third-party app that can do that, but none that I know of right now.</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-9950">
+			<cite><a href='http://www.finnrudolph.de/' rel='external nofollow'>Finn</a></cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-9950" title="">December 7th, 2007 at 1:24 pm</a> </small>
+
+			<p>Hi,</p>
+<p>there still is a Safari Problem: ImageFlow (and probably this Michaels version too) does not work with Safari versions below version 3.0! And I have really no Idea why. I enabled the javascript debug console ( <a href="http://developer.apple.com/internet/safari/faq.html#anchor14" rel="nofollow">http://developer.apple.com/internet/safari/faq.html#anchor14</a> ) but Safari 2.x did not spit out any error messages. It has some kind of problem to read out the correct .width and .height attributes of the image object. But no one I asked had any idea on a workaround. Do you?</p>
+<p>@ Michael: Thanks for your positive feedback on ImageFlow  ;D BTW: There is a brand new version of it! </p>
+<p><a href="http://imageflow.finnrudolph.de/" rel="nofollow">http://imageflow.finnrudolph.de/</a></p>
+
+		</li>
+
+	
+	
+		<li class="" id="comment-10134">
+			<cite>Jeremy Burgess</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-10134" title="">December 13th, 2007 at 2:58 pm</a> </small>
+
+			<p>Cool! That is a weekend to be proud of. I am really impressed with the result...</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-10208">
+			<cite><a href='http://www.randytamayo.com/' rel='external nofollow'>RandyTamayo</a></cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-10208" title="">December 17th, 2007 at 8:05 am</a> </small>
+
+			<p>Here is the latest version from Finn I used for testing on my website (with very minor modifications of course.)</p>
+<p><a href="http://www.randytamayo.com/cf_index.html" rel="nofollow">http://www.randytamayo.com/cf_index.html</a></p>
+<p>Tested on Safari 3 (windows and mac), IE, Firefox and Camino.</p>
+
+		</li>
+
+	
+	
+		<li class="" id="comment-10528">
+			<cite>jenny</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-10528" title="">December 28th, 2007 at 10:37 am</a> </small>
+
+			<p>Hey Randy that's great!  How do I use the code?</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-10558">
+			<cite><a href='http://www.finnrudolph.de/' rel='external nofollow'>Finn</a></cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-10558" title="">December 29th, 2007 at 5:51 pm</a> </small>
+
+			<p>Hi,</p>
+<p>ImageFlow is now fully compatible with ALL Safari Versions!</p>
+<p><a href="http://194.95.111.244/~countzero/myCMS/index.php?c_id=1&amp;s_id=4&amp;ShowEntry=1198959607" rel="nofollow">http://194.95.111.244/~countzero/myCMS/index.php?c_id=1&amp;s_id=4&amp;ShowEntry=1198959607</a></p>
+<p>And I finished the english translation of the documentation: <a href="http://imageflowdocu.finnrudolph.de/" rel="nofollow">http://imageflowdocu.finnrudolph.de</a></p>
+<p>@ Randy: Wow, this is what I developed ImageFlow for ;D I Suggest, that you update to the new version, to make it fully browser compatible...</p>
+
+		</li>
+
+	
+	
+		<li class="" id="comment-10661">
+			<cite><a href='http://www.randytamayo.com/' rel='external nofollow'>RandyTamayo</a></cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-10661" title="">January 2nd, 2008 at 5:53 am</a> </small>
+
+			<p>Hi Finn,</p>
+<p>Thanks, I will definitely do that!!!</p>
+<p>Happy New Year to all!</p>
+<p> <img src='wp-includes/images/smilies/icon_biggrin.gif' alt=':D' class='wp-smiley' /><br />
+Randy</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-11166">
+			<cite><a href='http://www.jedi.be/blog/2008/01/20/links-for-2008-01-20/' rel='external nofollow'>JEDI &raquo; Blog Archive &raquo; links for 2008-01-20</a></cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-11166" title="">January 20th, 2008 at 5:28 am</a> </small>
+
+			<p>[...] Adventures in Software » Blog Archive » Cover flow in Javascript (tags: coverflow) [...]</p>
+
+		</li>
+
+	
+	
+		<li class="" id="comment-12288">
+			<cite><a href='indexeb91.html?p=207' rel='external nofollow'>Adventures in Software &raquo; Blog Archive &raquo; Composability and orthogonality in language design</a></cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-12288" title="">February 20th, 2008 at 12:12 am</a> </small>
+
+			<p>[...] by the way). But I&#8217;d like a solution that requires no plug-in. And having had success with cover flow, I thought I would give it a [...]</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-14007">
+			<cite>Steve</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-14007" title="">April 4th, 2008 at 12:05 pm</a> </small>
+
+			<p>Fantastic script - thankyou for sharing it.</p>
+<p>Is there any way to allow dragging of the actual images themselves, so the user can click and hold on an image that's off to the side, and drag it to the centre, or click and hold on the centre image and drag it to the side?<br />
+I find that users seem to expect this, and try doing that before finding the slider.</p>
+
+		</li>
+
+	
+	
+		<li class="" id="comment-20219">
+			<cite>Mammy</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-20219" title="">September 10th, 2008 at 5:11 am</a> </small>
+
+			<p>That's great.</p>
+<p>Thank you for sharing it!!!</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-20693">
+			<cite><a href='http://www.sinteniki.com/' rel='external nofollow'>fajar</a></cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-20693" title="">October 8th, 2008 at 6:26 pm</a> </small>
+
+			<p>great script.. i like itunes , so i like this script too... thanks..</p>
+
+		</li>
+
+	
+	
+		<li class="" id="comment-20718">
+			<cite><a href='http://www.kellton.com/' rel='external nofollow'>Sateesh</a></cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-20718" title="">October 10th, 2008 at 7:11 am</a> </small>
+
+			<p>This is really very, very useful and cool script. Everyone to whom I showed it loves it... </p>
+<p>I am trying to use it on my website, however, i would like to get the 4th image as default one in the middle with 3 on each side. I saw your previous reply to this suggesting adding an onload() event to the body where we refresh and use slideTo(). i faced two problems with this: 1. when i used it with the body tag, it just went on displaying the Loading Images part and never loaded. So, i used jQuery's document.ready function and put the refresh and slideTo calls inside jQuery. It seems to be working well in IE7 but does not work in Mozzila Firefox or Google's Chrome. I haven't checked it in IE 6. What happens in Firefox is that it stops in middle of the slide while loading and this leaves some space on the left hand side of the middle image making it look uneven. It looks fine in IE 7 though... any clues why this is happening?</p>
+<p>Once again for sharing this great script.... !</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-20719">
+			<cite><a href='http://www.kellton.com/' rel='external nofollow'>Sateesh</a></cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-20719" title="">October 10th, 2008 at 7:27 am</a> </small>
+
+			<p>Also, Finn, I have tried adding the code to the window.onload function inside imageflow.js file. i am still facing the same issue with lot of space left on left hand side.... thanks for any help you can offer... !</p>
+
+		</li>
+
+	
+	
+		<li class="" id="comment-20730">
+			<cite>Michael L Perry</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-20730" title="">October 10th, 2008 at 3:41 pm</a> </small>
+
+			<p>Hey, Sateesh. This isn't Finn's blog, but I hope he's watching and will respond.</p>
+<p>The easiest thing to do is just initialize current to 450 (3 * xstep). That should make the page initially display with the 4th image in the center. You won't need to add or modify any of the code.</p>
+<p>Hope this helps.</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-20748">
+			<cite><a href='http://www.kellton.com/' rel='external nofollow'>Sateesh</a></cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-20748" title="">October 11th, 2008 at 5:08 am</a> </small>
+
+			<p>Oops! I think I goofed up....</p>
+<p>Anyway, I'd like to thank you for sharing your wonderful script, Michael.... Are you saying that I directly set the current value to 450(3 * xstep) in the imageflow.js? I will try that...</p>
+
+		</li>
+
+	
+	
+		<li class="" id="comment-20772">
+			<cite><a href='http://www.clearimageonline.com/' rel='external nofollow'>Terry Riegel</a></cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-20772" title="">October 12th, 2008 at 7:20 am</a> </small>
+
+			<p>I just added this to my website with a few tweaks, its under Gallery. Is there a way to hide only the items for the category that is currently selected?</p>
+<p>Thanks</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-20776">
+			<cite>Michael L Perry</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-20776" title="">October 12th, 2008 at 9:42 am</a> </small>
+
+			<p>Do you mean you want to show only the current category items? If so, it's probably easier to just have separate pages for each category.</p>
+<p>If you want to do something more complex than that, you will have to add some code to the main loop in moveTo. One good technique is to add a category attribute to each image, and test that attribute inside of moveTo to add some sort of effect. For example, you could set the opacity of the image to 50% if it is not in the current category.</p>
+<p>Let us know what you end up doing.</p>
+
+		</li>
+
+	
+	
+		<li class="" id="comment-21117">
+			<cite><a href='http://finnrudolph.de/' rel='external nofollow'>Finn</a></cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-21117" title="">October 20th, 2008 at 5:26 pm</a> </small>
+
+			<p>Hi there,</p>
+<p>I just wanted to drop a note, that ImageFlow is now finally object-oriented. That means many(!) ImageFlow instances on one website are possible. Check the demo <a href="http://imageflow.finnrudolph.de/" rel="nofollow">http://imageflow.finnrudolph.de/</a> and the examples <a href="http://finnrudolph.de/ImageFlow/Examples" rel="nofollow">http://finnrudolph.de/ImageFlow/Examples</a></p>
+<p>enjoy! ;D</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-26368">
+			<cite><a href='http://www.pwhitrow.com/' rel='external nofollow'>Paul Whitrow</a></cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-26368" title="">April 6th, 2009 at 6:25 pm</a> </small>
+
+			<p>Hey Michael,</p>
+<p>Just wanted to point you toward this and say thanks.</p>
+<p><a href="http://www.pwhitrow.com/blog/entries/2009/04/06/xflow-a-javascript-and-php-based-coverflow-style-gallery/" rel="nofollow">http://www.pwhitrow.com/blog/entries/2009/04/06/xflow-a-javascript-and-php-based-coverflow-style-gallery/</a></p>
+
+		</li>
+
+	
+	
+		<li class="" id="comment-26802">
+			<cite>Toshifumi　Sugawara</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-26802" title="">April 15th, 2009 at 4:20 am</a> </small>
+
+			<p>thanks</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-26925">
+			<cite><a href='http://www.sanatorypiket.ru/article_81.php' rel='external nofollow'>Bartolomea</a></cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-26925" title="">April 16th, 2009 at 8:01 am</a> </small>
+
+			<p>Nice work! I’ll have to do a cross post on this one <img src='wp-includes/images/smilies/icon_wink.gif' alt=';)' class='wp-smiley' /></p>
+
+		</li>
+
+	
+	
+		<li class="" id="comment-28725">
+			<cite><a href='http://www.cool-sms.info/' rel='external nofollow'>ALEXREM</a></cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-28725" title="">April 30th, 2009 at 8:10 pm</a> </small>
+
+			<p>Wonderfull…</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-30526">
+			<cite><a href='http://www.programlar1.com/' rel='external nofollow'>programlar</a></cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-30526" title="">May 25th, 2009 at 7:56 pm</a> </small>
+
+			<p>Thanks great post</p>
+
+		</li>
+
+	
+	
+		<li class="" id="comment-31105">
+			<cite><a href='http://www.scrapbooksoftware.info/' rel='external nofollow'>Scrapbook Software</a></cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-31105" title="">June 5th, 2009 at 7:02 am</a> </small>
+
+			<p>I am basically a cinematographer. This post gave me more ideas.</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-31424">
+			<cite>Jason</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-31424" title="">June 11th, 2009 at 10:46 pm</a> </small>
+
+			<p>How can i add this to a .aspx page in my webpage??? is ther a place where i can view all the source</p>
+
+		</li>
+
+	
+	
+		<li class="" id="comment-50051">
+			<cite><a href='http://n/a' rel='external nofollow'>Simon</a></cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-50051" title="">October 2nd, 2009 at 11:25 am</a> </small>
+
+			<p>Fantastic script, however.... I was wondering if it's at all possible to have links from each image to a different address?<br />
+This would be wonderfull, and I would be WILLING TO PAY!!!!</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-51349">
+			<cite>wolf</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-51349" title="">October 12th, 2009 at 5:54 pm</a> </small>
+
+			<p>script don't work with cross domain images...i can't make reflection</p>
+
+		</li>
+
+	
+	
+		<li class="" id="comment-58241">
+			<cite>boba</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-58241" title="">December 16th, 2009 at 9:54 am</a> </small>
+
+			<p>Hi,<br />
+Here is another CoverFlow effect. Easy to install and modify. And you can add a link to the image<br />
+<a href="http://www.flash-gallery.com/photoflow-flash-gallery/" rel="nofollow">http://www.flash-gallery.com/photoflow-flash-gallery/</a></p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-59457">
+			<cite><a href='http://www.linkslondonhut.com/' rel='external nofollow'>charms</a></cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-59457" title="">December 29th, 2009 at 1:47 am</a> </small>
+
+			<p>can i get access for this?</p>
+
+		</li>
+
+	
+	
+		<li class="" id="comment-66566">
+			<cite><a href='http://www.echristianlouboutincom.com/' rel='external nofollow'>christian louboutin</a></cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-66566" title="">March 9th, 2010 at 3:59 am</a> </small>
+
+			<p>hi, where can i find this?</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-66668">
+			<cite>Michael L Perry</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-66668" title="">March 9th, 2010 at 10:39 pm</a> </small>
+
+			<p><a href="http://imageflow.finnrudolph.de/" rel="nofollow">http://imageflow.finnrudolph.de/</a></p>
+
+		</li>
+
+	
+	
+		<li class="" id="comment-69244">
+			<cite><a href='http://satellitedirectreviewed.com/' rel='external nofollow'>Satellite Direct</a></cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-69244" title="">April 26th, 2010 at 1:35 am</a> </small>
+
+			<p>Hello..please point out...where can i find this.....</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-75602">
+			<cite>Mano</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-75602" title="">July 19th, 2010 at 8:01 am</a> </small>
+
+			<p>Hi Michael,<br />
+     Really your coverflow effect is wonderful and it helps me a lot.. Thanks for it..<br />
+But i need to start from 3 image at first, i had seen your code as current=300(2*xstep), but it doesnt works..<br />
+Help me.. Thanks in advance.. Hope i will have response from you..</p>
+
+		</li>
+
+	
+	
+		<li class="" id="comment-76433">
+			<cite><a href='http://www.mundopython.org/ajax-image-gallery-powered-by-slideflow-like-cover-flow/' rel='external nofollow'>AJAX Image Gallery powered by Slideflow (like Cover Flow) | Mundo Python</a></cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-76433" title="">July 25th, 2010 at 9:48 pm</a> </small>
+
+			<p>[...] Basierend auf Code von Michael L Perry [...]</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-80478">
+			<cite><a href='http://www.jerseysusa.com/' rel='external nofollow'>cheap jerseys</a></cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-80478" title="">August 23rd, 2010 at 10:18 am</a> </small>
+
+			<p>Perhaps this is one of the most interesting blogs that I have ever seen. Interesting article, Funny comment. Keep it up!</p>
+
+		</li>
+
+	
+	
+		<li class="" id="comment-80546">
+			<cite><a href='http://www.gucciworlds.com/gucci-mens-shoes-c-1.html' rel='external nofollow'>christian louboutin sale</a></cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-80546" title="">August 24th, 2010 at 4:10 am</a> </small>
+
+			<p>Choo lives in London. <a href="http://www.shopcaller.com/jimmy-choo-c-6.html" rel="nofollow">jimmy choo</a> He is currently involved in a project to set up a shoemaking institute in Malaysia, where his iconic status is often evoked to inspire budding shoemakers and fashion designers. His company Jimmy Choo Ltd. produces some of the most expensive high-end shoes.Our designer replica handbags can wear well with any accessory on purpose.<a href="http://www.shopcaller.com/jimmy-choo-c-6.html" rel="nofollow">jimmy choo shoes</a> Meticulous pieces on the replica handbags absolutely shock your eyes.Jimmy Choo Keenan Patent Leather Sandals  Black patent leather strappy sandals. Peep toe silhouette. Ankle closure with told toned side buckle. Leather upper, in-sole and sole.</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-82342">
+			<cite><a href='http://www.pandorasell.com/' rel='external nofollow'>pandora jewelry</a></cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-82342" title="">September 3rd, 2010 at 5:11 am</a> </small>
+
+			<p>Really your coverflow effect is wonderful and it helps me a lot.. Thanks for it..<br />
+But i need to start from 3 image at first, i had seen your code as current=300(2*xstep), but it doesnt works..</p>
+
+		</li>
+
+	
+	
+		<li class="" id="comment-95243">
+			<cite>Mojamel</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-95243" title="">November 9th, 2010 at 7:09 am</a> </small>
+
+			<p>Thanks for the incredible work. I am using it in my web site but there is one problem. When I run in IE 8, the images do not slide smoothly. They flicker when moving. With other browsers it works perfectly. Has anyone faced this problem. Please let me know what should be done. Thanks.</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-96100">
+			<cite><a href='http://www.monclerstoreonsale.com/' rel='external nofollow'>moncler</a></cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-96100" title="">November 12th, 2010 at 10:41 pm</a> </small>
+
+			<p>But i need to start from 3 image at first, i had seen your code as current=300(2*xstep), but it doesnt works..</p>
+
+		</li>
+
+	
+	
+		<li class="" id="comment-96241">
+			<cite><a href='http://www.techjunoon.com/blog/change-the-start-button-text-in-windows-xp/' rel='external nofollow'>Marian Emmz</a></cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-96241" title="">November 13th, 2010 at 2:03 pm</a> </small>
+
+			<p>Totally cool.... but it is not working properly for me.. <img src='wp-includes/images/smilies/icon_sad.gif' alt=':(' class='wp-smiley' /> some space issues...</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-98387">
+			<cite><a href='http://www.bored.com/' rel='external nofollow'>Free Online Games</a></cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-98387" title="">November 23rd, 2010 at 8:56 am</a> </small>
+
+			<p>Great job !I really would like to understand how it works. I've passed 2 days on it but I can't figure out.Would it be possible for you (or someone that did understand how it works) to email me some detailed explanations ? Thanks in advance, and again, congrats for the work !</p>
+
+		</li>
+
+	
+	
+		<li class="" id="comment-99216">
+			<cite><a href='http://coulisse.luvdasun.com/' rel='external nofollow'>Elmer Bulthuis</a></cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-99216" title="">November 27th, 2010 at 4:15 pm</a> </small>
+
+			<p>check this out:<br />
+<a href="http://coulisse.luvdasun.com/" rel="nofollow">http://coulisse.luvdasun.com/</a></p>
+<p>it's not finished yet, but looks very promising i think</p>
+
+		</li>
+
+	
+	
+	</ol>
+
+ 
+
+
+	
+	</div>
+		</td>
+	</tr>
+</table>
+
+<hr />
+<div id="footer">
+<!-- If you'd like to support WordPress, having the "powered by" link someone on your blog is the best way, it's our only promotion or advertising. -->
+	<p>
+		Adventures in Software is proudly powered by 
+		<a href="http://wordpress.org/">WordPress</a>
+		<br /><a href="indexd784.html?feed=rss2">Entries (RSS)</a>
+		and <a href="indexa6da.html?feed=comments-rss2">Comments (RSS)</a>.
+		<!-- 21 queries. 0.447 seconds. -->
+	</p>
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-389401-3");
+pageTracker._trackPageview();
+} catch(err) {}</script></div>
+
+<!-- Gorgeous design by Michael Heilemann - http://binarybonsai.com/kubrick/ -->
+
+		<div id="sk2-footer" style="color:#FFF; background-color:#444; padding: 3px 2px 3px 2px; border-top: #888 solid 1px;">This blog is protected by <a href="http://unknowngenius.com/blog/" title="Dave">dr Dave</a>'s <strong><a href="http://unknowngenius.com/blog/wordpress/spam-karma/" title="SK2">Spam Karma 2</a></strong>: <strong>274531</strong>  Spams eaten and counting...</div><script type="text/javascript" src="replies.js"></script>
+<script type="text/javascript" src="blogger.js"></script>
+<script type="text/javascript" src="http://twitter.com/statuses/user_timeline/michaellperry.json?callback=twitterCallback2&amp;count=5"></script>
+<script type="text/javascript" src="http://search.twitter.com/search.json?q=@michaellperry&amp;callback=twitterCallbackReplies&amp;rpp=5"></script>
+</body>
+
+<!-- Mirrored from adventuresinsoftware.com/blog/?p=104 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 Jan 2017 13:01:39 GMT -->
+</html>

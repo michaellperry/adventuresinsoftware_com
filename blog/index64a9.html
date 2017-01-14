@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?><!-- generator="wordpress/2.3.3" -->
+<rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	>
+<channel>
+	<title>Comments on: AutoMapper misses the point</title>
+	<link>http://adventuresinsoftware.com/blog/?p=337</link>
+	<description>Lessons learned on the road to quality computing</description>
+	<pubDate>Fri, 13 Jan 2017 12:57:08 +0000</pubDate>
+	<generator>http://wordpress.org/?v=2.3.3</generator>
+		<item>
+		<title>By: Drew "Serenarules" Jones</title>
+		<link>http://adventuresinsoftware.com/blog/?p=337#comment-134676</link>
+		<dc:creator>Drew "Serenarules" Jones</dc:creator>
+		<pubDate>Thu, 24 Mar 2011 02:53:46 +0000</pubDate>
+		<guid>http://adventuresinsoftware.com/blog/?p=337#comment-134676</guid>
+		<description>Here's a quick little class that can be used to instantly make Automapper able to map against private fields. Remember, it's extensible using the ValueResolver base class? Ok, here the code and a sample on how to use it.
+
+http://fluentengine.com/files/PrivateFieldResolver.cs.txt
+
+Mapper.CreateMap()
+                .ForMember(x =&#62; x.Id, opt =&#62; opt.ResolveUsing(new PrivateFieldResolver("_id")))
+                .ForMember(x =&#62; x.Name, opt =&#62; opt.ResolveUsing(new PrivateFieldResolver("_name")))
+                .ForMember(x =&#62; x.Orders, opt =&#62; opt.ResolveUsing(new PrivateFieldResolver("_orders")));
+
+Mapper.CreateMap()
+                .ForMember(x =&#62; x.Id, opt =&#62; opt.ResolveUsing(new PrivateFieldResolver("_id")))
+                .ForMember(x =&#62; x.Total, opt =&#62; opt.ResolveUsing(new PrivateFieldResolver("_total")));
+
+Just an example, but in this scenario all fields are private fields in the entities. It works. =)</description>
+		<content:encoded><![CDATA[<p>Here's a quick little class that can be used to instantly make Automapper able to map against private fields. Remember, it's extensible using the ValueResolver base class? Ok, here the code and a sample on how to use it.</p>
+<p><a href="http://fluentengine.com/files/PrivateFieldResolver.cs.txt" rel="nofollow">http://fluentengine.com/files/PrivateFieldResolver.cs.txt</a></p>
+<p>Mapper.CreateMap()<br />
+                .ForMember(x =&gt; x.Id, opt =&gt; opt.ResolveUsing(new PrivateFieldResolver("_id")))<br />
+                .ForMember(x =&gt; x.Name, opt =&gt; opt.ResolveUsing(new PrivateFieldResolver("_name")))<br />
+                .ForMember(x =&gt; x.Orders, opt =&gt; opt.ResolveUsing(new PrivateFieldResolver("_orders")));</p>
+<p>Mapper.CreateMap()<br />
+                .ForMember(x =&gt; x.Id, opt =&gt; opt.ResolveUsing(new PrivateFieldResolver("_id")))<br />
+                .ForMember(x =&gt; x.Total, opt =&gt; opt.ResolveUsing(new PrivateFieldResolver("_total")));</p>
+<p>Just an example, but in this scenario all fields are private fields in the entities. It works. =)</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Brett Powell</title>
+		<link>http://adventuresinsoftware.com/blog/?p=337#comment-69983</link>
+		<dc:creator>Brett Powell</dc:creator>
+		<pubDate>Fri, 07 May 2010 14:39:29 +0000</pubDate>
+		<guid>http://adventuresinsoftware.com/blog/?p=337#comment-69983</guid>
+		<description>@Jimmy
+
+I must admit I am also trying to figure out why I need AutoMapper. Looks like lovely code but I have tended to land up with the equivalent of  Michaels ViewModel i.e. 
+
+
+public class OrderViewModel
+{
+    private Order _order;
+
+    public OrderViewModel(Order order)
+    {
+        _order = order;
+    }
+
+    public string CustomerFullName
+    {
+        get { return _order.Customer.FullName; }
+    }
+}
+
+For testing I use a Mock Order. Using Habanero the Domain Objects are Mockable so this is OK. using other frameworks might need IOrder and then mock this.
+either way this seems to work swimmingly.
+
+What I would often do for testability (and to avoid falling into the pit of the Law of Demeter) is to add a method onto my domain object
+
+public class Order
+{
+    public string CustomerFullName
+    {
+        get { return _this.Customer.FullName; }
+    }
+}
+
+My view model will then change to be
+public class OrderViewModel
+{
+    private Order _order;
+
+    public OrderViewModel(Order order)
+    {
+        _order = order;
+    }
+
+    public string CustomerFullName
+    {
+        get { return _order.CustomerFullName; }
+    }
+}
+If anyone has any comments on this I would love to here them.
+
+Brett</description>
+		<content:encoded><![CDATA[<p>@Jimmy</p>
+<p>I must admit I am also trying to figure out why I need AutoMapper. Looks like lovely code but I have tended to land up with the equivalent of  Michaels ViewModel i.e. </p>
+<p>public class OrderViewModel<br />
+{<br />
+    private Order _order;</p>
+<p>    public OrderViewModel(Order order)<br />
+    {<br />
+        _order = order;<br />
+    }</p>
+<p>    public string CustomerFullName<br />
+    {<br />
+        get { return _order.Customer.FullName; }<br />
+    }<br />
+}</p>
+<p>For testing I use a Mock Order. Using Habanero the Domain Objects are Mockable so this is OK. using other frameworks might need IOrder and then mock this.<br />
+either way this seems to work swimmingly.</p>
+<p>What I would often do for testability (and to avoid falling into the pit of the Law of Demeter) is to add a method onto my domain object</p>
+<p>public class Order<br />
+{<br />
+    public string CustomerFullName<br />
+    {<br />
+        get { return _this.Customer.FullName; }<br />
+    }<br />
+}</p>
+<p>My view model will then change to be<br />
+public class OrderViewModel<br />
+{<br />
+    private Order _order;</p>
+<p>    public OrderViewModel(Order order)<br />
+    {<br />
+        _order = order;<br />
+    }</p>
+<p>    public string CustomerFullName<br />
+    {<br />
+        get { return _order.CustomerFullName; }<br />
+    }<br />
+}<br />
+If anyone has any comments on this I would love to here them.</p>
+<p>Brett</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Michael L Perry</title>
+		<link>http://adventuresinsoftware.com/blog/?p=337#comment-27886</link>
+		<dc:creator>Michael L Perry</dc:creator>
+		<pubDate>Fri, 24 Apr 2009 00:38:56 +0000</pubDate>
+		<guid>http://adventuresinsoftware.com/blog/?p=337#comment-27886</guid>
+		<description>Thanks for the response.
+
+I understand the desire to keep layers separate. It promotes testing, as you say, as well as other good things like dependency injection.
+
+Still, I think that it's even more important to limit the number of degrees of freedom in a system. If the view model has a copy of the domain model, rather than a reference to it, then it can change independently. Extra code needs to be written to map those changes back to the domain model. That extra code needs to be tested.
+
+Far from leaking UI behavior down to the model, I find that this pattern pulls domain behavior up to the view. The view is supposed to be a window into the domain: it should respond in the way that the domain responds. For example, when the view sets the spouse field of Bob to Alice, it should also update the spouse of Alice to Bob. Unless you want to code all of your view components to fire events at each other, the only way to do this is for both components to talk to the same domain model.
+
+Since the view model depends upon the domain model for this behavior, it cannot be tested in isolation. Fair enough. But it still can be tested. Create a view model around Bob and another around Alice, then see that interacting with one updates the other.
+
+The goal of testability is a worthy one. But I believe that the limiting the things that need to be tested is even more important.</description>
+		<content:encoded><![CDATA[<p>Thanks for the response.</p>
+<p>I understand the desire to keep layers separate. It promotes testing, as you say, as well as other good things like dependency injection.</p>
+<p>Still, I think that it's even more important to limit the number of degrees of freedom in a system. If the view model has a copy of the domain model, rather than a reference to it, then it can change independently. Extra code needs to be written to map those changes back to the domain model. That extra code needs to be tested.</p>
+<p>Far from leaking UI behavior down to the model, I find that this pattern pulls domain behavior up to the view. The view is supposed to be a window into the domain: it should respond in the way that the domain responds. For example, when the view sets the spouse field of Bob to Alice, it should also update the spouse of Alice to Bob. Unless you want to code all of your view components to fire events at each other, the only way to do this is for both components to talk to the same domain model.</p>
+<p>Since the view model depends upon the domain model for this behavior, it cannot be tested in isolation. Fair enough. But it still can be tested. Create a view model around Bob and another around Alice, then see that interacting with one updates the other.</p>
+<p>The goal of testability is a worthy one. But I believe that the limiting the things that need to be tested is even more important.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Jimmy Bogard</title>
+		<link>http://adventuresinsoftware.com/blog/?p=337#comment-27650</link>
+		<dc:creator>Jimmy Bogard</dc:creator>
+		<pubDate>Wed, 22 Apr 2009 02:35:19 +0000</pubDate>
+		<guid>http://adventuresinsoftware.com/blog/?p=337#comment-27650</guid>
+		<description>This is something we went back and forth on our team quite a bit (for the domain -&#62; view model mapping anyway).  We went with the approach you mention for quite a long time, creating immutable component-like objects that contained everything they needed to work.  The tipping point was us the overhead of testing, where we had arguments against view models in favor of leaking the UI down to the domain.  It's a bit of a compromise, I admit, but I enjoy the freedom the ease of testing + a completely separated view/edit model gives us.
+
+Immutability is something I'm definitely looking at, as we're also using mapping to do things like edit model (posted form) -&#62; domain message.
+
+Interestingly enough, with proxies, it would be possible to make these DTOs automatically "attached" to their source.  But that's just crazy talk.</description>
+		<content:encoded><![CDATA[<p>This is something we went back and forth on our team quite a bit (for the domain -&gt; view model mapping anyway).  We went with the approach you mention for quite a long time, creating immutable component-like objects that contained everything they needed to work.  The tipping point was us the overhead of testing, where we had arguments against view models in favor of leaking the UI down to the domain.  It's a bit of a compromise, I admit, but I enjoy the freedom the ease of testing + a completely separated view/edit model gives us.</p>
+<p>Immutability is something I'm definitely looking at, as we're also using mapping to do things like edit model (posted form) -&gt; domain message.</p>
+<p>Interestingly enough, with proxies, it would be possible to make these DTOs automatically "attached" to their source.  But that's just crazy talk.</p>
+]]></content:encoded>
+	</item>
+</channel>
+</rss>

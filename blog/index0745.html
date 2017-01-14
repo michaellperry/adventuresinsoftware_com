@@ -1,0 +1,631 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+
+
+<!-- Mirrored from adventuresinsoftware.com/blog/?p=532 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 Jan 2017 12:55:37 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>Adventures in Software  &raquo; Blog Archive   &raquo; Forms Authentication and the Active Directory membership provider</title>
+
+<meta name="generator" content="WordPress 2.3.3" /> <!-- leave this for stats -->
+
+<link rel="stylesheet" href="wp-content/themes/ais2/style.css" type="text/css" media="screen" />
+<link rel="alternate" type="application/rss+xml" title="Adventures in Software RSS Feed" href="indexd784.html?feed=rss2" />
+<link rel="pingback" href="xmlrpc.html" />
+    <script type="text/javascript">
+        function onSilverlightError(sender, args) {
+            var appSource = "";
+            if (sender != null && sender != 0) {
+              appSource = sender.getHost().Source;
+            }
+            
+            var errorType = args.ErrorType;
+            var iErrorCode = args.ErrorCode;
+
+            if (errorType == "ImageError" || errorType == "MediaError") {
+              return;
+            }
+
+            var errMsg = "Unhandled Error in Silverlight Application " +  appSource + "\n" ;
+
+            errMsg += "Code: "+ iErrorCode + "    \n";
+            errMsg += "Category: " + errorType + "       \n";
+            errMsg += "Message: " + args.ErrorMessage + "     \n";
+
+            if (errorType == "ParserError") {
+                errMsg += "File: " + args.xamlFile + "     \n";
+                errMsg += "Line: " + args.lineNumber + "     \n";
+                errMsg += "Position: " + args.charPosition + "     \n";
+            }
+            else if (errorType == "RuntimeError") {           
+                if (args.lineNumber != 0) {
+                    errMsg += "Line: " + args.lineNumber + "     \n";
+                    errMsg += "Position: " +  args.charPosition + "     \n";
+                }
+                errMsg += "MethodName: " + args.methodName + "     \n";
+            }
+
+            throw new Error(errMsg);
+        }
+    </script>
+
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc0db0.php?rsd" />
+ <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="wp-includes/wlwmanifest.xml" /> <style type='text/css'>
+<!--#header { background: url('wp-content/themes/ais2/images/header-imgae03.html?upper=A7A73F&amp;lower=77773F') no-repeat bottom center; }
+--></style>
+</head>
+<body>
+<div id="page">
+
+<div class="aisTopBar">
+	<form method="get" id="searchform" action="http://adventuresinsoftware.com/blog/">
+<div>
+<a href="indexd784.html?feed=rss2"><img src="../images/feed-icon-28x28.png" border="0"></a>
+<input type="text" value="" name="s" id="s" />
+<input type="submit" id="searchsubmit" value="Search" />
+</div>
+</form>
+</div>
+
+<div class="aisHeaderImageRight">
+	<div class="aisHeaderImage">
+	<div class="aisHeaderCornerRight">
+	<div class="aisHeaderCornerLeft">
+	<div class="aisImageBar">
+	<div class="aisSubSites">
+		<a href="index.html" class="aisSubSiteLink"><span class="aisSiteTabRight"><span class="aisSiteTabLeft"><span class="aisSiteTab">
+			home</span></span></span></a>
+		<a class="aisSubSiteLink" href="indexb60a.html?cat=27"><span class="aisSiteTabRight"><span class="aisSiteTabLeft"><span class="aisSiteTab">
+			historic modeling</span></span></span></a>
+		<a class="aisSubSiteLink" href="indexa88f.html?cat=36"><span class="aisSiteTabRight"><span class="aisSiteTabLeft"><span class="aisSiteTab">
+			update controls</span></span></span></a>
+		<a href="index2d79.html?cat=26" class="aisSubSiteLink"><span class="aisSiteTabRight"><span class="aisSiteTabLeft"><span class="aisSiteTab">
+			degrees of freedom</span></span></span></a>
+		<a class="aisSubSiteLink" href="indexba53.html?page_id=2"><span class="aisSiteTabRight"><span class="aisSiteTabLeft"><span class="aisSiteTab">
+			about us</span></span></span></a>
+
+	</div>
+	</div>
+	</div>
+	</div>
+	</div>
+</div>
+
+<table style="width: 100%" cellspacing="0" cellpadding="0">
+	<tr valign="top">
+		<td width="210px">
+<div id="sidebar">
+<div class="aisLeftColumnFill">
+<div class="aisLeftColumnBottom">
+<div class="aisLeftColumnTop">
+<div id="twitter_div" class="aisLeftNav">
+<h2 class="sidebar-title">Twitter Updates</h2>
+<ul id="twitter_update_list"></ul>
+<a href="http://twitter.com/michaellperry" id="follow">Follow me</a>
+</div>
+<div id="twitter_reply_div" class="aisLeftNav">
+<h2 class="sidebar-title">Twitter Replies</h2>
+<ul id="twitter_reply_list"></ul>
+</div>
+
+<div class="aisLeftNav">
+<a href='http://ineta.org/Speakers/SearchCommunitySpeakers.aspx?SpeakerId=c5110e21-9243-461b-a464-a6548524e885'><img alt='INETA Community Speakers Program' border='0' src='../../www.ineta.org/images/OfficialLogos/InetaCommunitySpeakersRequestMe.html' /></a>
+</div>
+
+<div class="aisLeftNav">
+	<li class="pagenav"><h2>Pages</h2><ul><li class="page_item page-item-2"><a href="indexba53.html?page_id=2" title="About Us">About Us</a></li>
+<li class="page_item page-item-210"><a href="index6ae3.html?page_id=210" title="Templates">Templates</a></li>
+</ul></li></div>
+
+<div class="aisLeftNav">
+<h2>Archives</h2>
+<ul>
+	<li><a href='indexb4d5.html?m=201110' title='October 2011'>October 2011</a></li>
+	<li><a href='indexc61a.html?m=201106' title='June 2011'>June 2011</a></li>
+	<li><a href='indexa80d.html?m=201105' title='May 2011'>May 2011</a></li>
+	<li><a href='index512b.html?m=201104' title='April 2011'>April 2011</a></li>
+	<li><a href='index08fb.html?m=201103' title='March 2011'>March 2011</a></li>
+	<li><a href='index52f4.html?m=201102' title='February 2011'>February 2011</a></li>
+	<li><a href='index74f1.html?m=201101' title='January 2011'>January 2011</a></li>
+	<li><a href='index8956.html?m=201012' title='December 2010'>December 2010</a></li>
+	<li><a href='indexa1aa.html?m=201011' title='November 2010'>November 2010</a></li>
+	<li><a href='indexe3d5.html?m=201010' title='October 2010'>October 2010</a></li>
+	<li><a href='index9ab9.html?m=201009' title='September 2010'>September 2010</a></li>
+	<li><a href='index1ff0.html?m=201008' title='August 2010'>August 2010</a></li>
+	<li><a href='index9f11.html?m=201007' title='July 2010'>July 2010</a></li>
+	<li><a href='index31f0.html?m=201006' title='June 2010'>June 2010</a></li>
+	<li><a href='indexd189.html?m=201005' title='May 2010'>May 2010</a></li>
+	<li><a href='indexb5c0.html?m=201004' title='April 2010'>April 2010</a></li>
+	<li><a href='indexf258.html?m=201003' title='March 2010'>March 2010</a></li>
+	<li><a href='index6e30.html?m=201002' title='February 2010'>February 2010</a></li>
+	<li><a href='index6b19.html?m=201001' title='January 2010'>January 2010</a></li>
+	<li><a href='index5c0a.html?m=200912' title='December 2009'>December 2009</a></li>
+	<li><a href='index8f62.html?m=200911' title='November 2009'>November 2009</a></li>
+	<li><a href='index451d.html?m=200910' title='October 2009'>October 2009</a></li>
+	<li><a href='index3e04.html?m=200909' title='September 2009'>September 2009</a></li>
+	<li><a href='index425a.html?m=200908' title='August 2009'>August 2009</a></li>
+	<li><a href='index9907.html?m=200907' title='July 2009'>July 2009</a></li>
+	<li><a href='index3104.html?m=200906' title='June 2009'>June 2009</a></li>
+	<li><a href='indexc36d.html?m=200905' title='May 2009'>May 2009</a></li>
+	<li><a href='index17e8.html?m=200904' title='April 2009'>April 2009</a></li>
+	<li><a href='index10a5.html?m=200903' title='March 2009'>March 2009</a></li>
+	<li><a href='index8988.html?m=200902' title='February 2009'>February 2009</a></li>
+	<li><a href='index1419.html?m=200901' title='January 2009'>January 2009</a></li>
+	<li><a href='index7866.html?m=200812' title='December 2008'>December 2008</a></li>
+	<li><a href='index55f6.html?m=200811' title='November 2008'>November 2008</a></li>
+	<li><a href='indexa7bc.html?m=200810' title='October 2008'>October 2008</a></li>
+	<li><a href='indexe77c.html?m=200809' title='September 2008'>September 2008</a></li>
+	<li><a href='indexcffc.html?m=200808' title='August 2008'>August 2008</a></li>
+	<li><a href='index0e62.html?m=200807' title='July 2008'>July 2008</a></li>
+	<li><a href='indexfda7.html?m=200806' title='June 2008'>June 2008</a></li>
+	<li><a href='index7d64.html?m=200805' title='May 2008'>May 2008</a></li>
+	<li><a href='index94dd.html?m=200804' title='April 2008'>April 2008</a></li>
+	<li><a href='index9631.html?m=200803' title='March 2008'>March 2008</a></li>
+	<li><a href='indexdd52.html?m=200802' title='February 2008'>February 2008</a></li>
+	<li><a href='index21ee.html?m=200801' title='January 2008'>January 2008</a></li>
+	<li><a href='index363c.html?m=200712' title='December 2007'>December 2007</a></li>
+	<li><a href='index7493.html?m=200711' title='November 2007'>November 2007</a></li>
+	<li><a href='index93a7.html?m=200710' title='October 2007'>October 2007</a></li>
+	<li><a href='index4ca8.html?m=200709' title='September 2007'>September 2007</a></li>
+	<li><a href='index6124.html?m=200708' title='August 2007'>August 2007</a></li>
+	<li><a href='index6013.html?m=200707' title='July 2007'>July 2007</a></li>
+	<li><a href='index2ab6.html?m=200706' title='June 2007'>June 2007</a></li>
+	<li><a href='index44f0.html?m=200705' title='May 2007'>May 2007</a></li>
+	<li><a href='indexf0b4.html?m=200704' title='April 2007'>April 2007</a></li>
+	<li><a href='index481d.html?m=200703' title='March 2007'>March 2007</a></li>
+	<li><a href='indexcbea.html?m=200702' title='February 2007'>February 2007</a></li>
+	<li><a href='index9cdc.html?m=200701' title='January 2007'>January 2007</a></li>
+	<li><a href='index3ea4.html?m=200612' title='December 2006'>December 2006</a></li>
+	<li><a href='index67ca.html?m=200611' title='November 2006'>November 2006</a></li>
+	<li><a href='indexff49.html?m=200610' title='October 2006'>October 2006</a></li>
+	<li><a href='index611c.html?m=200609' title='September 2006'>September 2006</a></li>
+	<li><a href='index9a21.html?m=200608' title='August 2006'>August 2006</a></li>
+	<li><a href='index3ee9.html?m=200607' title='July 2006'>July 2006</a></li>
+	<li><a href='indexe13a.html?m=200606' title='June 2006'>June 2006</a></li>
+</ul>
+</div>
+
+<div class="aisLeftNav">
+	</div>
+
+<div class="aisLeftNav">
+<h2>Books</h2>
+<iframe src="http://rcm.amazon.com/e/cm?t=adventures0d2-20&amp;o=1&amp;p=8&amp;l=as1&amp;asins=0764526413&amp;fc1=000000&amp;IS2=1&amp;lt1=_blank&amp;lc1=0000ff&amp;bc1=000000&amp;bg1=ffffff&amp;f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" name="I5" id="I5"></iframe>
+<br/>
+<iframe src="http://rcm.amazon.com/e/cm?t=adventures0d2-20&amp;o=1&amp;p=8&amp;l=as1&amp;asins=0201633612&amp;fc1=000000&amp;IS2=1&amp;lt1=_blank&amp;lc1=0000ff&amp;bc1=000000&amp;bg1=ffffff&amp;f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" name="I6" id="I6"></iframe>
+<br/>
+<iframe src="http://rcm.amazon.com/e/cm?t=adventures0d2-20&amp;o=1&amp;p=8&amp;l=as1&amp;asins=0136291554&amp;fc1=000000&amp;IS2=1&amp;lt1=_blank&amp;lc1=0000ff&amp;bc1=000000&amp;bg1=ffffff&amp;f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" name="I7" id="I7"></iframe>
+<br/>
+<iframe src="http://rcm.amazon.com/e/cm?t=adventures0d2-20&amp;o=1&amp;p=8&amp;l=as1&amp;asins=1888009195&amp;fc1=000000&amp;IS2=1&amp;lt1=_blank&amp;lc1=0000ff&amp;bc1=000000&amp;bg1=ffffff&amp;f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" name="I8" id="I8"></iframe>
+</div>
+<div class="aisLeftNav">
+<h2>Meta</h2>
+<ul>
+		<li><a href="wp-login.html">Login</a></li>
+	<li><a href="http://validator.w3.org/check/referer" title="This page validates as XHTML 1.0 Transitional">Valid <abbr title="eXtensible HyperText Markup Language">XHTML</abbr></a></li>
+	<li><a href="http://gmpg.org/xfn/"><abbr title="XHTML Friends Network">XFN</abbr></a></li>
+	<li><a href="http://wordpress.org/" title="Powered by WordPress, state-of-the-art semantic personal publishing platform.">WordPress</a></li>
+	</ul>
+</div>
+<div class="aisLeftContent">
+<h2>Community</h2>
+<ul>
+	<script type="text/javascript" src="../../localhost/embed/92q2bbma.js"></script>
+</ul>
+</div>
+
+</div></div></div>
+</div>		</td>
+		<td>
+
+	<div id="content" class="widecolumn">
+
+	
+		<div class="navigation">
+			<div class="alignleft">&laquo; <a href="index7398.html?p=531">Application reports in SSRS</a></div>
+			<div class="alignright"><a href="indexfded.html?p=539">Forward network credentials to Report Server</a> &raquo;</div>
+		</div>
+		<br/>
+
+		<div class="post" id="post-532">
+			<h1>Forms Authentication and the Active Directory membership provider</h1>
+
+			<div class="entry">
+				<p>We have reports published to SQL Server Reporting Services, and we want users to access those reports from a web application. We could give them direct access to Report Manager, but we choose not to. The Report Manager UI displays concepts in the reporting domain, not concepts in our problem domain (healthcare). We want to give the users a simpler, branded experience, while still giving them access to reports created by a business administrator, not a developer.</p>
+<p>SSRS uses Active Directory for authentication. While it is theoretically possible to change the authentication provider, this is exceedingly difficult. In prior releases, SSRS ran both the Report Manager and the Web Service in IIS, which lets you to choose to allow anonymous access. As of SQL Server 2008, SSRS hosts these services itself. It does not expose the anonymous access option. So even if you change the authentication provider for the reports, you must first get past the web server security. The net effect is that your users need to be in Active Directory.</p>
+<p>Fortunately for us, we use Active Directory for authentication. We just don’t use Windows Authentication for the web application. That makes this design feasible.</p>
+<p><strong>Use Forms Authentication</strong>     <br />When you create a new ASP .NET web application, it is initially configured to use Windows Authentication. This allows a user within the domain to use their credentials to access the application without re-authenticating. Since they are logged in to Windows, those credentials get passed through to the app.</p>
+<p>In our case, however, our users are not logged in to our domain. They access the application over the Internet. They may not even be running Windows. So we have to use Forms Authentication.</p>
+<p>Even though our users aren’t on our domain, we still use Active Directory as an identity store. Fortunately, it’s possible to <a href="http://msdn.microsoft.com/en-us/library/ff650308.aspx">use Forms Authentication with Active Directory</a>.</p>
+<p>Create a new ASP.NET Web Application project. This can also be done with MVC, but our existing application was written prior to its release. Add a new Web Form to the project called “Login.aspx”. Add an asp:Login control to the page. You can just drag one from the toolbox.</p>
+<p>Double-click the login control to handle the Authenticate event. This event will be called when the user presses the Login button. For now, we’ll use FormsAuthentication.Authenticate. We’ll change that in a little bit.</p>
+<pre class="code"><span style="color: blue">&lt;</span><span style="color: #a31515">body</span><span style="color: blue">&gt;
+    &lt;</span><span style="color: #a31515">form </span><span style="color: red">id</span><span style="color: blue">=&quot;form1&quot; </span><span style="color: red">runat</span><span style="color: blue">=&quot;server&quot;&gt;
+    &lt;</span><span style="color: #a31515">div</span><span style="color: blue">&gt;
+    <strong>&lt;</strong></span><strong><span style="color: #a31515">asp</span><span style="color: blue">:</span><span style="color: #a31515">Login </span><span style="color: red">ID</span><span style="color: blue">=&quot;Login1&quot; </span><span style="color: red">runat</span><span style="color: blue">=&quot;server&quot; </span><span style="color: red">onauthenticate</span></strong><span style="color: blue"><strong>=&quot;Login1_Authenticate&quot;&gt;
+</strong>    <strong>&lt;/</strong></span><strong><span style="color: #a31515">asp</span><span style="color: blue">:</span><span style="color: #a31515">Login</span></strong><span style="color: blue"><strong>&gt;</strong>
+    &lt;/</span><span style="color: #a31515">div</span><span style="color: blue">&gt;
+    &lt;/</span><span style="color: #a31515">form</span><span style="color: blue">&gt;
+&lt;/</span><span style="color: #a31515">body</span><span style="color: blue">&gt;
+</span></pre>
+<pre class="code"><span style="color: blue">protected void </span>Login1_Authenticate(<span style="color: blue">object </span>sender, <span style="color: #2b91af">AuthenticateEventArgs </span>e)
+{
+    e.Authenticated = <span style="color: #2b91af">FormsAuthentication</span>.Authenticate(Login1.UserName, Login1.Password);
+}</pre>
+<p>Edit the web.config file to use forms authentication. Create a user credential to make sure everything is working so far.</p>
+<pre class="code">    <span style="color: blue">&lt;!-- </span><span style="color: green">MLP: Changed this from &quot;Windows&quot; to &quot;Forms&quot;. </span><span style="color: blue">--&gt;
+    &lt;</span><span style="color: #a31515">authentication </span><span style="color: red">mode</span><span style="color: blue">=</span>&quot;<span style="color: blue"><strong>Forms</strong></span>&quot;<span style="color: blue">&gt;
+      &lt;!-- </span><span style="color: green">MLP: Added Login.aspx and .ASPXFORMSAUTH settings. </span><span style="color: blue">--&gt;
+      &lt;</span><span style="color: #a31515">forms </span><span style="color: red">loginUrl</span><span style="color: blue">=</span>&quot;<span style="color: blue">Login.aspx</span>&quot; <span style="color: red">name</span><span style="color: blue">=</span>&quot;<span style="color: blue">.ASPXFORMSAUTH</span>&quot;<span style="color: blue">&gt;
+        &lt;</span><span style="color: #a31515">credentials </span><span style="color: red">passwordFormat</span><span style="color: blue">=</span>&quot;<span style="color: blue">Clear</span>&quot;<span style="color: blue">&gt;
+          &lt;</span><span style="color: #a31515">user </span><span style="color: red">name</span><span style="color: blue">=</span>&quot;<span style="color: blue">test</span>&quot; <span style="color: red">password</span><span style="color: blue">=</span>&quot;<span style="color: blue">pass</span>&quot;<span style="color: blue">/&gt;
+        &lt;/</span><span style="color: #a31515">credentials</span><span style="color: blue">&gt;
+      &lt;/</span><span style="color: #a31515">forms</span><span style="color: blue">&gt;
+    &lt;/</span><span style="color: #a31515">authentication</span><span style="color: blue">&gt;
+    &lt;!-- </span><span style="color: green">MLP: Deny unauthenticated users access to other pages. </span><span style="color: blue">--&gt;
+    &lt;</span><span style="color: #a31515">authorization</span><span style="color: blue">&gt;
+      &lt;</span><span style="color: #a31515">deny </span><span style="color: red">users</span><span style="color: blue">=</span>&quot;<span style="color: blue">?</span>&quot; <span style="color: blue">/&gt;
+    &lt;/</span><span style="color: #a31515">authorization</span><span style="color: blue">&gt;
+</span></pre>
+<p>Hit F5 and test your site. You should be redirected from your default page to the login page. If you enter the wrong credentials, you’ll get an error. If you enter user “test” and password “pass”, you’ll get to your default page.</p>
+<p><strong>Set up the Active Directory membership provider</strong> </p>
+<p>Now that we have forms authentication working, let’s switch to using membership. “Membership” is a provider-based system for managing identity and role-based security. By default, membership uses a SQL database to store credentials. You can switch to the Active Directory provider instead.</p>
+<p>Active Directory is very similar to a relational database. You access it via a connection string. Access is restricted to specific users. The main difference is that AD is a hierarchical store, while a database is a relational store. AD is typically used to store information about users, groups, and machines within a domain. That’s what the Active Directory membership provider expects.</p>
+<p>If you didn’t set up AD yourself, you will need to talk to the person who did. Get a connection string, username, and password that gives you read-only access to the server. If you would like to try this yourself before involving your network operator, you can set up a <a href="indexe539.html?p=151">virtual network in Microsoft Virtual PC</a>.</p>
+<p>To configure the Active Directory membership provider, add this to web.config after the &lt;authorization&gt; tag you added earlier. Pay close attention to the enablePasswordReset and attributeMapUsername settings. These are not mentioned in the Patterns and Practices guidance, but I found them to be necessary while working in my environment. The AD account that I have does not have permission to reset passwords. And my company’s directory does not set the userPrincipleName, which is the default.</p>
+<pre class="code">    <span style="color: blue">&lt;!-- </span><span style="color: green">MLP: Use the Active Directory membership provider. </span><span style="color: blue">--&gt;
+    &lt;</span><span style="color: #a31515">membership </span><span style="color: red">defaultProvider</span><span style="color: blue">=</span>&quot;<span style="color: blue">ADMembershipProvider</span>&quot;<span style="color: blue">&gt;
+      &lt;</span><span style="color: #a31515">providers</span><span style="color: blue">&gt;
+        &lt;</span><span style="color: #a31515">add
+           </span><span style="color: red">name</span><span style="color: blue">=</span>&quot;<span style="color: blue">ADMembershipProvider</span>&quot;
+           <span style="color: red">type</span><span style="color: blue">=</span>&quot;<span style="color: blue">System.Web.Security.ActiveDirectoryMembershipProvider, System.Web, Version=2.0.0.0,
+             Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</span>&quot;
+           <span style="color: red">connectionStringName</span><span style="color: blue">=</span>&quot;<span style="color: blue">ADConnectionString</span>&quot;
+           <span style="color: red">connectionUsername</span><span style="color: blue">=</span>&quot;<span style="color: blue">MyDomain\MyADUserName</span>&quot;
+           <span style="color: red">connectionPassword</span><span style="color: blue">=</span>&quot;<span style="color: blue">MyADPassword</span>&quot;
+           <strong><span style="color: red">enablePasswordReset</span><span style="color: blue">=</span>&quot;<span style="color: blue">false</span>&quot;</strong>
+           <strong><span style="color: red">attributeMapUsername</span><span style="color: blue">=</span>&quot;<span style="color: blue">sAMAccountName</span>&quot;</strong><span style="color: blue">/&gt;
+      &lt;/</span><span style="color: #a31515">providers</span><span style="color: blue">&gt;
+    &lt;/</span><span style="color: #a31515">membership</span><span style="color: blue">&gt;
+</span></pre>
+<p>Replace MyDomain and MyADUserName with the correct values. Remove the &lt;credentials&gt; element from &lt;forms&gt;. You won’t need the hard-coded credentials any more. Add the connection string to the top of the file: </p>
+<pre class="code">  <span style="color: blue">&lt;</span><span style="color: #a31515">connectionStrings</span><span style="color: blue">&gt;
+</span><span style="color: blue">    &lt;!-- </span><span style="color: green">MLP: Added connection string for Active Directory authentication. –</span><span style="color: blue">&gt;
+    &lt;</span><span style="color: #a31515">add </span><span style="color: red">name</span><span style="color: blue">=</span>&quot;<span style="color: blue">ADConnectionString</span>&quot; <span style="color: red">connectionString</span><span style="color: blue">=</span>&quot;<span style="color: blue">LDAP://MyADMachine/DC=MyDomain,DC=MyTLD</span>&quot; <span style="color: blue">/&gt;
+  &lt;/</span><span style="color: #a31515">connectionStrings</span><span style="color: blue">&gt;
+</span></pre>
+<p>Again, replace MyADMachine, MyDomain, and MyTLD with the values you get from your network admin. You might already have a &lt;connectionStrings&gt; section at the top. Just make sure you have a closing tag and insert the &lt;add …&gt; line. </p>
+<p>Finally, we need to change the code to use Membership instead of FormsAuthentication. Change the code that you added before to Login1_Authenticate.</p>
+<pre class="code"><span style="color: blue">protected void </span>Login1_Authenticate(<span style="color: blue">object </span>sender, <span style="color: #2b91af">AuthenticateEventArgs </span>e)
+{
+    e.Authenticated = <span style="color: #2b91af">Membership</span>.ValidateUser(Login1.UserName, Login1.Password);
+}</pre>
+<p>Now run the program again and try to log in with your network credentials. In fact, you can delete your onauthenticate handler altogether. The line of code above is exactly what the login control does by default.</p>
+<p><strong>Next steps</strong> </p>
+<p>Now that we are logged in using an Active Directory account, we’ll access an SSMS report using those credentials.</p>
+
+				
+				<p class="postmetadata alt">
+					<small>
+						This entry was posted
+												on Monday, July 26th, 2010 at 3:58 pm						and is filed under <a href="index363a.html?cat=45" title="View all posts in Reports" rel="category">Reports</a>.
+						You can follow any responses to this entry through the <a href='index46aa.html?feed=rss2&amp;p=532'>RSS 2.0</a> feed.
+
+													You can skip to the end and leave a response. Pinging is currently not allowed.
+
+						
+					</small>
+				</p>
+
+			</div>
+		</div>
+
+	
+<!-- You can start editing here. -->
+
+	<h3 id="comments">5 Responses to &#8220;Forms Authentication and the Active Directory membership provider&#8221;</h3>
+
+	<ol class="commentlist">
+
+	
+		<li class="alt" id="comment-114950">
+			<cite>shrikant</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-114950" title="">January 24th, 2011 at 8:41 am</a> </small>
+
+			<p>Hi,<br />
+I have a web page through this page when I try to add a new user then users created successfully but when try resetting their password then I am getting errors’</p>
+<p>add New user successfully</p>
+<p>      public static void AddUser(ADUser adUser)<br />
+        {<br />
+            // Local variables<br />
+            DirectoryEntry oDE = null;<br />
+            DirectoryEntry oDENewUser = null;<br />
+            DirectoryEntries oDEs = null;</p>
+<p>            try<br />
+            {<br />
+                oDE = GetDirectoryEntry(GetADPath(PROD, adUser.UserType));</p>
+<p>                // 1. Create user account<br />
+                oDEs = oDE.Children;<br />
+                oDENewUser = oDEs.Add("CN=" + adUser.UserName, "user");</p>
+<p>                // 2. Set properties<br />
+                SetProperty(oDENewUser, "givenName", adUser.FirstName);<br />
+                SetProperty(oDENewUser, "sn", adUser.LastName);<br />
+                SetProperty(oDENewUser, "mail", adUser.Email);<br />
+                SetProperty(oDENewUser, "sAMAccountName", adUser.UserName);<br />
+                oDENewUser.CommitChanges();</p>
+<p>                /// 4. Enable account<br />
+                EnableAccount(oDENewUser);</p>
+<p>                // 3. Set password<br />
+                //SetPassword(oDENewUser, adUser.Password);<br />
+                SetPassword1(oDENewUser.Path, adUser.Password);<br />
+                oDENewUser.CommitChanges();</p>
+<p>                oDENewUser.Close();<br />
+                oDE.Close();<br />
+            }<br />
+            catch (Exception ex)<br />
+            {<br />
+                throw ex;<br />
+            }<br />
+        }<br />
+I have try the following 2 SetPassword methods but getting error.<br />
+Method 1.<br />
+     internal static void SetPassword1(string path, string userPassword)<br />
+        {<br />
+            //Local variables<br />
+            DirectoryEntry usr = null;</p>
+<p>            try<br />
+            {<br />
+                usr = new DirectoryEntry();<br />
+                usr.Path = path;<br />
+                usr.AuthenticationType = AuthenticationTypes.Secure;<br />
+                object ret = usr.Invoke("SetPassword", userPassword);<br />
+                usr.CommitChanges();<br />
+                usr.Close();<br />
+            }<br />
+            catch (Exception ex)<br />
+            {<br />
+                throw ex;<br />
+            }<br />
+        }<br />
+The exception raised (Error Code 80072035: The server is unwilling to process the request)<br />
+Method 2.<br />
+internal static void SetPassword(DirectoryEntry de, string userPassword)<br />
+        {<br />
+            //Local variables<br />
+            //DirectoryEntry usr = null;<br />
+            string quotePwd;<br />
+            byte[] pwdBin;</p>
+<p>            try<br />
+            {<br />
+                quotePwd = String.Format(@"""{0}""", userPassword);<br />
+                pwdBin = System.Text.Encoding.Unicode.GetBytes(quotePwd);<br />
+                de.Properties["unicodePwd"].Value = pwdBin;<br />
+                de.CommitChanges();<br />
+                //usr.Close();<br />
+            }<br />
+            catch (Exception ex)<br />
+            {<br />
+                throw ex;<br />
+            }<br />
+        }<br />
+The exception raised ("Exception has been thrown by the target of an invocation.")<br />
+Is there an easy way to tell if there is a problem with changing a password?<br />
+Please reply me as soon as possible.<br />
+Thanks.</p>
+
+		</li>
+
+	
+	
+		<li class="" id="comment-116076">
+			<cite>Michael L Perry</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-116076" title="">January 26th, 2011 at 10:15 am</a> </small>
+
+			<p>Whenever you see "Exception has been thrown by the target of an invocation", you need to look at the inner exception. That should give you more information.</p>
+<p>My guess is that the account that your application is running as does not have access to change passwords in Active Directory. I haven't tried this scenario myself, so I'm not sure which account you should use instead. Perhaps you could try impersonating an admin account. Or maybe you can even impersonate the user themselves given their current password as credentials.</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-141023">
+			<cite>shrikant</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-141023" title="">April 12th, 2011 at 11:15 am</a> </small>
+
+			<p>Hi All,<br />
+We are able to create new user successfully on the active directory but the SetPassword method is taking around 1.5 minutes to complete the process. Below is the code of the snippet of SetPassword. Is there any better approach to set the password of new user?<br />
+    #region SetPassword<br />
+    ///<br />
+    /// This function is used to set user password<br />
+    ///<br />
+    ///<br />
+    ///<br />
+    /// </p>
+<p>  ///<br />
+    internal static void SetPassword(string path, string userPassword)<br />
+    {<br />
+        if (_logger.IsDebugEnabled)<br />
+            _logger.Debug("ADHelper.cs : Enter SetPassword");</p>
+<p>        try<br />
+        {<br />
+            using (DirectoryEntry usr = GetDirectoryEntry(path))<br />
+            {<br />
+                object ret = usr.Invoke("SetPassword", userPassword);<br />
+                usr.CommitChanges();<br />
+                usr.Close();<br />
+            }</p>
+<p>            if (_logger.IsDebugEnabled)<br />
+                _logger.Debug("ADHelper.cs : Exit SetPassword");<br />
+        }<br />
+        catch (Exception ex)<br />
+        {<br />
+            if (_logger.IsErrorEnabled)<br />
+                _logger.Error("ADHelper.cs : Exception occurred in SetPassword. Message: ", ex);</p>
+<p>            throw ex;<br />
+        }<br />
+    }</p>
+<p>    #endregion<br />
+Here is our production environment type.<br />
+•    IIS 7<br />
+•    ASP.NET 3.5 (C#)<br />
+•    Active Directory<br />
+•    Windows Server 2008 R2</p>
+<p>Add user snippet<br />
+#region AddUser</p>
+<p>    ///<br />
+    /// This function is used to add user to active directory<br />
+    ///<br />
+    /// Active Directory<br />
+    /// directory entry object<br />
+    ///<br />
+    ///<br />
+    public static void AddUser(ADUser adUser)<br />
+    {<br />
+        if (_logger.IsDebugEnabled)<br />
+            _logger.Debug("ADHelper.cs : Enter AddUser");</p>
+<p>        // Local variables<br />
+        DirectoryEntry oDE = null;<br />
+        DirectoryEntry oDENewUser = null;<br />
+        DirectoryEntries oDEs = null;</p>
+<p>        try<br />
+        {<br />
+            oDE = GetDirectoryEntry(GetADPath(Constants.EnvironmentType.PROD, adUser.UserType));</p>
+<p>            // 1. Create user account<br />
+            oDEs = oDE.Children;<br />
+            oDENewUser = oDEs.Add(string.Format("{0}=", Constants.ADAttributes.CN) + adUser.UserName, "user");</p>
+<p>            // 2. Set properties<br />
+            SetProperty(oDENewUser, Constants.ADAttributes.givenName, adUser.FirstName);<br />
+            SetProperty(oDENewUser, Constants.ADAttributes.sn, adUser.LastName);<br />
+            SetProperty(oDENewUser, Constants.ADAttributes.mail, adUser.Email);<br />
+            SetProperty(oDENewUser, Constants.ADAttributes.sAMAccountName, adUser.UserName);<br />
+            oDENewUser.CommitChanges();</p>
+<p>            // 3. Set password<br />
+            SetPassword(oDENewUser.Path, adUser.Password);</p>
+<p>            // 4. Enable account<br />
+            EnableAccount(oDENewUser);</p>
+<p>            oDENewUser.Close();<br />
+            oDE.Close();</p>
+<p>            if (_logger.IsDebugEnabled)<br />
+                _logger.Debug("ADHelper.cs : Exit AddUser");<br />
+        }<br />
+        catch (Exception ex)<br />
+        {<br />
+            if (_logger.IsErrorEnabled)<br />
+                _logger.Error("ADHelper.cs : Exception occurred in AddUser. Message: ", ex);</p>
+<p>            throw ex;<br />
+        }<br />
+        finally<br />
+        {<br />
+            if (oDENewUser != null)<br />
+            {<br />
+                oDENewUser.Dispose();<br />
+                oDENewUser = null;<br />
+            }</p>
+<p>            if (oDEs != null)<br />
+            {<br />
+                oDEs = null;<br />
+            }</p>
+<p>            if (oDE != null)<br />
+            {<br />
+                oDE.Dispose();<br />
+                oDE = null;<br />
+            }<br />
+        }<br />
+    }</p>
+<p>    #endregion</p>
+<p>THANKS IN ADVANCE!!!</p>
+
+		</li>
+
+	
+	
+		<li class="" id="comment-141313">
+			<cite>Michael L Perry</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-141313" title="">April 13th, 2011 at 12:37 pm</a> </small>
+
+			<p>A minute and a half! Holy cow! I don't see any reason for that performance problem in your code. You should talk to your network admin. Also, install AD in a VM and test it yourself.</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-212173">
+			<cite>Leonel dos Anjos</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-212173" title="">January 13th, 2012 at 5:15 am</a> </small>
+
+			<p>Hi,<br />
+i am developing a system that conects to AD, and i have done it fine by code,<br />
+i have textbox txtUserName the get Authenticated User ond page Load,</p>
+<p>ond visual studio no problem, it takes the current user, but when a deploy i receive Network Service;</p>
+<p>i have    in Web.config,<br />
+i Have configured  ? user but , i still get this error,</p>
+<p>the code i used to get the user is<br />
+IIdentity identity = System.Security.Principal.WindowsIdentity.GetCurrent(true);</p>
+<p>i can identity.name = "domain\\user" on debug machine.</p>
+<p>But after deployment </p>
+<p>txtUserName.Text = "Network Service";</p>
+<p>Best regards.</p>
+
+		</li>
+
+	
+	
+	</ol>
+
+ 
+
+
+<h3 id="respond">Leave a Reply</h3>
+
+<p>You must be <a href="wp-login0a4b.html?redirect_to=http://adventuresinsoftware.com/blog/?p=532">logged in</a> to post a comment.</p>
+
+
+	
+	</div>
+		</td>
+	</tr>
+</table>
+
+<hr />
+<div id="footer">
+<!-- If you'd like to support WordPress, having the "powered by" link someone on your blog is the best way, it's our only promotion or advertising. -->
+	<p>
+		Adventures in Software is proudly powered by 
+		<a href="http://wordpress.org/">WordPress</a>
+		<br /><a href="indexd784.html?feed=rss2">Entries (RSS)</a>
+		and <a href="indexa6da.html?feed=comments-rss2">Comments (RSS)</a>.
+		<!-- 21 queries. 0.351 seconds. -->
+	</p>
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-389401-3");
+pageTracker._trackPageview();
+} catch(err) {}</script></div>
+
+<!-- Gorgeous design by Michael Heilemann - http://binarybonsai.com/kubrick/ -->
+
+		<div id="sk2-footer" style="color:#FFF; background-color:#444; padding: 3px 2px 3px 2px; border-top: #888 solid 1px;">This blog is protected by <a href="http://unknowngenius.com/blog/" title="Dave">dr Dave</a>'s <strong><a href="http://unknowngenius.com/blog/wordpress/spam-karma/" title="SK2">Spam Karma 2</a></strong>: <strong>274531</strong>  Spams eaten and counting...</div><script type="text/javascript" src="replies.js"></script>
+<script type="text/javascript" src="blogger.js"></script>
+<script type="text/javascript" src="http://twitter.com/statuses/user_timeline/michaellperry.json?callback=twitterCallback2&amp;count=5"></script>
+<script type="text/javascript" src="http://search.twitter.com/search.json?q=@michaellperry&amp;callback=twitterCallbackReplies&amp;rpp=5"></script>
+</body>
+
+<!-- Mirrored from adventuresinsoftware.com/blog/?p=532 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 Jan 2017 12:55:38 GMT -->
+</html>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?><!-- generator="wordpress/2.3.3" -->
+<rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	>
+<channel>
+	<title>Comments on: Entity Framework exception from Sum over an empty set</title>
+	<link>http://adventuresinsoftware.com/blog/?p=478</link>
+	<description>Lessons learned on the road to quality computing</description>
+	<pubDate>Fri, 13 Jan 2017 12:56:35 +0000</pubDate>
+	<generator>http://wordpress.org/?v=2.3.3</generator>
+		<item>
+		<title>By: David Gress</title>
+		<link>http://adventuresinsoftware.com/blog/?p=478#comment-151764</link>
+		<dc:creator>David Gress</dc:creator>
+		<pubDate>Thu, 12 May 2011 14:19:46 +0000</pubDate>
+		<guid>http://adventuresinsoftware.com/blog/?p=478#comment-151764</guid>
+		<description>I could find any Linq to Entities sysntax in VB for this case. The soultion we came up with was to wrap the query in a try...catch.. end try and catch the InvalidOperationException and set the variable to zero.</description>
+		<content:encoded><![CDATA[<p>I could find any Linq to Entities sysntax in VB for this case. The soultion we came up with was to wrap the query in a try...catch.. end try and catch the InvalidOperationException and set the variable to zero.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Matt</title>
+		<link>http://adventuresinsoftware.com/blog/?p=478#comment-80566</link>
+		<dc:creator>Matt</dc:creator>
+		<pubDate>Tue, 24 Aug 2010 16:26:37 +0000</pubDate>
+		<guid>http://adventuresinsoftware.com/blog/?p=478#comment-80566</guid>
+		<description>Thanks for your post. This was just what I was looking for.</description>
+		<content:encoded><![CDATA[<p>Thanks for your post. This was just what I was looking for.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Jarod Ferguson</title>
+		<link>http://adventuresinsoftware.com/blog/?p=478#comment-71471</link>
+		<dc:creator>Jarod Ferguson</dc:creator>
+		<pubDate>Mon, 31 May 2010 03:16:07 +0000</pubDate>
+		<guid>http://adventuresinsoftware.com/blog/?p=478#comment-71471</guid>
+		<description>Thanks, exactly what I was looking for. Nice Work.</description>
+		<content:encoded><![CDATA[<p>Thanks, exactly what I was looking for. Nice Work.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Sam</title>
+		<link>http://adventuresinsoftware.com/blog/?p=478#comment-62964</link>
+		<dc:creator>Sam</dc:creator>
+		<pubDate>Thu, 04 Feb 2010 05:35:38 +0000</pubDate>
+		<guid>http://adventuresinsoftware.com/blog/?p=478#comment-62964</guid>
+		<description>Yeah, it's really annoying, same problem with LINQ to SQL. In the MSDN doco they state that this was deliberately done to align with T-SQL / SQL Server, which returns NULL for aggregates over an empty set. I presume they may have followed the same reasoning for Entity Framework. It deliberately goes against the LINQ to Objects implementation though.
+
+Definitely one of the more annoying leaks to come out of these two technologies - surely the framework could do this for us? The runtime knows what type we want back so if Sum() gets a value type and the underlying provider returns null, wouldn't it simply be a case of saying 'if (result == null) return default(T)' somewhere, instead of making the client code jump through nullable hoops?</description>
+		<content:encoded><![CDATA[<p>Yeah, it's really annoying, same problem with LINQ to SQL. In the MSDN doco they state that this was deliberately done to align with T-SQL / SQL Server, which returns NULL for aggregates over an empty set. I presume they may have followed the same reasoning for Entity Framework. It deliberately goes against the LINQ to Objects implementation though.</p>
+<p>Definitely one of the more annoying leaks to come out of these two technologies - surely the framework could do this for us? The runtime knows what type we want back so if Sum() gets a value type and the underlying provider returns null, wouldn't it simply be a case of saying 'if (result == null) return default(T)' somewhere, instead of making the client code jump through nullable hoops?</p>
+]]></content:encoded>
+	</item>
+</channel>
+</rss>

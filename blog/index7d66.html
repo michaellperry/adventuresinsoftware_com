@@ -1,0 +1,610 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+
+
+<!-- Mirrored from adventuresinsoftware.com/blog/?cat=7&paged=2 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 Jan 2017 13:03:17 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>Adventures in Software   &raquo; Databases</title>
+
+<meta name="generator" content="WordPress 2.3.3" /> <!-- leave this for stats -->
+
+<link rel="stylesheet" href="wp-content/themes/ais2/style.css" type="text/css" media="screen" />
+<link rel="alternate" type="application/rss+xml" title="Adventures in Software RSS Feed" href="indexd784.html?feed=rss2" />
+<link rel="pingback" href="xmlrpc.html" />
+    <script type="text/javascript">
+        function onSilverlightError(sender, args) {
+            var appSource = "";
+            if (sender != null && sender != 0) {
+              appSource = sender.getHost().Source;
+            }
+            
+            var errorType = args.ErrorType;
+            var iErrorCode = args.ErrorCode;
+
+            if (errorType == "ImageError" || errorType == "MediaError") {
+              return;
+            }
+
+            var errMsg = "Unhandled Error in Silverlight Application " +  appSource + "\n" ;
+
+            errMsg += "Code: "+ iErrorCode + "    \n";
+            errMsg += "Category: " + errorType + "       \n";
+            errMsg += "Message: " + args.ErrorMessage + "     \n";
+
+            if (errorType == "ParserError") {
+                errMsg += "File: " + args.xamlFile + "     \n";
+                errMsg += "Line: " + args.lineNumber + "     \n";
+                errMsg += "Position: " + args.charPosition + "     \n";
+            }
+            else if (errorType == "RuntimeError") {           
+                if (args.lineNumber != 0) {
+                    errMsg += "Line: " + args.lineNumber + "     \n";
+                    errMsg += "Position: " +  args.charPosition + "     \n";
+                }
+                errMsg += "MethodName: " + args.methodName + "     \n";
+            }
+
+            throw new Error(errMsg);
+        }
+    </script>
+
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc0db0.php?rsd" />
+ <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="wp-includes/wlwmanifest.xml" /> <style type='text/css'>
+<!--#header { background: url('wp-content/themes/ais2/images/header-imgae03.html?upper=A7A73F&amp;lower=77773F') no-repeat bottom center; }
+--></style>
+</head>
+<body>
+<div id="page">
+
+<div class="aisTopBar">
+	<form method="get" id="searchform" action="http://adventuresinsoftware.com/blog/">
+<div>
+<a href="indexd784.html?feed=rss2"><img src="../images/feed-icon-28x28.png" border="0"></a>
+<input type="text" value="" name="s" id="s" />
+<input type="submit" id="searchsubmit" value="Search" />
+</div>
+</form>
+</div>
+
+<div class="aisHeaderImageRight">
+	<div class="aisHeaderImage">
+	<div class="aisHeaderCornerRight">
+	<div class="aisHeaderCornerLeft">
+	<div class="aisImageBar">
+	<div class="aisSubSites">
+		<a href="index.html" class="aisSubSiteLink"><span class="aisSiteTabRight"><span class="aisSiteTabLeft"><span class="aisSiteTab">
+			home</span></span></span></a>
+		<a class="aisSubSiteLink" href="indexb60a.html?cat=27"><span class="aisSiteTabRight"><span class="aisSiteTabLeft"><span class="aisSiteTab">
+			historic modeling</span></span></span></a>
+		<a class="aisSubSiteLink" href="indexa88f.html?cat=36"><span class="aisSiteTabRight"><span class="aisSiteTabLeft"><span class="aisSiteTab">
+			update controls</span></span></span></a>
+		<a href="index2d79.html?cat=26" class="aisSubSiteLink"><span class="aisSiteTabRight"><span class="aisSiteTabLeft"><span class="aisSiteTab">
+			degrees of freedom</span></span></span></a>
+		<a class="aisSubSiteLink" href="indexba53.html?page_id=2"><span class="aisSiteTabRight"><span class="aisSiteTabLeft"><span class="aisSiteTab">
+			about us</span></span></span></a>
+
+	</div>
+	</div>
+	</div>
+	</div>
+	</div>
+</div>
+
+<table style="width: 100%" cellspacing="0" cellpadding="0">
+	<tr valign="top">
+		<td width="210px">
+<div id="sidebar">
+<div class="aisLeftColumnFill">
+<div class="aisLeftColumnBottom">
+<div class="aisLeftColumnTop">
+<div id="twitter_div" class="aisLeftNav">
+<h2 class="sidebar-title">Twitter Updates</h2>
+<ul id="twitter_update_list"></ul>
+<a href="http://twitter.com/michaellperry" id="follow">Follow me</a>
+</div>
+<div id="twitter_reply_div" class="aisLeftNav">
+<h2 class="sidebar-title">Twitter Replies</h2>
+<ul id="twitter_reply_list"></ul>
+</div>
+
+<div class="aisLeftNav">
+<a href='http://ineta.org/Speakers/SearchCommunitySpeakers.aspx?SpeakerId=c5110e21-9243-461b-a464-a6548524e885'><img alt='INETA Community Speakers Program' border='0' src='../../www.ineta.org/images/OfficialLogos/InetaCommunitySpeakersRequestMe.html' /></a>
+</div>
+
+<div class="aisLeftNav">
+	<li class="pagenav"><h2>Pages</h2><ul><li class="page_item page-item-2"><a href="indexba53.html?page_id=2" title="About Us">About Us</a></li>
+<li class="page_item page-item-210"><a href="index6ae3.html?page_id=210" title="Templates">Templates</a></li>
+</ul></li></div>
+
+<div class="aisLeftNav">
+<h2>Archives</h2>
+<ul>
+	<li><a href='indexb4d5.html?m=201110' title='October 2011'>October 2011</a></li>
+	<li><a href='indexc61a.html?m=201106' title='June 2011'>June 2011</a></li>
+	<li><a href='indexa80d.html?m=201105' title='May 2011'>May 2011</a></li>
+	<li><a href='index512b.html?m=201104' title='April 2011'>April 2011</a></li>
+	<li><a href='index08fb.html?m=201103' title='March 2011'>March 2011</a></li>
+	<li><a href='index52f4.html?m=201102' title='February 2011'>February 2011</a></li>
+	<li><a href='index74f1.html?m=201101' title='January 2011'>January 2011</a></li>
+	<li><a href='index8956.html?m=201012' title='December 2010'>December 2010</a></li>
+	<li><a href='indexa1aa.html?m=201011' title='November 2010'>November 2010</a></li>
+	<li><a href='indexe3d5.html?m=201010' title='October 2010'>October 2010</a></li>
+	<li><a href='index9ab9.html?m=201009' title='September 2010'>September 2010</a></li>
+	<li><a href='index1ff0.html?m=201008' title='August 2010'>August 2010</a></li>
+	<li><a href='index9f11.html?m=201007' title='July 2010'>July 2010</a></li>
+	<li><a href='index31f0.html?m=201006' title='June 2010'>June 2010</a></li>
+	<li><a href='indexd189.html?m=201005' title='May 2010'>May 2010</a></li>
+	<li><a href='indexb5c0.html?m=201004' title='April 2010'>April 2010</a></li>
+	<li><a href='indexf258.html?m=201003' title='March 2010'>March 2010</a></li>
+	<li><a href='index6e30.html?m=201002' title='February 2010'>February 2010</a></li>
+	<li><a href='index6b19.html?m=201001' title='January 2010'>January 2010</a></li>
+	<li><a href='index5c0a.html?m=200912' title='December 2009'>December 2009</a></li>
+	<li><a href='index8f62.html?m=200911' title='November 2009'>November 2009</a></li>
+	<li><a href='index451d.html?m=200910' title='October 2009'>October 2009</a></li>
+	<li><a href='index3e04.html?m=200909' title='September 2009'>September 2009</a></li>
+	<li><a href='index425a.html?m=200908' title='August 2009'>August 2009</a></li>
+	<li><a href='index9907.html?m=200907' title='July 2009'>July 2009</a></li>
+	<li><a href='index3104.html?m=200906' title='June 2009'>June 2009</a></li>
+	<li><a href='indexc36d.html?m=200905' title='May 2009'>May 2009</a></li>
+	<li><a href='index17e8.html?m=200904' title='April 2009'>April 2009</a></li>
+	<li><a href='index10a5.html?m=200903' title='March 2009'>March 2009</a></li>
+	<li><a href='index8988.html?m=200902' title='February 2009'>February 2009</a></li>
+	<li><a href='index1419.html?m=200901' title='January 2009'>January 2009</a></li>
+	<li><a href='index7866.html?m=200812' title='December 2008'>December 2008</a></li>
+	<li><a href='index55f6.html?m=200811' title='November 2008'>November 2008</a></li>
+	<li><a href='indexa7bc.html?m=200810' title='October 2008'>October 2008</a></li>
+	<li><a href='indexe77c.html?m=200809' title='September 2008'>September 2008</a></li>
+	<li><a href='indexcffc.html?m=200808' title='August 2008'>August 2008</a></li>
+	<li><a href='index0e62.html?m=200807' title='July 2008'>July 2008</a></li>
+	<li><a href='indexfda7.html?m=200806' title='June 2008'>June 2008</a></li>
+	<li><a href='index7d64.html?m=200805' title='May 2008'>May 2008</a></li>
+	<li><a href='index94dd.html?m=200804' title='April 2008'>April 2008</a></li>
+	<li><a href='index9631.html?m=200803' title='March 2008'>March 2008</a></li>
+	<li><a href='indexdd52.html?m=200802' title='February 2008'>February 2008</a></li>
+	<li><a href='index21ee.html?m=200801' title='January 2008'>January 2008</a></li>
+	<li><a href='index363c.html?m=200712' title='December 2007'>December 2007</a></li>
+	<li><a href='index7493.html?m=200711' title='November 2007'>November 2007</a></li>
+	<li><a href='index93a7.html?m=200710' title='October 2007'>October 2007</a></li>
+	<li><a href='index4ca8.html?m=200709' title='September 2007'>September 2007</a></li>
+	<li><a href='index6124.html?m=200708' title='August 2007'>August 2007</a></li>
+	<li><a href='index6013.html?m=200707' title='July 2007'>July 2007</a></li>
+	<li><a href='index2ab6.html?m=200706' title='June 2007'>June 2007</a></li>
+	<li><a href='index44f0.html?m=200705' title='May 2007'>May 2007</a></li>
+	<li><a href='indexf0b4.html?m=200704' title='April 2007'>April 2007</a></li>
+	<li><a href='index481d.html?m=200703' title='March 2007'>March 2007</a></li>
+	<li><a href='indexcbea.html?m=200702' title='February 2007'>February 2007</a></li>
+	<li><a href='index9cdc.html?m=200701' title='January 2007'>January 2007</a></li>
+	<li><a href='index3ea4.html?m=200612' title='December 2006'>December 2006</a></li>
+	<li><a href='index67ca.html?m=200611' title='November 2006'>November 2006</a></li>
+	<li><a href='indexff49.html?m=200610' title='October 2006'>October 2006</a></li>
+	<li><a href='index611c.html?m=200609' title='September 2006'>September 2006</a></li>
+	<li><a href='index9a21.html?m=200608' title='August 2006'>August 2006</a></li>
+	<li><a href='index3ee9.html?m=200607' title='July 2006'>July 2006</a></li>
+	<li><a href='indexe13a.html?m=200606' title='June 2006'>June 2006</a></li>
+</ul>
+</div>
+
+<div class="aisLeftNav">
+	</div>
+
+<div class="aisLeftNav">
+<h2>Books</h2>
+<iframe src="http://rcm.amazon.com/e/cm?t=adventures0d2-20&amp;o=1&amp;p=8&amp;l=as1&amp;asins=0764526413&amp;fc1=000000&amp;IS2=1&amp;lt1=_blank&amp;lc1=0000ff&amp;bc1=000000&amp;bg1=ffffff&amp;f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" name="I5" id="I5"></iframe>
+<br/>
+<iframe src="http://rcm.amazon.com/e/cm?t=adventures0d2-20&amp;o=1&amp;p=8&amp;l=as1&amp;asins=0201633612&amp;fc1=000000&amp;IS2=1&amp;lt1=_blank&amp;lc1=0000ff&amp;bc1=000000&amp;bg1=ffffff&amp;f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" name="I6" id="I6"></iframe>
+<br/>
+<iframe src="http://rcm.amazon.com/e/cm?t=adventures0d2-20&amp;o=1&amp;p=8&amp;l=as1&amp;asins=0136291554&amp;fc1=000000&amp;IS2=1&amp;lt1=_blank&amp;lc1=0000ff&amp;bc1=000000&amp;bg1=ffffff&amp;f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" name="I7" id="I7"></iframe>
+<br/>
+<iframe src="http://rcm.amazon.com/e/cm?t=adventures0d2-20&amp;o=1&amp;p=8&amp;l=as1&amp;asins=1888009195&amp;fc1=000000&amp;IS2=1&amp;lt1=_blank&amp;lc1=0000ff&amp;bc1=000000&amp;bg1=ffffff&amp;f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" name="I8" id="I8"></iframe>
+</div>
+<div class="aisLeftNav">
+<h2>Meta</h2>
+<ul>
+		<li><a href="wp-login.html">Login</a></li>
+	<li><a href="http://validator.w3.org/check/referer" title="This page validates as XHTML 1.0 Transitional">Valid <abbr title="eXtensible HyperText Markup Language">XHTML</abbr></a></li>
+	<li><a href="http://gmpg.org/xfn/"><abbr title="XHTML Friends Network">XFN</abbr></a></li>
+	<li><a href="http://wordpress.org/" title="Powered by WordPress, state-of-the-art semantic personal publishing platform.">WordPress</a></li>
+	</ul>
+</div>
+<div class="aisLeftContent">
+<h2>Community</h2>
+<ul>
+	<script type="text/javascript" src="../../localhost/embed/92q2bbma.js"></script>
+</ul>
+</div>
+
+</div></div></div>
+</div>		</td>
+		<td>
+
+	<div id="content" class="narrowcolumn">
+
+		
+		 		<h2 class="pagetitle">Archive for the &#8216;Databases&#8217; Category</h2>
+
+ 	  
+
+		<div class="navigation">
+			<div class="alignleft"><a href="indexf373.html?cat=7&amp;paged=3">&laquo; Previous Entries</a></div>
+			<div class="alignright"><a href="indexc728.html?cat=7">Next Entries &raquo;</a></div>
+		</div>
+
+				<div class="post">
+				<h3 id="post-302"><a href="index52e8.html?p=302" rel="bookmark" title="Permanent Link to Entity Framework doesn&#8217;t properly model a summary view">Entity Framework doesn&#8217;t properly model a summary view</a></h3>
+				<small>Thursday, March 12th, 2009</small>
+
+				<div class="entry">
+					<p>Entity Framework does not understand the difference between independent and dependent data.</p>
+<p><a href="wp-content/uploads/2009/03/orderedmx.png"><img src="wp-content/uploads/2009/03/orderedmx-thumb.png" style="border: 0px none " alt="OrderEDMX" align="right" border="0" width="244" height="239" /></a> We have in our schema a table containing orders, and another table containing order lines. We have a web page that shows a filtered list of orders. This page can be filtered and sorted according to several properties of the order, including total. Total is a dependent property, calculated from the order lines.</p>
+<p>To accomplish this filtering and sorting in the database, we've created an order summary view. This view aggregates properties of an order that depend upon its lines. The order and order line tables represent independent data -- they can be changed -- while the order summary view represents dependent data -- its behavior depends upon other objects.</p>
+<p>We've modeled this in Entity Framework in the picture to the right. An order has many order lines. An order is also associated with one order summary. We can write queries for orders based on properties of order summary. This works.</p>
+<p><strong>Insert fails</strong><br />
+The problem happens when we insert an order. Because the order is in one-to-one association with an order summary, Entity Framework wants us to create an OrderSummary object at the same time.</p>
+<blockquote><p>Entities in 'OrderContainer.Order' participate in the 'OrderOrderSummary' relationship. 0 related 'OrderSummary' were found. 1 'OrderSummary' is expected.</p></blockquote>
+<p>Entity Framework does not understand that the OrderSummary view is dependent upon the Order table. When I insert into Order, the database calculates an OrderSummary. It thinks that OrderSummary is independent -- that I have to insert it myself.</p>
+<p><strong>Here's my bad solution</strong><br />
+I changed multiplicity of the OrderSummary end from "One" to "Zero or One". This tells Entity Framework that the OrderSummary relationship is not required. Unfortunately, this is not the correct model. There always <em>will</em> be an order summary. If there is an order, the view will contain a row for it. One-to-one is not just a requirement, it is a promise. If the model only claims one-to-zero or one, then this promise is not expressed.</p>
+<p>When making this change, the following error appeared briefly:</p>
+<blockquote><p>The multiplicity 'ZeroOrOne' on End 'OrderSummary' in the conceptual side Association 'Order.OrderOrderSummary' doesn't match with multiplicity 'One' on end 'OrderSummary' on the object side Association 'Order.OrderOrderSummary'.</p></blockquote>
+<p>I don't recall when it went away, but I went through a few gyrations of saving, closing, reopening, refreshing, and shaking the box. This particular relationship was not generated from the database. How could it have been, since views don't have foreign key constraints. There should be no "conceptual side" to get out of sync, but there must have been something in the EDMX that thought differently.</p>
+<p><strong>A better solution</strong><br />
+I would prefer to tell EF that OrderSummary is dependent. It should know that I never have to insert it, update it, or delete it. Independent data can be changed. Dependent data cannot.</p>
+<p>Since that is not possible, I am considering moving the dependent fields from OrderSummary into Order itself. I may do this with a multi-table mapping (actually, one table and one view). Or I may expose all of the Order columns in the OrderSummary view and just bind Order to this view.</p>
+<p>Or I may skip the OrderSummary view altogether and see if I can express the total in linq. If linq can generate the appropriate aggregate, sort by it, and filter by it, then the view would not even be necessary. In this case, at least. We'll see.</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="indexc728.html?cat=7" title="View all posts in Databases" rel="category">Databases</a>,  <a href="indexe8fb.html?cat=39" title="View all posts in Entity Framework" rel="category">Entity Framework</a> |   <a href="index52e8.html?p=302#respond" title="Comment on Entity Framework doesn&#8217;t properly model a summary view">No Comments &#187;</a></p>
+
+			</div>
+
+				<div class="post">
+				<h3 id="post-296"><a href="index3e8e.html?p=296" rel="bookmark" title="Permanent Link to Problems with the Entity Framework, and how to overcome them">Problems with the Entity Framework, and how to overcome them</a></h3>
+				<small>Monday, March 2nd, 2009</small>
+
+				<div class="entry">
+					<p>I am not a signatory of the <a href="http://efvote.wufoo.com/forms/ado-net-entity-framework-vote-of-no-confidence/">Entity Framework Vote of No Confidence</a>. Not because I have any confidence in the tool, but rather because my concerns are different. The concerns expressed in the VoNC are:</p>
+<ul>
+<li>Focus on data over behavior</li>
+<li>Lack of lazy loading</li>
+<li>Shared canonical model</li>
+<li>Lack of persistence ignorance</li>
+<li>Excessive merge conflicts</li>
+</ul>
+<p>These are valid concerns coming mostly from a community that uses ORM tools. I am not an ORM advocate, so some of these concerns mean little to me. In particular, persistence ignorance, while a cornerstone of ORM culture, has been of limited value in my experience. I've never had the need to port a data model unchanged into a different database. The database always imposes its constraints on the domain model. (Or maybe I just don't understand what PI really means.)</p>
+<p>My concerns, on the other hand, are born out of trying to use EF on an enterprise project. My team has settled on a way of using it that works for us, so we will continue to use it. The problems that we've had to overcome are:</p>
+<ul>
+<li>Tight coupling to the database schema</li>
+<li>Lack of versioning support</li>
+<li>Lack of visibility</li>
+<li>Confusion between ownership and association</li>
+</ul>
+<p><strong>Tight coupling to the database schema</strong><br />
+The easiest way to create an entity model is to reverse-engineer it from the database. The tool will create an entity type for each table that you select, and a relationship for each foreign key. It will even turn a two-column associative table into a many-to-many relationship. For simple schemas, this works pretty well.</p>
+<p>There are many problems with taking this approach, however. The first is that foreign keys are only properties of tables, not views. The import creates an entity for each selected view, but cannot create relationships. Relationships can be created manually, so this is easily overcome. However this shortcoming encourages the use of tables over views, removing one useful layer of indirection.</p>
+<p>We will reverse-engineer up to a point, then switch to views under the covers. Once that switch is made, we no longer refresh the EDMX from the model. This practice retains the layer of abstraction that we gain from views, but doesn't completely defeat the usefulness of the tool.</p>
+<p><strong>Lack of versioning support</strong><br />
+We are building a service-oriented application. There are problems with SOA that I won't get into right now, but the biggest problem has been breaking changes in the service contract.</p>
+<p>Entity Framework adds the [DataContract] attribute to all of the entities. This allows you to return an entity from a WCF service. If Microsoft made it this easy, it must the right thing to do, right?</p>
+<p>The problem is that there is just one version of each entity type, and therefore of each service signature. If someone adds a column to a table, the client proxy needs to be regenerated. Every change to the database schema is a breaking change to the clients. And there is no way to keep old versions of the service calls while simultaneously adding new versions. This is painful in development. This would be death to production.</p>
+<p>The solution is to ignore the help that Microsoft gives you. Don't use EF entities in WCF service contracts. Yes, this means that you have to write left-hand-right-hand code, but at least it's completely under your control. You choose when to define new data types, and you can version them according to your own needs.</p>
+<p><strong>Lack of visibility</strong><br />
+We have some talented DBAs on the team. They are the reason that I'm not much of an ORM advocate. I see the job that they do, and I don't want my developers to be responsible for it. They think about the health and design of the data. Every day. If you use an ORM, you either ask your developers to be just as concerned, or you get accidental data access. Frankly, my developers have too much to think about without also caring as deeply about the data as my DBAs do.</p>
+<p>So since I lean so heavily upon my DBAs, I want to give them all of the information they need. One thing they ask for is a list of queries that the application will be performing. They need this in order to ensure that the tables are properly indexed. Extracting this information from EF is cumbersome. The best way I've discovered is to run SQL Profiler and start the integration tests.</p>
+<p>Another thing they ask for is a list of tables and views that a particular build of the application requires. They need this to coordinate database releases with application releases. We don't bring down the whole datacenter in order to release. Database changes are rolled out on a live system in advance of application changes. They are applied in a way that will not break the previous application. Then, when the database is upgraded, the app servers are individually taken off-line and upgraded. During this process, there is zero down-time. Part of the datacenter is on the previous version, while the other part is on the new version. Entity Framework hides the dependency of code upon schema, and gives us absolutely no help in planning for this dance.</p>
+<p><strong>Confusion between ownership and association</strong><br />
+I observe five axioms of software behavior. One of them is ownership. An object has exactly one owner. It's a parent-child relationship. If the child is removed from the parent, it is deleted.</p>
+<p>Ownership is different from association. An association is just a reference. That reference can be changed without deleting the object.</p>
+<p>In a relational database, ownership is manifested as a foreign key that you cannot change. A child is added to a parent when it is inserted, and removed when it is deleted. A one-to-one or one-to-many association is also a foreign key, but you are allowed to change it. A many-to-many association is represented as an associative table.</p>
+<p>Entity Framework only has navigation properties. It makes no distinction between ownership and association. In fact, it treats all navigation properties as associations, and does not do the right thing with parent-child relationships. Removing an object from a navigation property does not delete it, even if the parent is supposed to be the owner. Instead, it throws this exception:</p>
+<blockquote><p>A relationship is being added or deleted from an AssociationSet '***'. With cardinality constraints, a corresponding '***' must also be added or deleted.</p></blockquote>
+<p>You have to delete the child object from the container, not from its owner.</p>
+<p>The way you code with objects is different than the way you code with relational databases. Entity Framework tries to hide these differences behind a layer of abstraction, but it fails completely. Not being an ORM user, I don't know the extent to which other frameworks succeed. But when I'm working with a relational database, I prefer to code relationally. It's really not that bad.</p>
+<p>So when using Entity Framework in an enterprise environment:</p>
+<ul>
+<li>Don't completely rely upon reverse-engineering the model.</li>
+<li>Don't expose entities through WCF services.</li>
+<li>Use SQL Profiler to see what EF is doing.</li>
+<li>Know the difference between ownership and association, even if the tool doesn't.</li>
+</ul>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="indexc728.html?cat=7" title="View all posts in Databases" rel="category">Databases</a>,  <a href="indexe8fb.html?cat=39" title="View all posts in Entity Framework" rel="category">Entity Framework</a> |   <a href="index3e8e.html?p=296#respond" title="Comment on Problems with the Entity Framework, and how to overcome them">No Comments &#187;</a></p>
+
+			</div>
+
+				<div class="post">
+				<h3 id="post-279"><a href="index45c8.html?p=279" rel="bookmark" title="Permanent Link to Correspondence storage strategy provider model">Correspondence storage strategy provider model</a></h3>
+				<small>Sunday, November 30th, 2008</small>
+
+				<div class="entry">
+					<p>The Correspondence library synchronizes object models between memory and storage. Eventually, it will synchronize object models between machines. But for right now, let's talk about storage.</p>
+<p>The storage mechanism for Correspondence is not relational. Correspondence is not an ORM. But it is sometimes useful to implement Correspondence storage on top of a relational container. For one thing, relational databases already exist and are easy to use. For another, Correspondence can interface with relational data. It would be beneficial to have one transactional boundary around both the Correspondence data and the relational data.</p>
+<p>The storage mechanism used to persist Correspondence objects is isolated from the core library itself. This allows you to select the most appropriate storage mechanism for your application. A provider for storage implements the StorageStrategy interface. You select a storage strategy when you configure your Community.</p>
+<p><strong>Mementos and IDs</strong><br />A StorageStrategy does not deal directly with CorrespondenceObjects. It is isolated from your code by dealing with Mementos. A Memento stores the immutable state of a Correspondence object. This includes the type name and version number, the predecessors, and the fields. Successors are not immutable, so they are not part of the Memento.</p>
+<p>A Memento's size is strictly limited to 1024 bytes. If you create a CorrespondenceObject whose fields contain more than 1K of data, you have to break it up. This hard limit is there to protect the memory, storage, and network components. It prevents buffer overrun attacks, helps ensure scalability, and makes the system more performant.</p>
+<p>A Memento calculates a hash code, which is used as a first check to see if two Correspondence objects are equal. Remember that a Correspondence object's identity relies upon its predecessors and fields. If these are the same, then it is the same object. A Memento contains only these identifying attributes, so its hash code is used for identity checks.</p>
+<p>But the hash code itself is not sufficient. We know that a hash is not unique. So in addition, the StorageStrategy deals with ObjectIDs. An ObjectID is nothing more than a wrapper for a 64 bit integer. These integers are unique only within a given database. Since the Memento uses ObjectIDs, a Memento is also specific to a database. Mementos and ObjectIDs do not make sense in application code. In fact, unless you create your own StorageStrategy, you will only encounter the Memento type in the constructors of your objects. These constructors are used to load a Correspondence object from storage.</p>
+<p><strong>The StorageStrategy interface</strong><br />The StorageStrategy interface has very few methods. The most interesting ones are described here:</p>
+<pre><span style="color: blue">public</span> <span style="color: blue">interface</span> StorageStrategy {
+
+	Memento load(ObjectID id) <span style="color: blue">throws</span> CorrespondenceException;
+	ObjectID save(Memento memento) <span style="color: blue">throws</span> CorrespondenceException;
+	ObjectID findExistingObject(Memento memento) <span style="color: blue">throws</span> CorrespondenceException;
+	Iterable&lt;Pair&lt;ObjectID, Memento&gt;&gt; executeQuery(QueryDefinition queryDefinition, ObjectID id) <span style="color: blue">throws</span> CorrespondenceException;
+
+}
+</pre>
+<p>The <strong>load</strong> and <strong>save</strong> methods are the workhorses of the strategy. Given an ObjectID, the strategy needs to load a Memento. Or given a Memento, it needs to save it and return its ObjectID. If a matching Memento is already in storage, the ObjectID of that Memento will be returned instead.</p>
+<p>Like save, <strong>findExistingObject</strong> will return the ObjectID of a matching Memento. But unlike save, it will not store the Memento if it doesn't already exist. This method is used for getObject, whereas save is used for addObject.</p>
+<p>The last method is the most interesting. A Query is a collection of joins. Each join is either to a successor or a predecessor. When a Query is observed, it calls <strong>executeQuery</strong> and sends its QueryDefinition to the storage strategy. The storage strategy returns the collection of objects that satisfy that query. The storage strategy is free to use whatever means necessary to execute the query, including dynamically generating SQL.</p>
+<p><strong>Not relational</strong><br />It's pretty easy to see from this interface that Correspondence does not offer all of the features of a relational database. The only relationships allowed between objects are predecessor/successor relationships. And predecessors can't change. There is (currently) no arbitrary lookup by field, like you have with a relational query by column. Correspondence works by its own limited set of rules.</p>
+<p>But that limitation is also a strength. Because relational databases have to deliver on so many difficult promises, they cannot synchronize as easily as a Correspondence model. The set of operations that Correspondence allows was specifically selected to make it easy to share data from memory, to storage, across the network, and with other users. It's a different programming model, but one that you will eventually come to find as natural as relational or OO.</p>
+<p><strong>Existing and future storage strategies</strong><br />I currently have Correspondence libraries written in C# and Java. In the Java version, I have implemented the Postgres storage strategy. In .NET, I have implemented SQL Server, SQL CE, and Access. I also have an in-memory version in both platforms strictly for unit testing. In the future, I plan to support MySQL, and to port storage strategies between .NET and Java. In addition, I'll create stand-alone strategies based on flat files or memory-mapped files.</p>
+<p>But for now, I'm releasing the Java version of Correspondence with the Postgres storage strategy. Check back later this week for a download and instructions.</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="indexc728.html?cat=7" title="View all posts in Databases" rel="category">Databases</a>,  <a href="indexb60a.html?cat=27" title="View all posts in Historic Modeling" rel="category">Historic Modeling</a> |   <a href="index45c8.html?p=279#respond" title="Comment on Correspondence storage strategy provider model">No Comments &#187;</a></p>
+
+			</div>
+
+				<div class="post">
+				<h3 id="post-254"><a href="index6233.html?p=254" rel="bookmark" title="Permanent Link to Transactional remote receive in MSMQ">Transactional remote receive in MSMQ</a></h3>
+				<small>Thursday, September 25th, 2008</small>
+
+				<div class="entry">
+					<p>Can you implement publish-subscribe load balancing with MSMQ?</p>
+<p>Surprisingly, prior to Windows Server 2008 the answer was no! (Well, technically the capability is in Vista too, but who runs Vista in their datacenter?)</p>
+<p>It's a common scenario. I have work that I want to share among several load-balanced, redundant servers. Only one server can be working on an item at a time. If a server crashes while working on an item, then another server should pick it up instead.</p>
+<p>What's the solution? Publish the work items to a queue and have each of the servers subscribe. The servers receive the work items transactionally, so that if the work fails or the server crashes it is aborted back to the queue. But while one server has the work item locked, other servers will not receive it. They will get work items further down in the queue.</p>
+<p>The problem is that MSMQ 3.0 and prior cannot receive messages transactionally from a remote queue. This feature only works with local queues. Instead of a publish-subscribe model, you have to use a push model. Push the message to the machine that you want to process it.</p>
+<p><a href="http://blogs.msdn.com/johnbreakwell/archive/2007/12/11/how-do-i-get-transactional-remote-receives.aspx">John Breakwell posted your options.</a> You can upgrade to Windows Server 2008, implement a dispatcher (turning your pub-sub into a push), or peek-then-receive. The last is not really an option, because it violates the requirement that only one server is working on an item at a time.</p>
+<p><strong>Here's my solution</strong>    <br />I propose a fourth option. Don't use MSMQ. Instead, write a journal table in SQL Server. Getting the locking right is a bit tricky, but it's doable. (Hint: you will make use of <a href="http://msdn.microsoft.com/en-us/library/ms187373.aspx">UPDLOCK</a>.)</p>
+<p>Honestly, this is a primary use case for a queuing technology. No, this is <strong>the</strong> primary use case. How could you even release version 1.0 without support for pub-sub? I've gone my entire career assuming that this feature was there, only to find out in integration testing that it is lacking.</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="indexc728.html?cat=7" title="View all posts in Databases" rel="category">Databases</a>,  <a href="indexb0b7.html?cat=6" title="View all posts in Patterns" rel="category">Patterns</a> |   <a href="index6233.html?p=254#respond" title="Comment on Transactional remote receive in MSMQ">No Comments &#187;</a></p>
+
+			</div>
+
+				<div class="post">
+				<h3 id="post-165"><a href="index17d5.html?p=165" rel="bookmark" title="Permanent Link to Graph Traversal in SQL">Graph Traversal in SQL</a></h3>
+				<small>Wednesday, October 3rd, 2007</small>
+
+				<div class="entry">
+					<p>Its a common problem in computer science to traverse a graph. Usually graph traversal problems are solved with recursive algorithms. But if you are using a database to store the graph, you can use set logic to traverse it.</p>
+<p>Let's say you have a directed graph, and you represent its edges in a table.</p>
+<p><code>CREATE TABLE [Edge](<br />
+&nbsp; [FromNodeId] [int] NOT NULL,<br />
+&nbsp; [ToNodeId] [int] NOT NULL<br />
+)</code></p>
+<p>Maybe you want to determine all possible routes from one node to any other. So given a start node and an end node, you want to find all of the neighbors that will get you one step closer. Let's store this in another table.</p>
+<p><code>CREATE TABLE [Path](<br />
+&nbsp; [StartNodeId] [int] NOT NULL,<br />
+&nbsp; [EndNodeId] [int] NOT NULL,<br />
+&nbsp; [NextNodeId] [int] NOT NULL<br />
+)</code></p>
+<p>You can do all the work in SQL by applying set logic. The edges of the graph are one set (from, to), and the steps along each path are another set (start, end, next). Given the edge set, you want to find the path set.</p>
+<p>Start with the trivial case. If there is an edge between two nodes (a, b), then there is a path (a, b, b). In other words, if you can get from a to b directly, then b will get you one step closer on the path from a to b.</p>
+<p>Now we apply transitive set logic. Now that we've gotten from a to b via x, what if there's an edge that takes us to c? Now we know we can get from a to c via x. Formally, if there is a path (a, b, x) an edge (b, c), then we also have a path (a, c, x).</p>
+<p><strong>Here's my solution</strong><br />
+We can keep track of these sets in SQL tables. And we can keep track of the changes to these sets in table variables. Just apply the set logic repeatedly until there are no more changes.</p>
+<p><code>CREATE PROCEDURE CalculatePath<br />
+AS<br />
+&nbsp; SET NOCOUNT ON<br />
+&nbsp;<br />
+&nbsp; -- Keep the fringe nodes in a table variable.<br />
+&nbsp; DECLARE @Fringe TABLE<br />
+&nbsp; (<br />
+&nbsp; &nbsp; StartNodeId int,<br />
+&nbsp; &nbsp; EndNodeId int,<br />
+&nbsp; &nbsp; NextNodeId int<br />
+&nbsp; )<br />
+&nbsp; DECLARE @NextFringe TABLE<br />
+&nbsp; (<br />
+&nbsp; &nbsp; StartNodeId int,<br />
+&nbsp; &nbsp; EndNodeId int,<br />
+&nbsp; &nbsp; NextNodeId int<br />
+&nbsp; )<br />
+&nbsp;<br />
+&nbsp; -- Start with an empty path table.<br />
+&nbsp; DELETE FROM Path<br />
+&nbsp; -- Seed the fringe table with the immediate neighbors.<br />
+&nbsp; INSERT INTO @Fringe (StartNodeId, EndNodeId, NextNodeId)<br />
+&nbsp; &nbsp; SELECT FromNodeId, ToNodeId, ToNodeId<br />
+&nbsp; &nbsp; FROM Edge<br />
+&nbsp;<br />
+&nbsp; -- Continue until all nodes have been visited.<br />
+&nbsp; WHILE (SELECT COUNT(*) FROM @Fringe) &gt; 0<br />
+&nbsp; BEGIN<br />
+&nbsp; &nbsp; -- Insert fringe nodes into the path table.<br />
+&nbsp; &nbsp; INSERT INTO Path (StartNodeId, EndNodeId, NextNodeId)<br />
+&nbsp; &nbsp; &nbsp; SELECT StartNodeId, EndNodeId, NextNodeId<br />
+&nbsp; &nbsp; &nbsp; FROM @Fringe<br />
+&nbsp;<br />
+&nbsp; &nbsp; -- Visit all neighbors of the fringe nodes that have not yet been visited.<br />
+&nbsp; &nbsp; INSERT INTO @NextFringe (StartNodeId, EndNodeId, NextNodeId)<br />
+&nbsp; &nbsp; &nbsp; SELECT DISTINCT f.StartNodeId, e.ToNodeId, f.NextNodeId<br />
+&nbsp; &nbsp; &nbsp; FROM @Fringe f<br />
+&nbsp; &nbsp; &nbsp; JOIN Edge e ON f.EndNodeId = e.FromNodeId<br />
+&nbsp; &nbsp; &nbsp; LEFT JOIN Path p ON f.StartNodeId = p.StartNodeId AND e.ToNodeId = p.EndNodeId AND f.NextNodeId = p.NextNodeId<br />
+&nbsp; &nbsp; &nbsp; WHERE p.StartNodeId IS NULL<br />
+&nbsp; &nbsp; &nbsp; &nbsp; AND f.StartNodeId != e.ToNodeId<br />
+&nbsp; &nbsp; -- Make those the new edge nodes.<br />
+&nbsp; &nbsp; DELETE FROM @Fringe<br />
+&nbsp; &nbsp; INSERT INTO @Fringe (StartNodeId, EndNodeId, NextNodeId)<br />
+&nbsp; &nbsp; &nbsp; SELECT StartNodeId, EndNodeId, NextNodeId<br />
+&nbsp; &nbsp; &nbsp; FROM @NextFringe<br />
+&nbsp; &nbsp; DELETE FROM @NextFringe<br />
+&nbsp; END</code></p>
+<p>Since this algorithm calculates all possible paths, it can be used as-is for problems where redundancy is desired. If instead you want to find the optimal path, then the algorithm should be modified to accumulate cost. But the same idea applies. Determine your rules and then iteratively apply them to sets until the solution emerges.</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="indexc728.html?cat=7" title="View all posts in Databases" rel="category">Databases</a>,  <a href="indexb0b7.html?cat=6" title="View all posts in Patterns" rel="category">Patterns</a> |   <a href="index17d5.html?p=165#comments" title="Comment on Graph Traversal in SQL">2 Comments &#187;</a></p>
+
+			</div>
+
+				<div class="post">
+				<h3 id="post-122"><a href="indexdb84.html?p=122" rel="bookmark" title="Permanent Link to Table names should be singular">Table names should be singular</a></h3>
+				<small>Thursday, May 24th, 2007</small>
+
+				<div class="entry">
+					<p>The Rails convention is for database table names to be plural. The Handmark convention was previously the same. However, our new DBA (Chris Simonton for those of you who listen to the show) changed that convention to singular. The reason for the change lies in a common misconception about database tables.</p>
+<p>Most people think about a table as a collection of rows. The database is a place to store data, and the data is organized in rows. The rows live in the tables. Seems pretty straight forward.</p>
+<p>But that line of thinking leads to some serious mistakes. A collection is a group of things that all belong together. Like a group of employees who work for the same company, or a group of line items on an invoice. But a table contains rows that are completely unrelated to one another.  The employee table contains employees of various companies, and the invoice line item table contains information about several invoices.</p>
+<p>Thinking about the table as a collection of rows leads to an assumption that the rows are somehow related. We might assume that all employees in the Employees table work for the same company, or that all of the rows in the LineItems table have a common vendor. After all, the application will be hosted by that company or that vendor, right?</p>
+<p>Applications may start out in one scope, but they tend to outgrow their initial design. If we allow limitations to creep in because of inadvertent assumptions, it may be difficult to make the jump when we need to. Assuming that there is a relationship among the rows of a table can cause you to forget foriegn keys. After all, if every employee works for the same company, why would you need a CompanyID column in the Employees table?</p>
+<p>We made that mistake at Radiant. The Enterprise product hosts data for restaurant companies. Since the product started out as a targeted system for a small number of customers, we made the assumption that each company would have its own database. As a result, none of the tables contained a CompanyID. The database name itself identified the company.</p>
+<p>In the days when a new company signed on about once a month, it was no big deal to prop a new database from the model. But as the product grew, we were adding companies more frequently. And as we made changes to the product we had to deploy those changes to each company individually. But because of the assumption, we were unable to merge companies into a common database when we recognized that it would be a good idea.</p>
+<p>A database table is not a container. It is a type. It is not a collection of rows, but a collection of columns. It defines not a set of data but a set of relationships. It is alalogous to "class Employee", not to "private List&lt;Employee&gt; _employees". To remind us of this, database names should be singular.</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="indexc728.html?cat=7" title="View all posts in Databases" rel="category">Databases</a>,  <a href="index29c7.html?cat=11" title="View all posts in Naming" rel="category">Naming</a>,  <a href="index0fbe.html?cat=21" title="View all posts in Standards" rel="category">Standards</a> |   <a href="indexdb84.html?p=122#respond" title="Comment on Table names should be singular">No Comments &#187;</a></p>
+
+			</div>
+
+				<div class="post">
+				<h3 id="post-120"><a href="index2c90.html?p=120" rel="bookmark" title="Permanent Link to Record Transactions, not Balances">Record Transactions, not Balances</a></h3>
+				<small>Friday, May 18th, 2007</small>
+
+				<div class="entry">
+					<p>The typical example of an atomic transaction is a financial transfer. You want to make sure that you reduce the balance of one account by $100 and increase the balance of another account by $100 atomically. It is incorrect for one to occur without the other. And so, the example shows us, you wrap these two actions within one atomic transaction.</p>
+<p>The problem is, this example is completely bogus. Banks don't work this way. They record individual transactions, not account balances.</p>
+<p>I learned this lesson the hard way when I worked on the eCard product at Radiant Systems -- a refillable gift-card service. Storing account balances is a Bad Idea. Here's what can go wrong.</p>
+<p><strong>Select/Update</strong><br />
+In order to adjust an account balance stored directly in the database, you have to issue two SQL statements: SELECT the current balance, perform the calculation, then UPDATE to the new balance. (Sure, you could do this with the one statement "UPDATE SET balance=balance-100", but then you couldn't check for overdrafts.) Even within a database transaction, there is the possibility that the record is changed between the SELECT and the UPDATE. This could happen any time the transaction isolation level is set to something lower than the most paranoid "serializable". To fix this, raise the level, or apply a query hint to the SELECT statement, such as "for update".</p>
+<p>Whichever solution you choose, you have just increased the locking in your database, and decreased concurrency and scalability. And we have seen that occasionally, even these tight restrictions don't work as advertised. There are still some incorrect balances that we can't explain to this day.</p>
+<p><strong>Reconciliation</strong><br />
+When you have a distributed system, such as Radiant's eCard in caching mode, you always have to bring the transactions together at some point and verify correct balances. This is the same process that you go through each month when you balance your check book, only at a larger scale and with greater automation. Reconciling balances is simply impossible. You need to identify and compare individual transactions (think check numbers), and add missing transactions to each list.</p>
+<p><strong>Diagnostics</strong><br />
+When things go wrong, you often need to go back through the transaction history to see where it diverges. If you don't have this history, then you obviously have a problem. But even if you just keep a log in parallel with a balance (as we did at Radiant), you will have a hard time determining exactly which of those transactions was applied incorrectly.</p>
+<p>The best practice is to keep a running list of transactions by account. Occasionally, you can snapshot and archive those transactions, like an accountant closing the books each quarter. Then to find the current balance of an account, apply all recent transactions to the snapshot. This solution is scalable, distributable, and auditable.</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="indexc728.html?cat=7" title="View all posts in Databases" rel="category">Databases</a>,  <a href="indexb60a.html?cat=27" title="View all posts in Historic Modeling" rel="category">Historic Modeling</a>,  <a href="indexb0b7.html?cat=6" title="View all posts in Patterns" rel="category">Patterns</a> |   <a href="index2c90.html?p=120#respond" title="Comment on Record Transactions, not Balances">No Comments &#187;</a></p>
+
+			</div>
+
+				<div class="post">
+				<h3 id="post-107"><a href="index5a24.html?p=107" rel="bookmark" title="Permanent Link to AiS 22: Website Attacks">AiS 22: Website Attacks</a></h3>
+				<small>Tuesday, April 17th, 2007</small>
+
+				<div class="entry">
+					<p><a href="http://media.libsyn.com/media/ais/AiS22.mp3">Listen Now</a></p>
+<p>Cross site scripting and SQL injection attacks both take advantage of vulnerabilities in websites. In the case of a cross site scripting vulnerability, data can be rendered to the browser, causing it to run unintended code. In the case of a SQL injection attack, data is executed by the database as SQL code. In both cases, input that a malicious user provides is interpreted in a way that the designer did not intend.</p>
+<p>Both of these vulnerabilities are software defects. In both cases, data in a natural language is rendered as if it were a programming language. Web developers and designers need to take extra precautions to prevent this from happening. But what are the right precautions?</p>
+<p>One solution is to validate all inputs to ensure that no script or SQL code is included. Unfortunately, this approach is nearly impossible to implement correctly. Any inconsistencies between the way the validator parses the input and the way the browser or database interprets it can leave a hole for a hacker to slip through. Furthermore, it may be perfectly valid for the data to contain HTML or SQL code. What if you are running a blog about software? Shouldn't you be able to post code to the blog?</p>
+<p>A better solution is to escape the data. If you are converting a natural language string into SQL, you have to be sure to escape the quotes. In HTML, you must escape the angle brackets. Several tools are already at your disposal to perform the escaping function. Please take full advantage of them.</p>
+<p><a href="http://www.bitlbee.org/">http://www.bitlbee.org</a><br />
+<a href="http://toc2rta.com/">http://toc2rta.com</a><br />
+<a href="http://jakarta.apache.org/commons/lang">http://jakarta.apache.org/commons/lang</a><br />
+<a href="http://jakarta.apache.org/commons/codec">http://jakarta.apache.org/commons/codec</a><br />
+<a href="http://www.unixwiz.net/techtips/sql-injection.html">http://www.unixwiz.net/techtips/sql-injection.html</a></p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="indexc728.html?cat=7" title="View all posts in Databases" rel="category">Databases</a>,  <a href="index376e.html?cat=13" title="View all posts in Security" rel="category">Security</a>,  <a href="indexb5e7.html?cat=15" title="View all posts in Shows" rel="category">Shows</a> |   <a href="index5a24.html?p=107#respond" title="Comment on AiS 22: Website Attacks">No Comments &#187;</a></p>
+
+			</div>
+
+				<div class="post">
+				<h3 id="post-91"><a href="index5cfa.html?p=91" rel="bookmark" title="Permanent Link to Special Characters in MySQL Replication">Special Characters in MySQL Replication</a></h3>
+				<small>Thursday, March 1st, 2007</small>
+
+				<div class="entry">
+					<p>MySQL uses command-based replication. That means that it sends the actual insert, update, or delete command down to the replicated database, instead of sending the data itself. Most database systems ship the actual transaction log, which ensures that the databases stay in sync. But MySQL's choice to use command-based replication causes a few problems.</p>
+<p>One of the most insidious problems has to do with characters in text fields. In order to put special characters in a text field, you have to escape them. You can't just put a apostrophe in a text field, because the text itself is set off by apostrophes, or single-quotes. So you have to put a backslash in front of it. That tells the database to take the apostrophe as a literal.</p>
+<p>This works fine for the master database. And in fact, JDBC and other database drivers will do this for you when you use prepared statements. However, this fails with MySQL's command-based replication.</p>
+<p>In order to replicate the data, MySQL turns the data back into an insert, update, or delete command. In so doing, it fails to properly escape the text. That means that text containing an apostrophe that you properly escaped and inserted into the master will break replication. When the improperly escaped command is sent to the replicated database, it fails, and backs up all commands that come later.</p>
+<p>A colegue suggested that we double-escape the text. That is, he preceeded each apostrophe with three slashes, not one. The first two become one slash, and the third escapes the quote. Sure enough, the replicated command was properly escaped. Unfortunately, this led to inconsistent data. The data on the master contained a slash-quote while the data on the replicated database had just a quote. Not a valid solution.</p>
+<p>The only solution is to avoid apostrophes and slashes in the data altogether. They must be converted into different characters or dropped from the text. Typical solutions will be to convert apostrophes to ticks and backslashes to forward slashes.</p>
+<p>This is not just a problem with text fields. Binary data is treated as text when converted into a command for replication. If that binary happens to contain an apostrophe, then it will have the same problem. The best solution here is to base 64 encode the binary prior to inserting it, then decode it on the way out. The base 64 alphabet contains no special characters, and is therefore safe for replication.</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="indexc728.html?cat=7" title="View all posts in Databases" rel="category">Databases</a> |   <a href="index5cfa.html?p=91#respond" title="Comment on Special Characters in MySQL Replication">No Comments &#187;</a></p>
+
+			</div>
+
+				<div class="post">
+				<h3 id="post-79"><a href="index6ffe.html?p=79" rel="bookmark" title="Permanent Link to Anonymous user in MySQL">Anonymous user in MySQL</a></h3>
+				<small>Friday, January 19th, 2007</small>
+
+				<div class="entry">
+					<p>We rolled out a new release of our server yesterday, and ran into an unusual problem. We still don't know the root cause of it (probably a MySQL bug), but we do know what the symptoms and workarrounds are.</p>
+<p>The symptom is the following error message:</p>
+<pre>execute command denied to user ''@'' for routine 'mydatabase.myproc'</pre>
+<p>The interesting part of this error message is the user with no name and no host. We are logged in as an application user. A search for this user reveals that it does indeed exist, although it was not present on the development box.</p>
+<pre>mysql> select count(1) from mysql.user where user='' and host='';
++----------+
+| count(1) |
++----------+
+|        1 |
++----------+
+1 row in set (0.03 sec)</pre>
+<p>We use replication to separate writes from reads. This user appears on both the write and read servers, but this error only occurs on reads.</p>
+<p>Investigating further, we tried to learn more about this mystery user. We entered the following command:</p>
+<pre>mysql> show grants for ''@'';</pre>
+<p>PLEASE DO NOT EXECUTE THIS COMMAND. This brought the server down. We didn't believe that it was the cause, so we tried again on another server. After restarting both servers, we continued our investigation.</p>
+<p>We have no idea where this user came from or what might depend upon it. We also have no idea why this user is used to authenticate this proc instead of the app user. This being the production server, we didn't do anything as drastic as dropping the user without proper research. So we focused on this procedure in particular.</p>
+<p><strong>Here's my solution</strong><br />
+The fix that we eventually found is two-fold. First, identify the user by password in the grant clause after creating the procedure. Second, explicitly drop and recreate the procedure on each of the read servers. Replication of the create script had some part in causing the problem. So our script ended up looking like this:</p>
+<pre>USE mydatabase
+DROP PROCEDURE IF EXISTS myproc
+DELIMITER $$
+CREATE PROCEDURE myproc()
+BEGIN
+    SELECT 1;
+END$$
+DELIMITER ;
+GRANT EXECUTE ON PROCEDURE myproc TO appuser IDENTIFIED BY 'apppassword';</pre>
+<p>Run this script on the write server, wait for it to replicate to the read servers, then run this script on each read server individually. I don't know why, but it works.</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="indexc728.html?cat=7" title="View all posts in Databases" rel="category">Databases</a> |   <a href="index6ffe.html?p=79#respond" title="Comment on Anonymous user in MySQL">No Comments &#187;</a></p>
+
+			</div>
+
+		
+		<div class="navigation">
+			<div class="alignleft"><a href="indexf373.html?cat=7&amp;paged=3">&laquo; Previous Entries</a></div>
+			<div class="alignright"><a href="indexc728.html?cat=7">Next Entries &raquo;</a></div>
+		</div>
+
+	
+	</div>
+		</td>
+	</tr>
+</table>
+
+<hr />
+<div id="footer">
+<!-- If you'd like to support WordPress, having the "powered by" link someone on your blog is the best way, it's our only promotion or advertising. -->
+	<p>
+		Adventures in Software is proudly powered by 
+		<a href="http://wordpress.org/">WordPress</a>
+		<br /><a href="indexd784.html?feed=rss2">Entries (RSS)</a>
+		and <a href="indexa6da.html?feed=comments-rss2">Comments (RSS)</a>.
+		<!-- 17 queries. 0.423 seconds. -->
+	</p>
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-389401-3");
+pageTracker._trackPageview();
+} catch(err) {}</script></div>
+
+<!-- Gorgeous design by Michael Heilemann - http://binarybonsai.com/kubrick/ -->
+
+		<div id="sk2-footer" style="color:#FFF; background-color:#444; padding: 3px 2px 3px 2px; border-top: #888 solid 1px;">This blog is protected by <a href="http://unknowngenius.com/blog/" title="Dave">dr Dave</a>'s <strong><a href="http://unknowngenius.com/blog/wordpress/spam-karma/" title="SK2">Spam Karma 2</a></strong>: <strong>274531</strong>  Spams eaten and counting...</div><script type="text/javascript" src="replies.js"></script>
+<script type="text/javascript" src="blogger.js"></script>
+<script type="text/javascript" src="http://twitter.com/statuses/user_timeline/michaellperry.json?callback=twitterCallback2&amp;count=5"></script>
+<script type="text/javascript" src="http://search.twitter.com/search.json?q=@michaellperry&amp;callback=twitterCallbackReplies&amp;rpp=5"></script>
+</body>
+
+<!-- Mirrored from adventuresinsoftware.com/blog/?cat=7&paged=2 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 Jan 2017 13:03:17 GMT -->
+</html>

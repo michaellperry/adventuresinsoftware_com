@@ -1,0 +1,717 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+
+
+<!-- Mirrored from adventuresinsoftware.com/blog/?m=201105&paged=2 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 Jan 2017 12:54:01 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>Adventures in Software   &raquo; 2011&raquo; May</title>
+
+<meta name="generator" content="WordPress 2.3.3" /> <!-- leave this for stats -->
+
+<link rel="stylesheet" href="wp-content/themes/ais2/style.css" type="text/css" media="screen" />
+<link rel="alternate" type="application/rss+xml" title="Adventures in Software RSS Feed" href="indexd784.html?feed=rss2" />
+<link rel="pingback" href="xmlrpc.html" />
+    <script type="text/javascript">
+        function onSilverlightError(sender, args) {
+            var appSource = "";
+            if (sender != null && sender != 0) {
+              appSource = sender.getHost().Source;
+            }
+            
+            var errorType = args.ErrorType;
+            var iErrorCode = args.ErrorCode;
+
+            if (errorType == "ImageError" || errorType == "MediaError") {
+              return;
+            }
+
+            var errMsg = "Unhandled Error in Silverlight Application " +  appSource + "\n" ;
+
+            errMsg += "Code: "+ iErrorCode + "    \n";
+            errMsg += "Category: " + errorType + "       \n";
+            errMsg += "Message: " + args.ErrorMessage + "     \n";
+
+            if (errorType == "ParserError") {
+                errMsg += "File: " + args.xamlFile + "     \n";
+                errMsg += "Line: " + args.lineNumber + "     \n";
+                errMsg += "Position: " + args.charPosition + "     \n";
+            }
+            else if (errorType == "RuntimeError") {           
+                if (args.lineNumber != 0) {
+                    errMsg += "Line: " + args.lineNumber + "     \n";
+                    errMsg += "Position: " +  args.charPosition + "     \n";
+                }
+                errMsg += "MethodName: " + args.methodName + "     \n";
+            }
+
+            throw new Error(errMsg);
+        }
+    </script>
+
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc0db0.php?rsd" />
+ <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="wp-includes/wlwmanifest.xml" /> <style type='text/css'>
+<!--#header { background: url('wp-content/themes/ais2/images/header-imgae03.html?upper=A7A73F&amp;lower=77773F') no-repeat bottom center; }
+--></style>
+</head>
+<body>
+<div id="page">
+
+<div class="aisTopBar">
+	<form method="get" id="searchform" action="http://adventuresinsoftware.com/blog/">
+<div>
+<a href="indexd784.html?feed=rss2"><img src="../images/feed-icon-28x28.png" border="0"></a>
+<input type="text" value="" name="s" id="s" />
+<input type="submit" id="searchsubmit" value="Search" />
+</div>
+</form>
+</div>
+
+<div class="aisHeaderImageRight">
+	<div class="aisHeaderImage">
+	<div class="aisHeaderCornerRight">
+	<div class="aisHeaderCornerLeft">
+	<div class="aisImageBar">
+	<div class="aisSubSites">
+		<a href="index.html" class="aisSubSiteLink"><span class="aisSiteTabRight"><span class="aisSiteTabLeft"><span class="aisSiteTab">
+			home</span></span></span></a>
+		<a class="aisSubSiteLink" href="indexb60a.html?cat=27"><span class="aisSiteTabRight"><span class="aisSiteTabLeft"><span class="aisSiteTab">
+			historic modeling</span></span></span></a>
+		<a class="aisSubSiteLink" href="indexa88f.html?cat=36"><span class="aisSiteTabRight"><span class="aisSiteTabLeft"><span class="aisSiteTab">
+			update controls</span></span></span></a>
+		<a href="index2d79.html?cat=26" class="aisSubSiteLink"><span class="aisSiteTabRight"><span class="aisSiteTabLeft"><span class="aisSiteTab">
+			degrees of freedom</span></span></span></a>
+		<a class="aisSubSiteLink" href="indexba53.html?page_id=2"><span class="aisSiteTabRight"><span class="aisSiteTabLeft"><span class="aisSiteTab">
+			about us</span></span></span></a>
+
+	</div>
+	</div>
+	</div>
+	</div>
+	</div>
+</div>
+
+<table style="width: 100%" cellspacing="0" cellpadding="0">
+	<tr valign="top">
+		<td width="210px">
+<div id="sidebar">
+<div class="aisLeftColumnFill">
+<div class="aisLeftColumnBottom">
+<div class="aisLeftColumnTop">
+<div id="twitter_div" class="aisLeftNav">
+<h2 class="sidebar-title">Twitter Updates</h2>
+<ul id="twitter_update_list"></ul>
+<a href="http://twitter.com/michaellperry" id="follow">Follow me</a>
+</div>
+<div id="twitter_reply_div" class="aisLeftNav">
+<h2 class="sidebar-title">Twitter Replies</h2>
+<ul id="twitter_reply_list"></ul>
+</div>
+
+<div class="aisLeftNav">
+<a href='http://ineta.org/Speakers/SearchCommunitySpeakers.aspx?SpeakerId=c5110e21-9243-461b-a464-a6548524e885'><img alt='INETA Community Speakers Program' border='0' src='../../www.ineta.org/images/OfficialLogos/InetaCommunitySpeakersRequestMe.html' /></a>
+</div>
+
+<div class="aisLeftNav">
+	<li class="pagenav"><h2>Pages</h2><ul><li class="page_item page-item-2"><a href="indexba53.html?page_id=2" title="About Us">About Us</a></li>
+<li class="page_item page-item-210"><a href="index6ae3.html?page_id=210" title="Templates">Templates</a></li>
+</ul></li></div>
+
+<div class="aisLeftNav">
+<h2>Archives</h2>
+<ul>
+	<li><a href='indexb4d5.html?m=201110' title='October 2011'>October 2011</a></li>
+	<li><a href='indexc61a.html?m=201106' title='June 2011'>June 2011</a></li>
+	<li><a href='indexa80d.html?m=201105' title='May 2011'>May 2011</a></li>
+	<li><a href='index512b.html?m=201104' title='April 2011'>April 2011</a></li>
+	<li><a href='index08fb.html?m=201103' title='March 2011'>March 2011</a></li>
+	<li><a href='index52f4.html?m=201102' title='February 2011'>February 2011</a></li>
+	<li><a href='index74f1.html?m=201101' title='January 2011'>January 2011</a></li>
+	<li><a href='index8956.html?m=201012' title='December 2010'>December 2010</a></li>
+	<li><a href='indexa1aa.html?m=201011' title='November 2010'>November 2010</a></li>
+	<li><a href='indexe3d5.html?m=201010' title='October 2010'>October 2010</a></li>
+	<li><a href='index9ab9.html?m=201009' title='September 2010'>September 2010</a></li>
+	<li><a href='index1ff0.html?m=201008' title='August 2010'>August 2010</a></li>
+	<li><a href='index9f11.html?m=201007' title='July 2010'>July 2010</a></li>
+	<li><a href='index31f0.html?m=201006' title='June 2010'>June 2010</a></li>
+	<li><a href='indexd189.html?m=201005' title='May 2010'>May 2010</a></li>
+	<li><a href='indexb5c0.html?m=201004' title='April 2010'>April 2010</a></li>
+	<li><a href='indexf258.html?m=201003' title='March 2010'>March 2010</a></li>
+	<li><a href='index6e30.html?m=201002' title='February 2010'>February 2010</a></li>
+	<li><a href='index6b19.html?m=201001' title='January 2010'>January 2010</a></li>
+	<li><a href='index5c0a.html?m=200912' title='December 2009'>December 2009</a></li>
+	<li><a href='index8f62.html?m=200911' title='November 2009'>November 2009</a></li>
+	<li><a href='index451d.html?m=200910' title='October 2009'>October 2009</a></li>
+	<li><a href='index3e04.html?m=200909' title='September 2009'>September 2009</a></li>
+	<li><a href='index425a.html?m=200908' title='August 2009'>August 2009</a></li>
+	<li><a href='index9907.html?m=200907' title='July 2009'>July 2009</a></li>
+	<li><a href='index3104.html?m=200906' title='June 2009'>June 2009</a></li>
+	<li><a href='indexc36d.html?m=200905' title='May 2009'>May 2009</a></li>
+	<li><a href='index17e8.html?m=200904' title='April 2009'>April 2009</a></li>
+	<li><a href='index10a5.html?m=200903' title='March 2009'>March 2009</a></li>
+	<li><a href='index8988.html?m=200902' title='February 2009'>February 2009</a></li>
+	<li><a href='index1419.html?m=200901' title='January 2009'>January 2009</a></li>
+	<li><a href='index7866.html?m=200812' title='December 2008'>December 2008</a></li>
+	<li><a href='index55f6.html?m=200811' title='November 2008'>November 2008</a></li>
+	<li><a href='indexa7bc.html?m=200810' title='October 2008'>October 2008</a></li>
+	<li><a href='indexe77c.html?m=200809' title='September 2008'>September 2008</a></li>
+	<li><a href='indexcffc.html?m=200808' title='August 2008'>August 2008</a></li>
+	<li><a href='index0e62.html?m=200807' title='July 2008'>July 2008</a></li>
+	<li><a href='indexfda7.html?m=200806' title='June 2008'>June 2008</a></li>
+	<li><a href='index7d64.html?m=200805' title='May 2008'>May 2008</a></li>
+	<li><a href='index94dd.html?m=200804' title='April 2008'>April 2008</a></li>
+	<li><a href='index9631.html?m=200803' title='March 2008'>March 2008</a></li>
+	<li><a href='indexdd52.html?m=200802' title='February 2008'>February 2008</a></li>
+	<li><a href='index21ee.html?m=200801' title='January 2008'>January 2008</a></li>
+	<li><a href='index363c.html?m=200712' title='December 2007'>December 2007</a></li>
+	<li><a href='index7493.html?m=200711' title='November 2007'>November 2007</a></li>
+	<li><a href='index93a7.html?m=200710' title='October 2007'>October 2007</a></li>
+	<li><a href='index4ca8.html?m=200709' title='September 2007'>September 2007</a></li>
+	<li><a href='index6124.html?m=200708' title='August 2007'>August 2007</a></li>
+	<li><a href='index6013.html?m=200707' title='July 2007'>July 2007</a></li>
+	<li><a href='index2ab6.html?m=200706' title='June 2007'>June 2007</a></li>
+	<li><a href='index44f0.html?m=200705' title='May 2007'>May 2007</a></li>
+	<li><a href='indexf0b4.html?m=200704' title='April 2007'>April 2007</a></li>
+	<li><a href='index481d.html?m=200703' title='March 2007'>March 2007</a></li>
+	<li><a href='indexcbea.html?m=200702' title='February 2007'>February 2007</a></li>
+	<li><a href='index9cdc.html?m=200701' title='January 2007'>January 2007</a></li>
+	<li><a href='index3ea4.html?m=200612' title='December 2006'>December 2006</a></li>
+	<li><a href='index67ca.html?m=200611' title='November 2006'>November 2006</a></li>
+	<li><a href='indexff49.html?m=200610' title='October 2006'>October 2006</a></li>
+	<li><a href='index611c.html?m=200609' title='September 2006'>September 2006</a></li>
+	<li><a href='index9a21.html?m=200608' title='August 2006'>August 2006</a></li>
+	<li><a href='index3ee9.html?m=200607' title='July 2006'>July 2006</a></li>
+	<li><a href='indexe13a.html?m=200606' title='June 2006'>June 2006</a></li>
+</ul>
+</div>
+
+<div class="aisLeftNav">
+	</div>
+
+<div class="aisLeftNav">
+<h2>Books</h2>
+<iframe src="http://rcm.amazon.com/e/cm?t=adventures0d2-20&amp;o=1&amp;p=8&amp;l=as1&amp;asins=0764526413&amp;fc1=000000&amp;IS2=1&amp;lt1=_blank&amp;lc1=0000ff&amp;bc1=000000&amp;bg1=ffffff&amp;f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" name="I5" id="I5"></iframe>
+<br/>
+<iframe src="http://rcm.amazon.com/e/cm?t=adventures0d2-20&amp;o=1&amp;p=8&amp;l=as1&amp;asins=0201633612&amp;fc1=000000&amp;IS2=1&amp;lt1=_blank&amp;lc1=0000ff&amp;bc1=000000&amp;bg1=ffffff&amp;f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" name="I6" id="I6"></iframe>
+<br/>
+<iframe src="http://rcm.amazon.com/e/cm?t=adventures0d2-20&amp;o=1&amp;p=8&amp;l=as1&amp;asins=0136291554&amp;fc1=000000&amp;IS2=1&amp;lt1=_blank&amp;lc1=0000ff&amp;bc1=000000&amp;bg1=ffffff&amp;f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" name="I7" id="I7"></iframe>
+<br/>
+<iframe src="http://rcm.amazon.com/e/cm?t=adventures0d2-20&amp;o=1&amp;p=8&amp;l=as1&amp;asins=1888009195&amp;fc1=000000&amp;IS2=1&amp;lt1=_blank&amp;lc1=0000ff&amp;bc1=000000&amp;bg1=ffffff&amp;f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" name="I8" id="I8"></iframe>
+</div>
+<div class="aisLeftNav">
+<h2>Meta</h2>
+<ul>
+		<li><a href="wp-login.html">Login</a></li>
+	<li><a href="http://validator.w3.org/check/referer" title="This page validates as XHTML 1.0 Transitional">Valid <abbr title="eXtensible HyperText Markup Language">XHTML</abbr></a></li>
+	<li><a href="http://gmpg.org/xfn/"><abbr title="XHTML Friends Network">XFN</abbr></a></li>
+	<li><a href="http://wordpress.org/" title="Powered by WordPress, state-of-the-art semantic personal publishing platform.">WordPress</a></li>
+	</ul>
+</div>
+<div class="aisLeftContent">
+<h2>Community</h2>
+<ul>
+	<script type="text/javascript" src="../../localhost/embed/92q2bbma.js"></script>
+</ul>
+</div>
+
+</div></div></div>
+</div>		</td>
+		<td>
+
+	<div id="content" class="narrowcolumn">
+
+		
+		 		<h2 class="pagetitle">Archive for May, 2011</h2>
+
+		
+
+		<div class="navigation">
+			<div class="alignleft"></div>
+			<div class="alignright"><a href="indexa80d.html?m=201105">Next Entries &raquo;</a></div>
+		</div>
+
+				<div class="post">
+				<h3 id="post-651"><a href="indexa26f.html?p=651" rel="bookmark" title="Permanent Link to Thought Cloud TDD #5: Backward thinking">Thought Cloud TDD #5: Backward thinking</a></h3>
+				<small>Thursday, May 19th, 2011</small>
+
+				<div class="entry">
+					<p>The <a href="https://github.com/michaellperry/FacetedWorlds.ThoughtCloud">Thought Cloud</a> demo is coming along nicely. Some really interesting patters are starting to emerge.</p>
+<p>The last test produced some code that offends me. Let’s look at it again.</p>
+<pre class="code"><span style="color: blue">public </span><span style="color: #2b91af">IEnumerable</span>&lt;<span style="color: #2b91af">CloudViewModel</span>&gt; Clouds
+{
+    <span style="color: blue">get
+    </span>{
+        <span style="color: blue">return
+            from </span><strong>c</strong> <span style="color: blue">in </span>_identity.Clouds
+            <span style="color: blue">select new </span><span style="color: #2b91af">CloudViewModel</span>(<strong>_identity, <span style="color: blue">null</span></strong>);
+    }
+}</pre>
+<p>We create one cloud view model for each cloud that the user owns. But takes an identity and a central thought (which, to make matters worse, we set to null). It should take a cloud! Let’s change the constructor.</p>
+<pre class="code"><span style="color: blue">public </span>CloudViewModel(<span style="color: #2b91af">Cloud </span>cloud)
+{
+    _cloud = cloud;
+    _identity = cloud.Creator;
+}</pre>
+<p>Now we pass in a cloud, and the view model gets the identity from there. But where does it get the central thought? Let’s add that to the cloud as well.</p>
+<pre class="code">fact Cloud {
+key:
+    unique;
+    Identity creator;
+    Thought centralThought;
+}</pre>
+<p>So the central thought is an immutable feature of the cloud. As the compiler points out, we need to construct this thought before we construct the cloud.</p>
+<pre class="code"><span style="color: blue">public partial class </span><span style="color: #2b91af">Identity
+</span>{
+    ...
+
+    <span style="color: blue">public </span><span style="color: #2b91af">Cloud </span>NewCloud(<strong><span style="color: #2b91af">Thought </span>thought</strong>)
+    {
+        <span style="color: blue">return </span>Community.AddFact(<span style="color: blue">new </span><span style="color: #2b91af">Cloud</span>(<span style="color: blue">this</span>, <strong>thought</strong>));
+    }
+}</pre>
+<p><a href="http://11011.net/software/vspaste"></a></p>
+<pre class="code"><span style="color: blue">public class </span><span style="color: #2b91af">HomeViewModel
+</span>{
+    ...
+
+    <span style="color: blue">public </span><span style="color: #2b91af">ICommand </span>AddCloud
+    {
+        <span style="color: blue">get
+        </span>{
+            <span style="color: blue">return </span><span style="color: #2b91af">MakeCommand
+                </span>.Do(() =&gt;
+                {
+                    <span style="color: #2b91af">Thought </span>thought = <strong>_identity.NewThought()</strong>;
+                    _identity.NewCloud(<strong>thought</strong>);
+                });
+        }
+    }
+}</pre>
+<p><a href="http://11011.net/software/vspaste"></a></p>
+<p>Create a thought before you create a cloud? Seems backwards. Smells like another refactoring.</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="index38d0.html?cat=46" title="View all posts in Correspondence" rel="category">Correspondence</a> |   <a href="indexa26f.html?p=651#respond" title="Comment on Thought Cloud TDD #5: Backward thinking">No Comments &#187;</a></p>
+
+			</div>
+
+				<div class="post">
+				<h3 id="post-650"><a href="indexf034.html?p=650" rel="bookmark" title="Permanent Link to Thought Cloud TDD #4: Cloud factory">Thought Cloud TDD #4: Cloud factory</a></h3>
+				<small>Thursday, May 19th, 2011</small>
+
+				<div class="entry">
+					<p>I’m building <a href="https://github.com/michaellperry/FacetedWorlds.ThoughtCloud">Thought Cloud</a> as a Correspondence demo for a talk in a few weeks. I hope you’ll be able to attend.</p>
+<p>We’ve started right in the meat of the application, where the user is adding thoughts to a cloud. But before they get there, they should be able manage their individual clouds. Let’s start a new test suite for those features.</p>
+<pre class="code">[<span style="color: #2b91af">TestClass</span>]
+<span style="color: blue">public class </span><span style="color: #2b91af">HomeViewModelTest
+</span>{
+    <span style="color: blue">private </span><span style="color: #2b91af">Community </span>_community;
+    <span style="color: blue">private </span><span style="color: #2b91af">Identity </span>_identity;
+    <span style="color: blue">private </span><span style="color: #2b91af">HomeViewModel </span>_viewModel;
+
+    [<span style="color: #2b91af">TestInitialize</span>]
+    <span style="color: blue">public void </span>Initialize()
+    {
+        _community = <span style="color: blue">new </span><span style="color: #2b91af">Community</span>(<span style="color: blue">new </span><span style="color: #2b91af">MemoryStorageStrategy</span>())
+            .Register&lt;<span style="color: #2b91af">CorrespondenceModel</span>&gt;();
+
+        _identity = _community.AddFact(<span style="color: blue">new </span><span style="color: #2b91af">Identity</span>(<span style="color: #a31515">&quot;mike&quot;</span>));
+        _viewModel = <span style="color: blue">new </span><span style="color: #2b91af">HomeViewModel</span>(_identity);
+    }
+
+    [<span style="color: #2b91af">TestMethod</span>]
+    <span style="color: blue">public void </span>CanAddACloud()
+    {
+        _viewModel.AddCloud.Execute(<span style="color: blue">null</span>);
+        <span style="color: #2b91af">Assert</span>.AreEqual(1, _viewModel.Clouds);
+    }
+}</pre>
+<p>The first test is that we can add a cloud. Let’s start by defining a new cloud fact.</p>
+<pre class="code">fact Cloud {
+key:
+    unique;
+    Identity creator;
+}</pre>
+<p>A cloud is just a unique fact created by a user. To create a new cloud, let’s add a method to the Identity partial class.</p>
+<pre class="code"><span style="color: blue">public partial class </span><span style="color: #2b91af">Identity
+</span>{
+    ...
+
+    <span style="color: blue">public </span><span style="color: #2b91af">Cloud </span>NewCloud()
+    {
+        <span style="color: blue">return </span>Community.AddFact(<span style="color: blue">new </span><span style="color: #2b91af">Cloud</span>(<span style="color: blue">this</span>));
+    }
+}</pre>
+<p>The unit test executes a command to create a new cloud. So we use MakeCommand to implement the ICommand interface.</p>
+<pre class="code"><span style="color: blue">public class </span><span style="color: #2b91af">HomeViewModel
+</span>{
+    <span style="color: blue">private readonly </span><span style="color: #2b91af">Identity </span>_identity;
+
+    <span style="color: blue">public </span>HomeViewModel(<span style="color: #2b91af">Identity </span>identity)
+    {
+        _identity = identity;
+    }
+
+    <span style="color: blue">public </span><span style="color: #2b91af">ICommand </span>AddCloud
+    {
+        <span style="color: blue">get
+        </span>{
+            <span style="color: blue">return </span><span style="color: #2b91af">MakeCommand
+                </span>.Do(() =&gt; _identity.NewCloud());
+        }
+    }
+}</pre>
+<p>Now the view model needs to return a list of clouds. We add a query to Identity to get all of the clouds.</p>
+<pre class="code">fact Identity {
+    ...
+
+query:
+    ...</pre>
+<pre class="code">    Cloud* clouds {
+        Cloud c : c.creator = this
+    }
+}</pre>
+<p>Finally, we can use linq to convert the collection of cloud facts into cloud view models.</p>
+<pre class="code"><span style="color: blue">public </span><span style="color: #2b91af">IEnumerable</span>&lt;<span style="color: #2b91af">CloudViewModel</span>&gt; Clouds
+{
+    <span style="color: blue">get
+    </span>{
+        <span style="color: blue">return
+            from </span>c <span style="color: blue">in </span>_identity.Clouds
+            <span style="color: blue">select new </span><span style="color: #2b91af">CloudViewModel</span>(_identity, <span style="color: blue">null</span>);
+    }
+}</pre>
+<p>That constructor is not making much sense anymore. It takes an identity and central thought, not a cloud. That gives us a clue about the next changes we need to make. We’ll refactor that next time.</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="index38d0.html?cat=46" title="View all posts in Correspondence" rel="category">Correspondence</a> |   <a href="indexf034.html?p=650#respond" title="Comment on Thought Cloud TDD #4: Cloud factory">No Comments &#187;</a></p>
+
+			</div>
+
+				<div class="post">
+				<h3 id="post-649"><a href="index7b0e.html?p=649" rel="bookmark" title="Permanent Link to Thought Cloud TDD #3: Train of thought">Thought Cloud TDD #3: Train of thought</a></h3>
+				<small>Tuesday, May 17th, 2011</small>
+
+				<div class="entry">
+					<p>I’m having fun building <a href="https://github.com/michaellperry/FacetedWorlds.ThoughtCloud">Thought Cloud</a>. I hope you are, too.</p>
+<p>One thought does not a cloud make. The user needs the ability to create new thoughts.</p>
+<pre class="code">[<span style="color: #2b91af">TestMethod</span>]
+<span style="color: blue">public void </span>CanCreateANewThought()
+{
+    _cloudViewModel.NewThought.Execute(<span style="color: blue">null</span>);
+    <span style="color: #2b91af">Assert</span>.AreEqual(2, _cloudViewModel.Thoughts.Count());
+}</pre>
+<p>To create a new thought, we need access to the Community. We initialized _community and used it to create our Identity and initial Thought. Rather than going back to _community each time we want to add a fact, we’ll let one of the existing facts do the work for us. Let’s have the Identity create a Thought. We can add methods to a fact by declaring a partial class.</p>
+<pre class="code"><span style="color: blue">public partial class </span><span style="color: #2b91af">Identity
+</span>{
+    <span style="color: blue">public <span style="color: #2b91af">Thought </span></span>NewThought()
+    {
+        <span style="color: blue">return </span>Community.AddFact(<span style="color: blue">new </span><span style="color: #2b91af">Thought</span>());
+    }
+}</pre>
+<p>Every fact has a private Community property that it can use to create other facts. Remember rule #2: create one fact for each user action. This is how a fact performs actions.</p>
+<p>To call this method, CloudViewModel needs an Identity. Let’s add that parameter.</p>
+<pre class="code"><span style="color: blue">public class </span><span style="color: #2b91af">CloudViewModel
+</span>{
+    <span style="color: blue">private </span><span style="color: #2b91af">Identity </span>_identity;
+    <span style="color: blue">private </span><span style="color: #2b91af">Thought </span>_centralThought; 
+
+    <span style="color: blue">public </span>CloudViewModel(<span style="color: #2b91af">Identity </span>identity, <span style="color: #2b91af">Thought </span>centralThought)
+    {
+        _identity = identity;
+        _centralThought = centralThought;
+    } 
+
+    ...
+}</pre>
+<p>And now we can write the NewThought command. It is a property of type ICommand. The unit test executes the command the same way the user would when pressing a button. We’ll implement that interface using MakeCommand from Update Controls.</p>
+<pre class="code"><span style="color: blue">public </span><span style="color: #2b91af">ICommand </span>NewThought
+{
+    <span style="color: blue">get
+    </span>{
+        <span style="color: blue">return </span><span style="color: #2b91af">MakeCommand
+            </span>.Do(() =&gt; _identity.NewThought());
+    }
+}</pre>
+<p>Run the test and see if it passes. It doesn’t? Well, what have we missed?</p>
+<h3>Linked thoughts</h3>
+<p>Thoughts only form a cloud when you can join them together. The view model is only returning the central thought. We want it to return all related thoughts. So let’s define a link between thoughts.</p>
+<pre class="code">fact Link {
+key:
+    Thought* thoughts;
+}</pre>
+<p>A link is identified by the set of thoughts that it connects. By convention, we will only connect two thoughts with a link, but there is no way to enforce that convention in the Factual model. The key is simply a collection of thoughts. Let’s add a LinkTo method to a Thought in a partial class.</p>
+<pre class="code"><span style="color: blue">public partial class </span><span style="color: #2b91af">Thought
+</span>{
+    <span style="color: blue">public </span><span style="color: #2b91af">Link </span>LinkTo(<span style="color: #2b91af">Thought </span>otherThought)
+    {
+        <span style="color: blue">return </span>Community.AddFact(<span style="color: blue">new </span><span style="color: #2b91af">Link</span>(<span style="color: blue">new </span><span style="color: #2b91af">List</span>&lt;<span style="color: #2b91af">Thought</span>&gt; { <span style="color: blue">this</span>, otherThought }));
+    }
+}</pre>
+<p>After we create the new thought, we link it with the central thought of the cloud.</p>
+<pre class="code"><span style="color: blue">public </span><span style="color: #2b91af">ICommand </span>NewThought
+{
+    <span style="color: blue">get
+    </span>{
+        <span style="color: blue">return </span><span style="color: #2b91af">MakeCommand</span>.Do(() =&gt; _centralThought.LinkTo(_identity.NewThought()));
+    }
+}</pre>
+<p>Facts are not just records. They are domain objects with behavior. It’s just that they perform that behavior by creating new facts.</p>
+<p>So does it pass yet? No? I guess we need to do one more thing.</p>
+<h3>Query for related facts</h3>
+<p>The cloud view model is currently programmed to return only the central thought. It needs to also return all thoughts immediately linked to it. We’ll do that with a query.</p>
+<pre class="code">fact Thought {
+key:
+    unique; 
+
+mutable:
+    string text; 
+
+<strong>query:
+    Thought* neighbors {
+        Link l : l.thoughts = this
+        Thought t : l.thoughts = t
+    }</strong>
+}</pre>
+<p>The query gets all Links <em>l</em> such that one of the thoughts is <em>this</em> one, and then it gets all Thoughts <em>t</em> such that one of <em>l</em>’s thoughts is <em>t</em>. That’s just set notation for the immediate neighbors. We can return that set from the view model.</p>
+<pre class="code"><span style="color: blue">public </span><span style="color: #2b91af">IEnumerable</span>&lt;<span style="color: #2b91af">ThoughtViewModel</span>&gt; Thoughts
+{
+    <span style="color: blue">get
+    </span>{
+        <span style="color: blue">return </span><span style="color: #2b91af">Enumerable</span>.Repeat(<span style="color: blue">new </span><span style="color: #2b91af">ThoughtViewModel</span>(_centralThought), 1).Union(
+            <span style="color: blue">from </span>n <span style="color: blue">in </span>_centralThought.Neighbors
+            <span style="color: blue">select new </span><span style="color: #2b91af">ThoughtViewModel</span>(n));
+    }
+}</pre>
+<p>That big fancy linq statement creates a collection having only the central thought view model. Then it unions that with the set of neighbor view models. So we should get two, right? Alas No! The test still fails!</p>
+<h3>Careful what you query for</h3>
+<p>If you look closely at the failure reason, this time it failed because we returned too many thoughts. We expected 2, but returned 3. The problem is that the query includes all thoughts of all related links. In other words, the query returns the central thought itself. Let’s filter this out.</p>
+<pre class="code"><span style="color: blue">public </span><span style="color: #2b91af">IEnumerable</span>&lt;<span style="color: #2b91af">ThoughtViewModel</span>&gt; Thoughts
+{
+    <span style="color: blue">get
+    </span>{
+        <span style="color: blue">return </span><span style="color: #2b91af">Enumerable</span>.Repeat(<span style="color: blue">new </span><span style="color: #2b91af">ThoughtViewModel</span>(_centralThought), 1).Union(
+            <span style="color: blue">from </span>n <span style="color: blue">in </span>_centralThought.Neighbors
+            <span style="color: blue">where </span>n != _centralThought
+            <span style="color: blue">select new </span><span style="color: #2b91af">ThoughtViewModel</span>(n));
+    }
+}</pre>
+<p>And now does it pass? Yes!</p>
+<p>A fact can relate other facts, just like an associative table in a relational database. In order to find the related facts, just query. Factual uses set notation to define queries, but they work just like relational joins.</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="index38d0.html?cat=46" title="View all posts in Correspondence" rel="category">Correspondence</a> |   <a href="index7b0e.html?p=649#respond" title="Comment on Thought Cloud TDD #3: Train of thought">No Comments &#187;</a></p>
+
+			</div>
+
+				<div class="post">
+				<h3 id="post-647"><a href="index6087.html?p=647" rel="bookmark" title="Permanent Link to Thought Cloud TDD #2: A new thought">Thought Cloud TDD #2: A new thought</a></h3>
+				<small>Monday, May 16th, 2011</small>
+
+				<div class="entry">
+					<p>I’m working on <a href="https://github.com/michaellperry/FacetedWorlds.ThoughtCloud">Thought Cloud</a> for an upcoming demo. Join me, won’t you?</p>
+<p>Last time we wrote a failing test about changing the text of the initial thought. Now let’s make it pass.</p>
+<p>The view model doesn’t have a model backing it, so it can’t store the thought text. Even though we are doing the simplest thing to make the test pass, we must still obey the rules of the Correspondence architecture:</p>
+<blockquote><p>Rule #1: Never store state in the view model.</p>
+</blockquote>
+<p>The view model layer exists only to interpret models for the view. If you have any state to store, it must find its way to a model. In this case, it must be stored in a Thought fact. So we define one in the Factual file model.fact.</p>
+<pre class="code">fact Thought {
+key:
+    unique;
+
+mutable:
+    string text;
+}</pre>
+<p>Be sure to hit “Transform all templates” whenever changing this file. Then build just to be sure the syntax is correct.</p>
+<p>Every Thought is unique. It has a unique key (a GUID), so that every time you create a new Thought, you get a new instance. The key is immutable. The text, however, is mutable. It is not part of the key. So this can store the state to make our unit test pass. We just need to create a new Thought to give to the view model.</p>
+<pre class="code"><span style="color: #2b91af">Thought </span>thought = _community.AddFact(<span style="color: blue">new </span><span style="color: #2b91af">Thought</span>());
+_cloudViewModel = <span style="color: blue">new </span><span style="color: #2b91af">CloudViewModel</span>(thought);</pre>
+<pre class="code"><span style="color: blue">public class </span><span style="color: #2b91af">CloudViewModel
+</span>{
+    <span style="color: blue">private </span><span style="color: #2b91af">Thought </span>_centralThought;
+
+    <span style="color: blue">public </span>CloudViewModel(<span style="color: #2b91af">Thought </span>centralThought)
+    {
+        _centralThought = centralThought;
+    }
+
+    <span style="color: blue">public </span><span style="color: #2b91af">IEnumerable</span>&lt;<span style="color: #2b91af">ThoughtViewModel</span>&gt; Thoughts
+    {
+        <span style="color: blue">get
+        </span>{
+            <span style="color: blue">yield return new </span><span style="color: #2b91af">ThoughtViewModel</span>(_centralThought);
+        }
+    }
+}</pre>
+<pre class="code"><span style="color: blue">public class </span><span style="color: #2b91af">ThoughtViewModel
+</span>{
+    <span style="color: blue">private </span><span style="color: #2b91af">Thought </span>_thought;
+
+    <span style="color: blue">public </span>ThoughtViewModel(<span style="color: #2b91af">Thought </span>thought)
+    {
+        _thought = thought;
+    }
+
+    <span style="color: blue">public string </span>Text
+    {
+        <span style="color: blue">get </span>{ <span style="color: blue">return </span>_thought.Text.Value ?? <span style="color: #a31515">&quot;My thought&quot;</span>; }
+        <span style="color: blue">set </span>{ _thought.Text = <span style="color: blue">value</span>; }
+    }
+}</pre>
+<p>Now the tests pass. Notice that we aren’t setting the initial text of the Thought. We rely upon the fact that a mutable string is initially null, and interpret that as the initial value in the view model. This honors the second rule of Correspondence architecture.</p>
+<blockquote>
+<p>Rule #2: Create one fact for each user action.</p>
+</blockquote>
+<p>We could have assigned Text to “My thought” right after creating it, but that would have actually created two facts. Assigning a mutable field actually creates a new fact behind the scenes. If we received the Thought from a peer, there is no guarantee that we would receive both facts at the same time. So we must honor the state in which we have uninitialized text as valid.</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="index38d0.html?cat=46" title="View all posts in Correspondence" rel="category">Correspondence</a> |   <a href="index6087.html?p=647#respond" title="Comment on Thought Cloud TDD #2: A new thought">No Comments &#187;</a></p>
+
+			</div>
+
+				<div class="post">
+				<h3 id="post-646"><a href="index8bcd.html?p=646" rel="bookmark" title="Permanent Link to Thought Cloud TDD #1: Initial thoughts">Thought Cloud TDD #1: Initial thoughts</a></h3>
+				<small>Monday, May 16th, 2011</small>
+
+				<div class="entry">
+					<p>I’m building a demo for Correspondence. Grab the <a href="https://github.com/michaellperry/FacetedWorlds.ThoughtCloud">Thought Cloud</a> code and follow along.</p>
+<p>The UnitTest project starts out with a model test, but I want to build this thing view model first. So let’s initialize a new test class.</p>
+<pre class="code">[<span style="color: #2b91af">TestClass</span>]
+<span style="color: blue">public class </span><span style="color: #2b91af">ViewModelTest </span>: <span style="color: #2b91af">SilverlightTest
+</span>{
+    <span style="color: blue">private </span><span style="color: #2b91af">Community </span>_community;
+    <span style="color: blue">private </span><span style="color: #2b91af">Identity </span>_identity;
+    <span style="color: blue">private </span><span style="color: #2b91af">CloudViewModel </span>_cloudViewModel;
+
+    [<span style="color: #2b91af">TestInitialize</span>]
+    <span style="color: blue">public void </span>Initialize()
+    {
+        _community = <span style="color: blue">new </span><span style="color: #2b91af">Community</span>(<span style="color: blue">new </span><span style="color: #2b91af">MemoryStorageStrategy</span>())
+            .Register&lt;Model.<span style="color: #2b91af">CorrespondenceModel</span>&gt;();
+
+        _identity = _community.AddFact(<span style="color: blue">new </span><span style="color: #2b91af">Identity</span>(<span style="color: #a31515">"mike"</span>));
+        _cloudViewModel = <span style="color: blue">new </span><span style="color: #2b91af">CloudViewModel</span>();
+    }
+}</pre>
+<p>The Community uses the memory storage strategy, which is ideal for unit testing. The real application will use isolated storage, but memory will be reset with each test run. We also register the model, and create the initial fact, and create a new view model.</p>
+<p>When the user first starts the application, they should see a thought bubble that says “My thought”. (Actually, first they must log in, but that is uninteresting to me right now.)</p>
+<pre class="code">[<span style="color: #2b91af">TestMethod</span>]
+<span style="color: blue">public void </span>InitialThoughtIsMyThought()
+{
+    <span style="color: #2b91af">ThoughtViewModel </span>thought = _cloudViewModel.Thoughts.Single();
+    <span style="color: #2b91af">Assert</span>.AreEqual(<span style="color: #a31515">"My thought"</span>, thought.Text);
+}</pre>
+<p>To make this pass, we do the simplest thing possible.</p>
+<pre class="code"><span style="color: blue">public class </span><span style="color: #2b91af">CloudViewModel
+</span>{
+    <span style="color: blue">public </span><span style="color: #2b91af">IEnumerable</span>&lt;<span style="color: #2b91af">ThoughtViewModel</span>&gt; Thoughts
+    {
+        <span style="color: blue">get
+        </span>{
+            <span style="color: blue">yield return new </span><span style="color: #2b91af">ThoughtViewModel</span>();
+        }
+    }
+}</pre>
+<pre class="code"><span style="color: blue">public class </span><span style="color: #2b91af">ThoughtViewModel
+</span>{
+    <span style="color: blue">public string </span>Text
+    {
+        <span style="color: blue">get
+        </span>{
+            <span style="color: blue">return </span><span style="color: #a31515">"My thought"</span>;
+        }
+    }
+}</pre>
+<p>Test passes. On to the next. The user can edit this initial thought to change the text.</p>
+<pre class="code">[<span style="color: #2b91af">TestMethod</span>]
+<span style="color: blue">public void </span>CanChangeThoughtText()
+{
+    <span style="color: #2b91af">ThoughtViewModel </span>thought = _cloudViewModel.Thoughts.Single();
+    thought.Text = <span style="color: #a31515">"New thought"</span>;
+    <span style="color: #2b91af">Assert</span>.AreEqual(<span style="color: #a31515">"New thought"</span>, thought.Text);
+}</pre>
+<p>The simplest thing possible won’t make this pass anymore. By forcing ourselves to write simple methods, we ensure that there are no missing tests. We’ll make this test pass next time.</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="index38d0.html?cat=46" title="View all posts in Correspondence" rel="category">Correspondence</a> |   <a href="index8bcd.html?p=646#respond" title="Comment on Thought Cloud TDD #1: Initial thoughts">No Comments &#187;</a></p>
+
+			</div>
+
+				<div class="post">
+				<h3 id="post-645"><a href="indexc725.html?p=645" rel="bookmark" title="Permanent Link to Thought Cloud structure">Thought Cloud structure</a></h3>
+				<small>Monday, May 16th, 2011</small>
+
+				<div class="entry">
+					<p>I am building <a href="https://github.com/michaellperry/FacetedWorlds.ThoughtCloud">Thought Cloud</a>, a collaborative mind mapper, for an upcoming demo. Please grab the code and follow along.</p>
+<p>I’ve created the structure of the application:</p>
+<p><a href="../pictures/0e2c79eb5d70_694F/FacetedWorlds.ThoughtCloud.sln.gif"><img border="0" width="940" src="../pictures/0e2c79eb5d70_694F/FacetedWorlds.ThoughtCloud.sln_thumb.gif" alt="FacetedWorlds.ThoughtCloud.sln" height="251" style="padding-right: 0px; display: inline; padding-left: 0px; background-image: none; padding-top: 0px; border: 0px" title="FacetedWorlds.ThoughtCloud.sln" /></a></p>
+<p>FacetedWorlds.ThoughtCloud is the main Silverlight application. It has out-of-browser settings enabled. I added a reference to the NuGet package “Correspondence.Silverlight.App”.</p>
+<p>The UnitTest project is also a Silverlight application, as required by Jeff Wilcox’s Silverlight Unit Test Framework. But I didn’t create it with the project template from the Silverlight Toolkit. Instead, I added a reference to the NuGet package “Correspondence.Silverlight.UnitTest”, which has a dependency on the framework’s package.</p>
+<p>The ViewModel project is a Silverlight class library to which I simply added the “Correspondence” package. Not much is required for a Correspondence view model, since it is built on Update Controls.</p>
+<p>Finally, the Model project is a Silverlight class library to which I added “Correspondence.Model”. This package adds a “Models” folder, which is great when using the all-in-one package. But since this project structure is broken down, that folder is redundant. So I moved the contents of the folder up to the root of the project, and change the namespaces to drop the folder name.</p>
+<p>This structure gives me the ability to build Thought Cloud in a test-driven manner. I write separate tests for the view models and the models, even though the view models <em>use</em> the models. I’ll show you why as we go along.</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="index38d0.html?cat=46" title="View all posts in Correspondence" rel="category">Correspondence</a> |   <a href="indexc725.html?p=645#respond" title="Comment on Thought Cloud structure">No Comments &#187;</a></p>
+
+			</div>
+
+				<div class="post">
+				<h3 id="post-644"><a href="index6ade.html?p=644" rel="bookmark" title="Permanent Link to Preparing a Correspondence example">Preparing a Correspondence example</a></h3>
+				<small>Monday, May 16th, 2011</small>
+
+				<div class="entry">
+					<p>On the 9th of June, I’ll be presenting Correspondence to the <a href="http://ddnug.net/">Dallas .NET User Group</a>. I will reprise the presentation on the 13th for <a href="http://ntsilverlight.com/">North Texas Silverlight</a>. Please come see whichever one you can attend.</p>
+<p>I’ll be showing how to use Correspondence to build Silverlight out-of-browser applications. These apps will reside on your desktop (Mac or PC), use isolated storage, synchronize with the server while online, and push updates in real time as they happen. Not only is it good for keeping your data on two or more machines, this pattern is ideal for collaboration with other users.</p>
+<p>You can help me to build the demo. It is a collaborative mind mapper called Thought Cloud. I’m hosting it on <a href="https://github.com/michaellperry/FacetedWorlds.ThoughtCloud">GitHub</a>, so please pull the code and try it out.</p>
+				</div>
+
+				<p class="postmetadata">Posted in <a href="index38d0.html?cat=46" title="View all posts in Correspondence" rel="category">Correspondence</a> |   <a href="index6ade.html?p=644#respond" title="Comment on Preparing a Correspondence example">No Comments &#187;</a></p>
+
+			</div>
+
+		
+		<div class="navigation">
+			<div class="alignleft"></div>
+			<div class="alignright"><a href="indexa80d.html?m=201105">Next Entries &raquo;</a></div>
+		</div>
+
+	
+	</div>
+		</td>
+	</tr>
+</table>
+
+<hr />
+<div id="footer">
+<!-- If you'd like to support WordPress, having the "powered by" link someone on your blog is the best way, it's our only promotion or advertising. -->
+	<p>
+		Adventures in Software is proudly powered by 
+		<a href="http://wordpress.org/">WordPress</a>
+		<br /><a href="indexd784.html?feed=rss2">Entries (RSS)</a>
+		and <a href="indexa6da.html?feed=comments-rss2">Comments (RSS)</a>.
+		<!-- 17 queries. 0.386 seconds. -->
+	</p>
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-389401-3");
+pageTracker._trackPageview();
+} catch(err) {}</script></div>
+
+<!-- Gorgeous design by Michael Heilemann - http://binarybonsai.com/kubrick/ -->
+
+		<div id="sk2-footer" style="color:#FFF; background-color:#444; padding: 3px 2px 3px 2px; border-top: #888 solid 1px;">This blog is protected by <a href="http://unknowngenius.com/blog/" title="Dave">dr Dave</a>'s <strong><a href="http://unknowngenius.com/blog/wordpress/spam-karma/" title="SK2">Spam Karma 2</a></strong>: <strong>274531</strong>  Spams eaten and counting...</div><script type="text/javascript" src="replies.js"></script>
+<script type="text/javascript" src="blogger.js"></script>
+<script type="text/javascript" src="http://twitter.com/statuses/user_timeline/michaellperry.json?callback=twitterCallback2&amp;count=5"></script>
+<script type="text/javascript" src="http://search.twitter.com/search.json?q=@michaellperry&amp;callback=twitterCallbackReplies&amp;rpp=5"></script>
+</body>
+
+<!-- Mirrored from adventuresinsoftware.com/blog/?m=201105&paged=2 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 Jan 2017 12:54:01 GMT -->
+</html>
